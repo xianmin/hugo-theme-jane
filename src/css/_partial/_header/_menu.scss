@@ -1,0 +1,33 @@
+// ==============================
+// Menu
+// =============================
+
+.site-navbar {
+  .menu {
+    float: right;
+    padding-left: 0;
+    font-family: $global-serif-font-family;
+
+    .menu-item {
+      display: inline-block;
+      margin-left: 1em;
+      margin-right: 1em;
+
+      & + .menu-item {
+        margin-left: $menu-item-margin-left;;
+      }
+
+      @include underline-from-center;
+    }
+
+    .menu-item-link {
+      font-size: $menu-link-font-size;
+    }
+  }
+}
+
+@include max-screen() {
+  .site-navbar {
+    display: none;
+  }
+}

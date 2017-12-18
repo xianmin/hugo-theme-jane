@@ -1,0 +1,20 @@
+// ==============================
+// Logo
+// =============================
+
+.logo-wrapper {
+  // text-align: center;
+  // border-bottom: 1px solid #f6f6f6;
+  float: left;
+
+  .logo {
+    font-size: $logo-font-size;
+    font-family: $logo-font-family;
+  }
+}
+
+@include max-screen() {
+  .logo-wrapper {
+    display: none;
+  }
+}

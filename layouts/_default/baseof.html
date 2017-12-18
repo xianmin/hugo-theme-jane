@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="{{ $.Site.LanguageCode | default "en" }}">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>
+    {{- block "title" . -}}
+      {{ if .IsPage }}{{ .Title }} - {{ .Site.Title }}{{ else }}{{ .Site.Title }}{{ end }}
+    {{- end -}}
+  </title>
+  {{ partial "head.html" . }}
+</head>
+<body>
+  {{ partial "slideout.html" . }}
+
+  <header id="header" class="header container">
+    {{ partial "header.html" . }}
+  </header>
+
+  <div id="mobile-panel">
+    <main id="main" class="main bg-llight">
+      <div class="content-wrapper">
+        <div id="content" class="content container">
+          {{ block "content" . }}{{ end }}
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      {{ partial "footer.html" . }}
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  {{ partial "scripts.html" . }}
+</body>
+</html>

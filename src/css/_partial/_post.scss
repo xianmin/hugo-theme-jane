@@ -1,0 +1,41 @@
+// ==============================
+// Post
+// ==============================
+
+.posts {
+  // margin-bottom: $post-list-margin-bottom;
+//  border-bottom: $post-border;
+}
+
+.post {
+  // padding: $post-padding;
+  padding: 3em 5em;
+  margin-bottom: 3em;
+  
+  // & + .post {
+  //   border-top: $post-border;
+  // }
+
+  @import '_post/header';
+  @import '_post/toc';
+  @import '_post/content';
+  @import '_post/copyright';
+  @import '_post/reward';
+  @import '_post/footer';
+}
+
+@media screen and (max-width: 504px) {
+  .post {
+    padding: 2em 1em;
+  }
+
+  .content-wrapper {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .post {
+    margin: 0 3em 5em 5em;
+  }
+}
