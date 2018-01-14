@@ -7,18 +7,25 @@
 
   @for $i from 1 through 6 {
     h#{$i} {
-      font-weight: 400;
+      font-weight: 600;
       font-family: $global-serif-font-family;
     }
   }
 
-  h2 {
+  h1 {
     border-bottom: 1px solid #ddd;
+    margin-top: 2em;
+  }
+
+  h2 {
+    // font-size: 1.6em;
+    border-bottom: 1px solid #ddd;
+    margin-top: 2em;
   }
 
   h3 {
-    color: #A5573E;
-    margin-left: 0.6em;
+    // font-size: 1.3em;
+    margin-top: 1.5em;
   }
 
   a {
