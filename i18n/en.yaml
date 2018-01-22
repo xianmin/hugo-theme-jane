@@ -1,0 +1,69 @@
+- id: archive
+  translation: Archive
+
+- id: tags
+  translation: Tags
+
+- id: categories
+  translation: Categories
+
+# posts
+- id: prev
+  translation: Prev
+
+- id: next
+  translation: Next
+
+- id: prev_post
+  translation: Prev
+
+- id: next_post
+  translation: Next
+
+- id: toc
+  translation: Table of Contents
+
+- id: readmore
+  translation: Read more
+
+- id: reward
+  translation: Reward
+
+- id: rewardAlipay
+  translation: Alipay
+
+- id: rewardWechat
+  translation: Wechat
+
+- id: seeMarkDown
+  translation: The Markdown version »
+
+# posts.header
+- id: wordCount
+  translation: "{{.Count}} words"
+
+- id: readingTime
+  translation: "{{.Count}} min read"
+
+# copyright
+- id: author
+  translation: Author
+
+- id: lastMod
+  translation: LastMod
+
+- id: markdown
+  translation: Markdown
+
+- id: license
+  translation: License
+
+# counter
+- id: counter_archives
+  translation: "{{.Count}} posts In Total"
+
+- id: counter_tagcloud
+  translation: "{{.Count}} Tags In Total"
+
+- id: counter_categories
+  translation: "{{.Count}} Categories In Total"
