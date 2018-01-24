@@ -292,7 +292,7 @@ $archive-name-font-size: 30px !default;
 $collection-title-font-size: 28px !default;
 
 // Padding of the archive post.
-$archive-post-padding: 3px 20px !default;
+$archive-post-padding: 15px 20px 5px 20px !default;
 
 // Padding of the archive post in mobile.
 $archive-post-mobile-padding: 5px 10px !default;
@@ -301,7 +301,7 @@ $archive-post-mobile-padding: 5px 10px !default;
 $archive-post-mobile-time-font-size: 13px !default;
 
 // Border left of the archive post, use $archive-post-hover-border-left when hover it.
-$archive-post-border-left: 1px solid $gray !default;
+$archive-post-border: 1px solid $gray !default;
 $archive-post-hover-border-left: 3px solid $theme-color !default;
 
 // Transition of the archive post when hover it.
