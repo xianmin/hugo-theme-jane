@@ -38,6 +38,9 @@
 - id: seeMarkDown
   translation: The Markdown version »
 
+- id: loadDisqus
+  translation: Show Disqus Comments
+
 # posts.header
 - id: wordCount
   translation: "{{.Count}} words"

@@ -38,6 +38,9 @@
 - id: seeMarkDown
   translation: 查看本文 Markdown 版本 »
 
+- id: loadDisqus
+  translation: 显示 Disqus 评论
+
 # posts.header
 - id: wordCount
   translation: 约 {{.Count}} 字
