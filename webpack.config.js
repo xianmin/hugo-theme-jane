@@ -8,11 +8,12 @@ const extractSass = new ExtractTextPlugin({
 
 module.exports = {
   devtool: 'source-map',
+  context: path.resolve('./src'),
   entry: {
     jane: './js/main.js'
   },
   output: {
-    path: path.join(__dirname, '../static/dist'),
+    path: path.resolve('./static/dist'),
     filename: `[name].min.js`
   },
   module: {
