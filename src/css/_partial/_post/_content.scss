@@ -42,17 +42,28 @@
   }
 
   blockquote {
-    margin: 2em 0;
-    padding: 10px 20px;
+    margin: 1em 0;
+    padding: 1px 20px;
     position: relative;
     color: rgba(#34495e, 0.8);
     background-color: $content-blockquote-backgroud;
     border-left: $content-blockquote-border-left;
     box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
 
-    // p {
-    //   margin: 0;
-    // }
+    p {
+      margin: 0.5em 0;
+    }
+
+    footer {
+      margin: 0.5em 0;
+    }
+
+    cite:before {
+      content: '\2014';
+      padding-right: .3em;
+      padding-left: .3em;
+      color: #aaa;
+    }
   }
 
   img {
