@@ -1,10 +1,12 @@
 baseURL = "http://localhost:1313/"
-languageCode = "en"
-defaultContentLanguage = "en"
+defaultContentLanguage = "zh-CN"
 title = "Jane - A simple theme for Hugo"
 enableRobotsTXT = true
 enableEmoji = true
 # theme = "jane"
+
+[Languages.en]
+  languageCode = "en"  # language to use  # 使用中文改成 zh.CN
 
 hasCJKLanguage = true     # has chinese/japanese/korean ? # 自动检测是否包含 中文\日文\韩文
 paginate = 5                                              # 首页每页显示的文章数

@@ -3,15 +3,15 @@
 
 name = "Jane"
 license = "MIT"
-licenselink = ""
-description = "A simple theme for Hugo"
-homepage = ""
-tags = ["responsive", "blog", "simple", "clean", "highlight.js", "syntax highlighting"]
-features = ["responsive", "blog", "simple", "clean", "highlight.js", "syntax highlighting"]
+licenselink = "https://github.com/xianmin/hugo-theme-jane/blob/master/LICENSE.md"
+description = "A readable theme for Hugo"
+homepage = "https://github.com/xianmin/hugo-theme-jane"
+tags = ["responsive", "blog", "simple", "clean", "readable", "highlight", "syntax highlighting"]
+features = ["responsive", "blog", "simple", "clean", "highlight", "syntax highlighting"]
 min_version = "0.25"
 
 [author]
-  name = "贤民 (xianmin)"
+  name = "xianmin"
   homepage = "http://xianmin.org"
 
 # If porting an existing theme
