@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>English on Jane - A simple theme for Hugo</title>
-    <link>http://localhost:1313/tags/english/</link>
+    <link>http://en.xianmin.org/hugo-theme-jane/tags/english/</link>
     <description>Recent content in English on Jane - A simple theme for Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 31 Aug 2017 15:43:48 +0800</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/tags/english/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://en.xianmin.org/hugo-theme-jane/tags/english/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>English Creating a New Theme</title>
-      <link>http://localhost:1313/post/english-preview/</link>
+      <link>http://en.xianmin.org/hugo-theme-jane/post/english-preview/</link>
       <pubDate>Thu, 31 Aug 2017 15:43:48 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/english-preview/</guid>
+      <guid>http://en.xianmin.org/hugo-theme-jane/post/english-preview/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 
 &lt;p&gt;This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.&lt;/p&gt;

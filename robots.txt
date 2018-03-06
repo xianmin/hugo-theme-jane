@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: http://localhost:1313/sitemap.xml
+Sitemap: http://en.xianmin.org/hugo-theme-jane/sitemap.xml
