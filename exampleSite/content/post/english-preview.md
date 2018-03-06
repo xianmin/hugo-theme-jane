@@ -4,7 +4,7 @@ date: 2017-08-31T15:43:48+08:00
 lastmod: 2017-08-31T15:43:48+08:00
 draft: false
 tags: ["preview", "English", "tag-2"]
-categories: ["English"]
+categories: ["English", "index"]
 author: "Michael Henderson"
 
 # You can also close(false) or open(true) something for this content.

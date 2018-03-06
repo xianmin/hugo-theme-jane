@@ -5,19 +5,39 @@
   {{ $terms := .Data.Terms.ByCount -}}
   {{ $length := len $terms -}}
   {{ if eq $name "categories" }}
-    <div class="categories">
-      <div class="categories-title">
-          {{ i18n "counter_categories" $length }}
-      </div>
-      <div class="categories-tags">
-        {{ range $key, $value := $terms }}
-          <a class="category-link" href="{{ $name | urlize | relURL }}/{{ $value.Term | urlize }}/">
-            {{ $value.Term }}
-            <span class="category-count">{{ len $value.Pages }}</span>
-          </a>
-        {{ end }}
-      </div>
-    </div>
+
+    {{ range $key, $value := $terms }}
+      <section id="archive" class="archive">
+        <div class="archive-title">
+        </div>
+          <div class="collection-title">
+            <h2 class="archive-year">
+              <a href="{{ $name | urlize | relURL }}/{{ $value.Term | urlize }}/">
+                {{ i18n "category" }}{{ $value.Term }}
+              </a>
+            </h2>
+          </div>
+
+          {{- range first 5 $value.Pages -}}
+            <div class="archive-post">
+              <span class="archive-post-time">
+                {{ .Date.Format "2006-01-02" }}
+              </span>
+              <span class="archive-post-title">
+                <a href="{{ .URL }}" class="archive-post-link">
+                  {{ .Title }}
+                </a>
+              </span>
+            </div>
+          {{- end -}}
+          {{ if gt (len $value.Pages) 5 }}
+            <div class="more-post">
+              <a href="{{ $name | urlize | relURL }}/{{ $value.Term | urlize }}/" class="more-post-link">{{ i18n "morePost" }}</a>
+            </div>
+          {{- end -}}
+      </section>
+    {{- end -}}
+
   {{ else if eq $name "tags" }}
     {{ if not (eq (len $.Site.Taxonomies.tags) 0) }}
     {{ $fontUnit := "rem" }}

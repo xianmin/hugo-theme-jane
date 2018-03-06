@@ -4,8 +4,14 @@
 - id: tags
   translation: 标签
 
+- id: tag
+  translation: "标签： "
+
 - id: categories
   translation: 分类
+
+- id: category
+  translation: "分类： "
 
 # posts
 - id: prev
@@ -70,3 +76,7 @@
 
 - id: counter_categories
   translation: 共计 {{.Count}} 个分类
+
+# other
+- id: morePost
+  translation: 查看更多 >>>

@@ -4,7 +4,7 @@ date: 2011-08-30T16:01:23+08:00
 lastmod: 2017-08-30T16:01:23+08:00
 draft: false
 tags: ["preview", "Syntax Highlighting", "tag-5"]
-categories: ["Syntax Highlighting"]
+categories: ["Syntax Highlighting", "index"]
 
 # You can also close(false) or open(true) something for this content.
 # P.S. comment can only be closed
