@@ -1,4 +1,4 @@
-baseURL = "http://localhost:1313/"
+baseURL = "http://en.xianmin.org/hugo-theme-jane/"
 defaultContentLanguage = "zh-CN"
 title = "Jane - A simple theme for Hugo"
 enableRobotsTXT = true
@@ -10,8 +10,8 @@ enableEmoji = true
 
 hasCJKLanguage = true     # has chinese/japanese/korean ? # 自动检测是否包含 中文\日文\韩文
 paginate = 5                                              # 首页每页显示的文章数
-disqusShortname = "xianmin"      # disqus_shortname
-googleAnalytics = ""      # UA-XXXXXXXX-X
+disqusShortname = "xianmin12"      # disqus_shortname
+googleAnalytics = "UA-34199129-1"      # UA-XXXXXXXX-X
 copyright = ""            # default: author.name ↓        # 默认为下面配置的author.name ↓
 
 [author]                  # essential                     # 必需
@@ -92,15 +92,15 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
 
   [params.social]                                         # 社交链接
     a-email = "mailto:your@email.com"
-    b-stack-overflow = "http://localhost:1313"
-    c-twitter = "http://localhost:1313"
-    d-facebook = "http://localhost:1313"
-    e-linkedin = "http://localhost:1313"
-    f-google = "http://localhost:1313"
-    g-github = "http://localhost:1313"
-    h-weibo = "http://localhost:1313"
-    i-zhihu = "http://localhost:1313"
-    j-douban = "http://localhost:1313"
-    k-pocket = "http://localhost:1313"
-    l-tumblr = "http://localhost:1313"
-    m-instagram = "http://localhost:1313"
+    b-stack-overflow = "http://en.xianmin.org/hugo-theme-jane/
+    c-twitter = "http://en.xianmin.org/hugo-theme-jane/
+    d-facebook = "http://en.xianmin.org/hugo-theme-jane/
+    e-linkedin = "http://en.xianmin.org/hugo-theme-jane/
+    f-google = "http://en.xianmin.org/hugo-theme-jane/
+    g-github = "http://en.xianmin.org/hugo-theme-jane/
+    h-weibo = "http://en.xianmin.org/hugo-theme-jane/
+    i-zhihu = "http://en.xianmin.org/hugo-theme-jane/
+    j-douban = "http://en.xianmin.org/hugo-theme-jane/
+    k-pocket = "http://en.xianmin.org/hugo-theme-jane/
+    l-tumblr = "http://en.xianmin.org/hugo-theme-jane/
+    m-instagram = "http://en.xianmin.org/hugo-theme-jane/
