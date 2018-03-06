@@ -92,15 +92,15 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
 
   [params.social]                                         # 社交链接
     a-email = "mailto:your@email.com"
-    b-stack-overflow = "http://en.xianmin.org/hugo-theme-jane/
-    c-twitter = "http://en.xianmin.org/hugo-theme-jane/
-    d-facebook = "http://en.xianmin.org/hugo-theme-jane/
-    e-linkedin = "http://en.xianmin.org/hugo-theme-jane/
-    f-google = "http://en.xianmin.org/hugo-theme-jane/
-    g-github = "http://en.xianmin.org/hugo-theme-jane/
-    h-weibo = "http://en.xianmin.org/hugo-theme-jane/
-    i-zhihu = "http://en.xianmin.org/hugo-theme-jane/
-    j-douban = "http://en.xianmin.org/hugo-theme-jane/
-    k-pocket = "http://en.xianmin.org/hugo-theme-jane/
-    l-tumblr = "http://en.xianmin.org/hugo-theme-jane/
-    m-instagram = "http://en.xianmin.org/hugo-theme-jane/
+    b-stack-overflow = "http://en.xianmin.org/hugo-theme-jane/"
+    c-twitter = "http://en.xianmin.org/hugo-theme-jane/"
+    d-facebook = "http://en.xianmin.org/hugo-theme-jane/"
+    e-linkedin = "http://en.xianmin.org/hugo-theme-jane/"
+    f-google = "http://en.xianmin.org/hugo-theme-jane/"
+    g-github = "http://en.xianmin.org/hugo-theme-jane/"
+    h-weibo = "http://en.xianmin.org/hugo-theme-jane/"
+    i-zhihu = "http://en.xianmin.org/hugo-theme-jane/"
+    j-douban = "http://en.xianmin.org/hugo-theme-jane/"
+    k-pocket = "http://en.xianmin.org/hugo-theme-jane/"
+    l-tumblr = "http://en.xianmin.org/hugo-theme-jane/"
+    m-instagram = "http://en.xianmin.org/hugo-theme-jane/"
