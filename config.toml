@@ -1,4 +1,4 @@
-baseURL = "http://en.xianmin.org/hugo-theme-jane/
+baseURL = "http://en.xianmin.org/hugo-theme-jane/"
 defaultContentLanguage = "zh-CN"
 title = "Jane - A simple theme for Hugo"
 enableRobotsTXT = true
