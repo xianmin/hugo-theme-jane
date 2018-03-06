@@ -4,6 +4,7 @@
   "description": "A simple theme for hugo",
   "main": "",
   "scripts": {
+    "build": "webpack",
     "dev:assets": "webpack --watch --display='errors-only' ",
     "dev:site": "hugo server --buildDrafts",
     "dev": "concurrently 'npm run dev:assets' 'npm run dev:site' ",

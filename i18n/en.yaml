@@ -4,8 +4,14 @@
 - id: tags
   translation: Tags
 
+- id: tag
+  translation: "Tag: "
+
 - id: categories
   translation: Categories
+
+- id: category
+  translation: "Category: "
 
 # posts
 - id: prev
@@ -70,3 +76,7 @@
 
 - id: counter_categories
   translation: "{{.Count}} Categories In Total"
+
+# other
+- id: morePost
+  translation: "More Post >>>"
