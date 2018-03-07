@@ -1,10 +1,13 @@
 baseURL = "http://localhost:1313/"
-languageCode = "en"
-defaultContentLanguage = "en"
 title = "Jane - A super concise theme for Hugo"
 enableRobotsTXT = true
 enableEmoji = true
 theme = "jane"
+
+# language support # en / zh-cn / other...
+defaultContentLanguage = "en"
+[Languages.en]
+  languageCode = "en"
 
 hasCJKLanguage = true     # has chinese/japanese/korean ? # 自动检测是否包含 中文\日文\韩文
 paginate = 3                                              # 首页每页显示的文章数
@@ -13,7 +16,7 @@ googleAnalytics = ""      # UA-XXXXXXXX-X
 copyright = ""            # default: author.name ↓        # 默认为下面配置的author.name ↓
 
 [author]                  # essential                     # 必需
-  name = "olOwOlo"
+  name = "xianmin"
 
 [sitemap]                 # essential                     # 必需
   changefreq = "weekly"
@@ -58,7 +61,7 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   dateFormatToUse = "2006-01-02"
 
   # show word count and read time ?                       # 是否显示字数统计与阅读时间
-  moreMeta = false
+  moreMeta = true
 
   # 一些全局开关，你也可以在每一篇内容的 front matter 中针对单篇内容关闭或开启某些功能，在 archetypes/default.md 查看更多信息。
   # Some global options, you can also close or open something in front matter for a single post, see more information from `archetypes/default.md`.
@@ -67,8 +70,6 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   fancybox = true           # see https://github.com/fancyapps/fancybox                 # 是否启用fancybox（图片可点击）
   bootcdn = false           # In china. @Deprecated: use [params.publicCDN]             # 是否使用bootcdn(@Deprecated: 请使用[params.publicCDN])
   mathjax = false           # see https://www.mathjax.org/                              # 是否使用mathjax（数学公式）
-  linkToMarkDown = false    # if you config contentCopyright and hugo output .md files. # 是否在链接到markdown原始文件（如果你配置了下面的许可协议并允许hugo生成markdown文件）
-
   contentCopyright = '<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>'
 
   changyanAppid = ""        # Changyan app id             # 畅言
@@ -104,21 +105,3 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
     k-pocket = "http://localhost:1313"
     l-tumblr = "http://localhost:1313"
     m-instagram = "http://localhost:1313"
-
-# 将下面这段配置取消注释可以使 hugo 生成 .md 文件
-# Uncomment these options to make hugo output .md files.
-#[mediaTypes]
-#  [mediaTypes."text/plain"]
-#    suffix = "md"
-#
-#[outputFormats.MarkDown]
-#  mediaType = "text/plain"
-#  isPlainText = true
-#  isHTML = false
-#
-#[outputs]
-#  home = ["HTML", "RSS"]
-#  page = ["HTML", "MarkDown"]
-#  section = ["HTML", "RSS"]
-#  taxonomy = ["HTML", "RSS"]
-#  taxonomyTerm = ["HTML"]
