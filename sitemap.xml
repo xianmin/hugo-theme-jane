@@ -10,6 +10,13 @@
   </url>
   
   <url>
+    <loc>http://en.xianmin.org/hugo-theme-jane/post/jane-theme-preview/</loc>
+    <lastmod>2018-03-07T16:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://en.xianmin.org/hugo-theme-jane/post/shortcodes-preview/</loc>
     <lastmod>2018-03-05T16:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -122,7 +129,7 @@
   
   <url>
     <loc>http://en.xianmin.org/hugo-theme-jane/categories/index/</loc>
-    <lastmod>2018-03-05T16:01:23+08:00</lastmod>
+    <lastmod>2018-03-07T16:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -143,28 +150,28 @@
   
   <url>
     <loc>http://en.xianmin.org/hugo-theme-jane/post/</loc>
-    <lastmod>2018-03-05T16:01:23+08:00</lastmod>
+    <lastmod>2018-03-07T16:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://en.xianmin.org/hugo-theme-jane/tags/preview/</loc>
-    <lastmod>2018-03-05T16:01:23+08:00</lastmod>
+    <lastmod>2018-03-07T16:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://en.xianmin.org/hugo-theme-jane/tags/shortcodes/</loc>
-    <lastmod>2018-03-05T16:01:23+08:00</lastmod>
+    <lastmod>2018-03-07T16:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://en.xianmin.org/hugo-theme-jane/categories/shortcodes/</loc>
-    <lastmod>2018-03-05T16:01:23+08:00</lastmod>
+    <lastmod>2018-03-07T16:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -199,7 +206,7 @@
   
   <url>
     <loc>http://en.xianmin.org/hugo-theme-jane/tags/tag-6/</loc>
-    <lastmod>2018-03-05T16:01:23+08:00</lastmod>
+    <lastmod>2018-03-07T16:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>

@@ -6,10 +6,23 @@
     <description>Recent content in Shortcodes on Jane - A simple theme for Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 04 Mar 2018 16:01:23 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 06 Mar 2018 16:01:23 +0800</lastBuildDate>
     
 	<atom:link href="http://en.xianmin.org/hugo-theme-jane/tags/shortcodes/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Jane Theme Preview</title>
+      <link>http://en.xianmin.org/hugo-theme-jane/post/jane-theme-preview/</link>
+      <pubDate>Tue, 06 Mar 2018 16:01:23 +0800</pubDate>
+      
+      <guid>http://en.xianmin.org/hugo-theme-jane/post/jane-theme-preview/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Markdown&lt;/strong&gt; is created by &lt;a href=&#34;http://daringfireball.net/&#34;&gt;Daring Fireball&lt;/a&gt;, the original guideline is &lt;a href=&#34;http://daringfireball.net/projects/markdown/syntax&#34;&gt;here&lt;/a&gt;. Its syntax, however, varies between different parsers or editors.&lt;/p&gt;
+
+&lt;p&gt;Please note that HTML fragments in markdown source will be recognized but not parsed or rendered. Also, there may be small reformatting on the original markdown source code after saving.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Shortcodes Preview</title>
