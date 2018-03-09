@@ -4,8 +4,8 @@ enableRobotsTXT = true
 enableEmoji = true
 # theme = "jane"
 
-# language support # en / zh-cn / other...
-defaultContentLanguage = "en"
+# language support en / zh-cn / other... translations present in i18n/
+defaultContentLanguage = "en"  # Default language to use (if you setup multilingual support)
 [Languages.en]
   languageCode = "en"
 
