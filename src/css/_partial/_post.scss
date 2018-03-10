@@ -8,9 +8,8 @@
 }
 
 .post {
-  // padding: $post-padding;
   padding: 3em 5em;
-  margin-bottom: 3em;
+  margin: 0 5em 3em;
   
   // & + .post {
   //   border-top: $post-border;
@@ -27,16 +26,33 @@
 
 @media screen and (max-width: 504px) {
   .post {
-    padding: 2em 1em;
+    padding: 1em 1em;
+    margin: 0 0 2em;
   }
 
   .content-wrapper {
-    padding: 0;
+    padding: 1em 0 1px;
   }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) and (max-width: 1080px) {
   .post {
-    margin: 0 5em 3em 5em;
+    margin: 0 2em 2em;
   }
+
+  .content-wrapper {
+    padding: 2em 0 1px;
+  }
+}
+
+@media screen and (min-width: 504px) and (max-width: 899px) {
+  .post {
+    padding: 1em 1em;
+    margin: 0 1em 2em;
+  }
+
+  .content-wrapper {
+    padding: 1em 0 1px;
+  }
+
 }
