@@ -95,8 +95,7 @@
 
 @include max-screen() {
   .archive {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto 1em auto;
     padding: 1em;
 
     .archive-title .archive-name {
