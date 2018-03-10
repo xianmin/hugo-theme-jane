@@ -79,9 +79,10 @@
   }
 
   .more-post {
+    text-align: right;
+    
     .more-post-link {
       margin-top: 1em;
-      float: right;
       color: $theme-color;
       font-size: 1.1em;
       font-family: $global-serif-font-family;
@@ -93,7 +94,7 @@
   }
 }
 
-@include max-screen() {
+@media screen and (max-width: 899px) {
   .archive {
     margin: 0 auto 1em auto;
     padding: 1em;

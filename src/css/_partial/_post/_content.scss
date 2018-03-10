@@ -98,8 +98,9 @@
   }
 
   .read-more {
+    text-align: right;
+
     .read-more-link {
-      float: right;
       color: $theme-color;
       font-size: 1.1em;
       font-family: $global-serif-font-family;
