@@ -8,7 +8,7 @@
     <language>en</language>
     <lastBuildDate>Tue, 06 Mar 2018 16:01:23 +0800</lastBuildDate>
     
-	<atom:link href="http://en.xianmin.org/hugo-theme-jane/tags/tag-6/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://en.xianmin.org/hugo-theme-jane/tags/tag-6/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -17,11 +17,336 @@
       <pubDate>Tue, 06 Mar 2018 16:01:23 +0800</pubDate>
       
       <guid>http://en.xianmin.org/hugo-theme-jane/post/jane-theme-preview/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Markdown&lt;/strong&gt; is created by &lt;a href=&#34;http://daringfireball.net/&#34;&gt;Daring Fireball&lt;/a&gt;, the original guideline is &lt;a href=&#34;http://daringfireball.net/projects/markdown/syntax&#34;&gt;here&lt;/a&gt;. Its syntax, however, varies between different parsers or editors.&lt;/p&gt;
+      
+        <description>&lt;p&gt;&lt;strong&gt;Markdown&lt;/strong&gt; is created by &lt;a href=&#34;http://daringfireball.net/&#34;&gt;Daring Fireball&lt;/a&gt;, the original guideline is &lt;a href=&#34;http://daringfireball.net/projects/markdown/syntax&#34;&gt;here&lt;/a&gt;. Its syntax, however, varies between different parsers or editors.&lt;/p&gt;
 
 &lt;p&gt;Please note that HTML fragments in markdown source will be recognized but not parsed or rendered. Also, there may be small reformatting on the original markdown source code after saving.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;paragraph-and-line-breaks&#34;&gt;Paragraph and line breaks&lt;/h2&gt;
+
+&lt;p&gt;A paragraph is simply one or more consecutive lines of text. In markdown source code, paragraphs are separated by more than one blank lines. In Typora, you only need to press &lt;code&gt;Return&lt;/code&gt; to create a new paragraph.&lt;/p&gt;
+
+&lt;p&gt;Press &lt;code&gt;Shift&lt;/code&gt; + &lt;code&gt;Return&lt;/code&gt; to create a single line break. However, most markdown parser will ignore single line break, to make other markdown parsers recognize your line break, you can leave two whitespace at the end of the line, or insert &lt;code&gt;&amp;lt;br/&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;headers&#34;&gt;Headers&lt;/h2&gt;
+
+&lt;p&gt;Headers use 1-6 hash characters at the start of the line, corresponding to header levels 1-6. For example:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;# This is an H1
+
+## This is an H2
+
+###### This is an H6
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In typora, input ‘#’s followed by title content, and press &lt;code&gt;Return&lt;/code&gt; key will create a header.&lt;/p&gt;
+
+&lt;h2 id=&#34;blockquotes&#34;&gt;Blockquotes&lt;/h2&gt;
+
+&lt;p&gt;Markdown uses email-style &amp;gt; characters for block quoting. They are presented as:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;This is a blockquote with two paragraphs. This is first paragraph.&lt;/p&gt;
+
+&lt;p&gt;This is second pragraph.Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.&lt;/p&gt;
+
+&lt;p&gt;This is another blockquote with one paragraph. There is three empty line to seperate two blockquote.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In typora, just input ‘&amp;gt;’ followed by quote contents a block quote is  generated. Typora will insert proper ‘&amp;gt;’ or line break for you. Block quote inside anther block quote is allowed by adding additional levels of ‘&amp;gt;’.&lt;/p&gt;
+
+&lt;h2 id=&#34;lists&#34;&gt;Lists&lt;/h2&gt;
+
+&lt;p&gt;Input &lt;code&gt;* list item 1&lt;/code&gt; will create an un-ordered list, the &lt;code&gt;*&lt;/code&gt; symbol can be replace with &lt;code&gt;+&lt;/code&gt; or &lt;code&gt;-&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Input &lt;code&gt;1. list item 1&lt;/code&gt; will create an ordered list, their markdown source code is like:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Red&lt;/li&gt;
+&lt;li&gt;Green&lt;/li&gt;
+&lt;li&gt;Blue&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Red&lt;/li&gt;
+&lt;li&gt;Green&lt;/li&gt;
+&lt;li&gt;Blue&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;task-list&#34;&gt;Task List&lt;/h2&gt;
+
+&lt;p&gt;Task lists are lists with items marked as either [ ] or &lt;a href=&#34;incomplete or complete&#34;&gt;x&lt;/a&gt;. For example:&lt;/p&gt;
+
+&lt;ul class=&#34;task-list&#34;&gt;
+&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; a task list item&lt;/label&gt;&lt;/li&gt;
+&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; list syntax required&lt;/label&gt;&lt;/li&gt;
+&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; normal &lt;strong&gt;formatting&lt;/strong&gt;, @mentions, #1234 refs&lt;/label&gt;&lt;/li&gt;
+&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; incomplete&lt;/label&gt;&lt;/li&gt;
+&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; checked disabled class=&#34;task-list-item&#34;&gt; completed&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You can change the complete/incomplete state by click the checkbox before the item.&lt;/p&gt;
+
+&lt;h2 id=&#34;syntax-highlighting&#34;&gt;Syntax Highlighting&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-js&#34;&gt;function helloWorld () {
+  alert(&amp;quot;Hello, World!&amp;quot;)
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;public class HelloWorld {
+  public static void main(String[] args) {
+    System.out.println(&amp;quot;Hello, World!&amp;quot;);
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;math-blocks&#34;&gt;Math Blocks&lt;/h2&gt;
+
+&lt;p&gt;You can render *LaTeX* mathematical expressions using &lt;strong&gt;MathJax&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Input &lt;code&gt;$$&lt;/code&gt;, then press &amp;lsquo;Return&amp;rsquo; key will trigger an input field which accept &lt;em&gt;Tex/LaTex&lt;/em&gt; source. Following is an example:
+$$
+\mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix}
+\mathbf{i} &amp;amp; \mathbf{j} &amp;amp; \mathbf{k} &lt;br /&gt;
+\frac{\partial X}{\partial u} &amp;amp;  \frac{\partial Y}{\partial u} &amp;amp; 0 &lt;br /&gt;
+\frac{\partial X}{\partial v} &amp;amp;  \frac{\partial Y}{\partial v} &amp;amp; 0 &lt;br /&gt;
+\end{vmatrix}
+$$&lt;/p&gt;
+
+&lt;p&gt;In markdown source file, math block is &lt;em&gt;LaTeX&lt;/em&gt; expression wrapped by ‘$$’ mark:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;$$
+\mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix} 
+\mathbf{i} &amp;amp; \mathbf{j} &amp;amp; \mathbf{k} \\
+\frac{\partial X}{\partial u} &amp;amp;  \frac{\partial Y}{\partial u} &amp;amp; 0 \\
+\frac{\partial X}{\partial v} &amp;amp;  \frac{\partial Y}{\partial v} &amp;amp; 0 \\
+\end{vmatrix}
+$$
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;tables&#34;&gt;Tables&lt;/h2&gt;
+
+&lt;p&gt;Input &lt;code&gt;| First Header  | Second Header |&lt;/code&gt; and press &lt;code&gt;return&lt;/code&gt; key will create a table with two column.&lt;/p&gt;
+
+&lt;p&gt;After table is created, focus on that table will pop up a toolbar for table, where you can resize, align, or delete table. You can also use context menu to copy and add/delete column/row.&lt;/p&gt;
+
+&lt;p&gt;Following descriptions can be skipped, as markdown source code for tables are generated by typora automatically.&lt;/p&gt;
+
+&lt;p&gt;In markdown source code, they look like:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;First Header&lt;/th&gt;
+&lt;th&gt;Second Header&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Content Cell&lt;/td&gt;
+&lt;td&gt;Content Cell&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Content Cell&lt;/td&gt;
+&lt;td&gt;Content Cell&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&#34;footnotes&#34;&gt;Footnotes&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;You can create footnotes like this[^footnote].
+
+[^footnote]: Here is the *text* of the **footnote**.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;will produce:&lt;/p&gt;
+
+&lt;p&gt;You can create footnotes like this&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:footnote&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:footnote&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;p&gt;Mouse on the ‘footnote’ superscript to see content of the footnote.&lt;/p&gt;
+
+&lt;h2 id=&#34;horizontal-rules&#34;&gt;Horizontal Rules&lt;/h2&gt;
+
+&lt;p&gt;Input &lt;code&gt;***&lt;/code&gt; or &lt;code&gt;---&lt;/code&gt; on a blank line and press &lt;code&gt;return&lt;/code&gt; will draw a horizontal line.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+
+&lt;p&gt;Markdown supports two style of links: inline and reference.&lt;/p&gt;
+
+&lt;p&gt;In both styles, the link text is delimited by [square brackets].&lt;/p&gt;
+
+&lt;p&gt;To create an inline link, use a set of regular parentheses immediately after the link text’s closing square bracket. Inside the parentheses, put the URL where you want the link to point, along with an optional title for the link, surrounded in quotes. For example:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;This is [an example](http://example.com/ &amp;quot;Title&amp;quot;) inline link.
+
+[This link](http://example.net/) has no title attribute.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;will produce:&lt;/p&gt;
+
+&lt;p&gt;This is &lt;a href=&#34;http://example.com/&#34; title=&#34;Title&#34;&gt;an example&lt;/a&gt; inline link. (&lt;code&gt;&amp;lt;p&amp;gt;This is &amp;lt;a href=&amp;quot;http://example.com/&amp;quot; title=&amp;quot;Title&amp;quot;&amp;gt;&lt;/code&gt;)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://example.net/&#34;&gt;This link&lt;/a&gt; has no title attribute. (&lt;code&gt;&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;http://example.net/&amp;quot;&amp;gt;This link&amp;lt;/a&amp;gt; has no&lt;/code&gt;)&lt;/p&gt;
+
+&lt;h3 id=&#34;internal-links&#34;&gt;Internal Links&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;You can set the href to headers&lt;/strong&gt;, which will create a bookmark that allow you to jump to that section after clicking. For example:&lt;/p&gt;
+
+&lt;p&gt;Command(on Windows: Ctrl) + Click &lt;a href=&#34;#block-elements&#34;&gt;This link&lt;/a&gt; will jump to header &lt;code&gt;Block Elements&lt;/code&gt;. To see how to write that, please move cursor or click that link with &lt;code&gt;⌘&lt;/code&gt; key pressed to expand the element into markdown source.&lt;/p&gt;
+
+&lt;h3 id=&#34;reference-links&#34;&gt;Reference Links&lt;/h3&gt;
+
+&lt;p&gt;Reference-style links use a second set of square brackets, inside which you place a label of your choosing to identify the link:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;This is [an example][id] reference-style link.
+
+Then, anywhere in the document, you define your link label like this, on a line by itself:
+
+[id]: http://example.com/  &amp;quot;Optional Title Here&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In typora, they will be rendered like:&lt;/p&gt;
+
+&lt;p&gt;This is &lt;a href=&#34;http://example.com/&#34; title=&#34;Optional Title Here&#34;&gt;an example&lt;/a&gt; reference-style link.&lt;/p&gt;
+
+&lt;p&gt;The implicit link name shortcut allows you to omit the name of the link, in which case the link text itself is used as the name. Just use an empty set of square brackets — e.g., to link the word “Google” to the google.com web site, you could simply write:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;[Google][]
+And then define the link:
+
+[Google]: http://google.com/
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In typora click link will expand it for editing, command+click will open the hyperlink in web browser.&lt;/p&gt;
+
+&lt;h2 id=&#34;urls&#34;&gt;URLs&lt;/h2&gt;
+
+&lt;p&gt;Typora allows you to insert urls as links, wrapped by &lt;code&gt;&amp;lt;&lt;/code&gt;brackets&lt;code&gt;&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;&amp;lt;i@typora.io&amp;gt;&lt;/code&gt; becomes &lt;a href=&#34;mailto:i@typora.io&#34;&gt;i@typora.io&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Typora will aslo auto link standard URLs. e.g: www.google.com.&lt;/p&gt;
+
+&lt;h2 id=&#34;images&#34;&gt;Images&lt;/h2&gt;
+
+&lt;p&gt;Image looks similar with links, but it requires an additional &lt;code&gt;!&lt;/code&gt; char before the start of link. Image syntax looks like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;![Alt text](/path/to/img.jpg)
+
+![Alt text](/path/to/img.jpg &amp;quot;Optional title&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You are able to use drag &amp;amp; drop to insert image from image file or we browser. And modify the markdown source code by clicking on the image. Relative path will be used if image is in same directory or sub-directory with current editing document when drag &amp;amp; drop.&lt;/p&gt;
+
+&lt;p&gt;For more tips on images, please read &lt;a href=&#34;http://support.typora.io//Images/&#34;&gt;http://support.typora.io//Images/&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;emphasis&#34;&gt;Emphasis&lt;/h2&gt;
+
+&lt;p&gt;Markdown treats asterisks (&lt;code&gt;*&lt;/code&gt;) and underscores (&lt;code&gt;_&lt;/code&gt;) as indicators of emphasis. Text wrapped with one &lt;code&gt;*&lt;/code&gt; or &lt;code&gt;_&lt;/code&gt; will be wrapped with an HTML &lt;code&gt;&amp;lt;em&amp;gt;&lt;/code&gt; tag. E.g:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;*single asterisks*
+
+_single underscores_
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;output:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;single asterisks&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;single underscores&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;GFM will ignores underscores in words, which is commonly used in code and names, like this:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;wow_great_stuff&lt;/p&gt;
+
+&lt;p&gt;do_this_and_do_that_and_another_thing.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;To produce a literal asterisk or underscore at a position where it would otherwise be used as an emphasis delimiter, you can backslash escape it:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;\*this text is surrounded by literal asterisks\*
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Typora recommends to use &lt;code&gt;*&lt;/code&gt; symbol.&lt;/p&gt;
+
+&lt;h2 id=&#34;strong&#34;&gt;Strong&lt;/h2&gt;
+
+&lt;p&gt;double *’s or _’s will be wrapped with an HTML &lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt; tag, e.g:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;**double asterisks**
+
+__double underscores__
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;output:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;double asterisks&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;double underscores&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Typora recommends to use &lt;code&gt;**&lt;/code&gt; symbol.&lt;/p&gt;
+
+&lt;h2 id=&#34;code&#34;&gt;Code&lt;/h2&gt;
+
+&lt;p&gt;To indicate a span of code, wrap it with backtick quotes (`). Unlike a pre-formatted code block, a code span indicates code within a normal paragraph. For example:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;Use the `printf()` function.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;will produce:&lt;/p&gt;
+
+&lt;p&gt;Use the &lt;code&gt;printf()&lt;/code&gt; function.&lt;/p&gt;
+
+&lt;h2 id=&#34;strikethrough&#34;&gt;Strikethrough&lt;/h2&gt;
+
+&lt;p&gt;GFM adds syntax to create strikethrough text, which is missing from standard Markdown.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;~~Mistaken text.~~&lt;/code&gt; becomes &lt;del&gt;Mistaken text.&lt;/del&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;underline&#34;&gt;Underline&lt;/h2&gt;
+
+&lt;p&gt;Underline is powered by raw HTML.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;&amp;lt;u&amp;gt;Underline&amp;lt;/u&amp;gt;&lt;/code&gt; becomes &lt;u&gt;Underline&lt;/u&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;emoji-happy&#34;&gt;Emoji :happy:&lt;/h2&gt;
+
+&lt;p&gt;Input emoji with syntax &lt;code&gt;😄&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;User can trigger auto-complete suggestions for emoji by pressing &lt;code&gt;ESC&lt;/code&gt; key, or trigger it automatically after enable it on preference panel. Also, input UTF8 emoji char directly from &lt;code&gt;Edit&lt;/code&gt; -&amp;gt; &lt;code&gt;Emoji &amp;amp; Symbols&lt;/code&gt; from menu bar is also supported.&lt;/p&gt;
+
+&lt;h2 id=&#34;inline-math&#34;&gt;Inline Math&lt;/h2&gt;
+
+&lt;p&gt;To use this feature, first, please enable it in &lt;code&gt;Preference&lt;/code&gt; Panel -&amp;gt; &lt;code&gt;Markdown&lt;/code&gt; Tab. Then use &lt;code&gt;$&lt;/code&gt; to wrap TeX command, for example: &lt;code&gt;$\lim_{x \to \infty} \exp(-x) = 0$&lt;/code&gt; will be rendered as LaTeX command.&lt;/p&gt;
+
+&lt;p&gt;To trigger inline preview for inline math: input “$”, then press &lt;code&gt;ESC&lt;/code&gt; key, then input TeX command, a preview tooltip will be visible like below:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://typora.io/img/inline-math.gif&#34; style=&#34;zoom:50%;&#34; /&gt;&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:footnote&#34;&gt;Here is the &lt;em&gt;text&lt;/em&gt; of the &lt;strong&gt;footnote&lt;/strong&gt;.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:footnote&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</description>
+      
     </item>
     
     <item>
@@ -30,7 +355,8 @@
       <pubDate>Sun, 04 Mar 2018 16:01:23 +0800</pubDate>
       
       <guid>http://en.xianmin.org/hugo-theme-jane/post/shortcodes-preview/</guid>
-      <description>&lt;h2 id=&#34;what-a-shortcode-is&#34;&gt;What a Shortcode is&lt;/h2&gt;
+      
+        <description>&lt;h2 id=&#34;what-a-shortcode-is&#34;&gt;What a Shortcode is&lt;/h2&gt;
 
 &lt;p&gt;Hugo loves Markdown because of its simple content format, but there are times when Markdown falls short. Often, content authors are forced to add raw HTML (e.g., video &lt;code&gt;&amp;lt;iframes&amp;gt;&lt;/code&gt;) to Markdown content. We think this contradicts the beautiful simplicity of Markdown&amp;rsquo;s syntax.&lt;/p&gt;
 
@@ -42,7 +368,381 @@
 
 &lt;p&gt;More details: &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/&#34;&gt;https://gohugo.io/content-management/shortcodes/&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;blockquotes&#34;&gt;blockquotes&lt;/h2&gt;
+
+&lt;p&gt;Normal quote:
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+&lt;blockquote&gt;
+  &lt;p&gt;
+  This is a simple quote.
+&lt;/p&gt;
+  &lt;footer&gt;
+    &lt;strong&gt;&lt;/strong&gt;
+    
+      
+    
+  &lt;/footer&gt;
+&lt;/blockquote&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Quote with author:
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+
+
+
+
+
+  
+
+
+&lt;blockquote&gt;
+  &lt;p&gt;
+  This is a quote with only an Author named Author2.
+&lt;/p&gt;
+  &lt;footer&gt;
+    &lt;strong&gt;Author2&lt;/strong&gt;
+    
+      
+    
+  &lt;/footer&gt;
+&lt;/blockquote&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Quote with author and source:
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+
+
+
+
+
+  
+
+
+&lt;blockquote&gt;
+  &lt;p&gt;
+  This is a quote from Author3 and source &#34;source.&#34;
+&lt;/p&gt;
+  &lt;footer&gt;
+    &lt;strong&gt;Author3&lt;/strong&gt;
+    
+      &lt;cite&gt;Source&lt;/cite&gt;
+    
+  &lt;/footer&gt;
+&lt;/blockquote&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Quote with author and link:
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+
+
+
+
+
+      
+      
+      
+    
+     
+      
+    
+    
+
+    
+    
+  
+
+
+&lt;blockquote&gt;
+  &lt;p&gt;
+  This is a quote from Author4 and links to https://www.google.com.
+&lt;/p&gt;
+  &lt;footer&gt;
+    &lt;strong&gt;Author4&lt;/strong&gt;
+    
+      
+        &lt;cite&gt;
+          &lt;a href=&#34;https://www.google.com&#34; title=&#34;https://www.google.com&#34;&gt;google.com&lt;/a&gt; 
+        &lt;/cite&gt;
+      
+    
+  &lt;/footer&gt;
+&lt;/blockquote&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Quote with author, link and title:
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+
+
+
+
+
+  
+
+
+&lt;blockquote&gt;
+  &lt;p&gt;
+  This is a quote from Author5 and links to https://www.google.com with title &#34;Google.&#34;
+&lt;/p&gt;
+  &lt;footer&gt;
+    &lt;strong&gt;Author5&lt;/strong&gt;
+    
+      
+        &lt;cite&gt;
+          &lt;a href=&#34;https://www.google.com&#34; title=&#34;https://www.google.com&#34;&gt;Google&lt;/a&gt; 
+        &lt;/cite&gt;
+      
+    
+  &lt;/footer&gt;
+&lt;/blockquote&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Quote with author and a link longer than 32 characters, string is first cut at 32 characters then everything after the last forward slash is removed
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+
+
+
+
+
+      
+      
+      
+    
+     
+      
+    
+    
+
+    
+    
+         
+         
+         
+
+         
+        
+        
+        
+        
+      
+      
+    
+  
+
+
+&lt;blockquote&gt;
+  &lt;p&gt;
+  This is a quote from Author5 and links to https://twitter.com/CryptoGangsta/status/716427930126196737 which is longer than 32 characters.
+  &lt;br&gt;And this is a new line in the quote with the HTML br tag.
+&lt;/p&gt;
+  &lt;footer&gt;
+    &lt;strong&gt;Author6&lt;/strong&gt;
+    
+      
+        &lt;cite&gt;
+          &lt;a href=&#34;https://twitter.com/CryptoGangsta/status/716427930126196737&#34; title=&#34;https://twitter.com/CryptoGangsta/status/716427930126196737&#34;&gt;twitter.com/CryptoGangsta/...&lt;/a&gt; 
+        &lt;/cite&gt;
+      
+    
+  &lt;/footer&gt;
+&lt;/blockquote&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Test from the Octopress blockquote page at: &lt;a href=&#34;http://octopress.org/docs/plugins/blockquote/&#34;&gt;http://octopress.org/docs/plugins/blockquote/&lt;/a&gt;
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+
+
+
+
+
+      
+      
+      
+    
+     
+      
+    
+    
+
+    
+    
+         
+         
+         
+
+         
+        
+        
+        
+        
+        
+        
+      
+      
+    
+  
+
+
+&lt;blockquote&gt;
+  &lt;p&gt;
+  Over the past 24 hours I&#39;ve been reflecting on my life &amp; I&#39;ve realized only one thing. I need a medieval battle axe.
+&lt;/p&gt;
+  &lt;footer&gt;
+    &lt;strong&gt;@allanbranch&lt;/strong&gt;
+    
+      
+        &lt;cite&gt;
+          &lt;a href=&#34;https://twitter.com/allanbranch/status/90766146063712256&#34; title=&#34;https://twitter.com/allanbranch/status/90766146063712256&#34;&gt;twitter.com/allanbranch/status/...&lt;/a&gt; 
+        &lt;/cite&gt;
+      
+    
+  &lt;/footer&gt;
+&lt;/blockquote&gt;
+&lt;/p&gt;
+
+&lt;h2 id=&#34;music&#34;&gt;music&lt;/h2&gt;
+
+  &lt;iframe style=&#34;max-width: 100%&#34;
+      class=&#34;music163&#34;
+      frameborder=&#34;no&#34;
+      border=&#34;0&#34;
+      marginwidth=&#34;0&#34;
+      marginheight=&#34;0&#34;
+      width=&#34;330&#34;
+      height=&#34;86&#34;
+      src=&#34;//music.163.com/outchain/player?type=2&amp;id=3950552&amp;auto=0&amp;height=66&#34;&gt;
+    &lt;/iframe&gt;
+
+&lt;h2 id=&#34;gist&#34;&gt;gist&lt;/h2&gt;
+
+&lt;p&gt;We can embed the gist in our content via username and gist ID pulled from the URL:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;{{&amp;lt; gist spf13 7896402 &amp;gt;}}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Display:&lt;/p&gt;
+
+&lt;script src=&#34;//gist.github.com/spf13/7896402.js&#34;&gt;&lt;/script&gt;
+
+&lt;h2 id=&#34;youtube&#34;&gt;youtube&lt;/h2&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/w7Ft2ymGmfc&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; allowfullscreen frameborder=&#34;0&#34; title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
+
+
+&lt;h2 id=&#34;vimeo&#34;&gt;vimeo&lt;/h2&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//player.vimeo.com/video/146022717&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+ &lt;/div&gt;</description>
+      
     </item>
     
   </channel>
