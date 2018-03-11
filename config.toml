@@ -2,7 +2,7 @@ baseURL = "http://en.xianmin.org/hugo-theme-jane/"
 title = "Jane - A simple theme for Hugo"
 enableRobotsTXT = true
 enableEmoji = true
-# theme = "jane"
+theme = "jane"
 
 # language support en / zh-cn / other... translations present in i18n/
 defaultContentLanguage = "en"  # Default language to use (if you setup multilingual support)
@@ -49,6 +49,7 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   debug = false             # If true, load `eruda.min.js`. See https://github.com/liriliri/eruda
 
   since = "2017"            # Site creation time          # 站点建立时间
+  homeFullContent = false   # if false, show post summaries on home page. Othewise show full content.
   rssFullContent = true     # if false, Rss feed instead of the summary
 
   # site info (optional)                                  # 站点信息（可选，不需要的可以直接注释掉）
