@@ -18,17 +18,17 @@
   </header>
   <!-- Content -->
   <div class="post-content">
-      {{ if .Site.Params.homeFullContent }}
-      <div class="post-summary">
-        {{ .Content }}
-      </div>
-      {{ else }}
-      <div class="post-summary">
-        {{ .Summary }}
-      </div>
-      <div class="read-more">
-        <a href="{{ .URL }}" class="read-more-link">{{ i18n "readmore" }}</a>
-      </div>
+    {{ if .Site.Params.homeFullContent }}
+    <div class="post-summary">
+      {{ .Content }}
+    </div>
+    {{ else }}
+    <div class="post-summary">
+      {{ .Summary }}
+    </div>
+    <div class="read-more">
+      <a href="{{ .URL }}" class="read-more-link">{{ i18n "readmore" }}</a>
+    </div>
     {{ end }}
   </div>
 </article>

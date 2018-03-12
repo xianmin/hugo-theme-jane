@@ -5,8 +5,9 @@
   "main": "",
   "scripts": {
     "build": "webpack",
+    "demo": "hugo --contentDir='./exampleSite/content' --config='dev-config.toml' ",
     "dev:assets": "webpack --watch --display='errors-only' ",
-    "dev:site": "hugo server --buildDrafts --contentDir='./exampleSite/content' ",
+    "dev:site": "hugo server --buildDrafts --contentDir='./exampleSite/content' --config='dev-config.toml' ",
     "dev": "concurrently 'npm run dev:assets' 'npm run dev:site' ",
     "clean": "rm -rf ./public"
   },
