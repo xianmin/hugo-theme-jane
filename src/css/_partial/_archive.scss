@@ -46,13 +46,19 @@
     padding: $archive-post-padding;
     border-bottom: $archive-post-border;
     font-size: 1.1em;
+    display: table;
+    width: 100%;
 
     .archive-post-time {
-      margin-right: 50px;
-      color: $dark-gray;
+       color: $dark-gray;
+      display: table-cell;
+      width: 7em;
+      vertical-align: middle;
     }
 
     .archive-post-title {
+      display: table-cell;
+      vertical-align: middle;
       
       .archive-post-link {
         color: $theme-color;
@@ -113,6 +119,10 @@
 
       .archive-post-time {
         font-size: $archive-post-mobile-time-font-size;
+        display: block;
+      }
+
+      .archive-post-title {
         display: block;
       }
     }
