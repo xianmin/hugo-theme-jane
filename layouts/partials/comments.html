@@ -1,4 +1,5 @@
 {{ if and .IsPage (ne .Params.comment false) }}
+
   <!-- Disqus -->
   {{- if .Site.DisqusShortname -}}
     <div class="disqus-button" id="load_disqus" onclick="load_disqus()">
@@ -37,4 +38,33 @@
     })();
     </script>
   {{- end }}
+
+  <!-- gitment -->
+  {{- if .Site.Params.gitment.owner -}}
+  <div id="comments-gitment"></div>
+  {{ if .Site.Params.publicCDN.enable -}}
+    {{ .Site.Params.publicCDN.gitmentCSS | safeHTML }}
+    {{ .Site.Params.publicCDN.gitmentJS | safeHTML }}
+  {{- else -}}
+    <link rel="stylesheet" href="{{ "lib/gitment/gitment-0.0.3.min.css" | relURL }}">
+    <script src="{{ "lib/gitment/gitment-0.0.3.min.js" | relURL }}"></script>
+  {{- end }}
+  <script type="text/javascript">
+  const gitment = new Gitment({
+    id: '{{ .Date }}',
+    title: '{{ .Title }}',
+    link: decodeURI(location.href),
+    desc: '{{ .Summary }}',
+    owner: '{{ .Site.Params.gitment.owner }}',
+    repo: '{{ .Site.Params.gitment.repo }}',
+    oauth: {
+      client_id: '{{ .Site.Params.gitment.clientId }}',
+      client_secret: '{{ .Site.Params.gitment.clientSecret }}'
+    }
+  })
+  gitment.render('comments-gitment')
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://github.com/imsun/gitment">comments powered by gitment.</a></noscript>
+  {{- end }}
+
 {{- end }}
