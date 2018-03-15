@@ -147,9 +147,9 @@ To use the translations:
 
 ```toml
 # use Chinese translation
-defaultContentLanguage = "zh-CN"  # Default language to use (if you setup multilingual support)
-[Languages.zh-CN]
-  languageCode = "zh-CN"
+defaultContentLanguage = "zh-cn"  # Default language to use (if you setup multilingual support)
+[Languages.zh-cn]
+  languageCode = "zh-cn"
 ```
 
 To use the Multilingual Mode, see [Multilingual Mode | Hugo](https://gohugo.io/content-management/multilingual/) .
