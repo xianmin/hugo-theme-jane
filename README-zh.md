@@ -141,9 +141,9 @@ Hugo-Theme-Jane 支持创建多语言网站。
 
 ```toml
 # 使用中文
-defaultContentLanguage = "zh-CN"  # 默认使用的语言
-[Languages.zh-CN]
-  languageCode = "zh-CN"
+defaultContentLanguage = "zh-cn"  # 默认使用的语言
+[Languages.zh-cn]
+  languageCode = "zh-cn"
 ```
 
 有关多语言设置，请查看 [Multilingual Mode | Hugo](https://gohugo.io/content-management/multilingual/) 。
