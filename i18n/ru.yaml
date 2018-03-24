@@ -1,39 +1,39 @@
 - id: archive
-  translation: Archive
+  translation: Архив
 
 - id: tags
-  translation: Tags
+  translation: Теги
 
 - id: tag
-  translation: "Tag: "
+  translation: "Тег: "
 
 - id: categories
-  translation: Categories
+  translation: Категории
 
 - id: category
-  translation: "Category: "
+  translation: "Категория: "
 
 # posts
 - id: prev
-  translation: Prev
+  translation: Пред.
 
 - id: next
-  translation: Next
+  translation: След.
 
 - id: prev_post
-  translation: Prev
+  translation: Пред.
 
 - id: next_post
-  translation: Next
+  translation: След.
 
 - id: toc
-  translation: Table of Contents
+  translation: Оглавление
 
 - id: readmore
-  translation: Read more
+  translation: Читать дальше
 
 - id: reward
-  translation: Reward
+  translation: Поддержка
 
 - id: rewardAlipay
   translation: Alipay
@@ -42,21 +42,21 @@
   translation: Wechat
 
 - id: seeMarkDown
-  translation: The Markdown version »
+  translation: Версия в Markdown »
 
 - id: loadDisqus
-  translation: Show Disqus Comments
+  translation: Показать комментарии Disqus
 
 # posts.header
 - id: wordCount
-  translation: "{{.Count}} words"
+  translation: "{{.Count}} слов"
 
 - id: readingTime
-  translation: "{{.Count}} min read"
+  translation: "{{.Count}} мин. чтения"
 
 # copyright
 - id: author
-  translation: Author
+  translation: Автор
 
 - id: lastMod
   translation: LastMod
@@ -65,18 +65,18 @@
   translation: Markdown
 
 - id: license
-  translation: License
+  translation: Лицензия
 
 # counter
 - id: counter_archives
-  translation: "{{.Count}} posts In Total"
+  translation: "всего {{.Count}} записей"
 
 - id: counter_tagcloud
-  translation: "{{.Count}} Tags In Total"
+  translation: "всего {{.Count}} тегов"
 
 - id: counter_categories
-  translation: "{{.Count}} Categories In Total"
+  translation: "всего {{.Count}} категорий"
 
 # other
 - id: morePost
-  translation: "More Post >>>"
+  translation: "Больше записей >>>"
