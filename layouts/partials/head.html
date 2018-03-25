@@ -93,3 +93,6 @@
 {{- if .Site.GoogleAnalytics -}}
   {{ template "_internal/google_analytics_async.html" . }}
 {{- end -}}
+
+<!-- Custom head -->
+{{ partial "custom_head.html" . }}

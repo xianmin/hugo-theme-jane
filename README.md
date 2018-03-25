@@ -4,7 +4,7 @@
 
 Jane is a readable theme for Hugo. It's a fork of the [hugo-theme-even](https://github.com/olOwOlo/hugo-theme-even) and made a lot of changes.
 
-[Demo](http://en.xianmin.org/hugo-theme-jane/) | [My blog](http://www.xianmin.org) | [中文说明](https://github.com/xianmin/hugo-theme-jane/blob/master/README-zh.md)
+[Demo](http://en.xianmin.org/hugo-theme-jane/) | [中文说明](https://github.com/xianmin/hugo-theme-jane/blob/master/README-zh.md)
 
 This theme focuses on improving reading experience.
 
@@ -17,6 +17,12 @@ This theme focuses on improving reading experience.
 - Social network linking
 
 
+## Who use Hugo-theme-Jane
+
+- [ATFeng](https://www.gooth.org/) - A beautiful blog fork from Jane.
+- [Jack Baty's Blog](https://www.baty.net/) - Thousands of posts on the site powered by Hugo & Theme Jane.
+- [贤民的比特记忆](http://www.xianmin.org/) - A Chinese blog.
+- Waiting to add more...
 
 
 ## Quick Start
@@ -155,23 +161,17 @@ defaultContentLanguage = "zh-cn"  # Default language to use (if you setup multil
 To use the Multilingual Mode, see [Multilingual Mode | Hugo](https://gohugo.io/content-management/multilingual/) .
 
 
+## Contributing
 
-## How To Develop
+If you are interested in fixing issues and contributing directly to this theme, please see the document [How to Contribute](https://github.com/xianmin/hugo-theme-jane/wiki/How-to-Contribute) .
 
-Install all dependencies using `npm`:
+There are many ways to contribute to the Jane theme:
 
-```bash
-npm install
-```
-
-then
-
-```bash
-npm run dev
-```
-
-This command will run  `webpack --watch` and `hugo server`  together. If you change anyfile, the browser should be auto-reload.
-
+- submitting pull requests
+- reporting issues
+- providing new translations
+- creating suggestions
+- Correct inappropriate English expression (ok, my English is not good)
 
 
 ## License
