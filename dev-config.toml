@@ -119,3 +119,5 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
     k-pocket = "http://en.xianmin.org/hugo-theme-jane/"
     l-tumblr = "http://en.xianmin.org/hugo-theme-jane/"
     m-instagram = "http://en.xianmin.org/hugo-theme-jane/"
+    n-gitlab = "http://en.xianmin.org/hugo-theme-jane/"
+    o-goodreads = "http://en.xianmin.org/hugo-theme-jane/"

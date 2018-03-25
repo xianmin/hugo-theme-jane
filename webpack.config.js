@@ -1,6 +1,8 @@
-const path = require('path')
-const ExtractTextPlugin = require("extract-text-webpack-plugin")
-const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
+const path = require('path');
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
+const IconfontWebpackPlugin = require('iconfont-webpack-plugin');
+
 
 const extractSass = new ExtractTextPlugin({
   filename: `jane.min.css`
@@ -26,14 +28,27 @@ module.exports = {
       {
         test: /\.scss$/,
         use: extractSass.extract({
-          use: [{
-            loader: 'css-loader', options: {minimize: true, sourceMap: true}
-          }, {
-            loader: 'postcss-loader', options: {sourceMap: true}
-          }, {
-            loader: 'sass-loader', options: {sourceMap: true}
-          }],
-          fallback: 'style-loader'
+          use: [
+            {
+              loader: 'css-loader', options: { minimize: true, sourceMap: true }
+            },
+            {
+              loader: 'postcss-loader', options: {
+                sourceMap: true,
+                plugins: (loader) => [
+                  new IconfontWebpackPlugin({
+                    resolve: loader.resolve,
+                    fontNamePrefix: 'custom-',
+                    modules: false, 
+                  })
+                ]
+               }
+            },
+            {
+              loader: 'sass-loader', options: { sourceMap: true }
+            },
+          ],
+          fallback: 'style-loader',
         })
       },
       {

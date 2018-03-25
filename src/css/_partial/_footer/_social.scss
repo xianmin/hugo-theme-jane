@@ -3,7 +3,10 @@
 // =============================
 
 .social-links {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 
   .iconfont {
     font-size: $social-icon-font-size;
