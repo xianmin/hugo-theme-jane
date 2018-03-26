@@ -25,6 +25,19 @@
   <script async src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'></script>
 {{- end }}
 
+{{- with .Site.Params.tencent_analytics -}}
+<script id="tencent_analytics">
+  var _hmt = _hmt || [];
+  (function() {
+    if (window.location.hostname === 'localhost') return;
+    var hm = document.createElement("script"); hm.async = true;
+	hm.src = "//tajs.qq.com/stats?sId={{.}}";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+{{- end }}
+
 {{- with .Site.Params.baidu_analytics -}}
 <script id="baidu_analytics">
   var _hmt = _hmt || [];
