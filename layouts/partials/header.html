@@ -12,7 +12,7 @@
   <ul id="menu" class="menu">
     {{ range .Site.Menus.main -}}
       <li class="menu-item">
-        <a class="menu-item-link" href="{{ .URL | safeURL }}">{{ .Name }}</a>
+        <a class="menu-item-link" href="{{ .URL | safeURL }}" {{if hasPrefix .URL "http"}}target="_blank"{{end}}>{{ .Name }}</a>
       </li>
     {{- end }}
   </ul>
