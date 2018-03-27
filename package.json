@@ -1,6 +1,6 @@
 {
   "name": "hugo-theme-jane",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "A simple theme for hugo",
   "main": "",
   "scripts": {
@@ -9,11 +9,14 @@
     "dev:assets": "webpack --watch --display='errors-only' ",
     "dev:site": "hugo server --buildDrafts --contentDir='./exampleSite/content' --config='dev-config.toml' ",
     "dev": "concurrently 'npm run dev:assets' 'npm run dev:site' ",
-    "clean": "rm -rf ./public"
+    "clean": "rm -rf ./public",
+    "contributors:add": "all-contributors add",
+    "contributors:generate": "all-contributors generate"
   },
   "author": "xianmin",
   "license": "MIT",
   "devDependencies": {
+    "all-contributors-cli": "^4.11.1",
     "autoprefixer": "^8.1.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.3",
