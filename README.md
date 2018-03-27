@@ -1,4 +1,5 @@
 ![jane-preview](https://raw.githubusercontent.com/xianmin/hugo-theme-jane/master/images/preview.png)
+[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors)
 
 ## hugo-theme-jane
 
@@ -172,6 +173,19 @@ There are many ways to contribute to the Jane theme:
 - providing new translations
 - creating suggestions
 - Correct inappropriate English expression (ok, my English is not good)
+
+
+## Contributors
+
+Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore -->
+| [<img src="https://avatars3.githubusercontent.com/u/2177570?v=4" width="80px;"/><br /><sub><b>Chen Xianmin</b></sub>](http://www.xianmin.org)<br />[💻](https://github.com/xianmin/hugo-theme-jane/commits?author=xianmin "Code") [🎨](#design-xianmin "Design") [📖](https://github.com/xianmin/hugo-theme-jane/commits?author=xianmin "Documentation") [💬](#question-xianmin "Answering Questions") | [<img src="https://avatars3.githubusercontent.com/u/970?v=4" width="80px;"/><br /><sub><b>Jack Baty</b></sub>](https://www.baty.net)<br />[🐛](https://github.com/xianmin/hugo-theme-jane/issues?q=author%3Ajackbaty "Bug reports") [🤔](#ideas-jackbaty "Ideas, Planning, & Feedback") [⚠️](https://github.com/xianmin/hugo-theme-jane/commits?author=jackbaty "Tests") [👀](#review-jackbaty "Reviewed Pull Requests") | [<img src="https://avatars0.githubusercontent.com/u/126313?v=4" width="80px;"/><br /><sub><b>Athurg Feng</b></sub>](https://www.gooth.org)<br />[👀](#review-athurg "Reviewed Pull Requests") [⚠️](https://github.com/xianmin/hugo-theme-jane/commits?author=athurg "Tests") [🐛](https://github.com/xianmin/hugo-theme-jane/issues?q=author%3Aathurg "Bug reports") | [<img src="https://avatars1.githubusercontent.com/u/712534?v=4" width="80px;"/><br /><sub><b>Dmitry Verkhoturov</b></sub>](https://terrty.net/cv/verhoturov.pdf)<br />[👀](#review-paskal "Reviewed Pull Requests") [🌍](#translation-paskal "Translation") [🤔](#ideas-paskal "Ideas, Planning, & Feedback") |
+| :---: | :---: | :---: | :---: |
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!
 
 
 ## License

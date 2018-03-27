@@ -1,0 +1,59 @@
+{
+  "projectName": "hugo-theme-jane",
+  "projectOwner": "xianmin",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 80,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "xianmin",
+      "name": "Chen Xianmin",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/2177570?v=4",
+      "profile": "http://www.xianmin.org",
+      "contributions": [
+        "code",
+        "design",
+        "doc",
+        "question"
+      ]
+    },
+    {
+      "login": "jackbaty",
+      "name": "Jack Baty",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/970?v=4",
+      "profile": "https://www.baty.net",
+      "contributions": [
+        "bug",
+        "ideas",
+        "test",
+        "review"
+      ]
+    },
+    {
+      "login": "athurg",
+      "name": "Athurg Feng",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/126313?v=4",
+      "profile": "https://www.gooth.org",
+      "contributions": [
+        "review",
+        "test",
+        "bug"
+      ]
+    },
+    {
+      "login": "paskal",
+      "name": "Dmitry Verkhoturov",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/712534?v=4",
+      "profile": "https://terrty.net/cv/verhoturov.pdf",
+      "contributions": [
+        "review",
+        "translation",
+        "ideas"
+      ]
+    }
+  ]
+}
