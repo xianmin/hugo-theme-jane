@@ -15,9 +15,8 @@
         {{if hasPrefix .URL "http"}}
         <a class="menu-item-link" href="{{ .URL | safeURL }}" target="_blank">
           {{ .Name }}
-          <!--TODO: Replace `icon-pocket` with others from iconfont-->
-          <!--<i class="iconfont icon-pocket"></i>-->
-          </a>
+          <i class="iconfont icon-new-window"></i>
+        </a>
         {{else}}
         <a class="menu-item-link" href="{{ .URL | safeURL }}">{{ .Name }}</a>
         {{end}}
