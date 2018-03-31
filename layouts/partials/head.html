@@ -2,7 +2,16 @@
 
 <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+{{/* support older feature phones 
+  see: https://stackoverflow.com/questions/1988499/meta-tags-for-mobile-should-they-be-used
+  */}}
+<meta name="MobileOptimized" content="width"/>
+<meta name="HandheldFriendly" content="true"/>
 
+{{/* fit for browsing on mobile devices and PC, 
+  see : https://ziyuan.baidu.com/college/courseinfo?id=156
+*/}}
+<meta name="applicable-device" content="pc,mobile">
 <meta http-equiv="Cache-Control" content="no-transform" />
 <meta http-equiv="Cache-Control" content="no-siteapp" />
 
@@ -10,6 +19,8 @@
 <meta name="msapplication-navbutton-color" content="#f8f5ec">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+{{/* Add to homescreen for Chrome on Android */}}
+<meta name="mobile-web-app-capable" content="yes">
 
 <!-- author & description & keywords  -->
 <meta name="author" content="{{ if .Params.author }}{{ .Params.author | safeHTML }}{{ else }}{{ .Site.Author.name | safeHTML }}{{ end }}" />
