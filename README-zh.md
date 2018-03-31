@@ -28,7 +28,7 @@ Jane 是一个专注于阅读体验的 Hugo 主题。最早的版本基于 [hugo
 
 ### 1. 快速安装 Hugo
 
-从 [Hugo Releases][https://github.com/gohugoio/hugo/releases] 上直接下载安装适合你的版本。
+从 [Hugo Releases](https://github.com/gohugoio/hugo/releases) 上直接下载安装适合你的版本。
 
 
 
