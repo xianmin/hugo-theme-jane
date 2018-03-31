@@ -15,6 +15,7 @@ rssLimit = 20             # Limit Entry Count to Rss file # 限制 Rss 文章输
 disqusShortname = ""      # disqus_shortname
 googleAnalytics = ""      # UA-XXXXXXXX-X
 copyright = ""            # default: author.name ↓        # 默认为下面配置的author.name ↓
+# uglyURLs = true         # more info: https://gohugo.io/content-management/urls/#ugly-urls
 
 [author]                  # essential                     # 必需
   name = "xianmin"
@@ -49,10 +50,10 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   weight = 50
   url = "https://gohugo.io"
 
-uglyURLs = false 
+
 [params]
   debug = false             # If true, load `eruda.min.js`. See https://github.com/liriliri/eruda
-  uglyURLs = false          # You must set true after use uglyURLs in site (above). because $.Site.UglyURLs can not import.
+  # uglyURLs = true          # You must set true after use uglyURLs in site (above). because $.Site.UglyURLs can not import.
   since = "2017"            # Site creation time          # 站点建立时间
   homeFullContent = false   # if false, show post summaries on home page. Othewise show full content.
   rssFullContent = true     # if false, Rss feed instead of the summary

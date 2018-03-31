@@ -17,6 +17,7 @@ rssLimit = 20             # Limit Entry Count to Rss file # 限制 Rss 文章输
 disqusShortname = "xianmin12"      # disqus_shortname
 googleAnalytics = "UA-34199129-1"      # UA-XXXXXXXX-X
 copyright = ""            # default: author.name ↓        # 默认为下面配置的author.name ↓
+# uglyURLs = true
 
 [author]                  # essential                     # 必需
   name = "xianmin"
@@ -53,7 +54,7 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
 
 [params]
   debug = false             # If true, load `eruda.min.js`. See https://github.com/liriliri/eruda
-
+  # uglyURLs = true          # You must set true after use uglyURLs in site (above). because $.Site.UglyURLs can not import.
   since = "2017"            # Site creation time          # 站点建立时间
   homeFullContent = false   # if false, show post summaries on home page. Othewise show full content.
   rssFullContent = true     # if false, Rss feed instead of the summary
