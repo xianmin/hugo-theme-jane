@@ -51,7 +51,7 @@
   {{- end }}
   <script type="text/javascript">
   const gitment = new Gitment({
-    id: '{{ .Date }}',
+    id: '{{ .File.LogicalName }}',
     title: '{{ .Title }}',
     link: decodeURI(location.href),
     desc: '{{ .Summary }}',
