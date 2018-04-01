@@ -24,6 +24,7 @@ This theme focuses on improving reading experience.
 - [Jack Baty's Blog](https://www.baty.net/) - Thousands of posts on the site powered by Hugo & Theme Jane.
 - [Notes on Blue Skies](https://terrty.net) - Personal blog in Russian by @paskal
 - [贤民的比特记忆](http://www.xianmin.org/) - A Chinese blog.
+- [虞双齐爱折腾](https://yushuangqi.com/) - @ysqi 个人技术博客.
 - Waiting to add more...
 
 
