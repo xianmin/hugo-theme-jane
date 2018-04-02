@@ -1,64 +1,58 @@
 .post-toc {
-  // position: absolute;
-  // width: 15em;
-  // margin-left: $post-toc-margin-left;
-  padding: 10px;
-  font-family: $global-serif-font-family;
-  border-bottom: 2px LightGrey solid;
-  // border-radius: 5px;
-  // background: $post-toc-backgroud;
-  // box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
-  word-wrap: break-word;
-  // box-sizing: border-box;
+  display: none;
+  border: 1px solid #CCC;
+  background: white;
+  box-shadow: 0 0 1em #777777;
+  position: fixed;
+  top: 0;
+  right: 0;
+  max-height: 80%;
+  overflow: auto;
 
   .post-toc-title {
-    margin: 0 10px;
-    font-size: $post-toc-title-size;
-    font-weight: 400;
-    text-transform: uppercase;
+    font-size: 1em;
+    max-width: 9em;
+    border: 0;
+    font-weight: normal;
+    padding: 0.05em 0.5em;
+    line-height: 1em;
   }
 
   .post-toc-content {
-    font-size: $post-toc-content;
+    display: none;
+  }
 
-    &.always-active ul {
-      display: block;
-    }
+  &:hover .post-toc-content {
+    display: block;
+    padding: 0.5em;
+    margin-top: -1.5em;
+    line-height: 1.3em;
 
-    >nav>ul {
-      margin: 10px 0;
-    }
-
+    /* Hugo Table of Contents have extra dot in front */
     ul {
       padding-left: 20px;
-      list-style: $post-toc-list-style;
-
-      li > a {
-        color: #139;
-      }
-
-      li > a:hover{
-        color: #900;
-      }
+      list-style-type: none;
 
       ul {
-        list-style: circle;
+        list-style: disc;
+
+        ul {
+          list-style: circle;
+        }
+
+        li > a {
+          color: #139;
+        }
+
+        li > a:hover{
+          color: #900;
+        }
       }
-      // ul {
-      //   padding-left: 15px;
-      //   display: none;
-      // }
-
-      // .has-active > ul {
-      //   display: block;
-      // }
-    }
-
-    .toc-link.active {
-      color: $theme-color;
     }
   }
+
 }
+
 
 // @include max-screen($toc-max-sreen-width) {
 //   .post-toc {
