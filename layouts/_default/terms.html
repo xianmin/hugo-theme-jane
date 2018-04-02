@@ -39,7 +39,7 @@
     {{- end -}}
 
   {{ else if eq $name "tags" }}
-    {{ if not (eq (len $.Site.Taxonomies.tags) 0) }}
+    {{ if $.Site.Taxonomies.tags }}
       {{ $fontUnit := "rem" }}
       {{ $largestFontSize := 2.0 }}
       {{ $largestFontSize := 2.5 }}
