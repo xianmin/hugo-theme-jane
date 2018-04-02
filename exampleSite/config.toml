@@ -135,3 +135,13 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
     m-instagram = "http://localhost:1313"
     n-gitlab = "http://en.xianmin.org/hugo-theme-jane/"
     o-goodreads = "http://en.xianmin.org/hugo-theme-jane/"
+
+[outputs]
+  home = ["html", "jsonfeed"]
+  page = ["html"]
+
+[outputFormats]
+[outputFormats.jsonfeed]
+  mediaType = "application/json"
+  baseName = "feed"
+  isPlainText = true
