@@ -80,3 +80,9 @@
 # other
 - id: morePost
   translation: "More Post >>>"
+
+- id: read_ru
+  translation: Читать на русском
+
+- id: read_es
+  translation: Leer en español
