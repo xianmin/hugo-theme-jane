@@ -51,6 +51,7 @@
     right: 0;
     max-height: 80%;
     overflow: auto;
+    z-index: 99;
 
     .post-toc-content {
       display: none;
