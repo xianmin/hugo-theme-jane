@@ -105,8 +105,7 @@ Jane.toc = function () {
 
 Jane._initToc = function () {
   const $toc = $('#post-toc')
-
-  if ($toc.length) {
+  if ($toc.length && $(window).width() >= 1080) {
     $(window).scroll(function () {
       if ( $(window).scrollTop() > 100) {
         $toc.fadeIn(1000)
@@ -115,7 +114,6 @@ Jane._initToc = function () {
       }
     })
   }
-
 }
 
 export {Jane}

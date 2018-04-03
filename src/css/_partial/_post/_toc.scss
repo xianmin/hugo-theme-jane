@@ -1,13 +1,4 @@
 .post-toc {
-  display: none;
-  border: 1px solid #CCC;
-  background: white;
-  box-shadow: 0 0 1em #777777;
-  position: fixed;
-  top: 0;
-  right: 0;
-  max-height: 80%;
-  overflow: auto;
 
   .post-toc-title {
     font-size: 1em;
@@ -19,10 +10,6 @@
   }
 
   .post-toc-content {
-    display: none;
-  }
-
-  &:hover .post-toc-content {
     display: block;
     padding: 0.5em;
     margin-top: -1.5em;
@@ -53,9 +40,32 @@
 
 }
 
+@include min-screen() {
+  .post-toc {
+    display: none;
+    border: 1px solid #CCC;
+    background: white;
+    box-shadow: 0 0 1em #777777;
+    position: fixed;
+    top: 0;
+    right: 0;
+    max-height: 80%;
+    overflow: auto;
 
-// @include max-screen($toc-max-sreen-width) {
-//   .post-toc {
-//     display: none;
-//   }
-// }
+    .post-toc-content {
+      display: none;
+    }
+
+    &:hover .post-toc-content {
+      display: block;
+    }
+  }
+}
+
+@include max-screen() {
+  .post-toc {
+    padding: 10px;
+    border-bottom: 2px LightGrey solid;
+    word-wrap: break-word;
+  }
+}
