@@ -79,7 +79,6 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   # 一些全局开关，你也可以在每一篇内容的 front matter 中针对单篇内容关闭或开启某些功能，在 archetypes/default.md 查看更多信息。
   # Some global options, you can also close or open something in front matter for a single post, see more information from `archetypes/default.md`.
   toc = true                                                                            # 是否开启目录
-  autoCollapseToc = false   # Auto expand and collapse toc                              # 目录自动展开/折叠
   fancybox = true           # see https://github.com/fancyapps/fancybox                 # 是否启用fancybox（图片可点击）
   bootcdn = false           # In china. @Deprecated: use [params.publicCDN]             # 是否使用bootcdn(@Deprecated: 请使用[params.publicCDN])
   mathjax = false           # see https://www.mathjax.org/                              # 是否使用mathjax（数学公式）
