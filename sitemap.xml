@@ -31,6 +31,13 @@
   </url>
   
   <url>
+    <loc>http://en.xianmin.org/hugo-theme-jane/post/this-is-a-very-long-title/</loc>
+    <lastmod>2017-08-30T15:43:48+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://en.xianmin.org/hugo-theme-jane/post/creating-a-new-theme/</loc>
     <lastmod>2014-09-28T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -221,6 +228,13 @@
   <url>
     <loc>http://en.xianmin.org/hugo-theme-jane/tags/templates/</loc>
     <lastmod>2014-09-28T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://en.xianmin.org/hugo-theme-jane/categories/test/</loc>
+    <lastmod>2017-08-30T15:43:48+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>

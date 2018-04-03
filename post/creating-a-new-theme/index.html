@@ -9,6 +9,11 @@
 <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
+<meta name="MobileOptimized" content="width"/>
+<meta name="HandheldFriendly" content="true"/>
+
+
+<meta name="applicable-device" content="pc,mobile">
 <meta http-equiv="Cache-Control" content="no-transform" />
 <meta http-equiv="Cache-Control" content="no-siteapp" />
 
@@ -16,6 +21,8 @@
 <meta name="msapplication-navbutton-color" content="#f8f5ec">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+<meta name="mobile-web-app-capable" content="yes">
 
 
 <meta name="author" content="Michael Henderson" />
@@ -29,10 +36,12 @@ We&amp;rsquo;ll start with creating a new site with a very basic template." />
 
 
 
-<meta name="generator" content="Hugo 0.31.1" />
+<meta name="generator" content="Hugo 0.37.1" />
 
 
 <link rel="canonical" href="http://en.xianmin.org/hugo-theme-jane/post/creating-a-new-theme/" />
+
+
 
 <link rel="apple-touch-icon" sizes="180x180" href="/hugo-theme-jane/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/hugo-theme-jane/favicon-32x32.png">
@@ -84,7 +93,8 @@ We&rsquo;ll start with creating a new site with a very basic template.">
 
 
 <meta itemprop="keywords" content="go,golang,templates,themes,development," />
-<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Creating a New Theme"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Creating a New Theme"/>
 <meta name="twitter:description" content="Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&rsquo;t cover using CSS to style your theme.
 We&rsquo;ll start with creating a new site with a very basic template."/>
 
@@ -104,6 +114,8 @@ ga('create', 'UA-34199129-1', 'auto');
 ga('send', 'pageview');
 </script>
 <script async src='//www.google-analytics.com/analytics.js'></script>
+
+
 
 </head>
 <body>
@@ -129,6 +141,8 @@ ga('send', 'pageview');
         <li class="mobile-menu-item">Categories</li>
       </a><a href="/hugo-theme-jane/about/">
         <li class="mobile-menu-item">About</li>
+      </a><a href="https://gohugo.io">
+        <li class="mobile-menu-item">external-link</li>
       </a>
   </ul>
 </nav>
@@ -141,15 +155,32 @@ ga('send', 'pageview');
 <nav class="site-navbar">
   <ul id="menu" class="menu">
     <li class="menu-item">
+        
         <a class="menu-item-link" href="/hugo-theme-jane/">Home</a>
+        
       </li><li class="menu-item">
+        
         <a class="menu-item-link" href="/hugo-theme-jane/post/">Archives</a>
+        
       </li><li class="menu-item">
+        
         <a class="menu-item-link" href="/hugo-theme-jane/tags/">Tags</a>
+        
       </li><li class="menu-item">
+        
         <a class="menu-item-link" href="/hugo-theme-jane/categories/">Categories</a>
+        
       </li><li class="menu-item">
+        
         <a class="menu-item-link" href="/hugo-theme-jane/about/">About</a>
+        
+      </li><li class="menu-item">
+        
+        <a class="menu-item-link" href="https://gohugo.io" target="_blank">
+          external-link
+          <i class="iconfont icon-new-window"></i>
+        </a>
+        
       </li>
   </ul>
 </nav>
@@ -184,8 +215,7 @@ ga('send', 'pageview');
     
 <div class="post-toc" id="post-toc">
   <h2 class="post-toc-title">Table of Contents</h2>
-  
-  <div class="post-toc-content always-active">
+  <div class="post-toc-content">
     <nav id="TableOfContents">
 <ul>
 <li>
@@ -1404,9 +1434,9 @@ $ vi themes/zafta/layouts/_default/single.html
       
       <nav class="post-nav">
         
-          <a class="prev" href="/hugo-theme-jane/post/english-preview/">
+          <a class="prev" href="/hugo-theme-jane/post/this-is-a-very-long-title/">
             <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">English Creating a New Theme</span>
+            <span class="prev-text nav-default">This is a very long title This is a very long title This is a very long title This is a very long title This is a very long title</span>
             <span class="prev-text nav-mobile">Prev</span>
           </a>
         
@@ -1418,6 +1448,7 @@ $ vi themes/zafta/layouts/_default/single.html
       </nav>
     </footer>
     
+
   <div class="disqus-button" id="load_disqus" onclick="load_disqus()">
       Show Disqus Comments
     </div>
@@ -1440,6 +1471,8 @@ $ vi themes/zafta/layouts/_default/single.html
     
 
   
+
+  
   </article>
         </div>
       </div>
@@ -1447,19 +1480,21 @@ $ vi themes/zafta/layouts/_default/single.html
 
     <footer id="footer" class="footer">
       <div class="social-links">
-      <a href="mailto:your@email.com" class="iconfont icon-email" title="email"></a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" class="iconfont icon-twitter" title="twitter"></a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" class="iconfont icon-facebook" title="facebook"></a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" class="iconfont icon-linkedin" title="linkedin"></a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" class="iconfont icon-google" title="google"></a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" class="iconfont icon-github" title="github"></a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" class="iconfont icon-weibo" title="weibo"></a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" class="iconfont icon-zhihu" title="zhihu"></a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" class="iconfont icon-douban" title="douban"></a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" class="iconfont icon-pocket" title="pocket"></a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" class="iconfont icon-tumblr" title="tumblr"></a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" class="iconfont icon-instagram" title="instagram"></a>
+      <a href="mailto:your@email.com" rel="me" class="iconfont icon-email" title="email"></a>
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-google" title="google"></a>
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-github" title="github"></a>
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-douban" title="douban"></a>
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-pocket" title="pocket"></a>
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-tumblr" title="tumblr"></a>
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-instagram" title="instagram"></a>
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-gitlab" title="gitlab"></a>
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-goodreads" title="goodreads"></a>
   <a href="http://en.xianmin.org/hugo-theme-jane/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
 </div>
 

@@ -8,7 +8,7 @@
     <language>en</language>
     <lastBuildDate>Sun, 28 Sep 2014 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="http://en.xianmin.org/hugo-theme-jane/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://en.xianmin.org/hugo-theme-jane/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -17,9 +17,7 @@
       <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       
       <guid>http://en.xianmin.org/hugo-theme-jane/tags/development/</guid>
-      
-        <description></description>
-      
+      <description></description>
     </item>
     
     <item>
@@ -28,9 +26,7 @@
       <pubDate>Thu, 31 Aug 2017 15:43:48 +0800</pubDate>
       
       <guid>http://en.xianmin.org/hugo-theme-jane/tags/english/</guid>
-      
-        <description></description>
-      
+      <description></description>
     </item>
     
     <item>
@@ -39,9 +35,7 @@
       <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       
       <guid>http://en.xianmin.org/hugo-theme-jane/tags/go/</guid>
-      
-        <description></description>
-      
+      <description></description>
     </item>
     
     <item>
@@ -50,9 +44,7 @@
       <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       
       <guid>http://en.xianmin.org/hugo-theme-jane/tags/golang/</guid>
-      
-        <description></description>
-      
+      <description></description>
     </item>
     
     <item>
@@ -61,9 +53,7 @@
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
       <guid>http://en.xianmin.org/hugo-theme-jane/tags/hugo/</guid>
-      
-        <description></description>
-      
+      <description></description>
     </item>
     
     <item>
@@ -72,9 +62,7 @@
       <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
       
       <guid>http://en.xianmin.org/hugo-theme-jane/tags/jekyll/</guid>
-      
-        <description></description>
-      
+      <description></description>
     </item>
     
     <item>
@@ -83,9 +71,7 @@
       <pubDate>Tue, 06 Mar 2018 16:01:23 +0800</pubDate>
       
       <guid>http://en.xianmin.org/hugo-theme-jane/tags/preview/</guid>
-      
-        <description></description>
-      
+      <description></description>
     </item>
     
     <item>
@@ -94,9 +80,7 @@
       <pubDate>Tue, 06 Mar 2018 16:01:23 +0800</pubDate>
       
       <guid>http://en.xianmin.org/hugo-theme-jane/tags/shortcodes/</guid>
-      
-        <description></description>
-      
+      <description></description>
     </item>
     
     <item>
@@ -105,9 +89,7 @@
       <pubDate>Tue, 30 Aug 2011 16:01:23 +0800</pubDate>
       
       <guid>http://en.xianmin.org/hugo-theme-jane/tags/syntax-highlighting/</guid>
-      
-        <description></description>
-      
+      <description></description>
     </item>
     
     <item>
@@ -116,9 +98,7 @@
       <pubDate>Thu, 31 Aug 2017 15:43:48 +0800</pubDate>
       
       <guid>http://en.xianmin.org/hugo-theme-jane/tags/tag-2/</guid>
-      
-        <description></description>
-      
+      <description></description>
     </item>
     
     <item>
@@ -127,9 +107,7 @@
       <pubDate>Tue, 30 Aug 2011 16:01:23 +0800</pubDate>
       
       <guid>http://en.xianmin.org/hugo-theme-jane/tags/tag-5/</guid>
-      
-        <description></description>
-      
+      <description></description>
     </item>
     
     <item>
@@ -138,9 +116,7 @@
       <pubDate>Tue, 06 Mar 2018 16:01:23 +0800</pubDate>
       
       <guid>http://en.xianmin.org/hugo-theme-jane/tags/tag-6/</guid>
-      
-        <description></description>
-      
+      <description></description>
     </item>
     
     <item>
@@ -149,9 +125,7 @@
       <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       
       <guid>http://en.xianmin.org/hugo-theme-jane/tags/templates/</guid>
-      
-        <description></description>
-      
+      <description></description>
     </item>
     
     <item>
@@ -160,9 +134,7 @@
       <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       
       <guid>http://en.xianmin.org/hugo-theme-jane/tags/themes/</guid>
-      
-        <description></description>
-      
+      <description></description>
     </item>
     
   </channel>

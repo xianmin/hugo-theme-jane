@@ -196,7 +196,7 @@ $$
 
 &lt;p&gt;will produce:&lt;/p&gt;
 
-&lt;p&gt;You can create footnotes like this&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:footnote&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:footnote&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;You can create footnotes like this&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:footnote&#34;&gt;&lt;a href=&#34;#fn:footnote&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 
 &lt;p&gt;Mouse on the ‘footnote’ superscript to see content of the footnote.&lt;/p&gt;
 
@@ -1868,6 +1868,18 @@ $ vi themes/zafta/layouts/_default/single.html
 &lt;h3 id=&#34;don-t-repeat-yourself&#34;&gt;Don&amp;rsquo;t Repeat Yourself&lt;/h3&gt;
 
 &lt;p&gt;DRY is a good design goal and Hugo does a great job supporting it. Part of the art of a good template is knowing when to add a new template and when to update an existing one. While you&amp;rsquo;re figuring that out, accept that you&amp;rsquo;ll be doing some refactoring. Hugo makes that easy and fast, so it&amp;rsquo;s okay to delay splitting up a template.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>This is a very long title This is a very long title This is a very long title This is a very long title This is a very long title</title>
+      <link>http://en.xianmin.org/hugo-theme-jane/post/this-is-a-very-long-title/</link>
+      <pubDate>Wed, 30 Aug 2017 15:43:48 +0800</pubDate>
+      
+      <guid>http://en.xianmin.org/hugo-theme-jane/post/this-is-a-very-long-title/</guid>
+      
+        <description>&lt;p&gt;This is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long title&lt;/p&gt;
+</description>
       
     </item>
     

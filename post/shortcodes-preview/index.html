@@ -9,6 +9,11 @@
 <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
+<meta name="MobileOptimized" content="width"/>
+<meta name="HandheldFriendly" content="true"/>
+
+
+<meta name="applicable-device" content="pc,mobile">
 <meta http-equiv="Cache-Control" content="no-transform" />
 <meta http-equiv="Cache-Control" content="no-siteapp" />
 
@@ -16,6 +21,8 @@
 <meta name="msapplication-navbutton-color" content="#f8f5ec">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+<meta name="mobile-web-app-capable" content="yes">
 
 
 <meta name="author" content="xianmin" />
@@ -34,10 +41,12 @@ More details: https://gohugo.io/content-management/shortcodes/
 
 
 
-<meta name="generator" content="Hugo 0.31.1" />
+<meta name="generator" content="Hugo 0.37.1" />
 
 
 <link rel="canonical" href="http://en.xianmin.org/hugo-theme-jane/post/shortcodes-preview/" />
+
+
 
 <link rel="apple-touch-icon" sizes="180x180" href="/hugo-theme-jane/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/hugo-theme-jane/favicon-32x32.png">
@@ -111,7 +120,8 @@ More details: https://gohugo.io/content-management/shortcodes/
 
 
 <meta itemprop="keywords" content="preview,shortcodes,tag-6," />
-<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Shortcodes Preview"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Shortcodes Preview"/>
 <meta name="twitter:description" content="What a Shortcode is
 
 Hugo loves Markdown because of its simple content format, but there are times when Markdown falls short. Often, content authors are forced to add raw HTML (e.g., video &lt;iframes&gt;) to Markdown content. We think this contradicts the beautiful simplicity of Markdown&rsquo;s syntax.
@@ -143,6 +153,8 @@ ga('send', 'pageview');
 </script>
 <script async src='//www.google-analytics.com/analytics.js'></script>
 
+
+
 </head>
 <body>
   <div id="mobile-navbar" class="mobile-navbar">
@@ -167,6 +179,8 @@ ga('send', 'pageview');
         <li class="mobile-menu-item">Categories</li>
       </a><a href="/hugo-theme-jane/about/">
         <li class="mobile-menu-item">About</li>
+      </a><a href="https://gohugo.io">
+        <li class="mobile-menu-item">external-link</li>
       </a>
   </ul>
 </nav>
@@ -179,15 +193,32 @@ ga('send', 'pageview');
 <nav class="site-navbar">
   <ul id="menu" class="menu">
     <li class="menu-item">
+        
         <a class="menu-item-link" href="/hugo-theme-jane/">Home</a>
+        
       </li><li class="menu-item">
+        
         <a class="menu-item-link" href="/hugo-theme-jane/post/">Archives</a>
+        
       </li><li class="menu-item">
+        
         <a class="menu-item-link" href="/hugo-theme-jane/tags/">Tags</a>
+        
       </li><li class="menu-item">
+        
         <a class="menu-item-link" href="/hugo-theme-jane/categories/">Categories</a>
+        
       </li><li class="menu-item">
+        
         <a class="menu-item-link" href="/hugo-theme-jane/about/">About</a>
+        
+      </li><li class="menu-item">
+        
+        <a class="menu-item-link" href="https://gohugo.io" target="_blank">
+          external-link
+          <i class="iconfont icon-new-window"></i>
+        </a>
+        
       </li>
   </ul>
 </nav>
@@ -220,8 +251,7 @@ ga('send', 'pageview');
     
 <div class="post-toc" id="post-toc">
   <h2 class="post-toc-title">Table of Contents</h2>
-  
-  <div class="post-toc-content always-active">
+  <div class="post-toc-content">
     <nav id="TableOfContents">
 <ul>
 <li>
@@ -677,6 +707,7 @@ ga('send', 'pageview');
       </nav>
     </footer>
     
+
   <div class="disqus-button" id="load_disqus" onclick="load_disqus()">
       Show Disqus Comments
     </div>
@@ -699,6 +730,8 @@ ga('send', 'pageview');
     
 
   
+
+  
   </article>
         </div>
       </div>
@@ -706,19 +739,21 @@ ga('send', 'pageview');
 
     <footer id="footer" class="footer">
       <div class="social-links">
-      <a href="mailto:your@email.com" class="iconfont icon-email" title="email"></a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" class="iconfont icon-twitter" title="twitter"></a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" class="iconfont icon-facebook" title="facebook"></a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" class="iconfont icon-linkedin" title="linkedin"></a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" class="iconfont icon-google" title="google"></a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" class="iconfont icon-github" title="github"></a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" class="iconfont icon-weibo" title="weibo"></a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" class="iconfont icon-zhihu" title="zhihu"></a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" class="iconfont icon-douban" title="douban"></a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" class="iconfont icon-pocket" title="pocket"></a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" class="iconfont icon-tumblr" title="tumblr"></a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" class="iconfont icon-instagram" title="instagram"></a>
+      <a href="mailto:your@email.com" rel="me" class="iconfont icon-email" title="email"></a>
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-google" title="google"></a>
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-github" title="github"></a>
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-douban" title="douban"></a>
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-pocket" title="pocket"></a>
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-tumblr" title="tumblr"></a>
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-instagram" title="instagram"></a>
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-gitlab" title="gitlab"></a>
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-goodreads" title="goodreads"></a>
   <a href="http://en.xianmin.org/hugo-theme-jane/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
 </div>
 
