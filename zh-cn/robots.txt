@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: http://en.xianmin.org/hugo-theme-jane/sitemap.xml

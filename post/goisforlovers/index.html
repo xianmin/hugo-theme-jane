@@ -71,6 +71,7 @@ This document is a brief primer on using go templates." />
 
 <meta property="article:modified_time" content="2014-04-02T00:00:00&#43;00:00"/>
 
+<meta property="og:site_name" content="Jane - A simple theme for Hugo" />
 
 
 
@@ -107,13 +108,6 @@ This document is a brief primer on using go templates."/>
   <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
 <![endif]-->
 
-
-<script>
-window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-ga('create', 'UA-34199129-1', 'auto');
-ga('send', 'pageview');
-</script>
-<script async src='//www.google-analytics.com/analytics.js'></script>
 
 
 
@@ -194,7 +188,7 @@ ga('send', 'pageview');
     
     <header class="post-header">
       <h1 class="post-title">(Hu)go Template Primer</h1>
-
+      
       <div class="post-meta">
         <span class="post-time"> 2014-04-02 </span>
         <div class="post-category">
@@ -639,26 +633,7 @@ so, such as in this example:</p>
     </footer>
     
 
-  <div class="disqus-button" id="load_disqus" onclick="load_disqus()">
-      Show Disqus Comments
-    </div>
-    <div id="disqus_thread"></div>
-    <script type="text/javascript">
-    function load_disqus() {
-        
-        
-        if (window.location.hostname === 'localhost') return;
-
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        var disqus_shortname = 'xianmin12';
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-
-        $('#load_disqus').remove();
-    };
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    
+  
 
   
 
