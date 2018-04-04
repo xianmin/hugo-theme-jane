@@ -1,3 +1,5 @@
-{{ range .Translations }}
-    <div><a href="{{ .Permalink }}">{{ i18n (printf "read_%s" .Lang) }}: {{ .Title }}</a></div>
+{{ if .IsTranslated }}
+    {{ range .Translations }}
+        <div><a href="{{ .Permalink }}">{{ i18n (printf "read_%s" .Lang) }}: {{ .Title }}</a></div>
+    {{ end }}
 {{ end }}
