@@ -86,3 +86,6 @@
 
 - id: read_es
   translation: Leer en español
+
+- id: read_zh-cn
+  translation: 中文阅读

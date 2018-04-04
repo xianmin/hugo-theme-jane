@@ -86,3 +86,6 @@
 
 - id: read_ru
   translation: Читать на русском
+
+- id: read_zh-cn
+  translation: 中文阅读
