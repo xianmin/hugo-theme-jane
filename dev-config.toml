@@ -2,14 +2,70 @@
 # This file is hugo-theme-jane demo-site config
 
 baseURL = "http://en.xianmin.org/hugo-theme-jane/"
-title = "Jane - A simple theme for Hugo"
+# title = "Jane - A simple theme for Hugo"
 enableRobotsTXT = true
 enableEmoji = true
 
 # language support en / zh-cn / other... translations present in i18n/
 defaultContentLanguage = "en"  # Default language to use (if you setup multilingual support)
-[Languages.en]
-  languageCode = "en"
+[langusges]
+[languages.en]
+  title = "Jane - A simple theme for Hugo"
+  weight = 1
+[languages.zh-cn]
+  title = "Jane —— 一个简洁的 Hugo 主题"
+  weight = 2
+
+[[languages.en.menu.main]]
+  name = "Home"
+  weight = 10
+  identifier = "home"
+  url = "/"
+[[languages.en.menu.main]]
+  name = "Archives"
+  weight = 20
+  identifier = "archives"
+  url = "/post/"
+[[languages.en.menu.main]]
+  name = "Tags"
+  weight = 30
+  identifier = "tags"
+  url = "/tags/"
+[[languages.en.menu.main]]
+  name = "Categories"
+  weight = 40
+  identifier = "categories"
+  url = "/categories/"
+[[languages.en.menu.main]]
+  name = "external-link"
+  weight = 50
+  url = "https://gohugo.io"
+
+[[languages.zh-cn.menu.main]]
+  name = "主页"
+  weight = 10
+  identifier = "home"
+  url = "/zh-cn/"
+[[languages.zh-cn.menu.main]]
+  name = "归档"
+  weight = 20
+  identifier = "archives"
+  url = "/zh-cn/post/"
+[[languages.zh-cn.menu.main]]
+  name = "标签"
+  weight = 30
+  identifier = "tags"
+  url = "/zh-cn/tags/"
+[[languages.zh-cn.menu.main]]
+  name = "分类"
+  weight = 40
+  identifier = "categories"
+  url = "/zh-cn/categories/"
+[[languages.zh-cn.menu.main]]
+  name = "外部链接"
+  weight = 50
+  url = "https://gohugo.io"
+
 
 hasCJKLanguage = true     # has chinese/japanese/korean ? # 自动检测是否包含 中文\日文\韩文
 paginate = 5                                              # 首页每页显示的文章数
@@ -27,30 +83,6 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   priority = 0.5
   filename = "sitemap.xml"
 
-[[menu.main]]             # config your menu              # 配置目录
-  name = "Home"
-  weight = 10
-  identifier = "home"
-  url = "/"
-[[menu.main]]
-  name = "Archives"
-  weight = 20
-  identifier = "archives"
-  url = "/post/"
-[[menu.main]]
-  name = "Tags"
-  weight = 30
-  identifier = "tags"
-  url = "/tags/"
-[[menu.main]]
-  name = "Categories"
-  weight = 40
-  identifier = "categories"
-  url = "/categories/"
-[[menu.main]]
-  name = "external-link"
-  weight = 50
-  url = "https://gohugo.io"
 
 [params]
   debug = false             # If true, load `eruda.min.js`. See https://github.com/liriliri/eruda

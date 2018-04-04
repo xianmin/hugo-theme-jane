@@ -4,9 +4,9 @@ enableRobotsTXT = true
 enableEmoji = true
 theme = "jane"
 
-# language support # en / zh-cn / other...
-defaultContentLanguage = "en"
-[Languages.en]
+# language support # en / zh-cn / other... translations present in i18n/
+defaultContentLanguage = "en"           # Default language to use
+[languages.en]
   languageCode = "en"
 
 hasCJKLanguage = true     # has chinese/japanese/korean ? # 自动检测是否包含 中文\日文\韩文
@@ -146,3 +146,12 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
 #   mediaType = "application/json"
 #   baseName = "feed"
 #   isPlainText = true
+
+# multilingual support example
+# [langusges]
+# [languages.en]
+#   title = "Jane - A simple theme for Hugo"
+#   weight = 1
+# [languages.zh-cn]
+#   title = "Jane —— 一个简洁的 Hugo 主题"
+#   weight = 2
