@@ -86,3 +86,7 @@ Display:
 ## vimeo
 
 {{< vimeo 146022717 >}}
+
+## youku
+
+{{< youku XMzQ0ODUxMjM2NA >}}
