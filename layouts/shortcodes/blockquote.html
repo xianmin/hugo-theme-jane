@@ -52,7 +52,7 @@
 {{ end }}
 
 <blockquote>
-  <p>{{ .Inner }}</p>
+  <p>{{ .Inner | markdownify }}</p>
   <footer>
     <strong>{{ with $.Scratch.Get "bl_author" }}{{ . }}{{ end }}</strong>
     {{ with $.Scratch.Get "bl_source" }}
@@ -62,6 +62,12 @@
         <cite>
           <a href="{{ . }}" title="{{ . }}">{{ $.Scratch.Get "bl_title" }}</a> <!-- can't have new lines here -->
         </cite>
+      {{ else }}
+        {{ with $.Scratch.Get "bl_title" }}
+          <cite>
+            {{ $.Scratch.Get "bl_title" }}</a>
+          </cite>
+        {{ end }}
       {{ end }}
     {{ end }}
   </footer>
