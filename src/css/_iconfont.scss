@@ -13,95 +13,100 @@
 
 
 /* Generic Icon */
-.icon-heart:before {
+.icon-heart::before {
   font-icon: url('../fonts/svg/heart.svg');
 }
 
-.icon-right:before {
+.icon-right::before {
   font-icon: url('../fonts/svg/right.svg');
 }
 
-.icon-left:before {
+.icon-left::before {
   font-icon: url('../fonts/svg/left.svg');
 }
 
-.icon-up:before {
+.icon-up::before {
   font-icon: url('../fonts/svg/up.svg');
   font-size: 2em;
 }
 
-.icon-new-window:before {
+.icon-new-window::before {
   font-icon: url('../fonts/svg/new-window.svg');
 }
 
-.icon-rss:before {
+.icon-rss::before {
   font-icon: url('../fonts/svg/rss.svg');
 }
 
 
 /* Social Icon */
-.icon-email:before {
+.icon-email::before {
   font-icon: url('../fonts/svg/email.svg');
   font-size: 0.8em;
 }
 
-.icon-stack-overflow:before {
+.icon-stack-overflow::before {
   font-icon: url('../fonts/svg/stack-overflow.svg');
 }
 
-.icon-twitter:before {
+.icon-twitter::before {
   font-icon: url('../fonts/svg/twitter.svg');
   font-size: 0.9em;
 }
 
-.icon-facebook:before {
+.icon-facebook::before {
   font-icon: url('../fonts/svg/facebook.svg');
 }
 
-.icon-linkedin:before {
+.icon-linkedin::before {
   font-icon: url('../fonts/svg/linkedin.svg');
 }
 
-.icon-google:before {
+.icon-google::before {
   font-icon: url('../fonts/svg/google.svg');
   font-size: 1.15em;
 }
 
-.icon-github:before {
+.icon-github::before {
   font-icon: url('../fonts/svg/github.svg');
 }
 
-.icon-weibo:before {
+.icon-weibo::before {
   font-icon: url('../fonts/svg/weibo.svg');
   font-size: 1.1em;
 }
 
-.icon-zhihu:before {
+.icon-zhihu::before {
   font-icon: url('../fonts/svg/zhihu.svg');
 }
 
-.icon-douban:before {
+.icon-douban::before {
   font-icon: url('../fonts/svg/douban.svg');
 }
 
-.icon-pocket:before {
+.icon-pocket::before {
   font-icon: url('../fonts/svg/pocket.svg');
 }
 
-.icon-tumblr:before {
+.icon-tumblr::before {
   font-icon: url('../fonts/svg/tumblr.svg');
   font-size: 1.1em;
 }
 
-.icon-instagram:before {
+.icon-instagram::before {
   font-icon: url('../fonts/svg/instagram.svg');
   font-size: 1.1em;
 }
 
-.icon-gitlab:before {
+.icon-gitlab::before {
   font-icon: url('../fonts/svg/gitlab.svg');
 }
 
 .icon-goodreads::before {
   font-icon: url('../fonts/svg/goodreads.svg');
+}
+
+.icon-coding::before {
+  font-icon: url('../fonts/svg/coding.svg');
+  font-size: 1.3em;
 }
