@@ -2,10 +2,14 @@
   {{- range $name, $path := .Site.Params.social }}
     {{- if $path }}
       {{- $realName := slicestr $name 2 }}
-      <a href="{{ $path | safeURL }}" rel="me" class="iconfont icon-{{ $realName }}" title="{{ $realName }}"></a>
+      <a href="{{ $path | safeURL }}" rel="me" class="iconfont icon-{{ $realName }}" 
+        title="{{ $realName }}" target="_blank">
+      </a>
     {{- end }}
   {{- end }}
-  <a href="{{ .Site.RSSLink }}" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+  <a href="{{ .Site.RSSLink }}" type="application/rss+xml" class="iconfont icon-rss" 
+    title="rss" target="_blank">
+  </a>
 </div>
 
 <div class="copyright">
