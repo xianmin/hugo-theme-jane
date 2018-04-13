@@ -6,7 +6,7 @@ code, pre {
 }
 
 code {
-  padding: 3px 5px;
+  padding: 0px 5px;
   border-radius: 4px;
   color: $code-color;
 }
@@ -61,7 +61,8 @@ code {
   .line {
     // Fix code block null line height and
     // Synchronous gutter and code line highly.
-    height: round($code-font-size * 1.5);
+    height: 1.5em;
+
   }
 
   table, tr, td {
