@@ -4,6 +4,7 @@
 
 .post-content {
   word-wrap: break-word;
+  padding-bottom: 2em;
 
   @for $i from 1 through 6 {
     h#{$i} {
@@ -31,6 +32,7 @@
   a {
     color: $theme-color;
     word-break: break-all;
+    cursor: crosshair;
 
     &:hover {
       border-bottom: $content-link-border;

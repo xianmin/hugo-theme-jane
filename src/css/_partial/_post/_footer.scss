@@ -3,18 +3,18 @@
 // ==============================
 
 .post-footer {
-  margin-top: $post-footer-margin-top;
   margin-bottom: 40px;
-  border-top: $post-footer-border-top;
   font-family: $global-serif-font-family;
 
   .post-tags {
     padding: $post-tags-padding;
 
     a {
-      margin-right: 5px;
       color: $theme-color;
+      border-bottom: 1px solid $theme-color;
+      cursor: crosshair;
       word-break: break-all;
+      margin-right: 10px;
 
       &::before {
         content: '#';
