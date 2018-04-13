@@ -416,12 +416,12 @@ __double underscores__
 
 
 &lt;blockquote&gt;
-  &lt;p&gt;
-  This is a simple quote.
-&lt;/p&gt;
+  &lt;p&gt;This is a simple quote.&lt;/p&gt;
   &lt;footer&gt;
     &lt;strong&gt;&lt;/strong&gt;
     
+      
+        
       
     
   &lt;/footer&gt;
@@ -453,12 +453,12 @@ __double underscores__
 
 
 &lt;blockquote&gt;
-  &lt;p&gt;
-  This is a quote with only an Author named Author2.
-&lt;/p&gt;
+  &lt;p&gt;This is a quote with only an Author named Author2.&lt;/p&gt;
   &lt;footer&gt;
     &lt;strong&gt;Author2&lt;/strong&gt;
     
+      
+        
       
     
   &lt;/footer&gt;
@@ -490,9 +490,7 @@ __double underscores__
 
 
 &lt;blockquote&gt;
-  &lt;p&gt;
-  This is a quote from Author3 and source &#34;source.&#34;
-&lt;/p&gt;
+  &lt;p&gt;This is a quote from Author3 and source &amp;ldquo;source.&amp;rdquo;&lt;/p&gt;
   &lt;footer&gt;
     &lt;strong&gt;Author3&lt;/strong&gt;
     
@@ -538,9 +536,7 @@ __double underscores__
 
 
 &lt;blockquote&gt;
-  &lt;p&gt;
-  This is a quote from Author4 and links to https://www.google.com.
-&lt;/p&gt;
+  &lt;p&gt;This is a quote from Author4 and links to &lt;a href=&#34;https://www.google.com&#34;&gt;https://www.google.com&lt;/a&gt;.&lt;/p&gt;
   &lt;footer&gt;
     &lt;strong&gt;Author4&lt;/strong&gt;
     
@@ -579,9 +575,7 @@ __double underscores__
 
 
 &lt;blockquote&gt;
-  &lt;p&gt;
-  This is a quote from Author5 and links to https://www.google.com with title &#34;Google.&#34;
-&lt;/p&gt;
+  &lt;p&gt;This is a quote from Author5 and links to &lt;a href=&#34;https://www.google.com&#34;&gt;https://www.google.com&lt;/a&gt; with title &amp;ldquo;Google.&amp;rdquo;&lt;/p&gt;
   &lt;footer&gt;
     &lt;strong&gt;Author5&lt;/strong&gt;
     
@@ -643,10 +637,8 @@ __double underscores__
 
 
 &lt;blockquote&gt;
-  &lt;p&gt;
-  This is a quote from Author5 and links to https://twitter.com/CryptoGangsta/status/716427930126196737 which is longer than 32 characters.
-  &lt;br&gt;And this is a new line in the quote with the HTML br tag.
-&lt;/p&gt;
+  &lt;p&gt;This is a quote from Author5 and links to &lt;a href=&#34;https://twitter.com/CryptoGangsta/status/716427930126196737&#34;&gt;https://twitter.com/CryptoGangsta/status/716427930126196737&lt;/a&gt; which is longer than 32 characters.
+  &lt;br&gt;And this is a new line in the quote with the HTML br tag.&lt;/p&gt;
   &lt;footer&gt;
     &lt;strong&gt;Author6&lt;/strong&gt;
     
@@ -710,9 +702,7 @@ __double underscores__
 
 
 &lt;blockquote&gt;
-  &lt;p&gt;
-  Over the past 24 hours I&#39;ve been reflecting on my life &amp; I&#39;ve realized only one thing. I need a medieval battle axe.
-&lt;/p&gt;
+  &lt;p&gt;Over the past 24 hours I&amp;rsquo;ve been reflecting on my life &amp;amp; I&amp;rsquo;ve realized only one thing. I need a medieval battle axe.&lt;/p&gt;
   &lt;footer&gt;
     &lt;strong&gt;@allanbranch&lt;/strong&gt;
     
@@ -763,7 +753,17 @@ __double underscores__
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;//player.vimeo.com/video/146022717&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
- &lt;/div&gt;</description>
+ &lt;/div&gt;
+
+
+&lt;h2 id=&#34;youku&#34;&gt;youku&lt;/h2&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//player.youku.com/embed/XMzQ0ODUxMjM2NA?autoplay=0&#34; 
+  style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34;
+  allowfullscreen frameborder=&#34;0&#34; title=&#34;YouKu Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;</description>
       
     </item>
     
