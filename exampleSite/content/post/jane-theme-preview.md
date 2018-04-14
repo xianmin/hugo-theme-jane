@@ -18,7 +18,7 @@ contentCopyright: '<a href="https://github.com/gohugoio/hugoBasicExample" rel="n
 mathjax: true
 ---
 
-**Markdown** is created by [Daring Fireball](http://daringfireball.net/), the original guideline is [here](http://daringfireball.net/projects/markdown/syntax). Its syntax, however, varies between different parsers or editors. 
+**Markdown** is created by [Daring Fireball](http://daringfireball.net/), the original guideline is [here](http://daringfireball.net/projects/markdown/syntax). Its syntax, however, varies between different parsers or editors.
 
 Please note that HTML fragments in markdown source will be recognized but not parsed or rendered. Also, there may be small reformatting on the original markdown source code after saving.
 
@@ -58,11 +58,11 @@ Markdown uses email-style > characters for block quoting. They are presented as:
 > This is another blockquote with one paragraph. There is three empty line to seperate two blockquote.
 
 
-In typora, just input ‘>’ followed by quote contents a block quote is  generated. Typora will insert proper ‘>’ or line break for you. Block quote inside anther block quote is allowed by adding additional levels of ‘>’. 
+In typora, just input ‘>’ followed by quote contents a block quote is  generated. Typora will insert proper ‘>’ or line break for you. Block quote inside anther block quote is allowed by adding additional levels of ‘>’.
 
 ## Lists
 
-Input `* list item 1` will create an un-ordered list, the `*` symbol can be replace with `+` or `-`. 
+Input `* list item 1` will create an un-ordered list, the `*` symbol can be replace with `+` or `-`.
 
 Input `1. list item 1` will create an ordered list, their markdown source code is like:
 
@@ -109,7 +109,7 @@ You can render *LaTeX* mathematical expressions using **MathJax**.
 
 Input `$$`, then press 'Return' key will trigger an input field which accept *Tex/LaTex* source. Following is an example:
 $$
-\mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix} 
+\mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix}
 \mathbf{i} & \mathbf{j} & \mathbf{k} \\
 \frac{\partial X}{\partial u} &  \frac{\partial Y}{\partial u} & 0 \\
 \frac{\partial X}{\partial v} &  \frac{\partial Y}{\partial v} & 0 \\
@@ -121,7 +121,7 @@ In markdown source file, math block is *LaTeX* expression wrapped by ‘$$’ ma
 
 ``` markdown
 $$
-\mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix} 
+\mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix}
 \mathbf{i} & \mathbf{j} & \mathbf{k} \\
 \frac{\partial X}{\partial u} &  \frac{\partial Y}{\partial u} & 0 \\
 \frac{\partial X}{\partial v} &  \frac{\partial Y}{\partial v} & 0 \\
@@ -200,7 +200,7 @@ This is [an example](http://example.com/"Title") inline link. (`<p>This is <a hr
 
 Command(on Windows: Ctrl) + Click [This link](#block-elements) will jump to header `Block Elements`. To see how to write that, please move cursor or click that link with `⌘` key pressed to expand the element into markdown source.
 
-### Reference Links 
+### Reference Links
 
 Reference-style links use a second set of square brackets, inside which you place a label of your choosing to identify the link:
 
@@ -261,7 +261,7 @@ Markdown treats asterisks (`*`) and underscores (`_`) as indicators of emphasis.
 _single underscores_
 ```
 
-output: 
+output:
 
 *single asterisks*
 
@@ -325,14 +325,14 @@ Underline is powered by raw HTML.
 
 ## Emoji :happy:
 
-Input emoji with syntax `:smile:`. 
+Input emoji with syntax `:smile:`.
 
-User can trigger auto-complete suggestions for emoji by pressing `ESC` key, or trigger it automatically after enable it on preference panel. Also, input UTF8 emoji char directly from `Edit` -> `Emoji & Symbols` from menu bar is also supported. 
+User can trigger auto-complete suggestions for emoji by pressing `ESC` key, or trigger it automatically after enable it on preference panel. Also, input UTF8 emoji char directly from `Edit` -> `Emoji & Symbols` from menu bar is also supported.
 
 
 ## Inline Math
 
-To use this feature, first, please enable it in `Preference` Panel -> `Markdown` Tab. Then use `$` to wrap TeX command, for example: `$\lim_{x \to \infty} \exp(-x) = 0$` will be rendered as LaTeX command. 
+To use this feature, first, please enable it in `Preference` Panel -> `Markdown` Tab. Then use `$` to wrap TeX command, for example: `$\lim_{x \to \infty} \exp(-x) = 0$` will be rendered as LaTeX command.
 
 To trigger inline preview for inline math: input “$”, then press `ESC` key, then input TeX command, a preview tooltip will be visible like below:
 

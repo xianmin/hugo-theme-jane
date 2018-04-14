@@ -49,7 +49,7 @@
   {{ else if gt $pag.TotalPages $max_links }}
 
     <nav class="pagination">
-      
+     
       <!-- First page. -->
       {{ if ne $pag.PageNumber 1 }}
       <li><a href="{{ $pag.First.URL }}">««</a></li>
@@ -59,10 +59,10 @@
       {{ if $pag.HasPrev }}
       <li><a href="{{ $pag.Prev.URL }}">«</a></li>
       {{ end }}
-    
+   
       <!-- Page numbers. -->
       {{ range $pag.Pagers }}
-      
+     
         {{ $.Scratch.Set "page_number_flag" false }}
 
         <!-- Advanced page numbers. -->
@@ -88,7 +88,7 @@
 
           <!-- Middle pages. -->
           {{ else }}
-            
+           
             {{ if and ( ge .PageNumber (sub $pag.PageNumber $adjacent_links) ) ( le .PageNumber (add $pag.PageNumber $adjacent_links) ) }}
               {{ $.Scratch.Set "page_number_flag" true }}
             {{ end }}

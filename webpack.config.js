@@ -39,7 +39,7 @@ module.exports = {
                   new IconfontWebpackPlugin({
                     resolve: loader.resolve,
                     fontNamePrefix: 'custom-',
-                    modules: false, 
+                    modules: false,
                   })
                 ]
                }

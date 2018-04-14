@@ -140,7 +140,7 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
 # [outputs]
 #   home = ["html", "jsonfeed"]
 #   page = ["html"]
-# 
+#
 # [outputFormats]
 # [outputFormats.jsonfeed]
 #   mediaType = "application/json"

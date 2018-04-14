@@ -124,7 +124,7 @@ Copy the `config.toml` in the root directory of your website. Overwrite the exis
 # Common-Defined
 title: "An Example Post"
 date: 2018-01-01T16:01:23+08:00
-lastmod: 2018-01-02T16:01:23+08:00 
+lastmod: 2018-01-02T16:01:23+08:00
 draft: false
 tags: ["tag-1", "tag-2", "tag-3"]
 categories: ["index"]
