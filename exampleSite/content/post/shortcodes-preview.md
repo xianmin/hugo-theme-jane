@@ -18,7 +18,7 @@ A shortcode is a simple snippet inside a content file that Hugo will render usin
 
 In addition to cleaner Markdown, shortcodes can be updated any time to reflect new classes, techniques, or standards. At the point of site generation, Hugo shortcodes will easily merge in your changes. You avoid a possibly complicated search and replace operation.
 
-More details: https://gohugo.io/content-management/shortcodes/ 
+More details: https://gohugo.io/content-management/shortcodes/
 
 <!--more-->
 
