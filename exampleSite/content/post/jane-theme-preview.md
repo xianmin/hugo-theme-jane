@@ -4,7 +4,7 @@ date: 2018-03-06T16:01:23+08:00
 lastmod: 2018-03-07T16:01:23+08:00
 draft: false
 tags: ["preview", "shortcodes", "tag-6"]
-categories: ["shortcodes", "index"]
+categories: ["docs", "shortcodes", "index"]
 author: "Typora"
 
 # You can also close(false) or open(true) something for this content.
@@ -16,6 +16,11 @@ author: "Typora"
 contentCopyright: '<a href="https://github.com/gohugoio/hugoBasicExample" rel="noopener" target="_blank">See origin</a>'
 # reward: false
 mathjax: true
+
+menu:
+  main:
+    parent: "docs"
+    weight: 1
 ---
 
 **Markdown** is created by [Daring Fireball](http://daringfireball.net/), the original guideline is [here](http://daringfireball.net/projects/markdown/syntax). Its syntax, however, varies between different parsers or editors.

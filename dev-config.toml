@@ -21,6 +21,20 @@ defaultContentLanguage = "en"  # Default language to use (if you setup multiling
   weight = 10
   identifier = "home"
   url = "/"
+
+[[languages.en.menu.main]]
+  name = "Docs"
+  weight = 11
+  identifier = "docs"
+  url = "/categories/docs/"
+
+# docs submenu
+#[[languages.en.menu.main]]
+#  name = "Jane Theme Preview"
+#  weight = 12
+#  parent = "docs"
+#  url = "/post/jane-theme-preview/"
+
 [[languages.en.menu.main]]
   name = "Archives"
   weight = 20
