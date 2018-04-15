@@ -13,10 +13,9 @@ code {
 
 .highlight {
   margin: 1em 0;
-  border-radius: 5px;
   overflow-x: auto;
-  box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
   position: relative;
+  border: 2px solid #dddddd;
 
   table {
     position: relative;
@@ -25,7 +24,6 @@ code {
       position: absolute;
       top: 0;
       right: 0;
-      left: 0;
       padding: 2px 7px;
       font-size: $code-font-size;
       font-weight: bold;
@@ -44,7 +42,6 @@ code {
   .code {
     pre {
       margin: 0;
-      padding: 30px 10px 10px;
     }
   }
 
@@ -54,7 +51,6 @@ code {
 
     pre {
       margin: 0;
-      padding: 30px 7px 10px;
     }
   }
 
@@ -62,7 +58,6 @@ code {
     // Fix code block null line height and
     // Synchronous gutter and code line highly.
     height: 1.5em;
-
   }
 
   table, tr, td {
