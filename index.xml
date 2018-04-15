@@ -75,6 +75,8 @@
 &lt;p&gt;This is second pragraph.Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.&lt;/p&gt;
 
 &lt;p&gt;This is another blockquote with one paragraph. There is three empty line to seperate two blockquote.&lt;/p&gt;
+
+&lt;p&gt;这是一段中文测试。&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;In typora, just input ‘&amp;gt;’ followed by quote contents a block quote is  generated. Typora will insert proper ‘&amp;gt;’ or line break for you. Block quote inside anther block quote is allowed by adding additional levels of ‘&amp;gt;’.&lt;/p&gt;
@@ -99,7 +101,7 @@
 
 &lt;h2 id=&#34;task-list&#34;&gt;Task List&lt;/h2&gt;
 
-&lt;p&gt;Task lists are lists with items marked as either [ ] or &lt;a href=&#34;incomplete or complete&#34;&gt;x&lt;/a&gt;. For example:&lt;/p&gt;
+&lt;p&gt;Task lists are lists with items marked as either &lt;code&gt;[ ]&lt;/code&gt; or &lt;code&gt;[x]&lt;/code&gt; (incomplete or complete). For example:&lt;/p&gt;
 
 &lt;ul class=&#34;task-list&#34;&gt;
 &lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; a task list item&lt;/label&gt;&lt;/li&gt;
@@ -159,29 +161,53 @@ $$
 
 &lt;p&gt;In markdown source code, they look like:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;| Name              | Markdown            | HTML tag             |
+| ----------------- | ------------------- | -------------------- |
+| *Emphasis*        | `*Emphasis*`        | `&amp;lt;em&amp;gt;&amp;lt;/em&amp;gt;`          |
+| **Strong**        | `**Strong**`        | `&amp;lt;strong&amp;gt;&amp;lt;/strong&amp;gt;` |
+| `code`            | ``code``            | `&amp;lt;code&amp;gt;&amp;lt;/code&amp;gt;`      |
+| ~~Strikethrough~~ | `~~Strikethrough~~` | `&amp;lt;del&amp;gt;&amp;lt;/del`         |
+| &amp;lt;u&amp;gt;Underline&amp;lt;/u&amp;gt;  | `&amp;lt;u&amp;gt;underline&amp;lt;/u&amp;gt;`  | `&amp;lt;u&amp;gt;&amp;lt;/u&amp;gt;`            |
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th&gt;First Header&lt;/th&gt;
-&lt;th&gt;Second Header&lt;/th&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th&gt;Markdown&lt;/th&gt;
+&lt;th&gt;HTML tag&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;Content Cell&lt;/td&gt;
-&lt;td&gt;Content Cell&lt;/td&gt;
+&lt;td&gt;&lt;em&gt;Emphasis&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;*Emphasis*&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;&amp;lt;em&amp;gt;&amp;lt;/em&amp;gt;&lt;/code&gt;&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td&gt;Content Cell&lt;/td&gt;
-&lt;td&gt;Content Cell&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Strong&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;**Strong**&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;&amp;lt;strong&amp;gt;&amp;lt;/strong&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;code&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;code&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;&amp;lt;code&amp;gt;&amp;lt;/code&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;del&gt;Strikethrough&lt;/del&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;~~Strikethrough~~&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;&amp;lt;del&amp;gt;&amp;lt;/del&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;u&gt;Underline&lt;/u&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;&amp;lt;u&amp;gt;underline&amp;lt;/u&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;&amp;lt;u&amp;gt;&amp;lt;/u&amp;gt;&lt;/code&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
