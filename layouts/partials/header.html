@@ -1,26 +1,42 @@
 <div class="logo-wrapper">
   <a href="{{ "/" | relURL }}" class="logo">
-    {{- if .Site.Params.logoTitle -}}
+    {{ if .Site.Params.logoTitle }}
       {{ .Site.Params.logoTitle }}
-    {{- else -}}
+    {{ else }}
       {{ .Site.Title }}
-    {{- end -}}
+    {{ end }}
   </a>
 </div>
 
 <nav class="site-navbar">
   <ul id="menu" class="menu">
-    {{ range .Site.Menus.main -}}
+    {{ range .Site.Menus.main }}
       <li class="menu-item">
-        {{if hasPrefix .URL "http"}}
-        <a class="menu-item-link" href="{{ .URL | safeURL }}" target="_blank">
-          {{ .Name }}
-          <i class="iconfont icon-new-window"></i>
-        </a>
-        {{else}}
-        <a class="menu-item-link" href="{{ .URL | safeURL }}">{{ .Name }}</a>
-        {{end}}
+        {{ if .HasChildren }}
+          <!-- drop down navigation MENU -->
+          <a class="menu-item-link menu-parent" href="{{ .URL | safeURL }}">{{ .Name }}</a>
+          <ul class="submenu">
+            {{ range .Children }}
+              <li>
+                <a href="{{ .URL | safeURL }}">{{ .Name }}</a>
+              </li>
+            {{ end }}
+          </ul>
+
+        {{ else }}
+          <!-- normal MENU -->
+          {{ if hasPrefix .URL "http" }}
+            <a class="menu-item-link" href="{{ .URL | safeURL }}" target="_blank">
+              {{ .Name }}
+            <i class="iconfont icon-new-window"></i>
+            </a>
+          {{ else }}
+            <a class="menu-item-link" href="{{ .URL | safeURL }}">{{ .Name }}</a>
+          {{ end }}
+
+        {{ end  }}
+
       </li>
-    {{- end }}
+    {{ end }}
   </ul>
 </nav>
