@@ -71,18 +71,18 @@ Input `* list item 1` will create an un-ordered list, the `*` symbol can be repl
 
 Input `1. list item 1` will create an ordered list, their markdown source code is like:
 
-*   Red
-*   Green
-*   Blue
+* Red
+* Green
+* Blue
 
-1.  Red
-2. 	Green
-3.	Blue
+1. Red
+2. Green
+3. Blue
 
 
 ## Task List
 
-Task lists are lists with items marked as either [ ] or [x] (incomplete or complete). For example:
+Task lists are lists with items marked as either `[ ]` or `[x]` (incomplete or complete). For example:
 
 - [ ] a task list item
 - [ ] list syntax required
@@ -145,16 +145,22 @@ Following descriptions can be skipped, as markdown source code for tables are ge
 In markdown source code, they look like:
 
 ``` markdown
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+| Name              | Markdown            | HTML tag             |
+| ----------------- | ------------------- | -------------------- |
+| *Emphasis*        | `*Emphasis*`        | `<em></em>`          |
+| **Strong**        | `**Strong**`        | `<strong></strong>` |
+| `code`            | ``code``            | `<code></code>`      |
+| ~~Strikethrough~~ | `~~Strikethrough~~` | `<del></del`         |
+| <u>Underline</u>  | `<u>underline</u>`  | `<u></u>`            |
 ```
 
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+| Name              | Markdown            | HTML tag             |
+| ----------------- | ------------------- | -------------------- |
+| *Emphasis*        | `*Emphasis*`        | `<em></em>`          |
+| **Strong**        | `**Strong**`        | ` <strong></strong>` |
+| `code`            | ``code``            | `<code></code>`      |
+| ~~Strikethrough~~ | `~~Strikethrough~~` | `<del></del`         |
+| <u>Underline</u>  | `<u>underline</u>`  | `<u></u>`            |
 
 
 ## Footnotes
