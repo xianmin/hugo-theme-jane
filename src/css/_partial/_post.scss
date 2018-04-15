@@ -2,18 +2,9 @@
 // Post
 // ==============================
 
-.posts {
-  // margin-bottom: $post-list-margin-bottom;
-//  border-bottom: $post-border;
-}
-
 .post {
   padding: 3em 5em;
   margin: 0 5em 3em;
-  
-  // & + .post {
-  //   border-top: $post-border;
-  // }
 
   @import '_post/header';
   @import '_post/toc';

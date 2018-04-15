@@ -3,11 +3,10 @@
 // ==============================
 
 .post-footer {
-  margin-bottom: 40px;
   font-family: $global-serif-font-family;
 
   .post-tags {
-    padding: $post-tags-padding;
+    margin-top: 1em;
 
     a {
       color: $theme-color;
@@ -23,7 +22,7 @@
   }
 
   .post-nav {
-    margin: 1em 0;
+    margin-top: 1em;
     @include clearfix;
 
     .prev,
