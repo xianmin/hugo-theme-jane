@@ -141,7 +141,7 @@ $$&lt;/p&gt;
 &lt;p&gt;In markdown source file, math block is &lt;em&gt;LaTeX&lt;/em&gt; expression wrapped by ‘$$’ mark:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;$$
-\mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix} 
+\mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix}
 \mathbf{i} &amp;amp; \mathbf{j} &amp;amp; \mathbf{k} \\
 \frac{\partial X}{\partial u} &amp;amp;  \frac{\partial Y}{\partial u} &amp;amp; 0 \\
 \frac{\partial X}{\partial v} &amp;amp;  \frac{\partial Y}{\partial v} &amp;amp; 0 \\
@@ -760,7 +760,7 @@ __double underscores__
 
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;//player.youku.com/embed/XMzQ0ODUxMjM2NA?autoplay=0&#34; 
+  &lt;iframe src=&#34;//player.youku.com/embed/XMzQ0ODUxMjM2NA?autoplay=0&#34;
   style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34;
   allowfullscreen frameborder=&#34;0&#34; title=&#34;YouKu Video&#34;&gt;&lt;/iframe&gt;
 &lt;/div&gt;</description>
@@ -910,13 +910,13 @@ INFO: 2014/09/29 Using config file: config.toml
 INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/static/ to /Users/quoha/Sites/zafta/public/
 WARN: 2014/09/29 Unable to locate layout: [index.html _default/list.html _default/single.html]
 WARN: 2014/09/29 Unable to locate layout: [404.html]
-0 draft content 
-0 future content 
-0 pages created 
+0 draft content
+0 future content
+0 pages created
 0 tags created
 0 categories created
 in 2 ms
-$ 
+$
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;The &amp;ldquo;&lt;code&gt;--verbose&lt;/code&gt;&amp;rdquo; flag gives extra information that will be helpful when we build the template. Every line of the output that starts with &amp;ldquo;INFO:&amp;rdquo; or &amp;ldquo;WARN:&amp;rdquo; is present because we used that flag. The lines that start with &amp;ldquo;WARN:&amp;rdquo; are warning messages. We&amp;rsquo;ll go over them later.&lt;/p&gt;
@@ -940,7 +940,7 @@ $
 total 16
 -rw-r--r--  1 quoha  staff  416 Sep 29 17:02 index.xml
 -rw-r--r--  1 quoha  staff  262 Sep 29 17:02 sitemap.xml
-$ 
+$
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Hugo created two XML files, which is standard, but there are no HTML files.&lt;/p&gt;
@@ -954,9 +954,9 @@ INFO: 2014/09/29 Using config file: /Users/quoha/Sites/zafta/config.toml
 INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/static/ to /Users/quoha/Sites/zafta/public/
 WARN: 2014/09/29 Unable to locate layout: [index.html _default/list.html _default/single.html]
 WARN: 2014/09/29 Unable to locate layout: [404.html]
-0 draft content 
-0 future content 
-0 pages created 
+0 draft content
+0 future content
+0 pages created
 0 tags created
 0 categories created
 in 2 ms
@@ -1020,7 +1020,7 @@ $ find themes -type f | xargs ls -l
 -rw-r--r--  1 quoha  staff     0 Sep 29 17:31 themes/zafta/layouts/partials/footer.html
 -rw-r--r--  1 quoha  staff     0 Sep 29 17:31 themes/zafta/layouts/partials/header.html
 -rw-r--r--  1 quoha  staff    93 Sep 29 17:31 themes/zafta/theme.toml
-$ 
+$
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;The skeleton includes templates (the files ending in .html), license file, a description of your theme (the theme.toml file), and an empty archetype.&lt;/p&gt;
@@ -1077,9 +1077,9 @@ INFO: 2014/09/29 Using config file: /Users/quoha/Sites/zafta/config.toml
 INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/themes/zafta/static/ to /Users/quoha/Sites/zafta/public/
 INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/static/ to /Users/quoha/Sites/zafta/public/
 WARN: 2014/09/29 Unable to locate layout: [404.html theme/404.html]
-0 draft content 
-0 future content 
-0 pages created 
+0 draft content
+0 future content
+0 pages created
 0 tags created
 0 categories created
 in 2 ms
@@ -1123,7 +1123,7 @@ $
 &lt;pre&gt;&lt;code&gt;$ find . -name index.html | xargs ls -l
 -rw-r--r--  1 quoha  staff  0 Sep 29 20:21 ./public/index.html
 -rw-r--r--  1 quoha  staff  0 Sep 29 17:31 ./themes/zafta/layouts/index.html
-$ 
+$
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h4 id=&#34;the-magic-of-static&#34;&gt;The Magic of Static&lt;/h4&gt;
@@ -1141,7 +1141,7 @@ drwxr-xr-x  4 quoha  staff  136 Sep 29 17:31 themes/zafta/layouts/partials
 drwxr-xr-x  4 quoha  staff  136 Sep 29 17:31 themes/zafta/static
 drwxr-xr-x  2 quoha  staff   68 Sep 29 17:31 themes/zafta/static/css
 drwxr-xr-x  2 quoha  staff   68 Sep 29 17:31 themes/zafta/static/js
-$ 
+$
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2 id=&#34;the-theme-development-cycle&#34;&gt;The Theme Development Cycle&lt;/h2&gt;
@@ -1196,9 +1196,9 @@ INFO: 2014/09/29 Using config file: /Users/quoha/Sites/zafta/config.toml
 INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/themes/zafta/static/ to /Users/quoha/Sites/zafta/public/
 INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/static/ to /Users/quoha/Sites/zafta/public/
 WARN: 2014/09/29 Unable to locate layout: [404.html theme/404.html]
-0 draft content 
-0 future content 
-0 pages created 
+0 draft content
+0 future content
+0 pages created
 0 tags created
 0 categories created
 in 2 ms
@@ -1210,9 +1210,9 @@ INFO: 2014/09/29 File System Event: [&amp;quot;/Users/quoha/Sites/zafta/themes/z
 Change detected, rebuilding site
 
 WARN: 2014/09/29 Unable to locate layout: [404.html theme/404.html]
-0 draft content 
-0 future content 
-0 pages created 
+0 draft content
+0 future content
+0 pages created
 0 tags created
 0 categories created
 in 1 ms
@@ -1235,12 +1235,12 @@ in 1 ms
 &lt;p&gt;Right now, that page is empty because we don&amp;rsquo;t have any content and we don&amp;rsquo;t have any logic in the template. Let&amp;rsquo;s change that by adding some text to the template.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;$ vi themes/zafta/layouts/index.html
-&amp;lt;!DOCTYPE html&amp;gt; 
-&amp;lt;html&amp;gt; 
-&amp;lt;body&amp;gt; 
-  &amp;lt;p&amp;gt;hugo says hello!&amp;lt;/p&amp;gt; 
-&amp;lt;/body&amp;gt; 
-&amp;lt;/html&amp;gt; 
+&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html&amp;gt;
+&amp;lt;body&amp;gt;
+  &amp;lt;p&amp;gt;hugo says hello!&amp;lt;/p&amp;gt;
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
 :wq
 
 $
@@ -1253,9 +1253,9 @@ INFO: 2014/09/29 Using config file: /Users/quoha/Sites/zafta/config.toml
 INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/themes/zafta/static/ to /Users/quoha/Sites/zafta/public/
 INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/static/ to /Users/quoha/Sites/zafta/public/
 WARN: 2014/09/29 Unable to locate layout: [404.html theme/404.html]
-0 draft content 
-0 future content 
-0 pages created 
+0 draft content
+0 future content
+0 pages created
 0 tags created
 0 categories created
 in 2 ms
@@ -1263,11 +1263,11 @@ in 2 ms
 $ find public -type f -name &#39;*.html&#39; | xargs ls -l
 -rw-r--r--  1 quoha  staff  78 Sep 29 21:26 public/index.html
 
-$ cat public/index.html 
-&amp;lt;!DOCTYPE html&amp;gt; 
-&amp;lt;html&amp;gt; 
-&amp;lt;body&amp;gt; 
-  &amp;lt;p&amp;gt;hugo says hello!&amp;lt;/p&amp;gt; 
+$ cat public/index.html
+&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html&amp;gt;
+&amp;lt;body&amp;gt;
+  &amp;lt;p&amp;gt;hugo says hello!&amp;lt;/p&amp;gt;
 &amp;lt;/html&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
@@ -1275,15 +1275,15 @@ $ cat public/index.html
 
 &lt;p&gt;Note: If you&amp;rsquo;re running the server with the &lt;code&gt;--watch&lt;/code&gt; option, you&amp;rsquo;ll see different content in the file:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;$ cat public/index.html 
-&amp;lt;!DOCTYPE html&amp;gt; 
-&amp;lt;html&amp;gt; 
-&amp;lt;body&amp;gt; 
-  &amp;lt;p&amp;gt;hugo says hello!&amp;lt;/p&amp;gt; 
-&amp;lt;script&amp;gt;document.write(&#39;&amp;lt;script src=&amp;quot;http://&#39; 
-        + (location.host || &#39;localhost&#39;).split(&#39;:&#39;)[0] 
-    + &#39;:1313/livereload.js?mindelay=10&amp;quot;&amp;gt;&amp;lt;/&#39; 
-        + &#39;script&amp;gt;&#39;)&amp;lt;/script&amp;gt;&amp;lt;/body&amp;gt; 
+&lt;pre&gt;&lt;code&gt;$ cat public/index.html
+&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html&amp;gt;
+&amp;lt;body&amp;gt;
+  &amp;lt;p&amp;gt;hugo says hello!&amp;lt;/p&amp;gt;
+&amp;lt;script&amp;gt;document.write(&#39;&amp;lt;script src=&amp;quot;http://&#39;
+        + (location.host || &#39;localhost&#39;).split(&#39;:&#39;)[0]
+    + &#39;:1313/livereload.js?mindelay=10&amp;quot;&amp;gt;&amp;lt;/&#39;
+        + &#39;script&amp;gt;&#39;)&amp;lt;/script&amp;gt;&amp;lt;/body&amp;gt;
 &amp;lt;/html&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
@@ -1305,7 +1305,7 @@ INFO: 2014/09/29 attempting to create  post/first.md of post
 INFO: 2014/09/29 curpath: /Users/quoha/Sites/zafta/themes/zafta/archetypes/default.md
 ERROR: 2014/09/29 Unable to Cast &amp;lt;nil&amp;gt; to map[string]interface{}
 
-$ 
+$
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;That wasn&amp;rsquo;t very nice, was it?&lt;/p&gt;
@@ -1343,7 +1343,7 @@ total 16
 -rw-r--r--  1 quoha  staff  104 Sep 29 21:54 first.md
 -rw-r--r--  1 quoha  staff  105 Sep 29 21:57 second.md
 
-$ cat content/post/first.md 
+$ cat content/post/first.md
 +++
 Categories = []
 Description = &amp;quot;&amp;quot;
@@ -1354,7 +1354,7 @@ title = &amp;quot;first&amp;quot;
 +++
 my first post
 
-$ cat content/post/second.md 
+$ cat content/post/second.md
 +++
 Categories = []
 Description = &amp;quot;&amp;quot;
@@ -1365,7 +1365,7 @@ title = &amp;quot;second&amp;quot;
 +++
 my second post
 
-$ 
+$
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Build the web site and then verify the results.&lt;/p&gt;
@@ -1377,9 +1377,9 @@ INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/themes/zafta/static/ to /
 INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/static/ to /Users/quoha/Sites/zafta/public/
 INFO: 2014/09/29 found taxonomies: map[string]string{&amp;quot;category&amp;quot;:&amp;quot;categories&amp;quot;, &amp;quot;tag&amp;quot;:&amp;quot;tags&amp;quot;}
 WARN: 2014/09/29 Unable to locate layout: [404.html theme/404.html]
-0 draft content 
-0 future content 
-2 pages created 
+0 draft content
+0 future content
+2 pages created
 0 tags created
 0 categories created
 in 4 ms
@@ -1410,7 +1410,7 @@ $
 
 &lt;p&gt;The home page will contain a list of posts. Let&amp;rsquo;s update its template to add the posts that we just created. The logic in the template will run every time we build the site.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;$ vi themes/zafta/layouts/index.html 
+&lt;pre&gt;&lt;code&gt;$ vi themes/zafta/layouts/index.html
 &amp;lt;!DOCTYPE html&amp;gt;
 &amp;lt;html&amp;gt;
 &amp;lt;body&amp;gt;
@@ -1449,26 +1449,26 @@ INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/themes/zafta/static/ to /
 INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/static/ to /Users/quoha/Sites/zafta/public/
 INFO: 2014/09/29 found taxonomies: map[string]string{&amp;quot;tag&amp;quot;:&amp;quot;tags&amp;quot;, &amp;quot;category&amp;quot;:&amp;quot;categories&amp;quot;}
 WARN: 2014/09/29 Unable to locate layout: [404.html theme/404.html]
-0 draft content 
-0 future content 
-2 pages created 
+0 draft content
+0 future content
+2 pages created
 0 tags created
 0 categories created
 in 4 ms
-$ find public -type f -name &#39;*.html&#39; | xargs ls -l 
+$ find public -type f -name &#39;*.html&#39; | xargs ls -l
 -rw-r--r--  1 quoha  staff  94 Sep 29 22:23 public/index.html
 -rw-r--r--  1 quoha  staff   0 Sep 29 22:23 public/post/first/index.html
 -rw-r--r--  1 quoha  staff   0 Sep 29 22:23 public/post/index.html
 -rw-r--r--  1 quoha  staff   0 Sep 29 22:23 public/post/second/index.html
-$ cat public/index.html 
+$ cat public/index.html
 &amp;lt;!DOCTYPE html&amp;gt;
 &amp;lt;html&amp;gt;
 &amp;lt;body&amp;gt;
-  
+ 
     &amp;lt;h1&amp;gt;second&amp;lt;/h1&amp;gt;
-  
+ 
     &amp;lt;h1&amp;gt;first&amp;lt;/h1&amp;gt;
-  
+ 
 &amp;lt;/body&amp;gt;
 &amp;lt;/html&amp;gt;
 $
@@ -1498,7 +1498,7 @@ $
 
 &lt;h4 id=&#34;update-the-template-file&#34;&gt;Update the Template File&lt;/h4&gt;
 
-&lt;pre&gt;&lt;code&gt;$ vi themes/zafta/layouts/_default/single.html 
+&lt;pre&gt;&lt;code&gt;$ vi themes/zafta/layouts/_default/single.html
 &amp;lt;!DOCTYPE html&amp;gt;
 &amp;lt;html&amp;gt;
 &amp;lt;head&amp;gt;
@@ -1523,9 +1523,9 @@ INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/themes/zafta/static/ to /
 INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/static/ to /Users/quoha/Sites/zafta/public/
 INFO: 2014/09/29 found taxonomies: map[string]string{&amp;quot;tag&amp;quot;:&amp;quot;tags&amp;quot;, &amp;quot;category&amp;quot;:&amp;quot;categories&amp;quot;}
 WARN: 2014/09/29 Unable to locate layout: [404.html theme/404.html]
-0 draft content 
-0 future content 
-2 pages created 
+0 draft content
+0 future content
+2 pages created
 0 tags created
 0 categories created
 in 4 ms
@@ -1536,7 +1536,7 @@ $ find public -type f -name &#39;*.html&#39; | xargs ls -l
 -rw-r--r--  1 quoha  staff    0 Sep 29 22:40 public/post/index.html
 -rw-r--r--  1 quoha  staff  128 Sep 29 22:40 public/post/second/index.html
 
-$ cat public/post/first/index.html 
+$ cat public/post/first/index.html
 &amp;lt;!DOCTYPE html&amp;gt;
 &amp;lt;html&amp;gt;
 &amp;lt;head&amp;gt;
@@ -1549,7 +1549,7 @@ $ cat public/post/first/index.html
 &amp;lt;/body&amp;gt;
 &amp;lt;/html&amp;gt;
 
-$ cat public/post/second/index.html 
+$ cat public/post/second/index.html
 &amp;lt;!DOCTYPE html&amp;gt;
 &amp;lt;html&amp;gt;
 &amp;lt;head&amp;gt;
@@ -1590,9 +1590,9 @@ INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/themes/zafta/static/ to /
 INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/static/ to /Users/quoha/Sites/zafta/public/
 INFO: 2014/09/29 found taxonomies: map[string]string{&amp;quot;tag&amp;quot;:&amp;quot;tags&amp;quot;, &amp;quot;category&amp;quot;:&amp;quot;categories&amp;quot;}
 WARN: 2014/09/29 Unable to locate layout: [404.html theme/404.html]
-0 draft content 
-0 future content 
-2 pages created 
+0 draft content
+0 future content
+2 pages created
 0 tags created
 0 categories created
 in 4 ms
@@ -1603,15 +1603,15 @@ $ find public -type f -name &#39;*.html&#39; | xargs ls -l
 -rw-r--r--  1 quoha  staff    0 Sep 29 22:44 public/post/index.html
 -rw-r--r--  1 quoha  staff  128 Sep 29 22:44 public/post/second/index.html
 
-$ cat public/index.html 
+$ cat public/index.html
 &amp;lt;!DOCTYPE html&amp;gt;
 &amp;lt;html&amp;gt;
 &amp;lt;body&amp;gt;
-  
+ 
     &amp;lt;h1&amp;gt;&amp;lt;a href=&amp;quot;/post/second/&amp;quot;&amp;gt;second&amp;lt;/a&amp;gt;&amp;lt;/h1&amp;gt;
-  
+ 
     &amp;lt;h1&amp;gt;&amp;lt;a href=&amp;quot;/post/first/&amp;quot;&amp;gt;first&amp;lt;/a&amp;gt;&amp;lt;/h1&amp;gt;
-  
+ 
 &amp;lt;/body&amp;gt;
 &amp;lt;/html&amp;gt;
 
@@ -1636,7 +1636,7 @@ $
 
 &lt;p&gt;The default in Hugo is to use the directory structure of the content/ directory to guide the location of the generated html in the public/ directory. Let&amp;rsquo;s verify that by creating an &amp;ldquo;about&amp;rdquo; page at the top level:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;$ vi content/about.md 
+&lt;pre&gt;&lt;code&gt;$ vi content/about.md
 +++
 title = &amp;quot;about&amp;quot;
 description = &amp;quot;about this site&amp;quot;
@@ -3639,10 +3639,10 @@ int main(void){
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;// &#39;Hello World!&#39; program 
- 
+&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;// &#39;Hello World!&#39; program
+
 #include &amp;lt;iostream&amp;gt;
- 
+
 int main(){
   std::cout &amp;lt;&amp;lt; &amp;quot;Hello World!&amp;quot; &amp;lt;&amp;lt; std::endl;
   return 0;
@@ -3651,7 +3651,7 @@ int main(){
 
 &lt;pre&gt;&lt;code class=&#34;language-cs&#34;&gt;using System;
 class HelloWorld{
-  public static void Main(){ 
+  public static void Main(){
     System.Console.WriteLine(&amp;quot;Hello, World!&amp;quot;);
   }
 }
@@ -3667,7 +3667,7 @@ class HelloWorld{
 &lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;package main
 import fmt &amp;quot;fmt&amp;quot;
 
-func main() 
+func main()
 {
    fmt.Printf(&amp;quot;Hello, World!\n&amp;quot;);
 }
@@ -3683,7 +3683,7 @@ func main()
 ?&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;print(&amp;quot;Hello, World!&amp;quot;) 
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;print(&amp;quot;Hello, World!&amp;quot;)
 &lt;/code&gt;&lt;/pre&gt;</description>
       
     </item>

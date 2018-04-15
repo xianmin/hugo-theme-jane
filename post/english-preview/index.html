@@ -24,7 +24,6 @@
 
 <meta name="mobile-web-app-capable" content="yes">
 
-
 <meta name="author" content="Michael Henderson" />
   <meta name="description" content="Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
 
@@ -137,6 +136,8 @@ This tutorial will show you how to create a simple theme in Hugo. I assume that 
   <ul class="mobile-menu-list">
     <a href="/hugo-theme-jane/">
         <li class="mobile-menu-item">Home</li>
+      </a><a href="/hugo-theme-jane/categories/docs/">
+        <li class="mobile-menu-item">Docs</li>
       </a><a href="/hugo-theme-jane/post/">
         <li class="mobile-menu-item">Archives</li>
       </a><a href="/hugo-theme-jane/tags/">
@@ -153,39 +154,105 @@ This tutorial will show you how to create a simple theme in Hugo. I assume that 
 
   <header id="header" class="header container">
     <div class="logo-wrapper">
-  <a href="/hugo-theme-jane/" class="logo">Jane</a>
+  <a href="/hugo-theme-jane/" class="logo">
+    
+      Jane
+    
+  </a>
 </div>
 
 <nav class="site-navbar">
   <ul id="menu" class="menu">
-    <li class="menu-item">
+    
+      <li class="menu-item">
         
-        <a class="menu-item-link" href="/hugo-theme-jane/">Home</a>
+          
+          
+            <a class="menu-item-link" href="/hugo-theme-jane/">Home</a>
+          
+
         
-      </li><li class="menu-item">
-        
-        <a class="menu-item-link" href="/hugo-theme-jane/post/">Archives</a>
-        
-      </li><li class="menu-item">
-        
-        <a class="menu-item-link" href="/hugo-theme-jane/tags/">Tags</a>
-        
-      </li><li class="menu-item">
-        
-        <a class="menu-item-link" href="/hugo-theme-jane/categories/">Categories</a>
-        
-      </li><li class="menu-item">
-        
-        <a class="menu-item-link" href="/hugo-theme-jane/about/">About</a>
-        
-      </li><li class="menu-item">
-        
-        <a class="menu-item-link" href="https://gohugo.io" target="_blank">
-          external-link
-          <i class="iconfont icon-new-window"></i>
-        </a>
-        
+
       </li>
+    
+      <li class="menu-item">
+        
+          
+          <a class="menu-item-link menu-parent" href="/hugo-theme-jane/categories/docs/">Docs</a>
+          <ul class="submenu">
+            
+              <li>
+                <a href="/hugo-theme-jane/post/jane-theme-preview/">Jane Theme Preview</a>
+              </li>
+            
+              <li>
+                <a href="/hugo-theme-jane/post/shortcodes-preview/">Shortcodes Preview</a>
+              </li>
+            
+          </ul>
+
+        
+
+      </li>
+    
+      <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="/hugo-theme-jane/post/">Archives</a>
+          
+
+        
+
+      </li>
+    
+      <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="/hugo-theme-jane/tags/">Tags</a>
+          
+
+        
+
+      </li>
+    
+      <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="/hugo-theme-jane/categories/">Categories</a>
+          
+
+        
+
+      </li>
+    
+      <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="/hugo-theme-jane/about/">About</a>
+          
+
+        
+
+      </li>
+    
+      <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://gohugo.io" target="_blank">
+              external-link
+            <i class="iconfont icon-new-window"></i>
+            </a>
+          
+
+        
+
+      </li>
+    
   </ul>
 </nav>
   </header>
@@ -437,13 +504,13 @@ INFO: 2014/09/29 Using config file: config.toml
 INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/static/ to /Users/quoha/Sites/zafta/public/
 WARN: 2014/09/29 Unable to locate layout: [index.html _default/list.html _default/single.html]
 WARN: 2014/09/29 Unable to locate layout: [404.html]
-0 draft content 
-0 future content 
-0 pages created 
+0 draft content
+0 future content
+0 pages created
 0 tags created
 0 categories created
 in 2 ms
-$ 
+$
 </code></pre>
 
 <p>The &ldquo;<code>--verbose</code>&rdquo; flag gives extra information that will be helpful when we build the template. Every line of the output that starts with &ldquo;INFO:&rdquo; or &ldquo;WARN:&rdquo; is present because we used that flag. The lines that start with &ldquo;WARN:&rdquo; are warning messages. We&rsquo;ll go over them later.</p>
@@ -467,7 +534,7 @@ $
 total 16
 -rw-r--r--  1 quoha  staff  416 Sep 29 17:02 index.xml
 -rw-r--r--  1 quoha  staff  262 Sep 29 17:02 sitemap.xml
-$ 
+$
 </code></pre>
 
 <p>Hugo created two XML files, which is standard, but there are no HTML files.</p>
@@ -481,9 +548,9 @@ INFO: 2014/09/29 Using config file: /Users/quoha/Sites/zafta/config.toml
 INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/static/ to /Users/quoha/Sites/zafta/public/
 WARN: 2014/09/29 Unable to locate layout: [index.html _default/list.html _default/single.html]
 WARN: 2014/09/29 Unable to locate layout: [404.html]
-0 draft content 
-0 future content 
-0 pages created 
+0 draft content
+0 future content
+0 pages created
 0 tags created
 0 categories created
 in 2 ms
@@ -547,7 +614,7 @@ $ find themes -type f | xargs ls -l
 -rw-r--r--  1 quoha  staff     0 Sep 29 17:31 themes/zafta/layouts/partials/footer.html
 -rw-r--r--  1 quoha  staff     0 Sep 29 17:31 themes/zafta/layouts/partials/header.html
 -rw-r--r--  1 quoha  staff    93 Sep 29 17:31 themes/zafta/theme.toml
-$ 
+$
 </code></pre>
 
 <p>The skeleton includes templates (the files ending in .html), license file, a description of your theme (the theme.toml file), and an empty archetype.</p>
@@ -604,9 +671,9 @@ INFO: 2014/09/29 Using config file: /Users/quoha/Sites/zafta/config.toml
 INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/themes/zafta/static/ to /Users/quoha/Sites/zafta/public/
 INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/static/ to /Users/quoha/Sites/zafta/public/
 WARN: 2014/09/29 Unable to locate layout: [404.html theme/404.html]
-0 draft content 
-0 future content 
-0 pages created 
+0 draft content
+0 future content
+0 pages created
 0 tags created
 0 categories created
 in 2 ms
@@ -650,7 +717,7 @@ $
 <pre><code>$ find . -name index.html | xargs ls -l
 -rw-r--r--  1 quoha  staff  0 Sep 29 20:21 ./public/index.html
 -rw-r--r--  1 quoha  staff  0 Sep 29 17:31 ./themes/zafta/layouts/index.html
-$ 
+$
 </code></pre>
 
 <h4 id="the-magic-of-static">The Magic of Static</h4>
@@ -668,7 +735,7 @@ drwxr-xr-x  4 quoha  staff  136 Sep 29 17:31 themes/zafta/layouts/partials
 drwxr-xr-x  4 quoha  staff  136 Sep 29 17:31 themes/zafta/static
 drwxr-xr-x  2 quoha  staff   68 Sep 29 17:31 themes/zafta/static/css
 drwxr-xr-x  2 quoha  staff   68 Sep 29 17:31 themes/zafta/static/js
-$ 
+$
 </code></pre>
 
 <h2 id="the-theme-development-cycle">The Theme Development Cycle</h2>
@@ -723,9 +790,9 @@ INFO: 2014/09/29 Using config file: /Users/quoha/Sites/zafta/config.toml
 INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/themes/zafta/static/ to /Users/quoha/Sites/zafta/public/
 INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/static/ to /Users/quoha/Sites/zafta/public/
 WARN: 2014/09/29 Unable to locate layout: [404.html theme/404.html]
-0 draft content 
-0 future content 
-0 pages created 
+0 draft content
+0 future content
+0 pages created
 0 tags created
 0 categories created
 in 2 ms
@@ -737,9 +804,9 @@ INFO: 2014/09/29 File System Event: [&quot;/Users/quoha/Sites/zafta/themes/zafta
 Change detected, rebuilding site
 
 WARN: 2014/09/29 Unable to locate layout: [404.html theme/404.html]
-0 draft content 
-0 future content 
-0 pages created 
+0 draft content
+0 future content
+0 pages created
 0 tags created
 0 categories created
 in 1 ms
@@ -762,12 +829,12 @@ in 1 ms
 <p>Right now, that page is empty because we don&rsquo;t have any content and we don&rsquo;t have any logic in the template. Let&rsquo;s change that by adding some text to the template.</p>
 
 <pre><code>$ vi themes/zafta/layouts/index.html
-&lt;!DOCTYPE html&gt; 
-&lt;html&gt; 
-&lt;body&gt; 
-  &lt;p&gt;hugo says hello!&lt;/p&gt; 
-&lt;/body&gt; 
-&lt;/html&gt; 
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+  &lt;p&gt;hugo says hello!&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
 :wq
 
 $
@@ -780,9 +847,9 @@ INFO: 2014/09/29 Using config file: /Users/quoha/Sites/zafta/config.toml
 INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/themes/zafta/static/ to /Users/quoha/Sites/zafta/public/
 INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/static/ to /Users/quoha/Sites/zafta/public/
 WARN: 2014/09/29 Unable to locate layout: [404.html theme/404.html]
-0 draft content 
-0 future content 
-0 pages created 
+0 draft content
+0 future content
+0 pages created
 0 tags created
 0 categories created
 in 2 ms
@@ -790,11 +857,11 @@ in 2 ms
 $ find public -type f -name '*.html' | xargs ls -l
 -rw-r--r--  1 quoha  staff  78 Sep 29 21:26 public/index.html
 
-$ cat public/index.html 
-&lt;!DOCTYPE html&gt; 
-&lt;html&gt; 
-&lt;body&gt; 
-  &lt;p&gt;hugo says hello!&lt;/p&gt; 
+$ cat public/index.html
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+  &lt;p&gt;hugo says hello!&lt;/p&gt;
 &lt;/html&gt;
 </code></pre>
 
@@ -802,15 +869,15 @@ $ cat public/index.html
 
 <p>Note: If you&rsquo;re running the server with the <code>--watch</code> option, you&rsquo;ll see different content in the file:</p>
 
-<pre><code>$ cat public/index.html 
-&lt;!DOCTYPE html&gt; 
-&lt;html&gt; 
-&lt;body&gt; 
-  &lt;p&gt;hugo says hello!&lt;/p&gt; 
-&lt;script&gt;document.write('&lt;script src=&quot;http://' 
-        + (location.host || 'localhost').split(':')[0] 
-    + ':1313/livereload.js?mindelay=10&quot;&gt;&lt;/' 
-        + 'script&gt;')&lt;/script&gt;&lt;/body&gt; 
+<pre><code>$ cat public/index.html
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+  &lt;p&gt;hugo says hello!&lt;/p&gt;
+&lt;script&gt;document.write('&lt;script src=&quot;http://'
+        + (location.host || 'localhost').split(':')[0]
+    + ':1313/livereload.js?mindelay=10&quot;&gt;&lt;/'
+        + 'script&gt;')&lt;/script&gt;&lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
 
@@ -832,7 +899,7 @@ INFO: 2014/09/29 attempting to create  post/first.md of post
 INFO: 2014/09/29 curpath: /Users/quoha/Sites/zafta/themes/zafta/archetypes/default.md
 ERROR: 2014/09/29 Unable to Cast &lt;nil&gt; to map[string]interface{}
 
-$ 
+$
 </code></pre>
 
 <p>That wasn&rsquo;t very nice, was it?</p>
@@ -870,7 +937,7 @@ total 16
 -rw-r--r--  1 quoha  staff  104 Sep 29 21:54 first.md
 -rw-r--r--  1 quoha  staff  105 Sep 29 21:57 second.md
 
-$ cat content/post/first.md 
+$ cat content/post/first.md
 +++
 Categories = []
 Description = &quot;&quot;
@@ -881,7 +948,7 @@ title = &quot;first&quot;
 +++
 my first post
 
-$ cat content/post/second.md 
+$ cat content/post/second.md
 +++
 Categories = []
 Description = &quot;&quot;
@@ -892,7 +959,7 @@ title = &quot;second&quot;
 +++
 my second post
 
-$ 
+$
 </code></pre>
 
 <p>Build the web site and then verify the results.</p>
@@ -904,9 +971,9 @@ INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/themes/zafta/static/ to /
 INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/static/ to /Users/quoha/Sites/zafta/public/
 INFO: 2014/09/29 found taxonomies: map[string]string{&quot;category&quot;:&quot;categories&quot;, &quot;tag&quot;:&quot;tags&quot;}
 WARN: 2014/09/29 Unable to locate layout: [404.html theme/404.html]
-0 draft content 
-0 future content 
-2 pages created 
+0 draft content
+0 future content
+2 pages created
 0 tags created
 0 categories created
 in 4 ms
@@ -937,7 +1004,7 @@ $
 
 <p>The home page will contain a list of posts. Let&rsquo;s update its template to add the posts that we just created. The logic in the template will run every time we build the site.</p>
 
-<pre><code>$ vi themes/zafta/layouts/index.html 
+<pre><code>$ vi themes/zafta/layouts/index.html
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;body&gt;
@@ -976,26 +1043,26 @@ INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/themes/zafta/static/ to /
 INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/static/ to /Users/quoha/Sites/zafta/public/
 INFO: 2014/09/29 found taxonomies: map[string]string{&quot;tag&quot;:&quot;tags&quot;, &quot;category&quot;:&quot;categories&quot;}
 WARN: 2014/09/29 Unable to locate layout: [404.html theme/404.html]
-0 draft content 
-0 future content 
-2 pages created 
+0 draft content
+0 future content
+2 pages created
 0 tags created
 0 categories created
 in 4 ms
-$ find public -type f -name '*.html' | xargs ls -l 
+$ find public -type f -name '*.html' | xargs ls -l
 -rw-r--r--  1 quoha  staff  94 Sep 29 22:23 public/index.html
 -rw-r--r--  1 quoha  staff   0 Sep 29 22:23 public/post/first/index.html
 -rw-r--r--  1 quoha  staff   0 Sep 29 22:23 public/post/index.html
 -rw-r--r--  1 quoha  staff   0 Sep 29 22:23 public/post/second/index.html
-$ cat public/index.html 
+$ cat public/index.html
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;body&gt;
-  
+ 
     &lt;h1&gt;second&lt;/h1&gt;
-  
+ 
     &lt;h1&gt;first&lt;/h1&gt;
-  
+ 
 &lt;/body&gt;
 &lt;/html&gt;
 $
@@ -1025,7 +1092,7 @@ $
 
 <h4 id="update-the-template-file">Update the Template File</h4>
 
-<pre><code>$ vi themes/zafta/layouts/_default/single.html 
+<pre><code>$ vi themes/zafta/layouts/_default/single.html
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
@@ -1050,9 +1117,9 @@ INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/themes/zafta/static/ to /
 INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/static/ to /Users/quoha/Sites/zafta/public/
 INFO: 2014/09/29 found taxonomies: map[string]string{&quot;tag&quot;:&quot;tags&quot;, &quot;category&quot;:&quot;categories&quot;}
 WARN: 2014/09/29 Unable to locate layout: [404.html theme/404.html]
-0 draft content 
-0 future content 
-2 pages created 
+0 draft content
+0 future content
+2 pages created
 0 tags created
 0 categories created
 in 4 ms
@@ -1063,7 +1130,7 @@ $ find public -type f -name '*.html' | xargs ls -l
 -rw-r--r--  1 quoha  staff    0 Sep 29 22:40 public/post/index.html
 -rw-r--r--  1 quoha  staff  128 Sep 29 22:40 public/post/second/index.html
 
-$ cat public/post/first/index.html 
+$ cat public/post/first/index.html
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
@@ -1076,7 +1143,7 @@ $ cat public/post/first/index.html
 &lt;/body&gt;
 &lt;/html&gt;
 
-$ cat public/post/second/index.html 
+$ cat public/post/second/index.html
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
@@ -1117,9 +1184,9 @@ INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/themes/zafta/static/ to /
 INFO: 2014/09/29 syncing from /Users/quoha/Sites/zafta/static/ to /Users/quoha/Sites/zafta/public/
 INFO: 2014/09/29 found taxonomies: map[string]string{&quot;tag&quot;:&quot;tags&quot;, &quot;category&quot;:&quot;categories&quot;}
 WARN: 2014/09/29 Unable to locate layout: [404.html theme/404.html]
-0 draft content 
-0 future content 
-2 pages created 
+0 draft content
+0 future content
+2 pages created
 0 tags created
 0 categories created
 in 4 ms
@@ -1130,15 +1197,15 @@ $ find public -type f -name '*.html' | xargs ls -l
 -rw-r--r--  1 quoha  staff    0 Sep 29 22:44 public/post/index.html
 -rw-r--r--  1 quoha  staff  128 Sep 29 22:44 public/post/second/index.html
 
-$ cat public/index.html 
+$ cat public/index.html
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;body&gt;
-  
+ 
     &lt;h1&gt;&lt;a href=&quot;/post/second/&quot;&gt;second&lt;/a&gt;&lt;/h1&gt;
-  
+ 
     &lt;h1&gt;&lt;a href=&quot;/post/first/&quot;&gt;first&lt;/a&gt;&lt;/h1&gt;
-  
+ 
 &lt;/body&gt;
 &lt;/html&gt;
 
@@ -1163,7 +1230,7 @@ $
 
 <p>The default in Hugo is to use the directory structure of the content/ directory to guide the location of the generated html in the public/ directory. Let&rsquo;s verify that by creating an &ldquo;about&rdquo; page at the top level:</p>
 
-<pre><code>$ vi content/about.md 
+<pre><code>$ vi content/about.md
 +++
 title = &quot;about&quot;
 description = &quot;about this site&quot;
@@ -1458,55 +1525,55 @@ $ vi themes/zafta/layouts/_default/single.html
 
     <footer id="footer" class="footer">
       <div class="social-links">
-      <a href="mailto:your@email.com" rel="me" class="iconfont icon-email" 
+      <a href="mailto:your@email.com" rel="me" class="iconfont icon-email"
         title="email" target="_blank">
       </a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-stack-overflow" 
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-stack-overflow"
         title="stack-overflow" target="_blank">
       </a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-twitter" 
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-twitter"
         title="twitter" target="_blank">
       </a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-facebook" 
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-facebook"
         title="facebook" target="_blank">
       </a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-linkedin" 
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-linkedin"
         title="linkedin" target="_blank">
       </a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-google" 
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-google"
         title="google" target="_blank">
       </a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-github" 
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-github"
         title="github" target="_blank">
       </a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-weibo" 
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-weibo"
         title="weibo" target="_blank">
       </a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-zhihu" 
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-zhihu"
         title="zhihu" target="_blank">
       </a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-douban" 
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-douban"
         title="douban" target="_blank">
       </a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-pocket" 
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-pocket"
         title="pocket" target="_blank">
       </a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-tumblr" 
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-tumblr"
         title="tumblr" target="_blank">
       </a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-instagram" 
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-instagram"
         title="instagram" target="_blank">
       </a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-gitlab" 
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-gitlab"
         title="gitlab" target="_blank">
       </a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-goodreads" 
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-goodreads"
         title="goodreads" target="_blank">
       </a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-coding" 
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-coding"
         title="coding" target="_blank">
       </a>
-  <a href="http://en.xianmin.org/hugo-theme-jane/index.xml" type="application/rss+xml" class="iconfont icon-rss" 
+  <a href="http://en.xianmin.org/hugo-theme-jane/index.xml" type="application/rss+xml" class="iconfont icon-rss"
     title="rss" target="_blank">
   </a>
 </div>
@@ -1521,15 +1588,13 @@ $ vi themes/zafta/layouts/_default/single.html
   </span>
 
   <span class="copyright-year">
-    &copy; 
+    &copy;
     
-      2017 - 
+      2017 -
     2018
     <span class="heart">
       <i class="iconfont icon-heart"></i>
-    </span>
-    <span class="author">xianmin</span>
-  </span>
+    </span><span class="author">xianmin</span></span>
 </div>
     </footer>
 
