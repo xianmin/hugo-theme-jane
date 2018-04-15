@@ -43,27 +43,34 @@
   }
 
   blockquote {
-    margin: 1em 0;
-    padding: 1px 20px;
+    margin: 1em auto;
+    padding: 0.2em 2em 0.2em 3em;
+    color: #555555;
+    background-color: #F6F6F6;
+    border-left: 4px solid #999;
     position: relative;
-    color: rgba(#34495e, 0.8);
-    background-color: $content-blockquote-backgroud;
-    border-left: $content-blockquote-border-left;
-    box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+    line-height: 1.6;
+    font-family: Open Sans;
 
-    p {
-      margin: 0.5em 0;
+    &::before {
+      font-family: Arial;
+      content: "\201C";
+      color: #999;
+      font-size: 4em;
+      position: absolute;
+      left: 10px;
+      top: -10px;
     }
 
     footer {
-      margin: 0.5em 0;
+      color: #333333;
+      margin-bottom: 1em;
     }
 
     cite:before {
       content: '\2014';
       padding-right: .3em;
       padding-left: .3em;
-      color: #aaa;
     }
   }
 

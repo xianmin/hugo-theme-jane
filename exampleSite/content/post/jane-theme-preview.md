@@ -57,10 +57,11 @@ Markdown uses email-style > characters for block quoting. They are presented as:
 > This is a blockquote with two paragraphs. This is first paragraph.
 >
 > This is second pragraph.Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
-
-
-
+>
 > This is another blockquote with one paragraph. There is three empty line to seperate two blockquote.
+>
+> 这是一段中文测试。
+> 
 
 
 In typora, just input ‘>’ followed by quote contents a block quote is  generated. Typora will insert proper ‘>’ or line break for you. Block quote inside anther block quote is allowed by adding additional levels of ‘>’.
