@@ -10,10 +10,12 @@
 
     a {
       color: $theme-color;
-      border-bottom: 1px solid $theme-color;
-      cursor: crosshair;
       word-break: break-all;
       margin-right: 10px;
+
+      &:hover {
+        border-bottom: 1px solid $theme-color;
+      }
 
       &::before {
         content: '#';
