@@ -1,4 +1,5 @@
-import {Jane} from './jane.js'
+import { Jane } from './jane.js'
+import './headerAnchor'
 
 import '../css/style.scss'
 
