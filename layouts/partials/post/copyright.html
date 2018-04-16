@@ -2,6 +2,12 @@
 <div class="post-copyright">
   <p class="copyright-item">
     <span class="item-title">{{ i18n "author" }}</span>
+    {{- if or .Params.author .Site.Author.name -}}
+      {{ range $author := or .Params.author }}
+        <span class="item-content copyright-author">{{ $author }}</span> <span> | </span>
+      {{ end }}
+    {{- end -}}
+    
     <span class="item-content">{{ if .Params.author }}{{ .Params.author | safeHTML }}{{ else }}{{ .Site.Author.name | safeHTML }}{{ end }}</span>
   </p>
   <p class="copyright-item">
