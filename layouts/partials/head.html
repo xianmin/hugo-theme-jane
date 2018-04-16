@@ -24,7 +24,9 @@
 
 <!-- author & description & keywords  -->
 {{- if or .Params.author .Site.Author.name -}}
-<meta name="author" content="{{ if .Params.author }}{{ .Params.author | safeHTML }}{{ else }}{{ .Site.Author.name | safeHTML }}{{ end }}" />
+  {{ range $author := or .Params.author }}
+    <meta name="author" content="{{ $author }}" />
+  {{ end }}
 {{- end -}}
 
 {{- if .Description -}}
