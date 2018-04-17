@@ -22,9 +22,12 @@
 {{/* Add to homescreen for Chrome on Android */}}
 <meta name="mobile-web-app-capable" content="yes">
 
+
 <!-- author & description & keywords  -->
 {{- if or .Params.author .Site.Author.name -}}
-<meta name="author" content="{{ if .Params.author }}{{ .Params.author | safeHTML }}{{ else }}{{ .Site.Author.name | safeHTML }}{{ end }}" />
+  {{ range $author := or .Params.author }}
+    <meta name="author" content="{{ $author }}" />
+  {{ end }}
 {{- end -}}
 
 {{- if .Description -}}
