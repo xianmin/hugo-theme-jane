@@ -24,15 +24,13 @@ var linkifyAnchors = function (level, containingElement) {
 };
 
 
-document.onreadystatechange = function () {
-  if (this.readyState === "complete") {
-    var contentBlock = document.getElementsByClassName("post-content")[0];
-    if (!contentBlock) {
-      return;
-    }
+export default function () {
+  var contentBlock = document.getElementsByClassName("post-content")[0];
+  if (!contentBlock) {
+    return;
+  }
 
-    for (var level = 1; level <= 4; level++) {
-      linkifyAnchors(level, contentBlock);
-    }
+  for (var level = 1; level <= 4; level++) {
+    linkifyAnchors(level, contentBlock);
   }
 };

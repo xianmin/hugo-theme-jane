@@ -1,3 +1,7 @@
+/**
+ * footnote tooltip
+ */
+
 export default function () {
   $(".footnote-ref").each(function () {
     var id = $(this).children("a").attr("href").substr(1),

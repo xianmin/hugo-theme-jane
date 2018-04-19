@@ -1,16 +1,22 @@
-import { Jane } from './jane.js'
-import './headerAnchor'
-import fnTooltip from './footnoteTooltip'
+import '../css/style.scss';
 
-import '../css/style.scss'
+import backToTop from './backToTop';
+import mobileNavbar from './mobileNavbar';
+import toc from './toc';
+import headerAnchor from './headerAnchor';
+import fnTooltip from './footnoteTooltip';
+import fancybox from './fancybox';
+import highlight from './highlight';
+
 
 $(document).ready(function () {
-  Jane.backToTop()
-  Jane.mobileNavbar()
-  Jane.fancybox()
-  Jane.toc()
-  fnTooltip()
+  backToTop();
+  mobileNavbar();
+  toc();
+  headerAnchor();
+  fnTooltip();
+  fancybox();
 })
 
-hljs.initHighlighting()
-Jane.highlight()
+hljs.initHighlighting();
+highlight();
