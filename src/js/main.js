@@ -18,5 +18,4 @@ $(document).ready(function () {
   fancybox();
 })
 
-hljs.initHighlighting();
 highlight();
