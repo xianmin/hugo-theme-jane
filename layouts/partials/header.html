@@ -26,7 +26,7 @@
         {{ else }}
           <!-- normal MENU -->
           {{ if hasPrefix .URL "http" }}
-            <a class="menu-item-link" href="{{ .URL | safeURL }}" target="_blank">
+            <a class="menu-item-link" href="{{ .URL | safeURL }}" rel="noopener" target="_blank">
               {{ .Name }}
             <i class="iconfont icon-new-window"></i>
             </a>

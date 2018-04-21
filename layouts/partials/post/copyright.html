@@ -12,7 +12,7 @@
     {{ with $.OutputFormats.Get "markdown" -}}
     <p class="copyright-item">
       <span class="item-title">{{ i18n "markdown" }}</span>
-      <span class="item-content"><a class="link-to-markdown" href="{{ .Permalink }}" target="_blank">{{ i18n "seeMarkDown" }}</a></span>
+      <span class="item-content"><a class="link-to-markdown" href="{{ .Permalink }}" rel="noopener" target="_blank">{{ i18n "seeMarkDown" }}</a></span>
     </p>
     {{- end }}
   {{- end }}
