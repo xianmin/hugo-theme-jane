@@ -1,5 +1,5 @@
 p > code, pre {
-  padding: 7px;
+  padding: 0 7px;
   background: $code-background;
   border-radius: 4px;
   color: $code-color;
@@ -23,16 +23,17 @@ code, pre {
 
   table {
     position: relative;
+    padding: 0.8em 0;
 
     &::after {
       position: absolute;
       top: 0;
       right: 0;
-      padding: 2px 7px;
-      font-size: $code-font-size;
+      padding: 0 7px;
+      font-size: 0.8em;
       font-weight: bold;
       color: darken($gray, 10%);
-      background: darken($code-background, 3%);
+      // background: darken($code-background, 3%);
       content: 'Code';
     }
   }
@@ -42,7 +43,7 @@ code, pre {
     text-transform: capitalize;
   }
 
-  table, tr, td {
+  tr, td {
     margin: 0;
     padding: 0;
     width: 100%;
