@@ -34,115 +34,6 @@
     </item>
     
     <item>
-      <title>Jane-Theme Footnote Preview</title>
-      <link>http://en.xianmin.org/hugo-theme-jane/post/doc-footnote-preview/</link>
-      <pubDate>Fri, 06 Apr 2018 16:01:23 +0800</pubDate>
-      
-      <guid>http://en.xianmin.org/hugo-theme-jane/post/doc-footnote-preview/</guid>
-      
-        <description>
-
-&lt;h2 id=&#34;footnote-1&#34;&gt;Footnote-1&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;You can create footnotes like this[^footnote].&lt;span class=&#34;err&#34;&gt;
-&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;
-&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;&lt;/span&gt;[^footnote]: Here is the &lt;span class=&#34;ge&#34;&gt;*text*&lt;/span&gt; of the &lt;span class=&#34;gs&#34;&gt;**footnote**&lt;/span&gt;**.&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;will produce:&lt;/p&gt;
-
-&lt;p&gt;You can create footnotes like this&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:footnote1&#34;&gt;&lt;a href=&#34;#fn:footnote1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
-
-&lt;p&gt;Mouse on the ‘footnote’ superscript to see content of the footnote.&lt;/p&gt;
-
-&lt;h2 id=&#34;footnote-2&#34;&gt;Footnote-2&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;You can create footnotes like this[^footnote2].&lt;span class=&#34;err&#34;&gt;
-&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;
-&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;&lt;/span&gt;[^footnote2]: Here is the &lt;span class=&#34;ge&#34;&gt;*text*&lt;/span&gt; of the &lt;span class=&#34;gs&#34;&gt;**footnote**&lt;/span&gt;**.&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;will produce:&lt;/p&gt;
-
-&lt;p&gt;You can create footnotes like this&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:footnote&#34;&gt;&lt;a href=&#34;#fn:footnote&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
-
-&lt;p&gt;Mouse on the ‘footnote’ superscript to see content of the footnote.&lt;/p&gt;
-
-&lt;h2 id=&#34;footnote-3&#34;&gt;Footnote-3&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;You can create footnotes like this[^footnote].&lt;span class=&#34;err&#34;&gt;
-&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;
-&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;&lt;/span&gt;[^footnote]: Here is the &lt;span class=&#34;ge&#34;&gt;*text*&lt;/span&gt; of the &lt;span class=&#34;gs&#34;&gt;**footnote**&lt;/span&gt;**.&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;will produce:&lt;/p&gt;
-
-&lt;p&gt;You can create footnotes like this&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:footnote3&#34;&gt;&lt;a href=&#34;#fn:footnote3&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
-
-&lt;p&gt;Mouse on the ‘footnote’ superscript to see content of the footnote.&lt;/p&gt;
-
-&lt;h2 id=&#34;footnote-4&#34;&gt;Footnote-4&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;You can create footnotes like this[^footnote].&lt;span class=&#34;err&#34;&gt;
-&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;
-&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;&lt;/span&gt;[^footnote]: Here is the &lt;span class=&#34;ge&#34;&gt;*text*&lt;/span&gt; of the &lt;span class=&#34;gs&#34;&gt;**footnote**&lt;/span&gt;**.&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;will produce:&lt;/p&gt;
-
-&lt;p&gt;You can create footnotes like this&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:footnote4&#34;&gt;&lt;a href=&#34;#fn:footnote4&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
-
-&lt;p&gt;Mouse on the ‘footnote’ superscript to see content of the footnote.&lt;/p&gt;
-
-&lt;h2 id=&#34;footnote-5&#34;&gt;Footnote-5&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;You can create footnotes like this[^footnote].&lt;span class=&#34;err&#34;&gt;
-&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;
-&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;&lt;/span&gt;[^footnote]: Here is the &lt;span class=&#34;ge&#34;&gt;*text*&lt;/span&gt; of the &lt;span class=&#34;gs&#34;&gt;**footnote**&lt;/span&gt;**.&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;will produce dddddddddddddddddddddddddddddddddddddddddddddd:&lt;/p&gt;
-
-&lt;p&gt;You can create footnotes like this&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:footnote5&#34;&gt;&lt;a href=&#34;#fn:footnote5&#34;&gt;5&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
-
-&lt;p&gt;Mouse on the ‘footnote’ superscript to see content of the footnote.&lt;/p&gt;
-&lt;div class=&#34;footnotes&#34;&gt;
-
-&lt;hr /&gt;
-
-&lt;ol&gt;
-&lt;li id=&#34;fn:footnote1&#34;&gt;Here is the &lt;em&gt;text&lt;/em&gt; of the &lt;strong&gt;footnote-1&lt;/strong&gt;.
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:footnote1&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li id=&#34;fn:footnote&#34;&gt;Here is the &lt;em&gt;text&lt;/em&gt; of the &lt;strong&gt;footnote-2&lt;/strong&gt;. Here is the text of the footnote-2. Here is the text of the footnote-2. Here is the text of the footnote-2. Here is the text of the footnote-2.  &lt;a href=&#34;https://gohugo.io/&#34;&gt;The world’s fastest framework for building websites | Hugo&lt;/a&gt;
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:footnote&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li id=&#34;fn:footnote3&#34;&gt;Here is the &lt;em&gt;text&lt;/em&gt; of the &lt;strong&gt;footnote-3&lt;/strong&gt;.
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:footnote3&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li id=&#34;fn:footnote4&#34;&gt;Here is the &lt;em&gt;text&lt;/em&gt; of the &lt;strong&gt;footnote-4&lt;/strong&gt;.
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:footnote4&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li id=&#34;fn:footnote5&#34;&gt;Here is the &lt;em&gt;text&lt;/em&gt; of the &lt;strong&gt;footnote-5&lt;/strong&gt;.
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:footnote5&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-</description>
-      
-    </item>
-    
-    <item>
       <title>Jane Theme Preview</title>
       <link>http://en.xianmin.org/hugo-theme-jane/post/jane-theme-preview/</link>
       <pubDate>Tue, 06 Mar 2018 16:01:23 +0800</pubDate>
@@ -944,6 +835,118 @@ $$&lt;/p&gt;
   &lt;iframe src=&#34;//player.youku.com/embed/XMzQ0ODUxMjM2NA?autoplay=0&#34;
   style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34;
   allowfullscreen frameborder=&#34;0&#34; title=&#34;YouKu Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Jane-Theme Footnote Preview</title>
+      <link>http://en.xianmin.org/hugo-theme-jane/post/doc-footnote-preview/</link>
+      <pubDate>Thu, 01 Mar 2018 16:01:23 +0800</pubDate>
+      
+      <guid>http://en.xianmin.org/hugo-theme-jane/post/doc-footnote-preview/</guid>
+      
+        <description>&lt;p&gt;Hugo-theme-jane optimized for footnote. When you mouse hover the footnote&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:example&#34;&gt;&lt;a href=&#34;#fn:example&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; , footnote content will be displayed.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;footnote-1&#34;&gt;Footnote-1&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;You can create footnotes like this[^footnote].&lt;span class=&#34;err&#34;&gt;
+&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;
+&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;&lt;/span&gt;[^footnote]: Here is the &lt;span class=&#34;ge&#34;&gt;*text*&lt;/span&gt; of the &lt;span class=&#34;gs&#34;&gt;**footnote**&lt;/span&gt;**.&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;will produce:&lt;/p&gt;
+
+&lt;p&gt;You can create footnotes like this&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:footnote1&#34;&gt;&lt;a href=&#34;#fn:footnote1&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;p&gt;Mouse on the ‘footnote’ superscript to see content of the footnote.&lt;/p&gt;
+
+&lt;h2 id=&#34;footnote-2&#34;&gt;Footnote-2&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;You can create footnotes like this[^footnote2].&lt;span class=&#34;err&#34;&gt;
+&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;
+&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;&lt;/span&gt;[^footnote2]: Here is the &lt;span class=&#34;ge&#34;&gt;*text*&lt;/span&gt; of the &lt;span class=&#34;gs&#34;&gt;**footnote**&lt;/span&gt;**.&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;will produce:&lt;/p&gt;
+
+&lt;p&gt;You can create footnotes like this&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:footnote&#34;&gt;&lt;a href=&#34;#fn:footnote&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;p&gt;Mouse on the ‘footnote’ superscript to see content of the footnote.&lt;/p&gt;
+
+&lt;h2 id=&#34;footnote-3&#34;&gt;Footnote-3&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;You can create footnotes like this[^footnote].&lt;span class=&#34;err&#34;&gt;
+&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;
+&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;&lt;/span&gt;[^footnote]: Here is the &lt;span class=&#34;ge&#34;&gt;*text*&lt;/span&gt; of the &lt;span class=&#34;gs&#34;&gt;**footnote**&lt;/span&gt;**.&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;will produce:&lt;/p&gt;
+
+&lt;p&gt;You can create footnotes like this&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:footnote3&#34;&gt;&lt;a href=&#34;#fn:footnote3&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;p&gt;Mouse on the ‘footnote’ superscript to see content of the footnote.&lt;/p&gt;
+
+&lt;h2 id=&#34;footnote-4&#34;&gt;Footnote-4&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;You can create footnotes like this[^footnote].&lt;span class=&#34;err&#34;&gt;
+&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;
+&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;&lt;/span&gt;[^footnote]: Here is the &lt;span class=&#34;ge&#34;&gt;*text*&lt;/span&gt; of the &lt;span class=&#34;gs&#34;&gt;**footnote**&lt;/span&gt;**.&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;will produce:&lt;/p&gt;
+
+&lt;p&gt;You can create footnotes like this&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:footnote4&#34;&gt;&lt;a href=&#34;#fn:footnote4&#34;&gt;5&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;p&gt;Mouse on the ‘footnote’ superscript to see content of the footnote.&lt;/p&gt;
+
+&lt;h2 id=&#34;footnote-5&#34;&gt;Footnote-5&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;You can create footnotes like this[^footnote].&lt;span class=&#34;err&#34;&gt;
+&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;
+&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;&lt;/span&gt;[^footnote]: Here is the &lt;span class=&#34;ge&#34;&gt;*text*&lt;/span&gt; of the &lt;span class=&#34;gs&#34;&gt;**footnote**&lt;/span&gt;**.&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;will produce dddddddddddddddddddddddddddddddddddddddddddddd:&lt;/p&gt;
+
+&lt;p&gt;You can create footnotes like this&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:footnote5&#34;&gt;&lt;a href=&#34;#fn:footnote5&#34;&gt;6&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;p&gt;Mouse on the ‘footnote’ superscript to see content of the footnote.&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:example&#34;&gt;example footnote show.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:example&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:footnote1&#34;&gt;Here is the &lt;em&gt;text&lt;/em&gt; of the &lt;strong&gt;footnote-1&lt;/strong&gt;.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:footnote1&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:footnote&#34;&gt;Here is the &lt;em&gt;text&lt;/em&gt; of the &lt;strong&gt;footnote-2&lt;/strong&gt;. Here is the text of the footnote-2. Here is the text of the footnote-2. Here is the text of the footnote-2. Here is the text of the footnote-2.  &lt;a href=&#34;https://gohugo.io/&#34;&gt;The world’s fastest framework for building websites | Hugo&lt;/a&gt;
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:footnote&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:footnote3&#34;&gt;Here is the &lt;em&gt;text&lt;/em&gt; of the &lt;strong&gt;footnote-3&lt;/strong&gt;.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:footnote3&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:footnote4&#34;&gt;Here is the &lt;em&gt;text&lt;/em&gt; of the &lt;strong&gt;footnote-4&lt;/strong&gt;.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:footnote4&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:footnote5&#34;&gt;Here is the &lt;em&gt;text&lt;/em&gt; of the &lt;strong&gt;footnote-5&lt;/strong&gt;.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:footnote5&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
 &lt;/div&gt;</description>
       
     </item>

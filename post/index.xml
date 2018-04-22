@@ -5,24 +5,10 @@
     <link>http://en.xianmin.org/hugo-theme-jane/post/</link>
     <description>Recent content in Posts on Jane - A simple theme for Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 06 Apr 2018 16:01:23 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 06 Mar 2018 16:01:23 +0800</lastBuildDate>
     
 	<atom:link href="http://en.xianmin.org/hugo-theme-jane/post/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Jane-Theme Footnote Preview</title>
-      <link>http://en.xianmin.org/hugo-theme-jane/post/doc-footnote-preview/</link>
-      <pubDate>Fri, 06 Apr 2018 16:01:23 +0800</pubDate>
-      
-      <guid>http://en.xianmin.org/hugo-theme-jane/post/doc-footnote-preview/</guid>
-      <description>Footnote-1 123 You can create footnotes like this[^footnote].[^footnote]: Here is the *text* of the **footnote****.   will produce:
-You can create footnotes like this1.
-Mouse on the ‘footnote’ superscript to see content of the footnote.
-Footnote-2 123 You can create footnotes like this[^footnote2].[^footnote2]: Here is the *text* of the **footnote****.   will produce:
-You can create footnotes like this2.
-Mouse on the ‘footnote’ superscript to see content of the footnote.</description>
-    </item>
     
     <item>
       <title>Jane Theme Preview</title>
@@ -54,6 +40,17 @@ Mouse on the ‘footnote’ superscript to see content of the footnote.</descrip
 &lt;p&gt;In addition to cleaner Markdown, shortcodes can be updated any time to reflect new classes, techniques, or standards. At the point of site generation, Hugo shortcodes will easily merge in your changes. You avoid a possibly complicated search and replace operation.&lt;/p&gt;
 
 &lt;p&gt;More details: &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/&#34;&gt;https://gohugo.io/content-management/shortcodes/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Jane-Theme Footnote Preview</title>
+      <link>http://en.xianmin.org/hugo-theme-jane/post/doc-footnote-preview/</link>
+      <pubDate>Thu, 01 Mar 2018 16:01:23 +0800</pubDate>
+      
+      <guid>http://en.xianmin.org/hugo-theme-jane/post/doc-footnote-preview/</guid>
+      <description>&lt;p&gt;Hugo-theme-jane optimized for footnote. When you mouse hover the footnote&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:example&#34;&gt;&lt;a href=&#34;#fn:example&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; , footnote content will be displayed.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
