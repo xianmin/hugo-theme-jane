@@ -14,8 +14,13 @@ This theme focuses on improving reading experience.
 - Responsive and mobile friendly
 - Multilingual Mode support
 - Shortcodes : image, blockquote, music, etc.
-- Separate design for Tags & Categories Page.
+- Separate design for Tags & Categories Page
 - Social network linking
+- Better Pagination, TOC, footnote behavior
+- Use the awesome Chroma syntax highlighting
+- Custom css, Custom js, Custom head support
+- Sub menu support
+- Search Optimization
 
 
 ## Who use Hugo-theme-Jane
