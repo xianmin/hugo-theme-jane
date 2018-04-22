@@ -1,4 +1,37 @@
 
+1.3.0 / 2018-04-22
+==================
+
+  * 🚸 Improve UX and security using rel="noopener" (#45)
+  * ♻️ Migration from highlight.js to Chroma
+  * feat: support Git diff Minified JS and CSS
+  * feat: add editorconfig support
+  * refactor: main.js
+  * feat: Footnote Tooltip support  (#36)
+  * feat: add post content header-link support
+  * style(<blockquote>): better blockquote style
+  * style(<table>): better <table> style
+  * fix(tags): use relURL tags link
+  * feat: add submenu support #31
+  * fix undefined .Site.Author.name errors
+  * style(post): change the post-footer & post-copyright style
+  * style: Increase font size for <code> tag
+  * feat: add changelog
+  * style: change default page display
+  * style(social): open social iconfont link in new window
+  * style(iconfont): add coding icon support
+  * feat(shortcode): support youku shortcode
+  * feat(i18n): Show list of available translations (#27)
+  * Fix: access to tags when there are no tags (#26)
+  * refactor(toc): new TOC befavior
+  * feat: Add json feed (#25)
+  * add i18n spanish suport (#20)
+  * some seo
+  * fix url after enable uglyURLs
+  * support check uglyURLs set. must add uglyURLs to params config after set uglyURLs = true
+  * style(menu): add new iconfont for external link
+  * Auto open full link of menu in new window (#17)
+
 1.2.0 / 2018-03-27
 ==================
 
