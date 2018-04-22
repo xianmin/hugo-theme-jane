@@ -1,17 +1,21 @@
-code, pre {
+p > code, pre {
   padding: 7px;
-  font-size: $code-font-size;
-  font-family: $code-font-family;
   background: $code-background;
-}
-
-code {
-  padding: 0px 5px;
   border-radius: 4px;
   color: $code-color;
 }
 
-.highlight {
+code, pre {
+  font-size: $code-font-size;
+  font-family: $code-font-family;
+  padding: 0;
+}
+
+.chroma {
+  margin: 0;
+}
+
+.highlight > .chroma {
   margin: 1em 0;
   overflow-x: auto;
   position: relative;
@@ -33,31 +37,9 @@ code {
     }
   }
 
-  @each $sign, $text in $code-type-list {
-    &.#{$sign} > table::after {
-      content: $text;
-    }
-  }
-
-  .code {
-    pre {
-      margin: 0;
-    }
-  }
-
-  .gutter {
-    width: 10px;
-    color: $gray;
-
-    pre {
-      margin: 0;
-    }
-  }
-
-  .line {
-    // Fix code block null line height and
-    // Synchronous gutter and code line highly.
-    height: 1.5em;
+  > table::after {
+    content: attr(data-lang);
+    text-transform: capitalize;
   }
 
   table, tr, td {
@@ -67,70 +49,16 @@ code {
     border-collapse: collapse;
   }
 
-  .code {
-    .hljs-comment,
-    .hljs-quote {
-      color: map-get($code-highlight-color, comment);
-    }
+  tr>td:first-child {
+    width: 1%;
+    white-space: nowrap;
+  }
 
-    .hljs-keyword,
-    .hljs-selector-tag,
-    .hljs-addition {
-      color: map-get($code-highlight-color, keyword);
-    }
-
-    .hljs-number,
-    .hljs-string,
-    .hljs-meta .hljs-meta-string,
-    .hljs-literal,
-    .hljs-doctag,
-    .hljs-regexp {
-      color: map-get($code-highlight-color, number);
-    }
-
-    .hljs-title,
-    .hljs-section,
-    .hljs-name,
-    .hljs-selector-id,
-    .hljs-selector-class {
-      color: map-get($code-highlight-color, title);
-    }
-
-    .hljs-attribute,
-    .hljs-attr,
-    .hljs-variable,
-    .hljs-template-variable,
-    .hljs-class .hljs-title,
-    .hljs-type {
-      color: map-get($code-highlight-color, attribute);
-    }
-
-    .hljs-symbol,
-    .hljs-bullet,
-    .hljs-subst,
-    .hljs-meta,
-    .hljs-meta .hljs-keyword,
-    .hljs-selector-attr,
-    .hljs-selector-pseudo,
-    .hljs-link {
-      color: map-get($code-highlight-color, symbol);
-    }
-
-    .hljs-built_in,
-    .hljs-deletion {
-      color: map-get($code-highlight-color, built_in);
-    }
-
-    .hljs-formula {
-      background: map-get($code-highlight-color, formula);
-    }
-    
-    .hljs-emphasis {
-      font-style: italic;
-    }
-    
-    .hljs-strong {
-      font-weight: bold;
-    }
+  .lnt {
+    color: $gray;
+    display: block;
+    line-height: 2em;
   }
 }
+
+@import '_chroma_highlight';
