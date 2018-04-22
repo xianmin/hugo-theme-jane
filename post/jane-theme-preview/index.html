@@ -96,7 +96,7 @@ Please note that HTML fragments in markdown source will be recognized but not pa
 
 <meta itemprop="datePublished" content="2018-03-06T16:01:23&#43;08:00" />
 <meta itemprop="dateModified" content="2018-03-06T16:01:23&#43;08:00" />
-<meta itemprop="wordCount" content="1415">
+<meta itemprop="wordCount" content="1467">
 
 
 
@@ -118,6 +118,13 @@ Please note that HTML fragments in markdown source will be recognized but not pa
   <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
 <![endif]-->
 
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-34199129-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
 
 
 
@@ -244,7 +251,7 @@ Please note that HTML fragments in markdown source will be recognized but not pa
         
           
           
-            <a class="menu-item-link" href="https://gohugo.io" target="_blank">
+            <a class="menu-item-link" href="https://gohugo.io" rel="noopener" target="_blank">
               external-link
             <i class="iconfont icon-new-window"></i>
             </a>
@@ -284,8 +291,8 @@ Please note that HTML fragments in markdown source will be recognized but not pa
               <a href="/hugo-theme-jane/categories/index/"> index </a>
             
           </div>
-        <span class="more-meta"> 1415 words </span>
-        <span class="more-meta"> 7 min read </span>
+        <span class="more-meta"> 1467 words </span>
+        <span class="more-meta"> 3 min read </span>
       </div>
     </header>
 
@@ -345,14 +352,17 @@ Please note that HTML fragments in markdown source will be recognized but not pa
 <h2 id="headers">Headers</h2>
 
 <p>Headers use 1-6 hash characters at the start of the line, corresponding to header levels 1-6. For example:</p>
-
-<pre><code class="language-markdown"># This is an H1
-
-## This is an H2
-
-###### This is an H6
-</code></pre>
-
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown"><span class="lnt">1</span><span class="lnt">2</span><span class="lnt">3</span><span class="lnt">4</span><span class="lnt">5</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown"><span class="gh">#</span> This is an H1
+<span class="err">
+</span><span class="err"></span><span class="gu">##</span> This is an H2
+<span class="err">
+</span><span class="err"></span>###### This is an H6</code></pre></td></tr></table>
+</div>
+</div>
 <p>In typora, input ‘#’s followed by title content, and press <code>Return</code> key will create a header.</p>
 
 <h2 id="blockquotes">Blockquotes</h2>
@@ -404,19 +414,26 @@ Please note that HTML fragments in markdown source will be recognized but not pa
 <p>You can change the complete/incomplete state by click the checkbox before the item.</p>
 
 <h2 id="syntax-highlighting">Syntax Highlighting</h2>
-
-<pre><code class="language-js">function helloWorld () {
-  alert(&quot;Hello, World!&quot;)
-}
-</code></pre>
-
-<pre><code class="language-java">public class HelloWorld {
-  public static void main(String[] args) {
-    System.out.println(&quot;Hello, World!&quot;);
-  }
-}
-</code></pre>
-
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-js" data-lang="js"><span class="lnt">1</span><span class="lnt">2</span><span class="lnt">3</span><span class="lnt">4</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-js" data-lang="js"><span class="kd">function</span> <span class="nx">helloWorld</span> <span class="p">()</span> <span class="p">{</span>
+  <span class="nx">alert</span><span class="p">(</span><span class="s2">&#34;Hello, World!&#34;</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="lnt">1</span><span class="lnt">2</span><span class="lnt">3</span><span class="lnt">4</span><span class="lnt">5</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">HelloWorld</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;Hello, World!&#34;</span><span class="o">);</span>
+  <span class="o">}</span>
+<span class="o">}</span></code></pre></td></tr></table>
+</div>
+</div>
 <h2 id="math-blocks">Math Blocks</h2>
 
 <p>You can render *LaTeX* mathematical expressions using <strong>MathJax</strong>.</p>
@@ -431,16 +448,19 @@ $$
 $$</p>
 
 <p>In markdown source file, math block is <em>LaTeX</em> expression wrapped by ‘$$’ mark:</p>
-
-<pre><code class="language-markdown">$$
-\mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix}
-\mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\
-\frac{\partial X}{\partial u} &amp;  \frac{\partial Y}{\partial u} &amp; 0 \\
-\frac{\partial X}{\partial v} &amp;  \frac{\partial Y}{\partial v} &amp; 0 \\
-\end{vmatrix}
-$$
-</code></pre>
-
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown"><span class="lnt">1</span><span class="lnt">2</span><span class="lnt">3</span><span class="lnt">4</span><span class="lnt">5</span><span class="lnt">6</span><span class="lnt">7</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown">$$<span class="err">
+</span><span class="err"></span>\mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix}<span class="err">
+</span><span class="err"></span>\mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\<span class="err">
+</span><span class="err"></span>\frac{\partial X}{\partial u} &amp;  \frac{\partial Y}{\partial u} &amp; 0 \\<span class="err">
+</span><span class="err"></span>\frac{\partial X}{\partial v} &amp;  \frac{\partial Y}{\partial v} &amp; 0 \\<span class="err">
+</span><span class="err"></span>\end{vmatrix}<span class="err">
+</span><span class="err"></span>$$</code></pre></td></tr></table>
+</div>
+</div>
 <h2 id="tables">Tables</h2>
 
 <p>Input <code>| First Header  | Second Header |</code> and press <code>return</code> key will create a table with two column.</p>
@@ -450,16 +470,19 @@ $$
 <p>Following descriptions can be skipped, as markdown source code for tables are generated by typora automatically.</p>
 
 <p>In markdown source code, they look like:</p>
-
-<pre><code class="language-markdown">| Name              | Markdown            | HTML tag             |
-| ----------------- | ------------------- | -------------------- |
-| *Emphasis*        | `*Emphasis*`        | `&lt;em&gt;&lt;/em&gt;`          |
-| **Strong**        | `**Strong**`        | `&lt;strong&gt;&lt;/strong&gt;` |
-| `code`            | ``code``            | `&lt;code&gt;&lt;/code&gt;`      |
-| ~~Strikethrough~~ | `~~Strikethrough~~` | `&lt;del&gt;&lt;/del`         |
-| &lt;u&gt;Underline&lt;/u&gt;  | `&lt;u&gt;underline&lt;/u&gt;`  | `&lt;u&gt;&lt;/u&gt;`            |
-</code></pre>
-
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown"><span class="lnt">1</span><span class="lnt">2</span><span class="lnt">3</span><span class="lnt">4</span><span class="lnt">5</span><span class="lnt">6</span><span class="lnt">7</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown">| Name              | Markdown            | HTML tag             |<span class="err">
+</span><span class="err"></span>| ----------------- | ------------------- | -------------------- |<span class="err">
+</span><span class="err"></span>| <span class="ge">*Emphasis*</span>        | <span class="sb">`*Emphasis*`</span>        | <span class="sb">`&lt;em&gt;&lt;/em&gt;`</span>          |<span class="err">
+</span><span class="err"></span>| <span class="gs">**Strong**        | `**Strong**</span>**<span class="sb">`        | `</span>&lt;strong&gt;&lt;/strong&gt;` |<span class="err">
+</span><span class="err"></span>| <span class="sb">`code`</span>            | ``code``            | <span class="sb">`&lt;code&gt;&lt;/code&gt;`</span>      |<span class="err">
+</span><span class="err"></span>| <span class="gd">~~Strikethrough~~</span> | <span class="sb">`~~Strikethrough~~`</span> | <span class="sb">`&lt;del&gt;&lt;/del`</span>         |<span class="err">
+</span><span class="err"></span>| &lt;u&gt;Underline&lt;/u&gt;  | <span class="sb">`&lt;u&gt;underline&lt;/u&gt;`</span>  | <span class="sb">`&lt;u&gt;&lt;/u&gt;`</span>            |</code></pre></td></tr></table>
+</div>
+</div>
 <table>
 <thead>
 <tr>
@@ -503,12 +526,15 @@ $$
 </table>
 
 <h2 id="footnotes">Footnotes</h2>
-
-<pre><code class="language-markdown">You can create footnotes like this[^footnote].
-
-[^footnote]: Here is the *text* of the **footnote**.
-</code></pre>
-
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown"><span class="lnt">1</span><span class="lnt">2</span><span class="lnt">3</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown">You can create footnotes like this[^footnote].<span class="err">
+</span><span class="err">
+</span><span class="err"></span>[^footnote]: Here is the <span class="ge">*text*</span> of the <span class="gs">**footnote**</span>**.</code></pre></td></tr></table>
+</div>
+</div>
 <p>will produce:</p>
 
 <p>You can create footnotes like this<sup class="footnote-ref" id="fnref:footnote"><a href="#fn:footnote">1</a></sup>.</p>
@@ -528,12 +554,15 @@ $$
 <p>In both styles, the link text is delimited by [square brackets].</p>
 
 <p>To create an inline link, use a set of regular parentheses immediately after the link text’s closing square bracket. Inside the parentheses, put the URL where you want the link to point, along with an optional title for the link, surrounded in quotes. For example:</p>
-
-<pre><code class="language-markdown">This is [an example](http://example.com/ &quot;Title&quot;) inline link.
-
-[This link](http://example.net/) has no title attribute.
-</code></pre>
-
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown"><span class="lnt">1</span><span class="lnt">2</span><span class="lnt">3</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown">This is [<span class="nt">an example</span>](<span class="na">http://example.com/ &#34;Title&#34;</span>) inline link.<span class="err">
+</span><span class="err">
+</span><span class="err"></span>[<span class="nt">This link</span>](<span class="na">http://example.net/</span>) has no title attribute.</code></pre></td></tr></table>
+</div>
+</div>
 <p>will produce:</p>
 
 <p>This is <a href="http://example.com/" title="Title">an example</a> inline link. (<code>&lt;p&gt;This is &lt;a href=&quot;http://example.com/&quot; title=&quot;Title&quot;&gt;</code>)</p>
@@ -549,26 +578,32 @@ $$
 <h3 id="reference-links">Reference Links</h3>
 
 <p>Reference-style links use a second set of square brackets, inside which you place a label of your choosing to identify the link:</p>
-
-<pre><code class="language-markdown">This is [an example][id] reference-style link.
-
-Then, anywhere in the document, you define your link label like this, on a line by itself:
-
-[id]: http://example.com/  &quot;Optional Title Here&quot;
-</code></pre>
-
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown"><span class="lnt">1</span><span class="lnt">2</span><span class="lnt">3</span><span class="lnt">4</span><span class="lnt">5</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown">This is [an example][id] reference-style link.<span class="err">
+</span><span class="err">
+</span><span class="err"></span>Then, anywhere in the document, you define your link label like this, on a line by itself:<span class="err">
+</span><span class="err">
+</span><span class="err"></span>[id]: http://example.com/  &#34;Optional Title Here&#34;</code></pre></td></tr></table>
+</div>
+</div>
 <p>In typora, they will be rendered like:</p>
 
 <p>This is <a href="http://example.com/" title="Optional Title Here">an example</a> reference-style link.</p>
 
 <p>The implicit link name shortcut allows you to omit the name of the link, in which case the link text itself is used as the name. Just use an empty set of square brackets — e.g., to link the word “Google” to the google.com web site, you could simply write:</p>
-
-<pre><code class="language-markdown">[Google][]
-And then define the link:
-
-[Google]: http://google.com/
-</code></pre>
-
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown"><span class="lnt">1</span><span class="lnt">2</span><span class="lnt">3</span><span class="lnt">4</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown">[Google][]<span class="err">
+</span><span class="err"></span>And then define the link:<span class="err">
+</span><span class="err">
+</span><span class="err"></span>[Google]: http://google.com/</code></pre></td></tr></table>
+</div>
+</div>
 <p>In typora click link will expand it for editing, command+click will open the hyperlink in web browser.</p>
 
 <h2 id="urls">URLs</h2>
@@ -582,12 +617,15 @@ And then define the link:
 <h2 id="images">Images</h2>
 
 <p>Image looks similar with links, but it requires an additional <code>!</code> char before the start of link. Image syntax looks like this:</p>
-
-<pre><code class="language-markdown">![Alt text](/path/to/img.jpg)
-
-![Alt text](/path/to/img.jpg &quot;Optional title&quot;)
-</code></pre>
-
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown"><span class="lnt">1</span><span class="lnt">2</span><span class="lnt">3</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown">![<span class="nt">Alt text</span>](<span class="na">/path/to/img.jpg</span>)<span class="err">
+</span><span class="err">
+</span><span class="err"></span>![<span class="nt">Alt text</span>](<span class="na">/path/to/img.jpg &#34;Optional title&#34;</span>)</code></pre></td></tr></table>
+</div>
+</div>
 <p>You are able to use drag &amp; drop to insert image from image file or we browser. And modify the markdown source code by clicking on the image. Relative path will be used if image is in same directory or sub-directory with current editing document when drag &amp; drop.</p>
 
 <p>For more tips on images, please read <a href="http://support.typora.io//Images/">http://support.typora.io//Images/</a></p>
@@ -595,12 +633,15 @@ And then define the link:
 <h2 id="emphasis">Emphasis</h2>
 
 <p>Markdown treats asterisks (<code>*</code>) and underscores (<code>_</code>) as indicators of emphasis. Text wrapped with one <code>*</code> or <code>_</code> will be wrapped with an HTML <code>&lt;em&gt;</code> tag. E.g:</p>
-
-<pre><code class="language-markdown">*single asterisks*
-
-_single underscores_
-</code></pre>
-
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown"><span class="lnt">1</span><span class="lnt">2</span><span class="lnt">3</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown">*single asterisks*<span class="err">
+</span><span class="err">
+</span><span class="err"></span>_single underscores_</code></pre></td></tr></table>
+</div>
+</div>
 <p>output:</p>
 
 <p><em>single asterisks</em></p>
@@ -616,21 +657,27 @@ _single underscores_
 </blockquote>
 
 <p>To produce a literal asterisk or underscore at a position where it would otherwise be used as an emphasis delimiter, you can backslash escape it:</p>
-
-<pre><code class="language-markdown">\*this text is surrounded by literal asterisks\*
-</code></pre>
-
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown"><span class="lnt">1</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown">\*this text is surrounded by literal asterisks\*</code></pre></td></tr></table>
+</div>
+</div>
 <p>Typora recommends to use <code>*</code> symbol.</p>
 
 <h2 id="strong">Strong</h2>
 
 <p>double *’s or _’s will be wrapped with an HTML <code>&lt;strong&gt;</code> tag, e.g:</p>
-
-<pre><code class="language-markdown">**double asterisks**
-
-__double underscores__
-</code></pre>
-
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown"><span class="lnt">1</span><span class="lnt">2</span><span class="lnt">3</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown">**double asterisks**<span class="err">
+</span><span class="err">
+</span><span class="err"></span>__double underscores__</code></pre></td></tr></table>
+</div>
+</div>
 <p>output:</p>
 
 <p><strong>double asterisks</strong></p>
@@ -642,10 +689,13 @@ __double underscores__
 <h2 id="code">Code</h2>
 
 <p>To indicate a span of code, wrap it with backtick quotes (`). Unlike a pre-formatted code block, a code span indicates code within a normal paragraph. For example:</p>
-
-<pre><code class="language-markdown">Use the `printf()` function.
-</code></pre>
-
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown"><span class="lnt">1</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown">Use the <span class="sb">`printf()`</span> function.</code></pre></td></tr></table>
+</div>
+</div>
 <p>will produce:</p>
 
 <p>Use the <code>printf()</code> function.</p>
@@ -736,7 +786,26 @@ __double underscores__
     </footer>
     
 
-  
+  <div class="disqus-button" id="load_disqus" onclick="load_disqus()">
+      Show Disqus Comments
+    </div>
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    function load_disqus() {
+        
+        
+        if (window.location.hostname === 'localhost') return;
+
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        var disqus_shortname = 'xianmin12';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+
+        $('#load_disqus').remove();
+    };
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
 
   
 
@@ -748,55 +817,55 @@ __double underscores__
 
     <footer id="footer" class="footer">
       <div class="social-links">
-      <a href="mailto:your@email.com" rel="me" class="iconfont icon-email"
+      <a href="mailto:your@email.com" rel="me noopener" class="iconfont icon-email"
         title="email" target="_blank">
       </a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-stack-overflow"
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me noopener" class="iconfont icon-stack-overflow"
         title="stack-overflow" target="_blank">
       </a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-twitter"
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me noopener" class="iconfont icon-twitter"
         title="twitter" target="_blank">
       </a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-facebook"
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me noopener" class="iconfont icon-facebook"
         title="facebook" target="_blank">
       </a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-linkedin"
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me noopener" class="iconfont icon-linkedin"
         title="linkedin" target="_blank">
       </a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-google"
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me noopener" class="iconfont icon-google"
         title="google" target="_blank">
       </a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-github"
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me noopener" class="iconfont icon-github"
         title="github" target="_blank">
       </a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-weibo"
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me noopener" class="iconfont icon-weibo"
         title="weibo" target="_blank">
       </a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-zhihu"
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me noopener" class="iconfont icon-zhihu"
         title="zhihu" target="_blank">
       </a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-douban"
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me noopener" class="iconfont icon-douban"
         title="douban" target="_blank">
       </a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-pocket"
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me noopener" class="iconfont icon-pocket"
         title="pocket" target="_blank">
       </a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-tumblr"
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me noopener" class="iconfont icon-tumblr"
         title="tumblr" target="_blank">
       </a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-instagram"
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me noopener" class="iconfont icon-instagram"
         title="instagram" target="_blank">
       </a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-gitlab"
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me noopener" class="iconfont icon-gitlab"
         title="gitlab" target="_blank">
       </a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-goodreads"
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me noopener" class="iconfont icon-goodreads"
         title="goodreads" target="_blank">
       </a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-coding"
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me noopener" class="iconfont icon-coding"
         title="coding" target="_blank">
       </a>
-  <a href="http://en.xianmin.org/hugo-theme-jane/index.xml" type="application/rss+xml" class="iconfont icon-rss"
+  <a href="http://en.xianmin.org/hugo-theme-jane/index.xml" rel="noopener" type="application/rss+xml" class="iconfont icon-rss"
     title="rss" target="_blank">
   </a>
 </div>
@@ -826,7 +895,6 @@ __double underscores__
     </div>
   </div>
   
-<script src="/hugo-theme-jane/lib/highlight/highlight.pack.js?v=20171001"></script>
 <script type="text/javascript" src="/hugo-theme-jane/lib/jquery/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="/hugo-theme-jane/lib/slideout/slideout-1.0.1.min.js"></script>
   <script type="text/javascript" src="/hugo-theme-jane/lib/fancybox/jquery.fancybox-3.1.20.min.js"></script>
@@ -838,6 +906,7 @@ __double underscores__
     };
   </script>
   <script async src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'></script>
+
 
 
 

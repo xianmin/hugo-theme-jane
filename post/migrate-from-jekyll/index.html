@@ -26,8 +26,8 @@
 
 <meta name="author" content="xianmin" />
   <meta name="description" content="Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
-▾ &amp;lt;root&amp;gt;/ ▾ images/ logo.png  should become
-▾ &amp;lt;root&amp;gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static." />
+123 ▾ &amp;lt;root&amp;gt;/ ▾ images/ logo.png   should become
+1234 ▾ &amp;lt;root&amp;gt;/ ▾ static/ ▾ images/ logo.png   Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static." />
 
   <meta name="keywords" content="Hugo, theme, jane" />
 
@@ -61,8 +61,8 @@
 
 <meta property="og:title" content="Migrate to Hugo from Jekyll" />
 <meta property="og:description" content="Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
-▾ &lt;root&gt;/ ▾ images/ logo.png  should become
-▾ &lt;root&gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static." />
+123 ▾ &lt;root&gt;/ ▾ images/ logo.png   should become
+1234 ▾ &lt;root&gt;/ ▾ static/ ▾ images/ logo.png   Additionally, you&rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://en.xianmin.org/hugo-theme-jane/post/migrate-from-jekyll/" />
 
@@ -85,13 +85,13 @@
 
 <meta itemprop="name" content="Migrate to Hugo from Jekyll">
 <meta itemprop="description" content="Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
-▾ &lt;root&gt;/ ▾ images/ logo.png  should become
-▾ &lt;root&gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.">
+123 ▾ &lt;root&gt;/ ▾ images/ logo.png   should become
+1234 ▾ &lt;root&gt;/ ▾ static/ ▾ images/ logo.png   Additionally, you&rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.">
 
 
 <meta itemprop="datePublished" content="2014-03-10T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2014-03-10T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="813">
+<meta itemprop="wordCount" content="821">
 
 
 
@@ -99,8 +99,8 @@
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Migrate to Hugo from Jekyll"/>
 <meta name="twitter:description" content="Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
-▾ &lt;root&gt;/ ▾ images/ logo.png  should become
-▾ &lt;root&gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static."/>
+123 ▾ &lt;root&gt;/ ▾ images/ logo.png   should become
+1234 ▾ &lt;root&gt;/ ▾ static/ ▾ images/ logo.png   Additionally, you&rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static."/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -111,6 +111,13 @@
   <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
 <![endif]-->
 
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-34199129-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
 
 
 
@@ -237,7 +244,7 @@
         
           
           
-            <a class="menu-item-link" href="https://gohugo.io" target="_blank">
+            <a class="menu-item-link" href="https://gohugo.io" rel="noopener" target="_blank">
               external-link
             <i class="iconfont icon-new-window"></i>
             </a>
@@ -271,7 +278,7 @@
               <a href="/hugo-theme-jane/categories/index/"> index </a>
             
           </div>
-        <span class="more-meta"> 813 words </span>
+        <span class="more-meta"> 821 words </span>
         <span class="more-meta"> 4 min read </span>
       </div>
     </header>
@@ -314,20 +321,26 @@
 
 <p>Jekyll has a rule that any directory not starting with <code>_</code> will be copied as-is to the <code>_site</code> output. Hugo keeps all static content under <code>static</code>. You should therefore move it all there.
 With Jekyll, something that looked like</p>
-
-<pre><code>▾ &lt;root&gt;/
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1</span><span class="lnt">2</span><span class="lnt">3</span></pre></td>
+<td class="lntd">
+<pre class="chroma">▾ &lt;root&gt;/
     ▾ images/
-        logo.png
-</code></pre>
-
+        logo.png</pre></td></tr></table>
+</div>
+</div>
 <p>should become</p>
-
-<pre><code>▾ &lt;root&gt;/
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1</span><span class="lnt">2</span><span class="lnt">3</span><span class="lnt">4</span></pre></td>
+<td class="lntd">
+<pre class="chroma">▾ &lt;root&gt;/
     ▾ static/
         ▾ images/
-            logo.png
-</code></pre>
-
+            logo.png</pre></td></tr></table>
+</div>
+</div>
 <p>Additionally, you&rsquo;ll want any files that should reside at the root (such as <code>CNAME</code>) to be moved to <code>static</code>.</p>
 
 <h2 id="create-your-hugo-configuration-file">Create your Hugo configuration file</h2>
@@ -340,20 +353,28 @@ With Jekyll, something that looked like</p>
 
 <ol>
 <li><p>Change your submodule to point to map <code>gh-pages</code> to public instead of <code>_site</code> (recommended).</p>
-
-<pre><code>git submodule deinit _site
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1</span><span class="lnt">2</span><span class="lnt">3</span></pre></td>
+<td class="lntd">
+<pre class="chroma">git submodule deinit _site
 git rm _site
-git submodule add -b gh-pages git@github.com:your-username/your-repo.git public
-</code></pre></li>
+git submodule add -b gh-pages git@github.com:your-username/your-repo.git public</pre></td></tr></table>
+</div>
+</div></li>
 
 <li><p>Or, change the Hugo configuration to use <code>_site</code> instead of <code>public</code>.</p>
-
-<pre><code>{
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1</span><span class="lnt">2</span><span class="lnt">3</span><span class="lnt">4</span><span class="lnt">5</span></pre></td>
+<td class="lntd">
+<pre class="chroma">{
     ..
-    &quot;publishdir&quot;: &quot;_site&quot;,
+    &#34;publishdir&#34;: &#34;_site&#34;,
     ..
-}
-</code></pre></li>
+}</pre></td></tr></table>
+</div>
+</div></li>
 </ol>
 
 <h2 id="convert-jekyll-templates-to-hugo-templates">Convert Jekyll templates to Hugo templates</h2>
@@ -371,8 +392,11 @@ git submodule add -b gh-pages git@github.com:your-username/your-repo.git public
 <p>As an example, I was using a custom <a href="https://github.com/alexandre-normand/alexandre-normand/blob/74bb12036a71334fdb7dba84e073382fc06908ec/_plugins/image_tag.rb"><code>image_tag</code></a> plugin to generate figures with caption when running Jekyll. As I read about shortcodes, I found Hugo had a nice built-in shortcode that does exactly the same thing.</p>
 
 <p>Jekyll&rsquo;s plugin:</p>
-
-<pre><code>module Jekyll
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt"> 1</span><span class="lnt"> 2</span><span class="lnt"> 3</span><span class="lnt"> 4</span><span class="lnt"> 5</span><span class="lnt"> 6</span><span class="lnt"> 7</span><span class="lnt"> 8</span><span class="lnt"> 9</span><span class="lnt">10</span><span class="lnt">11</span><span class="lnt">12</span><span class="lnt">13</span><span class="lnt">14</span><span class="lnt">15</span><span class="lnt">16</span><span class="lnt">17</span><span class="lnt">18</span><span class="lnt">19</span><span class="lnt">20</span><span class="lnt">21</span><span class="lnt">22</span><span class="lnt">23</span><span class="lnt">24</span><span class="lnt">25</span><span class="lnt">26</span><span class="lnt">27</span><span class="lnt">28</span><span class="lnt">29</span><span class="lnt">30</span><span class="lnt">31</span><span class="lnt">32</span><span class="lnt">33</span><span class="lnt">34</span><span class="lnt">35</span><span class="lnt">36</span><span class="lnt">37</span><span class="lnt">38</span><span class="lnt">39</span><span class="lnt">40</span><span class="lnt">41</span><span class="lnt">42</span><span class="lnt">43</span><span class="lnt">44</span><span class="lnt">45</span><span class="lnt">46</span><span class="lnt">47</span><span class="lnt">48</span><span class="lnt">49</span><span class="lnt">50</span><span class="lnt">51</span><span class="lnt">52</span><span class="lnt">53</span></pre></td>
+<td class="lntd">
+<pre class="chroma">module Jekyll
   class ImageTag &lt; Liquid::Tag
     @url = nil
     @caption = nil
@@ -380,8 +404,8 @@ git submodule add -b gh-pages git@github.com:your-username/your-repo.git public
     @link = nil
     // Patterns
     IMAGE_URL_WITH_CLASS_AND_CAPTION =
-    IMAGE_URL_WITH_CLASS_AND_CAPTION_AND_LINK = /(\w+)(\s+)((https?:\/\/|\/)(\S+))(\s+)&quot;(.*?)&quot;(\s+)-&gt;((https?:\/\/|\/)(\S+))(\s*)/i
-    IMAGE_URL_WITH_CAPTION = /((https?:\/\/|\/)(\S+))(\s+)&quot;(.*?)&quot;/i
+    IMAGE_URL_WITH_CLASS_AND_CAPTION_AND_LINK = /(\w+)(\s+)((https?:\/\/|\/)(\S+))(\s+)&#34;(.*?)&#34;(\s+)-&gt;((https?:\/\/|\/)(\S+))(\s*)/i
+    IMAGE_URL_WITH_CAPTION = /((https?:\/\/|\/)(\S+))(\s+)&#34;(.*?)&#34;/i
     IMAGE_URL_WITH_CLASS = /(\w+)(\s+)((https?:\/\/|\/)(\S+))/i
     IMAGE_URL = /((https?:\/\/|\/)(\S+))/i
     def initialize(tag_name, markup, tokens)
@@ -407,60 +431,69 @@ git submodule add -b gh-pages git@github.com:your-username/your-repo.git public
     end
     def render(context)
       if @class
-        source = &quot;&lt;figure class='#{@class}'&gt;&quot;
+        source = &#34;&lt;figure class=&#39;#{@class}&#39;&gt;&#34;
       else
-        source = &quot;&lt;figure&gt;&quot;
+        source = &#34;&lt;figure&gt;&#34;
       end
       if @link
-        source += &quot;&lt;a href=\&quot;#{@link}\&quot;&gt;&quot;
+        source += &#34;&lt;a href=\&#34;#{@link}\&#34;&gt;&#34;
       end
-      source += &quot;&lt;img src=\&quot;#{@url}\&quot;&gt;&quot;
+      source += &#34;&lt;img src=\&#34;#{@url}\&#34;&gt;&#34;
       if @link
-        source += &quot;&lt;/a&gt;&quot;
+        source += &#34;&lt;/a&gt;&#34;
       end
-      source += &quot;&lt;figcaption&gt;#{@caption}&lt;/figcaption&gt;&quot; if @caption
-      source += &quot;&lt;/figure&gt;&quot;
+      source += &#34;&lt;figcaption&gt;#{@caption}&lt;/figcaption&gt;&#34; if @caption
+      source += &#34;&lt;/figure&gt;&#34;
       source
     end
   end
 end
-Liquid::Template.register_tag('image', Jekyll::ImageTag)
-</code></pre>
-
+Liquid::Template.register_tag(&#39;image&#39;, Jekyll::ImageTag)</pre></td></tr></table>
+</div>
+</div>
 <p>is written as this Hugo shortcode:</p>
-
-<pre><code>&lt;!-- image --&gt;
-&lt;figure {{ with .Get &quot;class&quot; }}class=&quot;{{.}}&quot;{{ end }}&gt;
-    {{ with .Get &quot;link&quot;}}&lt;a href=&quot;{{.}}&quot;&gt;{{ end }}
-        &lt;img src=&quot;{{ .Get &quot;src&quot; }}&quot; {{ if or (.Get &quot;alt&quot;) (.Get &quot;caption&quot;) }}alt=&quot;{{ with .Get &quot;alt&quot;}}{{.}}{{else}}{{ .Get &quot;caption&quot; }}{{ end }}&quot;{{ end }} /&gt;
-    {{ if .Get &quot;link&quot;}}&lt;/a&gt;{{ end }}
-    {{ if or (or (.Get &quot;title&quot;) (.Get &quot;caption&quot;)) (.Get &quot;attr&quot;)}}
-    &lt;figcaption&gt;{{ if isset .Params &quot;title&quot; }}
-        {{ .Get &quot;title&quot; }}{{ end }}
-        {{ if or (.Get &quot;caption&quot;) (.Get &quot;attr&quot;)}}&lt;p&gt;
-        {{ .Get &quot;caption&quot; }}
-        {{ with .Get &quot;attrlink&quot;}}&lt;a href=&quot;{{.}}&quot;&gt; {{ end }}
-            {{ .Get &quot;attr&quot; }}
-        {{ if .Get &quot;attrlink&quot;}}&lt;/a&gt; {{ end }}
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt"> 1</span><span class="lnt"> 2</span><span class="lnt"> 3</span><span class="lnt"> 4</span><span class="lnt"> 5</span><span class="lnt"> 6</span><span class="lnt"> 7</span><span class="lnt"> 8</span><span class="lnt"> 9</span><span class="lnt">10</span><span class="lnt">11</span><span class="lnt">12</span><span class="lnt">13</span><span class="lnt">14</span><span class="lnt">15</span><span class="lnt">16</span><span class="lnt">17</span><span class="lnt">18</span></pre></td>
+<td class="lntd">
+<pre class="chroma">&lt;!-- image --&gt;
+&lt;figure {{ with .Get &#34;class&#34; }}class=&#34;{{.}}&#34;{{ end }}&gt;
+    {{ with .Get &#34;link&#34;}}&lt;a href=&#34;{{.}}&#34;&gt;{{ end }}
+        &lt;img src=&#34;{{ .Get &#34;src&#34; }}&#34; {{ if or (.Get &#34;alt&#34;) (.Get &#34;caption&#34;) }}alt=&#34;{{ with .Get &#34;alt&#34;}}{{.}}{{else}}{{ .Get &#34;caption&#34; }}{{ end }}&#34;{{ end }} /&gt;
+    {{ if .Get &#34;link&#34;}}&lt;/a&gt;{{ end }}
+    {{ if or (or (.Get &#34;title&#34;) (.Get &#34;caption&#34;)) (.Get &#34;attr&#34;)}}
+    &lt;figcaption&gt;{{ if isset .Params &#34;title&#34; }}
+        {{ .Get &#34;title&#34; }}{{ end }}
+        {{ if or (.Get &#34;caption&#34;) (.Get &#34;attr&#34;)}}&lt;p&gt;
+        {{ .Get &#34;caption&#34; }}
+        {{ with .Get &#34;attrlink&#34;}}&lt;a href=&#34;{{.}}&#34;&gt; {{ end }}
+            {{ .Get &#34;attr&#34; }}
+        {{ if .Get &#34;attrlink&#34;}}&lt;/a&gt; {{ end }}
         &lt;/p&gt; {{ end }}
     &lt;/figcaption&gt;
     {{ end }}
 &lt;/figure&gt;
-&lt;!-- image --&gt;
-</code></pre>
-
+&lt;!-- image --&gt;</pre></td></tr></table>
+</div>
+</div>
 <h3 id="usage">Usage</h3>
 
 <p>I simply changed:</p>
-
-<pre><code>{% image full http://farm5.staticflickr.com/4136/4829260124_57712e570a_o_d.jpg &quot;One of my favorite touristy-type photos. I secretly waited for the good light while we were &quot;having fun&quot; and took this. Only regret: a stupid pole in the top-left corner of the frame I had to clumsily get rid of at post-processing.&quot; -&gt;http://www.flickr.com/photos/alexnormand/4829260124/in/set-72157624547713078/ %}
-</code></pre>
-
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1</span></pre></td>
+<td class="lntd">
+<pre class="chroma">{% image full http://farm5.staticflickr.com/4136/4829260124_57712e570a_o_d.jpg &#34;One of my favorite touristy-type photos. I secretly waited for the good light while we were &#34;having fun&#34; and took this. Only regret: a stupid pole in the top-left corner of the frame I had to clumsily get rid of at post-processing.&#34; -&gt;http://www.flickr.com/photos/alexnormand/4829260124/in/set-72157624547713078/ %}</pre></td></tr></table>
+</div>
+</div>
 <p>to this (this example uses a slightly extended version named <code>fig</code>, different than the built-in <code>figure</code>):</p>
-
-<pre><code>{{% fig class=&quot;full&quot; src=&quot;http://farm5.staticflickr.com/4136/4829260124_57712e570a_o_d.jpg&quot; title=&quot;One of my favorite touristy-type photos. I secretly waited for the good light while we were having fun and took this. Only regret: a stupid pole in the top-left corner of the frame I had to clumsily get rid of at post-processing.&quot; link=&quot;http://www.flickr.com/photos/alexnormand/4829260124/in/set-72157624547713078/&quot; %}}
-</code></pre>
-
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1</span></pre></td>
+<td class="lntd">
+<pre class="chroma">{{% fig class=&#34;full&#34; src=&#34;http://farm5.staticflickr.com/4136/4829260124_57712e570a_o_d.jpg&#34; title=&#34;One of my favorite touristy-type photos. I secretly waited for the good light while we were having fun and took this. Only regret: a stupid pole in the top-left corner of the frame I had to clumsily get rid of at post-processing.&#34; link=&#34;http://www.flickr.com/photos/alexnormand/4829260124/in/set-72157624547713078/&#34; %}}</pre></td></tr></table>
+</div>
+</div>
 <p>As a bonus, the shortcode named parameters are, arguably, more readable.</p>
 
 <h2 id="finishing-touches">Finishing touches</h2>
@@ -535,7 +568,26 @@ Liquid::Template.register_tag('image', Jekyll::ImageTag)
     </footer>
     
 
-  
+  <div class="disqus-button" id="load_disqus" onclick="load_disqus()">
+      Show Disqus Comments
+    </div>
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    function load_disqus() {
+        
+        
+        if (window.location.hostname === 'localhost') return;
+
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        var disqus_shortname = 'xianmin12';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+
+        $('#load_disqus').remove();
+    };
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
 
   
 
@@ -547,55 +599,55 @@ Liquid::Template.register_tag('image', Jekyll::ImageTag)
 
     <footer id="footer" class="footer">
       <div class="social-links">
-      <a href="mailto:your@email.com" rel="me" class="iconfont icon-email"
+      <a href="mailto:your@email.com" rel="me noopener" class="iconfont icon-email"
         title="email" target="_blank">
       </a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-stack-overflow"
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me noopener" class="iconfont icon-stack-overflow"
         title="stack-overflow" target="_blank">
       </a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-twitter"
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me noopener" class="iconfont icon-twitter"
         title="twitter" target="_blank">
       </a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-facebook"
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me noopener" class="iconfont icon-facebook"
         title="facebook" target="_blank">
       </a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-linkedin"
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me noopener" class="iconfont icon-linkedin"
         title="linkedin" target="_blank">
       </a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-google"
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me noopener" class="iconfont icon-google"
         title="google" target="_blank">
       </a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-github"
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me noopener" class="iconfont icon-github"
         title="github" target="_blank">
       </a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-weibo"
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me noopener" class="iconfont icon-weibo"
         title="weibo" target="_blank">
       </a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-zhihu"
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me noopener" class="iconfont icon-zhihu"
         title="zhihu" target="_blank">
       </a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-douban"
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me noopener" class="iconfont icon-douban"
         title="douban" target="_blank">
       </a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-pocket"
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me noopener" class="iconfont icon-pocket"
         title="pocket" target="_blank">
       </a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-tumblr"
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me noopener" class="iconfont icon-tumblr"
         title="tumblr" target="_blank">
       </a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-instagram"
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me noopener" class="iconfont icon-instagram"
         title="instagram" target="_blank">
       </a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-gitlab"
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me noopener" class="iconfont icon-gitlab"
         title="gitlab" target="_blank">
       </a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-goodreads"
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me noopener" class="iconfont icon-goodreads"
         title="goodreads" target="_blank">
       </a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-coding"
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me noopener" class="iconfont icon-coding"
         title="coding" target="_blank">
       </a>
-  <a href="http://en.xianmin.org/hugo-theme-jane/index.xml" type="application/rss+xml" class="iconfont icon-rss"
+  <a href="http://en.xianmin.org/hugo-theme-jane/index.xml" rel="noopener" type="application/rss+xml" class="iconfont icon-rss"
     title="rss" target="_blank">
   </a>
 </div>
@@ -625,11 +677,11 @@ Liquid::Template.register_tag('image', Jekyll::ImageTag)
     </div>
   </div>
   
-<script src="/hugo-theme-jane/lib/highlight/highlight.pack.js?v=20171001"></script>
 <script type="text/javascript" src="/hugo-theme-jane/lib/jquery/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="/hugo-theme-jane/lib/slideout/slideout-1.0.1.min.js"></script>
   <script type="text/javascript" src="/hugo-theme-jane/lib/fancybox/jquery.fancybox-3.1.20.min.js"></script>
 <script type="text/javascript" src="/hugo-theme-jane/dist/jane.min.js?v=2.7.0"></script>
+
 
 
 

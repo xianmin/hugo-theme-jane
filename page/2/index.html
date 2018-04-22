@@ -24,7 +24,6 @@
 
 <meta name="mobile-web-app-capable" content="yes">
 
-
 <meta name="author" content="xianmin" />
   <meta name="description" content="Hugo theme jane example site." />
   <meta name="keywords" content="Hugo, theme, jane" />
@@ -66,8 +65,9 @@
 
 
 
-<meta property="og:updated_time" content="2014-04-02T00:00:00&#43;00:00"/>
+<meta property="og:updated_time" content="2014-09-28T00:00:00&#43;00:00"/>
 
+<meta property="og:site_name" content="Jane - A simple theme for Hugo" />
 
 
 
@@ -119,6 +119,8 @@ ga('send', 'pageview');
   <ul class="mobile-menu-list">
     <a href="/hugo-theme-jane/">
         <li class="mobile-menu-item">Home</li>
+      </a><a href="/hugo-theme-jane/categories/docs/">
+        <li class="mobile-menu-item">Docs</li>
       </a><a href="/hugo-theme-jane/post/">
         <li class="mobile-menu-item">Archives</li>
       </a><a href="/hugo-theme-jane/tags/">
@@ -135,39 +137,105 @@ ga('send', 'pageview');
 
   <header id="header" class="header container">
     <div class="logo-wrapper">
-  <a href="/hugo-theme-jane/" class="logo">Jane</a>
+  <a href="/hugo-theme-jane/" class="logo">
+    
+      Jane
+    
+  </a>
 </div>
 
 <nav class="site-navbar">
   <ul id="menu" class="menu">
-    <li class="menu-item">
+    
+      <li class="menu-item">
         
-        <a class="menu-item-link" href="/hugo-theme-jane/">Home</a>
+          
+          
+            <a class="menu-item-link" href="/hugo-theme-jane/">Home</a>
+          
+
         
-      </li><li class="menu-item">
-        
-        <a class="menu-item-link" href="/hugo-theme-jane/post/">Archives</a>
-        
-      </li><li class="menu-item">
-        
-        <a class="menu-item-link" href="/hugo-theme-jane/tags/">Tags</a>
-        
-      </li><li class="menu-item">
-        
-        <a class="menu-item-link" href="/hugo-theme-jane/categories/">Categories</a>
-        
-      </li><li class="menu-item">
-        
-        <a class="menu-item-link" href="/hugo-theme-jane/about/">About</a>
-        
-      </li><li class="menu-item">
-        
-        <a class="menu-item-link" href="https://gohugo.io" target="_blank">
-          external-link
-          <i class="iconfont icon-new-window"></i>
-        </a>
-        
+
       </li>
+    
+      <li class="menu-item">
+        
+          
+          <a class="menu-item-link menu-parent" href="/hugo-theme-jane/categories/docs/">Docs</a>
+          <ul class="submenu">
+            
+              <li>
+                <a href="/hugo-theme-jane/post/jane-theme-preview/">Jane Theme Preview</a>
+              </li>
+            
+              <li>
+                <a href="/hugo-theme-jane/post/shortcodes-preview/">Shortcodes Preview</a>
+              </li>
+            
+          </ul>
+
+        
+
+      </li>
+    
+      <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="/hugo-theme-jane/post/">Archives</a>
+          
+
+        
+
+      </li>
+    
+      <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="/hugo-theme-jane/tags/">Tags</a>
+          
+
+        
+
+      </li>
+    
+      <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="/hugo-theme-jane/categories/">Categories</a>
+          
+
+        
+
+      </li>
+    
+      <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="/hugo-theme-jane/about/">About</a>
+          
+
+        
+
+      </li>
+    
+      <li class="menu-item">
+        
+          
+          
+            <a class="menu-item-link" href="https://gohugo.io" rel="noopener" target="_blank">
+              external-link
+            <i class="iconfont icon-new-window"></i>
+            </a>
+          
+
+        
+
+      </li>
+    
   </ul>
 </nav>
   </header>
@@ -183,7 +251,42 @@ ga('send', 'pageview');
     
       <article class="post bg-white">
   <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/hugo-theme-jane/post/creating-a-new-theme/">Creating a New Theme</a></h1>
+    
+    <div class="post-meta">
+      <span class="post-time"> 2014-09-28 </span>
+      <div class="post-category">
+          
+            <a href="/hugo-theme-jane/categories/development/"> Development </a>
+          
+            <a href="/hugo-theme-jane/categories/golang/"> golang </a>
+          
+            <a href="/hugo-theme-jane/categories/index/"> index </a>
+          
+        </div>
+      <span class="more-meta"> 7281 words </span>
+      <span class="more-meta"> 35 min read </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    
+    <div class="post-summary">
+      Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&rsquo;t cover using CSS to style your theme.
+We&rsquo;ll start with creating a new site with a very basic template.
+    </div>
+    <div class="read-more">
+      <a href="/hugo-theme-jane/post/creating-a-new-theme/" class="read-more-link">Read more</a>
+    </div>
+    
+  </div>
+</article>
+
+    
+      <article class="post bg-white">
+  <header class="post-header">
     <h1 class="post-title"><a class="post-link" href="/hugo-theme-jane/post/goisforlovers/">(Hu)go Template Primer</a></h1>
+    
     <div class="post-meta">
       <span class="post-time"> 2014-04-02 </span>
       <div class="post-category">
@@ -195,8 +298,8 @@ ga('send', 'pageview');
             <a href="/hugo-theme-jane/categories/index/"> index </a>
           
         </div>
-      <span class="more-meta"> 1488 words </span>
-      <span class="more-meta"> 7 min read </span>
+      <span class="more-meta"> 1510 words </span>
+      <span class="more-meta"> 8 min read </span>
     </div>
   </header>
   
@@ -217,6 +320,7 @@ This document is a brief primer on using go templates.
       <article class="post bg-white">
   <header class="post-header">
     <h1 class="post-title"><a class="post-link" href="/hugo-theme-jane/post/hugoisforlovers/">Getting Started with Hugo</a></h1>
+    
     <div class="post-meta">
       <span class="post-time"> 2014-04-02 </span>
       <div class="post-category">
@@ -228,7 +332,7 @@ This document is a brief primer on using go templates.
             <a href="/hugo-theme-jane/categories/index/"> index </a>
           
         </div>
-      <span class="more-meta"> 349 words </span>
+      <span class="more-meta"> 352 words </span>
       <span class="more-meta"> 2 min read </span>
     </div>
   </header>
@@ -254,6 +358,7 @@ Follow the following steps:
       <article class="post bg-white">
   <header class="post-header">
     <h1 class="post-title"><a class="post-link" href="/hugo-theme-jane/post/migrate-from-jekyll/">Migrate to Hugo from Jekyll</a></h1>
+    
     <div class="post-meta">
       <span class="post-time"> 2014-03-10 </span>
       <div class="post-category">
@@ -265,7 +370,7 @@ Follow the following steps:
             <a href="/hugo-theme-jane/categories/index/"> index </a>
           
         </div>
-      <span class="more-meta"> 813 words </span>
+      <span class="more-meta"> 821 words </span>
       <span class="more-meta"> 4 min read </span>
     </div>
   </header>
@@ -274,8 +379,8 @@ Follow the following steps:
     
     <div class="post-summary">
       Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
-▾ &lt;root&gt;/ ▾ images/ logo.png  should become
-▾ &lt;root&gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.
+123 ▾ &lt;root&gt;/ ▾ images/ logo.png   should become
+1234 ▾ &lt;root&gt;/ ▾ static/ ▾ images/ logo.png   Additionally, you&rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.
     </div>
     <div class="read-more">
       <a href="/hugo-theme-jane/post/migrate-from-jekyll/" class="read-more-link">Read more</a>
@@ -288,6 +393,7 @@ Follow the following steps:
       <article class="post bg-white">
   <header class="post-header">
     <h1 class="post-title"><a class="post-link" href="/hugo-theme-jane/post/syntax-highlighting/">Syntax Highlighting</a></h1>
+    
     <div class="post-meta">
       <span class="post-time"> 2011-08-30 </span>
       <div class="post-category">
@@ -297,7 +403,7 @@ Follow the following steps:
             <a href="/hugo-theme-jane/categories/index/"> index </a>
           
         </div>
-      <span class="more-meta"> 103 words </span>
+      <span class="more-meta"> 115 words </span>
       <span class="more-meta"> 1 min read </span>
     </div>
   </header>
@@ -305,11 +411,16 @@ Follow the following steps:
   <div class="post-content">
     
     <div class="post-summary">
-      <pre><code class="language-js">function helloWorld () {
-  alert(&quot;Hello, World!&quot;)
-}
-</code></pre>
-
+      <div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-js" data-lang="js"><span class="lnt">1</span><span class="lnt">2</span><span class="lnt">3</span><span class="lnt">4</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-js" data-lang="js"><span class="kd">function</span> <span class="nx">helloWorld</span> <span class="p">()</span> <span class="p">{</span>
+  <span class="nx">alert</span><span class="p">(</span><span class="s2">&#34;Hello, World!&#34;</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div>
 <p></p>
     </div>
     <div class="read-more">
@@ -366,22 +477,57 @@ Follow the following steps:
 
     <footer id="footer" class="footer">
       <div class="social-links">
-      <a href="mailto:your@email.com" rel="me" class="iconfont icon-email" title="email"></a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-twitter" title="twitter"></a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-facebook" title="facebook"></a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-linkedin" title="linkedin"></a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-google" title="google"></a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-github" title="github"></a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-weibo" title="weibo"></a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-zhihu" title="zhihu"></a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-douban" title="douban"></a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-pocket" title="pocket"></a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-tumblr" title="tumblr"></a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-instagram" title="instagram"></a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-gitlab" title="gitlab"></a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-goodreads" title="goodreads"></a>
-  <a href="http://en.xianmin.org/hugo-theme-jane/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+      <a href="mailto:your@email.com" rel="me noopener" class="iconfont icon-email"
+        title="email" target="_blank">
+      </a>
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me noopener" class="iconfont icon-stack-overflow"
+        title="stack-overflow" target="_blank">
+      </a>
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me noopener" class="iconfont icon-twitter"
+        title="twitter" target="_blank">
+      </a>
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me noopener" class="iconfont icon-facebook"
+        title="facebook" target="_blank">
+      </a>
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me noopener" class="iconfont icon-linkedin"
+        title="linkedin" target="_blank">
+      </a>
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me noopener" class="iconfont icon-google"
+        title="google" target="_blank">
+      </a>
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me noopener" class="iconfont icon-github"
+        title="github" target="_blank">
+      </a>
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me noopener" class="iconfont icon-weibo"
+        title="weibo" target="_blank">
+      </a>
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me noopener" class="iconfont icon-zhihu"
+        title="zhihu" target="_blank">
+      </a>
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me noopener" class="iconfont icon-douban"
+        title="douban" target="_blank">
+      </a>
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me noopener" class="iconfont icon-pocket"
+        title="pocket" target="_blank">
+      </a>
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me noopener" class="iconfont icon-tumblr"
+        title="tumblr" target="_blank">
+      </a>
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me noopener" class="iconfont icon-instagram"
+        title="instagram" target="_blank">
+      </a>
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me noopener" class="iconfont icon-gitlab"
+        title="gitlab" target="_blank">
+      </a>
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me noopener" class="iconfont icon-goodreads"
+        title="goodreads" target="_blank">
+      </a>
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me noopener" class="iconfont icon-coding"
+        title="coding" target="_blank">
+      </a>
+  <a href="http://en.xianmin.org/hugo-theme-jane/index.xml" rel="noopener" type="application/rss+xml" class="iconfont icon-rss"
+    title="rss" target="_blank">
+  </a>
 </div>
 
 <div class="copyright">
@@ -394,15 +540,13 @@ Follow the following steps:
   </span>
 
   <span class="copyright-year">
-    &copy; 
+    &copy;
     
-      2017 - 
+      2017 -
     2018
     <span class="heart">
       <i class="iconfont icon-heart"></i>
-    </span>
-    <span class="author">xianmin</span>
-  </span>
+    </span><span class="author">xianmin</span></span>
 </div>
     </footer>
 
@@ -411,11 +555,11 @@ Follow the following steps:
     </div>
   </div>
   
-<script src="/hugo-theme-jane/lib/highlight/highlight.pack.js?v=20171001"></script>
 <script type="text/javascript" src="/hugo-theme-jane/lib/jquery/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="/hugo-theme-jane/lib/slideout/slideout-1.0.1.min.js"></script>
   <script type="text/javascript" src="/hugo-theme-jane/lib/fancybox/jquery.fancybox-3.1.20.min.js"></script>
 <script type="text/javascript" src="/hugo-theme-jane/dist/jane.min.js?v=2.7.0"></script>
+
 
 
 

@@ -100,7 +100,7 @@ Follow the following steps:
 
 <meta itemprop="datePublished" content="2014-04-02T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2014-04-02T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="349">
+<meta itemprop="wordCount" content="352">
 
 
 
@@ -123,6 +123,13 @@ Follow the following steps:
   <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
 <![endif]-->
 
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-34199129-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
 
 
 
@@ -249,7 +256,7 @@ Follow the following steps:
         
           
           
-            <a class="menu-item-link" href="https://gohugo.io" target="_blank">
+            <a class="menu-item-link" href="https://gohugo.io" rel="noopener" target="_blank">
               external-link
             <i class="iconfont icon-new-window"></i>
             </a>
@@ -283,7 +290,7 @@ Follow the following steps:
               <a href="/hugo-theme-jane/categories/index/"> index </a>
             
           </div>
-        <span class="more-meta"> 349 words </span>
+        <span class="more-meta"> 352 words </span>
         <span class="more-meta"> 2 min read </span>
       </div>
     </header>
@@ -335,17 +342,20 @@ you are reading right now.</p>
 </ol>
 
 <p>Corresponding pseudo commands:</p>
-
-<pre><code>git clone https://github.com/spf13/hugo
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1</span><span class="lnt">2</span><span class="lnt">3</span><span class="lnt">4</span><span class="lnt">5</span><span class="lnt">6</span><span class="lnt">7</span><span class="lnt">8</span></pre></td>
+<td class="lntd">
+<pre class="chroma">git clone https://github.com/spf13/hugo
 cd hugo
 /path/to/where/you/installed/hugo server --source=./docs
 &gt; 29 pages created
 &gt; 0 tags index created
 &gt; in 27 ms
 &gt; Web Server is available at http://localhost:1313
-&gt; Press ctrl+c to stop
-</code></pre>
-
+&gt; Press ctrl+c to stop</pre></td></tr></table>
+</div>
+</div>
 <p>Once you&rsquo;ve gotten here, follow along the rest of this page on your local build.</p>
 
 <h2 id="step-3-change-the-docs-site">Step 3. Change the docs site</h2>
@@ -353,16 +363,19 @@ cd hugo
 <p>Stop the Hugo process by hitting ctrl+c.</p>
 
 <p>Now we are going to run hugo again, but this time with hugo in watch mode.</p>
-
-<pre><code>/path/to/hugo/from/step/1/hugo server --source=./docs --watch
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1</span><span class="lnt">2</span><span class="lnt">3</span><span class="lnt">4</span><span class="lnt">5</span><span class="lnt">6</span><span class="lnt">7</span></pre></td>
+<td class="lntd">
+<pre class="chroma">/path/to/hugo/from/step/1/hugo server --source=./docs --watch
 &gt; 29 pages created
 &gt; 0 tags index created
 &gt; in 27 ms
 &gt; Web Server is available at http://localhost:1313
 &gt; Watching for changes in /Users/spf13/Code/hugo/docs/content
-&gt; Press ctrl+c to stop
-</code></pre>
-
+&gt; Press ctrl+c to stop</pre></td></tr></table>
+</div>
+</div>
 <p>Open your <a href="http://vim.spf13.com">favorite editor</a> and change one of the source
 content pages. How about changing this very file to <em>fix the typo</em>. How about changing this very file to <em>fix the typo</em>.</p>
 
@@ -371,14 +384,17 @@ are located at the same relative location as the url, in our case
 <code>docs/content/overview/quickstart.md</code>.</p>
 
 <p>Change and save this file.. Notice what happened in your terminal.</p>
-
-<pre><code>&gt; Change detected, rebuilding site
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1</span><span class="lnt">2</span><span class="lnt">3</span><span class="lnt">4</span><span class="lnt">5</span></pre></td>
+<td class="lntd">
+<pre class="chroma">&gt; Change detected, rebuilding site
 
 &gt; 29 pages created
 &gt; 0 tags index created
-&gt; in 26 ms
-</code></pre>
-
+&gt; in 26 ms</pre></td></tr></table>
+</div>
+</div>
 <p>Refresh the browser and observe that the typo is now fixed.</p>
 
 <p>Notice how quick that was. Try to refresh the site before it&rsquo;s finished building.. I double dare you.
@@ -442,7 +458,26 @@ Having nearly instant feedback enables you to have your creativity flow without 
     </footer>
     
 
-  
+  <div class="disqus-button" id="load_disqus" onclick="load_disqus()">
+      Show Disqus Comments
+    </div>
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    function load_disqus() {
+        
+        
+        if (window.location.hostname === 'localhost') return;
+
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        var disqus_shortname = 'xianmin12';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+
+        $('#load_disqus').remove();
+    };
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
 
   
 
@@ -454,55 +489,55 @@ Having nearly instant feedback enables you to have your creativity flow without 
 
     <footer id="footer" class="footer">
       <div class="social-links">
-      <a href="mailto:your@email.com" rel="me" class="iconfont icon-email"
+      <a href="mailto:your@email.com" rel="me noopener" class="iconfont icon-email"
         title="email" target="_blank">
       </a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-stack-overflow"
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me noopener" class="iconfont icon-stack-overflow"
         title="stack-overflow" target="_blank">
       </a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-twitter"
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me noopener" class="iconfont icon-twitter"
         title="twitter" target="_blank">
       </a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-facebook"
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me noopener" class="iconfont icon-facebook"
         title="facebook" target="_blank">
       </a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-linkedin"
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me noopener" class="iconfont icon-linkedin"
         title="linkedin" target="_blank">
       </a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-google"
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me noopener" class="iconfont icon-google"
         title="google" target="_blank">
       </a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-github"
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me noopener" class="iconfont icon-github"
         title="github" target="_blank">
       </a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-weibo"
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me noopener" class="iconfont icon-weibo"
         title="weibo" target="_blank">
       </a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-zhihu"
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me noopener" class="iconfont icon-zhihu"
         title="zhihu" target="_blank">
       </a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-douban"
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me noopener" class="iconfont icon-douban"
         title="douban" target="_blank">
       </a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-pocket"
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me noopener" class="iconfont icon-pocket"
         title="pocket" target="_blank">
       </a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-tumblr"
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me noopener" class="iconfont icon-tumblr"
         title="tumblr" target="_blank">
       </a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-instagram"
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me noopener" class="iconfont icon-instagram"
         title="instagram" target="_blank">
       </a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-gitlab"
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me noopener" class="iconfont icon-gitlab"
         title="gitlab" target="_blank">
       </a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-goodreads"
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me noopener" class="iconfont icon-goodreads"
         title="goodreads" target="_blank">
       </a>
-      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me" class="iconfont icon-coding"
+      <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me noopener" class="iconfont icon-coding"
         title="coding" target="_blank">
       </a>
-  <a href="http://en.xianmin.org/hugo-theme-jane/index.xml" type="application/rss+xml" class="iconfont icon-rss"
+  <a href="http://en.xianmin.org/hugo-theme-jane/index.xml" rel="noopener" type="application/rss+xml" class="iconfont icon-rss"
     title="rss" target="_blank">
   </a>
 </div>
@@ -532,11 +567,11 @@ Having nearly instant feedback enables you to have your creativity flow without 
     </div>
   </div>
   
-<script src="/hugo-theme-jane/lib/highlight/highlight.pack.js?v=20171001"></script>
 <script type="text/javascript" src="/hugo-theme-jane/lib/jquery/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="/hugo-theme-jane/lib/slideout/slideout-1.0.1.min.js"></script>
   <script type="text/javascript" src="/hugo-theme-jane/lib/fancybox/jquery.fancybox-3.1.20.min.js"></script>
 <script type="text/javascript" src="/hugo-theme-jane/dist/jane.min.js?v=2.7.0"></script>
+
 
 
 
