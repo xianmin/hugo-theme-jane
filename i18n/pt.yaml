@@ -1,5 +1,5 @@
 - id: archive
-  translation: Archive
+  translation: Archivo
 
 - id: tags
   translation: Tags
@@ -8,29 +8,29 @@
   translation: "Tag: "
 
 - id: categories
-  translation: Categories
+  translation: Categorias
 
 - id: category
-  translation: "Category: "
+  translation: "Categoria: "
 
 # posts
 - id: prev
-  translation: Prev
+  translation: Prévio
 
 - id: next
-  translation: Next
+  translation: Seguinte
 
 - id: prev_post
-  translation: Prev
+  translation: Prévio
 
 - id: next_post
-  translation: Next
+  translation: Seguinte
 
 - id: toc
-  translation: Table of Contents
+  translation: Contéudo
 
 - id: readmore
-  translation: Read more
+  translation: Ler mais
 
 - id: reward
   translation: Reward
@@ -42,53 +42,53 @@
   translation: Wechat
 
 - id: seeMarkDown
-  translation: The Markdown version »
+  translation: Versão de Markdownn »
 
 - id: loadDisqus
-  translation: Show Disqus Comments
+  translation: Mostrar comentários de Disqus
 
 # posts.header
 - id: wordCount
-  translation: "{{.Count}} words"
+  translation: "{{.Count}} palavras"
 
 - id: readingTime
-  translation: "{{.Count}} min read"
+  translation: "{{.Count}} min leitura"
 
 # copyright
 - id: author
-  translation: Author
+  translation: Autor
 
 - id: lastMod
-  translation: LastMod
+  translation: Última Modificação
 
 - id: markdown
   translation: Markdown
 
 - id: license
-  translation: License
+  translation: Licença
 
 # counter
 - id: counter_archives
-  translation: "{{.Count}} posts In Total"
+  translation: "{{.Count}} Posts em Total"
 
 - id: counter_tagcloud
-  translation: "{{.Count}} Tags In Total"
+  translation: "{{.Count}} Tags em Total"
 
 - id: counter_categories
-  translation: "{{.Count}} Categories In Total"
+  translation: "{{.Count}} Categorias em Total"
 
 # other
 - id: morePost
-  translation: "More Post >>>"
+  translation: "Mais Posts >>>"
+
+- id: read_en
+  translation: Read in English
 
 - id: read_ru
   translation: Читать на русском
 
-- id: read_es
-  translation: Leer en español
-
 - id: read_zh-cn
   translation: 中文阅读
 
-- id: read_pt
-  translation: Leia em português
+- id: read_es
+  translation: Leer en Español
