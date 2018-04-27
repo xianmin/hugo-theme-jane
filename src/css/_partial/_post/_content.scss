@@ -110,7 +110,7 @@
       color: $theme-color;
       font-size: 1.1em;
       font-family: $global-serif-font-family;
-    
+
       &:hover {
         border-bottom: $post-readMore-border-bottom;
       }
@@ -140,9 +140,23 @@
       text-align: center;
     }
 
-    figcaption h4 {
-      color: #b5b5b5;
-      font-size: 0.9rem;
+    figcaption {
+      margin-top: 0.5em;
+      text-align: center;
+      line-height: 1.5em;
+
+      h4 {
+        color: #b5b5b5;
+        // font-size: 0.9em;
+        margin: 0;
+      }
+
+      p {
+        font-size: 0.9em;
+        color: #b5b5b5;
+        font-style: italic;
+        margin: 0;
+      }
     }
   }
 
