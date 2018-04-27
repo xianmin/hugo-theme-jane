@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Image on Jane - A simple theme for Hugo</title>
+    <link>http://en.xianmin.org/hugo-theme-jane/tags/image/</link>
+    <description>Recent content in Image on Jane - A simple theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 03 Mar 2018 16:01:23 +0800</lastBuildDate>
+    
+	<atom:link href="http://en.xianmin.org/hugo-theme-jane/tags/image/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Image Preview</title>
+      <link>http://en.xianmin.org/hugo-theme-jane/post/image-preview/</link>
+      <pubDate>Sat, 03 Mar 2018 16:01:23 +0800</pubDate>
+      
+      <guid>http://en.xianmin.org/hugo-theme-jane/post/image-preview/</guid>
+      <description> Normal Image This is an image in static/image folder.
+1  ![This is an image in `static/image` folder.](/image/example.jpg)   figure image with title 1  {{&amp;lt; figure src=&amp;#34;/image/example.jpg&amp;#34; title=&amp;#34;figure image with title&amp;#34; &amp;gt;}}     figure image with title   figure image with caption 1  {{&amp;lt; figure src=&amp;#34;/image/example.jpg&amp;#34; caption=&amp;#34;figure image with caption figure image with caption figure image with caption figure image with caption figure image with caption&amp;#34; &amp;gt;}}      figure image with caption figure image with caption figure image with caption figure image with caption figure image with caption   </description>
+    </item>
+    
+  </channel>
+</rss>

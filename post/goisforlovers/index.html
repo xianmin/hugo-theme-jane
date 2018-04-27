@@ -35,19 +35,20 @@ This document is a brief primer on using go templates." />
 
 
 
-<meta name="generator" content="Hugo 0.37.1" />
+<meta name="generator" content="Hugo 0.40.1" />
 
 
 <link rel="canonical" href="http://en.xianmin.org/hugo-theme-jane/post/goisforlovers/" />
 
 
 
-<link rel="apple-touch-icon" sizes="180x180" href="/hugo-theme-jane/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/hugo-theme-jane/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/hugo-theme-jane/favicon-16x16.png">
 <link rel="icon" href="/hugo-theme-jane/favicon.ico" />
-<link rel="manifest" href="/hugo-theme-jane/manifest.json">
-<link rel="mask-icon" href="/hugo-theme-jane/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
 
 
 
@@ -88,7 +89,7 @@ This document is a brief primer on using go templates.">
 
 <meta itemprop="datePublished" content="2014-04-02T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2014-04-02T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="1510">
+<meta itemprop="wordCount" content="1559">
 
 
 
@@ -186,6 +187,10 @@ ga('send', 'pageview');
                 <a href="/hugo-theme-jane/post/shortcodes-preview/">Shortcodes Preview</a>
               </li>
             
+              <li>
+                <a href="/hugo-theme-jane/post/image-preview/">Image Preview</a>
+              </li>
+            
           </ul>
 
         
@@ -274,7 +279,7 @@ ga('send', 'pageview');
               <a href="/hugo-theme-jane/categories/index/"> index </a>
             
           </div>
-        <span class="more-meta"> 1510 words </span>
+        <span class="more-meta"> 1559 words </span>
         <span class="more-meta"> 8 min read </span>
       </div>
     </header>
@@ -345,7 +350,8 @@ functions.</p>
 <p>Accessing a predefined variable &ldquo;foo&rdquo;:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1</span></pre></td>
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
 <td class="lntd">
 <pre class="chroma">{{ foo }}</pre></td></tr></table>
 </div>
@@ -355,7 +361,8 @@ functions.</p>
 <p>Calling the add function with input of 1, 2:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1</span></pre></td>
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
 <td class="lntd">
 <pre class="chroma">{{ add 1 2 }}</pre></td></tr></table>
 </div>
@@ -365,7 +372,8 @@ functions.</p>
 <p>Accessing the Page Parameter &ldquo;bar&rdquo;</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1</span></pre></td>
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
 <td class="lntd">
 <pre class="chroma">{{ .Params.bar }}</pre></td></tr></table>
 </div>
@@ -373,7 +381,8 @@ functions.</p>
 <p><strong>Parentheses can be used to group items together</strong></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1</span></pre></td>
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
 <td class="lntd">
 <pre class="chroma">{{ if or (isset .Params &#34;alt&#34;) (isset .Params &#34;caption&#34;) }} Caption {{ end }}</pre></td></tr></table>
 </div>
@@ -388,7 +397,8 @@ page you are rendering. More details are available on the
 <p>A variable is accessed by referencing the variable name.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1</span></pre></td>
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
 <td class="lntd">
 <pre class="chroma">&lt;title&gt;{{ .Title }}&lt;/title&gt;</pre></td></tr></table>
 </div>
@@ -396,7 +406,9 @@ page you are rendering. More details are available on the
 <p>Variables can also be defined and referenced.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1</span><span class="lnt">2</span></pre></td>
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span></pre></td>
 <td class="lntd">
 <pre class="chroma">{{ $address := &#34;123 Main St.&#34;}}
 {{ $address }}</pre></td></tr></table>
@@ -415,7 +427,8 @@ functions cannot be added without recompiling hugo.</p>
 <p><strong>Example:</strong></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1</span></pre></td>
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
 <td class="lntd">
 <pre class="chroma">{{ add 1 2 }}</pre></td></tr></table>
 </div>
@@ -430,7 +443,8 @@ the /layout/ directory within Hugo.</p>
 <p><strong>Example:</strong></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1</span></pre></td>
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
 <td class="lntd">
 <pre class="chroma">{{ template &#34;chrome/header.html&#34; . }}</pre></td></tr></table>
 </div>
@@ -448,7 +462,10 @@ range.</p>
 <p><strong>Example 1: Using Context</strong></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1</span><span class="lnt">2</span><span class="lnt">3</span></pre></td>
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></pre></td>
 <td class="lntd">
 <pre class="chroma">{{ range array }}
     {{ . }}
@@ -458,7 +475,10 @@ range.</p>
 <p><strong>Example 2: Declaring value variable name</strong></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1</span><span class="lnt">2</span><span class="lnt">3</span></pre></td>
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></pre></td>
 <td class="lntd">
 <pre class="chroma">{{range $element := array}}
     {{ $element }}
@@ -468,7 +488,11 @@ range.</p>
 <p><strong>Example 2: Declaring key and value variable name</strong></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1</span><span class="lnt">2</span><span class="lnt">3</span><span class="lnt">4</span></pre></td>
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></pre></td>
 <td class="lntd">
 <pre class="chroma">{{range $index, $element := array}}
     {{ $index }}
@@ -492,7 +516,8 @@ logic in Go Templates. Like range, each statement is closed with <code>end</code
 <p><strong>Example 1: If</strong></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1</span></pre></td>
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
 <td class="lntd">
 <pre class="chroma">{{ if isset .Params &#34;title&#34; }}&lt;h4&gt;{{ index .Params &#34;title&#34; }}&lt;/h4&gt;{{ end }}</pre></td></tr></table>
 </div>
@@ -500,7 +525,12 @@ logic in Go Templates. Like range, each statement is closed with <code>end</code
 <p><strong>Example 2: If -&gt; Else</strong></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1</span><span class="lnt">2</span><span class="lnt">3</span><span class="lnt">4</span><span class="lnt">5</span></pre></td>
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></pre></td>
 <td class="lntd">
 <pre class="chroma">{{ if isset .Params &#34;alt&#34; }}
     {{ index .Params &#34;alt&#34; }}
@@ -512,7 +542,8 @@ logic in Go Templates. Like range, each statement is closed with <code>end</code
 <p><strong>Example 3: And &amp; Or</strong></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1</span></pre></td>
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
 <td class="lntd">
 <pre class="chroma">{{ if and (or (isset .Params &#34;title&#34;) (isset .Params &#34;caption&#34;)) (isset .Params &#34;attr&#34;)}}</pre></td></tr></table>
 </div>
@@ -526,7 +557,8 @@ and skips the block if the variable is absent.</p>
 <p>The first example above could be simplified as:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1</span></pre></td>
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
 <td class="lntd">
 <pre class="chroma">{{ with .Params.title }}&lt;h4&gt;{{ . }}&lt;/h4&gt;{{ end }}</pre></td></tr></table>
 </div>
@@ -534,7 +566,12 @@ and skips the block if the variable is absent.</p>
 <p><strong>Example 5: If -&gt; Else If</strong></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1</span><span class="lnt">2</span><span class="lnt">3</span><span class="lnt">4</span><span class="lnt">5</span></pre></td>
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></pre></td>
 <td class="lntd">
 <pre class="chroma">{{ if isset .Params &#34;alt&#34; }}
     {{ index .Params &#34;alt&#34; }}
@@ -560,7 +597,8 @@ becomes the last parameter of the next pipeline.</p>
 <p><strong>Example 1 :</strong></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1</span></pre></td>
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
 <td class="lntd">
 <pre class="chroma">{{ if eq 1 1 }} Same {{ end }}</pre></td></tr></table>
 </div>
@@ -568,7 +606,8 @@ becomes the last parameter of the next pipeline.</p>
 <p>is the same as</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1</span></pre></td>
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
 <td class="lntd">
 <pre class="chroma">{{ eq 1 1 | if }} Same {{ end }}</pre></td></tr></table>
 </div>
@@ -579,7 +618,8 @@ illustration of how to use the pipes.</p>
 <p><strong>Example 2 :</strong></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1</span></pre></td>
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
 <td class="lntd">
 <pre class="chroma">{{ index .Params &#34;disqus_url&#34; | html }}</pre></td></tr></table>
 </div>
@@ -589,7 +629,10 @@ illustration of how to use the pipes.</p>
 <p><strong>Example 3 :</strong></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1</span><span class="lnt">2</span><span class="lnt">3</span></pre></td>
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></pre></td>
 <td class="lntd">
 <pre class="chroma">{{ if or (or (isset .Params &#34;title&#34;) (isset .Params &#34;caption&#34;)) (isset .Params &#34;attr&#34;)}}
 Stuff Here
@@ -599,7 +642,10 @@ Stuff Here
 <p>Could be rewritten as</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1</span><span class="lnt">2</span><span class="lnt">3</span></pre></td>
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></pre></td>
 <td class="lntd">
 <pre class="chroma">{{  isset .Params &#34;caption&#34; | or isset .Params &#34;title&#34; | or isset .Params &#34;attr&#34; | if }}
 Stuff Here
@@ -619,7 +665,11 @@ instead of depending on the context.</p>
 <p><strong>Example:</strong></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1</span><span class="lnt">2</span><span class="lnt">3</span><span class="lnt">4</span></pre></td>
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></pre></td>
 <td class="lntd">
 <pre class="chroma">  {{ $title := .Site.Title }}
   {{ range .Params.tags }}
@@ -652,7 +702,16 @@ of some pages to turn off the TOC from being displayed.</p>
 <p>Here is the example front matter:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1</span><span class="lnt">2</span><span class="lnt">3</span><span class="lnt">4</span><span class="lnt">5</span><span class="lnt">6</span><span class="lnt">7</span><span class="lnt">8</span><span class="lnt">9</span></pre></td>
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></pre></td>
 <td class="lntd">
 <pre class="chroma">---
 title: &#34;Permalinks&#34;
@@ -668,7 +727,12 @@ notoc: true
 <p>Here is the corresponding code inside of the template:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1</span><span class="lnt">2</span><span class="lnt">3</span><span class="lnt">4</span><span class="lnt">5</span></pre></td>
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></pre></td>
 <td class="lntd">
 <pre class="chroma">  {{ if not .Params.notoc }}
     &lt;div id=&#34;toc&#34; class=&#34;well col-md-4 col-sm-6&#34;&gt;
@@ -685,7 +749,11 @@ parameters, which are values which will be available to you in chrome.</p>
 <p>For instance, you might declare:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="lnt">1</span><span class="lnt">2</span><span class="lnt">3</span><span class="lnt">4</span></code></pre></td>
+<pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-yaml" data-lang="yaml">params<span class="p">:</span><span class="w">
 </span><span class="w">  </span>CopyrightHTML<span class="p">:</span><span class="w"> </span><span class="s2">&#34;Copyright &amp;#xA9; 2013 John Doe. All Rights Reserved.&#34;</span><span class="w">
@@ -700,7 +768,10 @@ again.  This would let you easily update just your top-level config file each
 January 1st, instead of hunting through your templates.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1</span><span class="lnt">2</span><span class="lnt">3</span></pre></td>
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></pre></td>
 <td class="lntd">
 <pre class="chroma">{{if .Site.Params.CopyrightHTML}}&lt;footer&gt;
 &lt;div class=&#34;text-center&#34;&gt;{{.Site.Params.CopyrightHTML | safeHtml}}&lt;/div&gt;
@@ -712,7 +783,12 @@ is to use &ldquo;with&rdquo; instead. With rebinds the context <code>.</code> wi
 and skips the block if the variable is absent:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1</span><span class="lnt">2</span><span class="lnt">3</span><span class="lnt">4</span><span class="lnt">5</span></pre></td>
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></pre></td>
 <td class="lntd">
 <pre class="chroma">{{with .Site.Params.TwitterUser}}&lt;span class=&#34;twitter&#34;&gt;
 &lt;a href=&#34;https://twitter.com/{{.}}&#34; rel=&#34;author&#34;&gt;
@@ -725,7 +801,13 @@ and skips the block if the variable is absent:</p>
 so, such as in this example:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1</span><span class="lnt">2</span><span class="lnt">3</span><span class="lnt">4</span><span class="lnt">5</span><span class="lnt">6</span></pre></td>
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></pre></td>
 <td class="lntd">
 <pre class="chroma">&lt;nav class=&#34;recent&#34;&gt;
   &lt;h1&gt;Recent Posts&lt;/h1&gt;

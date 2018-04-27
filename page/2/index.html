@@ -33,7 +33,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.37.1" />
+<meta name="generator" content="Hugo 0.40.1" />
 
 
 <link rel="canonical" href="http://en.xianmin.org/hugo-theme-jane/" />
@@ -42,12 +42,13 @@
 
 
 
-<link rel="apple-touch-icon" sizes="180x180" href="/hugo-theme-jane/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/hugo-theme-jane/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/hugo-theme-jane/favicon-16x16.png">
 <link rel="icon" href="/hugo-theme-jane/favicon.ico" />
-<link rel="manifest" href="/hugo-theme-jane/manifest.json">
-<link rel="mask-icon" href="/hugo-theme-jane/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
 
 
 
@@ -65,7 +66,7 @@
 
 
 
-<meta property="og:updated_time" content="2014-09-28T00:00:00&#43;00:00"/>
+<meta property="og:updated_time" content="2017-08-30T15:43:48&#43;08:00"/>
 
 <meta property="og:site_name" content="Jane - A simple theme for Hugo" />
 
@@ -172,6 +173,10 @@ ga('send', 'pageview');
                 <a href="/hugo-theme-jane/post/shortcodes-preview/">Shortcodes Preview</a>
               </li>
             
+              <li>
+                <a href="/hugo-theme-jane/post/image-preview/">Image Preview</a>
+              </li>
+            
           </ul>
 
         
@@ -251,6 +256,39 @@ ga('send', 'pageview');
     
       <article class="post bg-white">
   <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/hugo-theme-jane/post/this-is-a-very-long-title/">This is a very long title This is a very long title This is a very long title This is a very long title This is a very long title</a></h1>
+    
+    <div class="post-meta">
+      <span class="post-time"> 2017-08-30 </span>
+      <div class="post-category">
+          
+            <a href="/hugo-theme-jane/categories/english/"> English </a>
+          
+            <a href="/hugo-theme-jane/categories/index/"> index </a>
+          
+            <a href="/hugo-theme-jane/categories/test/"> test </a>
+          
+        </div>
+      <span class="more-meta"> 246 words </span>
+      <span class="more-meta"> 2 min read </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    
+    <div class="post-summary">
+      This is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long title
+    </div>
+    <div class="read-more">
+      <a href="/hugo-theme-jane/post/this-is-a-very-long-title/" class="read-more-link">Read more</a>
+    </div>
+    
+  </div>
+</article>
+
+    
+      <article class="post bg-white">
+  <header class="post-header">
     <h1 class="post-title"><a class="post-link" href="/hugo-theme-jane/post/creating-a-new-theme/">Creating a New Theme</a></h1>
     
     <div class="post-meta">
@@ -264,8 +302,8 @@ ga('send', 'pageview');
             <a href="/hugo-theme-jane/categories/index/"> index </a>
           
         </div>
-      <span class="more-meta"> 7281 words </span>
-      <span class="more-meta"> 35 min read </span>
+      <span class="more-meta"> 7829 words </span>
+      <span class="more-meta"> 37 min read </span>
     </div>
   </header>
   
@@ -298,7 +336,7 @@ We&rsquo;ll start with creating a new site with a very basic template.
             <a href="/hugo-theme-jane/categories/index/"> index </a>
           
         </div>
-      <span class="more-meta"> 1510 words </span>
+      <span class="more-meta"> 1559 words </span>
       <span class="more-meta"> 8 min read </span>
     </div>
   </header>
@@ -332,7 +370,7 @@ This document is a brief primer on using go templates.
             <a href="/hugo-theme-jane/categories/index/"> index </a>
           
         </div>
-      <span class="more-meta"> 352 words </span>
+      <span class="more-meta"> 369 words </span>
       <span class="more-meta"> 2 min read </span>
     </div>
   </header>
@@ -370,8 +408,8 @@ Follow the following steps:
             <a href="/hugo-theme-jane/categories/index/"> index </a>
           
         </div>
-      <span class="more-meta"> 821 words </span>
-      <span class="more-meta"> 4 min read </span>
+      <span class="more-meta"> 901 words </span>
+      <span class="more-meta"> 5 min read </span>
     </div>
   </header>
   
@@ -379,52 +417,11 @@ Follow the following steps:
     
     <div class="post-summary">
       Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
-123 ▾ &lt;root&gt;/ ▾ images/ logo.png   should become
-1234 ▾ &lt;root&gt;/ ▾ static/ ▾ images/ logo.png   Additionally, you&rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.
+1 2 3  ▾ &lt;root&gt;/ ▾ images/ logo.png   should become
+1 2 3 4  ▾ &lt;root&gt;/ ▾ static/ ▾ images/ logo.png   Additionally, you&rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.
     </div>
     <div class="read-more">
       <a href="/hugo-theme-jane/post/migrate-from-jekyll/" class="read-more-link">Read more</a>
-    </div>
-    
-  </div>
-</article>
-
-    
-      <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/hugo-theme-jane/post/syntax-highlighting/">Syntax Highlighting</a></h1>
-    
-    <div class="post-meta">
-      <span class="post-time"> 2011-08-30 </span>
-      <div class="post-category">
-          
-            <a href="/hugo-theme-jane/categories/syntax-highlighting/"> Syntax Highlighting </a>
-          
-            <a href="/hugo-theme-jane/categories/index/"> index </a>
-          
-        </div>
-      <span class="more-meta"> 115 words </span>
-      <span class="more-meta"> 1 min read </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      <div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-js" data-lang="js"><span class="lnt">1</span><span class="lnt">2</span><span class="lnt">3</span><span class="lnt">4</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-js" data-lang="js"><span class="kd">function</span> <span class="nx">helloWorld</span> <span class="p">()</span> <span class="p">{</span>
-  <span class="nx">alert</span><span class="p">(</span><span class="s2">&#34;Hello, World!&#34;</span><span class="p">)</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
-</div>
-</div>
-<p></p>
-    </div>
-    <div class="read-more">
-      <a href="/hugo-theme-jane/post/syntax-highlighting/" class="read-more-link">Read more</a>
     </div>
     
   </div>
@@ -461,6 +458,10 @@ Follow the following steps:
     
     <li  class="active" >
       <a href="/hugo-theme-jane/page/2/">2</a>
+    </li>
+    
+    <li >
+      <a href="/hugo-theme-jane/page/3/">3</a>
     </li>
     
   </nav>

@@ -24,6 +24,13 @@
   </url>
   
   <url>
+    <loc>http://en.xianmin.org/hugo-theme-jane/post/image-preview/</loc>
+    <lastmod>2018-03-04T16:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://en.xianmin.org/hugo-theme-jane/post/doc-footnote-preview/</loc>
     <lastmod>2018-03-01T16:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -156,6 +163,13 @@
   </url>
   
   <url>
+    <loc>http://en.xianmin.org/hugo-theme-jane/tags/image/</loc>
+    <lastmod>2018-03-04T16:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://en.xianmin.org/hugo-theme-jane/categories/index/</loc>
     <lastmod>2018-03-07T16:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -249,6 +263,13 @@
   <url>
     <loc>http://en.xianmin.org/hugo-theme-jane/tags/tag-6/</loc>
     <lastmod>2018-03-07T16:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://en.xianmin.org/hugo-theme-jane/tags/tag-7/</loc>
+    <lastmod>2018-03-04T16:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
