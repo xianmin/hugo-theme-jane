@@ -35,10 +35,6 @@
     &:hover {
       border-bottom: $content-link-border;
     }
-
-    &.fancybox {
-      border: 0;
-    }
   }
 
   blockquote {
@@ -73,9 +69,10 @@
     }
   }
 
-  img {
-    display: inline-block;
-    max-width: 100%;
+  iframe {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
   }
 
   > table {
@@ -136,6 +133,10 @@
   }
 
   figure {
+    a:hover{
+      border: 0;
+    }
+
     &.center {
       text-align: center;
     }
