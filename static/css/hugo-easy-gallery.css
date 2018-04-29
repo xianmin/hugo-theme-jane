@@ -64,6 +64,7 @@ figure {
 }
 
 .gallery figure {
+    margin: 0;
     position: absolute;
     left: 5px;
     right: 5px;
