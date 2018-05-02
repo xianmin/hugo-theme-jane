@@ -5,7 +5,6 @@ import mobileNavbar from './mobileNavbar';
 import toc from './toc';
 import headerAnchor from './headerAnchor';
 import fnTooltip from './footnoteTooltip';
-import fancybox from './fancybox';
 import highlight from './highlight';
 
 
@@ -15,7 +14,6 @@ $(document).ready(function () {
   toc();
   headerAnchor();
   fnTooltip();
-  fancybox();
-})
+});
 
 highlight();
