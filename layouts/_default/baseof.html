@@ -12,7 +12,7 @@
 </head>
 <body>
   {{ partial "slideout.html" . }}
-  {{ if .Site.Params.fancybox }}
+  {{ if or .Site.Params.photoswipe .Site.Params.fancybox }}
     {{ partial "photoswipe.html" }}
   {{ end }}
   <header id="header" class="header container">
