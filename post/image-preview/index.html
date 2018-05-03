@@ -25,8 +25,11 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="xianmin" />
-  <meta name="description" content=" Normal Image This is an image in static/image folder.
-1  ![This is an image in `static/image` folder.](/image/example.jpg)   figure image with title 1  {{&amp;lt; figure src=&amp;#34;/image/example.jpg&amp;#34; title=&amp;#34;figure image with title&amp;#34; &amp;gt;}}     figure image with title   figure image with caption 1  {{&amp;lt; figure src=&amp;#34;/image/example.jpg&amp;#34; caption=&amp;#34;figure image with caption figure image with caption figure image with caption figure image with caption figure image with caption&amp;#34; &amp;gt;}}      figure image with caption figure image with caption figure image with caption figure image with caption figure image with caption   " />
+  <meta name="description" content="Thanks for liwenyip/hugo-easy-gallery &amp;amp; Zebradil · Pull Request #48 .
+Now, we could use {{&amp;lt; gallery &amp;gt;}} shortcode in hugo-theme-jane.
+Normal Image This is an image in static/image folder.
+1  ![This is an image in `static/image` folder.](/image/example.jpg)   
+" />
 
   <meta name="keywords" content="Hugo, theme, jane" />
 
@@ -54,14 +57,29 @@
 
 
 <link href="/hugo-theme-jane/dist/jane.min.css?v=2.7.0" rel="stylesheet">
-<link href="/hugo-theme-jane/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
 
 
 
 
 <meta property="og:title" content="Image Preview" />
-<meta property="og:description" content=" Normal Image This is an image in static/image folder.
-1  ![This is an image in `static/image` folder.](/image/example.jpg)   figure image with title 1  {{&lt; figure src=&#34;/image/example.jpg&#34; title=&#34;figure image with title&#34; &gt;}}     figure image with title   figure image with caption 1  {{&lt; figure src=&#34;/image/example.jpg&#34; caption=&#34;figure image with caption figure image with caption figure image with caption figure image with caption figure image with caption&#34; &gt;}}      figure image with caption figure image with caption figure image with caption figure image with caption figure image with caption   " />
+<meta property="og:description" content="Thanks for liwenyip/hugo-easy-gallery &amp; Zebradil · Pull Request #48 .
+
+Now, we could use {{&lt; gallery &gt;}} shortcode in hugo-theme-jane.
+
+Normal Image
+
+This is an image in static/image folder.
+
+
+1
+
+
+![This is an image in `static/image` folder.](/image/example.jpg)
+
+
+
+
+" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://en.xianmin.org/hugo-theme-jane/post/image-preview/" />
 
@@ -83,21 +101,53 @@
 
 
 <meta itemprop="name" content="Image Preview">
-<meta itemprop="description" content=" Normal Image This is an image in static/image folder.
-1  ![This is an image in `static/image` folder.](/image/example.jpg)   figure image with title 1  {{&lt; figure src=&#34;/image/example.jpg&#34; title=&#34;figure image with title&#34; &gt;}}     figure image with title   figure image with caption 1  {{&lt; figure src=&#34;/image/example.jpg&#34; caption=&#34;figure image with caption figure image with caption figure image with caption figure image with caption figure image with caption&#34; &gt;}}      figure image with caption figure image with caption figure image with caption figure image with caption figure image with caption   ">
+<meta itemprop="description" content="Thanks for liwenyip/hugo-easy-gallery &amp; Zebradil · Pull Request #48 .
+
+Now, we could use {{&lt; gallery &gt;}} shortcode in hugo-theme-jane.
+
+Normal Image
+
+This is an image in static/image folder.
+
+
+1
+
+
+![This is an image in `static/image` folder.](/image/example.jpg)
+
+
+
+
+">
 
 
 <meta itemprop="datePublished" content="2018-03-03T16:01:23&#43;08:00" />
 <meta itemprop="dateModified" content="2018-03-03T16:01:23&#43;08:00" />
-<meta itemprop="wordCount" content="83">
+<meta itemprop="wordCount" content="0">
 
 
 
 <meta itemprop="keywords" content="preview,image,shortcodes,tag-7," />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Image Preview"/>
-<meta name="twitter:description" content=" Normal Image This is an image in static/image folder.
-1  ![This is an image in `static/image` folder.](/image/example.jpg)   figure image with title 1  {{&lt; figure src=&#34;/image/example.jpg&#34; title=&#34;figure image with title&#34; &gt;}}     figure image with title   figure image with caption 1  {{&lt; figure src=&#34;/image/example.jpg&#34; caption=&#34;figure image with caption figure image with caption figure image with caption figure image with caption figure image with caption&#34; &gt;}}      figure image with caption figure image with caption figure image with caption figure image with caption figure image with caption   "/>
+<meta name="twitter:description" content="Thanks for liwenyip/hugo-easy-gallery &amp; Zebradil · Pull Request #48 .
+
+Now, we could use {{&lt; gallery &gt;}} shortcode in hugo-theme-jane.
+
+Normal Image
+
+This is an image in static/image folder.
+
+
+1
+
+
+![This is an image in `static/image` folder.](/image/example.jpg)
+
+
+
+
+"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -149,7 +199,65 @@ ga('send', 'pageview');
       </a>
   </ul>
 </nav>
+  
+    
 
+
+
+
+
+
+  <link rel="stylesheet" href="/hugo-theme-jane/lib/photoswipe/photoswipe.min.css" />
+  <link rel="stylesheet" href="/hugo-theme-jane/lib/photoswipe/default-skin/default-skin.min.css" />
+
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+  
   <header id="header" class="header container">
     <div class="logo-wrapper">
   <a href="/hugo-theme-jane/" class="logo">
@@ -279,8 +387,8 @@ ga('send', 'pageview');
               <a href="/hugo-theme-jane/categories/index/"> index </a>
             
           </div>
-        <span class="more-meta"> 83 words </span>
-        <span class="more-meta"> 1 min read </span>
+        <span class="more-meta"> 0 words </span>
+        <span class="more-meta"> 0 min read </span>
       </div>
     </header>
 
@@ -294,8 +402,17 @@ ga('send', 'pageview');
 <li>
 <ul>
 <li><a href="#normal-image">Normal Image</a></li>
+<li><a href="#figure-shortcode"><code>{{&lt; figure &gt;}}</code> shortcode</a>
+<ul>
 <li><a href="#figure-image-with-title">figure image with title</a></li>
 <li><a href="#figure-image-with-caption">figure image with caption</a></li>
+<li><a href="#more-figure-shortcode-usage">more <code>{{&lt; figure &gt;}}</code> shortcode usage</a></li>
+</ul></li>
+<li><a href="#gallery-shortcode"><code>{{&lt; gallery &gt;}}</code> shortcode</a>
+<ul>
+<li><a href="#simple-gallery">simple gallery</a></li>
+<li><a href="#to-specify-individual-image-files">To specify individual image files</a></li>
+</ul></li>
 </ul></li>
 </ul>
 </nav>
@@ -304,7 +421,9 @@ ga('send', 'pageview');
 
     
     <div class="post-content">
-      
+      <p>Thanks for <a href="https://github.com/liwenyip/hugo-easy-gallery">liwenyip/hugo-easy-gallery</a> &amp; <a href="https://github.com/xianmin/hugo-theme-jane/pull/48">Zebradil · Pull Request #48</a> .</p>
+
+<p>Now, we could use <code>{{&lt; gallery &gt;}}</code> shortcode in hugo-theme-jane.</p>
 
 <h2 id="normal-image">Normal Image</h2>
 
@@ -319,7 +438,11 @@ ga('send', 'pageview');
 </div>
 <p><img src="/hugo-theme-jane/image/example.jpg" alt="This is an image in `static/image` folder." /></p>
 
-<h2 id="figure-image-with-title">figure image with title</h2>
+<p></p>
+
+<h2 id="figure-shortcode"><code>{{&lt; figure &gt;}}</code> shortcode</h2>
+
+<h3 id="figure-image-with-title">figure image with title</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><span class="lnt">1
@@ -329,20 +452,20 @@ ga('send', 'pageview');
 </div>
 </div>
 
-<figure>
-    
-        <img src="/hugo-theme-jane/image/example.jpg" />
-    
-    
-    <figcaption>
-        <h4>figure image with title</h4>
-        
-    </figcaption>
-    
-</figure>
+<link rel="stylesheet" href="/hugo-theme-jane/css/hugo-easy-gallery.css" />
+<div class="box" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="/hugo-theme-jane/image/example.jpg" />
+    </div>
+    <a href="/hugo-theme-jane/image/example.jpg" itemprop="contentUrl"></a>
+      <figcaption><h4>figure image with title</h4>
+      </figcaption>
+  </figure>
+</div>
 
 
-<h2 id="figure-image-with-caption">figure image with caption</h2>
+<h3 id="figure-image-with-caption">figure image with caption</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><span class="lnt">1
@@ -352,23 +475,137 @@ ga('send', 'pageview');
 </div>
 </div>
 
-<figure>
-    
-        <img src="/hugo-theme-jane/image/example.jpg" alt="figure image with caption figure image with caption figure image with caption figure image with caption figure image with caption" />
-    
-    
-    <figcaption>
-        <p>
-        figure image with caption figure image with caption figure image with caption figure image with caption figure image with caption
-        
-            
-        
-        </p> 
-    </figcaption>
-    
-</figure>
+
+<div class="box" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="/hugo-theme-jane/image/example.jpg" alt="figure image with caption figure image with caption figure image with caption figure image with caption figure image with caption"/>
+    </div>
+    <a href="/hugo-theme-jane/image/example.jpg" itemprop="contentUrl"></a>
+      <figcaption>
+          <p>figure image with caption figure image with caption figure image with caption figure image with caption figure image with caption</p>
+      </figcaption>
+  </figure>
+</div>
 
 
+<h3 id="more-figure-shortcode-usage">more <code>{{&lt; figure &gt;}}</code> shortcode usage</h3>
+
+<p>Specifying your image files:</p>
+
+<ul>
+<li><code>{{&lt; figure src=&quot;thumb.jpg&quot; link=&quot;image.jpg&quot; &gt;}}</code> will use <code>thumb.jpg</code> for thumbnail and <code>image.jpg</code> for lightbox</li>
+<li><code>{{&lt; figure src=&quot;image.jpg&quot; &gt;}}</code> or <code>{{&lt; figure link=&quot;image.jpg&quot; &gt;}}</code> will use <code>image.jpg</code> for both thumbnail and lightbox</li>
+<li><code>{{&lt; figure link=&quot;image.jpg&quot; thumb=&quot;-small&quot; &gt;}}</code> will use <code>image-small.jpg</code> for thumbnail and <code>image.jpg</code> for lightbox</li>
+</ul>
+
+<p>Optional parameters:</p>
+
+<ul>
+<li>All the <a href="https://gohugo.io/extras/shortcodes">features/parameters</a> of Hugo&rsquo;s built-in <code>figure</code> shortcode work as normal, i.e. src, link, title, caption, class, attr (attribution), attrlink, alt</li>
+<li><code>size</code> (e.g. <code>size=&quot;1024x768&quot;</code>) pre-defines the image size for PhotoSwipe. Use this option if you don&rsquo;t want to pre-load the linked image to determine its size.</li>
+<li><code>class</code> allows you to set any custom classes you want on the <code>&lt;figure&gt;</code> tag.</li>
+</ul>
+
+<p>Optional parameters for standalone <code>{{&lt; figure &gt;}}</code> shortcodes only (i.e. don&rsquo;t use on <code>{{&lt; figure &gt;}}</code> inside <code>{{&lt; gallery &gt;}}</code> - strange things may happen if you do):</p>
+
+<ul>
+<li><code>caption-position</code> and <code>caption-effect</code> work the same as for the <code>{{&lt; gallery &gt;}}</code> shortcode (see below).</li>
+<li><code>width</code> defines the <a href="https://www.w3schools.com/cssref/pr_dim_max-width.asp"><code>max-width</code></a> of the image displayed on the page. If using a thumbnail for a standalone figure, set this equal to your thumbnail&rsquo;s native width to make the captions behave properly (or feel free to come up with a better solution and submit a pull request :-)). Also use this option if you don&rsquo;t have a thumbnail and you don&rsquo;t want the hi-res image to take up the entire width of the screen/container.</li>
+<li><code>class=&quot;no-photoswipe&quot;</code> prevents a <code>&lt;figure&gt;</code> from being loaded into PhotoSwipe. If you click on the figure you&rsquo;ll instead a good ol&rsquo; fashioned hyperlink to a bigger image (or - if you haven&rsquo;t specified a bigger image - the same one).</li>
+</ul>
+
+<h2 id="gallery-shortcode"><code>{{&lt; gallery &gt;}}</code> shortcode</h2>
+
+<h3 id="simple-gallery">simple gallery</h3>
+
+<p>To specify a directory of image files:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">{{&lt; gallery dir=&#34;/img/your-directory-of-images/&#34; &gt;}}</pre></td></tr></table>
+</div>
+</div>
+<p>This preview only one image.</p>
+
+
+
+
+<div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+        <div class="box">
+          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <div class="img" style="background-image: url('http://en.xianmin.org/hugo-theme-jane//image//example.jpg');" >
+              <img itemprop="thumbnail" src="http://en.xianmin.org/hugo-theme-jane//image//example.jpg" alt="Example" />
+            </div>
+            <figcaption>
+              <p>Example</p>
+            </figcaption>
+            <a href="http://en.xianmin.org/hugo-theme-jane//image//example.jpg" itemprop="contentUrl"></a>
+          </figure>
+        </div>
+</div>
+
+
+<ul>
+<li>The images are automatically captioned with the file name.</li>
+<li><code>[image].jpg</code> is used for the hi-res image, and <code>[image]-thumb.jpg</code> is used for the thumbnails.</li>
+<li>If <code>[image]-thumb.jpg</code> doesn&rsquo;t exist, then <code>[image].jpg</code> will be used for both hi-res and thumbnail images.</li>
+<li>The default thumbnail suffix is <code>-thumb</code>, but you can specify a different one e.g. <code>thumb=&quot;-small&quot;</code> or <code>thumb=&quot;_150x150&quot;</code>.</li>
+</ul>
+
+<h3 id="to-specify-individual-image-files">To specify individual image files</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">{{&lt; gallery &gt;}}
+  {{&lt; figure src=&#34;image1.jpg&#34; &gt;}}
+  {{&lt; figure src=&#34;image2.jpg&#34; &gt;}}
+  {{&lt; figure src=&#34;image3.jpg&#34; &gt;}}
+{{&lt; /gallery &gt;}}</pre></td></tr></table>
+</div>
+</div>
+<p><strong>Optional parameters:</strong></p>
+
+<ul>
+<li><code>caption-position</code> - determines the captions&rsquo; position over the image. Options:
+
+<ul>
+<li><code>bottom</code> (default)</li>
+<li><code>center</code></li>
+<li><code>none</code> hides captions on the page (they will only show in PhotoSwipe)</li>
+</ul></li>
+<li><code>caption-effect</code> - determines if/how captions appear upon hover. Options:
+
+<ul>
+<li><code>slide</code> (default)</li>
+<li><code>fade</code></li>
+<li><code>none</code> (captions always visible)</li>
+</ul></li>
+<li><code>hover-effect</code> - determines if/how images change upon hover. Options:
+
+<ul>
+<li><code>zoom</code> (default)</li>
+<li><code>grow</code></li>
+<li><code>shrink</code></li>
+<li><code>slideup</code></li>
+<li><code>slidedown</code></li>
+<li><code>none</code></li>
+</ul></li>
+<li><code>hover-transition</code> - determines if/how images change upon hover. Options:
+
+<ul>
+<li>not set - smooth transition (default)</li>
+<li><code>none</code> - hard transition</li>
+</ul></li>
+</ul>
     </div>
 
     
@@ -534,9 +771,17 @@ ga('send', 'pageview');
   
 <script type="text/javascript" src="/hugo-theme-jane/lib/jquery/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="/hugo-theme-jane/lib/slideout/slideout-1.0.1.min.js"></script>
-  <script type="text/javascript" src="/hugo-theme-jane/lib/fancybox/jquery.fancybox-3.1.20.min.js"></script>
 <script type="text/javascript" src="/hugo-theme-jane/dist/jane.min.js?v=2.7.0"></script>
 
+
+
+
+
+  
+    <script type="text/javascript" src="/hugo-theme-jane/js/load-photoswipe.js"></script>
+    <script type="text/javascript" src="/hugo-theme-jane/lib/photoswipe/photoswipe.min.js"></script>
+    <script type="text/javascript" src="/hugo-theme-jane/lib/photoswipe/photoswipe-ui-default.min.js"></script>
+  
 
 
 

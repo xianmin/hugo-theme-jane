@@ -54,7 +54,6 @@
 
 
 <link href="/hugo-theme-jane/dist/jane.min.css?v=2.7.0" rel="stylesheet">
-<link href="/hugo-theme-jane/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
 
 
 
@@ -135,7 +134,65 @@ ga('send', 'pageview');
       </a>
   </ul>
 </nav>
+  
+    
 
+
+
+
+
+
+  <link rel="stylesheet" href="/hugo-theme-jane/lib/photoswipe/photoswipe.min.css" />
+  <link rel="stylesheet" href="/hugo-theme-jane/lib/photoswipe/default-skin/default-skin.min.css" />
+
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+  
   <header id="header" class="header container">
     <div class="logo-wrapper">
   <a href="/hugo-theme-jane/" class="logo">
@@ -357,16 +414,32 @@ ga('send', 'pageview');
             <a href="/hugo-theme-jane/categories/index/"> index </a>
           
         </div>
-      <span class="more-meta"> 83 words </span>
-      <span class="more-meta"> 1 min read </span>
+      <span class="more-meta"> 0 words </span>
+      <span class="more-meta"> 0 min read </span>
     </div>
   </header>
   
   <div class="post-content">
     
     <div class="post-summary">
-       Normal Image This is an image in static/image folder.
-1  ![This is an image in `static/image` folder.](/image/example.jpg)   figure image with title 1  {{&lt; figure src=&#34;/image/example.jpg&#34; title=&#34;figure image with title&#34; &gt;}}     figure image with title   figure image with caption 1  {{&lt; figure src=&#34;/image/example.jpg&#34; caption=&#34;figure image with caption figure image with caption figure image with caption figure image with caption figure image with caption&#34; &gt;}}      figure image with caption figure image with caption figure image with caption figure image with caption figure image with caption   
+      <p>Thanks for <a href="https://github.com/liwenyip/hugo-easy-gallery">liwenyip/hugo-easy-gallery</a> &amp; <a href="https://github.com/xianmin/hugo-theme-jane/pull/48">Zebradil · Pull Request #48</a> .</p>
+
+<p>Now, we could use <code>{{&lt; gallery &gt;}}</code> shortcode in hugo-theme-jane.</p>
+
+<h2 id="normal-image">Normal Image</h2>
+
+<p>This is an image in <code>static/image</code> folder.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown"><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown">![<span class="nt">This is an image in `static/image` folder.</span>](<span class="na">/image/example.jpg</span>)</code></pre></td></tr></table>
+</div>
+</div>
+<p><img src="/hugo-theme-jane/image/example.jpg" alt="This is an image in `static/image` folder." /></p>
+
+<p></p>
     </div>
     <div class="read-more">
       <a href="/hugo-theme-jane/post/image-preview/" class="read-more-link">Read more</a>
@@ -574,9 +647,17 @@ ga('send', 'pageview');
   
 <script type="text/javascript" src="/hugo-theme-jane/lib/jquery/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="/hugo-theme-jane/lib/slideout/slideout-1.0.1.min.js"></script>
-  <script type="text/javascript" src="/hugo-theme-jane/lib/fancybox/jquery.fancybox-3.1.20.min.js"></script>
 <script type="text/javascript" src="/hugo-theme-jane/dist/jane.min.js?v=2.7.0"></script>
 
+
+
+
+
+  
+    <script type="text/javascript" src="/hugo-theme-jane/js/load-photoswipe.js"></script>
+    <script type="text/javascript" src="/hugo-theme-jane/lib/photoswipe/photoswipe.min.js"></script>
+    <script type="text/javascript" src="/hugo-theme-jane/lib/photoswipe/photoswipe-ui-default.min.js"></script>
+  
 
 
 
