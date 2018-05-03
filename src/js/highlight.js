@@ -6,7 +6,9 @@ export default function () {
   document.querySelectorAll('.chroma>table')
     .forEach((element) => {
       const sub = element.querySelector('code[data-lang]');
-      element.setAttribute('data-lang', mapLang(sub.getAttribute('data-lang')));
+      if (sub !== null) {
+        element.setAttribute('data-lang', mapLang(sub.getAttribute('data-lang')));
+      }
     });
 }
 
