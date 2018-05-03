@@ -1,4 +1,4 @@
-p > code, pre {
+code {
   padding: 0 7px;
   background: $code-background;
   border-radius: 4px;
@@ -8,11 +8,15 @@ p > code, pre {
 code, pre {
   font-size: $code-font-size;
   font-family: $code-font-family;
-  padding: 0;
 }
 
 .chroma {
   margin: 0;
+
+  code {
+    padding: 0;
+    color:inherit;
+  }
 }
 
 .highlight > .chroma {
