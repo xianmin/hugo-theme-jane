@@ -8,29 +8,29 @@
   translation: "Tag: "
 
 - id: categories
-  translation: Categories
+  translation: Catégories
 
 - id: category
-  translation: "Category: "
+  translation: "Catégory: "
 
 # posts
 - id: prev
-  translation: Prev
+  translation: Prec
 
 - id: next
-  translation: Next
+  translation: Suiv
 
 - id: prev_post
-  translation: Prev
+  translation: Prec
 
 - id: next_post
-  translation: Next
+  translation: Suiv
 
 - id: toc
-  translation: Table of Contents
+  translation: Sommaire
 
 - id: readmore
-  translation: Read more
+  translation: Lire la suite
 
 - id: reward
   translation: Reward
@@ -42,44 +42,44 @@
   translation: Wechat
 
 - id: seeMarkDown
-  translation: The Markdown version »
+  translation: La version Markdown »
 
 - id: loadDisqus
-  translation: Show Disqus Comments
+  translation: Afficher les commentaires Disqus
 
 # posts.header
 - id: wordCount
-  translation: "{{.Count}} words"
+  translation: "{{.Count}} mots"
 
 - id: readingTime
-  translation: "{{.Count}} min read"
+  translation: "{{.Count}} min de lecture"
 
 # copyright
 - id: author
-  translation: Author
+  translation: Auteur
 
 - id: lastMod
-  translation: LastMod
+  translation: Derniere modification
 
 - id: markdown
   translation: Markdown
 
 - id: license
-  translation: License
+  translation: Licence
 
 # counter
 - id: counter_archives
-  translation: "{{.Count}} posts In Total"
+  translation: "{{.Count}} articles au total"
 
 - id: counter_tagcloud
-  translation: "{{.Count}} Tags In Total"
+  translation: "{{.Count}} Tags au total"
 
 - id: counter_categories
-  translation: "{{.Count}} Categories In Total"
+  translation: "{{.Count}} Catégories au total"
 
 # other
 - id: morePost
-  translation: "More Post >>>"
+  translation: "Plus d'articles >>>"
 
 - id: read_ru
   translation: Читать на русском
@@ -93,5 +93,5 @@
 - id: read_pt
   translation: Leia em português
 
-- id: read_fr
-  translation: Lire en français
+- id: read_en
+  translation: Read in english

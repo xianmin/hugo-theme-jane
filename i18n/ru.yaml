@@ -92,3 +92,6 @@
 
 - id: read_pt
   translation: Leia em português
+
+- id: read_fr
+  translation: Lire en français
