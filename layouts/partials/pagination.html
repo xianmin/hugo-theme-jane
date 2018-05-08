@@ -38,18 +38,21 @@
   <!-- 1 < page number <= $max_links -->
   {{ if and (gt $pag.TotalPages 1) (le $pag.TotalPages $max_links) }}
   <nav class="pagination">
-    {{ range $pag.Pagers }}
-    <li {{ if eq . $pag }} class="active" {{end}}>
-      <a href="{{ .URL }}">{{ .PageNumber }}</a>
-    </li>
-    {{ end }}
+    <ul>
+      {{ range $pag.Pagers }}
+      <li {{ if eq . $pag }} class="active" {{end}}>
+        <a href="{{ .URL }}">{{ .PageNumber }}</a>
+      </li>
+      {{ end }}
+    </ul>
   </nav>
 
   <!-- page number > $max_links -->
   {{ else if gt $pag.TotalPages $max_links }}
 
     <nav class="pagination">
-     
+      <ul>
+
       <!-- First page. -->
       {{ if ne $pag.PageNumber 1 }}
       <li><a href="{{ $pag.First.URL }}">««</a></li>
@@ -59,10 +62,10 @@
       {{ if $pag.HasPrev }}
       <li><a href="{{ $pag.Prev.URL }}">«</a></li>
       {{ end }}
-   
+
       <!-- Page numbers. -->
       {{ range $pag.Pagers }}
-     
+
         {{ $.Scratch.Set "page_number_flag" false }}
 
         <!-- Advanced page numbers. -->
@@ -88,7 +91,7 @@
 
           <!-- Middle pages. -->
           {{ else }}
-           
+
             {{ if and ( ge .PageNumber (sub $pag.PageNumber $adjacent_links) ) ( le .PageNumber (add $pag.PageNumber $adjacent_links) ) }}
               {{ $.Scratch.Set "page_number_flag" true }}
             {{ end }}
@@ -123,6 +126,7 @@
       <li><a href="{{ $pag.Last.URL }}">»»</a></li>
       {{ end }}
 
+      </ul>
     </nav><!-- .pagination -->
   {{ end }}
 
