@@ -24,8 +24,6 @@ This is an image in `static/image` folder.
 ![This is an image in `static/image` folder.](/image/example.jpg)
 ```
 
-![This is an image in `static/image` folder.](/hugo-theme-jane/image/example.jpg)
-
 <!--more-->
 
 ## `{{</* figure */>}}` shortcode
@@ -37,17 +35,11 @@ This is an image in `static/image` folder.
 ```
 
 
-{{< figure src="/hugo-theme-jane/image/example.jpg" title="figure image with title">}}
-
-
 ### figure image with caption
 
 ```
 {{</* figure src="/image/example.jpg" caption="figure image with caption figure image with caption figure image with caption figure image with caption figure image with caption" */>}}
 ```
-
-{{< figure src="/hugo-theme-jane/image/example.jpg" caption="figure image with caption figure image with caption figure image with caption figure image with caption figure image with caption" >}}
-
 
 ### more `{{</* figure */>}}` shortcode usage
 
@@ -79,10 +71,6 @@ To specify a directory of image files:
 ```
 {{</* gallery dir="/img/your-directory-of-images/" */>}}
 ```
-
-This preview only one image.
-
-{{< gallery dir="/image/" />}}
 
 - The images are automatically captioned with the file name.
 - `[image].jpg` is used for the hi-res image, and `[image]-thumb.jpg` is used for the thumbnails.
