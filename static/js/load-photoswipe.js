@@ -15,18 +15,29 @@ $( document ).ready(function() {
   Initialise Photoswipe
   */
   var items = []; // array of slide objects that will be passed to PhotoSwipe()
-  // for every figure element on the page:
-  $('figure').each( function() {
-    if ($(this).attr('class') == 'no-photoswipe') return true; // ignore any figures where class="no-photoswipe"
-    // get properties from child a/img/figcaption elements,
-    var $figure = $(this),
-      $a = $figure.find('a'),
-      $img = $figure.find('img'),
+
+  // for every figure & image element on the page:
+  $('.post-content p > img, figure').each(function () {
+    var $this = $(this);
+    var $a, $img, $src, $title, $msrc;
+    if ($this.attr('class') == 'no-photoswipe') return true; // ignore any figures where class="no-photoswipe"
+
+    // get image properties,
+    if ($this[0].tagName === 'IMG') {
+      $src = $this[0].src;
+      $msrc = $this[0].src;
+      $title = $this[0].alt;
+    } else {
+      // else figure image
+      $a = $this.find('a'),
+      $img = $this.find('img'),
       $src = $a.attr('href'),
       $title = $img.attr('alt'),
       $msrc = $img.attr('src');
+    }
+
     // if data-size on <a> tag is set, read it and create an item
-    if ($a.data('size')) {
+    if ($a && $a.data('size')) {
       var $size 	= $a.data('size').split('x');
       var item = {
         src: $src,
@@ -65,7 +76,7 @@ $( document ).ready(function() {
     var index = items.length;
     items.push(item);
     // Event handler for click on a figure
-    $figure.on('click', function(event) {
+    $this.on('click', function(event) {
       event.preventDefault(); // prevent the normal behaviour i.e. load the <a> hyperlink
       // Get the PSWP element and initialise it with the desired options
       var $pswp = $('.pswp')[0];
