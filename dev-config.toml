@@ -151,6 +151,9 @@ defaultContentLanguage = "en"  # Default language to use (if you setup multiling
   customCSS = []            # if ['custom.css'], load '/static/css/custom.css' file
   customJS = []             # if ['custom.js'], load '/static/js/custom.js' file
 
+  # enable 'fork me on github', https://blog.github.com/2008-12-19-github-ribbons/
+  forkMeOnGithub = "https://github.com/xianmin/hugo-theme-jane"
+
   [params.publicCDN]        # load these files from public cdn                          # 启用公共CDN，需自行定义
     enable = false
     jquery = '<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>'
