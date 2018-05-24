@@ -916,8 +916,6 @@ $$&lt;/p&gt;
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;![&lt;span class=&#34;nt&#34;&gt;This is an image in `static/image` folder.&lt;/span&gt;](&lt;span class=&#34;na&#34;&gt;/image/example.jpg&lt;/span&gt;)&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;p&gt;&lt;img src=&#34;http://en.xianmin.org/hugo-theme-jane/hugo-theme-jane/image/example.jpg&#34; alt=&#34;This is an image in `static/image` folder.&#34; /&gt;&lt;/p&gt;
-
 &lt;p&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;figure-shortcode&#34;&gt;&lt;code&gt;{{&amp;lt; figure &amp;gt;}}&lt;/code&gt; shortcode&lt;/h2&gt;
@@ -931,20 +929,6 @@ $$&lt;/p&gt;
 &lt;pre class=&#34;chroma&#34;&gt;{{&amp;lt; figure src=&amp;#34;/image/example.jpg&amp;#34; title=&amp;#34;figure image with title&amp;#34; &amp;gt;}}&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-
-&lt;link rel=&#34;stylesheet&#34; href=&#34;http://en.xianmin.org/hugo-theme-jane/hugo-theme-jane/css/hugo-easy-gallery.css&#34; /&gt;
-&lt;div class=&#34;box&#34; &gt;
-  &lt;figure  itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
-    &lt;div class=&#34;img&#34;&gt;
-      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;http://en.xianmin.org/hugo-theme-jane/hugo-theme-jane/image/example.jpg&#34; /&gt;
-    &lt;/div&gt;
-    &lt;a href=&#34;http://en.xianmin.org/hugo-theme-jane/hugo-theme-jane/image/example.jpg&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
-      &lt;figcaption&gt;&lt;h4&gt;figure image with title&lt;/h4&gt;
-      &lt;/figcaption&gt;
-  &lt;/figure&gt;
-&lt;/div&gt;
-
-
 &lt;h3 id=&#34;figure-image-with-caption&#34;&gt;figure image with caption&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -954,21 +938,6 @@ $$&lt;/p&gt;
 &lt;pre class=&#34;chroma&#34;&gt;{{&amp;lt; figure src=&amp;#34;/image/example.jpg&amp;#34; caption=&amp;#34;figure image with caption figure image with caption figure image with caption figure image with caption figure image with caption&amp;#34; &amp;gt;}}&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-
-
-&lt;div class=&#34;box&#34; &gt;
-  &lt;figure  itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
-    &lt;div class=&#34;img&#34;&gt;
-      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;http://en.xianmin.org/hugo-theme-jane/hugo-theme-jane/image/example.jpg&#34; alt=&#34;figure image with caption figure image with caption figure image with caption figure image with caption figure image with caption&#34;/&gt;
-    &lt;/div&gt;
-    &lt;a href=&#34;http://en.xianmin.org/hugo-theme-jane/hugo-theme-jane/image/example.jpg&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
-      &lt;figcaption&gt;
-          &lt;p&gt;figure image with caption figure image with caption figure image with caption figure image with caption figure image with caption&lt;/p&gt;
-      &lt;/figcaption&gt;
-  &lt;/figure&gt;
-&lt;/div&gt;
-
-
 &lt;h3 id=&#34;more-figure-shortcode-usage&#34;&gt;more &lt;code&gt;{{&amp;lt; figure &amp;gt;}}&lt;/code&gt; shortcode usage&lt;/h3&gt;
 
 &lt;p&gt;Specifying your image files:&lt;/p&gt;
@@ -1008,26 +977,6 @@ $$&lt;/p&gt;
 &lt;pre class=&#34;chroma&#34;&gt;{{&amp;lt; gallery dir=&amp;#34;/img/your-directory-of-images/&amp;#34; &amp;gt;}}&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;p&gt;This preview only one image.&lt;/p&gt;
-
-
-
-
-&lt;div class=&#34;gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition&#34; itemscope itemtype=&#34;http://schema.org/ImageGallery&#34;&gt;
-        &lt;div class=&#34;box&#34;&gt;
-          &lt;figure itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
-            &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;http://en.xianmin.org/hugo-theme-jane//image//example.jpg&#39;);&#34; &gt;
-              &lt;img itemprop=&#34;thumbnail&#34; src=&#34;http://en.xianmin.org/hugo-theme-jane//image//example.jpg&#34; alt=&#34;Example&#34; /&gt;
-            &lt;/div&gt;
-            &lt;figcaption&gt;
-              &lt;p&gt;Example&lt;/p&gt;
-            &lt;/figcaption&gt;
-            &lt;a href=&#34;http://en.xianmin.org/hugo-theme-jane//image//example.jpg&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
-          &lt;/figure&gt;
-        &lt;/div&gt;
-&lt;/div&gt;
-
-
 &lt;ul&gt;
 &lt;li&gt;The images are automatically captioned with the file name.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;[image].jpg&lt;/code&gt; is used for the hi-res image, and &lt;code&gt;[image]-thumb.jpg&lt;/code&gt; is used for the thumbnails.&lt;/li&gt;

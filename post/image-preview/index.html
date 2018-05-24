@@ -77,8 +77,6 @@ This is an image in static/image folder.
 ![This is an image in `static/image` folder.](/image/example.jpg)
 
 
-
-
 " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://en.xianmin.org/hugo-theme-jane/post/image-preview/" />
@@ -116,8 +114,6 @@ This is an image in static/image folder.
 ![This is an image in `static/image` folder.](/image/example.jpg)
 
 
-
-
 ">
 
 
@@ -143,8 +139,6 @@ This is an image in static/image folder.
 
 
 ![This is an image in `static/image` folder.](/image/example.jpg)
-
-
 
 
 "/>
@@ -214,6 +208,7 @@ ga('send', 'pageview');
   </ul>
 </nav>
 
+
   
     
 
@@ -273,6 +268,15 @@ ga('send', 'pageview');
 </div>
 
   
+
+  
+    <a href="https://github.com/xianmin/hugo-theme-jane">
+      <img style="position: absolute; top: 0; left: 0; border: 0;"
+        src="https://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png"
+        alt="Fork me on GitHub">
+    </a>
+  
+
   <header id="header" class="header container">
     <div class="logo-wrapper">
   <a href="/hugo-theme-jane/" class="logo">
@@ -452,8 +456,6 @@ ga('send', 'pageview');
 <pre class="chroma"><code class="language-markdown" data-lang="markdown">![<span class="nt">This is an image in `static/image` folder.</span>](<span class="na">/image/example.jpg</span>)</code></pre></td></tr></table>
 </div>
 </div>
-<p><img src="/hugo-theme-jane/image/example.jpg" alt="This is an image in `static/image` folder." /></p>
-
 <p></p>
 
 <h2 id="figure-shortcode"><code>{{&lt; figure &gt;}}</code> shortcode</h2>
@@ -467,20 +469,6 @@ ga('send', 'pageview');
 <pre class="chroma">{{&lt; figure src=&#34;/image/example.jpg&#34; title=&#34;figure image with title&#34; &gt;}}</pre></td></tr></table>
 </div>
 </div>
-
-<link rel="stylesheet" href="/hugo-theme-jane/css/hugo-easy-gallery.css" />
-<div class="box" >
-  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-    <div class="img">
-      <img itemprop="thumbnail" src="/hugo-theme-jane/image/example.jpg" />
-    </div>
-    <a href="/hugo-theme-jane/image/example.jpg" itemprop="contentUrl"></a>
-      <figcaption><h4>figure image with title</h4>
-      </figcaption>
-  </figure>
-</div>
-
-
 <h3 id="figure-image-with-caption">figure image with caption</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -490,21 +478,6 @@ ga('send', 'pageview');
 <pre class="chroma">{{&lt; figure src=&#34;/image/example.jpg&#34; caption=&#34;figure image with caption figure image with caption figure image with caption figure image with caption figure image with caption&#34; &gt;}}</pre></td></tr></table>
 </div>
 </div>
-
-
-<div class="box" >
-  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-    <div class="img">
-      <img itemprop="thumbnail" src="/hugo-theme-jane/image/example.jpg" alt="figure image with caption figure image with caption figure image with caption figure image with caption figure image with caption"/>
-    </div>
-    <a href="/hugo-theme-jane/image/example.jpg" itemprop="contentUrl"></a>
-      <figcaption>
-          <p>figure image with caption figure image with caption figure image with caption figure image with caption figure image with caption</p>
-      </figcaption>
-  </figure>
-</div>
-
-
 <h3 id="more-figure-shortcode-usage">more <code>{{&lt; figure &gt;}}</code> shortcode usage</h3>
 
 <p>Specifying your image files:</p>
@@ -544,26 +517,6 @@ ga('send', 'pageview');
 <pre class="chroma">{{&lt; gallery dir=&#34;/img/your-directory-of-images/&#34; &gt;}}</pre></td></tr></table>
 </div>
 </div>
-<p>This preview only one image.</p>
-
-
-
-
-<div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
-        <div class="box">
-          <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-            <div class="img" style="background-image: url('http://en.xianmin.org/hugo-theme-jane//image//example.jpg');" >
-              <img itemprop="thumbnail" src="http://en.xianmin.org/hugo-theme-jane//image//example.jpg" alt="Example" />
-            </div>
-            <figcaption>
-              <p>Example</p>
-            </figcaption>
-            <a href="http://en.xianmin.org/hugo-theme-jane//image//example.jpg" itemprop="contentUrl"></a>
-          </figure>
-        </div>
-</div>
-
-
 <ul>
 <li>The images are automatically captioned with the file name.</li>
 <li><code>[image].jpg</code> is used for the hi-res image, and <code>[image]-thumb.jpg</code> is used for the thumbnails.</li>

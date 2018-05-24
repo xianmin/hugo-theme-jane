@@ -65,8 +65,6 @@
 &lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;![&lt;span class=&#34;nt&#34;&gt;This is an image in `static/image` folder.&lt;/span&gt;](&lt;span class=&#34;na&#34;&gt;/image/example.jpg&lt;/span&gt;)&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;p&gt;&lt;img src=&#34;http://en.xianmin.org/hugo-theme-jane/hugo-theme-jane/image/example.jpg&#34; alt=&#34;This is an image in `static/image` folder.&#34; /&gt;&lt;/p&gt;
-
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
     
