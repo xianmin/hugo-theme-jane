@@ -18,7 +18,7 @@
   <ul class="mobile-menu-list">
     {{ range .Site.Menus.main -}}
       <li class="mobile-menu-item">
-        <a href="{{ .URL | safeURL }}">
+        <a href="{{ .URL | absLangURL | safeURL }}">
           {{ .Name }}
         </a>
       </li>
