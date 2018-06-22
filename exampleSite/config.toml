@@ -145,7 +145,7 @@ defaultContentLanguage = "en"           # Default language to use
 # jsonfeed support
 # more information: https://github.com/xianmin/hugo-theme-jane/issues/23
 # [outputs]
-#   home = ["html", "jsonfeed"]
+#   home = ["html", "jsonfeed","rss"]
 #   page = ["html"]
 #
 # [outputFormats]
