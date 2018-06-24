@@ -144,6 +144,7 @@ defaultContentLanguage = "en"           # Default language to use
 
 # jsonfeed support
 # more information: https://github.com/xianmin/hugo-theme-jane/issues/23
+# to have json output it's necessary to uncomment this block of code and create a index.jsonfeed.json template, using hugo template specs
 # [outputs]
 #   home = ["html", "jsonfeed","rss"]
 #   page = ["html"]
@@ -153,6 +154,7 @@ defaultContentLanguage = "en"           # Default language to use
 #   mediaType = "application/json"
 #   baseName = "feed"
 #   isPlainText = true
+
 
 # multilingual support example
 # [langusges]
