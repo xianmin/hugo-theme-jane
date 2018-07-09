@@ -3,12 +3,17 @@
 // ==============================
 
 .disqus-button {
-  display: block;
-  padding: 15px 0;
-  font-size: 16px;
-  color: #555;
-  border: 1px solid #ddd;
+  cursor: pointer;
+  border: 2px solid #ddd;
+  color: #999;
+  margin: 0 auto;
+  max-width: 200px;
   text-align: center;
-  cursor:pointer;
-  margin-top: 2em;
+  padding: 10px;
+  transition: 0.5s;
+
+  &:hover {
+    color: #111;
+    border-color: #111;
+  }
 }
