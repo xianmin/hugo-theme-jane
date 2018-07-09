@@ -1,5 +1,15 @@
 {{ if and .IsPage (ne .Params.comment false) }}
 
+  <!-- utteranc -->
+  {{ if .Site.Params.utteranc.enable }}
+    <script src="https://utteranc.es/client.js"
+          repo= "{{ .Site.Params.utteranc.repo }}"
+          issue-term="{{ .Site.Params.utteranc.issueTerm }}"
+          crossorigin="anonymous"
+          async>
+    </script>
+  {{ end }}
+
   <!-- Disqus -->
   {{- if .Site.DisqusShortname -}}
     <div class="disqus-button" id="load_disqus" onclick="load_disqus()">
