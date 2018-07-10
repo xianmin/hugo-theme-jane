@@ -13,7 +13,7 @@
         </div>
           <div class="collection-title">
             <h2 class="archive-year">
-              <a href="{{ $termName | urlize | relURL }}/{{ $value.Term | urlize }}{{if $.Site.Params.uglyURLs}}.html{{else}}/{{end}}">
+              <a href="{{ $termName | urlize | relLangURL }}/{{ $value.Term | urlize }}{{if $.Site.Params.uglyURLs}}.html{{else}}/{{end}}">
                 {{ i18n "category" }}{{ $value.Term }}
               </a>
             </h2>
@@ -33,7 +33,7 @@
           {{ end }}
           {{ if gt (len $value.Pages) 5 }}
             <div class="more-post">
-              <a href="{{ $termName | urlize | relURL }}/{{ $value.Term | urlize }}{{if $.Site.Params.uglyURLs}}.html{{else}}/{{end}}" class="more-post-link">{{ i18n "morePost" }}</a>
+              <a href="{{ $termName | urlize | relLangURL }}/{{ $value.Term | urlize }}{{if $.Site.Params.uglyURLs}}.html{{else}}/{{end}}" class="more-post-link">{{ i18n "morePost" }}</a>
             </div>
           {{ end }}
       </section>
@@ -62,7 +62,7 @@
         {{ $weigth := div (sub (math.Log $count) (math.Log $min)) (sub (math.Log $max) (math.Log $min)) }}
         {{ $currentFontSize := (add $smallestFontSize (mul (sub $largestFontSize $smallestFontSize) $weigth) ) }}
         <!--Current font size: {{$currentFontSize}}-->  
-        <a href="{{ $termName | urlize | relURL }}/{{ $tagName | urlize }}{{if $.Site.Params.uglyURLs}}.html{{else}}/{{end}}" 
+        <a href="{{ $termName | urlize | relLangURL }}/{{ $tagName | urlize }}{{if $.Site.Params.uglyURLs}}.html{{else}}/{{end}}" 
           style="font-size:{{$currentFontSize}}{{$fontUnit}}">{{ $tagName }}</a>
       {{ end }}
       </div>
