@@ -30,7 +30,8 @@ This theme focuses on improving reading experience.
 - [Notes on Blue Skies](https://terrty.net) - Personal blog in Russian by @paskal
 - [贤民的比特记忆](http://www.xianmin.org/) - A Chinese blog.
 - [虞双齐爱折腾](https://yushuangqi.com/) - @ysqi 个人技术博客.
-- Waiting to add more...
+
+Are you using **hugo-theme-jane**? [Add your site](https://github.com/xianmin/hugo-theme-jane/edit/master/README.md) to the list!
 
 
 ## Quick Start
