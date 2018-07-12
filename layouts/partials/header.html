@@ -38,5 +38,23 @@
 
       </li>
     {{ end }}
+    {{ if and (gt (len .Site.Home.AllTranslations) 1) (.Site.Params.showMenuLanguageChooser | default false ) }}
+      {{- $.Scratch.Set "language" .Language -}}
+      <li class="menu-item">
+        <!-- drop down navigation MENU -->
+        <a class="menu-item-link menu-parent" href="{{ .URL | absLangURL | safeURL }}">{{ i18n "language" }}</a>
+        <ul class="submenu">
+          {{ range .Site.Home.AllTranslations }}
+            <li>
+              {{ if eq ($.Scratch.Get "language") .Language }}
+                <a href="{{ .Permalink }}"><strong>{{ .Language.LanguageName }}</strong></a>
+              {{ else }}
+                <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+              {{ end }}
+            </li>
+          {{ end }}
+        </ul>
+      </li>
+    {{ end }}
   </ul>
 </nav>
