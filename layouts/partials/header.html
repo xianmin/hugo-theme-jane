@@ -42,7 +42,10 @@
       {{- $.Scratch.Set "language" .Language -}}
       <li class="menu-item">
         <!-- drop down navigation MENU -->
-        <a class="menu-item-link menu-parent" href="{{ .URL | absLangURL | safeURL }}">{{ i18n "language" }}</a>
+        <a class="menu-item-link menu-parent menu-item-lang" href="{{ .URL | absLangURL | safeURL }}">
+          <i class="iconfont icon-globe"></i>
+          {{ i18n "language" }}
+        </a>
         <ul class="submenu">
           {{ range .Site.Home.AllTranslations }}
             <li>
