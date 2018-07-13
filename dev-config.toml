@@ -55,17 +55,17 @@ defaultContentLanguage = "en"  # Default language to use (if you setup multiling
   name = "Archives"
   weight = 20
   identifier = "archives"
-  url = "/post/"
+  url = "post/"
 [[languages.en.menu.main]]
   name = "Tags"
   weight = 30
   identifier = "tags"
-  url = "/tags/"
+  url = "tags/"
 [[languages.en.menu.main]]
   name = "Categories"
   weight = 40
   identifier = "categories"
-  url = "/categories/"
+  url = "categories/"
 [[languages.en.menu.main]]
   name = "external-link"
   weight = 50
@@ -75,22 +75,22 @@ defaultContentLanguage = "en"  # Default language to use (if you setup multiling
   name = "主页"
   weight = 10
   identifier = "home"
-  url = "/zh-cn/"
+  url = "zh-cn/"
 [[languages.zh-cn.menu.main]]
   name = "归档"
   weight = 20
   identifier = "archives"
-  url = "/zh-cn/post/"
+  url = "zh-cn/post/"
 [[languages.zh-cn.menu.main]]
   name = "标签"
   weight = 30
   identifier = "tags"
-  url = "/zh-cn/tags/"
+  url = "zh-cn/tags/"
 [[languages.zh-cn.menu.main]]
   name = "分类"
   weight = 40
   identifier = "categories"
-  url = "/zh-cn/categories/"
+  url = "zh-cn/categories/"
 [[languages.zh-cn.menu.main]]
   name = "外部链接"
   weight = 50
