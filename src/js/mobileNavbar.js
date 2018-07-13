@@ -35,11 +35,13 @@ export default function () {
     const $mobileSubmenuList = $('.mobile-submenu-list')
     const $mobileMenuParent = $('.mobile-menu-parent')
 
-    if ($mobileSubmenuList.css('display') == "none") {
-      $mobileSubmenuList.show("slow");
-      $mobileMenuParent.addClass('mobile-submenu-show')
+    if ($(this).parent().next().css('display') == "none") {
+      $mobileSubmenuList.slideUp(300)
+      $(this).parent().next('ul').slideDown(300)
+      $(this).parent().addClass('mobile-submenu-show')
+      $(this).parent().parent().siblings().children().removeClass('mobile-submenu-show')
     } else {
-      $mobileSubmenuList.slideUp(300);
+      $(this).parent().next('ul').slideUp(300)
       $mobileMenuParent.removeClass('mobile-submenu-show')
     }
   });
