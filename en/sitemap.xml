@@ -3,13 +3,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://en.xianmin.org/hugo-theme-jane/post/syntax-highlighting/</loc>
-    <lastmod>2017-08-30T16:01:23+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>http://en.xianmin.org/hugo-theme-jane/about/</loc>
     <lastmod>2017-08-28T21:41:52+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -82,6 +75,13 @@
   <url>
     <loc>http://en.xianmin.org/hugo-theme-jane/post/migrate-from-jekyll/</loc>
     <lastmod>2014-03-10T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://en.xianmin.org/hugo-theme-jane/post/syntax-highlighting/</loc>
+    <lastmod>2017-08-30T16:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -171,14 +171,14 @@
   
   <url>
     <loc>http://en.xianmin.org/hugo-theme-jane/categories/index/</loc>
-    <lastmod>2017-08-30T16:01:23+08:00</lastmod>
+    <lastmod>2018-03-07T16:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://en.xianmin.org/hugo-theme-jane/</loc>
-    <lastmod>2017-08-30T16:01:23+08:00</lastmod>
+    <lastmod>2017-08-28T21:41:52+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -199,14 +199,14 @@
   
   <url>
     <loc>http://en.xianmin.org/hugo-theme-jane/post/</loc>
-    <lastmod>2017-08-30T16:01:23+08:00</lastmod>
+    <lastmod>2018-03-07T16:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://en.xianmin.org/hugo-theme-jane/tags/preview/</loc>
-    <lastmod>2017-08-30T16:01:23+08:00</lastmod>
+    <lastmod>2018-03-07T16:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
