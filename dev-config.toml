@@ -25,9 +25,11 @@ defaultContentLanguage = "en"  # Default language to use (if you setup multiling
 [langusges]
 [languages.en]
   title = "Jane - A simple theme for Hugo"
+  languageName = "English"
   weight = 1
 [languages.zh-cn]
   title = "Jane —— 一个简洁的 Hugo 主题"
+  languageName = "中文"
   weight = 2
 
 [[languages.en.menu.main]]
