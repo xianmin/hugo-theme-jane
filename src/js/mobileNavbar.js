@@ -30,4 +30,18 @@ export default function () {
   $('#mobile-panel').on('touchend', function () {
     slideout.isOpen() && $mobileNavIcon.click()
   })
+
+  $('.mobile-submenu-open').on('click', function () {
+    const $mobileSubmenuList = $('.mobile-submenu-list')
+    const $mobileMenuParent = $('.mobile-menu-parent')
+
+    if ($mobileSubmenuList.css('display') == "none") {
+      $mobileSubmenuList.show("slow");
+      $mobileMenuParent.addClass('mobile-submenu-show')
+    } else {
+      $mobileSubmenuList.slideUp(300);
+      $mobileMenuParent.removeClass('mobile-submenu-show')
+    }
+  });
+
 }

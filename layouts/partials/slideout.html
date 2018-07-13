@@ -17,11 +17,36 @@
 <nav id="mobile-menu" class="mobile-menu slideout-menu">
   <ul class="mobile-menu-list">
     {{ range .Site.Menus.main -}}
+
       <li class="mobile-menu-item">
-        <a href="{{ .URL | absLangURL | safeURL }}">
-          {{ .Name }}
-        </a>
+        {{ if .HasChildren }}
+          <!-- drop down navigation MENU -->
+          <div class="mobile-menu-parent">
+            <span class="mobile-submenu-open"></span>
+            <a href="{{ .URL | absLangURL | safeURL }}">
+              {{ .Name }}
+            </a>
+          </div>
+          <ul class="mobile-submenu-list">
+            {{ range .Children }}
+              <li>
+                <a href="{{ .URL | absLangURL | safeURL }}">{{ .Name }}</a>
+              </li>
+            {{ end }}
+          </ul>
+        {{ else }}
+          <!-- normal MENU -->
+          {{ if hasPrefix .URL "http" }}
+            <a class="menu-item-link" href="{{ .URL | absLangURL | safeURL }}" rel="noopener" target="_blank">
+              {{ .Name }}
+              <i class="iconfont icon-new-window"></i>
+            </a>
+          {{ else }}
+            <a class="menu-item-link" href="{{ .URL | absLangURL | safeURL }}">{{ .Name }}</a>
+          {{ end }}
+        {{ end  }}
       </li>
+
     {{- end }}
   </ul>
 </nav>
