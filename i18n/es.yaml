@@ -95,3 +95,6 @@
 
 - id: read_pt
   translation: Leia em português
+
+- id: language
+  translation: Lenguaje

@@ -98,3 +98,6 @@
 
 - id: read_fr
   translation: Lire en français
+
+- id: language
+  translation: Language
