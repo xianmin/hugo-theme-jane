@@ -7,7 +7,10 @@
       {{ with .Params.categories -}}
         <div class="post-category">
           {{ range . }}
-            <a href="{{ "categories" | relLangURL }}/{{ . | urlize }}{{if $.Site.Params.uglyURLs}}.html{{else}}/{{end}}"> {{ . }} </a>
+          {{- $name := . -}}
+          {{- with $.Site.GetPage "taxonomy" "categories" $name -}}
+            <a href="{{ .Permalink }}"> {{ $name }} </a>
+          {{ end -}}
           {{ end }}
         </div>
       {{- end }}
