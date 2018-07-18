@@ -4,22 +4,26 @@
   {{ $termName := .Data.Plural }}
   {{ $terms := .Data.Terms.ByCount }}
   {{ $length := len $terms }}
+  {{ $type := .Type }}
 
   <!-- Categories Page -->
   {{ if and $.Site.Taxonomies.categories (eq $termName "categories") }}
-    {{ range $key, $value := $terms }}
+    {{ range $terms }}
+    {{ $term := .Term }}
+    {{ $pages := .Pages }}
+    {{ with $.Site.GetPage "taxonomy" $type $term }}
       <section id="archive" class="archive">
         <div class="archive-title">
         </div>
           <div class="collection-title">
             <h2 class="archive-year">
-              <a href="{{ $termName | urlize | relLangURL }}/{{ $value.Term | urlize }}{{if $.Site.Params.uglyURLs}}.html{{else}}/{{end}}">
-                {{ i18n "category" }}{{ $value.Term }}
+              <a href="{{ .Permalink }}">
+                {{ i18n "category" }}{{ $term }}
               </a>
             </h2>
           </div>
 
-          {{ range first 5 $value.Pages }}
+          {{ range first 5 $pages }}
             <div class="archive-post">
               <span class="archive-post-time">
                 {{ .Date.Format "2006-01-02" }}
@@ -31,12 +35,13 @@
               </span>
             </div>
           {{ end }}
-          {{ if gt (len $value.Pages) 5 }}
+          {{ if gt (len $pages) 5 }}
             <div class="more-post">
-              <a href="{{ $termName | urlize | relLangURL }}/{{ $value.Term | urlize }}{{if $.Site.Params.uglyURLs}}.html{{else}}/{{end}}" class="more-post-link">{{ i18n "morePost" }}</a>
+              <a href="{{ .Permalink }}" class="more-post-link">{{ i18n "morePost" }}</a>
             </div>
           {{ end }}
       </section>
+    {{ end }}
     {{ end }}
 
   <!-- Tag cloud Page -->
@@ -61,9 +66,11 @@
         {{ $count := len $taxonomy.Pages }}
         {{ $weigth := div (sub (math.Log $count) (math.Log $min)) (sub (math.Log $max) (math.Log $min)) }}
         {{ $currentFontSize := (add $smallestFontSize (mul (sub $largestFontSize $smallestFontSize) $weigth) ) }}
+        {{ with $.Site.GetPage "taxonomy" $type $tagName }}
         <!--Current font size: {{$currentFontSize}}-->  
-        <a href="{{ $termName | urlize | relLangURL }}/{{ $tagName | urlize }}{{if $.Site.Params.uglyURLs}}.html{{else}}/{{end}}" 
+        <a href="{{ .Permalink }}" 
           style="font-size:{{$currentFontSize}}{{$fontUnit}}">{{ $tagName }}</a>
+        {{ end }}
       {{ end }}
       </div>
     </div>

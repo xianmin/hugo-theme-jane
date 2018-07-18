@@ -10,7 +10,10 @@
         {{ with .Params.categories -}}
           <div class="post-category">
             {{ range . }}
-              <a href="{{ "categories" | relLangURL }}/{{ . | urlize }}{{if $.Site.Params.uglyURLs}}.html{{else}}/{{end}}"> {{ . }} </a>
+            {{- $name := . -}}
+            {{- with $.Site.GetPage "taxonomy" "categories" $name | default ($.Site.GetPage "taxonomy" "categories" ($name | urlize)) -}}
+              <a href="{{ .Permalink }}"> {{ $name }} </a>
+            {{ end -}}
             {{ end }}
           </div>
         {{- end }}
@@ -39,7 +42,10 @@
       {{ with .Params.tags -}}
         <div class="post-tags">
           {{ range . }}
-          <a href="{{ "tags" | relLangURL }}/{{ . | urlize }}{{if $.Site.Params.uglyURLs}}.html{{else}}/{{end}}">{{ . }}</a>
+          {{- $name := . -}}
+          {{- with $.Site.GetPage "taxonomy" "tags" $name | default ($.Site.GetPage "taxonomy" "tags" ($name | urlize)) -}}
+          <a href="{{ .Permalink }}">{{ $name }}</a>
+          {{ end -}}
           {{ end }}
         </div>
       {{- end }}
