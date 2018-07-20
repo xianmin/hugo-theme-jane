@@ -105,6 +105,34 @@
       "contributions": [
         "translation"
       ]
+    },
+    {
+      "login": "MaxdSre",
+      "name": "AxdLog",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/38299370?v=4",
+      "profile": "https://gitlab.com/MaxdSre",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "aborruso",
+      "name": "Andrea Borruso",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/30607?v=4",
+      "profile": "https://github.com/aborruso",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "shaform",
+      "name": "Yong-Siang Shih (Shaform)",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/367172?v=4",
+      "profile": "https://shaform.com",
+      "contributions": [
+        "code",
+        "translation"
+      ]
     }
   ]
 }
