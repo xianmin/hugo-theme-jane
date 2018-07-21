@@ -48,11 +48,11 @@
         </a>
         <ul class="submenu">
           {{ range .Site.Home.AllTranslations }}
-            <li>
-              {{ if ne ($.Scratch.Get "language") .Language }}
+            {{ if ne ($.Scratch.Get "language") .Language }}
+              <li>
                 <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
-              {{ end }}
-            </li>
+              </li>
+            {{ end }}
           {{ end }}
         </ul>
       </li>
