@@ -1,3 +1,8 @@
+// ==============================
+// Post code
+// ==============================
+
+// normal <code> style
 code {
   padding: 0 7px;
   background: $code-background;
@@ -10,20 +15,23 @@ code, pre {
   font-family: $code-font-family;
 }
 
-.chroma {
-  margin: 0;
 
-  code {
-    padding: 0;
-    color:inherit;
-  }
-}
-
+// chroma code block style
 .highlight > .chroma {
   margin: 1em 0;
   overflow-x: auto;
   position: relative;
   border: 2px solid #dddddd;
+  line-height: 1.6;
+
+  code {
+    padding: 0;     /* remove normal code padding */
+    color: inherit;
+  }
+
+  pre {
+    margin: 0;      /* remove normal pre margin */
+  }
 
   table {
     position: relative;
@@ -47,22 +55,8 @@ code, pre {
     text-transform: capitalize;
   }
 
-  tr, td {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    border-collapse: collapse;
-  }
-
-  tr>td:first-child {
-    width: 1%;
-    white-space: nowrap;
-  }
-
   .lnt {
     color: $gray;
-    display: block;
-    line-height: 2em;
   }
 }
 

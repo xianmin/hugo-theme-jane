@@ -14,8 +14,14 @@ toc: false
 # contentCopyright: false
 # reward: false
 # mathjax: false
+
+menu:
+  main:
+    parent: "docs"
+    weight: 4
 ---
 
+More detail: [Syntax Highlighting | Hugo](https://gohugo.io/content-management/syntax-highlighting/)
 
 ```js
 function helloWorld () {
@@ -104,3 +110,69 @@ object HelloWorld with Application {
 ```python
 print("Hello, World!")
 ```
+
+## no named code block
+
+```
+## this is a comment
+$ echo this is a command
+this is a command
+
+## edit the file
+$vi foo.md
++++
+date = "2014-09-28"
+title = "creating a new theme"
++++
+
+bah and humbug
+:wq
+
+## show it
+$ cat foo.md
++++
+date = "2014-09-28"
+title = "creating a new theme"
++++
+
+bah and humbug
+$
+```
+
+
+## highlight shortcode
+
+example:
+
+```shortcode
+{{</* highlight go "linenos=table,hl_lines=8 15-17,linenostart=199" */>}}
+// ... code
+{{</* /highlight */>}}
+```
+
+result:
+
+{{< highlight go "linenos=table,hl_lines=8 15-17,linenostart=199" >}}
+// GetTitleFunc returns a func that can be used to transform a string to
+// title case.
+//
+// The supported styles are
+//
+// - "Go" (strings.Title)
+// - "AP" (see https://www.apstylebook.com/)
+// - "Chicago" (see http://www.chicagomanualofstyle.org/home.html)
+//
+// If an unknown or empty style is provided, AP style is what you get.
+func GetTitleFunc(style string) func(s string) string {
+  switch strings.ToLower(style) {
+  case "go":
+    return strings.Title
+  case "chicago":
+    tc := transform.NewTitleConverter(transform.ChicagoStyle)
+    return tc.Title
+  default:
+    tc := transform.NewTitleConverter(transform.APStyle)
+    return tc.Title
+  }
+}
+{{< /highlight >}}

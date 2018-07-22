@@ -31,13 +31,14 @@
 .chroma .hl {
     display: block;
     width: 100%;
+    background-color: #ffc;
 }
 
 /* LineNumbersTable */
 
-.chroma .lnt {
+.chroma .lntd:first-of-type {
     margin-right: 0.4em;
-    padding: 0 0.4em 0 0.4em;
+    padding: 0 0.8em 0 0.4em;
 }
 
 /* LineNumbers */
