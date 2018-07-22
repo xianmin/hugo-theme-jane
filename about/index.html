@@ -36,7 +36,7 @@ It makes use of a variety of open source projects including:
 
 
 
-<meta name="generator" content="Hugo 0.40.1" />
+<meta name="generator" content="Hugo 0.44" />
 
 
 <link rel="canonical" href="http://en.xianmin.org/hugo-theme-jane/about/" />
@@ -113,11 +113,15 @@ It makes use of a variety of open source projects including:
 
 
 <script>
-window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-ga('create', 'UA-34199129-1', 'auto');
-ga('send', 'pageview');
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-34199129-1', 'auto');
+	
+	ga('send', 'pageview');
+}
 </script>
-<script async src='//www.google-analytics.com/analytics.js'></script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
 
 
 
@@ -163,6 +167,10 @@ ga('send', 'pageview');
             
               <li>
                 <a href="http://en.xianmin.org/hugo-theme-jane/post/image-preview/">Image Preview</a>
+              </li>
+            
+              <li>
+                <a href="http://en.xianmin.org/hugo-theme-jane/post/syntax-highlighting/">Syntax Highlighting</a>
               </li>
             
           </ul>
@@ -353,6 +361,10 @@ ga('send', 'pageview');
             
               <li>
                 <a href="http://en.xianmin.org/hugo-theme-jane/post/image-preview/">Image Preview</a>
+              </li>
+            
+              <li>
+                <a href="http://en.xianmin.org/hugo-theme-jane/post/syntax-highlighting/">Syntax Highlighting</a>
               </li>
             
           </ul>
@@ -568,10 +580,10 @@ ga('send', 'pageview');
       <a href="http://en.xianmin.org/hugo-theme-jane/" rel="me noopener" class="iconfont icon-coding"
         title="coding" target="_blank">
       </a>
-  <a href="http://en.xianmin.org/hugo-theme-jane/index.xml" rel="noopener" type="application/rss+xml" class="iconfont icon-rss"
+  <a href="http://en.xianmin.org/hugo-theme-jane/index.xml" rel="noopener alternate" type="application/rss&#43;xml" class="iconfont icon-rss"
     title="rss" target="_blank">
   </a>
-</div>
+  </div>
 
 <div class="copyright">
   <span class="power-by">
@@ -591,6 +603,7 @@ ga('send', 'pageview');
       <i class="iconfont icon-heart"></i>
     </span><span class="author">xianmin</span></span>
 </div>
+
     </footer>
 
     <div class="back-to-top" id="back-to-top">
