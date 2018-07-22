@@ -193,7 +193,8 @@ $code-color: #c7254e !default;
 $code-font-size: 0.9em !default;
 
 // Font family of the code.
-$code-font-family: Consolas, Monaco, Menlo, Consolas, monospace !default;
+$code-font-family: Menlo, Consolas, "Source Code Pro", Inconsolata, Monaco, "Courier New",
+ monospace !default;
 
 // Color of code highlight, solarized.
 $code-highlight-color: (
