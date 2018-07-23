@@ -886,10 +886,10 @@ $$&lt;/p&gt;
 &lt;h2 id=&#34;youku&#34;&gt;youku&lt;/h2&gt;
 
 
+
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;//player.youku.com/embed/XMzQ0ODUxMjM2NA?autoplay=0&#34;
-  style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34;
-  allowfullscreen frameborder=&#34;0&#34; title=&#34;YouKu Video&#34;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&#34;https://player.youku.com/embed/XMzQ0ODUxMjM2NA?autoplay=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; allowfullscreen frameborder=&#34;0&#34; title=&#34;YouKu Video&#34;&gt;
+    &lt;/iframe&gt;
 &lt;/div&gt;</description>
       
     </item>
@@ -1035,6 +1035,141 @@ $$&lt;/p&gt;
 &lt;li&gt;&lt;code&gt;none&lt;/code&gt; - hard transition&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Shortcodes Notice Preview</title>
+      <link>http://en.xianmin.org/hugo-theme-jane/post/shortcode-notice/</link>
+      <pubDate>Sat, 03 Mar 2018 16:01:23 +0800</pubDate>
+      
+      <guid>http://en.xianmin.org/hugo-theme-jane/post/shortcode-notice/</guid>
+      
+        <description>
+
+&lt;h2 id=&#34;normal-use&#34;&gt;normal use&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;Note&lt;/code&gt; example:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shortcode&#34; data-lang=&#34;shortcode&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shortcode&#34; data-lang=&#34;shortcode&#34;&gt;{{% notice note %}}
+A notice disclaimer
+{{% /notice %}}&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Result:&lt;/strong&gt;
+&lt;div class=&#34;shortcode-notice note&#34;&gt;
+  &lt;div class=&#34;shortcode-notice-title note&#34;&gt;
+    
+      note
+    
+  &lt;/div&gt;
+  &lt;p&gt;A notice disclaimer&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/p&gt;
+
+&lt;p&gt;You could &lt;strong&gt;custom title&lt;/strong&gt; :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shortcode&#34; data-lang=&#34;shortcode&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shortcode&#34; data-lang=&#34;shortcode&#34;&gt;{{% notice note 笔记 %}}
+A notice disclaimer
+{{% /notice %}}&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;shortcode-notice note&#34;&gt;
+  &lt;div class=&#34;shortcode-notice-title note&#34;&gt;
+    
+      笔记
+    
+  &lt;/div&gt;
+  &lt;p&gt;A notice disclaimer&lt;/p&gt;
+
+&lt;/div&gt;
+
+
+&lt;h2 id=&#34;tip&#34;&gt;tip&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shortcode&#34; data-lang=&#34;shortcode&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shortcode&#34; data-lang=&#34;shortcode&#34;&gt;{{% notice tip %}}
+A tip disclaimer
+{{% /tip %}}&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;shortcode-notice tip&#34;&gt;
+  &lt;div class=&#34;shortcode-notice-title tip&#34;&gt;
+    
+      tip
+    
+  &lt;/div&gt;
+  &lt;p&gt;A tip disclaimer&lt;/p&gt;
+
+&lt;/div&gt;
+
+
+&lt;h2 id=&#34;info&#34;&gt;info&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shortcode&#34; data-lang=&#34;shortcode&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shortcode&#34; data-lang=&#34;shortcode&#34;&gt;{{% notice info %}}
+A info disclaimer
+{{% /notice %}}&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;shortcode-notice info&#34;&gt;
+  &lt;div class=&#34;shortcode-notice-title info&#34;&gt;
+    
+      info
+    
+  &lt;/div&gt;
+  &lt;p&gt;An information disclaimer&lt;/p&gt;
+
+&lt;/div&gt;
+
+
+&lt;h2 id=&#34;warning&#34;&gt;warning&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shortcode&#34; data-lang=&#34;shortcode&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shortcode&#34; data-lang=&#34;shortcode&#34;&gt;{{% notice warning %}}
+A warning disclaimer
+{{% /notice %}}&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;shortcode-notice warning&#34;&gt;
+  &lt;div class=&#34;shortcode-notice-title warning&#34;&gt;
+    
+      warning
+    
+  &lt;/div&gt;
+  &lt;p&gt;An warning disclaimer&lt;/p&gt;
+
+&lt;/div&gt;
+
+</description>
       
     </item>
     

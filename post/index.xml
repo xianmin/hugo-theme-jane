@@ -69,6 +69,15 @@
     </item>
     
     <item>
+      <title>Shortcodes Notice Preview</title>
+      <link>http://en.xianmin.org/hugo-theme-jane/post/shortcode-notice/</link>
+      <pubDate>Sat, 03 Mar 2018 16:01:23 +0800</pubDate>
+      
+      <guid>http://en.xianmin.org/hugo-theme-jane/post/shortcode-notice/</guid>
+      <description>normal use Note example: 1 2 3 {{% notice note %}} A notice disclaimer {{% /notice %}} Result: note A notice disclaimer You could custom title : 1 2 3 {{% notice note 笔记 %}} A notice disclaimer {{% /notice %}} 笔记 A notice disclaimer tip 1 2 3 {{% notice tip %}} A tip disclaimer {{% /tip %}} tip A tip disclaimer info 1 2 3 {{%</description>
+    </item>
+    
+    <item>
       <title>Jane-Theme Footnote Preview</title>
       <link>http://en.xianmin.org/hugo-theme-jane/post/doc-footnote-preview/</link>
       <pubDate>Thu, 01 Mar 2018 16:01:23 +0800</pubDate>
