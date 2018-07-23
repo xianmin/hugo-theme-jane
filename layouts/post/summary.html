@@ -8,7 +8,7 @@
         <div class="post-category">
           {{ range . }}
           {{- $name := . -}}
-          {{- with $.Site.GetPage "taxonomy" "categories" $name | default ($.Site.GetPage "taxonomy" "categories" ($name | urlize)) -}}
+          {{- with $.Site.GetPage "taxonomy" (printf "categories/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "categories/%s" ($name | urlize))) -}}
             <a href="{{ .Permalink }}"> {{ $name }} </a>
           {{ end -}}
           {{ end }}
