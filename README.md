@@ -32,6 +32,8 @@ This theme focuses on improving reading experience.
 - [虞双齐爱折腾](https://yushuangqi.com/) - @ysqi 个人技术博客.
 - [Cizel's Blog](https://www.cizel.cn/) - A Chinese blog @cizel.
 - [TeaTech](https://maiyang.me/) - Gopher @yangwenmai.
+- [AxdLog](https://axdlog.com) - Personal blog in English and traditional Chinese by @MaxdSre
+
 
 Are you using **hugo-theme-jane**? [Add your site](https://github.com/xianmin/hugo-theme-jane/edit/master/README.md) to the list!
 
