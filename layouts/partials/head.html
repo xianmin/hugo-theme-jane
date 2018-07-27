@@ -96,7 +96,7 @@
 <![endif]-->` | safeHTML }}
 
 <!-- Analytics -->
-{{- if .Site.GoogleAnalytics -}}
+{{- if and (not .Site.IsServer) .Site.GoogleAnalytics -}}
   {{ template "_internal/google_analytics_async.html" . }}
 {{- end -}}
 
