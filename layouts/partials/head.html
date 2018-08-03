@@ -1,4 +1,6 @@
-<link rel="alternate" hreflang="{{ $.Site.LanguageCode | default "en" }}" href="{{ $.Site.BaseURL  }}" />
+{{ range .Translations }}
+<link rel="alternate" hreflang="{{ .Site.LanguageCode }}" href="{{ .Permalink  }}" />
+{{ end }}
 
 <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
