@@ -126,11 +126,13 @@ defaultContentLanguage = "en"           # Default language to use
     clientId = ""           # Your client ID
     clientSecret = ""       # Your client secret
 
-
   [params.reward]                                         # 文章打赏
     enable = false
     wechat = "/path/to/your/wechat-qr-code.png"           # 微信二维码
     alipay = "/path/to/your/alipay-qr-code.png"           # 支付宝二维码
+
+  [params.counter.busuanzi]  # a Chinese visitor counter  # 不蒜子计数器
+    enable = false
 
   [params.social]                                         # 社交链接
     a-email = "mailto:your@email.com"
