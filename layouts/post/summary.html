@@ -18,6 +18,13 @@
       <span class="more-meta"> {{ i18n "wordCount" .WordCount }} </span>
       <span class="more-meta"> {{ i18n "readingTime" .ReadingTime }} </span>
       {{- end }}
+      <!-- Counter leancloud -->
+      {{ if .Site.Params.counter.leancloud.enable }}
+        <span id="{{ .URL }}" class="leancloud_visitors" data-flag-title="{{ .Title }}">
+          <span class="post-meta-item-text"> | 阅读 </span>
+          <span class="leancloud-visitors-count"></span>
+        </span>
+      {{ end }}
     </div>
   </header>
   <!-- Content -->

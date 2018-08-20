@@ -28,6 +28,14 @@
             | 阅读 <span id="busuanzi_value_page_pv"></span>
           </span>
         {{ end }}
+
+        <!-- Counter leancloud -->
+        {{ if .Site.Params.counter.leancloud.enable }}
+          <span id="{{ .URL }}" class="leancloud_visitors" data-flag-title="{{ .Title }}">
+            <span class="post-meta-item-text"> | 阅读 </span>
+            <span class="leancloud-visitors-count"></span>
+          </span>
+        {{ end }}
       </div>
     </header>
 
