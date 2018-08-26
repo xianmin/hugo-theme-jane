@@ -111,6 +111,10 @@
   font-size: 1.3em;
 }
 
+.icon-bilibili::before {
+  font-icon: url('../fonts/svg/bilibili.svg');
+}
+
 .icon-globe::before {
   font-icon: url('../fonts/svg/globe.svg');
 }

@@ -153,8 +153,10 @@ defaultContentLanguage = "en"           # Default language to use
     k-pocket = "http://localhost:1313"
     l-tumblr = "http://localhost:1313"
     m-instagram = "http://localhost:1313"
-    n-gitlab = "http://en.xianmin.org/hugo-theme-jane/"
-    o-goodreads = "http://en.xianmin.org/hugo-theme-jane/"
+    n-gitlab = "http://localhost:1313"
+    o-goodreads = "http://localhost:1313"
+    p-coding = "http://localhost:1313"
+    q-bilibili = "http://localhost:1313"
 
 # jsonfeed support
 # more information: https://github.com/xianmin/hugo-theme-jane/issues/23
