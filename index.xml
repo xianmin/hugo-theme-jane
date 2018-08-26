@@ -865,7 +865,7 @@ $$&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;Display:&lt;/p&gt;
 
-&lt;script src=&#34;//gist.github.com/spf13/7896402.js&#34;&gt;&lt;/script&gt;
+&lt;script type=&#34;application/javascript&#34; src=&#34;//gist.github.com/spf13/7896402.js&#34;&gt;&lt;/script&gt;
 
 &lt;h2 id=&#34;youtube&#34;&gt;youtube&lt;/h2&gt;
 
