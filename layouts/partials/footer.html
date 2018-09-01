@@ -9,7 +9,7 @@
   {{- end }}
   {{ with .Site.GetPage "home" -}}
   {{- with .OutputFormats.Get "RSS" -}}
-  <a href="{{ .Permalink }}" rel="noopener {{ .Rel }}" type="{{ .MediaType.Type }}" class="iconfont icon-rss"
+  <a href="{{ .RelPermalink }}" rel="noopener {{ .Rel }}" type="{{ .MediaType.Type }}" class="iconfont icon-rss"
     title="rss" target="_blank">
   </a>
   {{ end -}}

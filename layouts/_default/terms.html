@@ -17,7 +17,7 @@
         </div>
           <div class="collection-title">
             <h2 class="archive-year">
-              <a href="{{ .Permalink }}">
+              <a href="{{ .RelPermalink }}">
                 {{ i18n "category" }}{{ $term }}
               </a>
             </h2>
@@ -37,7 +37,7 @@
           {{ end }}
           {{ if gt (len $pages) 5 }}
             <div class="more-post">
-              <a href="{{ .Permalink }}" class="more-post-link">{{ i18n "morePost" }}</a>
+              <a href="{{ .RelPermalink }}" class="more-post-link">{{ i18n "morePost" }}</a>
             </div>
           {{ end }}
       </section>
@@ -68,7 +68,7 @@
         {{ $currentFontSize := (add $smallestFontSize (mul (sub $largestFontSize $smallestFontSize) $weigth) ) }}
         {{ with $.Site.GetPage "taxonomy" (printf "%s/%s" $type $tagName) }}
         <!--Current font size: {{$currentFontSize}}-->  
-        <a href="{{ .Permalink }}" 
+        <a href="{{ .RelPermalink }}" 
           style="font-size:{{$currentFontSize}}{{$fontUnit}}">{{ $tagName }}</a>
         {{ end }}
       {{ end }}

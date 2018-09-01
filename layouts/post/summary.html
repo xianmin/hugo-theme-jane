@@ -9,7 +9,7 @@
           {{ range . }}
           {{- $name := . -}}
           {{- with $.Site.GetPage "taxonomy" (printf "categories/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "categories/%s" ($name | urlize))) -}}
-            <a href="{{ .Permalink }}"> {{ $name }} </a>
+            <a href="{{ .RelPermalink }}"> {{ $name }} </a>
           {{ end -}}
           {{ end }}
         </div>

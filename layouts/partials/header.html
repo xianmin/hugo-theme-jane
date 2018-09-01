@@ -50,7 +50,7 @@
           {{ range .Site.Home.AllTranslations }}
             {{ if ne ($.Scratch.Get "language") .Language }}
               <li>
-                <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+                <a href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a>
               </li>
             {{ end }}
           {{ end }}

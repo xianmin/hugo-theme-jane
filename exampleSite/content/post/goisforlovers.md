@@ -270,7 +270,7 @@ Here is the example front matter:
 
 ```
 ---
-title: "Permalinks"
+title: .RelPermalinks"
 date: "2013-11-18"
 aliases:
   - "/doc/permalinks/"

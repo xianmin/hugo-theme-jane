@@ -19,7 +19,7 @@
     {{ range $name, $taxonomy := $.Site.Taxonomies.series }}
       {{ if eq $name ($.Scratch.Get "seriesName") }}
         {{ range $taxonomy.Pages.Reverse }}
-          <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+          <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
         {{ end }}
       {{ end }}
     {{ end }}
@@ -30,7 +30,7 @@
       {{ range $name, $taxonomy := $.Site.Taxonomies.tags }}
         {{ if eq $name ($.Scratch.Get "tagName") }}
           {{ range $taxonomy.Pages.Reverse }}
-            <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+            <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
           {{ end }}
         {{ end }}
       {{ end }}
@@ -41,7 +41,7 @@
       {{ range $name, $taxonomy := $.Site.Taxonomies.categories }}
         {{ if eq $name ($.Scratch.Get "categoryName") }}
           {{ range $taxonomy.Pages.Reverse }}
-            <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+            <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
           {{ end }}
         {{ end }}
       {{ end }}

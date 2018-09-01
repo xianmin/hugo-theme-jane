@@ -63,9 +63,9 @@
           {{ range .Site.Home.AllTranslations }}
             <li>
               {{ if eq ($.Scratch.Get "language") .Language }}
-                <a href="{{ .Permalink }}"><strong>{{ .Language.LanguageName }}</strong></a>
+                <a href="{{ .RelPermalink }}"><strong>{{ .Language.LanguageName }}</strong></a>
               {{ else }}
-                <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+                <a href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a>
               {{ end }}
             </li>
           {{ end }}

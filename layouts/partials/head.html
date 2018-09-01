@@ -1,5 +1,5 @@
 {{ range .Translations }}
-<link rel="alternate" hreflang="{{ .Site.LanguageCode }}" href="{{ .Permalink  }}" />
+<link rel="alternate" hreflang="{{ .Site.LanguageCode }}" href="{{ .RelPermalink  }}" />
 {{ end }}
 
 <meta name="renderer" content="webkit" />
@@ -53,14 +53,14 @@
 <meta name="generator" content="Hugo {{ .Hugo.Version }}" />
 
 <!-- Permalink & RSSlink -->
-<link rel="canonical" href="{{ .Permalink }}" />
+<link rel="canonical" href="{{ .RelPermalink }}" />
 {{ if .RSSLink -}}
   <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
 {{ end -}}
 
 {{ if .OutputFormats.Get "jsonfeed" }}
 <link
-  href="{{ with .OutputFormats.Get "jsonfeed" }}{{ .Permalink }}{{ end }}"
+  href="{{ with .OutputFormats.Get "jsonfeed" }}{{ .RelPermalink }}{{ end }}"
   rel="alternate" type="application/json" title="{{ .Site.Title }}" />
 {{ end }}
 
