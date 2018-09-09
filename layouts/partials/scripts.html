@@ -74,6 +74,10 @@
       crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js" integrity="sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk="
       crossorigin="anonymous"></script>
+  {{ else if .Site.Params.publicCDN.enable }}
+    <script type="text/javascript" src="{{ "/js/load-photoswipe.js" | relURL }}"></script>
+    {{ .Site.Params.publicCDN.photoswipe | safeHTML }}
+    {{ .Site.Params.publicCDN.photoswipeUI | safeHTML }}
   {{ else }}
     <script type="text/javascript" src="{{ "/js/load-photoswipe.js" | relURL }}"></script>
     <script type="text/javascript" src="{{ "/lib/photoswipe/photoswipe.min.js" | relURL}}"></script>
