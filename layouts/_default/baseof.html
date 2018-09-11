@@ -14,7 +14,7 @@
   {{ partial "slideout.html" . }}
 
   {{ if or .Site.Params.photoswipe .Site.Params.fancybox }}
-    {{ partial "photoswipe.html" }}
+    {{ partial "photoswipe.html" . }}
   {{ end }}
 
   {{ if .Site.Params.forkMeOnGithub }}
