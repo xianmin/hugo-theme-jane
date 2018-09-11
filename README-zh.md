@@ -29,6 +29,7 @@ Jane 是一个专注于阅读体验的 Hugo 主题。最早的版本基于 [hugo
 - [贤民的比特记忆](http://www.xianmin.org/) - A Chinese blog.
 - [虞双齐爱折腾](https://yushuangqi.com/) - @ysqi 个人技术博客.
 - [茶歇驿站](https://maiyang.me/) - Go 爱好者，开源爱好者，Go 夜读发起人 @yangwenmai.
+- [Time](https://ifttl.com/) - 个人博客
 - Waiting to add more...
 
 
