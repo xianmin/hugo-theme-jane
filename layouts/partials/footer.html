@@ -3,7 +3,7 @@
     {{- if $path }}
       {{- $realName := slicestr $name 2 }}
       <a href="{{ $path | safeURL }}" rel="me noopener" class="iconfont icon-{{ $realName }}"
-        title="{{ $realName }}" target="_blank">
+        title="{{ $realName }}"{{ if not (hasPrefix $path "mailto:") }} target="_blank"{{ end }}>
       </a>
     {{- end }}
   {{- end }}
