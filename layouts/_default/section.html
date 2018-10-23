@@ -22,9 +22,9 @@
     {{- end }}
 
     <div class="archive-post">
-      <span class="archive-post-time">
+      <time datetime="{{ .Date.Format "2006-01-02" }}" class="archive-post-time">
         {{ .Date.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }}
-      </span>
+      </time>
       <span class="archive-post-title">
         <a href="{{ $element.URL }}" class="archive-post-link">
           {{ .Title }}
