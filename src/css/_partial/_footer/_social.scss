@@ -13,10 +13,14 @@
 
     & + .iconfont {
       margin-left: $social-link-margin-left;
-    } 
+    }
 
     &:hover {
       color: $theme-color;
+
+      svg {
+        fill: $theme-color;
+      }
     }
   }
 }
