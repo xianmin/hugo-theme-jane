@@ -71,7 +71,10 @@
       <nav class="post-nav">
         {{ with .NextInSection }}
           <a class="prev" href="{{ .URL }}">
-            <i class="iconfont icon-left"></i>
+            {{/* icon left */}}
+            <i class="iconfont">
+              {{ partial "svg/left.svg" }}
+            </i>
             <span class="prev-text nav-default">{{ .Title }}</span>
             <span class="prev-text nav-mobile">{{ i18n "prev_post" }}</span>
           </a>
@@ -80,7 +83,10 @@
           <a class="next" href="{{ .URL }}">
             <span class="next-text nav-default">{{ .Title }}</span>
             <span class="prev-text nav-mobile">{{ i18n "next_post" }}</span>
-            <i class="iconfont icon-right"></i>
+            {{/* icon right */}}
+            <i class="iconfont">
+              {{ partial "svg/right.svg" }}
+            </i>
           </a>
         {{- end }}
       </nav>

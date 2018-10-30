@@ -1,19 +1,5 @@
 <div class="social-links">
-  {{- range $name, $path := .Site.Params.social }}
-    {{- if $path }}
-      {{- $realName := slicestr $name 2 }}
-      <a href="{{ $path | safeURL }}" rel="me noopener" class="iconfont icon-{{ $realName }}"
-        title="{{ $realName }}"{{ if not (hasPrefix $path "mailto:") }} target="_blank"{{ end }}>
-      </a>
-    {{- end }}
-  {{- end }}
-  {{ with .Site.GetPage "home" -}}
-  {{- with .OutputFormats.Get "RSS" -}}
-  <a href="{{ .Permalink }}" rel="noopener {{ .Rel }}" type="{{ .MediaType.Type }}" class="iconfont icon-rss"
-    title="rss" target="_blank">
-  </a>
-  {{ end -}}
-  {{- end -}}
+  {{ partial "social_links.html" . }}
 </div>
 
 <div class="copyright">
@@ -33,7 +19,10 @@
     {{ end }}
     {{- $current }}
     <span class="heart">
-      <i class="iconfont icon-heart"></i>
+      {{/* icon heart */}}
+      <i class="iconfont">
+        {{ partial "svg/heart.svg" }}
+      </i>
     </span>
     {{- if or .Site.Copyright .Site.Author.name -}}
       <span class="author">

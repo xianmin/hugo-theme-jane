@@ -6,7 +6,9 @@
 
   {{ with $pag.Prev }}
   <a class="prev" href="{{ .URL }}">
-    <i class="iconfont icon-left"></i>
+    <i class="iconfont">
+      {{ partial "svg/left.svg" }}
+    </i>
     <span class="prev-text">{{ i18n "prev" }}</span>
   </a>
   {{ end }}
@@ -14,7 +16,9 @@
   {{ with $pag.Next }}
   <a class="next" href="{{ .URL }}">
     <span class="next-text">{{ i18n "next" }}</span>
-    <i class="iconfont icon-right"></i>
+      <i class="iconfont">
+        {{ partial "svg/right.svg" }}
+      </i>
   </a>
   {{ end }}
 
