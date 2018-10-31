@@ -130,7 +130,10 @@ defaultContentLanguage = "en"           # Default language to use
     repo = ""               # The repo to store comments
     clientId = ""           # Your client ID
     clientSecret = ""       # Your client secret
-
+ 
+ [params.livere]          	#LiveRe comment. see https://www.livere.com/
+	data-uid = ""
+	
   [params.reward]                                         # 文章打赏
     enable = false
     wechat = "/path/to/your/wechat-qr-code.png"           # 微信二维码
