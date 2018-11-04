@@ -75,7 +75,7 @@
 
 <!-- Styles -->
 {{ $style := resources.Get "sass/jane.scss" | toCSS | minify | fingerprint }}
-<link rel="stylesheet" href="{{ $style.Permalink }}">
+<link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}" media="screen">
 
 <!-- custom css -->
 {{ range .Site.Params.customCSS }}

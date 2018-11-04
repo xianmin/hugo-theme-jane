@@ -27,15 +27,17 @@
       display: inline;
 
       a {
-        color: inherit;
-
         &::before {
           content: '·';
         }
+      }
+    }
 
-        &:hover {
-          color: $theme-color;
-        }
+    a {
+      color: inherit;
+
+      &:hover {
+        color: $theme-color;
       }
     }
 
