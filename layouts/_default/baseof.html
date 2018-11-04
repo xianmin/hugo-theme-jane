@@ -2,7 +2,7 @@
 <html lang="{{ $.Site.LanguageCode | default "en" }}" itemscope itemtype="http://schema.org/WebPage">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>
     {{- block "title" . -}}
       {{ if .IsPage }}{{ .Title }} - {{ .Site.Title }}{{ else }}{{ .Site.Title }}{{ end }}
@@ -18,7 +18,7 @@
   {{ end }}
 
   {{ if .Site.Params.forkMeOnGithub }}
-    <style scoped>
+    <style>
       .fork-me-on-github {
         position: absolute; top: 0; left: 0; border: 0;
       }
