@@ -37,38 +37,6 @@
     }
   }
 
-  blockquote {
-    margin: 1em auto;
-    padding: 0.2em 2em 0.2em 3em;
-    color: #555555;
-    background-color: #F6F6F6;
-    border-left: 4px solid #999;
-    position: relative;
-    line-height: 1.6;
-    font-family: Open Sans;
-
-    &::before {
-      font-family: Arial;
-      content: "\201C";
-      color: #999;
-      font-size: 4em;
-      position: absolute;
-      left: 10px;
-      top: -10px;
-    }
-
-    footer {
-      color: #333333;
-      margin-bottom: 1em;
-    }
-
-    cite:before {
-      content: '\2014';
-      padding-right: .3em;
-      padding-left: .3em;
-    }
-  }
-
   iframe {
     margin: 0 auto;
     display: block;
@@ -142,6 +110,7 @@
 
   @import 'code';
   @import 'image';
+  @import 'blockquote';
 }
 
 .header-link {
