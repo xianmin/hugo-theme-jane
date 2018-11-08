@@ -8,6 +8,10 @@
     padding-right: 15px;
     font-family: $global-serif-font-family;
 
+    .active {
+      font-weight: 700;
+    }
+    
     .menu-item {
       display: inline-block;
       margin-left: 1em;
@@ -46,7 +50,7 @@
         visibility: visible;
         transition-delay: 0s; /* react immediately on hover */
       }
-      
+
       // @include underline-from-center;
     }
 
