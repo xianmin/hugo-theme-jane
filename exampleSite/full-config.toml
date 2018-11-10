@@ -147,6 +147,9 @@ defaultContentLanguage = "en"           # Default language to use
     appId = ""
     appKey = ""
 
+  [params.commentCount.disqus] # show counts of comments for Disqus
+    enable = false
+
   [params.social]                                         # 社交链接
     a-email = "mailto:your@email.com"
     b-stack-overflow = "http://localhost:1313"
