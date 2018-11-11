@@ -19,6 +19,9 @@
       {{ if .Site.Params.moreMeta -}}
       <span class="more-meta"> {{ i18n "wordCount" .WordCount }} </span>
       <span class="more-meta"> {{ i18n "readingTime" .ReadingTime }} </span>
+      {{ if .Site.Params.commentCount.disqus.enable }}
+        <span class="more-meta"> <a href="{{ .Permalink }}#disqus_thread">{{ i18n "comments" }}</a> </span>
+      {{ end }}
       {{- end }}
       <!-- Counter leancloud -->
       {{ if .Site.Params.counter.leancloud.enable }}
