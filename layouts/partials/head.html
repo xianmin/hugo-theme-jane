@@ -71,9 +71,10 @@
 <script>eruda.init();</script>
 {{- end }}
 
-<!-- Styles -->
+<!-- Jane theme main style -->
 {{ $style := resources.Get "sass/jane.scss" | toCSS | minify | fingerprint }}
-<link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}" media="screen">
+<link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}" media="screen">
+<!-- End -->
 
 <!-- custom css -->
 {{ range .Site.Params.customCSS }}
