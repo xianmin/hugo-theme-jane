@@ -82,6 +82,21 @@ Display:
 
 {{< gist spf13 7896402 >}}
 
+## expand
+The Expand shortcode displays an expandable/collapsible section of text on your page. Here is an example
+
+{{< expand "Is this learn theme rocks ?" >}}
+Yes !.
+{{< /expand >}}
+
+### Usage
+this shortcode takes exactly one optional parameter to define the text that appears next to the expand/collapse icon. (default is “Click to expand”)
+
+```
+{{</* expand "Is this learn theme rocks ?" */>}}
+Yes !.
+{{</* /expand */>}}
+```
 
 ## youtube
 
