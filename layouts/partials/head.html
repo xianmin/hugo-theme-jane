@@ -24,7 +24,7 @@
 
 <!-- author & description & keywords  -->
 {{- if or .Params.author .Site.Author.name -}}
-<meta name="author" content="{{ if .Params.author }}{{ .Params.author | safeHTML }}{{ else }}{{ .Site.Author.name | safeHTML }}{{ end }}" />
+<meta name="author" content="{{ (index .Site.Data.authors (.Params.author | default .Site.Author.name)).name.display | default .Params.author | default .Site.Author.name | safeHTML }}" />
 {{- end -}}
 
 {{- if .Description -}}
