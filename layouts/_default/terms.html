@@ -1,13 +1,13 @@
 {{ define "title" }}{{ i18n .Data.Plural }} - {{ .Site.Title }}{{ end }}
 
 {{ define "content" }}
-  {{ $termName := .Data.Plural }}
+  {{ $termName := .Data.Singular }}
   {{ $terms := .Data.Terms.ByCount }}
   {{ $length := len $terms }}
   {{ $type := .Type }}
 
   <!-- Categories Page -->
-  {{ if and $.Site.Taxonomies.categories (eq $termName "categories") }}
+  {{ if and $.Site.Taxonomies.categories (eq $termName "category") }}
     {{ range $terms }}
     {{ $term := .Term }}
     {{ $pages := .Pages }}
@@ -45,7 +45,7 @@
     {{ end }}
 
   <!-- Tag cloud Page -->
-  {{ else if and $.Site.Taxonomies.tags (eq $termName "tags") }}
+  {{ else if and $.Site.Taxonomies.tags (eq $termName "tag") }}
     {{ $fontUnit := "rem" }}
     {{ $largestFontSize := 2.0 }}
     {{ $largestFontSize := 2.5 }}
@@ -86,7 +86,10 @@
           <div class="collection-title">
             <h2 class="archive-year">
               <a href="{{ .Permalink }}">
-                {{ i18n "author_item" }}{{ (index ($.Site.Data.authors | default dict) $term).name.display | default $term }}
+                {{- $author := (index ($.Site.Data.authors | default dict) $term) -}}
+                {{- $author_lang := (index ($author | default dict) $.Site.Language.Lang) -}}
+                {{- $author_name := $author_lang.name.display | default $author.name.display | default $term -}}
+                {{ i18n "author_item" }}{{ $author_name }}
               </a>
             </h2>
           </div>

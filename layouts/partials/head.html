@@ -24,7 +24,11 @@
 
 <!-- author & description & keywords  -->
 {{- if or .Params.author .Site.Author.name -}}
-<meta name="author" content="{{ (index (.Site.Data.authors | default dict) (.Params.author | default .Site.Author.name)).name.display | default .Params.author | default .Site.Author.name | safeHTML }}" />
+{{- $author_id := .Params.author | default .Site.Author.name -}}
+{{- $author := (index ($.Site.Data.authors | default dict) $author_id) -}}
+{{- $author_lang := (index ($author | default dict) .Site.Language.Lang) -}}
+{{- $author_name := $author_lang.name.display | default $author.name.display | default $author_id -}}
+<meta name="author" content="{{ $author_name | safeHTML }}" />
 {{- end -}}
 
 {{- if .Description -}}
