@@ -86,7 +86,7 @@
           <div class="collection-title">
             <h2 class="archive-year">
               <a href="{{ .Permalink }}">
-                {{ i18n "author_item" }}{{ (index $.Site.Data.authors $term).name.display | default $term }}
+                {{ i18n "author_item" }}{{ (index ($.Site.Data.authors | default dict) $term).name.display | default $term }}
               </a>
             </h2>
           </div>

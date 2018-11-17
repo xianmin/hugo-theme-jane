@@ -1,6 +1,6 @@
 {{ define "title" -}}
 {{ if eq .Data.Singular "author" -}}
-  {{ (index $.Site.Data.authors .Title).name.display | default .Title }} · {{ .Site.Title }}
+  {{ (index ($.Site.Data.authors | default dict) .Title).name.display | default .Title }} · {{ .Site.Title }}
 {{- else -}}
   {{ .Title }} · {{ .Site.Title }}
 {{- end }}
@@ -20,7 +20,7 @@
       </div>
     {{ else if eq .Data.Singular "author" }}
       <div class="archive-title author">
-        <h2 class="archive-name">{{ i18n "author_item" }}{{ (index $.Site.Data.authors .Title).name.display | default .Title }}</h2>
+        <h2 class="archive-name">{{ i18n "author_item" }}{{ (index ($.Site.Data.authors | default dict) .Title).name.display | default .Title }}</h2>
       </div>
     {{ end }}
   {{ end }}
