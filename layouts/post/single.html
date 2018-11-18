@@ -93,6 +93,11 @@
     </footer>
   </article>
 
+  <!-- Author Info -->
+  {{ if and (.Params.author | default .Site.Author.name) (.Params.showAuthorInfo | default .Site.Params.showAuthorInfo) }}
+  {{ partial "author_info.html" (dict "author" (.Params.author | default .Site.Author.name) "context" $) }}
+  {{ end }}
+
   <!-- Comments -->
   {{ partial "comments.html" . }}
 {{- end }}
