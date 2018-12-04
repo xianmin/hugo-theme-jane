@@ -35,6 +35,7 @@ This theme focuses on improving reading experience.
 - [AxdLog](https://axdlog.com) - Personal blog in English and traditional Chinese by @MaxdSre
 - [Time](https://ifttl.com/) - Personal Blog
 - [IT & Laws](https://itlaws.cn/) - itLaws，一个律师的关于IT、法律的博客
+- [赫赫文王](https://kqh.ac/) - 不务正业的历史系学生一个
 
 
 Are you using **hugo-theme-jane**? [Add your site](https://github.com/xianmin/hugo-theme-jane/edit/master/README.md) to the list!
