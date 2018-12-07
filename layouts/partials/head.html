@@ -1,3 +1,13 @@
+{{ with .Site.Params.google_analytics }}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{.}}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', '{{.}}');
+</script>
+{{ end }}
+
 {{ range .Translations }}
 <link rel="alternate" hreflang="{{ .Site.LanguageCode }}" href="{{ .Permalink  }}" />
 {{ end }}

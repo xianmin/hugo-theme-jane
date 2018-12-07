@@ -149,6 +149,7 @@ defaultContentLanguage = "en"  # Default language to use (if you setup multiling
   baidu_analytics = ""      # Baidu Analytics
   baidu_verification = ""   # Baidu Verification
   google_verification = ""  # Google_Verification         # 谷歌
+  google_analytics = ""     # Google Analytics            # 谷歌分析
 
   # Link custom CSS and JS assets
   #   (relative to /static/css and /static/js respectively)
