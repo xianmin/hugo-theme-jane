@@ -37,6 +37,7 @@ This theme focuses on improving reading experience.
 - [IT & Laws](https://itlaws.cn/) - itLaws，一个律师的关于IT、法律的博客
 - [赫赫文王](https://kqh.ac/) - 不务正业的历史系学生一个
 - [Potioneer's Essays](https://william-yeh.net/) - Personal blog on software development in traditional Chinese by @William-Yeh
+- [제이든의 프로그래밍 이야기](https://jayden-lee.github.io/) - Personal Programming blog in Korean by @jayden-lee
 
 
 Are you using **hugo-theme-jane**? [Add your site](https://github.com/xianmin/hugo-theme-jane/edit/master/README.md) to the list!
