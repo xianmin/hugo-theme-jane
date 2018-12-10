@@ -9,6 +9,13 @@
     font-size: $post-title-font-size;
     font-weight: $post-title-font-weight;
     font-family: $global-serif-font-family;
+
+    .post-pinned svg {
+      vertical-align: middle;
+      width: 24px;
+      height: 24px;
+      fill: $theme-color;
+    }
   }
 
   .post-link {

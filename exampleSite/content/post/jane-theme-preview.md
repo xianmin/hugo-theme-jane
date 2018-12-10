@@ -1,11 +1,13 @@
 ---
 title: "Jane Theme Preview"
-date: 2018-03-06T16:01:23+08:00
+date: 2018-01-01T16:01:23+08:00
 lastmod: 2018-03-07T16:01:23+08:00
 draft: false
 tags: ["preview", "shortcodes", "tag-6"]
 categories: ["docs", "shortcodes", "index"]
 author: "Typora"
+
+weight: 1
 
 # You can also close(false) or open(true) something for this content.
 # P.S. comment can only be closed
@@ -61,7 +63,7 @@ Markdown uses email-style > characters for block quoting. They are presented as:
 > This is another blockquote with one paragraph. There is three empty line to seperate two blockquote.
 >
 > 这是一段中文测试。
-> 
+>
 
 
 In typora, just input ‘>’ followed by quote contents a block quote is  generated. Typora will insert proper ‘>’ or line break for you. Block quote inside anther block quote is allowed by adding additional levels of ‘>’.
