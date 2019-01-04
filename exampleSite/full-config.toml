@@ -117,6 +117,9 @@ defaultContentLanguage = "en"           # Default language to use
   # enable 'fork me on github', see https://blog.github.com/2008-12-19-github-ribbons/
   # forkMeOnGithub = "https://github.com/xianmin/hugo-theme-jane"
 
+  # add custom info on the footer.   # 添加备案信息
+  # customFooter = "京ICP备10000000号-1"
+
   [params.publicCDN]        # load these files from public cdn                          # 启用公共CDN，需自行定义
     enable = false
     jquery = '<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>'
@@ -138,10 +141,10 @@ defaultContentLanguage = "en"           # Default language to use
     repo = ""               # The repo to store comments
     clientId = ""           # Your client ID
     clientSecret = ""       # Your client secret
-    
+
   [params.livere]          	#LiveRe comment. see https://www.livere.com/
 	  uid = ""
-  
+
   [params.reward]                                         # 文章打赏
     enable = false
     wechat = "/path/to/your/wechat-qr-code.png"           # 微信二维码
