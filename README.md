@@ -38,6 +38,7 @@ This theme focuses on improving reading experience.
 - [赫赫文王](https://kqh.ac/) - 不务正业的历史系学生一个
 - [Potioneer's Essays](https://william-yeh.net/) - Personal blog on software development in traditional Chinese by @William-Yeh
 - [제이든의 프로그래밍 이야기](https://jayden-lee.github.io/) - Personal Programming blog in Korean by @jayden-lee
+- [联盟少侠博客](https://shaoxia.xyz/) - 一个日记博客.Simple Blog, Simple Days。
 
 
 Are you using **hugo-theme-jane**? [Add your site](https://github.com/xianmin/hugo-theme-jane/edit/master/README.md) to the list!
