@@ -25,23 +25,13 @@ This theme focuses on improving reading experience.
 
 ## Who use Hugo-theme-Jane
 
-- [ATFeng](https://www.gooth.org/) - A beautiful blog fork from Jane.
 - [Jack Baty's Blog](https://www.baty.net/) - Thousands of posts on the site powered by Hugo & Theme Jane.
-- [Notes on Blue Skies](https://terrty.net) - Personal blog in Russian by @paskal
-- [贤民的比特记忆](http://www.xianmin.org/) - A Chinese blog.
 - [虞双齐爱折腾](https://yushuangqi.com/) - @ysqi 个人技术博客.
-- [Cizel's Blog](https://www.cizel.cn/) - A Chinese blog @cizel.
-- [TeaTech](https://maiyang.me/) - Gopher @yangwenmai.
-- [AxdLog](https://axdlog.com) - Personal blog in English and traditional Chinese by @MaxdSre
-- [Time](https://ifttl.com/) - Personal Blog
-- [IT & Laws](https://itlaws.cn/) - itLaws，一个律师的关于IT、法律的博客
-- [赫赫文王](https://kqh.ac/) - 不务正业的历史系学生一个
-- [Potioneer's Essays](https://william-yeh.net/) - Personal blog on software development in traditional Chinese by @William-Yeh
 - [제이든의 프로그래밍 이야기](https://jayden-lee.github.io/) - Personal Programming blog in Korean by @jayden-lee
-- [联盟少侠博客](https://shaoxia.xyz/) - 一个日记博客.Simple Blog, Simple Days。
+- **[and many more...](https://github.com/xianmin/hugo-theme-jane/blob/master/SITES.md)**
 
 
-Are you using **hugo-theme-jane**? [Add your site](https://github.com/xianmin/hugo-theme-jane/edit/master/README.md) to the list!
+Are you using **hugo-theme-jane**? [Add your site](https://github.com/xianmin/hugo-theme-jane/edit/master/SITES.md) to the list!
 
 
 ## Quick Start
