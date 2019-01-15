@@ -15,7 +15,7 @@
     <p class="author-title">{{ i18n "author" }}</p>
     <p class="author-name">{{ $author_name }}</p>
     {{ with $author_desc -}}
-    <p class="author-desc">{{ . }}</p>
+    <p class="author-desc">{{ . | markdownify }}</p>
     {{- end }}
     </div>
     <div class="author-bottom"></div>
