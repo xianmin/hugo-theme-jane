@@ -4,7 +4,12 @@ date: 2018-03-04T16:01:23+08:00
 lastmod: 2018-03-05T16:01:23+08:00
 draft: false
 tags: ["preview", "shortcodes", "tag-6"]
-categories: ["shortcodes", "index"]
+categories: ["docs", "shortcodes", "index"]
+
+menu:
+  main:
+    parent: "docs"
+    weight: 2
 ---
 
 
@@ -18,7 +23,7 @@ A shortcode is a simple snippet inside a content file that Hugo will render usin
 
 In addition to cleaner Markdown, shortcodes can be updated any time to reflect new classes, techniques, or standards. At the point of site generation, Hugo shortcodes will easily merge in your changes. You avoid a possibly complicated search and replace operation.
 
-More details: https://gohugo.io/content-management/shortcodes/ 
+More details: https://gohugo.io/content-management/shortcodes/
 
 <!--more-->
 
@@ -77,6 +82,21 @@ Display:
 
 {{< gist spf13 7896402 >}}
 
+## expand
+The Expand shortcode displays an expandable/collapsible section of text on your page. Here is an example
+
+{{< expand "Is this learn theme rocks ?" >}}
+Yes !.
+{{< /expand >}}
+
+### Usage
+this shortcode takes exactly one optional parameter to define the text that appears next to the expand/collapse icon. (default is “Click to expand”)
+
+```
+{{</* expand "Is this learn theme rocks ?" */>}}
+Yes !.
+{{</* /expand */>}}
+```
 
 ## youtube
 
@@ -86,3 +106,7 @@ Display:
 ## vimeo
 
 {{< vimeo 146022717 >}}
+
+## youku
+
+{{< youku XMzQ0ODUxMjM2NA >}}

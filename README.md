@@ -1,5 +1,5 @@
 ![jane-preview](https://raw.githubusercontent.com/xianmin/hugo-theme-jane/master/images/preview.png)
-[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-12-orange.svg?style=flat-square)](#contributors)
 
 ## hugo-theme-jane
 
@@ -14,17 +14,24 @@ This theme focuses on improving reading experience.
 - Responsive and mobile friendly
 - Multilingual Mode support
 - Shortcodes : image, blockquote, music, etc.
-- Separate design for Tags & Categories Page.
+- Separate design for Tags & Categories Page
 - Social network linking
+- Better Pagination, TOC, footnote behavior
+- Use the awesome Chroma syntax highlighting
+- Custom css, Custom js, Custom head support
+- Sub menu support
+- Search Optimization
 
 
 ## Who use Hugo-theme-Jane
 
-- [ATFeng](https://www.gooth.org/) - A beautiful blog fork from Jane.
 - [Jack Baty's Blog](https://www.baty.net/) - Thousands of posts on the site powered by Hugo & Theme Jane.
-- [Notes on Blue Skies](https://terrty.net) - Personal blog in Russian by @paskal
-- [贤民的比特记忆](http://www.xianmin.org/) - A Chinese blog.
-- Waiting to add more...
+- [虞双齐爱折腾](https://yushuangqi.com/) - @ysqi 个人技术博客.
+- [제이든의 프로그래밍 이야기](https://jayden-lee.github.io/) - Personal Programming blog in Korean by @jayden-lee
+- **[and many more...](https://github.com/xianmin/hugo-theme-jane/blob/master/SITES.md)**
+
+
+Are you using **hugo-theme-jane**? [Add your site](https://github.com/xianmin/hugo-theme-jane/edit/master/SITES.md) to the list!
 
 
 ## Quick Start
@@ -123,7 +130,7 @@ Copy the `config.toml` in the root directory of your website. Overwrite the exis
 # Common-Defined
 title: "An Example Post"
 date: 2018-01-01T16:01:23+08:00
-lastmod: 2018-01-02T16:01:23+08:00 
+lastmod: 2018-01-02T16:01:23+08:00
 draft: false
 tags: ["tag-1", "tag-2", "tag-3"]
 categories: ["index"]
@@ -182,8 +189,9 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
-| [<img src="https://avatars3.githubusercontent.com/u/2177570?v=4" width="80px;"/><br /><sub><b>Chen Xianmin</b></sub>](http://www.xianmin.org)<br />[💻](https://github.com/xianmin/hugo-theme-jane/commits?author=xianmin "Code") [🎨](#design-xianmin "Design") [📖](https://github.com/xianmin/hugo-theme-jane/commits?author=xianmin "Documentation") [💬](#question-xianmin "Answering Questions") | [<img src="https://avatars3.githubusercontent.com/u/970?v=4" width="80px;"/><br /><sub><b>Jack Baty</b></sub>](https://www.baty.net)<br />[🐛](https://github.com/xianmin/hugo-theme-jane/issues?q=author%3Ajackbaty "Bug reports") [🤔](#ideas-jackbaty "Ideas, Planning, & Feedback") [⚠️](https://github.com/xianmin/hugo-theme-jane/commits?author=jackbaty "Tests") [👀](#review-jackbaty "Reviewed Pull Requests") | [<img src="https://avatars0.githubusercontent.com/u/126313?v=4" width="80px;"/><br /><sub><b>Athurg Feng</b></sub>](https://www.gooth.org)<br />[👀](#review-athurg "Reviewed Pull Requests") [⚠️](https://github.com/xianmin/hugo-theme-jane/commits?author=athurg "Tests") [🐛](https://github.com/xianmin/hugo-theme-jane/issues?q=author%3Aathurg "Bug reports") | [<img src="https://avatars1.githubusercontent.com/u/712534?v=4" width="80px;"/><br /><sub><b>Dmitry Verkhoturov</b></sub>](https://terrty.net/cv/verhoturov.pdf)<br />[👀](#review-paskal "Reviewed Pull Requests") [🌍](#translation-paskal "Translation") [🤔](#ideas-paskal "Ideas, Planning, & Feedback") |
-| :---: | :---: | :---: | :---: |
+| [<img src="https://avatars3.githubusercontent.com/u/2177570?v=4" width="80px;"/><br /><sub><b>Chen Xianmin</b></sub>](http://www.xianmin.org)<br />[💻](https://github.com/xianmin/hugo-theme-jane/commits?author=xianmin "Code") [🎨](#design-xianmin "Design") [📖](https://github.com/xianmin/hugo-theme-jane/commits?author=xianmin "Documentation") [💬](#question-xianmin "Answering Questions") | [<img src="https://avatars3.githubusercontent.com/u/970?v=4" width="80px;"/><br /><sub><b>Jack Baty</b></sub>](https://www.baty.net)<br />[🐛](https://github.com/xianmin/hugo-theme-jane/issues?q=author%3Ajackbaty "Bug reports") [🤔](#ideas-jackbaty "Ideas, Planning, & Feedback") [⚠️](https://github.com/xianmin/hugo-theme-jane/commits?author=jackbaty "Tests") [👀](#review-jackbaty "Reviewed Pull Requests") | [<img src="https://avatars0.githubusercontent.com/u/126313?v=4" width="80px;"/><br /><sub><b>Athurg Feng</b></sub>](https://www.gooth.org)<br />[👀](#review-athurg "Reviewed Pull Requests") [⚠️](https://github.com/xianmin/hugo-theme-jane/commits?author=athurg "Tests") [🐛](https://github.com/xianmin/hugo-theme-jane/issues?q=author%3Aathurg "Bug reports") | [<img src="https://avatars1.githubusercontent.com/u/712534?v=4" width="80px;"/><br /><sub><b>Dmitry Verkhoturov</b></sub>](https://terrty.net/cv/verhoturov.pdf)<br />[👀](#review-paskal "Reviewed Pull Requests") [🌍](#translation-paskal "Translation") [🤔](#ideas-paskal "Ideas, Planning, & Feedback") | [<img src="https://avatars0.githubusercontent.com/u/1678456?v=4" width="80px;"/><br /><sub><b>Deckon</b></sub>](https://deckon-blog.netlify.com/)<br />[🌍](#translation-Deckon "Translation") | [<img src="https://avatars3.githubusercontent.com/u/2821085?v=4" width="80px;"/><br /><sub><b>YuShuangqi</b></sub>](https://yushuangqi.com)<br />[👀](#review-ysqi "Reviewed Pull Requests") [🤔](#ideas-ysqi "Ideas, Planning, & Feedback") [💻](https://github.com/xianmin/hugo-theme-jane/commits?author=ysqi "Code") | [<img src="https://avatars1.githubusercontent.com/u/88564?v=4" width="80px;"/><br /><sub><b>Josta Yee</b></sub>](https://josta.me)<br />[🤔](#ideas-jostyee "Ideas, Planning, & Feedback") [💻](https://github.com/xianmin/hugo-theme-jane/commits?author=jostyee "Code") |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| [<img src="https://avatars2.githubusercontent.com/u/1475583?v=4" width="80px;"/><br /><sub><b>German Lashevich</b></sub>](https://github.com/Zebradil)<br />[💻](https://github.com/xianmin/hugo-theme-jane/commits?author=Zebradil "Code") [🤔](#ideas-Zebradil "Ideas, Planning, & Feedback") [🐛](https://github.com/xianmin/hugo-theme-jane/issues?q=author%3AZebradil "Bug reports") [⚠️](https://github.com/xianmin/hugo-theme-jane/commits?author=Zebradil "Tests") | [<img src="https://avatars0.githubusercontent.com/u/4357360?v=4" width="80px;"/><br /><sub><b>Jean-Loup Adde</b></sub>](https://juanwolf.fr)<br />[🌍](#translation-juanwolf "Translation") | [<img src="https://avatars1.githubusercontent.com/u/38299370?v=4" width="80px;"/><br /><sub><b>AxdLog</b></sub>](https://gitlab.com/MaxdSre)<br />[💻](https://github.com/xianmin/hugo-theme-jane/commits?author=MaxdSre "Code") | [<img src="https://avatars1.githubusercontent.com/u/30607?v=4" width="80px;"/><br /><sub><b>Andrea Borruso</b></sub>](https://github.com/aborruso)<br />[📖](https://github.com/xianmin/hugo-theme-jane/commits?author=aborruso "Documentation") | [<img src="https://avatars3.githubusercontent.com/u/367172?v=4" width="80px;"/><br /><sub><b>Yong-Siang Shih (Shaform)</b></sub>](https://shaform.com)<br />[💻](https://github.com/xianmin/hugo-theme-jane/commits?author=shaform "Code") [🌍](#translation-shaform "Translation") |
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!

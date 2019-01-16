@@ -14,7 +14,23 @@ Jane 是一个专注于阅读体验的 Hugo 主题。最早的版本基于 [hugo
 - 支持多个 Shortcode
 - 单独设计的 *标签页* 和 *分类页*
 - 社交网站链接
+- 更好的分页、目录、注脚样式
+- 使用更快的 Chroma 代码高亮
+- 自定义 css，自定义 js，自定义 head
+- 子目录支持
+- 搜索优化
 
+
+## 谁在用 Hugo-theme-Jane
+
+- [ATFeng](https://www.gooth.org/) - A beautiful blog fork from Jane.
+- [Jack Baty's Blog](https://www.baty.net/) - Thousands of posts on the site powered by Hugo & Theme Jane.
+- [Notes on Blue Skies](https://terrty.net) - Personal blog in Russian by @paskal
+- [贤民的比特记忆](http://www.xianmin.org/) - A Chinese blog.
+- [虞双齐爱折腾](https://yushuangqi.com/) - @ysqi 个人技术博客.
+- [茶歇驿站](https://maiyang.me/) - Go 爱好者，开源爱好者，Go 夜读发起人 @yangwenmai.
+- [Time](https://ifttl.com/) - 个人博客
+- Waiting to add more...
 
 
 ## 如何使用？
@@ -28,7 +44,7 @@ Jane 是一个专注于阅读体验的 Hugo 主题。最早的版本基于 [hugo
 
 ### 1. 快速安装 Hugo
 
-从 [Hugo Releases][https://github.com/gohugoio/hugo/releases] 上直接下载安装适合你的版本。
+从 [Hugo Releases](https://github.com/gohugoio/hugo/releases) 上直接下载安装适合你的版本。
 
 
 

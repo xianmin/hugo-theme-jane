@@ -1,11 +1,5 @@
 <div class="icon-links">
-  {{- range $name, $path := .Site.Params.social }}
-    {{- if $path }}
-      {{- $realName := slicestr $name 2 }}
-      <a href="{{ $path | safeURL }}" rel="me" class="iconfont icon-{{ $realName }}" title="{{ $realName }}"></a>
-    {{- end }}
-  {{- end }}
-  <a href="{{ .Site.RSSLink }}" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+  {{ partial "social_links.html" . }} 
 </div>
 
 <div class="copyright">
@@ -19,14 +13,36 @@
 
   <span class="copyright-year">
     {{- $current := now.Format "2006" }}
-    &copy; 
+    &copy;
     {{ if ne .Site.Params.since $current }}
-      {{ .Site.Params.since }} - 
+      {{ .Site.Params.since }} -
     {{ end }}
     {{- $current }}
     <span class="heart">
-      <i class="iconfont icon-heart"></i>
+      {{/* icon heart */}}
+      <i class="iconfont">
+        {{ partial "svg/heart.svg" }}
+      </i>
     </span>
-    <span class="author">{{if .Site.Copyright }}{{ .Site.Copyright | safeHTML }}{{ else }}{{ .Site.Author.name | safeHTML }}{{ end }}</span>
+    {{- if or .Site.Copyright .Site.Author.name -}}
+      <span class="author">
+        {{if .Site.Copyright }}{{ .Site.Copyright | safeHTML }}
+        {{ else }}{{ .Site.Author.name | safeHTML }}
+        {{ end }}
+      </span>
+    {{- end -}}
   </span>
+
+  <!-- Counter busuanzi -->
+  {{ if .Site.Params.counter.busuanzi.enable }}
+    <span id="busuanzi_container">
+      访客数/访问量：<span id="busuanzi_value_site_uv"></span>/<span id="busuanzi_value_site_pv"></span>
+    </span>
+  {{ end }}
+
+  {{ if .Site.Params.customFooter }}
+    <span>
+      {{ .Site.Params.customFooter }}
+    </span>
+  {{ end }}
 </div>

@@ -8,7 +8,7 @@ description = "A readable theme for Hugo"
 homepage = "https://github.com/xianmin/hugo-theme-jane"
 tags = ["responsive", "blog", "simple", "clean", "readable", "highlight", "multilingual"]
 features = ["responsive", "blog", "simple", "clean", "highlight", "multilingual"]
-min_version = "0.35"
+min_version = "0.45"
 
 [author]
   name = "xianmin"

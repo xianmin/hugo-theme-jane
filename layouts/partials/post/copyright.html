@@ -2,7 +2,17 @@
 <div class="post-copyright">
   <p class="copyright-item">
     <span class="item-title">{{ i18n "author" }}</span>
-    <span class="item-content">{{ if .Params.author }}{{ .Params.author | safeHTML }}{{ else }}{{ .Site.Author.name | safeHTML }}{{ end }}</span>
+    <span class="item-content">
+      {{- $author_id := .Params.author | default .Site.Author.name -}}
+      {{- $author := (index ($.Site.Data.authors | default dict) $author_id) -}}
+      {{- $author_lang := (index ($author | default dict) .Site.Language.Lang) -}}
+      {{- $author_name := $author_lang.name.display | default $author.name.display | default $author_id -}}
+      {{- with $.Site.GetPage "taxonomy" (printf "author/%s" $author_id) -}}
+      <a href="{{ .Permalink }}">{{ $author_name | safeHTML }}</a>
+      {{- else -}}
+      {{- $author_name | safeHTML -}}
+      {{- end -}}
+      </span>
   </p>
   <p class="copyright-item">
     <span class="item-title">{{ i18n "lastMod" }}</span>
@@ -12,7 +22,7 @@
     {{ with $.OutputFormats.Get "markdown" -}}
     <p class="copyright-item">
       <span class="item-title">{{ i18n "markdown" }}</span>
-      <span class="item-content"><a class="link-to-markdown" href="{{ .Permalink }}" target="_blank">{{ i18n "seeMarkDown" }}</a></span>
+      <span class="item-content"><a class="link-to-markdown" href="{{ .Permalink }}" rel="noopener" target="_blank">{{ i18n "seeMarkDown" }}</a></span>
     </p>
     {{- end }}
   {{- end }}

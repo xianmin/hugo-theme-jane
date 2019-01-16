@@ -4,20 +4,40 @@
     <!-- post-header -->
     <header class="post-header">
       <h1 class="post-title">{{ .Title }}</h1>
-
+      {{ partial "post/i18nlist.html" . }}
       <div class="post-meta">
-        <span class="post-time"> {{ .Date.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }} </span>
+        <time datetime="{{ .Date.Format "2006-01-02" }}" class="post-time">
+          {{ .Date.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }}
+        </time>
         {{ with .Params.categories -}}
           <div class="post-category">
             {{ range . }}
-              <a href="{{ "categories" | relURL }}/{{ . | urlize }}/"> {{ . }} </a>
+            {{- $name := . -}}
+            {{- with $.Site.GetPage "taxonomy" (printf "categories/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "categories/%s" ($name | urlize))) -}}
+              <a href="{{ .Permalink }}"> {{ $name }} </a>
+            {{ end -}}
             {{ end }}
           </div>
         {{- end }}
         {{ if .Site.Params.moreMeta -}}
-        <span class="more-meta"> {{ i18n "wordCount" .WordCount }} </span>
-        <span class="more-meta"> {{ i18n "readingTime" .ReadingTime }} </span>
+          <span class="more-meta"> {{ i18n "wordCount" .WordCount }} </span>
+          <span class="more-meta"> {{ i18n "readingTime" .ReadingTime }} </span>
         {{- end }}
+
+        <!-- Counter busuanzi -->
+        {{ if .Site.Params.counter.busuanzi.enable }}
+          <span id="busuanzi_container_page_pv">
+            | 阅读 <span id="busuanzi_value_page_pv"></span>
+          </span>
+        {{ end }}
+
+        <!-- Counter leancloud -->
+        {{ if .Site.Params.counter.leancloud.enable }}
+          <span id="{{ .URL }}" class="leancloud_visitors" data-flag-title="{{ .Title }}">
+            <span class="post-meta-item-text"> | 阅读 </span>
+            <span class="leancloud-visitors-count"></span>
+          </span>
+        {{ end }}
       </div>
     </header>
 
@@ -39,7 +59,10 @@
       {{ with .Params.tags -}}
         <div class="post-tags">
           {{ range . }}
-          <a href="{{ "tags" | relURL }}/{{ . | urlize }}{{if $.Site.Params.uglyURLs}}.html{{else}}/{{end}}">{{ . }}</a>
+          {{- $name := . -}}
+          {{- with $.Site.GetPage "taxonomy" (printf "tags/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "tags/%s" ($name | urlize))) -}}
+          <a href="{{ .Permalink }}">{{ $name }}</a>
+          {{ end -}}
           {{ end }}
         </div>
       {{- end }}
@@ -48,7 +71,10 @@
       <nav class="post-nav">
         {{ with .NextInSection }}
           <a class="prev" href="{{ .URL }}">
-            <i class="iconfont icon-left"></i>
+            {{/* icon left */}}
+            <i class="iconfont">
+              {{ partial "svg/left.svg" }}
+            </i>
             <span class="prev-text nav-default">{{ .Title }}</span>
             <span class="prev-text nav-mobile">{{ i18n "prev_post" }}</span>
           </a>
@@ -57,11 +83,21 @@
           <a class="next" href="{{ .URL }}">
             <span class="next-text nav-default">{{ .Title }}</span>
             <span class="prev-text nav-mobile">{{ i18n "next_post" }}</span>
-            <i class="iconfont icon-right"></i>
+            {{/* icon right */}}
+            <i class="iconfont">
+              {{ partial "svg/right.svg" }}
+            </i>
           </a>
         {{- end }}
       </nav>
     </footer>
-    {{ partial "comments.html" . }}
   </article>
+
+  <!-- Author Info -->
+  {{ if and (.Params.author | default .Site.Author.name) (.Params.showAuthorInfo | default .Site.Params.showAuthorInfo) }}
+  {{ partial "author_info.html" (dict "author" (.Params.author | default .Site.Author.name) "context" $) }}
+  {{ end }}
+
+  <!-- Comments -->
+  {{ partial "comments.html" . }}
 {{- end }}
