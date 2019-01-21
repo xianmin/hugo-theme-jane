@@ -81,7 +81,7 @@
       crossorigin="anonymous"></script>
   {{ else if .Site.Params.publicCDN.enable }}
     <script type="text/javascript" src="{{ "/js/load-photoswipe.js" | relURL }}"></script>
-    {{ .Site.Params.publicCDN.photoswipe | safeHTML }}
+	{{ .Site.Params.publicCDN.photoswipe | safeHTML }}
     {{ .Site.Params.publicCDN.photoswipeUI | safeHTML }}
   {{ else }}
     <script type="text/javascript" src="{{ "/js/load-photoswipe.js" | relURL }}"></script>
