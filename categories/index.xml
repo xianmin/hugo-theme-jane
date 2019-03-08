@@ -2,82 +2,82 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Jane - A simple theme for Hugo</title>
-    <link>http://en.xianmin.org/hugo-theme-jane/categories/</link>
+    <link>https://www.xianmin.org/hugo-theme-jane/categories/</link>
     <description>Recent content in Categories on Jane - A simple theme for Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	<atom:link href="http://en.xianmin.org/hugo-theme-jane/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.xianmin.org/hugo-theme-jane/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Development</title>
-      <link>http://en.xianmin.org/hugo-theme-jane/categories/development/</link>
+      <link>https://www.xianmin.org/hugo-theme-jane/categories/development/</link>
       <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://en.xianmin.org/hugo-theme-jane/categories/development/</guid>
+      <guid>https://www.xianmin.org/hugo-theme-jane/categories/development/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Docs</title>
-      <link>http://en.xianmin.org/hugo-theme-jane/categories/docs/</link>
-      <pubDate>Tue, 06 Mar 2018 16:01:23 +0800</pubDate>
+      <link>https://www.xianmin.org/hugo-theme-jane/categories/docs/</link>
+      <pubDate>Mon, 01 Jan 2018 16:01:23 +0800</pubDate>
       
-      <guid>http://en.xianmin.org/hugo-theme-jane/categories/docs/</guid>
+      <guid>https://www.xianmin.org/hugo-theme-jane/categories/docs/</guid>
       <description></description>
     </item>
     
     <item>
       <title>English</title>
-      <link>http://en.xianmin.org/hugo-theme-jane/categories/english/</link>
+      <link>https://www.xianmin.org/hugo-theme-jane/categories/english/</link>
       <pubDate>Thu, 31 Aug 2017 15:43:48 +0800</pubDate>
       
-      <guid>http://en.xianmin.org/hugo-theme-jane/categories/english/</guid>
+      <guid>https://www.xianmin.org/hugo-theme-jane/categories/english/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Golang</title>
-      <link>http://en.xianmin.org/hugo-theme-jane/categories/golang/</link>
+      <link>https://www.xianmin.org/hugo-theme-jane/categories/golang/</link>
       <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://en.xianmin.org/hugo-theme-jane/categories/golang/</guid>
+      <guid>https://www.xianmin.org/hugo-theme-jane/categories/golang/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Index</title>
-      <link>http://en.xianmin.org/hugo-theme-jane/categories/index/</link>
-      <pubDate>Tue, 06 Mar 2018 16:01:23 +0800</pubDate>
+      <link>https://www.xianmin.org/hugo-theme-jane/categories/index/</link>
+      <pubDate>Mon, 01 Jan 2018 16:01:23 +0800</pubDate>
       
-      <guid>http://en.xianmin.org/hugo-theme-jane/categories/index/</guid>
+      <guid>https://www.xianmin.org/hugo-theme-jane/categories/index/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Shortcodes</title>
-      <link>http://en.xianmin.org/hugo-theme-jane/categories/shortcodes/</link>
-      <pubDate>Tue, 06 Mar 2018 16:01:23 +0800</pubDate>
+      <link>https://www.xianmin.org/hugo-theme-jane/categories/shortcodes/</link>
+      <pubDate>Mon, 01 Jan 2018 16:01:23 +0800</pubDate>
       
-      <guid>http://en.xianmin.org/hugo-theme-jane/categories/shortcodes/</guid>
+      <guid>https://www.xianmin.org/hugo-theme-jane/categories/shortcodes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Syntax Highlighting</title>
-      <link>http://en.xianmin.org/hugo-theme-jane/categories/syntax-highlighting/</link>
+      <link>https://www.xianmin.org/hugo-theme-jane/categories/syntax-highlighting/</link>
       <pubDate>Tue, 30 Aug 2011 16:01:23 +0800</pubDate>
       
-      <guid>http://en.xianmin.org/hugo-theme-jane/categories/syntax-highlighting/</guid>
+      <guid>https://www.xianmin.org/hugo-theme-jane/categories/syntax-highlighting/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Test</title>
-      <link>http://en.xianmin.org/hugo-theme-jane/categories/test/</link>
+      <link>https://www.xianmin.org/hugo-theme-jane/categories/test/</link>
       <pubDate>Wed, 30 Aug 2017 15:43:48 +0800</pubDate>
       
-      <guid>http://en.xianmin.org/hugo-theme-jane/categories/test/</guid>
+      <guid>https://www.xianmin.org/hugo-theme-jane/categories/test/</guid>
       <description></description>
     </item>
     

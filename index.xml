@@ -2,43 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Jane - A simple theme for Hugo</title>
-    <link>http://en.xianmin.org/hugo-theme-jane/</link>
+    <link>https://www.xianmin.org/hugo-theme-jane/</link>
     <description>Recent content on Jane - A simple theme for Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 20 Aug 2017 21:38:52 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 01 Jan 2018 16:01:23 +0800</lastBuildDate>
     
-        <atom:link href="http://en.xianmin.org/hugo-theme-jane/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://www.xianmin.org/hugo-theme-jane/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>About</title>
-      <link>http://en.xianmin.org/hugo-theme-jane/about/</link>
-      <pubDate>Sun, 20 Aug 2017 21:38:52 +0800</pubDate>
-      
-      <guid>http://en.xianmin.org/hugo-theme-jane/about/</guid>
-      
-        <description>&lt;p&gt;Hugo is a static site engine written in Go.&lt;/p&gt;
-
-&lt;p&gt;It makes use of a variety of open source projects including:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/cobra&#34;&gt;Cobra&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/viper&#34;&gt;Viper&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/jWalterWeatherman&#34;&gt;J Walter Weatherman&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/cast&#34;&gt;Cast&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Learn more and contribute on &lt;a href=&#34;https://github.com/gohugoio&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-</description>
-      
-    </item>
     
     <item>
       <title>Jane Theme Preview</title>
-      <link>http://en.xianmin.org/hugo-theme-jane/post/jane-theme-preview/</link>
-      <pubDate>Tue, 06 Mar 2018 16:01:23 +0800</pubDate>
+      <link>https://www.xianmin.org/hugo-theme-jane/post/jane-theme-preview/</link>
+      <pubDate>Mon, 01 Jan 2018 16:01:23 +0800</pubDate>
       
-      <guid>http://en.xianmin.org/hugo-theme-jane/post/jane-theme-preview/</guid>
+      <guid>https://www.xianmin.org/hugo-theme-jane/post/jane-theme-preview/</guid>
       
         <description>&lt;p&gt;&lt;strong&gt;Markdown&lt;/strong&gt; is created by &lt;a href=&#34;http://daringfireball.net/&#34;&gt;Daring Fireball&lt;/a&gt;, the original guideline is &lt;a href=&#34;http://daringfireball.net/projects/markdown/syntax&#34;&gt;here&lt;/a&gt;. Its syntax, however, varies between different parsers or editors.&lt;/p&gt;
 
@@ -481,7 +458,7 @@ $$&lt;/p&gt;
 
 &lt;p&gt;To trigger inline preview for inline math: input “$”, then press &lt;code&gt;ESC&lt;/code&gt; key, then input TeX command, a preview tooltip will be visible like below:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://typora.io/img/inline-math.gif&#34; style=&#34;zoom:50%;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://typora.io/img/inline-math.gif&#34; style=&#34;zoom:50%;&#34; /&gt;&lt;/p&gt;
 &lt;div class=&#34;footnotes&#34;&gt;
 
 &lt;hr /&gt;
@@ -495,11 +472,34 @@ $$&lt;/p&gt;
     </item>
     
     <item>
+      <title>About</title>
+      <link>https://www.xianmin.org/hugo-theme-jane/about/</link>
+      <pubDate>Sun, 20 Aug 2017 21:38:52 +0800</pubDate>
+      
+      <guid>https://www.xianmin.org/hugo-theme-jane/about/</guid>
+      
+        <description>&lt;p&gt;Hugo is a static site engine written in Go.&lt;/p&gt;
+
+&lt;p&gt;It makes use of a variety of open source projects including:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/cobra&#34;&gt;Cobra&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/viper&#34;&gt;Viper&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/jWalterWeatherman&#34;&gt;J Walter Weatherman&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/cast&#34;&gt;Cast&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Learn more and contribute on &lt;a href=&#34;https://github.com/gohugoio&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
       <title>Shortcodes Preview</title>
-      <link>http://en.xianmin.org/hugo-theme-jane/post/shortcodes-preview/</link>
+      <link>https://www.xianmin.org/hugo-theme-jane/post/shortcodes-preview/</link>
       <pubDate>Sun, 04 Mar 2018 16:01:23 +0800</pubDate>
       
-      <guid>http://en.xianmin.org/hugo-theme-jane/post/shortcodes-preview/</guid>
+      <guid>https://www.xianmin.org/hugo-theme-jane/post/shortcodes-preview/</guid>
       
         <description>&lt;h2 id=&#34;what-a-shortcode-is&#34;&gt;What a Shortcode is&lt;/h2&gt;
 
@@ -867,6 +867,36 @@ $$&lt;/p&gt;
 
 &lt;script type=&#34;application/javascript&#34; src=&#34;//gist.github.com/spf13/7896402.js&#34;&gt;&lt;/script&gt;
 
+&lt;h2 id=&#34;expand&#34;&gt;expand&lt;/h2&gt;
+
+&lt;p&gt;The Expand shortcode displays an expandable/collapsible section of text on your page. Here is an example&lt;/p&gt;
+
+&lt;details&gt;
+  &lt;summary style=&#34;background-color:#f5f5f5;border:1px solid #ccc;padding:5px;&#34;&gt;
+    Is this learn theme rocks ?
+    
+  &lt;/summary&gt;
+  
+Yes !.
+
+&lt;/details&gt;
+
+
+&lt;h3 id=&#34;usage&#34;&gt;Usage&lt;/h3&gt;
+
+&lt;p&gt;this shortcode takes exactly one optional parameter to define the text that appears next to the expand/collapse icon. (default is “Click to expand”)&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;{{&amp;lt; expand &amp;#34;Is this learn theme rocks ?&amp;#34; &amp;gt;}}
+Yes !.
+{{&amp;lt; /expand &amp;gt;}}&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;h2 id=&#34;youtube&#34;&gt;youtube&lt;/h2&gt;
 
 
@@ -896,10 +926,10 @@ $$&lt;/p&gt;
     
     <item>
       <title>Image Preview</title>
-      <link>http://en.xianmin.org/hugo-theme-jane/post/image-preview/</link>
+      <link>https://www.xianmin.org/hugo-theme-jane/post/image-preview/</link>
       <pubDate>Sat, 03 Mar 2018 16:01:23 +0800</pubDate>
       
-      <guid>http://en.xianmin.org/hugo-theme-jane/post/image-preview/</guid>
+      <guid>https://www.xianmin.org/hugo-theme-jane/post/image-preview/</guid>
       
         <description>&lt;p&gt;Thanks for &lt;a href=&#34;https://github.com/liwenyip/hugo-easy-gallery&#34;&gt;liwenyip/hugo-easy-gallery&lt;/a&gt; &amp;amp; &lt;a href=&#34;https://github.com/xianmin/hugo-theme-jane/pull/48&#34;&gt;Zebradil · Pull Request #48&lt;/a&gt; .&lt;/p&gt;
 
@@ -1040,10 +1070,10 @@ $$&lt;/p&gt;
     
     <item>
       <title>Shortcodes Notice Preview</title>
-      <link>http://en.xianmin.org/hugo-theme-jane/post/shortcode-notice/</link>
+      <link>https://www.xianmin.org/hugo-theme-jane/post/shortcode-notice/</link>
       <pubDate>Sat, 03 Mar 2018 16:01:23 +0800</pubDate>
       
-      <guid>http://en.xianmin.org/hugo-theme-jane/post/shortcode-notice/</guid>
+      <guid>https://www.xianmin.org/hugo-theme-jane/post/shortcode-notice/</guid>
       
         <description>
 
@@ -1175,10 +1205,10 @@ A warning disclaimer
     
     <item>
       <title>Jane-Theme Footnote Preview</title>
-      <link>http://en.xianmin.org/hugo-theme-jane/post/doc-footnote-preview/</link>
+      <link>https://www.xianmin.org/hugo-theme-jane/post/doc-footnote-preview/</link>
       <pubDate>Thu, 01 Mar 2018 16:01:23 +0800</pubDate>
       
-      <guid>http://en.xianmin.org/hugo-theme-jane/post/doc-footnote-preview/</guid>
+      <guid>https://www.xianmin.org/hugo-theme-jane/post/doc-footnote-preview/</guid>
       
         <description>&lt;p&gt;Hugo-theme-jane optimized for footnote. When you mouse hover the footnote&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:example&#34;&gt;&lt;a href=&#34;#fn:example&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; , footnote content will be displayed.&lt;/p&gt;
 
@@ -1302,10 +1332,10 @@ A warning disclaimer
     
     <item>
       <title>English Creating a New Theme</title>
-      <link>http://en.xianmin.org/hugo-theme-jane/post/english-preview/</link>
+      <link>https://www.xianmin.org/hugo-theme-jane/post/english-preview/</link>
       <pubDate>Thu, 31 Aug 2017 15:43:48 +0800</pubDate>
       
-      <guid>http://en.xianmin.org/hugo-theme-jane/post/english-preview/</guid>
+      <guid>https://www.xianmin.org/hugo-theme-jane/post/english-preview/</guid>
       
         <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 
@@ -3148,10 +3178,10 @@ $ vi themes/zafta/layouts/_default/single.html
     
     <item>
       <title>This is a very long title This is a very long title This is a very long title This is a very long title This is a very long title</title>
-      <link>http://en.xianmin.org/hugo-theme-jane/post/this-is-a-very-long-title/</link>
+      <link>https://www.xianmin.org/hugo-theme-jane/post/this-is-a-very-long-title/</link>
       <pubDate>Wed, 30 Aug 2017 15:43:48 +0800</pubDate>
       
-      <guid>http://en.xianmin.org/hugo-theme-jane/post/this-is-a-very-long-title/</guid>
+      <guid>https://www.xianmin.org/hugo-theme-jane/post/this-is-a-very-long-title/</guid>
       
         <description>&lt;p&gt;This is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long title&lt;/p&gt;
 </description>
@@ -3160,10 +3190,10 @@ $ vi themes/zafta/layouts/_default/single.html
     
     <item>
       <title>Creating a New Theme</title>
-      <link>http://en.xianmin.org/hugo-theme-jane/post/creating-a-new-theme/</link>
+      <link>https://www.xianmin.org/hugo-theme-jane/post/creating-a-new-theme/</link>
       <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://en.xianmin.org/hugo-theme-jane/post/creating-a-new-theme/</guid>
+      <guid>https://www.xianmin.org/hugo-theme-jane/post/creating-a-new-theme/</guid>
       
         <description>
 
@@ -5007,10 +5037,10 @@ $ vi themes/zafta/layouts/_default/single.html
     
     <item>
       <title>(Hu)go Template Primer</title>
-      <link>http://en.xianmin.org/hugo-theme-jane/post/goisforlovers/</link>
+      <link>https://www.xianmin.org/hugo-theme-jane/post/goisforlovers/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://en.xianmin.org/hugo-theme-jane/post/goisforlovers/</guid>
+      <guid>https://www.xianmin.org/hugo-theme-jane/post/goisforlovers/</guid>
       
         <description>
 
@@ -5086,7 +5116,7 @@ functions.&lt;/p&gt;
 &lt;p&gt;Each go template has a struct (object) made available to it. In hugo each
 template is passed either a page or a node struct depending on which type of
 page you are rendering. More details are available on the
-&lt;a href=&#34;http://en.xianmin.org/hugo-theme-jane/layout/variables&#34;&gt;variables&lt;/a&gt; page.&lt;/p&gt;
+&lt;a href=&#34;https://www.xianmin.org/hugo-theme-jane/layout/variables&#34;&gt;variables&lt;/a&gt; page.&lt;/p&gt;
 
 &lt;p&gt;A variable is accessed by referencing the variable name.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -5112,7 +5142,7 @@ page you are rendering. More details are available on the
 
 &lt;p&gt;Go template ship with a few functions which provide basic functionality. The go
 template system also provides a mechanism for applications to extend the
-available functions with their own. &lt;a href=&#34;http://en.xianmin.org/hugo-theme-jane/layout/functions&#34;&gt;Hugo template
+available functions with their own. &lt;a href=&#34;https://www.xianmin.org/hugo-theme-jane/layout/functions&#34;&gt;Hugo template
 functions&lt;/a&gt; provide some additional functionality we believe
 are useful for building websites. Functions are called by using their name
 followed by the required parameters separated by spaces. Template
@@ -5386,7 +5416,7 @@ you want to inside of your templates.&lt;/p&gt;
 &lt;h2 id=&#34;using-content-page-parameters&#34;&gt;Using Content (page) Parameters&lt;/h2&gt;
 
 &lt;p&gt;In each piece of content you can provide variables to be used by the
-templates. This happens in the &lt;a href=&#34;http://en.xianmin.org/hugo-theme-jane/content/front-matter&#34;&gt;front matter&lt;/a&gt;.&lt;/p&gt;
+templates. This happens in the &lt;a href=&#34;https://www.xianmin.org/hugo-theme-jane/content/front-matter&#34;&gt;front matter&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;An example of this is used in this documentation site. Most of the pages
 benefit from having the table of contents provided. Sometimes the TOC just
@@ -5516,10 +5546,10 @@ so, such as in this example:&lt;/p&gt;
     
     <item>
       <title>Getting Started with Hugo</title>
-      <link>http://en.xianmin.org/hugo-theme-jane/post/hugoisforlovers/</link>
+      <link>https://www.xianmin.org/hugo-theme-jane/post/hugoisforlovers/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://en.xianmin.org/hugo-theme-jane/post/hugoisforlovers/</guid>
+      <guid>https://www.xianmin.org/hugo-theme-jane/post/hugoisforlovers/</guid>
       
         <description>
 
@@ -5530,7 +5560,7 @@ appropriate version for your os and architecture.&lt;/p&gt;
 
 &lt;p&gt;Save it somewhere specific as we will be using it in the next step.&lt;/p&gt;
 
-&lt;p&gt;More complete instructions are available at &lt;a href=&#34;http://en.xianmin.org/hugo-theme-jane/overview/installing/&#34;&gt;installing hugo&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;More complete instructions are available at &lt;a href=&#34;https://www.xianmin.org/hugo-theme-jane/overview/installing/&#34;&gt;installing hugo&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;step-2-build-the-docs&#34;&gt;Step 2. Build the Docs&lt;/h2&gt;
 
@@ -5634,10 +5664,10 @@ Having nearly instant feedback enables you to have your creativity flow without 
     
     <item>
       <title>Migrate to Hugo from Jekyll</title>
-      <link>http://en.xianmin.org/hugo-theme-jane/post/migrate-from-jekyll/</link>
+      <link>https://www.xianmin.org/hugo-theme-jane/post/migrate-from-jekyll/</link>
       <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://en.xianmin.org/hugo-theme-jane/post/migrate-from-jekyll/</guid>
+      <guid>https://www.xianmin.org/hugo-theme-jane/post/migrate-from-jekyll/</guid>
       
         <description>
 
@@ -5676,7 +5706,7 @@ With Jekyll, something that looked like&lt;/p&gt;
 
 &lt;h2 id=&#34;create-your-hugo-configuration-file&#34;&gt;Create your Hugo configuration file&lt;/h2&gt;
 
-&lt;p&gt;Hugo can read your configuration as JSON, YAML or TOML. Hugo supports parameters custom configuration too. Refer to the &lt;a href=&#34;http://en.xianmin.org/hugo-theme-jane/overview/configuration/&#34;&gt;Hugo configuration documentation&lt;/a&gt; for details.&lt;/p&gt;
+&lt;p&gt;Hugo can read your configuration as JSON, YAML or TOML. Hugo supports parameters custom configuration too. Refer to the &lt;a href=&#34;https://www.xianmin.org/hugo-theme-jane/overview/configuration/&#34;&gt;Hugo configuration documentation&lt;/a&gt; for details.&lt;/p&gt;
 
 &lt;h2 id=&#34;set-your-configuration-publish-folder-to-site&#34;&gt;Set your configuration publish folder to &lt;code&gt;_site&lt;/code&gt;&lt;/h2&gt;
 
@@ -5718,13 +5748,13 @@ git submodule add -b gh-pages git@github.com:your-username/your-repo.git public&
 
 &lt;h2 id=&#34;convert-jekyll-templates-to-hugo-templates&#34;&gt;Convert Jekyll templates to Hugo templates&lt;/h2&gt;
 
-&lt;p&gt;That&amp;rsquo;s the bulk of the work right here. The documentation is your friend. You should refer to &lt;a href=&#34;http://jekyllrb.com/docs/templates/&#34;&gt;Jekyll&amp;rsquo;s template documentation&lt;/a&gt; if you need to refresh your memory on how you built your blog and &lt;a href=&#34;http://en.xianmin.org/hugo-theme-jane/layout/templates/&#34;&gt;Hugo&amp;rsquo;s template&lt;/a&gt; to learn Hugo&amp;rsquo;s way.&lt;/p&gt;
+&lt;p&gt;That&amp;rsquo;s the bulk of the work right here. The documentation is your friend. You should refer to &lt;a href=&#34;http://jekyllrb.com/docs/templates/&#34;&gt;Jekyll&amp;rsquo;s template documentation&lt;/a&gt; if you need to refresh your memory on how you built your blog and &lt;a href=&#34;https://www.xianmin.org/hugo-theme-jane/layout/templates/&#34;&gt;Hugo&amp;rsquo;s template&lt;/a&gt; to learn Hugo&amp;rsquo;s way.&lt;/p&gt;
 
 &lt;p&gt;As a single reference data point, converting my templates for &lt;a href=&#34;http://heyitsalex.net/&#34;&gt;heyitsalex.net&lt;/a&gt; took me no more than a few hours.&lt;/p&gt;
 
 &lt;h2 id=&#34;convert-jekyll-plugins-to-hugo-shortcodes&#34;&gt;Convert Jekyll plugins to Hugo shortcodes&lt;/h2&gt;
 
-&lt;p&gt;Jekyll has &lt;a href=&#34;http://jekyllrb.com/docs/plugins/&#34;&gt;plugins&lt;/a&gt;; Hugo has &lt;a href=&#34;http://en.xianmin.org/hugo-theme-jane/doc/shortcodes/&#34;&gt;shortcodes&lt;/a&gt;. It&amp;rsquo;s fairly trivial to do a port.&lt;/p&gt;
+&lt;p&gt;Jekyll has &lt;a href=&#34;http://jekyllrb.com/docs/plugins/&#34;&gt;plugins&lt;/a&gt;; Hugo has &lt;a href=&#34;https://www.xianmin.org/hugo-theme-jane/doc/shortcodes/&#34;&gt;shortcodes&lt;/a&gt;. It&amp;rsquo;s fairly trivial to do a port.&lt;/p&gt;
 
 &lt;h3 id=&#34;implementation&#34;&gt;Implementation&lt;/h3&gt;
 
@@ -5927,10 +5957,10 @@ Liquid::Template.register_tag(&amp;#39;image&amp;#39;, Jekyll::ImageTag)&lt;/pre
     
     <item>
       <title>Syntax Highlighting</title>
-      <link>http://en.xianmin.org/hugo-theme-jane/post/syntax-highlighting/</link>
+      <link>https://www.xianmin.org/hugo-theme-jane/post/syntax-highlighting/</link>
       <pubDate>Tue, 30 Aug 2011 16:01:23 +0800</pubDate>
       
-      <guid>http://en.xianmin.org/hugo-theme-jane/post/syntax-highlighting/</guid>
+      <guid>https://www.xianmin.org/hugo-theme-jane/post/syntax-highlighting/</guid>
       
         <description>&lt;p&gt;More detail: &lt;a href=&#34;https://gohugo.io/content-management/syntax-highlighting/&#34;&gt;Syntax Highlighting | Hugo&lt;/a&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;

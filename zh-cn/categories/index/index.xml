@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Index on Jane —— 一个简洁的 Hugo 主题</title>
-    <link>http://en.xianmin.org/hugo-theme-jane/zh-cn/categories/index/</link>
+    <link>https://www.xianmin.org/hugo-theme-jane/zh-cn/categories/index/</link>
     <description>Recent content in Index on Jane —— 一个简洁的 Hugo 主题</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Tue, 06 Mar 2018 16:01:23 +0800</lastBuildDate>
     
-	<atom:link href="http://en.xianmin.org/hugo-theme-jane/zh-cn/categories/index/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.xianmin.org/hugo-theme-jane/zh-cn/categories/index/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Jane 主题预览</title>
-      <link>http://en.xianmin.org/hugo-theme-jane/zh-cn/post/jane-theme-preview/</link>
+      <link>https://www.xianmin.org/hugo-theme-jane/zh-cn/post/jane-theme-preview/</link>
       <pubDate>Tue, 06 Mar 2018 16:01:23 +0800</pubDate>
       
-      <guid>http://en.xianmin.org/hugo-theme-jane/zh-cn/post/jane-theme-preview/</guid>
+      <guid>https://www.xianmin.org/hugo-theme-jane/zh-cn/post/jane-theme-preview/</guid>
       <description>主题预览,内容有待填充。</description>
     </item>
     

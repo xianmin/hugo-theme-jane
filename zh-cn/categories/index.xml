@@ -2,28 +2,28 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Jane —— 一个简洁的 Hugo 主题</title>
-    <link>http://en.xianmin.org/hugo-theme-jane/zh-cn/categories/</link>
+    <link>https://www.xianmin.org/hugo-theme-jane/zh-cn/categories/</link>
     <description>Recent content in Categories on Jane —— 一个简洁的 Hugo 主题</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	<atom:link href="http://en.xianmin.org/hugo-theme-jane/zh-cn/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.xianmin.org/hugo-theme-jane/zh-cn/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Index</title>
-      <link>http://en.xianmin.org/hugo-theme-jane/zh-cn/categories/index/</link>
+      <link>https://www.xianmin.org/hugo-theme-jane/zh-cn/categories/index/</link>
       <pubDate>Tue, 06 Mar 2018 16:01:23 +0800</pubDate>
       
-      <guid>http://en.xianmin.org/hugo-theme-jane/zh-cn/categories/index/</guid>
+      <guid>https://www.xianmin.org/hugo-theme-jane/zh-cn/categories/index/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Shortcodes</title>
-      <link>http://en.xianmin.org/hugo-theme-jane/zh-cn/categories/shortcodes/</link>
+      <link>https://www.xianmin.org/hugo-theme-jane/zh-cn/categories/shortcodes/</link>
       <pubDate>Tue, 06 Mar 2018 16:01:23 +0800</pubDate>
       
-      <guid>http://en.xianmin.org/hugo-theme-jane/zh-cn/categories/shortcodes/</guid>
+      <guid>https://www.xianmin.org/hugo-theme-jane/zh-cn/categories/shortcodes/</guid>
       <description></description>
     </item>
     

@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tag 2 on Jane - A simple theme for Hugo</title>
-    <link>http://en.xianmin.org/hugo-theme-jane/tags/tag-2/</link>
+    <link>https://www.xianmin.org/hugo-theme-jane/tags/tag-2/</link>
     <description>Recent content in Tag 2 on Jane - A simple theme for Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Thu, 31 Aug 2017 15:43:48 +0800</lastBuildDate>
     
-	<atom:link href="http://en.xianmin.org/hugo-theme-jane/tags/tag-2/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.xianmin.org/hugo-theme-jane/tags/tag-2/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>English Creating a New Theme</title>
-      <link>http://en.xianmin.org/hugo-theme-jane/post/english-preview/</link>
+      <link>https://www.xianmin.org/hugo-theme-jane/post/english-preview/</link>
       <pubDate>Thu, 31 Aug 2017 15:43:48 +0800</pubDate>
       
-      <guid>http://en.xianmin.org/hugo-theme-jane/post/english-preview/</guid>
+      <guid>https://www.xianmin.org/hugo-theme-jane/post/english-preview/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 
 &lt;p&gt;This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.&lt;/p&gt;
@@ -25,10 +25,10 @@
     
     <item>
       <title>This is a very long title This is a very long title This is a very long title This is a very long title This is a very long title</title>
-      <link>http://en.xianmin.org/hugo-theme-jane/post/this-is-a-very-long-title/</link>
+      <link>https://www.xianmin.org/hugo-theme-jane/post/this-is-a-very-long-title/</link>
       <pubDate>Wed, 30 Aug 2017 15:43:48 +0800</pubDate>
       
-      <guid>http://en.xianmin.org/hugo-theme-jane/post/this-is-a-very-long-title/</guid>
+      <guid>https://www.xianmin.org/hugo-theme-jane/post/this-is-a-very-long-title/</guid>
       <description>This is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long title</description>
     </item>
     

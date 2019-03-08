@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tag 7 on Jane - A simple theme for Hugo</title>
-    <link>http://en.xianmin.org/hugo-theme-jane/tags/tag-7/</link>
+    <link>https://www.xianmin.org/hugo-theme-jane/tags/tag-7/</link>
     <description>Recent content in Tag 7 on Jane - A simple theme for Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sat, 03 Mar 2018 16:01:23 +0800</lastBuildDate>
     
-	<atom:link href="http://en.xianmin.org/hugo-theme-jane/tags/tag-7/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.xianmin.org/hugo-theme-jane/tags/tag-7/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Image Preview</title>
-      <link>http://en.xianmin.org/hugo-theme-jane/post/image-preview/</link>
+      <link>https://www.xianmin.org/hugo-theme-jane/post/image-preview/</link>
       <pubDate>Sat, 03 Mar 2018 16:01:23 +0800</pubDate>
       
-      <guid>http://en.xianmin.org/hugo-theme-jane/post/image-preview/</guid>
+      <guid>https://www.xianmin.org/hugo-theme-jane/post/image-preview/</guid>
       <description>&lt;p&gt;Thanks for &lt;a href=&#34;https://github.com/liwenyip/hugo-easy-gallery&#34;&gt;liwenyip/hugo-easy-gallery&lt;/a&gt; &amp;amp; &lt;a href=&#34;https://github.com/xianmin/hugo-theme-jane/pull/48&#34;&gt;Zebradil · Pull Request #48&lt;/a&gt; .&lt;/p&gt;
 
 &lt;p&gt;Now, we could use &lt;code&gt;{{&amp;lt; gallery &amp;gt;}}&lt;/code&gt; shortcode in hugo-theme-jane.&lt;/p&gt;
