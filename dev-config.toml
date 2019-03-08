@@ -1,7 +1,7 @@
 # This config file only for develop
 # This file is hugo-theme-jane demo-site config
 
-baseURL = "http://en.xianmin.org/hugo-theme-jane/"
+baseURL = "https://www.xianmin.org/hugo-theme-jane/"
 # title = "Jane - A simple theme for Hugo"
 enableRobotsTXT = true
 enableEmoji = true
