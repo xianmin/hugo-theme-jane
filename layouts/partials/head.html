@@ -52,12 +52,12 @@
 {{ with .Site.Params.google_verification }}<meta name="google-site-verification" content="{{.}}" />{{ end }}
 
 <!-- Site Generator -->
-<meta name="generator" content="Hugo {{ .Hugo.Version }}" />
+<meta name="generator" content="Hugo {{ hugo.Version }}" />
 
 <!-- Permalink & RSSlink -->
 <link rel="canonical" href="{{ .Permalink }}" />
-{{ if .RSSLink -}}
-  <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+{{ if .OutputFormats.Get "RSS" -}}
+<link href="{{ .OutputFormats.Get "RSS" }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
 {{ end -}}
 
 {{ if .OutputFormats.Get "jsonfeed" }}
