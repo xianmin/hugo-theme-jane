@@ -6,6 +6,7 @@
       <script src="https://utteranc.es/client.js"
             repo= "{{ .Site.Params.utteranc.repo }}"
             issue-term="{{ .Site.Params.utteranc.issueTerm }}"
+            theme="{{ default "github-light" .Site.Params.utteranc.theme }}"
             crossorigin="anonymous"
             async>
       </script>

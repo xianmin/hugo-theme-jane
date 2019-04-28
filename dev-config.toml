@@ -167,6 +167,7 @@ defaultContentLanguage = "en"  # Default language to use (if you setup multiling
     enable = true
     repo = "xianmin/comments-for-hugo-theme-jane"    # The repo to store comments
     issueTerm = "pathname"
+    theme = "github-light"                           # theme: github-light, github-dark, github-dark-orange, icy-dark, dark-blue, photon-dark
 
   [params.reward]                                         # 文章打赏
     enable = false
