@@ -1,5 +1,16 @@
 {{ if and .IsPage (ne .Params.comment false) }}
 
+  <!-- Commento -->
+  {{- if .Site.Params.commento.enable -}}
+    <div id="comments">
+      <div id="commento"></div>
+      <script src="{{ .Site.Params.commento.url }}/js/commento.js"></script>
+      <noscript>Please enable JavaScript to view the
+        <a href="https://commento.io/">comments powered by Commento.</a>
+      </noscript>
+    </div>
+  {{- end }}
+
   <!-- utteranc -->
   {{ if .Site.Params.utteranc.enable }}
     <div class="post bg-white">
@@ -88,7 +99,7 @@
   <!-- <a href="http://disqus.com/" class="dsq-brlink" target="_blank">comments powered by <span class="logo-disqus">Disqus</span></a> -->
   </div>
   {{- end }}
-  
+
     <!-- LiveRe -->
   {{- if .Site.Params.livere.uid -}}
 	<div id="lv-container" class="disqus-comment" data-id="city" data-uid='{{ .Site.Params.livere.uid }}'>
@@ -106,7 +117,5 @@
     <a href="https://www.livere.com">comments powered by LiveRe.</a>
    </div>
 	{{- end }}
-	
+
 {{- end }}
-
-
