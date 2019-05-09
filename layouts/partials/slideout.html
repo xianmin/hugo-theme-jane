@@ -2,7 +2,7 @@
   <div class="mobile-header-logo">
     <a href="{{ "/" | relLangURL }}" class="logo">
       {{- if .Site.Params.logoTitle -}}
-        {{ .Site.Params.logoTitle }}
+        {{ .Site.Params.logoTitle | safeHTML }}
       {{- else -}}
         {{ .Site.Title }}
       {{- end -}}
