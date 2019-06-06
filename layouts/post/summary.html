@@ -6,7 +6,7 @@
           {{ partial "svg/pinned.svg" }}
         </span>
       {{ end }}
-      <a class="post-link" href="{{ .URL }}">{{ .Title }}</a>
+      <a class="post-link" href="{{ .RelPermalink }}">{{ .Title }}</a>
     </h1>
     {{ partial "post/i18nlist.html" . }}
     <div class="post-meta">
@@ -32,7 +32,7 @@
       {{- end }}
       <!-- Counter leancloud -->
       {{ if .Site.Params.counter.leancloud.enable }}
-        <span id="{{ .URL }}" class="leancloud_visitors" data-flag-title="{{ .Title }}">
+        <span id="{{ .RelPermalink }}" class="leancloud_visitors" data-flag-title="{{ .Title }}">
           <span class="post-meta-item-text"> | 阅读 </span>
           <span class="leancloud-visitors-count"></span>
         </span>
@@ -50,7 +50,7 @@
       {{ .Summary }}
     </div>
     <div class="read-more">
-      <a href="{{ .URL }}" class="read-more-link">{{ i18n "readmore" }}</a>
+      <a href="{{ .RelPermalink }}" class="read-more-link">{{ i18n "readmore" }}</a>
     </div>
     {{ end }}
   </div>

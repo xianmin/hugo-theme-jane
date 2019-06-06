@@ -29,7 +29,7 @@
                 {{ .Date.Format "2006-01-02" }}
               </time>
               <span class="archive-post-title">
-                <a href="{{ .URL }}" class="archive-post-link">
+                <a href="{{ .RelPermalink }}" class="archive-post-link">
                   {{ .Title }}
                 </a>
               </span>
@@ -100,7 +100,7 @@
                 {{ .Date.Format "2006-01-02" }}
               </time>
               <span class="archive-post-title">
-                <a href="{{ .URL }}" class="archive-post-link">
+                <a href="{{ .RelPermalink }}" class="archive-post-link">
                   {{ .Title }}
                 </a>
               </span>
