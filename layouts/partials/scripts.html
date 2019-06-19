@@ -32,7 +32,7 @@
   (function() {
     if (window.location.hostname === 'localhost') return;
     var hm = document.createElement("script"); hm.async = true;
-	hm.src = "//tajs.qq.com/stats?sId={{.}}";
+  hm.src = "//tajs.qq.com/stats?sId={{.}}";
     var s = document.getElementsByTagName("script")[0];
     s.parentNode.insertBefore(hm, s);
   })();
@@ -81,7 +81,7 @@
       crossorigin="anonymous"></script>
   {{ else if .Site.Params.publicCDN.enable }}
     <script type="text/javascript" src="{{ "/js/load-photoswipe.js" | relURL }}"></script>
-	{{ .Site.Params.publicCDN.photoswipe | safeHTML }}
+  {{ .Site.Params.publicCDN.photoswipe | safeHTML }}
     {{ .Site.Params.publicCDN.photoswipeUI | safeHTML }}
   {{ else }}
     <script type="text/javascript" src="{{ "/js/load-photoswipe.js" | relURL }}"></script>
@@ -209,6 +209,26 @@
 
 {{ if .Site.Params.commentCount.disqus.enable }}
   <script id="dsq-count-scr" src="//{{ .Site.DisqusShortname }}.disqus.com/count.js" async></script>
+{{ end }}
+
+{{ if .Site.Params.darkmode.enable }}
+    {{ .Site.Params.publicCDN.darkmode | safeHTML }}
+    <script>
+        var options = {
+            bottom: '16px', // default: '32px'
+            right: '32px', // default: '32px'
+            left: 'unset', // default: 'unset'
+            time: '0.5s', // default: '0.3s'
+            mixColor: '#fff', // default: '#fff'
+            backgroundColor: '#fff',  // default: '#fff'
+            buttonColorDark: '#100f2c',  // default: '#100f2c'
+            buttonColorLight: '#fff', // default: '#fff'
+            saveInCookies: true, // default: true,
+            label: '🌓' // default: ''
+            }
+        const darkmode = new Darkmode(options);
+        darkmode.showWidget();
+    </script>
 {{ end }}
 
 <!-- custom js -->
