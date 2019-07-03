@@ -211,6 +211,25 @@
   <script id="dsq-count-scr" src="//{{ .Site.DisqusShortname }}.disqus.com/count.js" async></script>
 {{ end }}
 
+{{ if .Site.Params.search.google.enable }}
+  <script>
+    $("#openSearch").click(function(){
+      $(".modal-dialog").addClass("visible");
+    });
+
+    $("#closeSearch").click(function(){
+      $(".modal-dialog").removeClass("visible");
+    });
+
+    $(document).click(function(event) {
+    //if you click on anything except the modal itself or the "open modal" link, close the modal
+      if (!$(event.target).closest(".modal-content, #openSearch").length) {
+        $("body").find(".modal-dialog").removeClass("visible");
+      }
+    });
+  </script>
+{{ end }}
+
 <!-- custom js -->
 {{ range .Site.Params.customJS }}
   <script src="{{ "/js/" | relURL }}{{ . }}"></script>

@@ -17,6 +17,10 @@
     {{ partial "photoswipe.html" . }}
   {{ end }}
 
+  {{ if .Site.Params.search.google.enable }}
+    {{ partial "search_google.html" . }}
+  {{ end }}
+
   {{ if .Site.Params.forkMeOnGithub }}
     <style>
       .fork-me-on-github {

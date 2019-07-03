@@ -145,6 +145,10 @@ defaultContentLanguage = "en"           # Default language to use
   [params.livere]          	#LiveRe comment. see https://www.livere.com/
 	  uid = ""
 
+  [params.search.google]    # google custom search, see https://cse.google.com
+    enable = false
+    id = "002186711602136249422:q1gkomof_em"
+
   [params.reward]                                         # 文章打赏
     enable = false
     wechat = "/path/to/your/wechat-qr-code.png"           # 微信二维码
