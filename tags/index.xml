@@ -5,17 +5,80 @@
     <link>https://www.xianmin.org/hugo-theme-jane/tags/</link>
     <description>Recent content in Tags on Jane - A simple theme for Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 28 Sep 2014 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 04 Mar 2018 16:01:23 +0800</lastBuildDate>
     
 	<atom:link href="https://www.xianmin.org/hugo-theme-jane/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Development</title>
-      <link>https://www.xianmin.org/hugo-theme-jane/tags/development/</link>
-      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      <title>preview</title>
+      <link>https://www.xianmin.org/hugo-theme-jane/tags/preview/</link>
+      <pubDate>Sun, 04 Mar 2018 16:01:23 +0800</pubDate>
       
-      <guid>https://www.xianmin.org/hugo-theme-jane/tags/development/</guid>
+      <guid>https://www.xianmin.org/hugo-theme-jane/tags/preview/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>shortcodes</title>
+      <link>https://www.xianmin.org/hugo-theme-jane/tags/shortcodes/</link>
+      <pubDate>Sun, 04 Mar 2018 16:01:23 +0800</pubDate>
+      
+      <guid>https://www.xianmin.org/hugo-theme-jane/tags/shortcodes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tag-6</title>
+      <link>https://www.xianmin.org/hugo-theme-jane/tags/tag-6/</link>
+      <pubDate>Sun, 04 Mar 2018 16:01:23 +0800</pubDate>
+      
+      <guid>https://www.xianmin.org/hugo-theme-jane/tags/tag-6/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>image</title>
+      <link>https://www.xianmin.org/hugo-theme-jane/tags/image/</link>
+      <pubDate>Sat, 03 Mar 2018 16:01:23 +0800</pubDate>
+      
+      <guid>https://www.xianmin.org/hugo-theme-jane/tags/image/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tag-7</title>
+      <link>https://www.xianmin.org/hugo-theme-jane/tags/tag-7/</link>
+      <pubDate>Sat, 03 Mar 2018 16:01:23 +0800</pubDate>
+      
+      <guid>https://www.xianmin.org/hugo-theme-jane/tags/tag-7/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>footnote</title>
+      <link>https://www.xianmin.org/hugo-theme-jane/tags/footnote/</link>
+      <pubDate>Thu, 01 Mar 2018 16:01:23 +0800</pubDate>
+      
+      <guid>https://www.xianmin.org/hugo-theme-jane/tags/footnote/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>markdown</title>
+      <link>https://www.xianmin.org/hugo-theme-jane/tags/markdown/</link>
+      <pubDate>Thu, 01 Mar 2018 16:01:23 +0800</pubDate>
+      
+      <guid>https://www.xianmin.org/hugo-theme-jane/tags/markdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tag-11</title>
+      <link>https://www.xianmin.org/hugo-theme-jane/tags/tag-11/</link>
+      <pubDate>Thu, 01 Mar 2018 16:01:23 +0800</pubDate>
+      
+      <guid>https://www.xianmin.org/hugo-theme-jane/tags/tag-11/</guid>
       <description></description>
     </item>
     
@@ -29,16 +92,25 @@
     </item>
     
     <item>
-      <title>Footnote</title>
-      <link>https://www.xianmin.org/hugo-theme-jane/tags/footnote/</link>
-      <pubDate>Thu, 01 Mar 2018 16:01:23 +0800</pubDate>
+      <title>tag-2</title>
+      <link>https://www.xianmin.org/hugo-theme-jane/tags/tag-2/</link>
+      <pubDate>Thu, 31 Aug 2017 15:43:48 +0800</pubDate>
       
-      <guid>https://www.xianmin.org/hugo-theme-jane/tags/footnote/</guid>
+      <guid>https://www.xianmin.org/hugo-theme-jane/tags/tag-2/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Go</title>
+      <title>development</title>
+      <link>https://www.xianmin.org/hugo-theme-jane/tags/development/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.xianmin.org/hugo-theme-jane/tags/development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>go</title>
       <link>https://www.xianmin.org/hugo-theme-jane/tags/go/</link>
       <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       
@@ -47,7 +119,7 @@
     </item>
     
     <item>
-      <title>Golang</title>
+      <title>golang</title>
       <link>https://www.xianmin.org/hugo-theme-jane/tags/golang/</link>
       <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       
@@ -56,7 +128,25 @@
     </item>
     
     <item>
-      <title>Hugo</title>
+      <title>templates</title>
+      <link>https://www.xianmin.org/hugo-theme-jane/tags/templates/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.xianmin.org/hugo-theme-jane/tags/templates/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>themes</title>
+      <link>https://www.xianmin.org/hugo-theme-jane/tags/themes/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.xianmin.org/hugo-theme-jane/tags/themes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hugo</title>
       <link>https://www.xianmin.org/hugo-theme-jane/tags/hugo/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
@@ -65,47 +155,11 @@
     </item>
     
     <item>
-      <title>Image</title>
-      <link>https://www.xianmin.org/hugo-theme-jane/tags/image/</link>
-      <pubDate>Sat, 03 Mar 2018 16:01:23 +0800</pubDate>
-      
-      <guid>https://www.xianmin.org/hugo-theme-jane/tags/image/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Jekyll</title>
+      <title>jekyll</title>
       <link>https://www.xianmin.org/hugo-theme-jane/tags/jekyll/</link>
       <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
       
       <guid>https://www.xianmin.org/hugo-theme-jane/tags/jekyll/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Markdown</title>
-      <link>https://www.xianmin.org/hugo-theme-jane/tags/markdown/</link>
-      <pubDate>Thu, 01 Mar 2018 16:01:23 +0800</pubDate>
-      
-      <guid>https://www.xianmin.org/hugo-theme-jane/tags/markdown/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Preview</title>
-      <link>https://www.xianmin.org/hugo-theme-jane/tags/preview/</link>
-      <pubDate>Mon, 01 Jan 2018 16:01:23 +0800</pubDate>
-      
-      <guid>https://www.xianmin.org/hugo-theme-jane/tags/preview/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Shortcodes</title>
-      <link>https://www.xianmin.org/hugo-theme-jane/tags/shortcodes/</link>
-      <pubDate>Mon, 01 Jan 2018 16:01:23 +0800</pubDate>
-      
-      <guid>https://www.xianmin.org/hugo-theme-jane/tags/shortcodes/</guid>
       <description></description>
     </item>
     
@@ -119,65 +173,11 @@
     </item>
     
     <item>
-      <title>Tag 11</title>
-      <link>https://www.xianmin.org/hugo-theme-jane/tags/tag-11/</link>
-      <pubDate>Thu, 01 Mar 2018 16:01:23 +0800</pubDate>
-      
-      <guid>https://www.xianmin.org/hugo-theme-jane/tags/tag-11/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tag 2</title>
-      <link>https://www.xianmin.org/hugo-theme-jane/tags/tag-2/</link>
-      <pubDate>Thu, 31 Aug 2017 15:43:48 +0800</pubDate>
-      
-      <guid>https://www.xianmin.org/hugo-theme-jane/tags/tag-2/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tag 5</title>
+      <title>tag-5</title>
       <link>https://www.xianmin.org/hugo-theme-jane/tags/tag-5/</link>
       <pubDate>Tue, 30 Aug 2011 16:01:23 +0800</pubDate>
       
       <guid>https://www.xianmin.org/hugo-theme-jane/tags/tag-5/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tag 6</title>
-      <link>https://www.xianmin.org/hugo-theme-jane/tags/tag-6/</link>
-      <pubDate>Mon, 01 Jan 2018 16:01:23 +0800</pubDate>
-      
-      <guid>https://www.xianmin.org/hugo-theme-jane/tags/tag-6/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tag 7</title>
-      <link>https://www.xianmin.org/hugo-theme-jane/tags/tag-7/</link>
-      <pubDate>Sat, 03 Mar 2018 16:01:23 +0800</pubDate>
-      
-      <guid>https://www.xianmin.org/hugo-theme-jane/tags/tag-7/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Templates</title>
-      <link>https://www.xianmin.org/hugo-theme-jane/tags/templates/</link>
-      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.xianmin.org/hugo-theme-jane/tags/templates/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Themes</title>
-      <link>https://www.xianmin.org/hugo-theme-jane/tags/themes/</link>
-      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.xianmin.org/hugo-theme-jane/tags/themes/</guid>
       <description></description>
     </item>
     

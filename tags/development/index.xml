@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Development on Jane - A simple theme for Hugo</title>
+    <title>development on Jane - A simple theme for Hugo</title>
     <link>https://www.xianmin.org/hugo-theme-jane/tags/development/</link>
-    <description>Recent content in Development on Jane - A simple theme for Hugo</description>
+    <description>Recent content in development on Jane - A simple theme for Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sun, 28 Sep 2014 00:00:00 +0000</lastBuildDate>
     

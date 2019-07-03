@@ -5,25 +5,35 @@
     <link>https://www.xianmin.org/hugo-theme-jane/categories/</link>
     <description>Recent content in Categories on Jane - A simple theme for Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 04 Mar 2018 16:01:23 +0800</lastBuildDate>
     
 	<atom:link href="https://www.xianmin.org/hugo-theme-jane/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Development</title>
-      <link>https://www.xianmin.org/hugo-theme-jane/categories/development/</link>
-      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      <title>docs</title>
+      <link>https://www.xianmin.org/hugo-theme-jane/categories/docs/</link>
+      <pubDate>Sun, 04 Mar 2018 16:01:23 +0800</pubDate>
       
-      <guid>https://www.xianmin.org/hugo-theme-jane/categories/development/</guid>
+      <guid>https://www.xianmin.org/hugo-theme-jane/categories/docs/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Docs</title>
-      <link>https://www.xianmin.org/hugo-theme-jane/categories/docs/</link>
-      <pubDate>Mon, 01 Jan 2018 16:01:23 +0800</pubDate>
+      <title>index</title>
+      <link>https://www.xianmin.org/hugo-theme-jane/categories/index/</link>
+      <pubDate>Sun, 04 Mar 2018 16:01:23 +0800</pubDate>
       
-      <guid>https://www.xianmin.org/hugo-theme-jane/categories/docs/</guid>
+      <guid>https://www.xianmin.org/hugo-theme-jane/categories/index/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>shortcodes</title>
+      <link>https://www.xianmin.org/hugo-theme-jane/categories/shortcodes/</link>
+      <pubDate>Sun, 04 Mar 2018 16:01:23 +0800</pubDate>
+      
+      <guid>https://www.xianmin.org/hugo-theme-jane/categories/shortcodes/</guid>
       <description></description>
     </item>
     
@@ -37,29 +47,29 @@
     </item>
     
     <item>
-      <title>Golang</title>
+      <title>test</title>
+      <link>https://www.xianmin.org/hugo-theme-jane/categories/test/</link>
+      <pubDate>Wed, 30 Aug 2017 15:43:48 +0800</pubDate>
+      
+      <guid>https://www.xianmin.org/hugo-theme-jane/categories/test/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Development</title>
+      <link>https://www.xianmin.org/hugo-theme-jane/categories/development/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.xianmin.org/hugo-theme-jane/categories/development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>golang</title>
       <link>https://www.xianmin.org/hugo-theme-jane/categories/golang/</link>
       <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       
       <guid>https://www.xianmin.org/hugo-theme-jane/categories/golang/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Index</title>
-      <link>https://www.xianmin.org/hugo-theme-jane/categories/index/</link>
-      <pubDate>Mon, 01 Jan 2018 16:01:23 +0800</pubDate>
-      
-      <guid>https://www.xianmin.org/hugo-theme-jane/categories/index/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Shortcodes</title>
-      <link>https://www.xianmin.org/hugo-theme-jane/categories/shortcodes/</link>
-      <pubDate>Mon, 01 Jan 2018 16:01:23 +0800</pubDate>
-      
-      <guid>https://www.xianmin.org/hugo-theme-jane/categories/shortcodes/</guid>
       <description></description>
     </item>
     
@@ -69,15 +79,6 @@
       <pubDate>Tue, 30 Aug 2011 16:01:23 +0800</pubDate>
       
       <guid>https://www.xianmin.org/hugo-theme-jane/categories/syntax-highlighting/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Test</title>
-      <link>https://www.xianmin.org/hugo-theme-jane/categories/test/</link>
-      <pubDate>Wed, 30 Aug 2017 15:43:48 +0800</pubDate>
-      
-      <guid>https://www.xianmin.org/hugo-theme-jane/categories/test/</guid>
       <description></description>
     </item>
     

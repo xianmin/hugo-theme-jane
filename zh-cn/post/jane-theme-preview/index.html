@@ -34,7 +34,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.50" />
+<meta name="generator" content="Hugo 0.55.5" />
 
 
 <link rel="canonical" href="https://www.xianmin.org/hugo-theme-jane/zh-cn/post/jane-theme-preview/" />
@@ -53,7 +53,7 @@
 
 
 
-<link rel="stylesheet" href="/hugo-theme-jane/sass/jane.min.19ae5a432863a072ec64433bb1020bd6d3401129f87d6f2ad5af3bcfd84168a1.css" integrity="sha256-Ga5aQyhjoHLsZEM7sQIL1tNAESn4fW8q1a87z9hBaKE=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/hugo-theme-jane/sass/jane.min.57ebe9c198f36b136ba71149c7220932b765de3524fd1fa898395521ed819be1.css" integrity="sha256-V&#43;vpwZjzaxNrpxFJxyIJMrdl3jUk/R&#43;omDlVIe2Bm&#43;E=" media="screen" crossorigin="anonymous">
 
 
 
@@ -62,7 +62,8 @@
 <meta property="og:title" content="Jane 主题预览" />
 <meta property="og:description" content="主题预览,内容有待填充。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.xianmin.org/hugo-theme-jane/zh-cn/post/jane-theme-preview/" /><meta property="article:published_time" content="2018-03-06T16:01:23&#43;08:00"/>
+<meta property="og:url" content="https://www.xianmin.org/hugo-theme-jane/zh-cn/post/jane-theme-preview/" />
+<meta property="article:published_time" content="2018-03-06T16:01:23&#43;08:00"/>
 <meta property="article:modified_time" content="2018-03-07T16:01:23&#43;08:00"/><meta property="og:site_name" content="Jane —— 一个简洁的 Hugo 主题" />
 
 <meta itemprop="name" content="Jane 主题预览">
@@ -261,6 +262,36 @@ if (!doNotTrack) {
   
 
   
+    
+<div class="modal-dialog">
+    
+    <div class="modal-content">
+      <div id="closeSearch" title="Close" class="close">X</div>
+      <div class="modal-header">
+        <div class="modal-title">Search Cambia Research</div>
+      </div>
+      <div class="modal-body">
+          <script>
+            (function() {
+              var cx = '002186711602136249422:q1gkomof_em';
+              var gcse = document.createElement('script');
+              gcse.type = 'text/javascript';
+              gcse.async = true;
+              gcse.src = (document.location.protocol == 'https:' ? 'https:' :
+                  'http:') +
+                '//cse.google.com/cse.js?cx=' + cx;
+              var s = document.getElementsByTagName('script')[0];
+              s.parentNode.insertBefore(gcse, s);
+            })();
+          </script>
+          <gcse:search></gcse:search>
+      </div>
+    </div>
+</div>
+
+  
+
+  
     <style>
       .fork-me-on-github {
         position: absolute; top: 0; left: 0; border: 0;
@@ -359,6 +390,8 @@ if (!doNotTrack) {
 
       </li>
     
+
+    
     <li class="menu-item">
         
         <a class="menu-item-link menu-parent menu-item-lang" href="#">
@@ -382,6 +415,22 @@ if (!doNotTrack) {
             
           
         </ul>
+      </li>
+    
+
+    
+      <li class="menu-item">
+        <a id="openSearch" class="menu-item-link menu-item-search" href="#">
+          <i class="iconfont">
+            <svg version="1.1" viewBox="0 0 1024 1024"
+  xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+  xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M973.81454219 973.81454219a91.78207815 91.78207815 0 0 1-129.80999631 0l-161.97482118-161.97482118a425.48527711 425.48527711 0 0 1-230.35931791 68.16531768 428.3346319 428.3346319 0 1 1 428.3346319-428.3346319 425.48527711 425.48527711 0 0 1-68.16531768 230.35931791l162.02961656 161.97482118a91.83687354 91.83687354 0 0 1-0.05479538 129.80999631zM451.67040679 145.69361559a305.97679241 305.97679241 0 1 0 0 611.95358361 305.97679241 305.97679241 0 0 0 0-611.95358361z">
+  </path>
+</svg>
+
+          </i>
+        </a>
       </li>
     
   </ul>
@@ -484,11 +533,14 @@ if (!doNotTrack) {
   
 
   
+
+  
   
     <div class="post bg-white">
       <script src="https://utteranc.es/client.js"
             repo= "xianmin/comments-for-hugo-theme-jane"
             issue-term="pathname"
+            theme="github-light"
             crossorigin="anonymous"
             async>
       </script>
@@ -526,10 +578,8 @@ if (!doNotTrack) {
   </noscript>
   
   </div>
-  
+
     
-
-
 
         </div>
       </div>
@@ -829,6 +879,25 @@ if (!doNotTrack) {
 
 
 
+
+
+
+  <script>
+    $("#openSearch").click(function(){
+      $(".modal-dialog").addClass("visible");
+    });
+
+    $("#closeSearch").click(function(){
+      $(".modal-dialog").removeClass("visible");
+    });
+
+    $(document).click(function(event) {
+    
+      if (!$(event.target).closest(".modal-content, #openSearch").length) {
+        $("body").find(".modal-dialog").removeClass("visible");
+      }
+    });
+  </script>
 
 
 

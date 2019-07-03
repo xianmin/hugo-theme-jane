@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Test on Jane - A simple theme for Hugo</title>
+    <title>test on Jane - A simple theme for Hugo</title>
     <link>https://www.xianmin.org/hugo-theme-jane/categories/test/</link>
-    <description>Recent content in Test on Jane - A simple theme for Hugo</description>
+    <description>Recent content in test on Jane - A simple theme for Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Wed, 30 Aug 2017 15:43:48 +0800</lastBuildDate>
     
