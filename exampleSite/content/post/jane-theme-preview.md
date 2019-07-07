@@ -161,7 +161,7 @@ In markdown source code, they look like:
 | ----------------- | ------------------- | -------------------- |
 | *Emphasis*        | `*Emphasis*`        | `<em></em>`          |
 | **Strong**        | `**Strong**`        | ` <strong></strong>` |
-| `code`            | ``code``            | `<code></code>`      |
+| `code`            | `` `code` ``        | `<code></code>`      |
 | ~~Strikethrough~~ | `~~Strikethrough~~` | `<del></del`         |
 | <u>Underline</u>  | `<u>underline</u>`  | `<u></u>`            |
 
