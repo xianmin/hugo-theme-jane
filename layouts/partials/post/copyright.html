@@ -16,7 +16,17 @@
   </p>
   <p class="copyright-item">
     <span class="item-title">{{ i18n "lastMod" }}</span>
-    <span class="item-content">{{ .Lastmod.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }}</span>
+    <span class="item-content">
+      {{ .Lastmod.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }}
+      {{ with .GitInfo }}
+        <a href="{{ $.Site.Params.gitInfo.gitRepo }}/commit/{{ .Hash }}" title="{{ .Subject }}">
+          ({{ .AbbreviatedHash }})
+        </a>
+        {{ if $.Site.Params.gitInfo.showCommitMessage }}
+          <br>{{ .Subject }}
+        {{ end }}
+      {{ end }}
+    </span>
   </p>
   {{ if $.Site.Params.linkToMarkDown -}}
     {{ with $.OutputFormats.Get "markdown" -}}
