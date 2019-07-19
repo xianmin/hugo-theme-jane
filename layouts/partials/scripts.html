@@ -213,7 +213,7 @@
 
 {{ if .Site.Params.search.google.enable }}
   <script>
-    $("#openSearch").click(function(){
+    $("#openSearch, #openSearchMobile").click(function(){
       $(".modal-dialog").addClass("visible");
     });
 
@@ -223,7 +223,7 @@
 
     $(document).click(function(event) {
     //if you click on anything except the modal itself or the "open modal" link, close the modal
-      if (!$(event.target).closest(".modal-content, #openSearch").length) {
+      if (!$(event.target).closest(".modal-content, #openSearch, #openSearchMobile").length) {
         $("body").find(".modal-dialog").removeClass("visible");
       }
     });
