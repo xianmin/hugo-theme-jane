@@ -10,3 +10,4 @@
 - [Potioneer's Essays](https://william-yeh.net/) - Personal blog on software development in traditional Chinese by @William-Yeh
 - [联盟少侠博客](https://shaoxia.xyz/) - 一个日记博客.Simple Blog, Simple Days。
 - [贺鑫杂技](https://www.hexin.me/) -  Personal Blog @Maczam
+- [Thinking,Writing And Waiting](https://blog.fallleaf.net) -  A personal blog about telecom network, life and guitar
