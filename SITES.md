@@ -1,5 +1,5 @@
 ## Sites using Hugo-theme-Jane
-
+- [Duy Do](http://duydo.me) - Personal blog on computer science and maths in English and Vietnamese by [@duydo](https://github.com/duydo)
 - [Notes on Blue Skies](https://terrty.net) - Personal blog in Russian by @paskal
 - [贤民的比特记忆](http://www.xianmin.org/) - A Chinese blog.
 - [TeaTech](https://maiyang.me/) - Gopher @yangwenmai.
