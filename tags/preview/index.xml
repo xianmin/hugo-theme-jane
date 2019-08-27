@@ -5,7 +5,7 @@
     <link>https://www.xianmin.org/hugo-theme-jane/tags/preview/</link>
     <description>Recent content in preview on Jane - A simple theme for Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 04 Mar 2018 16:01:23 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 04 Mar 2019 16:01:23 +0800</lastBuildDate>
     
 	<atom:link href="https://www.xianmin.org/hugo-theme-jane/tags/preview/index.xml" rel="self" type="application/rss+xml" />
     
@@ -19,6 +19,15 @@
       <description>&lt;p&gt;&lt;strong&gt;Markdown&lt;/strong&gt; is created by &lt;a href=&#34;http://daringfireball.net/&#34;&gt;Daring Fireball&lt;/a&gt;, the original guideline is &lt;a href=&#34;http://daringfireball.net/projects/markdown/syntax&#34;&gt;here&lt;/a&gt;. Its syntax, however, varies between different parsers or editors.&lt;/p&gt;
 
 &lt;p&gt;Please note that HTML fragments in markdown source will be recognized but not parsed or rendered. Also, there may be small reformatting on the original markdown source code after saving.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Math Preview</title>
+      <link>https://www.xianmin.org/hugo-theme-jane/post/math-preview/</link>
+      <pubDate>Mon, 04 Mar 2019 16:01:23 +0800</pubDate>
+      
+      <guid>https://www.xianmin.org/hugo-theme-jane/post/math-preview/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.intmath.com/cg5/katex-mathjax-comparison.php&#34;&gt;KaTeX and MathJax Comparison Demo, currently processed as KaTex&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>

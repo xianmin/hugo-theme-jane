@@ -5,7 +5,7 @@
     <link>https://www.xianmin.org/hugo-theme-jane/</link>
     <description>Recent content on Jane - A simple theme for Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 04 Mar 2018 16:01:23 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 04 Mar 2019 16:01:23 +0800</lastBuildDate>
     
         <atom:link href="https://www.xianmin.org/hugo-theme-jane/index.xml" rel="self" type="application/rss+xml" />
     
@@ -212,7 +212,7 @@ $$&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;code&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;code&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;`code`&lt;/code&gt;&lt;/td&gt;
 &lt;td&gt;&lt;code&gt;&amp;lt;code&amp;gt;&amp;lt;/code&amp;gt;&lt;/code&gt;&lt;/td&gt;
 &lt;/tr&gt;
 
@@ -488,6 +488,215 @@ __double underscores__&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&
 
 &lt;p&gt;Learn more and contribute on &lt;a href=&#34;https://github.com/gohugoio&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
 </description>
+      
+    </item>
+    
+    <item>
+      <title>Math Preview</title>
+      <link>https://www.xianmin.org/hugo-theme-jane/post/math-preview/</link>
+      <pubDate>Mon, 04 Mar 2019 16:01:23 +0800</pubDate>
+      
+      <guid>https://www.xianmin.org/hugo-theme-jane/post/math-preview/</guid>
+      
+        <description>&lt;p&gt;&lt;a href=&#34;https://www.intmath.com/cg5/katex-mathjax-comparison.php&#34;&gt;KaTeX and MathJax Comparison Demo, currently processed as KaTex&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;repeating-fractions&#34;&gt;Repeating fractions&lt;/h2&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+\frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} \equiv 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}} {1+\frac{e^{-8\pi}} {1+\cdots} } } }
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;summation-notation&#34;&gt;Summation notation&lt;/h2&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;sum-of-a-series&#34;&gt;Sum of a Series&lt;/h2&gt;
+
+&lt;p&gt;I broke up the next two examples into separate lines so it behaves better on a mobile phone. That&#39;s why they include \displaystyle.&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+\displaystyle\sum_{i=1}^{k+1}i
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+\displaystyle= \left(\sum_{i=1}^{k}i\right) +(k+1)
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+\displaystyle= \frac{k(k+1)}{2}+k+1
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+\displaystyle= \frac{k(k+1)+2(k+1)}{2}
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+\displaystyle= \frac{(k+1)(k+2)}{2}
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+\displaystyle= \frac{(k+1)((k+1)+1)}{2}
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;product-notation&#34;&gt;Product notation&lt;/h2&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+\displaystyle 1 + \frac{q^2}{(1-q)}+\frac{q^6}{(1-q)(1-q^2)}+\cdots = \displaystyle \prod_{j=0}^{\infty}\frac{1}{(1-q^{5j+2})(1-q^{5j+3})}, \displaystyle\text{ for }\lvert q\rvert &lt; 1.
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;inline-math&#34;&gt;Inline math&lt;/h2&gt;
+
+&lt;p&gt;And here is some in-line math: &lt;span  class=&#34;math&#34;&gt;\( k_{n+1} = n^2 + k_n^2 - k_{n-1} \)&lt;/span&gt; , followed by some more text.&lt;/p&gt;
+
+&lt;h2 id=&#34;greek-letters&#34;&gt;Greek Letters&lt;/h2&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+\Gamma\ \Delta\ \Theta\ \Lambda\ \Xi\ \Pi\ \Sigma\ \Upsilon\ \Phi\ \Psi\ \Omega
+\alpha\ \beta\ \gamma\ \delta\ \epsilon\ \zeta\ \eta\ \theta\ \iota\ \kappa\ \lambda\ \mu\ \nu\ \xi \ \omicron\ \pi\ \rho\ \sigma\ \tau\ \upsilon\ \phi\ \chi\ \psi\ \omega\ \varepsilon\ \vartheta\ \varpi\ \varrho\ \varsigma\ \varphi
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;arrows&#34;&gt;Arrows&lt;/h2&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+\gets\ \to\ \leftarrow\ \rightarrow\ \uparrow\ \Uparrow\ \downarrow\ \Downarrow\ \updownarrow\ \Updownarrow
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+\Leftarrow\ \Rightarrow\ \leftrightarrow\ \Leftrightarrow\ \mapsto\ \hookleftarrow
+\leftharpoonup\ \leftharpoondown\ \rightleftharpoons\ \longleftarrow\ \Longleftarrow\ \longrightarrow
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+\Longrightarrow\ \longleftrightarrow\ \Longleftrightarrow\ \longmapsto\ \hookrightarrow\ \rightharpoonup
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+\rightharpoondown\ \leadsto\ \nearrow\ \searrow\ \swarrow\ \nwarrow
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;symbols&#34;&gt;Symbols&lt;/h2&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+\surd\ \barwedge\ \veebar\ \odot\ \oplus\ \otimes\ \oslash\ \circledcirc\ \boxdot\ \bigtriangleup
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+\bigtriangledown\ \dagger\ \diamond\ \star\ \triangleleft\ \triangleright\ \angle\ \infty\ \prime\ \triangle
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;calculus&#34;&gt;Calculus&lt;/h2&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+\int u \frac{dv}{dx}\,dx=uv-\int \frac{du}{dx}v\,dx
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+f(x) = \int_{-\infty}^\infty \hat f(\xi)\,e^{2 \pi i \xi x}
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+\oint \vec{F} \cdot d\vec{s}=0
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;lorenz-equations&#34;&gt;Lorenz Equations&lt;/h2&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+\begin{aligned} \dot{x} &amp; = \sigma(y-x) \\ \dot{y} &amp; = \rho x - y - xz \\ \dot{z} &amp; = -\beta z + xy \end{aligned}
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;cross-product&#34;&gt;Cross Product&lt;/h2&gt;
+
+&lt;p&gt;This works in KaTeX, but the separation of fractions in this environment is not so good.&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+\mathbf{V}_1 \times \mathbf{V}_2 = \begin{vmatrix} \mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\ \frac{\partial X}{\partial u} &amp; \frac{\partial Y}{\partial u} &amp; 0 \\ \frac{\partial X}{\partial v} &amp; \frac{\partial Y}{\partial v} &amp; 0 \end{vmatrix}
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Here&#39;s a workaround: make the fractions smaller with an extra class that targets the spans with &amp;quot;mfrac&amp;quot; class (makes no difference in the MathJax case):&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+\mathbf{V}_1 \times \mathbf{V}_2 = \begin{vmatrix} \mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\ \frac{\partial X}{\partial u} &amp; \frac{\partial Y}{\partial u} &amp; 0 \\ \frac{\partial X}{\partial v} &amp; \frac{\partial Y}{\partial v} &amp; 0 \end{vmatrix}
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;accents&#34;&gt;Accents&lt;/h2&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+\hat{x}\ \vec{x}\ \ddot{x}
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;stretchy-brackets&#34;&gt;Stretchy brackets&lt;/h2&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+\left(\frac{x^2}{y^3}\right)
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;evaluation-at-limits&#34;&gt;Evaluation at limits&lt;/h2&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+\left.\frac{x^3}{3}\right|_0^1
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;case-definitions&#34;&gt;Case definitions&lt;/h2&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+f(n) = \begin{cases} \frac{n}{2}, &amp; \text{if } n\text{ is even} \\ 3n+1, &amp; \text{if } n\text{ is odd} \end{cases}
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;maxwells-equations&#34;&gt;Maxwell&#39;s Equations&lt;/h2&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+\begin{aligned} \nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} &amp; = \frac{4\pi}{c}\vec{\mathbf{j}} \\ \nabla \cdot \vec{\mathbf{E}} &amp; = 4 \pi \rho \\ \nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t} &amp; = \vec{\mathbf{0}} \\ \nabla \cdot \vec{\mathbf{B}} &amp; = 0 \end{aligned}
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;These equations are quite cramped. We can add vertical spacing using (for example) [1em] after each line break (\). as you can see here:&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+\begin{aligned} \nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} &amp; = \frac{4\pi}{c}\vec{\mathbf{j}} \\[1em] \nabla \cdot \vec{\mathbf{E}} &amp; = 4 \pi \rho \\[0.5em] \nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t} &amp; = \vec{\mathbf{0}} \\[1em] \nabla \cdot \vec{\mathbf{B}} &amp; = 0 \end{aligned}
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;statistics&#34;&gt;Statistics&lt;/h2&gt;
+
+&lt;p&gt;Definition of combination:&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+\frac{n!}{k!(n-k)!} = {^n}C_k
+{n \choose k}
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;fractions-on-fractions&#34;&gt;Fractions on fractions&lt;/h2&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+\frac{\frac{1}{x}+\frac{1}{y}}{y-z}
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;nth-root&#34;&gt;n-th root&lt;/h2&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+\sqrt[n]{1+x+x^2+x^3+\ldots}
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;matrices&#34;&gt;Matrices&lt;/h2&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+\begin{pmatrix} a_{11} &amp; a_{12} &amp; a_{13}\\ a_{21} &amp; a_{22} &amp; a_{23}\\ a_{31} &amp; a_{32} &amp; a_{33} \end{pmatrix}
+\begin{bmatrix} 0 &amp; \cdots &amp; 0 \\ \vdots &amp; \ddots &amp; \vdots \\ 0 &amp; \cdots &amp; 0 \end{bmatrix}
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;punctuation&#34;&gt;Punctuation&lt;/h2&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+f(x) = \sqrt{1+x} \quad (x \ge -1)
+f(x) \sim x^2 \quad (x\to\infty)
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Now with punctuation:&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
+f(x) = \sqrt{1+x}, \quad x \ge -1
+f(x) \sim x^2, \quad x\to\infty
+\]&lt;/span&gt;&lt;/p&gt;</description>
       
     </item>
     

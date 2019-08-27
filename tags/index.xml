@@ -5,17 +5,35 @@
     <link>https://www.xianmin.org/hugo-theme-jane/tags/</link>
     <description>Recent content in Tags on Jane - A simple theme for Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 04 Mar 2018 16:01:23 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 04 Mar 2019 16:01:23 +0800</lastBuildDate>
     
 	<atom:link href="https://www.xianmin.org/hugo-theme-jane/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>math</title>
+      <link>https://www.xianmin.org/hugo-theme-jane/tags/math/</link>
+      <pubDate>Mon, 04 Mar 2019 16:01:23 +0800</pubDate>
+      
+      <guid>https://www.xianmin.org/hugo-theme-jane/tags/math/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>preview</title>
       <link>https://www.xianmin.org/hugo-theme-jane/tags/preview/</link>
-      <pubDate>Sun, 04 Mar 2018 16:01:23 +0800</pubDate>
+      <pubDate>Mon, 04 Mar 2019 16:01:23 +0800</pubDate>
       
       <guid>https://www.xianmin.org/hugo-theme-jane/tags/preview/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tag-6</title>
+      <link>https://www.xianmin.org/hugo-theme-jane/tags/tag-6/</link>
+      <pubDate>Mon, 04 Mar 2019 16:01:23 +0800</pubDate>
+      
+      <guid>https://www.xianmin.org/hugo-theme-jane/tags/tag-6/</guid>
       <description></description>
     </item>
     
@@ -25,15 +43,6 @@
       <pubDate>Sun, 04 Mar 2018 16:01:23 +0800</pubDate>
       
       <guid>https://www.xianmin.org/hugo-theme-jane/tags/shortcodes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tag-6</title>
-      <link>https://www.xianmin.org/hugo-theme-jane/tags/tag-6/</link>
-      <pubDate>Sun, 04 Mar 2018 16:01:23 +0800</pubDate>
-      
-      <guid>https://www.xianmin.org/hugo-theme-jane/tags/tag-6/</guid>
       <description></description>
     </item>
     

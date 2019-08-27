@@ -5,7 +5,7 @@
     <link>https://www.xianmin.org/hugo-theme-jane/categories/</link>
     <description>Recent content in Categories on Jane - A simple theme for Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 04 Mar 2018 16:01:23 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 04 Mar 2019 16:01:23 +0800</lastBuildDate>
     
 	<atom:link href="https://www.xianmin.org/hugo-theme-jane/categories/index.xml" rel="self" type="application/rss+xml" />
     
@@ -13,7 +13,7 @@
     <item>
       <title>docs</title>
       <link>https://www.xianmin.org/hugo-theme-jane/categories/docs/</link>
-      <pubDate>Sun, 04 Mar 2018 16:01:23 +0800</pubDate>
+      <pubDate>Mon, 04 Mar 2019 16:01:23 +0800</pubDate>
       
       <guid>https://www.xianmin.org/hugo-theme-jane/categories/docs/</guid>
       <description></description>
@@ -22,9 +22,18 @@
     <item>
       <title>index</title>
       <link>https://www.xianmin.org/hugo-theme-jane/categories/index/</link>
-      <pubDate>Sun, 04 Mar 2018 16:01:23 +0800</pubDate>
+      <pubDate>Mon, 04 Mar 2019 16:01:23 +0800</pubDate>
       
       <guid>https://www.xianmin.org/hugo-theme-jane/categories/index/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>math</title>
+      <link>https://www.xianmin.org/hugo-theme-jane/categories/math/</link>
+      <pubDate>Mon, 04 Mar 2019 16:01:23 +0800</pubDate>
+      
+      <guid>https://www.xianmin.org/hugo-theme-jane/categories/math/</guid>
       <description></description>
     </item>
     
