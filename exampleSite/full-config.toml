@@ -147,6 +147,18 @@ defaultContentLanguage = "en"           # Default language to use
   [params.livere]          	#LiveRe comment. see https://www.livere.com/
 	  uid = ""
 
+  # Valine.
+  # You can get your appid and appkey from https://leancloud.cn
+  # more info please open https://valine.js.org
+  [params.valine]
+    enable = false
+    appId = ''
+    appKey = ''
+    notify = false  # If you are using valine-admin(https://github.com/DesertsP/Valine-Admin) to notify users, do NOT enable this.
+    verify = false # Verification code
+    avatar = 'mm' 
+    placeholder = ''
+
   [params.search.google]    # google custom search, see https://cse.google.com
     enable = false
     id = "002186711602136249422:q1gkomof_em"
