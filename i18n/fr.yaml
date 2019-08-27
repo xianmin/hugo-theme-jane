@@ -99,5 +99,8 @@
 - id: read_en
   translation: Read in english
 
+- id: read_de
+  translation: Lese in Deutsch
+
 - id: language
   translation: Langage
