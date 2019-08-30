@@ -250,6 +250,9 @@ models:
         name: title
         label: Blog Title
       - type: string
+        name: description
+        label: Description
+      - type: string
         name: author
         label: Blog Author
       - type: datetime
