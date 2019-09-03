@@ -28,6 +28,7 @@ This theme focuses on improving the reading experience.
 - [Jack Baty's Blog](https://www.baty.net/) - Thousands of posts on the site powered by Hugo & Theme Jane.
 - [虞双齐爱折腾](https://yushuangqi.com/) - @ysqi 个人技术博客.
 - [제이든의 프로그래밍 이야기](https://jayden-lee.github.io/) - Personal Programming blog in Korean by @jayden-lee
+- [Yanlong notes](https://notes.yanlong.me/) - The blog of Yanlong @heyanlong
 - **[and many more...](https://github.com/xianmin/hugo-theme-jane/blob/master/SITES.md)**
 
 
