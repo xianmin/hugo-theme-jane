@@ -3,11 +3,11 @@
 
 ## hugo-theme-jane
 
-Jane is a readable theme for Hugo. It's a fork of the [hugo-theme-even](https://github.com/olOwOlo/hugo-theme-even) and made a lot of changes.
+Jane is a readable theme for Hugo. It's a fork of [hugo-theme-even](https://github.com/olOwOlo/hugo-theme-even) with a lot of additional changes.
 
 [Demo](https://xianmin.github.io/hugo-theme-jane/) | [中文说明](https://github.com/xianmin/hugo-theme-jane/blob/master/README-zh.md)
 
-This theme focuses on improving reading experience.
+This theme focuses on improving the reading experience.
 
 **Other Key features:**
 
@@ -23,7 +23,7 @@ This theme focuses on improving reading experience.
 - Search Optimization
 
 
-## Who use Hugo-theme-Jane
+## Who uses Hugo-theme-Jane
 
 - [Jack Baty's Blog](https://www.baty.net/) - Thousands of posts on the site powered by Hugo & Theme Jane.
 - [虞双齐爱折腾](https://yushuangqi.com/) - @ysqi 个人技术博客.
@@ -36,20 +36,20 @@ Are you using **hugo-theme-jane**? [Add your site](https://github.com/xianmin/hu
 
 ## Quick Start
 
-**Note:**  This tutorial assumes that you use [Hugo][] for **the first time** . [Hugo][] is one of the most popular open-source static site generators. You can check the [Hugo Official Docs][] for more help.
+**Note:**  This tutorial assumes that you are using [Hugo][] for **the first time** . [Hugo][] is one of the most popular open-source static site generators. You can check the [Hugo Official Docs][] for more help.
 
 [Hugo]: https://gohugo.io/
 [Hugo Official Docs]: https://gohugo.io/getting-started/
 
 
 
-### 1. Quick Install Hugo
+### 1. Install Hugo
 
 Download the appropriate version for your platform from [Hugo Releases](https://github.com/gohugoio/hugo/releases). Once downloaded, the binary can be run from anywhere. Ideally, you should install it somewhere in your `PATH` for easy use. `/usr/local/bin` is the most probable location.
 
 
 
-### 2. Quick Create a New Site
+### 2. Create a New Site
 
 ```bash
 hugo new site myBlog
@@ -59,7 +59,7 @@ The above will create a new Hugo site in a folder named `myBlog`.
 
 
 
-### 3. Quick Use Hugo-Theme-Jane
+### 3. Use Hugo-Theme-Jane
 
 Clone this repository into `themes` folder:
 
@@ -86,15 +86,15 @@ Take a look at the example site:
 hugo server
 ```
 
-Open http://localhost:1313/ , you will see the example site.
+Open http://localhost:1313/ , you will see your site running with the example content.
 
 
 
-### 4. Start Blog
+### 4. Start a Blog
 
-The default config file `config.toml` in your site root directory. Customize it.
+The default config file `config.toml` is located in your site root directory. You can customize it to match the details of your site.  Documentation about configuring Hugo can be found in the [Official Documentation](https://gohugo.io/getting-started/configuration/)
 
-The default content files in the `./content/post` directory.
+The default content files are located in the `./content/post` directory.
 
 
 
@@ -113,9 +113,9 @@ If you have extra time or want to know more about [Hugo][] , check out the awoso
 Take a look in the [exampleSite](https://github.com/xianmin/hugo-theme-jane/tree/master/exampleSite) folder.
 
 This directory contains an example config file and the content for the demo.
-It serves as an example setup for your documentation.
+It serves as an example setup for you to configure to your liking.
 
-Copy the `config.toml` in the root directory of your website. Overwrite the existing config file if necessary.
+Copy the `config.toml` to the root directory of your website. Overwrite the existing config file if necessary.
 
 
 
@@ -180,7 +180,7 @@ There are many ways to contribute to the Jane theme:
 - reporting issues
 - providing new translations
 - creating suggestions
-- Correct inappropriate English expression (ok, my English is not good)
+- correct inappropriate English expression (ok, my English is not good)
 
 
 ## Contributors
@@ -200,3 +200,9 @@ This project follows the [all-contributors](https://github.com/kentcdodds/all-co
 ## License
 
 Hugo-theme-jane is licensed under the MIT license. Check the [LICENSE](LICENSE.md) file for details.
+
+# Stackbit
+
+This theme is ready to import into Stackbit. This theme can be deployed to Netlify and you can connect any headless CMS including Forestry, NetlifyCMS, DatoCMS or Contentful. 
+
+[![Create with Stackbit](https://assets.stackbit.com/badge/create-with-stackbit.svg)](https://app.stackbit.com/create?theme=https://github.com/xianmin/hugo-theme-jane)

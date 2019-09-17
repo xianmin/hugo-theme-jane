@@ -15,7 +15,7 @@ Documentation and licence at https://github.com/liwenyip/hugo-easy-gallery/
     <div class="img"{{ if .Parent }} style="background-image: url('{{ print $thumb }}');"{{ end }}{{ with .Get "size" }} data-size="{{.}}"{{ end }}>
       <img itemprop="thumbnail" src="{{ $thumb }}" {{ with .Get "alt" | default (.Get "caption") }}alt="{{.}}"{{ end }}/><!-- <img> hidden if in .gallery -->
     </div>
-    {{ with .Get "link" | default (.Get "src") }}<a href="{{.}}" itemprop="contentUrl"></a>{{ end }}
+    {{ with .Get "link" | default (.Get "src") }}<a href="{{.}}"{{ with $.Get "target" }} target="{{.}}"{{ end }}{{ with $.Get "rel" }} rel="{{.}}"{{ end }} itemprop="contentUrl"></a>{{ end }}
     {{- if or (or (.Get "title") (.Get "caption")) (.Get "attr")}}
       <figcaption>
         {{- with .Get "title" }}<h4>{{.}}</h4>{{ end }}

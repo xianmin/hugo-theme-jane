@@ -105,6 +105,9 @@
 - id: read_fr
   translation: Lire en français
 
+- id: read_de
+  translation: Lese in Deutsch
+
 - id: language
   translation: 語言
 

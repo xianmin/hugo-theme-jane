@@ -1,5 +1,5 @@
 - id: archive
-  translation: Archive
+  translation: Archiv
 
 - id: tags
   translation: Tags
@@ -8,35 +8,35 @@
   translation: "Tag: "
 
 - id: categories
-  translation: Categories
+  translation: Kategorie
 
 - id: category
-  translation: "Category: "
+  translation: "Kategorie: "
 
 - id: authors
-  translation: Authors
+  translation: Autoren
 
 - id: author_item
-  translation: "Author: "
+  translation: "Autor: "
 
 # posts
 - id: prev
-  translation: Prev
+  translation: Vorherige
 
 - id: next
-  translation: Next
+  translation: Nächste
 
 - id: prev_post
-  translation: Prev
+  translation: Vorheriger Artikel
 
 - id: next_post
-  translation: Next
+  translation: Nächster Artikel
 
 - id: toc
-  translation: Table of Contents
+  translation: Inhaltsverzeichnis
 
 - id: readmore
-  translation: Read more
+  translation: Weiterlesen
 
 - id: reward
   translation: Reward
@@ -48,44 +48,44 @@
   translation: Wechat
 
 - id: seeMarkDown
-  translation: The Markdown version »
+  translation: Markdown Version »
 
 - id: loadDisqus
-  translation: Show Disqus Comments
+  translation: Zeige Kommentare via Disqus
 
 # posts.header
 - id: wordCount
-  translation: "{{.Count}} words"
+  translation: "{{.Count}} Wörter"
 
 - id: readingTime
-  translation: "{{.Count}} min read"
+  translation: "{{.Count}} Minuten Lesezeit"
 
 # copyright
 - id: author
-  translation: Author
+  translation: Autor
 
 - id: lastMod
-  translation: LastMod
+  translation: Bearbeitet
 
 - id: markdown
   translation: Markdown
 
 - id: license
-  translation: License
+  translation: Lizenz
 
 # counter
 - id: counter_archives
-  translation: "{{.Count}} posts In Total"
+  translation: "{{.Count}} Artikel gesamt"
 
 - id: counter_tagcloud
-  translation: "{{.Count}} Tags In Total"
+  translation: "{{.Count}} Tags gesamt"
 
 - id: counter_categories
-  translation: "{{.Count}} Categories In Total"
+  translation: "{{.Count}} Kategorien gesamt"
 
 # other
 - id: morePost
-  translation: "More Post >>>"
+  translation: "Weiterlesen >>>"
 
 - id: read_ru
   translation: Читать на русском
@@ -105,11 +105,8 @@
 - id: read_fr
   translation: Lire en français
 
-- id: read_de
-  translation: Lese in Deutsch
-
 - id: language
-  translation: Language
+  translation: Sprache
 
 - id: comments
-  translation: Comments
+  translation: Kommentare

@@ -70,6 +70,7 @@ defaultContentLanguage = "en"           # Default language to use
   since = "2017"            # Site creation time          # 站点建立时间
   homeFullContent = false   # if false, show post summaries on home page. Othewise show full content.
   rssFullContent = true     # if false, Rss feed instead of the summary
+  mainSections = ["post"]
 
   # site info (optional)                                  # 站点信息（可选，不需要的可以直接注释掉）
   logoTitle = "Jane"        # default: the title value    # 默认值: 上面设置的title值
@@ -100,6 +101,7 @@ defaultContentLanguage = "en"           # Default language to use
   photoswipe = true         # see https://github.com/dimsemenov/PhotoSwipe            # 是否启用PhotoSwipe（图片可点击）
   bootcdn = false           # In china. @Deprecated: use [params.publicCDN]             # 是否使用bootcdn(@Deprecated: 请使用[params.publicCDN])
   mathjax = false           # see https://www.mathjax.org/                              # 是否使用mathjax（数学公式）
+  katex = false             # see https://github.com/KaTeX/KaTeX
   contentCopyright = '<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>'
 
   changyanAppid = ""        # Changyan app id             # 畅言
@@ -146,6 +148,18 @@ defaultContentLanguage = "en"           # Default language to use
   [params.livere]          	#LiveRe comment. see https://www.livere.com/
 	  uid = ""
 
+  # Valine.
+  # You can get your appid and appkey from https://leancloud.cn
+  # more info please open https://valine.js.org
+  [params.valine]
+    enable = false
+    appId = ''
+    appKey = ''
+    notify = false  # If you are using valine-admin(https://github.com/DesertsP/Valine-Admin) to notify users, do NOT enable this.
+    verify = false # Verification code
+    avatar = 'mm'
+    placeholder = ''
+
   [params.search.google]    # google custom search, see https://cse.google.com
     enable = false
     id = "002186711602136249422:q1gkomof_em"
@@ -191,6 +205,7 @@ defaultContentLanguage = "en"           # Default language to use
     o-goodreads = "http://localhost:1313"
     p-coding = "http://localhost:1313"
     q-bilibili = "http://localhost:1313"
+    r-codeforces = "http://localhost:1313"
 
 # jsonfeed support
 # more information: https://github.com/xianmin/hugo-theme-jane/issues/23

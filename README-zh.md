@@ -30,6 +30,7 @@ Jane 是一个专注于阅读体验的 Hugo 主题。最早的版本基于 [hugo
 - [虞双齐爱折腾](https://yushuangqi.com/) - @ysqi 个人技术博客.
 - [茶歇驿站](https://maiyang.me/) - Go 爱好者，开源爱好者，Go 夜读发起人 @yangwenmai.
 - [Time](https://ifttl.com/) - 个人博客
+- [碎裂之梦](https://h-cheung.gitlab.io/) - 计院学生，开源爱好者，ACM新手
 - Waiting to add more...
 
 
@@ -189,3 +190,8 @@ npm run dev
 Hugo-theme-jane is licensed under the MIT license. Check the [LICENSE](LICENSE.md) file for details.
 
 
+# Stackbit
+
+This theme is ready to import into Stackbit. This theme can be deployed to Netlify and you can connect any headless CMS including Forestry, NetlifyCMS, DatoCMS or Contentful. 
+
+[![Create with Stackbit](https://assets.stackbit.com/badge/create-with-stackbit.svg)](https://app.stackbit.com/create?theme=https://github.com/xianmin/hugo-theme-jane)
