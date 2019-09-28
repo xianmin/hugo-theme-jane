@@ -10,4 +10,5 @@
 - [Potioneer's Essays](https://william-yeh.net/) - Personal blog on software development in traditional Chinese by @William-Yeh
 - [联盟少侠博客](https://shaoxia.xyz/) - 一个日记博客.Simple Blog, Simple Days。
 - [贺鑫杂技](https://www.hexin.me/) -  Personal Blog @Maczam
+- [beihai](https://www.wingsxdu.com/) -  Gopher @beihai,机械专业的 IT 学生
 - [Thinking,Writing And Waiting](https://blog.fallleaf.net) - A personal blog about telecom, life and guitar
