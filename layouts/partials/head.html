@@ -56,9 +56,7 @@
 
 <!-- Permalink & RSSlink -->
 <link rel="canonical" href="{{ .Permalink }}" />
-{{ if .OutputFormats.Get "RSS" -}}
-<link href="{{ .OutputFormats.Get "RSS" }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
-{{ end -}}
+{{ with .OutputFormats.Get "RSS" }}<link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" />{{ end }}
 
 {{ if .OutputFormats.Get "jsonfeed" }}
 <link
