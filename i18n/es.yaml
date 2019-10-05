@@ -2,10 +2,10 @@
   translation: Archivo
 
 - id: tags
-  translation: Tags
+  translation: Etiquetas
 
 - id: tag
-  translation: "Tag: "
+  translation: "Etiqueta: "
 
 - id: categories
   translation: Categorías
@@ -30,7 +30,7 @@
   translation: Tabla de Contenido
 
 - id: readmore
-  translation: Leer mas
+  translation: Leer más
 
 - id: reward
   translation: Reward
@@ -59,7 +59,7 @@
   translation: Autor
 
 - id: lastMod
-  translation: Ultima Modificación
+  translation: Última Modificación
 
 - id: markdown
   translation: Markdown
@@ -69,17 +69,17 @@
 
 # counter
 - id: counter_archives
-  translation: "{{.Count}} Posts en Total"
+  translation: "{{.Count}} Entradas en Total"
 
 - id: counter_tagcloud
-  translation: "{{.Count}} Tags en Total"
+  translation: "{{.Count}} Etiquetas en Total"
 
 - id: counter_categories
   translation: "{{.Count}} Categorías en Total"
 
 # other
 - id: morePost
-  translation: "Mas Posts >>>"
+  translation: "Más Entradas >>>"
 
 - id: read_en
   translation: Read in English
