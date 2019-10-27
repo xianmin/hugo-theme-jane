@@ -214,6 +214,9 @@ models:
               - type: string
                 name: r-codeforces
                 label: Codeforces
+              - type: string
+                name: s-mastodon
+                label: Mastodon
   basicpage:
     type: page
     label: Basic page

@@ -97,3 +97,4 @@ defaultContentLanguage = "en"           # Default language to use
     p-coding = "http://localhost:1313"
     q-bilibili = "http://localhost:1313"
     r-codeforces = "http://localhost:1313"
+    s-mastodon = "http://localhost:1313"
