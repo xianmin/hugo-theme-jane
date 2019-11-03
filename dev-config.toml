@@ -211,3 +211,4 @@ defaultContentLanguage = "en"  # Default language to use (if you setup multiling
     p-coding = "http://en.xianmin.org/hugo-theme-jane/"
     q-bilibili = "http://en.xianmin.org/hugo-theme-jane/"
     r-codeforces = "http://en.xianmin.org/hugo-theme-jane/"
+    s-mastodon = "http://en.xianmin.org/hugo-theme-jane/"
