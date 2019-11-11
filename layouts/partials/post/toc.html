@@ -1,6 +1,6 @@
 {{ if or .Params.toc (and .Site.Params.toc (ne .Params.toc false)) }}
 <div class="post-toc" id="post-toc">
-  <h2 class="post-toc-title">{{ i18n "toc" }}</h2>
+  <h2 class="post-toc-title">What's On This Page</h2>
   <div class="post-toc-content">
     {{.TableOfContents}}
   </div>

@@ -4,7 +4,7 @@
     font-size: 1em;
     max-width: 9em;
     border: 0;
-    font-weight: normal;
+    font-weight: 700;
     padding: 0.05em 0.5em;
     line-height: 1em;
   }
@@ -14,11 +14,12 @@
     padding: 0.5em 2em 0.5em 0.5em;
     margin-top: -1.5em;
     line-height: 1.3em;
+    font-size: 0.9em;
 
     /* Hugo Table of Contents have extra dot in front */
     ul {
       padding-left: 20px;
-      list-style-type: none;
+      list-style-type: circle;
 
       ul {
         list-style: disc;
@@ -28,12 +29,24 @@
         }
 
         li > a {
-          color: #139;
+          color: #364149;
         }
 
         li > a:hover{
-          color: #900;
+          text-decoration: underline
         }
+      }
+
+      li {
+        margin: 7px 0;
+      }
+
+      li > a {
+        color: #364149;
+      }
+
+      li > a:hover{
+        text-decoration: underline
       }
     }
   }

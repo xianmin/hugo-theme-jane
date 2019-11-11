@@ -4,26 +4,14 @@
 
 <div class="copyright">
   <span class="power-by">
-    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+    Powered by <a class="hexo-link" href="https://gohugo.io" target="_blank">Hugo</a>
   </span>
   <span class="division">|</span>
   <span class="theme-info">
-    Theme - <a class="theme-link" href="https://github.com/xianmin/hugo-theme-jane">Jane</a>
+    Theme based on <a class="theme-link" href="https://github.com/xianmin/hugo-theme-jane" target="_blank">Jane</a>
   </span>
 
   <span class="copyright-year">
-    {{- $current := now.Format "2006" }}
-    &copy;
-    {{ if ne .Site.Params.since $current }}
-      {{ .Site.Params.since }} -
-    {{ end }}
-    {{- $current }}
-    <span class="heart">
-      {{/* icon heart */}}
-      <i class="iconfont">
-        {{ partial "svg/heart.svg" }}
-      </i>
-    </span>
     {{- if or .Site.Copyright .Site.Author.name -}}
       <span class="author">
         {{if .Site.Copyright }}{{ .Site.Copyright | safeHTML }}
@@ -31,6 +19,9 @@
         {{ end }}
       </span>
     {{- end -}}
+    {{- $current := now.Format "2006" }}
+    &copy;
+    {{- $current }}
   </span>
 
   <!-- Counter busuanzi -->

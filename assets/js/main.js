@@ -215,6 +215,15 @@ function mapLang(name) {
   }[name] || name;
 }
 
+function smoothScroll() {
+  $(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
+    $('body,html').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 500);
+  });
+}
+
 
 /* main */
 $(document).ready(function () {
@@ -223,6 +232,7 @@ $(document).ready(function () {
   toc();
   headerAnchor();
   fnTooltip();
+  smoothScroll();
 });
 
 highlight();
