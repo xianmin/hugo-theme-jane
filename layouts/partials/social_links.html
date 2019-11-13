@@ -14,7 +14,7 @@
 {{- end }}
 
 {{/* RSS icon  */}}
-{{ with .Site.GetPage "home" -}}
+{{ with .Site.GetPage "post" -}}
   {{- with .OutputFormats.Get "RSS" -}}
   <a href="{{ .Permalink }}" rel="noopener {{ .Rel }}" type="{{ .MediaType.Type }}"
     class="iconfont" title="rss" target="_blank">
