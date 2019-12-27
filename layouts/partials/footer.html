@@ -42,7 +42,7 @@
 
   {{ if .Site.Params.customFooter }}
     <span>
-      {{ .Site.Params.customFooter }}
+      {{ .Site.Params.customFooter | safeHTML }}
     </span>
   {{ end }}
 </div>
