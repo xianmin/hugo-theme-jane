@@ -65,7 +65,7 @@ hugo new site myBlog
 
 ```bash
 cd myBlog
-git clone https://github.com/xianmin/hugo-theme-jane.git --depth=1 themes/jane
+git clone git@github.com:gears233/hugo-theme-jane-modified.git --depth=1 themes/jane
 ```
 
 复制一些示例文本：
@@ -192,6 +192,6 @@ Hugo-theme-jane is licensed under the MIT license. Check the [LICENSE](LICENSE.m
 
 # Stackbit
 
-This theme is ready to import into Stackbit. This theme can be deployed to Netlify and you can connect any headless CMS including Forestry, NetlifyCMS, DatoCMS or Contentful. 
+This theme is ready to import into Stackbit. This theme can be deployed to Netlify and you can connect any headless CMS including Forestry, NetlifyCMS, DatoCMS or Contentful.
 
 [![Create with Stackbit](https://assets.stackbit.com/badge/create-with-stackbit.svg)](https://app.stackbit.com/create?theme=https://github.com/xianmin/hugo-theme-jane)
