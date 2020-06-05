@@ -65,19 +65,19 @@ Clone this repository into `themes` folder:
 
 ```bash
 cd myBlog
-git clone git@github.com:gears233/hugo-theme-jane-modified.git --depth=1 themes/jane
+git clone git@github.com:gears233/hugo-theme-jane-modified.git --depth=1 themes/jane-modified
 ```
 
 Copy the example site content:
 
 ```bash
-cp -r themes/jane/exampleSite/content ./
+cp -r themes/jane-modified/exampleSite/content ./
 ```
 
 Copy the default site config:
 
 ```bash
-cp themes/jane/exampleSite/config.toml ./
+cp themes/jane-modified/exampleSite/config.toml ./
 ```
 
 Take a look at the example site:

@@ -65,19 +65,19 @@ hugo new site myBlog
 
 ```bash
 cd myBlog
-git clone git@github.com:gears233/hugo-theme-jane-modified.git --depth=1 themes/jane
+git clone git@github.com:gears233/hugo-theme-jane-modified.git --depth=1 themes/jane-modified
 ```
 
 复制一些示例文本：
 
 ```bash
-cp -r themes/jane/exampleSite/content ./
+cp -r themes/jane-modified/exampleSite/content ./
 ```
 
 复制默认的站点设置：
 
 ```bash
-cp themes/jane/exampleSite/config.toml ./
+cp themes/jane-modified/exampleSite/config.toml ./
 ```
 
 启动 hugo server ：
