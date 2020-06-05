@@ -1,3 +1,11 @@
+**个人博客自用主题，fork 自 hugo-theme-jane 主题并作了一定的个人化修改。**
+
+主要修改的内容：
+- 增加了社交图标-telegram
+- 待更新...
+
+**以下内容为原 jane 主题相关特性的介绍，我仅改动了原文【如何使用】章节个别命令行**
+
 ![jane-preview](https://raw.githubusercontent.com/xianmin/hugo-theme-jane/master/images/preview.png)
 
 
