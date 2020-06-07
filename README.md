@@ -5,7 +5,7 @@
 
 Jane is a readable theme for Hugo. It's a fork of [hugo-theme-even](https://github.com/olOwOlo/hugo-theme-even) with a lot of additional changes.
 
-[Demo](https://xianmin.github.io/hugo-theme-jane/) | [中文说明](https://github.com/xianmin/hugo-theme-jane/blob/master/README-zh.md)
+[Demo](https://xianmin.github.io/hugo-theme-jane/) | [中文说明](https://github.com/gears233/hugo-theme-jane-modified/blob/master/README-zh.md)
 
 This theme focuses on improving the reading experience.
 
