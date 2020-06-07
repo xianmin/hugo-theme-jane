@@ -1,0 +1,31 @@
+
+/* 友链样式 */
+.blogroll {
+    padding: 1rem 0;
+    border: 2px solid transparent;
+    border-bottom: 1px dashed var(--color-contrast-low);
+    display: flex;
+}
+.blogroll .friend {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.blogroll .name {
+    font-weight: bold;
+    margin-bottom: auto;
+    margin-top: 15px;
+}
+.blogroll .excerpt {
+    font-size:14px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.blogroll .avatar {
+    width: 80px;
+    height: 80px;
+    margin: 0;
+    margin-right: 1em;;
+    border-radius: 50%;
+}

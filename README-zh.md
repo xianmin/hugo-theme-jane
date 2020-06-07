@@ -1,3 +1,11 @@
+**个人博客自用主题，fork 自 hugo-theme-jane 主题并作了一定的个人化修改。**
+
+主要修改的内容：
+- 增加了社交图标-telegram
+- 新增一种友链样式，请参考 data/blogroll.toml 进行设置
+
+**以下内容为原 jane 主题相关特性的介绍，我仅改动了原文【如何使用】章节个别命令行**
+
 ![jane-preview](https://raw.githubusercontent.com/xianmin/hugo-theme-jane/master/images/preview.png)
 
 
@@ -65,19 +73,19 @@ hugo new site myBlog
 
 ```bash
 cd myBlog
-git clone https://github.com/xianmin/hugo-theme-jane.git --depth=1 themes/jane
+git clone git@github.com:gears233/hugo-theme-jane-modified.git --depth=1 themes/jane-modified
 ```
 
 复制一些示例文本：
 
 ```bash
-cp -r themes/jane/exampleSite/content ./
+cp -r themes/jane-modified/exampleSite/content ./
 ```
 
 复制默认的站点设置：
 
 ```bash
-cp themes/jane/exampleSite/config.toml ./
+cp themes/jane-modified/exampleSite/config.toml ./
 ```
 
 启动 hugo server ：
@@ -192,6 +200,6 @@ Hugo-theme-jane is licensed under the MIT license. Check the [LICENSE](LICENSE.m
 
 # Stackbit
 
-This theme is ready to import into Stackbit. This theme can be deployed to Netlify and you can connect any headless CMS including Forestry, NetlifyCMS, DatoCMS or Contentful. 
+This theme is ready to import into Stackbit. This theme can be deployed to Netlify and you can connect any headless CMS including Forestry, NetlifyCMS, DatoCMS or Contentful.
 
 [![Create with Stackbit](https://assets.stackbit.com/badge/create-with-stackbit.svg)](https://app.stackbit.com/create?theme=https://github.com/xianmin/hugo-theme-jane)

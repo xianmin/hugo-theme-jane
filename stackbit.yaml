@@ -54,7 +54,7 @@ models:
       - type: object
         name: languages
         label: Languages
-        fields: 
+        fields:
           - type: object
             name: en
             label: English
@@ -72,7 +72,7 @@ models:
       - type: object
         name: sitemap
         label: Sitemap
-        fields: 
+        fields:
           - type: string
             name: changefreq
             label: Change frequency
@@ -125,7 +125,7 @@ models:
             name: logoTitle
             label: Logo Title
           - type: list
-            name: keywords 
+            name: keywords
             label: Keywords
             items:
               type: string
@@ -217,11 +217,14 @@ models:
               - type: string
                 name: s-mastodon
                 label: Mastodon
+              - type: string
+                name: t-telegram
+                label: telegram
   basicpage:
     type: page
     label: Basic page
     match: "*.md"
-    fields: 
+    fields:
       - type: string
         name: title
         label: Title
@@ -248,7 +251,7 @@ models:
     type: page
     label: Blog posts
     folder: post
-    fields: 
+    fields:
       - type: string
         name: title
         label: Blog Title
@@ -314,7 +317,7 @@ models:
           - type: object
             name: main
             label: Main
-            fields: 
+            fields:
               - type: string
                 name: parent
                 label: Parent Menu
@@ -325,7 +328,7 @@ models:
     type: data
     label: Authors Data
     file: data/authors/ted.toml
-    fields: 
+    fields:
       - type: string
         name: description
         label: Description
@@ -351,7 +354,7 @@ models:
             label: Image Height
 
 
-  
+
 
 
 

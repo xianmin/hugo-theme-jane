@@ -11,12 +11,16 @@
     </div>
   </header>
 
+
+  <!-- blogroll -->
+  {{ partial "blogroll.html" . }}
+
   <!-- TOC -->
   {{ partial "post/toc.html" . }}
 
   <!-- Content -->
   <div class="post-content">
-      {{ .Content }}
+    {{ .Content }}
   </div>
 
   <!-- Copyright -->

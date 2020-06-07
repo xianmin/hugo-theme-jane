@@ -1,0 +1,15 @@
+{{ if .Params.blogroll }}
+{{ range .Site.Data.blogroll }}
+{{ range sort . "weight" }}
+<a href="{{ .url }}" target="_blank">
+    <div class="blogroll">
+        <img class="avatar" src="{{ .avatar }}" />
+        <div class="friend">
+            <div class="name">{{ .name }}</div>
+            <div class="excerpt">{{ .description }}</div>
+        </div>
+    </div>
+</a>
+{{ end }}
+{{ end }}
+{{ end }}

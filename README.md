@@ -5,7 +5,7 @@
 
 Jane is a readable theme for Hugo. It's a fork of [hugo-theme-even](https://github.com/olOwOlo/hugo-theme-even) with a lot of additional changes.
 
-[Demo](https://xianmin.github.io/hugo-theme-jane/) | [中文说明](https://github.com/xianmin/hugo-theme-jane/blob/master/README-zh.md)
+[Demo](https://xianmin.github.io/hugo-theme-jane/) | [中文说明](https://github.com/gears233/hugo-theme-jane-modified/blob/master/README-zh.md)
 
 This theme focuses on improving the reading experience.
 
@@ -65,19 +65,19 @@ Clone this repository into `themes` folder:
 
 ```bash
 cd myBlog
-git clone https://github.com/xianmin/hugo-theme-jane.git --depth=1 themes/jane
+git clone git@github.com:gears233/hugo-theme-jane-modified.git --depth=1 themes/jane-modified
 ```
 
 Copy the example site content:
 
 ```bash
-cp -r themes/jane/exampleSite/content ./
+cp -r themes/jane-modified/exampleSite/content ./
 ```
 
 Copy the default site config:
 
 ```bash
-cp themes/jane/exampleSite/config.toml ./
+cp themes/jane-modified/exampleSite/config.toml ./
 ```
 
 Take a look at the example site:
@@ -203,6 +203,6 @@ Hugo-theme-jane is licensed under the MIT license. Check the [LICENSE](LICENSE.m
 
 # Stackbit
 
-This theme is ready to import into Stackbit. This theme can be deployed to Netlify and you can connect any headless CMS including Forestry, NetlifyCMS, DatoCMS or Contentful. 
+This theme is ready to import into Stackbit. This theme can be deployed to Netlify and you can connect any headless CMS including Forestry, NetlifyCMS, DatoCMS or Contentful.
 
 [![Create with Stackbit](https://assets.stackbit.com/badge/create-with-stackbit.svg)](https://app.stackbit.com/create?theme=https://github.com/xianmin/hugo-theme-jane)
