@@ -230,3 +230,11 @@ defaultContentLanguage = "en"           # Default language to use
 # [languages.zh-cn]
 #   title = "Jane —— 一个简洁的 Hugo 主题"
 #   weight = 2
+
+
+# more information https://gohugo.io/getting-started/configuration-markup/#goldmark
+[markup]
+  defaultMarkdownHandler = "goldmark"  # blackfriday or goldmark
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

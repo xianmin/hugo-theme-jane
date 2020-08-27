@@ -3,5 +3,5 @@
     {{ with .Get 0}}{{.}}
     {{else}}Click to expand{{ end }}
   </summary>
-  {{.Inner}}
+  {{ .Inner | markdownify }}
 </details>

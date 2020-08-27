@@ -2,7 +2,7 @@
 // Shortcode Notice
 // ==============================
 
-.shortcode-notice p {
+.shortcode-notice .notice-content {
   padding: 0.6em 1em;
   display: block;
   font-size: 1em;
@@ -23,7 +23,7 @@
   background-color: #6AB0DE;
 }
 
-.shortcode-notice.note p {
+.shortcode-notice.note .notice-content {
   background: #E7F2FA;
 }
 
@@ -32,7 +32,7 @@
   background-color: rgba(92, 184, 92, 0.8);
 }
 
-.shortcode-notice.tip p {
+.shortcode-notice.tip .notice-content {
   background: #E6F9E6;
 }
 
@@ -41,7 +41,7 @@
   background-color: #F0B37E;
 }
 
-.shortcode-notice.info p {
+.shortcode-notice.info .notice-content {
   background: #FFF2DB;
 }
 
@@ -50,6 +50,6 @@
   background-color: rgba(217, 83, 79, 0.8);
 }
 
-.shortcode-notice.warning p {
+.shortcode-notice.warning .notice-content {
   background: #FAE2E2;
 }
