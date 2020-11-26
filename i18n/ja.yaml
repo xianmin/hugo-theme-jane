@@ -1,0 +1,115 @@
+- id: archive
+  translation: アーカイブ
+
+- id: tags
+  translation: タグ
+
+- id: tag
+  translation: "タグ: "
+
+- id: categories
+  translation: カテゴリー
+
+- id: category
+  translation: "カテゴリー: "
+
+- id: authors
+  translation: 著者
+
+- id: author_item
+  translation: "著者: "
+
+# posts
+- id: prev
+  translation: 前へ
+
+- id: next
+  translation: 次へ
+
+- id: prev_post
+  translation: 前へ
+
+- id: next_post
+  translation: 次へ
+
+- id: toc
+  translation: 目次
+
+- id: readmore
+  translation: 続きを読む
+
+- id: reward
+  translation: 支援
+
+- id: rewardAlipay
+  translation: Alipay
+
+- id: rewardWechat
+  translation: Wechat
+
+- id: seeMarkDown
+  translation: Markdown版 »
+
+- id: loadDisqus
+  translation: Disqusコメントを見る
+
+# posts.header
+- id: wordCount
+  translation: "{{.Count}} 語"
+
+- id: readingTime
+  translation: "{{.Count}} 分程"
+
+# copyright
+- id: author
+  translation: 著者
+
+- id: lastMod
+  translation: 最終更新
+
+- id: markdown
+  translation: Markdown
+
+- id: license
+  translation: License
+
+# counter
+- id: counter_archives
+  translation: "全 {{.Count}} 件の投稿"
+
+- id: counter_tagcloud
+  translation: "全 {{.Count}} 件のタグ"
+
+- id: counter_categories
+  translation: "全 {{.Count}} 件のカテゴリー"
+
+# other
+- id: morePost
+  translation: "更に読む >>>"
+
+- id: read_ru
+  translation: Читать на русском
+
+- id: read_es
+  translation: Leer en español
+
+- id: read_zh-cn
+  translation: 中文阅读
+
+- id: read_zh-tw
+  translation: 中文閱讀
+
+- id: read_pt
+  translation: Leia em português
+
+- id: read_fr
+  translation: Lire en français
+
+- id: read_de
+  translation: Lese in Deutsch
+
+- id: language
+  translation: 言語
+
+- id: comments
+  translation: コメント
