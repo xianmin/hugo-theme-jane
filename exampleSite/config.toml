@@ -98,3 +98,5 @@ defaultContentLanguage = "en"           # Default language to use
     q-bilibili = "http://localhost:1313"
     r-codeforces = "http://localhost:1313"
     s-mastodon = "http://localhost:1313"
+    t-youtube = "http://localhost:1313"
+    u-twitch = "http://localhost:1313"
