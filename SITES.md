@@ -12,3 +12,4 @@
 - [贺鑫杂技](https://www.hexin.me/) -  Personal Blog @Maczam
 - [Thinking,Writing And Waiting](https://blog.fallleaf.net) - A personal blog about telecom, life and guitar
 - [beihai](https://www.wingsxdu.com/) -  Gopher @beihai,机械专业的 IT 学生
+- [KelvinZhao 的个人有志](https://kelvinzhao.me/) -  一个40+「初学者」大叔的个人博客
