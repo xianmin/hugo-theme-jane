@@ -48,7 +48,7 @@ defaultContentLanguage = "en"           # Default language to use
   name = "Archives"
   weight = 20
   identifier = "archives"
-  url = "/post/"
+  url = "/posts/"
 [[menu.main]]
   name = "Tags"
   weight = 30
