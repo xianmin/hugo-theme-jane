@@ -88,10 +88,10 @@
   translation: Читать на русском
 
 - id: read_zh-cn
-  translation: 中文阅读
+  translation: 使用简体中文阅读
 
 - id: read_zh-tw
-  translation: 中文閱讀
+  translation: 使用傳統中文閱讀
 
 - id: read_es
   translation: Leer en Español
