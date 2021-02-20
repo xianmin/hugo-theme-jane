@@ -47,8 +47,14 @@
     </div>
     {{ else }}
     <div class="post-summary">
+      {{- if .Truncated }}
       {{ .Summary }}
+      {{- else }}
+      {{ .Content }}
+      {{- end }}
     </div>
+    {{ end }}
+    {{ if .Truncated }}
     <div class="read-more">
       <a href="{{ .RelPermalink }}" class="read-more-link">{{ i18n "readmore" }}</a>
     </div>
