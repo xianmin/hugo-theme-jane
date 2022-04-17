@@ -26,9 +26,15 @@
       {{ if .Site.Params.moreMeta -}}
       <span class="more-meta"> {{ i18n "wordCount" .WordCount }} </span>
       <span class="more-meta"> {{ i18n "readingTime" .ReadingTime }} </span>
-      {{ if .Site.Params.commentCount.disqus.enable }}
+        {{ if .Site.Params.commentCount.disqus.enable }}
         <span class="more-meta"> <a href="{{ .Permalink }}#disqus_thread">{{ i18n "comments" }}</a> </span>
-      {{ end }}
+        {{ end }}
+        {{ if .Site.Params.commentCount.remark42.enable }}
+        <span class="more-meta"><span
+         class="remark42__counter"
+         data-url="{{ .Permalink }}"
+        ></span></span> {{ i18n "comments" }}
+        {{ end }}
       {{- end }}
       <!-- Counter leancloud -->
       {{ if .Site.Params.counter.leancloud.enable }}
