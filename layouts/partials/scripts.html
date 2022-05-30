@@ -242,6 +242,22 @@
   <script id="dsq-count-scr" src="//{{ .Site.DisqusShortname }}.disqus.com/count.js" async></script>
 {{ end }}
 
+{{ if .Site.Params.remark42Url }}
+<script>
+  var remark_config = {
+    host: '{{ .Site.Params.remark42Url }}',
+    site_id: '{{ .Site.Params.remark42SiteId | default "remark" }}',
+    components: [
+	    'embed',
+{{ if and .Site.Params.commentCount.remark42.enable (not .Page.IsPage) -}}
+	    'counter',
+{{- end }}
+    ],
+  }
+  !function(e,n){for(var o=0;o<e.length;o++){var r=n.createElement("script"),c=".js",d=n.head||n.body;"noModule"in r?(r.type="module",c=".mjs"):r.async=!0,r.defer=!0,r.src=remark_config.host+"/web/"+e[o]+c,d.appendChild(r)}}(remark_config.components||["embed"],document);
+</script>
+{{ end }}
+
 {{ if .Site.Params.search.google.enable }}
   <script>
     $("#openSearch, #openSearchMobile").click(function(){

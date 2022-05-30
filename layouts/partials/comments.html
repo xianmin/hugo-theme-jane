@@ -140,13 +140,19 @@
         el: '#comments' ,
         appId: '{{ .Site.Params.valine.appId }}',
         appKey: '{{ .Site.Params.valine.appKey }}',
-        notify: {{ .Site.Params.valine.notify }}, 
-        verify: {{ .Site.Params.valine.verify }}, 
-        avatar:'{{ .Site.Params.valine.avatar }}', 
+        notify: {{ .Site.Params.valine.notify }},
+        verify: {{ .Site.Params.valine.verify }},
+        avatar:'{{ .Site.Params.valine.avatar }}',
         placeholder: '{{ .Site.Params.valine.placeholder }}',
         visitor: {{ false }}
     });
   </script>
   {{- end }}
+
+  <!-- Remark42 -->
+  {{- if .Site.Params.remark42Url -}}
+  <div id="remark42"></div>
+  {{- end }}
+
 
 {{- end }}

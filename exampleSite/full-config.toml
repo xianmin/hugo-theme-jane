@@ -123,6 +123,13 @@ defaultContentLanguage = "en"           # Default language to use
   # add custom info on the footer.   # 添加备案信息
   # customFooter = "京ICP备10000000号-1"
 
+  # Remark42 is self-hosted privacy-focused comment system, https://remark42.com
+  remark42Url = "https://remark42.example.com"
+  remark42SiteId = "remark"
+
+  [params.commentCount.remark42] # enable "comment count" feature for remark42, requires moreMeta param to be enabled as well
+    enable = true
+
   [params.publicCDN]        # load these files from public cdn                          # 启用公共CDN，需自行定义
     enable = false
     jquery = '<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>'
