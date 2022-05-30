@@ -152,6 +152,10 @@ defaultContentLanguage = "en"           # Default language to use
     clientId = ""           # Your client ID
     clientSecret = ""       # Your client secret
 
+  [params.commento] # Commento is a feature rich lightweight comment system oriented on privacy (https://commento.io/)
+    enable = false
+    url = "http://commento.example.com"
+
   [params.livere]          	#LiveRe comment. see https://www.livere.com/
 	  uid = ""
 
