@@ -242,14 +242,15 @@
   <script id="dsq-count-scr" src="//{{ .Site.DisqusShortname }}.disqus.com/count.js" async></script>
 {{ end }}
 
-{{ if .Site.Params.remark42Url }}
+{{ if and .Site.Params.remark42Url (or .Page.IsPage .IsHome) }}
 <script>
   var remark_config = {
     host: '{{ .Site.Params.remark42Url }}',
     site_id: '{{ .Site.Params.remark42SiteId | default "remark" }}',
     components: [
+{{- if .Page.IsPage }}
 	    'embed',
-{{ if and .Site.Params.commentCount.remark42.enable (not .Page.IsPage) -}}
+{{- else if and .Site.Params.commentCount.remark42.enable .IsHome }}
 	    'counter',
 {{- end }}
     ],
