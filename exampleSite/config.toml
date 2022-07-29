@@ -72,9 +72,6 @@ defaultContentLanguage = "en"           # Default language to use
   toc = true                                                                            # 是否开启目录
   photoswipe = true         # see https://github.com/dimsemenov/PhotoSwipe            # 是否启用PhotoSwipe（图片可点击）
   contentCopyright = '<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>'
-
-  # Optional custom wallpaper image URL. Can be a remote image or local /static/img/wallpaper.jpg (make sure it has a small filesize for quick site painting)
-  wallpaper = "https://followingmyfeet.com/wp-content/uploads/2018/02/825_2229-HDR.jpg"
   
   # Link custom CSS and JS assets
   #   (relative to /static/css and /static/js respectively)
