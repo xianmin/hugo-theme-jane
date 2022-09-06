@@ -1,4 +1,10 @@
 /node_modules/
-/public/
 /content/
 env
+
+# Generated files by hugo
+/public/
+/resources/
+
+# Temporary lock file while building
+/.hugo_build.lock
