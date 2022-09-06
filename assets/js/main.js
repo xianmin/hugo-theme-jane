@@ -153,7 +153,7 @@ var headerAnchor = function() {
  */
 var fnTooltip = function () {
   $(".footnote-ref").each(function () {
-    var id = $(this).children("a").attr("href").substr(1),
+    var id = $(this).attr("href").substr(1),
       footnote = $(document.getElementById(id)).clone(),
       outer_wrapper = $("<span>", { "class": "fn-content" }),
       inner_wrapper = $("<span>", { "class": "fn-text" });

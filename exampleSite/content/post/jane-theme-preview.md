@@ -178,7 +178,10 @@ will produce:
 
 You can create footnotes like this[^footnote].
 
+This is another footnote[^another-footnote].
+
 [^footnote]: Here is the *text* of the **footnote**.
+[^another-footnote]: second footnote is here.
 
 Mouse on the ‘footnote’ superscript to see content of the footnote.
 
