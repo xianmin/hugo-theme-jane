@@ -13,13 +13,6 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
 enableGitInfo = true      # use git commit log to generate lastmod record # 可根据 Git 中的提交生成最近更新记录。
 # uglyURLs = true         # more info: https://gohugo.io/content-management/urls/#ugly-urls
 
-# Highlight options.
-# See https://gohugo.io/content-management/syntax-highlighting/
-PygmentsCodeFences = true # Enable syntax highlighting with GitHub flavoured code fences
-PygmentsUseClasses = true # Use CSS classes to format highlighted code
-PygmentsCodefencesGuessSyntax = true
-PygmentsOptions = "linenos=table"
-
 # Enable author pages
 #[taxonomies]
 #  author = "author"
@@ -255,3 +248,18 @@ defaultContentLanguage = "en"           # Default language to use
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+  # Highlight options. See https://gohugo.io/content-management/syntax-highlighting/
+  [markup.highlight]
+    anchorLineNos = true
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ''
+    hl_inline = false
+    lineAnchors = ''
+    lineNoStart = 1
+    lineNos = true
+    lineNumbersInTable = true
+    noHl = false
+    style = 'friendly'
+    tabWidth = 4

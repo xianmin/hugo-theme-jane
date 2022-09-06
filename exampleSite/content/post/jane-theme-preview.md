@@ -97,19 +97,38 @@ You can change the complete/incomplete state by click the checkbox before the it
 
 ## Syntax Highlighting
 
+unset language:
+
 ```js
 function helloWorld () {
   alert("Hello, World!")
 }
 ```
 
-```java
+```text
+plain text
+
+first line
+second line
+```
+
+**choose different style:**
+
+```java {style=github}
 public class HelloWorld {
   public static void main(String[] args) {
     System.out.println("Hello, World!");
   }
 }
 ```
+
+{{< highlight java "style=vim">}}
+public class HelloWorld {
+  public static void main(String[] args) {
+    System.out.println("Hello, World!");
+  }
+}
+{{< / highlight >}}
 
 ## Math Blocks
 

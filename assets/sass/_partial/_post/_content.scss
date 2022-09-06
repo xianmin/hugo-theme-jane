@@ -5,6 +5,11 @@
 .post-content {
   word-wrap: break-word;
 
+  @import 'content/highlight';
+  @import 'content/code';
+  @import 'content/image';
+  @import 'content/blockquote';
+
   @for $i from 1 through 6 {
     h#{$i} {
       font-weight: 600;
@@ -106,10 +111,6 @@
     overflow-x: auto;
     overflow-y: hidden;
   }
-
-  @import 'code';
-  @import 'image';
-  @import 'blockquote';
 }
 
 .header-link {
