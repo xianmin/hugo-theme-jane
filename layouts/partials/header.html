@@ -12,7 +12,7 @@
   <ul id="menu" class="menu">
     {{ $currentPage := . }}
     {{ range .Site.Menus.main }}
-        <li class="menu-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}">
+        <li class="menu-item{{ if $currentPage.IsMenuCurrent "main" . }} active{{end}}">
         {{ if .HasChildren }}
           <!-- drop down navigation MENU -->
           <a class="menu-item-link menu-parent" href="{{ .URL | absLangURL | safeURL }}">{{ .Name }}</a>

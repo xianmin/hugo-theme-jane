@@ -39,13 +39,13 @@ defaultContentLanguage = "en"  # Default language to use (if you setup multiling
   name = "Home"
   weight = 10
   identifier = "home"
-  url = "/"
+  pageref = "/"
 
 [[languages.en.menu.main]]
   name = "Docs"
   weight = 11
   identifier = "docs"
-  url = "/categories/docs/"
+  pageref = "/categories/docs/"
 
 # docs submenu
 #[[languages.en.menu.main]]
@@ -58,17 +58,17 @@ defaultContentLanguage = "en"  # Default language to use (if you setup multiling
   name = "Archives"
   weight = 20
   identifier = "archives"
-  url = "/post/"
+  pageref = "/post/"
 [[languages.en.menu.main]]
   name = "Tags"
   weight = 30
   identifier = "tags"
-  url = "/tags/"
+  pageref = "/tags/"
 [[languages.en.menu.main]]
   name = "Categories"
   weight = 40
   identifier = "categories"
-  url = "/categories/"
+  pageref = "/categories/"
 [[languages.en.menu.main]]
   name = "external-link"
   weight = 50
@@ -78,22 +78,22 @@ defaultContentLanguage = "en"  # Default language to use (if you setup multiling
   name = "主页"
   weight = 10
   identifier = "home"
-  url = "zh-cn/"
+  pageref = "zh-cn/"
 [[languages.zh-cn.menu.main]]
   name = "归档"
   weight = 20
   identifier = "archives"
-  url = "zh-cn/post/"
+  pageref = "zh-cn/post/"
 [[languages.zh-cn.menu.main]]
   name = "标签"
   weight = 30
   identifier = "tags"
-  url = "zh-cn/tags/"
+  pageref = "zh-cn/tags/"
 [[languages.zh-cn.menu.main]]
   name = "分类"
   weight = 40
   identifier = "categories"
-  url = "zh-cn/categories/"
+  pageref = "zh-cn/categories/"
 [[languages.zh-cn.menu.main]]
   name = "外部链接"
   weight = 50

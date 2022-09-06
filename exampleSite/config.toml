@@ -32,26 +32,26 @@ defaultContentLanguage = "en"           # Default language to use
   name = "This is Home"
   weight = 10
   identifier = "home"
-  url = "/"
+  pageref = "/"
 [[menu.main]]
   name = "Archives"
   weight = 20
   identifier = "archives"
-  url = "/post/"
+  pageref = "/post/"
 [[menu.main]]
   name = "Tags"
   weight = 30
   identifier = "tags"
-  url = "/tags/"
+  pageref = "/tags/"
 [[menu.main]]
   name = "Categories"
   weight = 40
   identifier = "categories"
-  url = "/categories/"
+  pageref = "/categories/"
 [[menu.main]]
   name = "external-link"
   weight = 50
-  url = "https://gohugo.io"
+  pageref = "https://gohugo.io"
 
 
 [params]
@@ -72,7 +72,7 @@ defaultContentLanguage = "en"           # Default language to use
   toc = true                                                                            # 是否开启目录
   photoswipe = true         # see https://github.com/dimsemenov/PhotoSwipe            # 是否启用PhotoSwipe（图片可点击）
   contentCopyright = '<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>'
-  
+
   # Link custom CSS and JS assets
   #   (relative to /static/css and /static/js respectively)
   customCSS = []            # if ['custom.css'], load '/static/css/custom.css' file
