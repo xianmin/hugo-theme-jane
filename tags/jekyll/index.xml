@@ -1,15 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>jekyll on Jane - A simple theme for Hugo</title>
     <link>https://www.xianmin.org/hugo-theme-jane/tags/jekyll/</link>
     <description>Recent content in jekyll on Jane - A simple theme for Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 10 Mar 2014 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://www.xianmin.org/hugo-theme-jane/tags/jekyll/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 10 Mar 2014 00:00:00 +0000</lastBuildDate><atom:link href="https://www.xianmin.org/hugo-theme-jane/tags/jekyll/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Migrate to Hugo from Jekyll</title>
       <link>https://www.xianmin.org/hugo-theme-jane/post/migrate-from-jekyll/</link>
@@ -17,8 +13,8 @@
       
       <guid>https://www.xianmin.org/hugo-theme-jane/post/migrate-from-jekyll/</guid>
       <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
-1 2 3  ▾ &amp;lt;root&amp;gt;/ ▾ images/ logo.png   should become
-1 2 3 4  ▾ &amp;lt;root&amp;gt;/ ▾ static/ ▾ images/ logo.png   Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
+▾ &amp;lt;root&amp;gt;/ ▾ images/ logo.png should become
+▾ &amp;lt;root&amp;gt;/ ▾ static/ ▾ images/ logo.png Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
     </item>
     
   </channel>

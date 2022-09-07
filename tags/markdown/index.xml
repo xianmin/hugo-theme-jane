@@ -1,22 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>markdown on Jane - A simple theme for Hugo</title>
     <link>https://www.xianmin.org/hugo-theme-jane/tags/markdown/</link>
     <description>Recent content in markdown on Jane - A simple theme for Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 01 Mar 2018 16:01:23 +0800</lastBuildDate>
-    
-	<atom:link href="https://www.xianmin.org/hugo-theme-jane/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 01 Mar 2018 16:01:23 +0800</lastBuildDate><atom:link href="https://www.xianmin.org/hugo-theme-jane/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Jane-Theme Footnote Preview</title>
       <link>https://www.xianmin.org/hugo-theme-jane/post/doc-footnote-preview/</link>
       <pubDate>Thu, 01 Mar 2018 16:01:23 +0800</pubDate>
       
       <guid>https://www.xianmin.org/hugo-theme-jane/post/doc-footnote-preview/</guid>
-      <description>&lt;p&gt;Hugo-theme-jane optimized for footnote. When you mouse hover the footnote&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:example&#34;&gt;&lt;a href=&#34;#fn:example&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; , footnote content will be displayed.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Hugo-theme-jane optimized for footnote. When you mouse hover the footnote&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; , footnote content will be displayed.&lt;/p&gt;</description>
     </item>
     
   </channel>

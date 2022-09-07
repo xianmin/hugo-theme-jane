@@ -1,15 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Jane —— 一个简洁的 Hugo 主题</title>
     <link>https://www.xianmin.org/hugo-theme-jane/zh-cn/tags/</link>
     <description>Recent content in Tags on Jane —— 一个简洁的 Hugo 主题</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 06 Mar 2018 16:01:23 +0800</lastBuildDate>
-    
-	<atom:link href="https://www.xianmin.org/hugo-theme-jane/zh-cn/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 06 Mar 2018 16:01:23 +0800</lastBuildDate><atom:link href="https://www.xianmin.org/hugo-theme-jane/zh-cn/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>preview</title>
       <link>https://www.xianmin.org/hugo-theme-jane/zh-cn/tags/preview/</link>

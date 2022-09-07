@@ -11,55 +11,64 @@
   <url>
     <loc>https://www.xianmin.org/hugo-theme-jane/zh-cn/categories/</loc>
     <lastmod>2018-12-10T19:31:31+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xianmin.org/hugo-theme-jane/zh-cn/</loc>
-    <lastmod>2018-12-10T19:31:31+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xianmin.org/hugo-theme-jane/zh-cn/post/</loc>
-    <lastmod>2018-12-10T19:31:31+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xianmin.org/hugo-theme-jane/zh-cn/tags/</loc>
-    <lastmod>2018-12-10T19:31:31+08:00</lastmod>
-    <priority>0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://www.xianmin.org/hugo-theme-jane/zh-cn/categories/index/</loc>
     <lastmod>2018-12-10T19:31:31+08:00</lastmod>
-    <priority>0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xianmin.org/hugo-theme-jane/zh-cn/</loc>
+    <lastmod>2018-12-10T19:31:31+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xianmin.org/hugo-theme-jane/zh-cn/post/</loc>
+    <lastmod>2018-12-10T19:31:31+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://www.xianmin.org/hugo-theme-jane/zh-cn/tags/preview/</loc>
     <lastmod>2018-12-10T19:31:31+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xianmin.org/hugo-theme-jane/zh-cn/categories/shortcodes/</loc>
-    <lastmod>2018-12-10T19:31:31+08:00</lastmod>
-    <priority>0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://www.xianmin.org/hugo-theme-jane/zh-cn/tags/shortcodes/</loc>
     <lastmod>2018-12-10T19:31:31+08:00</lastmod>
-    <priority>0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xianmin.org/hugo-theme-jane/zh-cn/categories/shortcodes/</loc>
+    <lastmod>2018-12-10T19:31:31+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://www.xianmin.org/hugo-theme-jane/zh-cn/tags/tag-6/</loc>
     <lastmod>2018-12-10T19:31:31+08:00</lastmod>
-    <priority>0</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xianmin.org/hugo-theme-jane/zh-cn/tags/</loc>
+    <lastmod>2018-12-10T19:31:31+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
 </urlset>

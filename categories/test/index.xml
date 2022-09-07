@@ -1,15 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>test on Jane - A simple theme for Hugo</title>
     <link>https://www.xianmin.org/hugo-theme-jane/categories/test/</link>
     <description>Recent content in test on Jane - A simple theme for Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 30 Aug 2017 15:43:48 +0800</lastBuildDate>
-    
-	<atom:link href="https://www.xianmin.org/hugo-theme-jane/categories/test/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 30 Aug 2017 15:43:48 +0800</lastBuildDate><atom:link href="https://www.xianmin.org/hugo-theme-jane/categories/test/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>This is a very long title This is a very long title This is a very long title This is a very long title This is a very long title</title>
       <link>https://www.xianmin.org/hugo-theme-jane/post/this-is-a-very-long-title/</link>
