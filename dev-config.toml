@@ -161,10 +161,25 @@ defaultContentLanguage = "en"  # Default language to use (if you setup multiling
     slideout = '<script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>'
 
   [params.utteranc]         # utteranc is a comment system based on GitHub issues. see https://utteranc.es
-    enable = true
+    enable = false
     repo = "xianmin/comments-for-hugo-theme-jane"    # The repo to store comments
     issueTerm = "pathname"
     theme = "github-light"                           # theme: github-light, github-dark, github-dark-orange, icy-dark, dark-blue, photon-dark
+
+  [params.giscus]         # giscus is a comment system based on GitHub Discussions. see https://giscus.app
+    enable = true
+    repo = "xianmin/comments-for-hugo-theme-jane"
+    repoId = "MDEwOlJlcG9zaXRvcnkxNDAyNDYzNjc="
+    category = "Announcements"
+    categoryId = "DIC_kwDOCFv9X84CRRWF"
+    # mapping = "pathname"  # comment value is the default value
+    # strict = 0
+    # reactionsEnabled = 1
+    # emitMetadata = 0
+    # inputPosition = "top"
+    # theme = "light"
+    # lang = "en"
+    # lazyLoading = false
 
   [params.search.google]    # google custom search, see https://cse.google.com
     enable = true
