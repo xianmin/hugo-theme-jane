@@ -33,6 +33,7 @@
     margin-top: 1em;
     display: flex;
     align-items: center;
+    flex-flow: wrap;
 
     .post-meta-author {
       a {

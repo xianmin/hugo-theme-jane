@@ -11,6 +11,7 @@ code {
 }
 
 code, pre {
+  overflow-x: auto;
   font-size: $code-font-size;
   font-family: $code-font-family;
 }

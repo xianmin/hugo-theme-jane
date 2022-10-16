@@ -9,6 +9,7 @@
   @import 'content/code';
   @import 'content/image';
   @import 'content/blockquote';
+  @import 'content/table';
 
   @for $i from 1 through 6 {
     h#{$i} {
@@ -45,25 +46,6 @@
     margin: 0 auto;
     display: block;
     width: 100%;
-  }
-
-  > table {
-      border: none;
-      width: 100%;
-
-    td {
-      background-color: #F0E4E4;
-      border: 3px solid #FFF;
-      padding: 5px 15px;
-    }
-
-    th {
-      text-align: left;
-      background-color: #A65B5B;
-      color: #FFF;
-      border: 3px solid #FFF;
-      padding: 5px 15px;
-    }
   }
 
   .post-summary {
@@ -107,7 +89,7 @@
     padding-left: 1.5rem;
   }
 
-  .MJXc-display {
+  .MJXc-display, .katex-display {
     overflow-x: auto;
     overflow-y: hidden;
   }

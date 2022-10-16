@@ -1,0 +1,20 @@
+table {
+  display: block;
+  border: none;
+  width: 100%;
+  overflow-x: auto;
+
+  td {
+    background-color: #f0e4e4;
+    border: 3px solid #fff;
+    padding: 5px 15px;
+  }
+
+  th {
+    text-align: left;
+    background-color: #a65b5b;
+    color: #fff;
+    border: 3px solid #fff;
+    padding: 5px 15px;
+  }
+}
