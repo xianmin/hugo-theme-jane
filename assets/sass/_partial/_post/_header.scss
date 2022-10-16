@@ -5,9 +5,9 @@
   border-bottom: 2px LightGrey solid;
 
   .post-title {
-    margin: 0;
-    font-size: $post-title-font-size;
-    font-weight: $post-title-font-weight;
+    margin: unset;
+    font-size: 2em;
+    font-weight: 700;
     font-family: $global-serif-font-family;
 
     .post-pinned svg {
@@ -22,20 +22,50 @@
     @include underline-from-center;
   }
 
-  .post-meta {
-    font-size: 14px;
-    color: $post-meta-font-color;
+  .post-title-i18n {
+    a {
+      color: $theme-color;
+      @include underline-from-center;
+    }
+  }
 
-    .post-time {
-      font-size: 15px;
+  .post-meta {
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+
+    .post-meta-author {
+      a {
+        color: $theme-color;
+      }
     }
 
-    .post-category {
+    .post-meta-time {
+      margin-left: 1em;
+    }
+
+    .post-meta-lastmod {
+      margin-left: 0.5em;
+      font-size: 0.8em;
+      font-style: italic;
+    }
+
+    .post-meta__right {
+      margin-left: auto;
+      display: flex;
+      font-size: 0.8em;
+      flex-direction: column;
+      line-height: 1.318;
+      text-align: right;
+      color: $dark-gray;
+    }
+
+    .post-meta-category {
       display: inline;
 
       a {
         &::before {
-          content: '·';
+          content: "·";
         }
       }
     }
@@ -47,12 +77,5 @@
         color: $theme-color;
       }
     }
-
-    .more-meta {
-      &::before {
-        content: '·';
-      }
-    }
-
   }
 }
