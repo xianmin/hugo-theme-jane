@@ -5,7 +5,19 @@
     <link>https://www.xianmin.org/hugo-theme-jane/tags/golang/</link>
     <description>Recent content in golang on Jane - A simple theme for Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 28 Sep 2014 00:00:00 +0000</lastBuildDate><atom:link href="https://www.xianmin.org/hugo-theme-jane/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.xianmin.org/hugo-theme-jane/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Contribute</title>
+      <link>https://www.xianmin.org/hugo-theme-jane/post/how-to-contribute/</link>
+      <pubDate>Sat, 15 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.xianmin.org/hugo-theme-jane/post/how-to-contribute/</guid>
+      <description>Contributing to Jane There are many ways to contribute to the Jane theme: submitting pull requests, reporting issues, providing new translations, and creating suggestions.
+Build and Run If you want to understand how Jane works, you&amp;rsquo;ll want to get the source, build it, and run locally.
+Getting the sources 1 git clone https://github.com/xianmin/hugo-theme-jane.git Prerequisites You need install the Hugo_extended version to use Hugo Pipes.
+We recommend that you use VSCode. And if you edit .</description>
+    </item>
+    
     <item>
       <title>Creating a New Theme</title>
       <link>https://www.xianmin.org/hugo-theme-jane/post/creating-a-new-theme/</link>

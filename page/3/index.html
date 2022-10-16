@@ -24,7 +24,7 @@
 
 <meta name="mobile-web-app-capable" content="yes">
 
-<meta name="author" content="xianmin" />
+<meta name="author" content="Jane" />
   <meta name="description" content="Hugo theme jane example site." />
   <meta name="keywords" content="Hugo, theme, jane" />
 
@@ -33,7 +33,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.102.3" />
+<meta name="generator" content="Hugo 0.104.3" />
 
 
 <link rel="canonical" href="https://www.xianmin.org/hugo-theme-jane/" />
@@ -54,7 +54,7 @@
 
 
 
-<link rel="stylesheet" href="/hugo-theme-jane/sass/jane.min.6aa088348d86326ca4be4205ae9973752a42b2e758c2f5f879a69172441859c9.css" integrity="sha256-aqCINI2GMmykvkIFrplzdSpCsudYwvX4eaaRckQYWck=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/hugo-theme-jane/sass/jane.min.de22abc00de44766eebd1054fd9e0b254b071f89d5019044f893c484a9249a8d.css" integrity="sha256-3iKrwA3kR2buvRBU/Z4LJUsHH4nVAZBE&#43;JPEhKkkmo0=" media="screen" crossorigin="anonymous">
 
 
 
@@ -544,41 +544,143 @@ if (!doNotTrack) {
   <header class="post-header">
     <h1 class="post-title">
       
-      <a class="post-link" href="/hugo-theme-jane/post/hugoisforlovers/">Getting Started with Hugo</a>
+      <a class="post-link" href="/hugo-theme-jane/post/goisforlovers/">(Hu)go Template Primer</a>
     </h1>
     
+
     <div class="post-meta">
-      <time datetime="2014-04-02" class="post-time">
-        2014-04-02
-      </time>
-      <div class="post-category">
-          <a href="https://www.xianmin.org/hugo-theme-jane/categories/development/"> Development </a>
+  <div class="post-meta-author">
+    by
+      <a href="/about">
+        <span class="post-meta-author-name">
+          Jane
+        </span>
+      </a>
+    
+  </div>
+
+  <div class="post-meta-time">
+    <time datetime="2014-04-02">
+      2014-04-02
+    </time>
+  </div>
+
+  
+    <div class="post-meta-lastmod">
+      (LastMod:
+      2018-03-06)
+    </div>
+  
+
+
+  <div class="post-meta__right">
+    
+
+    <div class="post-meta-category">
+        <a href="https://www.xianmin.org/hugo-theme-jane/categories/development/"> Development </a>
           <a href="https://www.xianmin.org/hugo-theme-jane/categories/golang/"> golang </a>
           <a href="https://www.xianmin.org/hugo-theme-jane/categories/index/"> index </a>
           
-        </div>
-      <span class="more-meta"> 349 words </span>
-      <span class="more-meta"> 2 min read </span>
-        
-        
-      
-      
-    </div>
+      </div>
+
+
+    
+    
+
+
+    
+    
+  </div>
+</div>
+
   </header>
   
   <div class="post-content">
     
-    <div class="post-summary">
-      Step 1. Install Hugo Goto hugo releases and download the appropriate version for your os and architecture.
+      <div class="post-summary">
+        Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in go templates.
+This document is a brief primer on using go templates.
+      </div>
+      <div class="read-more">
+        <a href="/hugo-theme-jane/post/goisforlovers/" class="read-more-link"
+          >Read more</a
+        >
+      </div>
+    
+  </div>
+</article>
+
+  
+    <article class="post bg-white">
+  <header class="post-header">
+    <h1 class="post-title">
+      
+      <a class="post-link" href="/hugo-theme-jane/post/hugoisforlovers/">Getting Started with Hugo</a>
+    </h1>
+    
+
+    <div class="post-meta">
+  <div class="post-meta-author">
+    by
+      <a href="/about">
+        <span class="post-meta-author-name">
+          Jane
+        </span>
+      </a>
+    
+  </div>
+
+  <div class="post-meta-time">
+    <time datetime="2014-04-02">
+      2014-04-02
+    </time>
+  </div>
+
+  
+    <div class="post-meta-lastmod">
+      (LastMod:
+      2018-03-06)
+    </div>
+  
+
+
+  <div class="post-meta__right">
+    
+
+    <div class="post-meta-category">
+        <a href="https://www.xianmin.org/hugo-theme-jane/categories/development/"> Development </a>
+          <a href="https://www.xianmin.org/hugo-theme-jane/categories/golang/"> golang </a>
+          <a href="https://www.xianmin.org/hugo-theme-jane/categories/index/"> index </a>
+          
+      </div>
+
+
+    
+    
+
+
+    
+    
+  </div>
+</div>
+
+  </header>
+  
+  <div class="post-content">
+    
+      <div class="post-summary">
+        Step 1. Install Hugo Goto hugo releases and download the appropriate version for your os and architecture.
 Save it somewhere specific as we will be using it in the next step.
 More complete instructions are available at installing hugo
 Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now.
 Follow the following steps:
 Clone the hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313 Corresponding pseudo commands:
-    </div>
-    <div class="read-more">
-      <a href="/hugo-theme-jane/post/hugoisforlovers/" class="read-more-link">Read more</a>
-    </div>
+      </div>
+      <div class="read-more">
+        <a href="/hugo-theme-jane/post/hugoisforlovers/" class="read-more-link"
+          >Read more</a
+        >
+      </div>
     
   </div>
 </article>
@@ -591,35 +693,66 @@ Clone the hugo repository Go into the repo Run hugo in server mode and build the
       <a class="post-link" href="/hugo-theme-jane/post/migrate-from-jekyll/">Migrate to Hugo from Jekyll</a>
     </h1>
     
+
     <div class="post-meta">
-      <time datetime="2014-03-10" class="post-time">
-        2014-03-10
-      </time>
-      <div class="post-category">
-          <a href="https://www.xianmin.org/hugo-theme-jane/categories/development/"> Development </a>
+  <div class="post-meta-author">
+    by
+      <a href="/about">
+        <span class="post-meta-author-name">
+          Jane
+        </span>
+      </a>
+    
+  </div>
+
+  <div class="post-meta-time">
+    <time datetime="2014-03-10">
+      2014-03-10
+    </time>
+  </div>
+
+  
+    <div class="post-meta-lastmod">
+      (LastMod:
+      2018-03-06)
+    </div>
+  
+
+
+  <div class="post-meta__right">
+    
+
+    <div class="post-meta-category">
+        <a href="https://www.xianmin.org/hugo-theme-jane/categories/development/"> Development </a>
           <a href="https://www.xianmin.org/hugo-theme-jane/categories/golang/"> golang </a>
           <a href="https://www.xianmin.org/hugo-theme-jane/categories/index/"> index </a>
           
-        </div>
-      <span class="more-meta"> 813 words </span>
-      <span class="more-meta"> 4 min read </span>
-        
-        
-      
-      
-    </div>
+      </div>
+
+
+    
+    
+
+
+    
+    
+  </div>
+</div>
+
   </header>
   
   <div class="post-content">
     
-    <div class="post-summary">
-      Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
+      <div class="post-summary">
+        Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
 ▾ &lt;root&gt;/ ▾ images/ logo.png should become
 ▾ &lt;root&gt;/ ▾ static/ ▾ images/ logo.png Additionally, you&rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.
-    </div>
-    <div class="read-more">
-      <a href="/hugo-theme-jane/post/migrate-from-jekyll/" class="read-more-link">Read more</a>
-    </div>
+      </div>
+      <div class="read-more">
+        <a href="/hugo-theme-jane/post/migrate-from-jekyll/" class="read-more-link"
+          >Read more</a
+        >
+      </div>
     
   </div>
 </article>
@@ -632,28 +765,57 @@ Clone the hugo repository Go into the repo Run hugo in server mode and build the
       <a class="post-link" href="/hugo-theme-jane/post/syntax-highlighting/">Syntax Highlighting</a>
     </h1>
     
+
     <div class="post-meta">
-      <time datetime="2011-08-30" class="post-time">
-        2011-08-30
-      </time>
-      <div class="post-category">
-          <a href="https://www.xianmin.org/hugo-theme-jane/categories/syntax-highlighting/"> Syntax Highlighting </a>
+  <div class="post-meta-author">
+    by
+      <a href="/about">
+        <span class="post-meta-author-name">
+          Jane
+        </span>
+      </a>
+    
+  </div>
+
+  <div class="post-meta-time">
+    <time datetime="2011-08-30">
+      2011-08-30
+    </time>
+  </div>
+
+  
+    <div class="post-meta-lastmod">
+      (LastMod:
+      2018-07-22)
+    </div>
+  
+
+
+  <div class="post-meta__right">
+    
+
+    <div class="post-meta-category">
+        <a href="https://www.xianmin.org/hugo-theme-jane/categories/syntax-highlighting/"> Syntax Highlighting </a>
           <a href="https://www.xianmin.org/hugo-theme-jane/categories/index/"> index </a>
           
-        </div>
-      <span class="more-meta"> 344 words </span>
-      <span class="more-meta"> 2 min read </span>
-        
-        
-      
-      
-    </div>
+      </div>
+
+
+    
+    
+
+
+    
+    
+  </div>
+</div>
+
   </header>
   
   <div class="post-content">
     
-    <div class="post-summary">
-      <p>More detail: <a href="https://gohugo.io/content-management/syntax-highlighting/">Syntax Highlighting | Hugo</a></p>
+      <div class="post-summary">
+        <p>More detail: <a href="https://gohugo.io/content-management/syntax-highlighting/">Syntax Highlighting | Hugo</a></p>
 <div class="highlight"><div style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f" id="hl-0-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-1">1</a>
@@ -667,10 +829,12 @@ Clone the hugo repository Go into the repo Run hugo in server mode and build the
 </span></span></code></pre></td></tr></table>
 </div>
 </div>
-    </div>
-    <div class="read-more">
-      <a href="/hugo-theme-jane/post/syntax-highlighting/" class="read-more-link">Read more</a>
-    </div>
+      </div>
+      <div class="read-more">
+        <a href="/hugo-theme-jane/post/syntax-highlighting/" class="read-more-link"
+          >Read more</a
+        >
+      </div>
     
   </div>
 </article>
@@ -980,7 +1144,7 @@ Clone the hugo repository Go into the repo Run hugo in server mode and build the
 
       </i>
     </span><span class="author">
-        xianmin
+        Jane
         
       </span></span>
 
