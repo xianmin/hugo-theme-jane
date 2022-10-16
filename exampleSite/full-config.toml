@@ -24,8 +24,9 @@ defaultContentLanguage = "en"           # Default language to use
 [languages.en]
   languageCode = "en"
 
-[author]                  # essential                     # 必需
-  name = "xianmin"
+[author]
+  name = "xianmin"        # essential                     # 必需
+  url = "/about"          # optional                      # 可选
 
 [sitemap]                 # essential                     # 必需
   changefreq = "weekly"
