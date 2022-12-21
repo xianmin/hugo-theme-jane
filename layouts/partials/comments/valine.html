@@ -1,0 +1,28 @@
+<div id="comments"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+  if (window.location.hash) {
+    var checkExist = setInterval(function () {
+      if ($(window.location.hash).length) {
+        $("html, body").animate(
+          { scrollTop: $(window.location.hash).offset().top - 90 },
+          700
+        );
+        clearInterval(checkExist);
+      }
+    }, 10);
+  }
+</script>
+<script type="text/javascript">
+  new Valine({
+      el: '#comments' ,
+      appId: '{{ .Site.Params.valine.appId }}',
+      appKey: '{{ .Site.Params.valine.appKey }}',
+      notify: {{ .Site.Params.valine.notify }},
+      verify: {{ .Site.Params.valine.verify }},
+      avatar:'{{ .Site.Params.valine.avatar }}',
+      placeholder: '{{ .Site.Params.valine.placeholder }}',
+      visitor: {{ false }}
+  });
+</script>

@@ -97,19 +97,38 @@ You can change the complete/incomplete state by click the checkbox before the it
 
 ## Syntax Highlighting
 
+unset language:
+
 ```js
 function helloWorld () {
   alert("Hello, World!")
 }
 ```
 
-```java
+```text
+plain text
+
+first line
+second line
+```
+
+**choose different style:**
+
+```java {style=github}
 public class HelloWorld {
   public static void main(String[] args) {
     System.out.println("Hello, World!");
   }
 }
 ```
+
+{{< highlight java "style=vim">}}
+public class HelloWorld {
+  public static void main(String[] args) {
+    System.out.println("Hello, World!");
+  }
+}
+{{< / highlight >}}
 
 ## Math Blocks
 
@@ -178,7 +197,10 @@ will produce:
 
 You can create footnotes like this[^footnote].
 
+This is another footnote[^another-footnote].
+
 [^footnote]: Here is the *text* of the **footnote**.
+[^another-footnote]: second footnote is here.
 
 Mouse on the ‘footnote’ superscript to see content of the footnote.
 

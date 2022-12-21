@@ -20,8 +20,9 @@ defaultContentLanguage = "en"           # Default language to use
 [languages.en]
   languageCode = "en"
 
-[author]                  # essential                     # 必需
-  name = "xianmin"
+[author]
+  name = "xianmin"        # essential                     # 必需
+  url = "/about"          # optional                      # 可选
 
 [sitemap]                 # essential                     # 必需
   changefreq = "weekly"
@@ -32,26 +33,26 @@ defaultContentLanguage = "en"           # Default language to use
   name = "This is Home"
   weight = 10
   identifier = "home"
-  url = "/"
+  pageref = "/"
 [[menu.main]]
   name = "Archives"
   weight = 20
   identifier = "archives"
-  url = "/post/"
+  pageref = "/post/"
 [[menu.main]]
   name = "Tags"
   weight = 30
   identifier = "tags"
-  url = "/tags/"
+  pageref = "/tags/"
 [[menu.main]]
   name = "Categories"
   weight = 40
   identifier = "categories"
-  url = "/categories/"
+  pageref = "/categories/"
 [[menu.main]]
   name = "external-link"
   weight = 50
-  url = "https://gohugo.io"
+  pageref = "https://gohugo.io"
 
 
 [params]

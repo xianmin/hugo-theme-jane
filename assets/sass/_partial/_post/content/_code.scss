@@ -1,0 +1,23 @@
+// ==============================
+// Post code
+// ==============================
+
+// normal <code> style
+code {
+  padding: 3px 7px;
+  background: $code-background;
+  border-radius: 4px;
+  color: $code-color;
+}
+
+code, pre {
+  overflow-x: auto;
+  font-size: $code-font-size;
+  font-family: $code-font-family;
+}
+
+
+// chroma code block style
+
+
+// @import '_chroma_highlight';

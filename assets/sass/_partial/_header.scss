@@ -3,7 +3,10 @@
 // ==============================
 
 .header {
-  @include clearfix; 
+  @include clearfix;
+
+  display: flex;
+  flex-wrap: wrap;
 
   @import '_header/logo';
   @import '_header/menu';

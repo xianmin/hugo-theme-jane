@@ -12,13 +12,13 @@
   <ul id="menu" class="menu">
     {{ $currentPage := . }}
     {{ range .Site.Menus.main }}
-        <li class="menu-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}">
+        <li class="menu-item{{ if $currentPage.IsMenuCurrent "main" . }} active{{end}}">
         {{ if .HasChildren }}
           <!-- drop down navigation MENU -->
           <a class="menu-item-link menu-parent" href="{{ .URL | absLangURL | safeURL }}">{{ .Name }}</a>
           <ul class="submenu">
             {{ range .Children }}
-              <li>
+              <li class="submenu-item">
                 <a href="{{ .URL | absLangURL | safeURL }}">{{ .Name }}</a>
               </li>
             {{ end }}
@@ -58,7 +58,7 @@
         <ul class="submenu">
           {{ range .Site.Home.AllTranslations }}
             {{ if ne ($.Scratch.Get "language") .Language }}
-              <li>
+              <li class="submenu-item">
                 <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
               </li>
             {{ end }}

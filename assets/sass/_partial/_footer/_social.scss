@@ -2,12 +2,13 @@
 // Social
 // =============================
 
-// donot use social-links keyword,Otherwise it will be intercepted by Adblock. 
+// donot use social-links keyword,Otherwise it will be intercepted by Adblock.
 .icon-links {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  padding: 0 1em;
 
   .iconfont {
     font-size: $social-icon-font-size;

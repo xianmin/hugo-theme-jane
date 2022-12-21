@@ -12,16 +12,10 @@ hasCJKLanguage = true     # has chinese/japanese/korean ? # 自动检测是否�
 paginate = 5                                              # 首页每页显示的文章数
 rssLimit = 20             # Limit Entry Count to Rss file # 限制 Rss 文章输出数量
 disqusShortname = "xianmin12"      # disqus_shortname
-googleAnalytics = "UA-34199129-1"      # UA-XXXXXXXX-X
+googleAnalytics = "G-4SFSR6JRVT"      # G-********
 copyright = ""            # default: author.name ↓        # 默认为下面配置的author.name ↓
 enableGitInfo = true # use git commit log to generate lastmod record # 可根据 Git 中的提交生成最近更新记录。
 # uglyURLs = true
-
-# Highlight options. See https://gohugo.io/content-management/syntax-highlighting/
-pygmentsCodeFences = true # Enable syntax highlighting with GitHub flavoured code fences
-pygmentsUseClasses = true # Use CSS classes to format highlighted code
-pygmentsCodefencesGuessSyntax = true
-pygmentsOptions = "linenos=table"
 
 # language support en / zh-cn / other... translations present in i18n/
 defaultContentLanguage = "en"  # Default language to use (if you setup multilingual support)
@@ -39,13 +33,13 @@ defaultContentLanguage = "en"  # Default language to use (if you setup multiling
   name = "Home"
   weight = 10
   identifier = "home"
-  url = "/"
+  pageref = "/"
 
 [[languages.en.menu.main]]
   name = "Docs"
   weight = 11
   identifier = "docs"
-  url = "/categories/docs/"
+  pageref = "/categories/docs/"
 
 # docs submenu
 #[[languages.en.menu.main]]
@@ -58,17 +52,17 @@ defaultContentLanguage = "en"  # Default language to use (if you setup multiling
   name = "Archives"
   weight = 20
   identifier = "archives"
-  url = "/post/"
+  pageref = "/post/"
 [[languages.en.menu.main]]
   name = "Tags"
   weight = 30
   identifier = "tags"
-  url = "/tags/"
+  pageref = "/tags/"
 [[languages.en.menu.main]]
   name = "Categories"
   weight = 40
   identifier = "categories"
-  url = "/categories/"
+  pageref = "/categories/"
 [[languages.en.menu.main]]
   name = "external-link"
   weight = 50
@@ -78,30 +72,31 @@ defaultContentLanguage = "en"  # Default language to use (if you setup multiling
   name = "主页"
   weight = 10
   identifier = "home"
-  url = "zh-cn/"
+  pageref = "zh-cn/"
 [[languages.zh-cn.menu.main]]
   name = "归档"
   weight = 20
   identifier = "archives"
-  url = "zh-cn/post/"
+  pageref = "zh-cn/post/"
 [[languages.zh-cn.menu.main]]
   name = "标签"
   weight = 30
   identifier = "tags"
-  url = "zh-cn/tags/"
+  pageref = "zh-cn/tags/"
 [[languages.zh-cn.menu.main]]
   name = "分类"
   weight = 40
   identifier = "categories"
-  url = "zh-cn/categories/"
+  pageref = "zh-cn/categories/"
 [[languages.zh-cn.menu.main]]
   name = "外部链接"
   weight = 50
   url = "https://gohugo.io"
 
 
-[author]                  # essential                     # 必需
-  name = "xianmin"
+[author]
+  name = "Jane"      # essential                     # 必需
+  url = "/about"        # optional                      # 可选
 
 [sitemap]                 # essential                     # 必需
   changefreq = "weekly"
@@ -131,7 +126,7 @@ defaultContentLanguage = "en"  # Default language to use (if you setup multiling
   dateFormatToUse = "2006-01-02"
 
   # show word count and read time ?                       # 是否显示字数统计与阅读时间
-  moreMeta = true
+  moreMeta = false
 
   # show language chooser in menu
   showMenuLanguageChooser = true
@@ -167,10 +162,25 @@ defaultContentLanguage = "en"  # Default language to use (if you setup multiling
     slideout = '<script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>'
 
   [params.utteranc]         # utteranc is a comment system based on GitHub issues. see https://utteranc.es
-    enable = true
+    enable = false
     repo = "xianmin/comments-for-hugo-theme-jane"    # The repo to store comments
     issueTerm = "pathname"
     theme = "github-light"                           # theme: github-light, github-dark, github-dark-orange, icy-dark, dark-blue, photon-dark
+
+  [params.giscus]         # giscus is a comment system based on GitHub Discussions. see https://giscus.app
+    enable = true
+    repo = "xianmin/comments-for-hugo-theme-jane"
+    repoId = "MDEwOlJlcG9zaXRvcnkxNDAyNDYzNjc="
+    category = "Announcements"
+    categoryId = "DIC_kwDOCFv9X84CRRWF"
+    # mapping = "pathname"  # comment value is the default value
+    # strict = 0
+    # reactionsEnabled = 1
+    # emitMetadata = 0
+    # inputPosition = "top"
+    # theme = "light"
+    # lang = "en"
+    # lazyLoading = false
 
   [params.search.google]    # google custom search, see https://cse.google.com
     enable = true
@@ -208,3 +218,20 @@ defaultContentLanguage = "en"  # Default language to use (if you setup multiling
     q-bilibili = "http://en.xianmin.org/hugo-theme-jane/"
     r-codeforces = "http://en.xianmin.org/hugo-theme-jane/"
     s-mastodon = "http://en.xianmin.org/hugo-theme-jane/"
+
+# Highlight options. See https://gohugo.io/content-management/syntax-highlighting/
+[markup]
+  [markup.highlight]
+    anchorLineNos = true
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ''
+    hl_inline = false
+    lineAnchors = ''
+    lineNoStart = 1
+    lineNos = true
+    lineNumbersInTable = true
+    noClasses = true
+    noHl = false
+    style = 'friendly'
+    tabWidth = 4
