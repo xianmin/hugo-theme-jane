@@ -31,14 +31,14 @@ you are reading right now.
 
 Follow the following steps:
 
- 1. Clone the [hugo repository](http://github.com/spf13/hugo)
+ 1. Clone the [hugo repository](https://github.com/gohugoio/hugo)
  2. Go into the repo
  3. Run hugo in server mode and build the docs
  4. Open your browser to http://localhost:1313
 
 Corresponding pseudo commands:
 
-    git clone https://github.com/spf13/hugo
+    git clone https://github.com/gohugoio/hugo
     cd hugo
     /path/to/where/you/installed/hugo server --source=./docs
     > 29 pages created
@@ -64,7 +64,7 @@ Now we are going to run hugo again, but this time with hugo in watch mode.
     > Press ctrl+c to stop
 
 
-Open your [favorite editor](http://vim.spf13.com) and change one of the source
+Open your [favorite editor](https://vim.spf13.com) and change one of the source
 content pages. How about changing this very file to *fix the typo*. How about changing this very file to *fix the typo*.
 
 Content files are found in `docs/content/`. Unless otherwise specified, files

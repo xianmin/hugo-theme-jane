@@ -42,7 +42,7 @@
   * fix: mobile drop down menu behavior
   * Merge pull request #79 from shaform/lang-switch
   * npm run build
-  * add langugae chooser to mobile menu as well
+  * add language chooser to mobile menu as well
   * add globe icon
   * add basic language chooser on menu
   * docs: add @cizel blog Update README.md (#80)
@@ -110,7 +110,7 @@
   * Fix: access to tags when there are no tags (#26)
   * refactor(toc): new TOC befavior
   * feat: Add json feed (#25)
-  * add i18n spanish suport (#20)
+  * add i18n spanish support (#20)
   * some seo
   * fix url after enable uglyURLs
   * support check uglyURLs set. must add uglyURLs to params config after set uglyURLs = true
@@ -144,7 +144,7 @@
   * fix: header adjusting (#1)
   * refactor: new pagination
   * feat: custom css&js support
-  * remove unuse files
+  * remove unused files
   * readme update
   * rss full content support
 

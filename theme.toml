@@ -12,7 +12,7 @@ min_version = "0.86"
 
 [author]
   name = "xianmin"
-  homepage = "http://xianmin.org"
+  homepage = "https://xianmin.org"
 
 # If porting an existing theme
 [original]

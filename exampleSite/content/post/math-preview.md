@@ -14,7 +14,7 @@ categories: ["docs", "math", "index"]
 katex: true
 
 # Use Mmark
-# See https://gohugo.io/content-management/formats/#mmark
+# See https://github.com/mmarkdown/mmark
 markup: mmark
 
 menu:
@@ -23,7 +23,7 @@ menu:
     weight: 5
 ---
 
-[KaTeX and MathJax Comparison Demo, currently processed as KaTex](https://www.intmath.com/cg5/katex-mathjax-comparison.php)
+[KaTeX and MathJax Comparison Demo, currently processed as KaTeX](https://www.intmath.com/cg5/katex-mathjax-comparison.php)
 
 <!--more-->
 

@@ -107,7 +107,7 @@ defaultContentLanguage = "en"  # Default language to use (if you setup multiling
 [params]
   debug = false             # If true, load `eruda.min.js`. See https://github.com/liriliri/eruda
   since = "2017"            # Site creation time          # 站点建立时间
-  homeFullContent = false   # if false, show post summaries on home page. Othewise show full content.
+  homeFullContent = false   # if false, show post summaries on home page. Otherwise show full content.
   rssFullContent = true     # if false, Rss feed instead of the summary
 
   # site info (optional)                                  # 站点信息（可选，不需要的可以直接注释掉）

@@ -92,7 +92,7 @@ Run `hugo` , this generates your website to the `public/` directory by default.
 
 Nice work!
 
-If you have extra time or want to know more about [Hugo][] , check out the awosome  [Hugo Official Docs][] .
+If you have extra time or want to know more about [Hugo][] , check out the awesome  [Hugo Official Docs][] .
 
 
 
@@ -150,7 +150,7 @@ To use the translations:
 
 ```toml
 # use Chinese translation
-defaultContentLanguage = "zh-cn"  # Default language to use (if you setup multilingual support)
+defaultContentLanguage = "zh-cn"  # Default language to use (if you set up multilingual support)
 [Languages.zh-cn]
   languageCode = "zh-cn"
 ```

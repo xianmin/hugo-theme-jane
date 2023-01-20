@@ -116,7 +116,7 @@ models:
           - type: boolean
             name: homeFullContent
             label: Home Full Content
-            description: if false, show post summaries on home page. Othewise show full content.
+            description: if false, show post summaries on home page. Otherwise show full content.
           - type: boolean
             name: rssFullContent
             label: Rss Full Content

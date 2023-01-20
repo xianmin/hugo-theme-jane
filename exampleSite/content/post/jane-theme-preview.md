@@ -58,9 +58,9 @@ Markdown uses email-style > characters for block quoting. They are presented as:
 
 > This is a blockquote with two paragraphs. This is first paragraph.
 >
-> This is second pragraph.Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
+> This is second paragraph. Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
 >
-> This is another blockquote with one paragraph. There is three empty line to seperate two blockquote.
+> This is another blockquote with one paragraph. There is three empty line to separate two blockquote.
 >
 > 这是一段中文测试。
 >
@@ -271,7 +271,7 @@ Typora allows you to insert urls as links, wrapped by `<`brackets`>`.
 
 `<i@typora.io>` becomes <i@typora.io>.
 
-Typora will aslo auto link standard URLs. e.g: www.google.com.
+Typora will also auto link standard URLs. e.g: www.google.com.
 
 ## Images
 

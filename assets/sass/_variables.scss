@@ -135,8 +135,8 @@ $post-nav-font-size: 18px !default;
 // Width of the post toc.
 $post-toc-width: 200px !default;
 
-// Backgroud color of the post toc.
-$post-toc-backgroud: rgba($deputy-color, 0.6) !default;
+// Background color of the post toc.
+$post-toc-background: rgba($deputy-color, 0.6) !default;
 
 // Margin left of the post toc.
 //$post-toc-margin-left: $global-body-width - 15px !default;
@@ -151,7 +151,7 @@ $post-toc-content: 15px !default;
 $post-toc-list-style: square !default;
 
 // Max screen media of the post toc.
-// $toc-max-sreen-width: 2 * $post-toc-width + $post-toc-margin-left !default;
+// $toc-max-screen-width: 2 * $post-toc-width + $post-toc-margin-left !default;
 
 // ========== Content ========== //
 // Headings anchor.
@@ -161,7 +161,7 @@ $content-headings-anchor: "" !default;
 $content-link-border: 1px solid $theme-color !default;
 
 // Background color of the blockquote.
-$content-blockquote-backgroud: rgba($theme-color, 0.05) !default;
+$content-blockquote-background: rgba($theme-color, 0.05) !default;
 
 // Border left of the blockquote.
 $content-blockquote-border-left: 3px solid rgba($theme-color, 0.3) !default;
