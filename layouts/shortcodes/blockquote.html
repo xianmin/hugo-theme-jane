@@ -42,7 +42,7 @@
       {{ $split_by_fw_slash := split $title "/" }}   <!-- now split on / because we want to stop after the last forward slash -->
       {{ $count := (sub (len $split_by_fw_slash) 1) }}   <!-- we want everything but the last part so we adjust the count accordingly -->
 
-      {{ $.Scratch.Set "tempstring" "" }}   <!-- temp variable to hold the concatinated string -->
+      {{ $.Scratch.Set "tempstring" "" }}   <!-- temp variable to hold the concatenated string -->
       {{ range first $count $split_by_fw_slash  }}  <!-- loop through all parts except last and concat them (add / between halves) -->
         {{ $.Scratch.Set "tempstring" ( . | printf "%s%s/" ($.Scratch.Get "tempstring") | printf "%s" ) }}
       {{ end }}

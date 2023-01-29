@@ -1,6 +1,6 @@
 <!--
 Put this file in /layouts/shortcodes/gallery.html
-Documentation and licence at https://github.com/liwenyip/hugo-easy-gallery/
+Documentation and license at https://github.com/liwenyip/hugo-easy-gallery/
 -->
 <!-- count how many times we've called this shortcode; load the css if it's the first time -->
 {{- if not ($.Page.Scratch.Get "figurecount") }}<link rel="stylesheet" href="/css/hugo-easy-gallery.css" />{{ end }}
@@ -11,7 +11,7 @@ Documentation and licence at https://github.com/liwenyip/hugo-easy-gallery/
     <!-- If a directory was specified, generate figures for all of the images in the directory -->
     {{- $files := readDir (print "/static/" .) }}
     {{- range $files -}}
-      <!-- skip files that aren't images, or that inlcude the thumb suffix in their name -->
+      <!-- skip files that aren't images, or that include the thumb suffix in their name -->
       {{- $thumbext := $.Get "thumb" | default "-thumb" }}
       {{- $isthumb := .Name | findRE ($thumbext | printf "%s\\.") }}<!-- is the current file a thumbnail image? -->
       {{- $isimg := lower .Name | findRE "\\.(gif|jpg|jpeg|tiff|png|bmp)" }}<!-- is the current file an image? -->
