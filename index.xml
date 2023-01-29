@@ -45,8 +45,8 @@
 &lt;p&gt;Markdown uses email-style &amp;gt; characters for block quoting. They are presented as:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;This is a blockquote with two paragraphs. This is first paragraph.&lt;/p&gt;
-&lt;p&gt;This is second pragraph.Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.&lt;/p&gt;
-&lt;p&gt;This is another blockquote with one paragraph. There is three empty line to seperate two blockquote.&lt;/p&gt;
+&lt;p&gt;This is second paragraph. Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.&lt;/p&gt;
+&lt;p&gt;This is another blockquote with one paragraph. There is three empty line to separate two blockquote.&lt;/p&gt;
 &lt;p&gt;这是一段中文测试。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;In typora, just input ‘&amp;gt;’ followed by quote contents a block quote is  generated. Typora will insert proper ‘&amp;gt;’ or line break for you. Block quote inside anther block quote is allowed by adding additional levels of ‘&amp;gt;’.&lt;/p&gt;
@@ -307,7 +307,7 @@ $$&lt;/p&gt;
 &lt;h2 id=&#34;urls&#34;&gt;URLs&lt;/h2&gt;
 &lt;p&gt;Typora allows you to insert urls as links, wrapped by &lt;code&gt;&amp;lt;&lt;/code&gt;brackets&lt;code&gt;&amp;gt;&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;&amp;lt;i@typora.io&amp;gt;&lt;/code&gt; becomes &lt;a href=&#34;mailto:i@typora.io&#34;&gt;i@typora.io&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Typora will aslo auto link standard URLs. e.g: &lt;a href=&#34;https://www.google.com&#34;&gt;www.google.com&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Typora will also auto link standard URLs. e.g: &lt;a href=&#34;https://www.google.com&#34;&gt;www.google.com&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;images&#34;&gt;Images&lt;/h2&gt;
 &lt;p&gt;Image looks similar with links, but it requires an additional &lt;code&gt;!&lt;/code&gt; char before the start of link. Image syntax looks like this:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
@@ -489,7 +489,7 @@ $$&lt;/p&gt;
       
       <guid>https://www.xianmin.org/hugo-theme-jane/post/math-preview/</guid>
       
-        <description>&lt;p&gt;&lt;a href=&#34;https://www.intmath.com/cg5/katex-mathjax-comparison.php&#34;&gt;KaTeX and MathJax Comparison Demo, currently processed as KaTex&lt;/a&gt;&lt;/p&gt;
+        <description>&lt;p&gt;&lt;a href=&#34;https://www.intmath.com/cg5/katex-mathjax-comparison.php&#34;&gt;KaTeX and MathJax Comparison Demo, currently processed as KaTeX&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;repeating-fractions&#34;&gt;Repeating fractions&lt;/h2&gt;
 &lt;p&gt;$$
 \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} \equiv 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}} {1+\frac{e^{-8\pi}} {1+\cdots} } } }
@@ -3164,13 +3164,13 @@ appropriate version for your os and architecture.&lt;/p&gt;
 you are reading right now.&lt;/p&gt;
 &lt;p&gt;Follow the following steps:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Clone the &lt;a href=&#34;http://github.com/spf13/hugo&#34;&gt;hugo repository&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Clone the &lt;a href=&#34;https://github.com/gohugoio/hugo&#34;&gt;hugo repository&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Go into the repo&lt;/li&gt;
 &lt;li&gt;Run hugo in server mode and build the docs&lt;/li&gt;
 &lt;li&gt;Open your browser to http://localhost:1313&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Corresponding pseudo commands:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;git clone https://github.com/spf13/hugo
+&lt;pre&gt;&lt;code&gt;git clone https://github.com/gohugoio/hugo
 cd hugo
 /path/to/where/you/installed/hugo server --source=./docs
 &amp;gt; 29 pages created
@@ -3191,7 +3191,7 @@ cd hugo
 &amp;gt; Watching for changes in /Users/spf13/Code/hugo/docs/content
 &amp;gt; Press ctrl+c to stop
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Open your &lt;a href=&#34;http://vim.spf13.com&#34;&gt;favorite editor&lt;/a&gt; and change one of the source
+&lt;p&gt;Open your &lt;a href=&#34;https://vim.spf13.com&#34;&gt;favorite editor&lt;/a&gt; and change one of the source
 content pages. How about changing this very file to &lt;em&gt;fix the typo&lt;/em&gt;. How about changing this very file to &lt;em&gt;fix the typo&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;Content files are found in &lt;code&gt;docs/content/&lt;/code&gt;. Unless otherwise specified, files
 are located at the same relative location as the url, in our case
