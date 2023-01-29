@@ -27,12 +27,12 @@ body {
 
 ::selection {
   background: $theme-color;
-  color: #fff; 
+  color: #fff;
 }
 
 // ::-webkit-scrollbar {
 //   width: 8px;
-//   height: 6px; 
+//   height: 6px;
 // }
 
 // ::-webkit-scrollbar-thumb {
@@ -64,11 +64,6 @@ a {
   }
 }
 
-.container {
-  margin: 0 auto;
-  width: $global-body-width;
-}
-
 @include max-screen() {
   .container {
     width: 100%;
@@ -98,8 +93,4 @@ a {
 
 .bg-llight {
   background-color: #f2f2f5;
-}
-
-.bg-white {
-  background-color: #FFF;
 }
