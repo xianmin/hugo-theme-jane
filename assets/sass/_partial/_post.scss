@@ -3,6 +3,10 @@
 // ==============================
 
 .content-wrapper {
+  display: flex;
+  justify-content: center;
+
+  @import "_toc";
 }
 
 .post {

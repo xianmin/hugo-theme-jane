@@ -3,6 +3,10 @@
 html {
   font-size: $global-font-size;
   box-sizing: border-box;
+
+  // better scroll
+  scroll-behavior: smooth;
+  scroll-padding-top: 1em;
 }
 
 body {

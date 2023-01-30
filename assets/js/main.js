@@ -8,11 +8,11 @@
 /**
  * back to top
  */
-var backToTop = function() {
+var backToTop = function () {
   const $backToTop = $('#back-to-top');
 
   $(window)
-    .scroll(function() {
+    .scroll(function () {
       if ($(window)
         .scrollTop() > 100) {
         $backToTop.fadeIn(1000);
@@ -21,7 +21,7 @@ var backToTop = function() {
       }
     })
 
-  $backToTop.click(function() {
+  $backToTop.click(function () {
     $('body,html')
       .animate({
         scrollTop: 0
@@ -33,7 +33,7 @@ var backToTop = function() {
 /**
  * mobile Navbar
  */
-var mobileNavbar = function() {
+var mobileNavbar = function () {
   const $mobileNav = $('#mobile-navbar');
   const $mobileNavIcon = $('.mobile-navbar-icon');
   const slideout = new Slideout({
@@ -80,26 +80,41 @@ var mobileNavbar = function() {
 
 
 /**
- * Table of Content fix
+ * Table of Content
  */
 function initToc() {
-  const $toc = $('#post-toc');
-  if ($toc.length && $(window)
-    .width() >= 1080) {
-    $(window)
-      .scroll(function() {
-        if ($(window)
-          .scrollTop() > 100) {
-          $toc.fadeIn(1000);
-        } else {
-          $toc.fadeOut(100);
-        }
-      });
+  const headings = document.querySelectorAll("article h1[id], article h2[id], article h3[id], article h4[id], article h5[id], article h6[id]")
+
+  const setCurrentActive = () => {
+    const allActive = document.querySelectorAll(`#TableOfContents .active`)
+    if (allActive.length === 0) {
+      return
+    } else {
+      document.querySelector(`#TableOfContents .current`)?.classList.remove('current');
+      document.querySelectorAll(`#TableOfContents .active`)[0]?.classList.add('current')
+    }
   }
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      const id = entry.target.getAttribute('id');
+      if (entry.intersectionRatio > 0) {
+        document.querySelector(`#TableOfContents li a[href="#${id}"]`)?.parentElement?.classList.add('active');
+      } else {
+        document.querySelector(`#TableOfContents li a[href="#${id}"]`)?.parentElement?.classList.remove('active');
+      }
+      setCurrentActive()
+    });
+  })
+
+  // Track all sections that have an `id` applied
+  headings.forEach((section) => {
+    observer.observe(section);
+  })
 }
 
-var toc = function() {
-  const tocContainer = document.getElementById('post-toc');
+var toc = function () {
+  const tocContainer = document.getElementById('toc');
   if (tocContainer !== null) {
     const toc = document.getElementById('TableOfContents');
     if (toc === null) {
@@ -136,7 +151,7 @@ var linkifyAnchors = function (level, containingElement) {
   }
 };
 
-var headerAnchor = function() {
+var headerAnchor = function () {
   var contentBlock = document.getElementsByClassName("post-content")[0];
   if (!contentBlock) {
     return;
