@@ -23,6 +23,10 @@ body {
   // border-top: 3px solid $theme-color;
 }
 
+main {
+  padding: 3em 0;
+}
+
 @include max-screen() {
   body {
     border-top: 0;
@@ -72,10 +76,6 @@ a {
   .container {
     width: 100%;
   }
-}
-
-.content-wrapper {
-  padding: 3em 0 1px 0;
 }
 
 // make video fluid:
