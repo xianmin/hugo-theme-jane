@@ -21,8 +21,8 @@ Documentation and licence at https://github.com/liwenyip/hugo-easy-gallery/
   {{ .Site.Params.publicCDN.photoswipeCSS | safeHTML }}
   {{ .Site.Params.publicCDN.photoswipeSkin | safeHTML }}
 {{ else }}
-  <link rel="stylesheet" href="{{ "/lib/photoswipe/photoswipe.min.css" | relURL }}" />
-  <link rel="stylesheet" href="{{ "/lib/photoswipe/default-skin/default-skin.min.css" | relURL }}" />
+  <link rel="stylesheet" href="{{ "lib/photoswipe/photoswipe.min.css" | relURL }}" />
+  <link rel="stylesheet" href="{{ "lib/photoswipe/default-skin/default-skin.min.css" | relURL }}" />
 {{ end }}
 <!-- these files are loaded in the theme footer
 <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.3/photoswipe.min.js" integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo=" crossorigin="anonymous"></script>
