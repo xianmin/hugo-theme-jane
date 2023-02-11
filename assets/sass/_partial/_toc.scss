@@ -87,3 +87,9 @@ nav.toc {
     background: rgba(0, 0, 0, 0.75);
   }
 }
+
+@include max-screen() {
+  nav.toc {
+    display: none;
+  }
+}

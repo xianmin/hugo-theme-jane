@@ -12,6 +12,7 @@
 .post {
   // optimal line length for body text is 50–60 characters per line
   // [Readability: The Optimal Line Length – Articles – Baymard Institute](https://baymard.com/blog/line-length-readability)
+  width: 38em;
   max-width: 38em;
   padding: 3em 5em;
   margin: 0 auto;
@@ -35,7 +36,12 @@
 }
 
 @include max-screen() {
+  .content-wrapper {
+    display: block;
+  }
+
   .post {
+    width: auto;
     padding: 5%;
     margin: 0 auto 5% auto;
   }
