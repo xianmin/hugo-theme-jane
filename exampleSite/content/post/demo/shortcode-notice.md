@@ -1,10 +1,15 @@
 ---
-title: "Shortcodes Notice Preview"
+title: "Demo: Shortcodes Notice"
 date: 2018-03-03T16:01:23+08:00
 lastmod: 2018-03-04T16:01:23+08:00
 draft: false
 tags: ["preview", "shortcodes", "tag-6"]
-categories: ["docs", "shortcodes", "index"]
+categories: ["demo", "shortcodes", "index"]
+
+menu:
+  main:
+    parent: "demo"
+    weight: 3
 ---
 
 ## normal use

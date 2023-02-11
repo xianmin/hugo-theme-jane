@@ -1,18 +1,24 @@
-+++
-title = "How to Contribute"
-description = ""
-tags = [
+---
+title: "How to Contribute"
+description: ""
+tags: [
     "go",
     "golang",
     "hugo",
     "Contribute",
 ]
-date = "2022-10-15"
-categories = [
+date: "2022-10-15"
+categories: [
+    "docs",
     "Development",
     "index",
 ]
-+++
+
+menu:
+  main:
+    parent: "docs"
+    weight: 2
+---
 
 ## Contributing to Jane
 
