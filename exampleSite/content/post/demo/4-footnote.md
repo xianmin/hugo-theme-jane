@@ -10,7 +10,7 @@ author: "xianmin"
 menu:
   main:
     parent: "demo"
-    weight: 3
+    weight: 4
 ---
 
 Hugo-theme-jane optimized for footnote. When you mouse hover the footnote[^example] , footnote content will be displayed.

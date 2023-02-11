@@ -9,7 +9,7 @@ categories: ["demo", "shortcodes", "index"]
 menu:
   main:
     parent: "demo"
-    weight: 3
+    weight: 6
 ---
 
 ## normal use

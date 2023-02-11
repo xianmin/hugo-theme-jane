@@ -1,4 +1,7 @@
-{{ if or .Params.toc (and .Site.Params.toc (ne .Params.toc false)) }}
+{{- $TOCEnabled := or .Params.toc (and .Site.Params.toc (ne .Params.toc false)) -}}
+{{- $hasTOC := gt (len .TableOfContents) 32 -}}
+
+{{ if and $TOCEnabled $hasTOC -}}
   <nav class="toc" id="toc">
     <div class="toc-title">{{ i18n "toc" }}</div>
     <div class="toc-content custom-scrollbar">

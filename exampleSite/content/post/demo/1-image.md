@@ -9,7 +9,7 @@ categories: ["demo", "shortcodes", "index"]
 menu:
   main:
     parent: "demo"
-    weight: 3
+    weight: 1
 ---
 
 Thanks for [liwenyip/hugo-easy-gallery](https://github.com/liwenyip/hugo-easy-gallery) & [Zebradil · Pull Request #48](https://github.com/xianmin/hugo-theme-jane/pull/48) .
