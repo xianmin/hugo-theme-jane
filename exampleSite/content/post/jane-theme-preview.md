@@ -204,7 +204,7 @@ This is another footnote[^another-footnote].
 
 Mouse on the ‘footnote’ superscript to see content of the footnote.
 
-## Horizontal Rules
+## Horizontal Rules  Horizontal Rules Horizontal Rules Horizontal Rules Horizontal Rules Horizontal Rules Horizontal Rules
 
 Input `***` or `---` on a blank line and press `return` will draw a horizontal line.
 

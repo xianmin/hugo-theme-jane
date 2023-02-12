@@ -1,15 +1,15 @@
 ---
-title: "Shortcodes Preview"
+title: "Demo: more Shortcodes"
 date: 2018-03-04T16:01:23+08:00
 lastmod: 2018-03-05T16:01:23+08:00
 draft: false
 tags: ["preview", "shortcodes", "tag-6"]
-categories: ["docs", "shortcodes", "index"]
+categories: ["demo", "shortcodes", "index"]
 
 menu:
   main:
-    parent: "docs"
-    weight: 2
+    parent: "demo"
+    weight: 7
 ---
 
 

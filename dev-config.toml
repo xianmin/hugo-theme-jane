@@ -41,6 +41,12 @@ defaultContentLanguage = "en"  # Default language to use (if you setup multiling
   identifier = "docs"
   pageref = "/categories/docs/"
 
+[[languages.en.menu.main]]
+  name = "Demo"
+  weight = 12
+  identifier = "demo"
+  pageref = "/categories/demo/"
+
 # docs submenu
 #[[languages.en.menu.main]]
 #  name = "Jane Theme Preview"

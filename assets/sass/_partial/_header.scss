@@ -7,6 +7,8 @@
 
   display: flex;
   flex-wrap: wrap;
+  max-width: 70em;
+  margin: 0 auto;
 
   @import '_header/logo';
   @import '_header/menu';

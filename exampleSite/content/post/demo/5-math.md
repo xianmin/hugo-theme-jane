@@ -1,11 +1,11 @@
 ---
-title: "Math Preview"
+title: "Demo: Math"
 author: "Murray Bourne"
 date: 2019-03-04T16:01:23+08:00
 lastmod: 2019-03-05T16:01:23+08:00
 draft: false
 tags: ["preview", "math", "tag-6"]
-categories: ["docs", "math", "index"]
+categories: ["demo", "math", "index"]
 
 # mathjax: true
 
@@ -19,7 +19,7 @@ markup: mmark
 
 menu:
   main:
-    parent: "docs"
+    parent: "demo"
     weight: 5
 ---
 

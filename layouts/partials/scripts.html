@@ -11,8 +11,8 @@
 {{- end }}
 
 <!-- Jane theme main js -->
-{{ $jsTemplate := resources.Get "js/main.js" }}
-{{ $secureJS := $jsTemplate | resources.ExecuteAsTemplate "js/main.js" . | fingerprint }}
+{{ $jsMain := resources.Get "js/main.js" | js.Build }}
+{{ $secureJS := $jsMain | resources.ExecuteAsTemplate "js/main.js" . | fingerprint }}
 <script type="text/javascript" src="{{ $secureJS.RelPermalink }}" integrity="{{ $secureJS.Data.Integrity }}" crossorigin="anonymous"></script>
 <!-- End -->
 
@@ -105,19 +105,18 @@
 <!-- Load PhotoSwipe js if the load-photoswipe shortcode has been used -->
 {{ if or .Site.Params.photoswipe .Site.Params.fancybox }}
   {{ if .Site.Params.bootcdn }}
-    <script src="{{ "/js/load-photoswipe.js" | relURL }}"></script>
+    <script src="{{ "js/load-photoswipe.js" | relURL }}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js" integrity="sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc="
       crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js" integrity="sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk="
       crossorigin="anonymous"></script>
   {{ else if .Site.Params.publicCDN.enable }}
-    <script type="text/javascript" src="{{ "/js/load-photoswipe.js" | relURL }}"></script>
+    <script type="text/javascript" src="{{ "js/load-photoswipe.js" | relURL }}"></script>
 	{{ .Site.Params.publicCDN.photoswipe | safeHTML }}
     {{ .Site.Params.publicCDN.photoswipeUI | safeHTML }}
   {{ else }}
-    <script type="text/javascript" src="{{ "/js/load-photoswipe.js" | relURL }}"></script>
-    <script type="text/javascript" src="{{ "/lib/photoswipe/photoswipe.min.js" | relURL}}"></script>
-    <script type="text/javascript" src="{{ "/lib/photoswipe/photoswipe-ui-default.min.js" | relURL}}"></script>
+    <script type="text/javascript" src="{{ "lib/photoswipe/photoswipe.min.js" | relURL}}"></script>
+    <script type="text/javascript" src="{{ "lib/photoswipe/photoswipe-ui-default.min.js" | relURL}}"></script>
   {{ end }}
 {{ end }}
 

@@ -3,9 +3,13 @@
 // ==============================
 
 .pagination {
-  margin: $pagination-margin;
   text-align: center;
   @include clearfix;
+
+  ul {
+    margin: unset;
+    line-height: 0;
+  }
 
   li {
     display: inline-block;
@@ -50,7 +54,7 @@
 
     &:hover {
       color: $theme-color;
-      transform: translateX(-4px); 
+      transform: translateX(-4px);
     }
   }
 
@@ -59,13 +63,13 @@
 
     &:hover {
       color: $theme-color;
-      transform: translateX(4px); 
+      transform: translateX(4px);
     }
   }
 }
 
-@include max-screen() {
-  .pagination {
-    margin: 1em 0;
-  }
-}
+// @include max-screen() {
+//   .pagination {
+//     margin: 1em 0;
+//   }
+// }

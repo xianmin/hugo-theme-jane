@@ -1,11 +1,16 @@
 ---
-title: "Jane-Theme Footnote Preview"
+title: "Demo: Footnote"
 date: 2018-03-01T16:01:23+08:00
 lastmod: 2018-03-01T16:01:23+08:00
 draft: false
 tags: ["footnote", "markdown", "tag-11"]
-categories: ["docs", "index"]
+categories: ["demo", "index"]
 author: "xianmin"
+
+menu:
+  main:
+    parent: "demo"
+    weight: 4
 ---
 
 Hugo-theme-jane optimized for footnote. When you mouse hover the footnote[^example] , footnote content will be displayed.

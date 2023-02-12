@@ -2,8 +2,7 @@
 // Back to top
 // =============================
 
-.back-to-top {
-  display: none;
+.button__back-to-top {
   position: fixed;
   right: 2em;
   bottom: 2em;
@@ -19,7 +18,7 @@
 }
 
 @include max-screen() {
-  .back-to-top {
+  .button__back-to-top {
     display: none !important;
   }
 }

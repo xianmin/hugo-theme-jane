@@ -3,6 +3,10 @@
 html {
   font-size: $global-font-size;
   box-sizing: border-box;
+
+  // better scroll
+  // scroll-behavior: smooth;
+  scroll-padding-top: 1em;
 }
 
 body {
@@ -19,6 +23,10 @@ body {
   // border-top: 3px solid $theme-color;
 }
 
+main {
+  padding: 3em 0;
+}
+
 @include max-screen() {
   body {
     border-top: 0;
@@ -27,12 +35,12 @@ body {
 
 ::selection {
   background: $theme-color;
-  color: #fff; 
+  color: #fff;
 }
 
 // ::-webkit-scrollbar {
 //   width: 8px;
-//   height: 6px; 
+//   height: 6px;
 // }
 
 // ::-webkit-scrollbar-thumb {
@@ -64,19 +72,10 @@ a {
   }
 }
 
-.container {
-  margin: 0 auto;
-  width: $global-body-width;
-}
-
 @include max-screen() {
   .container {
     width: 100%;
   }
-}
-
-.content-wrapper {
-  padding: 3em 0 1px 0;
 }
 
 // make video fluid:
@@ -98,8 +97,4 @@ a {
 
 .bg-llight {
   background-color: #f2f2f5;
-}
-
-.bg-white {
-  background-color: #FFF;
 }

@@ -1,10 +1,10 @@
 ---
-title: "Syntax Highlighting"
+title: "Demo: Syntax Highlighting"
 date: 2011-08-30T16:01:23+08:00
 lastmod: 2017-08-30T16:01:23+08:00
 draft: false
 tags: ["preview", "Syntax Highlighting", "tag-5"]
-categories: ["Syntax Highlighting", "index"]
+categories: ["demo", "Syntax Highlighting", "index"]
 
 # You can also close(false) or open(true) something for this content.
 # P.S. comment can only be closed
@@ -17,8 +17,8 @@ toc: false
 
 menu:
   main:
-    parent: "docs"
-    weight: 4
+    parent: "demo"
+    weight: 3
 ---
 
 More detail: [Syntax Highlighting | Hugo](https://gohugo.io/content-management/syntax-highlighting/)
