@@ -11,8 +11,8 @@
 {{- end }}
 
 <!-- Jane theme main js -->
-{{ $jsTemplate := resources.Get "js/main.js" }}
-{{ $secureJS := $jsTemplate | resources.ExecuteAsTemplate "js/main.js" . | fingerprint }}
+{{ $jsMain := resources.Get "js/main.js" | js.Build }}
+{{ $secureJS := $jsMain | resources.ExecuteAsTemplate "js/main.js" . | fingerprint }}
 <script type="text/javascript" src="{{ $secureJS.RelPermalink }}" integrity="{{ $secureJS.Data.Integrity }}" crossorigin="anonymous"></script>
 <!-- End -->
 
