@@ -19,6 +19,8 @@
     {{ partial "head.html" . }}
   </head>
   <body>
+    <div id="back-to-top"></div>
+
     {{ partial "slideout.html" . }}
 
     {{ if or .Site.Params.photoswipe .Site.Params.fancybox }}
@@ -60,8 +62,7 @@
 
     <div id="mobile-panel">
       <main id="main" class="main bg-llight wallpaper">
-
-            {{ block "content" . }}{{ end }}
+        {{ block "content" . }}{{ end }}
 
       </main>
 
@@ -69,11 +70,13 @@
         {{ partial "footer.html" . }}
       </footer>
 
-      <div class="back-to-top" id="back-to-top">
-        <i class="iconfont">
-          {{/* icon up */}}
-          {{ partial "svg/up.svg" }}
-        </i>
+      <div class="button__back-to-top">
+        <a href="#back-to-top">
+          <i class="iconfont">
+            {{/* icon up */}}
+            {{ partial "svg/up.svg" }}
+          </i>
+        </a>
       </div>
     </div>
     {{ partial "scripts.html" . }}
