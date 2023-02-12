@@ -8,20 +8,20 @@
     <lastBuildDate>Thu, 31 Aug 2017 15:43:48 +0800</lastBuildDate><atom:link href="https://www.xianmin.org/hugo-theme-jane/tags/tag-2/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>English Creating a New Theme</title>
-      <link>https://www.xianmin.org/hugo-theme-jane/post/english-preview/</link>
+      <link>https://www.xianmin.org/hugo-theme-jane/post/other/english-preview/</link>
       <pubDate>Thu, 31 Aug 2017 15:43:48 +0800</pubDate>
       
-      <guid>https://www.xianmin.org/hugo-theme-jane/post/english-preview/</guid>
+      <guid>https://www.xianmin.org/hugo-theme-jane/post/other/english-preview/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>This is a very long title This is a very long title This is a very long title This is a very long title This is a very long title</title>
-      <link>https://www.xianmin.org/hugo-theme-jane/post/this-is-a-very-long-title/</link>
+      <link>https://www.xianmin.org/hugo-theme-jane/post/other/this-is-a-very-long-title/</link>
       <pubDate>Wed, 30 Aug 2017 15:43:48 +0800</pubDate>
       
-      <guid>https://www.xianmin.org/hugo-theme-jane/post/this-is-a-very-long-title/</guid>
+      <guid>https://www.xianmin.org/hugo-theme-jane/post/other/this-is-a-very-long-title/</guid>
       <description>This is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long title</description>
     </item>
     

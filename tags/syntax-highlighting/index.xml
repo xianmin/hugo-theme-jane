@@ -7,11 +7,11 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Tue, 30 Aug 2011 16:01:23 +0800</lastBuildDate><atom:link href="https://www.xianmin.org/hugo-theme-jane/tags/syntax-highlighting/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Syntax Highlighting</title>
-      <link>https://www.xianmin.org/hugo-theme-jane/post/syntax-highlighting/</link>
+      <title>Demo: Syntax Highlighting</title>
+      <link>https://www.xianmin.org/hugo-theme-jane/post/demo/3-syntax-highlighting/</link>
       <pubDate>Tue, 30 Aug 2011 16:01:23 +0800</pubDate>
       
-      <guid>https://www.xianmin.org/hugo-theme-jane/post/syntax-highlighting/</guid>
+      <guid>https://www.xianmin.org/hugo-theme-jane/post/demo/3-syntax-highlighting/</guid>
       <description>&lt;p&gt;More detail: &lt;a href=&#34;https://gohugo.io/content-management/syntax-highlighting/&#34;&gt;Syntax Highlighting | Hugo&lt;/a&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
 &lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;

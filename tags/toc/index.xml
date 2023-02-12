@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>toc on Jane - A simple theme for Hugo</title>
+    <link>https://www.xianmin.org/hugo-theme-jane/tags/toc/</link>
+    <description>Recent content in toc on Jane - A simple theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 22 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.xianmin.org/hugo-theme-jane/tags/toc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Demo: toc</title>
+      <link>https://www.xianmin.org/hugo-theme-jane/post/demo/2-toc/</link>
+      <pubDate>Tue, 22 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.xianmin.org/hugo-theme-jane/post/demo/2-toc/</guid>
+      <description>Header This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
+Header This tutorial will show you how to create a simple theme in Hugo.</description>
+    </item>
+    
+    <item>
+      <title>Demo: toc, global toc is true, but this post should not show toc</title>
+      <link>https://www.xianmin.org/hugo-theme-jane/post/other/test-toc/global-toc-except-this/</link>
+      <pubDate>Mon, 21 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.xianmin.org/hugo-theme-jane/post/other/test-toc/global-toc-except-this/</guid>
+      <description>Header This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
+Header This tutorial will show you how to create a simple theme in Hugo.</description>
+    </item>
+    
+    <item>
+      <title>no header, no toc</title>
+      <link>https://www.xianmin.org/hugo-theme-jane/post/other/test-toc/no-header-dont-show-toc/</link>
+      <pubDate>Sun, 20 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.xianmin.org/hugo-theme-jane/post/other/test-toc/no-header-dont-show-toc/</guid>
+      <description>This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.</description>
+    </item>
+    
+  </channel>
+</rss>

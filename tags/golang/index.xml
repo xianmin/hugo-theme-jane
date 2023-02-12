@@ -8,10 +8,10 @@
     <lastBuildDate>Sat, 15 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.xianmin.org/hugo-theme-jane/tags/golang/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to Contribute</title>
-      <link>https://www.xianmin.org/hugo-theme-jane/post/how-to-contribute/</link>
+      <link>https://www.xianmin.org/hugo-theme-jane/post/docs/how-to-contribute/</link>
       <pubDate>Sat, 15 Oct 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.xianmin.org/hugo-theme-jane/post/how-to-contribute/</guid>
+      <guid>https://www.xianmin.org/hugo-theme-jane/post/docs/how-to-contribute/</guid>
       <description>Contributing to Jane There are many ways to contribute to the Jane theme: submitting pull requests, reporting issues, providing new translations, and creating suggestions.
 Build and Run If you want to understand how Jane works, you&amp;rsquo;ll want to get the source, build it, and run locally.
 Getting the sources 1 git clone https://github.com/xianmin/hugo-theme-jane.git Prerequisites You need install the Hugo_extended version to use Hugo Pipes.
@@ -19,31 +19,60 @@ We recommend that you use VSCode. And if you edit .</description>
     </item>
     
     <item>
+      <title>Demo: toc</title>
+      <link>https://www.xianmin.org/hugo-theme-jane/post/demo/2-toc/</link>
+      <pubDate>Tue, 22 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.xianmin.org/hugo-theme-jane/post/demo/2-toc/</guid>
+      <description>Header This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
+Header This tutorial will show you how to create a simple theme in Hugo.</description>
+    </item>
+    
+    <item>
+      <title>Demo: toc, global toc is true, but this post should not show toc</title>
+      <link>https://www.xianmin.org/hugo-theme-jane/post/other/test-toc/global-toc-except-this/</link>
+      <pubDate>Mon, 21 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.xianmin.org/hugo-theme-jane/post/other/test-toc/global-toc-except-this/</guid>
+      <description>Header This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
+Header This tutorial will show you how to create a simple theme in Hugo.</description>
+    </item>
+    
+    <item>
+      <title>no header, no toc</title>
+      <link>https://www.xianmin.org/hugo-theme-jane/post/other/test-toc/no-header-dont-show-toc/</link>
+      <pubDate>Sun, 20 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.xianmin.org/hugo-theme-jane/post/other/test-toc/no-header-dont-show-toc/</guid>
+      <description>This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.</description>
+    </item>
+    
+    <item>
       <title>Creating a New Theme</title>
-      <link>https://www.xianmin.org/hugo-theme-jane/post/creating-a-new-theme/</link>
+      <link>https://www.xianmin.org/hugo-theme-jane/post/other/creating-a-new-theme/</link>
       <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://www.xianmin.org/hugo-theme-jane/post/creating-a-new-theme/</guid>
+      <guid>https://www.xianmin.org/hugo-theme-jane/post/other/creating-a-new-theme/</guid>
       <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
 We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
     </item>
     
     <item>
       <title>(Hu)go Template Primer</title>
-      <link>https://www.xianmin.org/hugo-theme-jane/post/goisforlovers/</link>
+      <link>https://www.xianmin.org/hugo-theme-jane/post/other/goisforlovers/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://www.xianmin.org/hugo-theme-jane/post/goisforlovers/</guid>
+      <guid>https://www.xianmin.org/hugo-theme-jane/post/other/goisforlovers/</guid>
       <description>Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in go templates.
 This document is a brief primer on using go templates.</description>
     </item>
     
     <item>
       <title>Getting Started with Hugo</title>
-      <link>https://www.xianmin.org/hugo-theme-jane/post/hugoisforlovers/</link>
+      <link>https://www.xianmin.org/hugo-theme-jane/post/other/hugoisforlovers/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://www.xianmin.org/hugo-theme-jane/post/hugoisforlovers/</guid>
+      <guid>https://www.xianmin.org/hugo-theme-jane/post/other/hugoisforlovers/</guid>
       <description>Step 1. Install Hugo Goto hugo releases and download the appropriate version for your os and architecture.
 Save it somewhere specific as we will be using it in the next step.
 More complete instructions are available at installing hugo
@@ -54,10 +83,10 @@ Clone the hugo repository Go into the repo Run hugo in server mode and build the
     
     <item>
       <title>Migrate to Hugo from Jekyll</title>
-      <link>https://www.xianmin.org/hugo-theme-jane/post/migrate-from-jekyll/</link>
+      <link>https://www.xianmin.org/hugo-theme-jane/post/other/migrate-from-jekyll/</link>
       <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://www.xianmin.org/hugo-theme-jane/post/migrate-from-jekyll/</guid>
+      <guid>https://www.xianmin.org/hugo-theme-jane/post/other/migrate-from-jekyll/</guid>
       <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
 ▾ &amp;lt;root&amp;gt;/ ▾ images/ logo.png should become
 ▾ &amp;lt;root&amp;gt;/ ▾ static/ ▾ images/ logo.png Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>

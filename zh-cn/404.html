@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="en" itemscope itemtype="http://schema.org/WebPage">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>404 page not found - Jane —— 一个简洁的 Hugo 主题</title>
-  
+<html
+  lang="en"
+  itemscope
+  itemtype="http://schema.org/WebPage"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>404 page not found - Jane —— 一个简洁的 Hugo 主题</title>
+    
 
 <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes"/>
@@ -52,7 +56,7 @@
 
 
 
-<link rel="stylesheet" href="/hugo-theme-jane/sass/jane.min.de22abc00de44766eebd1054fd9e0b254b071f89d5019044f893c484a9249a8d.css" integrity="sha256-3iKrwA3kR2buvRBU/Z4LJUsHH4nVAZBE&#43;JPEhKkkmo0=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/hugo-theme-jane/sass/jane.min.344fee5389fbc3b3675bdee1033db2900b2ebf2bb9afdd7cc0a696f015a8bcf8.css" integrity="sha256-NE/uU4n7w7NnW97hAz2ykAsuvyu5r918wKaW8BWovPg=" media="screen" crossorigin="anonymous">
 
 
 
@@ -92,9 +96,11 @@ if (!doNotTrack) {
 
 
 
-</head>
-<body>
-  <div id="mobile-navbar" class="mobile-navbar">
+  </head>
+  <body>
+    <div id="back-to-top"></div>
+
+    <div id="mobile-navbar" class="mobile-navbar">
   <div class="mobile-header-logo">
     <a href="/zh-cn/" class="logo">Jane</a>
   </div>
@@ -205,16 +211,16 @@ if (!doNotTrack) {
 </nav>
 
 
-  
     
+      
 
 
 
 
 
 
-  <link rel="stylesheet" href="/lib/photoswipe/photoswipe.min.css" />
-  <link rel="stylesheet" href="/lib/photoswipe/default-skin/default-skin.min.css" />
+  <link rel="stylesheet" href="/hugo-theme-jane/lib/photoswipe/photoswipe.min.css" />
+  <link rel="stylesheet" href="/hugo-theme-jane/lib/photoswipe/default-skin/default-skin.min.css" />
 
 
 
@@ -263,10 +269,10 @@ if (!doNotTrack) {
     </div>
 </div>
 
-  
-
-  
     
+
+    
+      
 <div class="modal-dialog">
     
     <div class="modal-content">
@@ -293,29 +299,35 @@ if (!doNotTrack) {
     </div>
 </div>
 
-  
+    
 
-  
-    <style>
-      .fork-me-on-github {
-        position: absolute; top: 0; left: 0; border: 0;
-      }
-      @media (max-width: 1080px) {
+    
+      <style>
         .fork-me-on-github {
-          display: none;
+          position: absolute;
+          top: 0;
+          left: 0;
+          border: 0;
         }
-      }
-    </style>
+        @media (max-width: 1080px) {
+          .fork-me-on-github {
+            display: none;
+          }
+        }
+      </style>
 
-    <a href="https://github.com/xianmin/hugo-theme-jane">
-      <img class="fork-me-on-github"
-        src="https://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png"
-        alt="Fork me on GitHub">
-    </a>
-  
+      <a href="https://github.com/xianmin/hugo-theme-jane">
+        <img
+          class="fork-me-on-github"
+          src="https://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png"
+          alt="Fork me on GitHub"
+        />
+      </a>
+    
 
-  <header id="header" class="header container">
-    <div class="logo-wrapper">
+
+    <header id="header" class="header">
+      <div class="logo-wrapper">
   <a href="/zh-cn/" class="logo">
     
       Jane
@@ -440,13 +452,11 @@ if (!doNotTrack) {
   </ul>
 </nav>
 
-  </header>
+    </header>
 
-  <div id="mobile-panel">
-    <main id="main" class="main bg-llight wallpaper">
-      <div class="content-wrapper">
-        <div id="content" class="content container">
-          
+    <div id="mobile-panel">
+      <main id="main" class="main bg-llight wallpaper">
+        
 <div class="not-found">
   <h1 class="error-emoji"></h1>
   <p class="error-text">/* 404 page not found. */</p>
@@ -462,12 +472,11 @@ if (!doNotTrack) {
   errorEmojiContainer.appendChild(document.createTextNode(errorEmoji));
 </script>
 
-        </div>
-      </div>
-    </main>
 
-    <footer id="footer" class="footer">
-      <div class="icon-links">
+      </main>
+
+      <footer id="footer" class="footer">
+        <div class="icon-links">
   
   
     <a href="mailto:your@email.com" rel="me noopener" class="iconfont"
@@ -729,28 +738,30 @@ if (!doNotTrack) {
   
 </div>
 
-    </footer>
+      </footer>
 
-    <div class="back-to-top" id="back-to-top">
-      <i class="iconfont">
-        
-        <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+      <div class="button__back-to-top">
+        <a href="#back-to-top">
+          <i class="iconfont">
+            
+            <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
   width="35" height="35">
   <path d="M510.866688 227.694839 95.449397 629.218702l235.761562 0-2.057869 328.796468 362.40389 0L691.55698 628.188232l241.942331-3.089361L510.866688 227.694839zM63.840492 63.962777l894.052392 0 0 131.813095L63.840492 195.775872 63.840492 63.962777 63.840492 63.962777zM63.840492 63.962777"></path>
 </svg>
 
-      </i>
+          </i>
+        </a>
+      </div>
     </div>
-  </div>
-  
+    
 <script type="text/javascript" src="/hugo-theme-jane/lib/jquery/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="/hugo-theme-jane/lib/slideout/slideout-1.0.1.min.js"></script>
 
 
 
 
-<script type="text/javascript" src="/hugo-theme-jane/js/main.fe83e11b4fbc9193d67e2c9db78bad21f8dc59fca0cacd8c1c3bb071bb16a852.js" integrity="sha256-/oPhG0&#43;8kZPWfiydt4utIfjcWfygys2MHDuwcbsWqFI=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/hugo-theme-jane/js/main.88d611d7ce8f477a53185f9a256f2c388e4b1673f743506962443242221cfd1f.js" integrity="sha256-iNYR186PR3pTGF&#43;aJW8sOI5LFnP3Q1BpYkQyQiIc/R8=" crossorigin="anonymous"></script>
 
 
 
@@ -764,9 +775,8 @@ if (!doNotTrack) {
 
 
   
-    <script type="text/javascript" src="/js/load-photoswipe.js"></script>
-    <script type="text/javascript" src="/lib/photoswipe/photoswipe.min.js"></script>
-    <script type="text/javascript" src="/lib/photoswipe/photoswipe-ui-default.min.js"></script>
+    <script type="text/javascript" src="/hugo-theme-jane/lib/photoswipe/photoswipe.min.js"></script>
+    <script type="text/javascript" src="/hugo-theme-jane/lib/photoswipe/photoswipe-ui-default.min.js"></script>
   
 
 
@@ -802,5 +812,5 @@ if (!doNotTrack) {
 
 
 
-</body>
+  </body>
 </html>

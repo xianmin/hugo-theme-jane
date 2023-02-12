@@ -17,20 +17,20 @@
     </item>
     
     <item>
-      <title>Math Preview</title>
-      <link>https://www.xianmin.org/hugo-theme-jane/post/math-preview/</link>
+      <title>Demo: Math</title>
+      <link>https://www.xianmin.org/hugo-theme-jane/post/demo/5-math/</link>
       <pubDate>Mon, 04 Mar 2019 16:01:23 +0800</pubDate>
       
-      <guid>https://www.xianmin.org/hugo-theme-jane/post/math-preview/</guid>
+      <guid>https://www.xianmin.org/hugo-theme-jane/post/demo/5-math/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.intmath.com/cg5/katex-mathjax-comparison.php&#34;&gt;KaTeX and MathJax Comparison Demo, currently processed as KaTeX&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Shortcodes Preview</title>
-      <link>https://www.xianmin.org/hugo-theme-jane/post/shortcodes-preview/</link>
+      <title>Demo: more Shortcodes</title>
+      <link>https://www.xianmin.org/hugo-theme-jane/post/demo/7-shortcodes-preview/</link>
       <pubDate>Sun, 04 Mar 2018 16:01:23 +0800</pubDate>
       
-      <guid>https://www.xianmin.org/hugo-theme-jane/post/shortcodes-preview/</guid>
+      <guid>https://www.xianmin.org/hugo-theme-jane/post/demo/7-shortcodes-preview/</guid>
       <description>&lt;h2 id=&#34;what-a-shortcode-is&#34;&gt;What a Shortcode is&lt;/h2&gt;
 &lt;p&gt;Hugo loves Markdown because of its simple content format, but there are times when Markdown falls short. Often, content authors are forced to add raw HTML (e.g., video &lt;code&gt;&amp;lt;iframes&amp;gt;&lt;/code&gt;) to Markdown content. We think this contradicts the beautiful simplicity of Markdown&amp;rsquo;s syntax.&lt;/p&gt;
 &lt;p&gt;Hugo created &lt;strong&gt;shortcodes&lt;/strong&gt; to circumvent these limitations.&lt;/p&gt;
@@ -40,11 +40,11 @@
     </item>
     
     <item>
-      <title>Shortcodes Notice Preview</title>
-      <link>https://www.xianmin.org/hugo-theme-jane/post/shortcode-notice/</link>
+      <title>Demo: Shortcodes Notice</title>
+      <link>https://www.xianmin.org/hugo-theme-jane/post/demo/6-shortcode-notice/</link>
       <pubDate>Sat, 03 Mar 2018 16:01:23 +0800</pubDate>
       
-      <guid>https://www.xianmin.org/hugo-theme-jane/post/shortcode-notice/</guid>
+      <guid>https://www.xianmin.org/hugo-theme-jane/post/demo/6-shortcode-notice/</guid>
       <description>normal use Note example: {{% notice note %}} A notice disclaimer {{% /notice %}} Result: You could custom title : {{% notice note 笔记 %}} A notice disclaimer {{% /notice %}} tip {{% notice tip %}} A tip disclaimer {{% /tip %}} info {{% notice info %}} A info disclaimer {{% /notice %}} warning {{% notice warning %}} A warning disclaimer {{% /notice %}}</description>
     </item>
     

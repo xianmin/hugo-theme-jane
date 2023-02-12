@@ -43,6 +43,42 @@
     </item>
     
     <item>
+      <title>development</title>
+      <link>https://www.xianmin.org/hugo-theme-jane/tags/development/</link>
+      <pubDate>Tue, 22 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.xianmin.org/hugo-theme-jane/tags/development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>templates</title>
+      <link>https://www.xianmin.org/hugo-theme-jane/tags/templates/</link>
+      <pubDate>Tue, 22 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.xianmin.org/hugo-theme-jane/tags/templates/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>themes</title>
+      <link>https://www.xianmin.org/hugo-theme-jane/tags/themes/</link>
+      <pubDate>Tue, 22 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.xianmin.org/hugo-theme-jane/tags/themes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>toc</title>
+      <link>https://www.xianmin.org/hugo-theme-jane/tags/toc/</link>
+      <pubDate>Tue, 22 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.xianmin.org/hugo-theme-jane/tags/toc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>math</title>
       <link>https://www.xianmin.org/hugo-theme-jane/tags/math/</link>
       <pubDate>Mon, 04 Mar 2019 16:01:23 +0800</pubDate>
@@ -142,47 +178,11 @@
     </item>
     
     <item>
-      <title>development</title>
-      <link>https://www.xianmin.org/hugo-theme-jane/tags/development/</link>
-      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.xianmin.org/hugo-theme-jane/tags/development/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>templates</title>
-      <link>https://www.xianmin.org/hugo-theme-jane/tags/templates/</link>
-      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.xianmin.org/hugo-theme-jane/tags/templates/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>themes</title>
-      <link>https://www.xianmin.org/hugo-theme-jane/tags/themes/</link>
-      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.xianmin.org/hugo-theme-jane/tags/themes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>jekyll</title>
       <link>https://www.xianmin.org/hugo-theme-jane/tags/jekyll/</link>
       <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
       
       <guid>https://www.xianmin.org/hugo-theme-jane/tags/jekyll/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Syntax Highlighting</title>
-      <link>https://www.xianmin.org/hugo-theme-jane/tags/syntax-highlighting/</link>
-      <pubDate>Tue, 30 Aug 2011 16:01:23 +0800</pubDate>
-      
-      <guid>https://www.xianmin.org/hugo-theme-jane/tags/syntax-highlighting/</guid>
       <description></description>
     </item>
     

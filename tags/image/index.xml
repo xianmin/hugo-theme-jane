@@ -7,11 +7,11 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sat, 03 Mar 2018 16:01:23 +0800</lastBuildDate><atom:link href="https://www.xianmin.org/hugo-theme-jane/tags/image/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Image Preview</title>
-      <link>https://www.xianmin.org/hugo-theme-jane/post/image-preview/</link>
+      <title>Demo: Image</title>
+      <link>https://www.xianmin.org/hugo-theme-jane/post/demo/1-image/</link>
       <pubDate>Sat, 03 Mar 2018 16:01:23 +0800</pubDate>
       
-      <guid>https://www.xianmin.org/hugo-theme-jane/post/image-preview/</guid>
+      <guid>https://www.xianmin.org/hugo-theme-jane/post/demo/1-image/</guid>
       <description>&lt;p&gt;Thanks for &lt;a href=&#34;https://github.com/liwenyip/hugo-easy-gallery&#34;&gt;liwenyip/hugo-easy-gallery&lt;/a&gt; &amp;amp; &lt;a href=&#34;https://github.com/xianmin/hugo-theme-jane/pull/48&#34;&gt;Zebradil · Pull Request #48&lt;/a&gt; .&lt;/p&gt;
 &lt;p&gt;Now, we could use &lt;code&gt;{{&amp;lt; gallery &amp;gt;}}&lt;/code&gt; shortcode in hugo-theme-jane.&lt;/p&gt;
 &lt;h2 id=&#34;normal-image&#34;&gt;Normal Image&lt;/h2&gt;

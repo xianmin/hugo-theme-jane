@@ -243,7 +243,7 @@ $$&lt;/p&gt;
 &lt;p&gt;You can create footnotes like this&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 &lt;p&gt;This is another footnote&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 &lt;p&gt;Mouse on the ‘footnote’ superscript to see content of the footnote.&lt;/p&gt;
-&lt;h2 id=&#34;horizontal-rules&#34;&gt;Horizontal Rules&lt;/h2&gt;
+&lt;h2 id=&#34;horizontal-rules--horizontal-rules-horizontal-rules-horizontal-rules-horizontal-rules-horizontal-rules-horizontal-rules&#34;&gt;Horizontal Rules  Horizontal Rules Horizontal Rules Horizontal Rules Horizontal Rules Horizontal Rules Horizontal Rules&lt;/h2&gt;
 &lt;p&gt;Input &lt;code&gt;***&lt;/code&gt; or &lt;code&gt;---&lt;/code&gt; on a blank line and press &lt;code&gt;return&lt;/code&gt; will draw a horizontal line.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
@@ -435,10 +435,10 @@ $$&lt;/p&gt;
     
     <item>
       <title>How to Contribute</title>
-      <link>https://www.xianmin.org/hugo-theme-jane/post/how-to-contribute/</link>
+      <link>https://www.xianmin.org/hugo-theme-jane/post/docs/how-to-contribute/</link>
       <pubDate>Sat, 15 Oct 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://www.xianmin.org/hugo-theme-jane/post/how-to-contribute/</guid>
+      <guid>https://www.xianmin.org/hugo-theme-jane/post/docs/how-to-contribute/</guid>
       
         <description>&lt;h2 id=&#34;contributing-to-jane&#34;&gt;Contributing to Jane&lt;/h2&gt;
 &lt;p&gt;There are many ways to contribute to the Jane theme: submitting pull requests, reporting issues, providing new translations, and creating suggestions.&lt;/p&gt;
@@ -483,11 +483,97 @@ $$&lt;/p&gt;
     </item>
     
     <item>
-      <title>Math Preview</title>
-      <link>https://www.xianmin.org/hugo-theme-jane/post/math-preview/</link>
+      <title>Demo: toc</title>
+      <link>https://www.xianmin.org/hugo-theme-jane/post/demo/2-toc/</link>
+      <pubDate>Tue, 22 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.xianmin.org/hugo-theme-jane/post/demo/2-toc/</guid>
+      
+        <description>&lt;h2 id=&#34;header&#34;&gt;Header&lt;/h2&gt;
+&lt;p&gt;This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.&lt;/p&gt;
+&lt;h2 id=&#34;header-1&#34;&gt;Header&lt;/h2&gt;
+&lt;p&gt;This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.&lt;/p&gt;
+&lt;h2 id=&#34;header-2&#34;&gt;Header&lt;/h2&gt;
+&lt;p&gt;This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.&lt;/p&gt;
+&lt;h3 id=&#34;subheader&#34;&gt;SubHeader&lt;/h3&gt;
+&lt;p&gt;This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.&lt;/p&gt;
+&lt;h3 id=&#34;this-is-very-long-subheader--this-is-very-long-subheader--this-is-very-long-subheader-this-is-very-long-subheader--this-is-very-long-subheader-this-is-very-long-subheader&#34;&gt;This is very long SubHeader,  This is very long SubHeader,  This is very long SubHeader, This is very long SubHeader,  This is very long SubHeader, This is very long SubHeader&lt;/h3&gt;
+&lt;p&gt;This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.&lt;/p&gt;
+&lt;h3 id=&#34;subheader-1&#34;&gt;SubHeader&lt;/h3&gt;
+&lt;p&gt;This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.&lt;/p&gt;
+&lt;h2 id=&#34;header-3&#34;&gt;Header&lt;/h2&gt;
+&lt;p&gt;This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.&lt;/p&gt;
+&lt;h2 id=&#34;header-4&#34;&gt;Header&lt;/h2&gt;
+&lt;p&gt;This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.&lt;/p&gt;
+&lt;h2 id=&#34;header-5&#34;&gt;Header&lt;/h2&gt;
+&lt;h2 id=&#34;header-6&#34;&gt;Header&lt;/h2&gt;
+&lt;h3 id=&#34;subheader-2&#34;&gt;SubHeader&lt;/h3&gt;
+&lt;h3 id=&#34;subheader-3&#34;&gt;SubHeader&lt;/h3&gt;
+&lt;h4 id=&#34;h4&#34;&gt;H4&lt;/h4&gt;
+&lt;h4 id=&#34;h4-1&#34;&gt;H4&lt;/h4&gt;
+&lt;h5 id=&#34;h5&#34;&gt;H5&lt;/h5&gt;
+&lt;h6 id=&#34;h6&#34;&gt;H6&lt;/h6&gt;
+&lt;h2 id=&#34;header-7&#34;&gt;Header&lt;/h2&gt;
+&lt;h2 id=&#34;header-8&#34;&gt;Header&lt;/h2&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>Demo: toc, global toc is true, but this post should not show toc</title>
+      <link>https://www.xianmin.org/hugo-theme-jane/post/other/test-toc/global-toc-except-this/</link>
+      <pubDate>Mon, 21 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.xianmin.org/hugo-theme-jane/post/other/test-toc/global-toc-except-this/</guid>
+      
+        <description>&lt;h2 id=&#34;header&#34;&gt;Header&lt;/h2&gt;
+&lt;p&gt;This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.&lt;/p&gt;
+&lt;h2 id=&#34;header-1&#34;&gt;Header&lt;/h2&gt;
+&lt;p&gt;This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.&lt;/p&gt;
+&lt;h2 id=&#34;header-2&#34;&gt;Header&lt;/h2&gt;
+&lt;p&gt;This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.&lt;/p&gt;
+&lt;h3 id=&#34;subheader&#34;&gt;SubHeader&lt;/h3&gt;
+&lt;p&gt;This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.&lt;/p&gt;
+&lt;h3 id=&#34;this-is-very-long-subheader--this-is-very-long-subheader--this-is-very-long-subheader-this-is-very-long-subheader--this-is-very-long-subheader-this-is-very-long-subheader&#34;&gt;This is very long SubHeader,  This is very long SubHeader,  This is very long SubHeader, This is very long SubHeader,  This is very long SubHeader, This is very long SubHeader&lt;/h3&gt;
+&lt;p&gt;This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.&lt;/p&gt;
+&lt;h3 id=&#34;subheader-1&#34;&gt;SubHeader&lt;/h3&gt;
+&lt;p&gt;This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.&lt;/p&gt;
+&lt;h2 id=&#34;header-3&#34;&gt;Header&lt;/h2&gt;
+&lt;p&gt;This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.&lt;/p&gt;
+&lt;h2 id=&#34;header-4&#34;&gt;Header&lt;/h2&gt;
+&lt;p&gt;This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.&lt;/p&gt;
+&lt;h2 id=&#34;header-5&#34;&gt;Header&lt;/h2&gt;
+&lt;h2 id=&#34;header-6&#34;&gt;Header&lt;/h2&gt;
+&lt;h3 id=&#34;subheader-2&#34;&gt;SubHeader&lt;/h3&gt;
+&lt;h3 id=&#34;subheader-3&#34;&gt;SubHeader&lt;/h3&gt;
+&lt;h4 id=&#34;h4&#34;&gt;H4&lt;/h4&gt;
+&lt;h4 id=&#34;h4-1&#34;&gt;H4&lt;/h4&gt;
+&lt;h5 id=&#34;h5&#34;&gt;H5&lt;/h5&gt;
+&lt;h6 id=&#34;h6&#34;&gt;H6&lt;/h6&gt;
+&lt;h2 id=&#34;header-7&#34;&gt;Header&lt;/h2&gt;
+&lt;h2 id=&#34;header-8&#34;&gt;Header&lt;/h2&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>no header, no toc</title>
+      <link>https://www.xianmin.org/hugo-theme-jane/post/other/test-toc/no-header-dont-show-toc/</link>
+      <pubDate>Sun, 20 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.xianmin.org/hugo-theme-jane/post/other/test-toc/no-header-dont-show-toc/</guid>
+      
+        <description>&lt;p&gt;This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>Demo: Math</title>
+      <link>https://www.xianmin.org/hugo-theme-jane/post/demo/5-math/</link>
       <pubDate>Mon, 04 Mar 2019 16:01:23 +0800</pubDate>
       
-      <guid>https://www.xianmin.org/hugo-theme-jane/post/math-preview/</guid>
+      <guid>https://www.xianmin.org/hugo-theme-jane/post/demo/5-math/</guid>
       
         <description>&lt;p&gt;&lt;a href=&#34;https://www.intmath.com/cg5/katex-mathjax-comparison.php&#34;&gt;KaTeX and MathJax Comparison Demo, currently processed as KaTeX&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;repeating-fractions&#34;&gt;Repeating fractions&lt;/h2&gt;
@@ -630,11 +716,11 @@ $$&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Shortcodes Preview</title>
-      <link>https://www.xianmin.org/hugo-theme-jane/post/shortcodes-preview/</link>
+      <title>Demo: more Shortcodes</title>
+      <link>https://www.xianmin.org/hugo-theme-jane/post/demo/7-shortcodes-preview/</link>
       <pubDate>Sun, 04 Mar 2018 16:01:23 +0800</pubDate>
       
-      <guid>https://www.xianmin.org/hugo-theme-jane/post/shortcodes-preview/</guid>
+      <guid>https://www.xianmin.org/hugo-theme-jane/post/demo/7-shortcodes-preview/</guid>
       
         <description>&lt;h2 id=&#34;what-a-shortcode-is&#34;&gt;What a Shortcode is&lt;/h2&gt;
 &lt;p&gt;Hugo loves Markdown because of its simple content format, but there are times when Markdown falls short. Often, content authors are forced to add raw HTML (e.g., video &lt;code&gt;&amp;lt;iframes&amp;gt;&lt;/code&gt;) to Markdown content. We think this contradicts the beautiful simplicity of Markdown&amp;rsquo;s syntax.&lt;/p&gt;
@@ -1004,11 +1090,11 @@ Yes !.
     </item>
     
     <item>
-      <title>Image Preview</title>
-      <link>https://www.xianmin.org/hugo-theme-jane/post/image-preview/</link>
+      <title>Demo: Image</title>
+      <link>https://www.xianmin.org/hugo-theme-jane/post/demo/1-image/</link>
       <pubDate>Sat, 03 Mar 2018 16:01:23 +0800</pubDate>
       
-      <guid>https://www.xianmin.org/hugo-theme-jane/post/image-preview/</guid>
+      <guid>https://www.xianmin.org/hugo-theme-jane/post/demo/1-image/</guid>
       
         <description>&lt;p&gt;Thanks for &lt;a href=&#34;https://github.com/liwenyip/hugo-easy-gallery&#34;&gt;liwenyip/hugo-easy-gallery&lt;/a&gt; &amp;amp; &lt;a href=&#34;https://github.com/xianmin/hugo-theme-jane/pull/48&#34;&gt;Zebradil · Pull Request #48&lt;/a&gt; .&lt;/p&gt;
 &lt;p&gt;Now, we could use &lt;code&gt;{{&amp;lt; gallery &amp;gt;}}&lt;/code&gt; shortcode in hugo-theme-jane.&lt;/p&gt;
@@ -1099,11 +1185,11 @@ Yes !.
     </item>
     
     <item>
-      <title>Shortcodes Notice Preview</title>
-      <link>https://www.xianmin.org/hugo-theme-jane/post/shortcode-notice/</link>
+      <title>Demo: Shortcodes Notice</title>
+      <link>https://www.xianmin.org/hugo-theme-jane/post/demo/6-shortcode-notice/</link>
       <pubDate>Sat, 03 Mar 2018 16:01:23 +0800</pubDate>
       
-      <guid>https://www.xianmin.org/hugo-theme-jane/post/shortcode-notice/</guid>
+      <guid>https://www.xianmin.org/hugo-theme-jane/post/demo/6-shortcode-notice/</guid>
       
         <description>&lt;h2 id=&#34;normal-use&#34;&gt;normal use&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;Note&lt;/code&gt; example:&lt;/p&gt;
@@ -1137,11 +1223,11 @@ A warning disclaimer
     </item>
     
     <item>
-      <title>Jane-Theme Footnote Preview</title>
-      <link>https://www.xianmin.org/hugo-theme-jane/post/doc-footnote-preview/</link>
+      <title>Demo: Footnote</title>
+      <link>https://www.xianmin.org/hugo-theme-jane/post/demo/4-footnote/</link>
       <pubDate>Thu, 01 Mar 2018 16:01:23 +0800</pubDate>
       
-      <guid>https://www.xianmin.org/hugo-theme-jane/post/doc-footnote-preview/</guid>
+      <guid>https://www.xianmin.org/hugo-theme-jane/post/demo/4-footnote/</guid>
       
         <description>&lt;p&gt;Hugo-theme-jane optimized for footnote. When you mouse hover the footnote&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; , footnote content will be displayed.&lt;/p&gt;
 &lt;h2 id=&#34;footnote-1&#34;&gt;Footnote-1&lt;/h2&gt;
@@ -1252,10 +1338,10 @@ A warning disclaimer
     
     <item>
       <title>English Creating a New Theme</title>
-      <link>https://www.xianmin.org/hugo-theme-jane/post/english-preview/</link>
+      <link>https://www.xianmin.org/hugo-theme-jane/post/other/english-preview/</link>
       <pubDate>Thu, 31 Aug 2017 15:43:48 +0800</pubDate>
       
-      <guid>https://www.xianmin.org/hugo-theme-jane/post/english-preview/</guid>
+      <guid>https://www.xianmin.org/hugo-theme-jane/post/other/english-preview/</guid>
       
         <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.&lt;/p&gt;
@@ -2067,10 +2153,10 @@ $ vi themes/zafta/layouts/_default/single.html
     
     <item>
       <title>This is a very long title This is a very long title This is a very long title This is a very long title This is a very long title</title>
-      <link>https://www.xianmin.org/hugo-theme-jane/post/this-is-a-very-long-title/</link>
+      <link>https://www.xianmin.org/hugo-theme-jane/post/other/this-is-a-very-long-title/</link>
       <pubDate>Wed, 30 Aug 2017 15:43:48 +0800</pubDate>
       
-      <guid>https://www.xianmin.org/hugo-theme-jane/post/this-is-a-very-long-title/</guid>
+      <guid>https://www.xianmin.org/hugo-theme-jane/post/other/this-is-a-very-long-title/</guid>
       
         <description>&lt;p&gt;This is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long title&lt;/p&gt;
 </description>
@@ -2079,10 +2165,10 @@ $ vi themes/zafta/layouts/_default/single.html
     
     <item>
       <title>Creating a New Theme</title>
-      <link>https://www.xianmin.org/hugo-theme-jane/post/creating-a-new-theme/</link>
+      <link>https://www.xianmin.org/hugo-theme-jane/post/other/creating-a-new-theme/</link>
       <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://www.xianmin.org/hugo-theme-jane/post/creating-a-new-theme/</guid>
+      <guid>https://www.xianmin.org/hugo-theme-jane/post/other/creating-a-new-theme/</guid>
       
         <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.&lt;/p&gt;
@@ -2895,10 +2981,10 @@ $ vi themes/zafta/layouts/_default/single.html
     
     <item>
       <title>(Hu)go Template Primer</title>
-      <link>https://www.xianmin.org/hugo-theme-jane/post/goisforlovers/</link>
+      <link>https://www.xianmin.org/hugo-theme-jane/post/other/goisforlovers/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://www.xianmin.org/hugo-theme-jane/post/goisforlovers/</guid>
+      <guid>https://www.xianmin.org/hugo-theme-jane/post/other/goisforlovers/</guid>
       
         <description>&lt;p&gt;Hugo uses the excellent &lt;a href=&#34;http://golang.org/&#34;&gt;go&lt;/a&gt; &lt;a href=&#34;http://golang.org/pkg/html/template/&#34;&gt;html/template&lt;/a&gt; library for
 its template engine. It is an extremely lightweight engine that provides a very
@@ -3149,10 +3235,10 @@ so, such as in this example:&lt;/p&gt;
     
     <item>
       <title>Getting Started with Hugo</title>
-      <link>https://www.xianmin.org/hugo-theme-jane/post/hugoisforlovers/</link>
+      <link>https://www.xianmin.org/hugo-theme-jane/post/other/hugoisforlovers/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://www.xianmin.org/hugo-theme-jane/post/hugoisforlovers/</guid>
+      <guid>https://www.xianmin.org/hugo-theme-jane/post/other/hugoisforlovers/</guid>
       
         <description>&lt;h2 id=&#34;step-1-install-hugo&#34;&gt;Step 1. Install Hugo&lt;/h2&gt;
 &lt;p&gt;Goto &lt;a href=&#34;https://github.com/spf13/hugo/releases&#34;&gt;hugo releases&lt;/a&gt; and download the
@@ -3214,10 +3300,10 @@ Having nearly instant feedback enables you to have your creativity flow without 
     
     <item>
       <title>Migrate to Hugo from Jekyll</title>
-      <link>https://www.xianmin.org/hugo-theme-jane/post/migrate-from-jekyll/</link>
+      <link>https://www.xianmin.org/hugo-theme-jane/post/other/migrate-from-jekyll/</link>
       <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://www.xianmin.org/hugo-theme-jane/post/migrate-from-jekyll/</guid>
+      <guid>https://www.xianmin.org/hugo-theme-jane/post/other/migrate-from-jekyll/</guid>
       
         <description>&lt;h2 id=&#34;move-static-content-to-static&#34;&gt;Move static content to &lt;code&gt;static&lt;/code&gt;&lt;/h2&gt;
 &lt;p&gt;Jekyll has a rule that any directory not starting with &lt;code&gt;_&lt;/code&gt; will be copied as-is to the &lt;code&gt;_site&lt;/code&gt; output. Hugo keeps all static content under &lt;code&gt;static&lt;/code&gt;. You should therefore move it all there.
@@ -3357,11 +3443,11 @@ Liquid::Template.register_tag(&#39;image&#39;, Jekyll::ImageTag)
     </item>
     
     <item>
-      <title>Syntax Highlighting</title>
-      <link>https://www.xianmin.org/hugo-theme-jane/post/syntax-highlighting/</link>
+      <title>Demo: Syntax Highlighting</title>
+      <link>https://www.xianmin.org/hugo-theme-jane/post/demo/3-syntax-highlighting/</link>
       <pubDate>Tue, 30 Aug 2011 16:01:23 +0800</pubDate>
       
-      <guid>https://www.xianmin.org/hugo-theme-jane/post/syntax-highlighting/</guid>
+      <guid>https://www.xianmin.org/hugo-theme-jane/post/demo/3-syntax-highlighting/</guid>
       
         <description>&lt;p&gt;More detail: &lt;a href=&#34;https://gohugo.io/content-management/syntax-highlighting/&#34;&gt;Syntax Highlighting | Hugo&lt;/a&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;

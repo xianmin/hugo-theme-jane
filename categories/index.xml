@@ -16,6 +16,15 @@
     </item>
     
     <item>
+      <title>docs</title>
+      <link>https://www.xianmin.org/hugo-theme-jane/categories/docs/</link>
+      <pubDate>Sat, 15 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.xianmin.org/hugo-theme-jane/categories/docs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>index</title>
       <link>https://www.xianmin.org/hugo-theme-jane/categories/index/</link>
       <pubDate>Sat, 15 Oct 2022 00:00:00 +0000</pubDate>
@@ -25,11 +34,20 @@
     </item>
     
     <item>
-      <title>docs</title>
-      <link>https://www.xianmin.org/hugo-theme-jane/categories/docs/</link>
+      <title>golang</title>
+      <link>https://www.xianmin.org/hugo-theme-jane/categories/golang/</link>
+      <pubDate>Tue, 22 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.xianmin.org/hugo-theme-jane/categories/golang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>demo</title>
+      <link>https://www.xianmin.org/hugo-theme-jane/categories/demo/</link>
       <pubDate>Mon, 04 Mar 2019 16:01:23 +0800</pubDate>
       
-      <guid>https://www.xianmin.org/hugo-theme-jane/categories/docs/</guid>
+      <guid>https://www.xianmin.org/hugo-theme-jane/categories/demo/</guid>
       <description></description>
     </item>
     
@@ -66,15 +84,6 @@
       <pubDate>Wed, 30 Aug 2017 15:43:48 +0800</pubDate>
       
       <guid>https://www.xianmin.org/hugo-theme-jane/categories/test/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>golang</title>
-      <link>https://www.xianmin.org/hugo-theme-jane/categories/golang/</link>
-      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.xianmin.org/hugo-theme-jane/categories/golang/</guid>
       <description></description>
     </item>
     

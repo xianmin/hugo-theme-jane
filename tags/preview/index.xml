@@ -17,20 +17,20 @@
     </item>
     
     <item>
-      <title>Math Preview</title>
-      <link>https://www.xianmin.org/hugo-theme-jane/post/math-preview/</link>
+      <title>Demo: Math</title>
+      <link>https://www.xianmin.org/hugo-theme-jane/post/demo/5-math/</link>
       <pubDate>Mon, 04 Mar 2019 16:01:23 +0800</pubDate>
       
-      <guid>https://www.xianmin.org/hugo-theme-jane/post/math-preview/</guid>
+      <guid>https://www.xianmin.org/hugo-theme-jane/post/demo/5-math/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.intmath.com/cg5/katex-mathjax-comparison.php&#34;&gt;KaTeX and MathJax Comparison Demo, currently processed as KaTeX&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Shortcodes Preview</title>
-      <link>https://www.xianmin.org/hugo-theme-jane/post/shortcodes-preview/</link>
+      <title>Demo: more Shortcodes</title>
+      <link>https://www.xianmin.org/hugo-theme-jane/post/demo/7-shortcodes-preview/</link>
       <pubDate>Sun, 04 Mar 2018 16:01:23 +0800</pubDate>
       
-      <guid>https://www.xianmin.org/hugo-theme-jane/post/shortcodes-preview/</guid>
+      <guid>https://www.xianmin.org/hugo-theme-jane/post/demo/7-shortcodes-preview/</guid>
       <description>&lt;h2 id=&#34;what-a-shortcode-is&#34;&gt;What a Shortcode is&lt;/h2&gt;
 &lt;p&gt;Hugo loves Markdown because of its simple content format, but there are times when Markdown falls short. Often, content authors are forced to add raw HTML (e.g., video &lt;code&gt;&amp;lt;iframes&amp;gt;&lt;/code&gt;) to Markdown content. We think this contradicts the beautiful simplicity of Markdown&amp;rsquo;s syntax.&lt;/p&gt;
 &lt;p&gt;Hugo created &lt;strong&gt;shortcodes&lt;/strong&gt; to circumvent these limitations.&lt;/p&gt;
@@ -40,11 +40,11 @@
     </item>
     
     <item>
-      <title>Image Preview</title>
-      <link>https://www.xianmin.org/hugo-theme-jane/post/image-preview/</link>
+      <title>Demo: Image</title>
+      <link>https://www.xianmin.org/hugo-theme-jane/post/demo/1-image/</link>
       <pubDate>Sat, 03 Mar 2018 16:01:23 +0800</pubDate>
       
-      <guid>https://www.xianmin.org/hugo-theme-jane/post/image-preview/</guid>
+      <guid>https://www.xianmin.org/hugo-theme-jane/post/demo/1-image/</guid>
       <description>&lt;p&gt;Thanks for &lt;a href=&#34;https://github.com/liwenyip/hugo-easy-gallery&#34;&gt;liwenyip/hugo-easy-gallery&lt;/a&gt; &amp;amp; &lt;a href=&#34;https://github.com/xianmin/hugo-theme-jane/pull/48&#34;&gt;Zebradil · Pull Request #48&lt;/a&gt; .&lt;/p&gt;
 &lt;p&gt;Now, we could use &lt;code&gt;{{&amp;lt; gallery &amp;gt;}}&lt;/code&gt; shortcode in hugo-theme-jane.&lt;/p&gt;
 &lt;h2 id=&#34;normal-image&#34;&gt;Normal Image&lt;/h2&gt;
@@ -61,39 +61,39 @@
     </item>
     
     <item>
-      <title>Shortcodes Notice Preview</title>
-      <link>https://www.xianmin.org/hugo-theme-jane/post/shortcode-notice/</link>
+      <title>Demo: Shortcodes Notice</title>
+      <link>https://www.xianmin.org/hugo-theme-jane/post/demo/6-shortcode-notice/</link>
       <pubDate>Sat, 03 Mar 2018 16:01:23 +0800</pubDate>
       
-      <guid>https://www.xianmin.org/hugo-theme-jane/post/shortcode-notice/</guid>
+      <guid>https://www.xianmin.org/hugo-theme-jane/post/demo/6-shortcode-notice/</guid>
       <description>normal use Note example: {{% notice note %}} A notice disclaimer {{% /notice %}} Result: You could custom title : {{% notice note 笔记 %}} A notice disclaimer {{% /notice %}} tip {{% notice tip %}} A tip disclaimer {{% /tip %}} info {{% notice info %}} A info disclaimer {{% /notice %}} warning {{% notice warning %}} A warning disclaimer {{% /notice %}}</description>
     </item>
     
     <item>
       <title>English Creating a New Theme</title>
-      <link>https://www.xianmin.org/hugo-theme-jane/post/english-preview/</link>
+      <link>https://www.xianmin.org/hugo-theme-jane/post/other/english-preview/</link>
       <pubDate>Thu, 31 Aug 2017 15:43:48 +0800</pubDate>
       
-      <guid>https://www.xianmin.org/hugo-theme-jane/post/english-preview/</guid>
+      <guid>https://www.xianmin.org/hugo-theme-jane/post/other/english-preview/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>This is a very long title This is a very long title This is a very long title This is a very long title This is a very long title</title>
-      <link>https://www.xianmin.org/hugo-theme-jane/post/this-is-a-very-long-title/</link>
+      <link>https://www.xianmin.org/hugo-theme-jane/post/other/this-is-a-very-long-title/</link>
       <pubDate>Wed, 30 Aug 2017 15:43:48 +0800</pubDate>
       
-      <guid>https://www.xianmin.org/hugo-theme-jane/post/this-is-a-very-long-title/</guid>
+      <guid>https://www.xianmin.org/hugo-theme-jane/post/other/this-is-a-very-long-title/</guid>
       <description>This is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long title</description>
     </item>
     
     <item>
-      <title>Syntax Highlighting</title>
-      <link>https://www.xianmin.org/hugo-theme-jane/post/syntax-highlighting/</link>
+      <title>Demo: Syntax Highlighting</title>
+      <link>https://www.xianmin.org/hugo-theme-jane/post/demo/3-syntax-highlighting/</link>
       <pubDate>Tue, 30 Aug 2011 16:01:23 +0800</pubDate>
       
-      <guid>https://www.xianmin.org/hugo-theme-jane/post/syntax-highlighting/</guid>
+      <guid>https://www.xianmin.org/hugo-theme-jane/post/demo/3-syntax-highlighting/</guid>
       <description>&lt;p&gt;More detail: &lt;a href=&#34;https://gohugo.io/content-management/syntax-highlighting/&#34;&gt;Syntax Highlighting | Hugo&lt;/a&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
 &lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;

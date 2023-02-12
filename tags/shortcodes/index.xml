@@ -17,11 +17,11 @@
     </item>
     
     <item>
-      <title>Shortcodes Preview</title>
-      <link>https://www.xianmin.org/hugo-theme-jane/post/shortcodes-preview/</link>
+      <title>Demo: more Shortcodes</title>
+      <link>https://www.xianmin.org/hugo-theme-jane/post/demo/7-shortcodes-preview/</link>
       <pubDate>Sun, 04 Mar 2018 16:01:23 +0800</pubDate>
       
-      <guid>https://www.xianmin.org/hugo-theme-jane/post/shortcodes-preview/</guid>
+      <guid>https://www.xianmin.org/hugo-theme-jane/post/demo/7-shortcodes-preview/</guid>
       <description>&lt;h2 id=&#34;what-a-shortcode-is&#34;&gt;What a Shortcode is&lt;/h2&gt;
 &lt;p&gt;Hugo loves Markdown because of its simple content format, but there are times when Markdown falls short. Often, content authors are forced to add raw HTML (e.g., video &lt;code&gt;&amp;lt;iframes&amp;gt;&lt;/code&gt;) to Markdown content. We think this contradicts the beautiful simplicity of Markdown&amp;rsquo;s syntax.&lt;/p&gt;
 &lt;p&gt;Hugo created &lt;strong&gt;shortcodes&lt;/strong&gt; to circumvent these limitations.&lt;/p&gt;
@@ -31,11 +31,11 @@
     </item>
     
     <item>
-      <title>Image Preview</title>
-      <link>https://www.xianmin.org/hugo-theme-jane/post/image-preview/</link>
+      <title>Demo: Image</title>
+      <link>https://www.xianmin.org/hugo-theme-jane/post/demo/1-image/</link>
       <pubDate>Sat, 03 Mar 2018 16:01:23 +0800</pubDate>
       
-      <guid>https://www.xianmin.org/hugo-theme-jane/post/image-preview/</guid>
+      <guid>https://www.xianmin.org/hugo-theme-jane/post/demo/1-image/</guid>
       <description>&lt;p&gt;Thanks for &lt;a href=&#34;https://github.com/liwenyip/hugo-easy-gallery&#34;&gt;liwenyip/hugo-easy-gallery&lt;/a&gt; &amp;amp; &lt;a href=&#34;https://github.com/xianmin/hugo-theme-jane/pull/48&#34;&gt;Zebradil · Pull Request #48&lt;/a&gt; .&lt;/p&gt;
 &lt;p&gt;Now, we could use &lt;code&gt;{{&amp;lt; gallery &amp;gt;}}&lt;/code&gt; shortcode in hugo-theme-jane.&lt;/p&gt;
 &lt;h2 id=&#34;normal-image&#34;&gt;Normal Image&lt;/h2&gt;
@@ -52,11 +52,11 @@
     </item>
     
     <item>
-      <title>Shortcodes Notice Preview</title>
-      <link>https://www.xianmin.org/hugo-theme-jane/post/shortcode-notice/</link>
+      <title>Demo: Shortcodes Notice</title>
+      <link>https://www.xianmin.org/hugo-theme-jane/post/demo/6-shortcode-notice/</link>
       <pubDate>Sat, 03 Mar 2018 16:01:23 +0800</pubDate>
       
-      <guid>https://www.xianmin.org/hugo-theme-jane/post/shortcode-notice/</guid>
+      <guid>https://www.xianmin.org/hugo-theme-jane/post/demo/6-shortcode-notice/</guid>
       <description>normal use Note example: {{% notice note %}} A notice disclaimer {{% /notice %}} Result: You could custom title : {{% notice note 笔记 %}} A notice disclaimer {{% /notice %}} tip {{% notice tip %}} A tip disclaimer {{% /tip %}} info {{% notice info %}} A info disclaimer {{% /notice %}} warning {{% notice warning %}} A warning disclaimer {{% /notice %}}</description>
     </item>
     
