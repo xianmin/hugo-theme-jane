@@ -3,7 +3,7 @@ nav.toc {
   position: sticky;
   top: 1rem;
   align-self: start;
-  width: 20em;
+  width: 16em;
 }
 
 .toc-title {
@@ -21,7 +21,7 @@ nav.toc {
 
 .toc {
   margin-top: 8em;
-  margin-right: 1em;
+  margin-left: 1em;
 
   .active > a {
     // color: blue;
