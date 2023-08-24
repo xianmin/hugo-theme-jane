@@ -92,7 +92,7 @@
 
 <!-- custom css -->
 {{ range .Site.Params.customCSS }}
-<link rel="stylesheet" href="{{ "/css/" | relURL }}{{ . }}">
+<link rel="stylesheet" href="{{ "css/" | relURL }}{{ . }}">
 {{ end }}
 
 {{/* NOTE: These Hugo Internal Templates can be found starting at https://github.com/spf13/hugo/blob/master/tpl/tplimpl/template_embedded.go#L158 */}}
