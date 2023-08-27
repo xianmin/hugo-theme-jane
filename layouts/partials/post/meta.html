@@ -36,6 +36,15 @@
       <span class="post-meta-more">
         {{ i18n "wordCount" .WordCount }} -
         {{ i18n "readingTime" .ReadingTime }}
+      {{ if and .Site.Params.commentCount.disqus.enable .Site.GetPage.IsHome }}
+        - <a href="{{ .Permalink }}#disqus_thread">{{ i18n "comments" }}</a>
+      {{ end }}
+      {{- if and .Site.Params.commentCount.remark42.enable .Site.GetPage.IsHome }}
+        - <span
+            class="remark42__counter"
+            data-url="{{ .Permalink }}"
+          ></span> {{ i18n "comments" }}
+      {{ end -}}
       </span>
     {{- end }}
 
