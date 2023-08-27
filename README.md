@@ -56,6 +56,19 @@ cd myBlog
 git clone https://github.com/xianmin/hugo-theme-jane.git --depth=1 themes/jane
 ```
 
+<details>
+<summary>Alternative, installation as a module</summary>
+
+If you have [Go](https://go.dev/) installed you can install the theme as a [hugo module](https://gohugo.io/hugo-modules/), then there will be no need to clone it into the `themes` folder:
+
+```bash
+hugo mod init example.com/my-blog
+```
+
+After that, you would need to use `github.com/xianmin/hugo-theme-jane` as your `theme` and not `hugo-theme-jane` in your `config.toml` file.
+
+</details>
+
 Copy the example site content:
 
 ```bash
