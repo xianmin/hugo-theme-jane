@@ -63,7 +63,7 @@
   (function() {
     if (window.location.hostname === 'localhost') return;
     var hm = document.createElement("script"); hm.async = true;
-	hm.src = "//tajs.qq.com/stats?sId={{.}}";
+    hm.src = "//tajs.qq.com/stats?sId={{.}}";
     var s = document.getElementsByTagName("script")[0];
     s.parentNode.insertBefore(hm, s);
   })();
@@ -112,7 +112,7 @@
       crossorigin="anonymous"></script>
   {{ else if .Site.Params.publicCDN.enable }}
     <script type="text/javascript" src="{{ "js/load-photoswipe.js" | relURL }}"></script>
-	{{ .Site.Params.publicCDN.photoswipe | safeHTML }}
+    {{ .Site.Params.publicCDN.photoswipe | safeHTML }}
     {{ .Site.Params.publicCDN.photoswipeUI | safeHTML }}
   {{ else }}
     <script type="text/javascript" src="{{ "lib/photoswipe/photoswipe.min.js" | relURL}}"></script>
@@ -247,10 +247,10 @@
     host: '{{ .Site.Params.remark42Url }}',
     site_id: '{{ .Site.Params.remark42SiteId | default "remark" }}',
     components: [
-{{- if .Page.IsPage }}
-	    'embed',
-{{- else if and .Site.Params.commentCount.remark42.enable .IsHome }}
-	    'counter',
+{{- if not .IsHome }}
+    'embed',
+{{- else if .Site.Params.commentCount.remark42.enable }}
+    'counter',
 {{- end }}
     ],
   }
