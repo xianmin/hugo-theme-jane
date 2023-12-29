@@ -13,13 +13,13 @@ paginate = 5                                              # 首页每页显示�
 rssLimit = 20             # Limit Entry Count to Rss file # 限制 Rss 文章输出数量
 disqusShortname = "xianmin12"      # disqus_shortname
 googleAnalytics = "G-4SFSR6JRVT"      # G-********
-copyright = ""            # default: author.name ↓        # 默认为下面配置的author.name ↓
+copyright = ""            # default: params.author.name ↓ # 默认为下面配置的params.author.name ↓
 enableGitInfo = true # use git commit log to generate lastmod record # 可根据 Git 中的提交生成最近更新记录。
 # uglyURLs = true
 
 # language support en / zh-cn / other... translations present in i18n/
 defaultContentLanguage = "en"  # Default language to use (if you setup multilingual support)
-[langusges]
+[languages]
 [languages.en]
   title = "Jane - A simple theme for Hugo"
   languageName = "English"
@@ -99,11 +99,6 @@ defaultContentLanguage = "en"  # Default language to use (if you setup multiling
   weight = 50
   url = "https://gohugo.io"
 
-
-[author]
-  name = "Jane"      # essential                     # 必需
-  url = "/about"        # optional                      # 可选
-
 [sitemap]                 # essential                     # 必需
   changefreq = "weekly"
   priority = 0.5
@@ -115,6 +110,10 @@ defaultContentLanguage = "en"  # Default language to use (if you setup multiling
   since = "2017"            # Site creation time          # 站点建立时间
   homeFullContent = false   # if false, show post summaries on home page. Otherwise show full content.
   rssFullContent = true     # if false, Rss feed instead of the summary
+
+  [params.author]
+    name = "Jane"      # essential                     # 必需
+    url = "/about"        # optional                      # 可选
 
   # site info (optional)                                  # 站点信息（可选，不需要的可以直接注释掉）
   logoTitle = "Jane"        # default: the title value    # 默认值: 上面设置的title值

@@ -9,7 +9,7 @@ paginate = 3              # Number of articles displayed on the homepage # 首�
 rssLimit = 20             # Limit Entry Count to Rss file # 限制 Rss 文章输出数量
 disqusShortname = ""      # disqus_shortname
 googleAnalytics = ""      # UA-XXXXXXXX-X
-copyright = ""            # default: author.name ↓        # 默认为下面配置的author.name ↓
+copyright = ""            # default: params.author.name ↓ # 默认为下面配置的params.author.name ↓
 enableGitInfo = true      # use git commit log to generate lastmod record # 可根据 Git 中的提交生成最近更新记录。
 # uglyURLs = true         # more info: https://gohugo.io/content-management/urls/#ugly-urls
 
@@ -23,10 +23,6 @@ enableGitInfo = true      # use git commit log to generate lastmod record # 可�
 defaultContentLanguage = "en"           # Default language to use
 [languages.en]
   languageCode = "en"
-
-[author]
-  name = "xianmin"        # essential                     # 必需
-  url = "/about"          # optional                      # 可选
 
 [sitemap]                 # essential                     # 必需
   changefreq = "weekly"
@@ -65,6 +61,11 @@ defaultContentLanguage = "en"           # Default language to use
   homeFullContent = false   # if false, show post summaries on home page. Otherwise show full content.
   rssFullContent = true     # if false, Rss feed instead of the summary
   mainSections = ["post"]
+
+  [params.author]
+    name = "xianmin"         # essential                  # 必需
+    email = "me@example.com" # optional, for RSS          # 可选
+    url = "/about"           # optional                   # 可选
 
   # site info (optional)                                  # 站点信息（可选，不需要的可以直接注释掉）
   logoTitle = "Jane"        # default: the title value    # 默认值: 上面设置的title值
