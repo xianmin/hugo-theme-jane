@@ -312,7 +312,7 @@ models:
         label: Toc
       - type: boolean
         name: autoCollapseToc
-        label: Auto Collaps Toc
+        label: Auto Collapse Toc
       - type: string
         name: contentCopyright
         label: Content Copyright

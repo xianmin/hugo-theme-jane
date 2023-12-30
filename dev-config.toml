@@ -19,7 +19,7 @@ enableGitInfo = true # use git commit log to generate lastmod record # 可根据
 
 # language support en / zh-cn / other... translations present in i18n/
 defaultContentLanguage = "en"  # Default language to use (if you setup multilingual support)
-[langusges]
+[languages]
 [languages.en]
   title = "Jane - A simple theme for Hugo"
   languageName = "English"
