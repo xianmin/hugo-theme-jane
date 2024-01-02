@@ -249,7 +249,8 @@
     components: [
 {{- if not .IsHome }}
     'embed',
-{{- else if .Site.Params.commentCount.remark42.enable }}
+{{- end }}
+{{- if .Site.Params.commentCount.remark42.enable }}
     'counter',
 {{- end }}
     ],
