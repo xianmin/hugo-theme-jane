@@ -62,10 +62,9 @@ defaultContentLanguage = "en"           # Default language to use
   rssFullContent = true     # if false, Rss feed instead of the summary
   mainSections = ["post"]
 
-  [params.author]
-    name = "xianmin"         # essential                  # 必需
-    email = "me@example.com" # optional, for RSS          # 可选
-    url = "/about"           # optional                   # 可选
+  author.name = "Jane"      # essential                     # 必需
+  author.email = "me@example.com" # optional, for RSS             # 可选
+  author.url = "/about"        # optional                      # 可选
 
   # site info (optional)                                  # 站点信息（可选，不需要的可以直接注释掉）
   logoTitle = "Jane"        # default: the title value    # 默认值: 上面设置的title值
