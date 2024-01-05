@@ -13,6 +13,12 @@
 - id: category
   translation: "Catégory: "
 
+- id: authors
+  translation: Authors
+
+- id: author_item
+  translation: "Author: "
+
 # posts
 - id: prev
   translation: Prec
@@ -100,7 +106,10 @@
   translation: Read in english
 
 - id: read_de
-  translation: Lese in Deutsch
+  translation: In Deutsch lesen
 
 - id: language
   translation: Langage
+
+- id: comments
+  translation: Comments

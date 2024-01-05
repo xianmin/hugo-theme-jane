@@ -124,7 +124,7 @@ A partial template is a template that can be included in other templates. Partia
 
 Let's use Hugo to create a new web site. I'm a Mac user, so I'll create mine in my home directory, in the Sites folder. If you're using Linux, you might have to create the folder first.
 
-The "new site" command will create a skeleton of a site. It will give you the basic directory structure and a useable configuration file.
+The "new site" command will create a skeleton of a site. It will give you the basic directory structure and a usable configuration file.
 
 ```
 $ hugo new site ~/Sites/zafta

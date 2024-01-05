@@ -24,7 +24,7 @@
       {{ end }}
     {{ end }}
   {{ else }}
-  <!-- else set tag or cotegory -->
+  <!-- else set tag or category -->
     {{ with $.Scratch.Get "tagName" }}
     <!-- tag list -->
       {{ range $name, $taxonomy := $.Site.Taxonomies.tags }}
