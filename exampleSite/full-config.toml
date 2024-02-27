@@ -115,9 +115,6 @@ defaultContentLanguage = "en"           # Default language to use
   customCSS = []            # if ['custom.css'], load '/static/css/custom.css' file
   customJS = []             # if ['custom.js'], load '/static/js/custom.js' file
 
-  # enable 'fork me on github', see https://blog.github.com/2008-12-19-github-ribbons/
-  # forkMeOnGithub = "https://github.com/xianmin/hugo-theme-jane"
-
   # add custom info on the footer.   # 添加备案信息
   # customFooter = "京ICP备10000000号-1"
 
