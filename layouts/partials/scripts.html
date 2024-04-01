@@ -98,7 +98,9 @@
 
 <!-- Load PhotoSwipe js if the load-photoswipe shortcode has been used -->
 {{ if or .Site.Params.photoswipe .Site.Params.fancybox }}
-  <script type="text/javascript" src="{{ "js/load-photoswipe.js" | relURL }}"></script>
+  {{- with resources.Get "js/load-photoswipe.js" | js.Build (dict "targetPath" "js/load-photoswipe.min.js" "minify" true "target" "es6") | fingerprint -}}
+    <script type="text/javascript" src="{{ .RelPermalink }}"></script>
+  {{- end -}}
   {{ if .Site.Params.bootcdn }}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js" integrity="sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc="
       crossorigin="anonymous"></script>
