@@ -270,3 +270,31 @@ defaultContentLanguage = "en"           # Default language to use
     noHl = false
     style = 'friendly'
     tabWidth = 4
+
+[deployment]
+
+[[deployment.targets]]
+# An arbitrary name for this target.
+#name = "production"
+
+# Amazon Web Services S3; see https://gocloud.dev/howto/blob/#s3
+# For S3-compatible endpoints, see https://gocloud.dev/howto/blob/#s3-compatible
+#URL = "s3://<Bucket Name>?region=<AWS region>"
+
+# If you are using a CloudFront CDN, deploy will invalidate the cache as needed.
+#cloudFrontDistributionID = "<FILL ME IN>"
+
+#[[deployment.matchers]]
+# JS, CSS and fonts are either fingerprinted or versioned. Should be cached forever.
+#pattern = "^.+\\.(js|css|woff2)$"
+#cacheControl = "public, max-age=31536000, immutable"
+
+#[[deployment.matchers]]
+# Images in content are fingerprinted and should be cached forever.
+#pattern = "^content/.+\\.(jpe?g|webp|png|gif)$"
+#cacheControl = "public, max-age=31536000, immutable"
+
+#[[deployment.matchers]]
+# All other files by default should never be cached.
+#pattern = ".*"
+#cacheControl = "public, max-age=0, must-revalidate"
