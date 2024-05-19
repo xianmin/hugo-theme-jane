@@ -205,7 +205,7 @@ defaultContentLanguage = "en"           # Default language to use
   [params.social]                                         # 社交链接
     a-email = "mailto:your@email.com"
     b-stack-overflow = "http://localhost:1313"
-    c-twitter = "http://localhost:1313"
+    c-x = "http://localhost:1313"
     d-facebook = "http://localhost:1313"
     e-linkedin = "http://localhost:1313"
     f-google = "http://localhost:1313"
@@ -224,6 +224,8 @@ defaultContentLanguage = "en"           # Default language to use
     s-mastodon = "http://localhost:1313"
     t-youtube = "http://localhost:1313"
     u-twitch = "http://localhost:1313"
+    v-telegram = "http://localhost:1313"
+    w-discord = "http://localhost:1313"
 
 # jsonfeed support
 # more information: https://github.com/xianmin/hugo-theme-jane/issues/23
