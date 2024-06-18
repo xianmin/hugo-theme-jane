@@ -225,6 +225,7 @@ defaultContentLanguage = "en"           # Default language to use
     t-youtube = "http://localhost:1313"
     u-twitch = "http://localhost:1313"
     v-lemmy = "http://localhost:1313"
+    w-beeper = "http://localhost:1313"
 
 # jsonfeed support
 # more information: https://github.com/xianmin/hugo-theme-jane/issues/23

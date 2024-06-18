@@ -247,6 +247,9 @@ models:
               - type: string
                 name: v-lemmy
                 label: Lemmy
+              - type: string
+                name: w-beeper
+                label: Beeper
   basicpage:
     type: page
     label: Basic page
