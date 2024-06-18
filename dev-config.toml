@@ -221,6 +221,7 @@ defaultContentLanguage = "en"  # Default language to use (if you setup multiling
     q-bilibili = "http://en.xianmin.org/hugo-theme-jane/"
     r-codeforces = "http://en.xianmin.org/hugo-theme-jane/"
     s-mastodon = "http://en.xianmin.org/hugo-theme-jane/"
+    v-lemmy = "http://en.xianmin.org/hugo-theme-jane/"
 
 # Highlight options. See https://gohugo.io/content-management/syntax-highlighting/
 [markup]

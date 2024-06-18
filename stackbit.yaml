@@ -244,6 +244,9 @@ models:
               - type: string
                 name: s-mastodon
                 label: Mastodon
+              - type: string
+                name: v-lemmy
+                label: Lemmy
   basicpage:
     type: page
     label: Basic page

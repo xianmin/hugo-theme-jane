@@ -224,6 +224,7 @@ defaultContentLanguage = "en"           # Default language to use
     s-mastodon = "http://localhost:1313"
     t-youtube = "http://localhost:1313"
     u-twitch = "http://localhost:1313"
+    v-lemmy = "http://localhost:1313"
 
 # jsonfeed support
 # more information: https://github.com/xianmin/hugo-theme-jane/issues/23
