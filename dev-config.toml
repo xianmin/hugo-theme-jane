@@ -223,6 +223,7 @@ defaultContentLanguage = "en"  # Default language to use (if you setup multiling
     s-mastodon = "http://en.xianmin.org/hugo-theme-jane/"
     v-lemmy = "http://en.xianmin.org/hugo-theme-jane/"
     w-beeper = "http://en.xianmin.org/hugo-theme-jane/"
+    x-matrix = "http://en.xianmin.org/hugo-theme-jane/"
 
 # Highlight options. See https://gohugo.io/content-management/syntax-highlighting/
 [markup]

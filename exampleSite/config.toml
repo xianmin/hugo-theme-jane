@@ -103,3 +103,4 @@ defaultContentLanguage = "en"           # Default language to use
     u-twitch = "http://localhost:1313"
     v-lemmy = "http://localhost:1313"
     w-beeper = "http://localhost:1313"
+    x-matrix = "http://localhost:1313"

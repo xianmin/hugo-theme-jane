@@ -250,6 +250,9 @@ models:
               - type: string
                 name: w-beeper
                 label: Beeper
+              - type: string
+                name: x-matrix
+                label: Matrix
   basicpage:
     type: page
     label: Basic page
