@@ -1,0 +1,7 @@
+<!-- See https://gohugo.io/hugo-pipes/postprocess/#css-purging-with-postcss -->
+{{ $css := resources.Get "css/main.css" }}
+{{ $css = $css | resources.PostCSS }}
+{{ if hugo.IsProduction }}
+  {{ $css = $css | fingerprint | resources.PostProcess }}
+{{ end }}
+<link href="{{ $css.Permalink }}" rel="stylesheet" />

@@ -1,0 +1,33 @@
+<!-- count how many times we've called this shortcode; load the css if it's the first time -->
+{{- if not ($.Page.Scratch.Get "figurecount") }}
+  <link rel="stylesheet" href="{{ "css/hugo-easy-gallery.css" | relURL }}" />
+{{ end }}
+{{- $.Page.Scratch.Add "figurecount" 1 -}}
+
+<div class="box{{ with .Get "caption-position" }} fancy-figure caption-position-{{.}}{{end}}{{ with .Get "caption-effect" }} caption-effect-{{.}}{{end}}">
+  <figure {{ with .Get "class" }} class="{{.}}" {{ end }} itemprop="associatedMedia" itemscope itemtype="http://schema.org/TextObject" {{ with .Get "width" }} style="max-width:{{.}}" {{end}}>
+    
+      <!-- Display the header if provided -->
+      {{ with .Get "header" }}
+          <span class=" text-center text-xs font-bold py-4 px-3">{{.}}</span>
+      {{ end }}
+
+    <!-- Display the main content -->
+    <div class="text-content underline cursor-pointer">
+      {{.Inner}}
+    </div>
+
+    <!-- Optional caption and attribution -->
+    {{- if or (or (.Get "title") (.Get "caption")) (.Get "attr")}}
+      <figcaption>
+        {{- with .Get "title" }}<h4>{{.}}</h4>{{ end }}
+        {{- if or (.Get "caption") (.Get "attr")}}
+          <p>
+            {{- .Get "caption" -}}
+            {{- with .Get "attrlink"}}<a href="{{.}}">{{ .Get "attr" }}</a>{{ else }}{{ .Get "attr"}}{{ end -}}
+          </p>
+        {{- end }}
+      </figcaption>
+    {{- end }}
+  </figure>
+</div>

@@ -21,7 +21,7 @@
   {{- end }}
 
   <!-- Disqus -->
-  {{- if .Site.DisqusShortname -}}
+  {{- if .Site.Config.Services.Disqus.Shortname -}}
     {{ partial "comments/disqus.html" . }}
   {{- end }}
 

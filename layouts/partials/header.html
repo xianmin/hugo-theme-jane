@@ -1,52 +1,49 @@
-<div class="logo-wrapper">
-  <a href="{{ "/" | relLangURL }}" class="logo">
-    {{ if .Site.Params.logoTitle }}
-      {{ .Site.Params.logoTitle | safeHTML }}
-    {{ else }}
-      {{ .Site.Title }}
-    {{ end }}
+<div class="w-full flex items-center justify-between p-3 h-24 bg-blue-800 logo-wrapper">
+  <a href="{{ "/" | relLangURL }}"  class="">
+    <img src="/LOGO-PUTIH-2.png" class="logo" style="width: 120px;" alt="">
   </a>
+  <div class="flex">
+    <div class="text-sm font-medium text-white flex flex-col items-end">
+      <span>
+        JASA KONSULTAN PERIZINAN BANGUNAN
+      </span>
+      <span>Jakarta</span>
+    </div>
+    <div class="h-12 w-1 bg-white mx-2"></div>
+    <div class="text-sm flex gap-2 h-[100%] items-center ">
+        {{ partial "social_links.html" . }}
+    </div>
+  </div>
 </div>
-
-<nav class="site-navbar">
-  <ul id="menu" class="menu">
+<nav class="site-navbar bg-white w-full mt-3 flex flex-wrap justify-center z-20" >
+  <ul id="menu" class="menu py-3 font-medium">
     {{ $currentPage := . }}
     {{ range .Site.Menus.main }}
-        <li class="menu-item{{ if $currentPage.IsMenuCurrent "main" . }} active{{end}}">
-        {{ if .HasChildren }}
-          <!-- drop down navigation MENU -->
-          <a class="menu-item-link menu-parent" href="{{ .URL | absLangURL | safeURL }}">{{ .Name }}</a>
-          <ul class="submenu">
-            {{ range .Children }}
-              <li class="submenu-item">
-                <a href="{{ .URL | absLangURL | safeURL }}">{{ .Name }}</a>
-              </li>
-            {{ end }}
-          </ul>
-
-        {{ else }}
-          <!-- normal MENU -->
-          {{ if hasPrefix .URL "http" }}
-            <a class="menu-item-link" href="{{ .URL | absLangURL | safeURL }}" rel="noopener" target="_blank">
-              {{ .Name }}
-              {{/* icon new window */}}
-              <i class="iconfont">
-                {{ partial "svg/new_window.svg" }}
-              </i>
-            </a>
-          {{ else }}
+    <li class="menu-item{{ if $currentPage.IsMenuCurrent "main" . }} active{{end}}">
+      {{ if .HasChildren }}
+      {{ else }}
+      <!-- normal MENU -->
+      {{ if hasPrefix .URL "http" }}
+      <a class="menu-item-link" href="{{ .URL | absLangURL | safeURL }}" rel="noopener" target="_blank">
+        {{ .Name }}
+        {{/* icon new window */}}
+        <i class="iconfont">
+          {{ partial "svg/new_window.svg" }}
+        </i>
+      </a>
+      {{ else }}
             <a class="menu-item-link" href="{{ .URL | absLangURL | safeURL }}">{{ .Name }}</a>
+            {{ end }}
+            
+            {{ end  }}
+            
+          </li>
           {{ end }}
-
-        {{ end  }}
-
-      </li>
-    {{ end }}
-
-    {{/* language chooser */}}
-    {{ if and (gt (len .Site.Home.AllTranslations) 1) (.Site.Params.showMenuLanguageChooser | default false ) }}
-      {{- $.Scratch.Set "language" .Language -}}
-      <li class="menu-item">
+          
+          {{/* language chooser */}}
+          {{ if and (gt (len .Site.Home.AllTranslations) 1) (.Site.Params.showMenuLanguageChooser | default false ) }}
+          {{- $.Scratch.Set "language" .Language -}}
+          <li class="menu-item">
         <!-- drop down navigation MENU -->
         <a class="menu-item-link menu-parent menu-item-lang" href="#">
           {{/* icon globe */}}
@@ -76,5 +73,8 @@
         </a>
       </li>
     {{ end }}
+    
+    <div class="h-10 w-1 bg-gray-400"></div>
+    <input type="text" class="px-3 py-2 ml-2 rounded-xl text-black placeholder-gray-700" placeholder="search">
   </ul>
 </nav>

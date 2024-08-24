@@ -1,16 +1,67 @@
-{{ define "content" }}
-<section id="posts" class="posts">
-  {{ $pages := .Pages }}
-  {{ if .IsHome }}
-    {{ $pages = where .Site.RegularPages "Type" "in" site.Params.mainSections }}
-  {{ end }}
-  {{ $paginator := .Paginate $pages }}
-  {{ range $paginator.Pages }}
-    {{ .Render "summary" }}
-  {{ end }}
-</section>
-
-<!-- pagination -->
-{{ partial "pagination.html" . }}
-
+{{ define "content" -}}
+{{ with .Params.teaser_image }}
+  {{- partial "header/teaser-image.html" . -}}
 {{ end }}
+  <div class="content-wrapper">
+    <div id="content" class="content">
+      <article class="post">
+
+        <!-- Content -->
+        <div class="post-content">
+          {{ .Content }}
+        </div>
+
+        <footer class="post-footer">
+          {{ with .Params.tags -}}
+            <div class="post-tags">
+              {{ range . }}
+                {{- $name := . -}}
+                {{- with $.Site.GetPage "taxonomy" (printf "tags/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "tags/%s" ($name | urlize))) -}}
+                  <a href="{{ .Permalink }}">{{ $name }}</a>
+                {{ end -}}
+              {{ end }}
+            </div>
+          {{- end }}
+
+
+          <!-- Post Pagination -->
+          <nav class="post-nav">
+            {{ with .NextInSection }}
+              <a class="prev" href="{{ .RelPermalink }}">
+                {{/* icon left */}}
+                <i class="iconfont">
+                  {{ partial "svg/left.svg" }}
+                </i>
+                <span class="prev-text nav-default">{{ .Title }}</span>
+                <span class="prev-text nav-mobile">{{ i18n "prev_post" }}</span>
+              </a>
+            {{- end }}
+            {{ with .PrevInSection }}
+              <a class="next" href="{{ .RelPermalink }}">
+                <span class="next-text nav-default">{{ .Title }}</span>
+                <span class="prev-text nav-mobile">{{ i18n "next_post" }}</span>
+                {{/* icon right */}}
+                <i class="iconfont">
+                  {{ partial "svg/right.svg" }}
+                </i>
+              </a>
+            {{- end }}
+          </nav>
+        </footer>
+      </article>
+
+    </div>
+
+    <!-- TOC -->
+    {{ partial "post/toc.html" . }}
+
+  </div>
+  
+  {{ with .Params.klien_us }}
+    {{- partial "main/klien-us.html" . -}}
+  {{ end }}
+  
+  <div class="w-full items-center p-3 flex">
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScJGpRw3COCrf8liNyxv05_gdQJBPW3L_Sc9y_IF6q4DyJ-8w/viewform?embedded=true" width="2080" height="1261" frameborder="2" marginheight="0" marginwidth="2">Memuat…</iframe>
+  </div>
+{{- end }}

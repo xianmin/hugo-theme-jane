@@ -18,7 +18,7 @@
     </title>
     {{ partial "head.html" . }}
   </head>
-  <body>
+  <body style="overflow-x: hidden;" class=" m-0 p-0 z-0 bg-gray-200">
     <div id="back-to-top"></div>
 
     {{ partial "slideout.html" . }}
@@ -36,12 +36,12 @@
     </header>
 
     <div id="mobile-panel">
-      <main id="main" class="main bg-llight wallpaper">
+      <main id="main" class="main 0 wallpaper">
         {{ block "content" . }}{{ end }}
 
       </main>
 
-      <footer id="footer" class="footer">
+      <footer class="bg-blue-800 py-2">
         {{ partial "footer.html" . }}
       </footer>
 
@@ -51,6 +51,14 @@
             {{/* icon up */}}
             {{ partial "svg/up.svg" }}
           </i>
+        </a>
+      </div>
+      <div class="button__pop-whatsapp bg-orange-600 pr-3 rounded-2xl">
+        <a href="" class=" flex flex-wrap gap-3 items-center">
+          <i class="iconfont">
+            {{ partial "svg/whatsapp.svg" }}
+          </i>
+          <div class="font-medium text-sm text-white">Hubungi Kami</div>
         </a>
       </div>
     </div>

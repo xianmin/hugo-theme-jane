@@ -12,13 +12,3 @@
     </a>
   {{- end }}
 {{- end }}
-
-{{/* RSS icon  */}}
-{{ with .Site.GetPage "home" -}}
-  {{- with .OutputFormats.Get "RSS" -}}
-  <a href="{{ .Permalink }}" rel="noopener {{ .Rel }}" type="{{ .MediaType.Type }}"
-    class="iconfont" title="rss" target="_blank">
-    {{ partial "svg/rss.svg" }}
-  </a>
-  {{ end -}}
-{{- end -}}
