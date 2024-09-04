@@ -232,7 +232,7 @@
 {{ end }}
 
 {{ if .Site.Params.commentCount.disqus.enable }}
-  <script id="dsq-count-scr" src="//{{ .Site.DisqusShortname }}.disqus.com/count.js" async></script>
+  <script id="dsq-count-scr" src="//{{ .Site.Config.Services.Disqus.Shortname }}.disqus.com/count.js" async></script>
 {{ end }}
 
 {{ if and .Site.Params.remark42Url (or .Page.IsPage .IsHome) }}
