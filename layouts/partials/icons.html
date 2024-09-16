@@ -1,0 +1,43 @@
+{{/*
+  icons.html
+  Hugo Mods - Icons
+  https://github.com/hugomods/icons
+*/}}
+
+{{ $externalLink := dict
+"vendor" "lucide"
+"name" "external-link"
+"className" "icon--external-link"
+}}
+
+{{ $dropDown := dict
+"vendor" "lucide"
+"name" "chevron-down"
+"className" "icon--chevron-down"
+}}
+
+{{ $languages := dict
+"vendor" "lucide"
+"name" "languages"
+"className" "icon--languages"
+}}
+
+{{ $search := dict
+"vendor" "lucide"
+"name" "search"
+"className" "icon--search"
+}}
+
+{{ $rss := dict
+"vendor" "lucide"
+"name" "rss"
+"className" "icon--rss"
+}}
+
+{{ return dict
+"externalLink" $externalLink
+"dropDown" $dropDown
+"languages" $languages
+"search" $search
+"rss" $rss
+}}

@@ -24,11 +24,6 @@
   }
 }
 
-.menu-parent::after {
-  content: " ▼";
-  font-size: 11px;
-}
-
 @include max-screen() {
   .site-navbar {
     display: none;
