@@ -1,0 +1,3 @@
+[submodule "assets/sass/pico"]
+	path = assets/sass/pico
+	url = https://github.com/picocss/pico.git
