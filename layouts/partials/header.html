@@ -84,9 +84,14 @@
     </li>
 
     <li class="menu-item">
-      <a class="menu-item-link" href="{{ `index.xml` | absLangURL }}">
+      {{ with .Site.GetPage "home" -}}
+      {{- with .OutputFormats.Get "RSS" -}}
+      <a class="menu-item-link" href="{{ .Permalink }}" rel="noopener {{ .Rel }}" type="{{ .MediaType.Type }}"
+        title="rss" target="_blank">
         {{ partial "icons/icon" $icons.rss }}
       </a>
+      {{ end -}}
+      {{ end }}
     </li>
   </ul>
 </nav>
