@@ -34,10 +34,24 @@
 "className" "icon--rss"
 }}
 
+{{ $sun := dict
+"vendor" "lucide"
+"name" "sun"
+"className" "icon--sun"
+}}
+
+{{ $moon := dict
+"vendor" "lucide"
+"name" "moon"
+"className" "icon--moon"
+}}
+
 {{ return dict
 "externalLink" $externalLink
 "dropDown" $dropDown
 "languages" $languages
 "search" $search
 "rss" $rss
+"sun" $sun
+"moon" $moon
 }}
