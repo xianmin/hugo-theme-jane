@@ -1,3 +1,15 @@
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>
+  {{- block "title" . -}}
+  {{ if .IsPage }}
+  {{ .Title }} - {{ .Site.Title }}
+  {{ else }}
+  {{ .Site.Title }}
+  {{ end }}
+  {{- end -}}
+</title>
+
 {{ range .Translations }}
 <link rel="alternate" hreflang="{{ .Site.LanguageCode }}" href="{{ .Permalink  }}" />
 {{ end }}
@@ -15,7 +27,7 @@
 */}}
 <meta name="applicable-device" content="pc,mobile">
 
-<meta name="theme-color" content="#f8f5ec" />
+<meta name="color-scheme" content="light dark" />
 <meta name="msapplication-navbutton-color" content="#f8f5ec">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
@@ -74,7 +86,8 @@
 {{- end }}
 
 <!-- Jane theme main style -->
-{{ $style := resources.Get "sass/jane.scss" | toCSS | minify | fingerprint }}
+{{ $styleOpts := dict "transpiler" "dartsass" "targetPath" "css/style.css" }}
+{{ $style := resources.Get "sass/jane.scss" | toCSS $styleOpts | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}" media="screen" crossorigin="anonymous">
 <!-- End -->
 

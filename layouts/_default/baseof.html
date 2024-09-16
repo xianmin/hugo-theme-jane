@@ -1,59 +1,44 @@
 <!DOCTYPE html>
-<html
-  lang="{{ $.Site.LanguageCode | default "en" }}"
-  itemscope
-  itemtype="http://schema.org/WebPage"
->
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>
-      {{- block "title" . -}}
-        {{ if .IsPage }}
-          {{ .Title }} - {{ .Site.Title }}
-        {{ else }}
-          {{ .Site.Title }}
-        {{ end }}
-      {{- end -}}
-    </title>
-    {{ partial "head.html" . }}
-  </head>
-  <body>
-    <div id="back-to-top"></div>
+<html lang="{{ $.Site.LanguageCode | default " en" }}" itemscope itemtype="http://schema.org/WebPage">
 
-    {{ partial "slideout.html" . }}
+<head>
+  {{ partial "head.html" . }}
+</head>
 
-    {{ if or .Site.Params.photoswipe .Site.Params.fancybox }}
-      {{ partial "photoswipe.html" . }}
-    {{ end }}
+<body>
+  <div id="back-to-top"></div>
 
-    {{ if .Site.Params.search.google.enable }}
-      {{ partial "search_google.html" . }}
-    {{ end }}
+  {{/* {{ partial "slideout.html" . }} */}}
 
-    <header id="header" class="header">
-      {{ partial "header.html" . }}
-    </header>
+  {{/* {{ if or .Site.Params.photoswipe .Site.Params.fancybox }}
+  {{ partial "photoswipe.html" . }}
+  {{ end }} */}}
 
-    <div id="mobile-panel">
-      <main id="main" class="main bg-llight wallpaper">
-        {{ block "content" . }}{{ end }}
+  {{/* {{ if .Site.Params.search.google.enable }}
+  {{ partial "search_google.html" . }}
+  {{ end }} */}}
 
-      </main>
+  <header id="header" class="header">
+    {{ partial "header.html" . }}
+  </header>
 
-      <footer id="footer" class="footer">
-        {{ partial "footer.html" . }}
-      </footer>
+  <main id="main" class="pico container">
+    {{ block "content" . }}{{ end }}
+  </main>
 
-      <div class="button__back-to-top">
-        <a href="#back-to-top">
-          <i class="iconfont">
-            {{/* icon up */}}
-            {{ partial "svg/up.svg" }}
-          </i>
-        </a>
-      </div>
-    </div>
-    {{ partial "scripts.html" . }}
-  </body>
+  <footer id="footer" class="footer">
+    {{ partial "footer.html" . }}
+  </footer>
+
+  <div class="button__back-to-top">
+    <a href="#back-to-top">
+      <i class="iconfont">
+        {{/* icon up */}}
+        {{ partial "svg/up.svg" }}
+      </i>
+    </a>
+  </div>
+  {{ partial "scripts.html" . }}
+</body>
+
 </html>

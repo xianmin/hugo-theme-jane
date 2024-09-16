@@ -13,11 +13,11 @@
   .menu {
     display: flex;
     height: 100%;
-    font-family: $global-serif-font-family;
+    // font-family: $global-serif-font-family;
 
     .active {
       font-weight: bold;
-      border-bottom: 2px solid;
+      background: var(--pico-primary-hover-background);
     }
 
     @import "./menu-item";
