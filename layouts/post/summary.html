@@ -1,31 +1,31 @@
-<article class="post">
-  <header class="post-header">
-    <h1 class="post-title">
-      {{ if .Params.weight }}
+<section class="post">
+  <article>
+    <header class="post-header">
+      <h1 class="post-title">
+        {{ if .Params.weight }}
         <span class="post-pinned">
           {{ partial "svg/pinned.svg" }}
         </span>
-      {{ end }}
-      <a class="post-link" href="{{ .RelPermalink }}">{{ .Title }}</a>
-    </h1>
-    {{ partial "post/i18nlist.html" . }}
-    {{ partial "post/meta.html" . }}
-  </header>
-  <!-- Content -->
-  <div class="post-content">
-    {{ if .Site.Params.homeFullContent }}
+        {{ end }}
+        <a class="post-link" href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </h1>
+      {{ partial "post/i18nlist.html" . }}
+      {{ partial "post/meta.html" . }}
+    </header>
+    <!-- Content -->
+    <div class="post-content">
+      {{ if .Site.Params.homeFullContent }}
       <div class="post-summary">
         {{ .Content }}
       </div>
-    {{ else }}
+      {{ else }}
       <div class="post-summary">
         {{ .Summary }}
       </div>
       <div class="read-more">
-        <a href="{{ .RelPermalink }}" class="read-more-link"
-          >{{ i18n "readmore" }}</a
-        >
+        <a href="{{ .RelPermalink }}" class="read-more-link">{{ i18n "readmore" }}</a>
       </div>
-    {{ end }}
-  </div>
-</article>
+      {{ end }}
+    </div>
+  </article>
+</section>

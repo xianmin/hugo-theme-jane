@@ -157,6 +157,13 @@ defaultContentLanguage = "en"  # Default language to use (if you setup multiling
   customCSS = []            # if ['custom.css'], load '/static/css/custom.css' file
   customJS = []             # if ['custom.js'], load '/static/js/custom.js' file
 
+  # [Initialize Sass variables from Hugo templates - tips & tricks - HUGO](https://discourse.gohugo.io/t/initialize-sass-variables-from-hugo-templates/42053)
+  [params.style]
+    jane_theme_color = 'purple'
+    article_max_width = '40em'
+    serif_font_family = 'sans-serif'
+    font_size_base = '18px'
+
   # enable 'fork me on github', https://blog.github.com/2008-12-19-github-ribbons/
 
   [params.publicCDN]        # load these files from public cdn                          # 启用公共CDN，需自行定义
