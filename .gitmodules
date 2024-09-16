@@ -1,3 +1,4 @@
 [submodule "assets/sass/pico"]
 	path = assets/sass/pico
-	url = https://github.com/picocss/pico.git
+	url = https://github.com/xianmin/pico.git
+	branch = hugo-theme-jane
