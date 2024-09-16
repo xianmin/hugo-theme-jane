@@ -4,6 +4,7 @@
   https://github.com/hugomods/icons
 */}}
 
+{{/*  header icons  */}}
 {{ $externalLink := dict
 "vendor" "lucide"
 "name" "external-link"
@@ -46,6 +47,22 @@
 "className" "icon--moon"
 }}
 
+{{/*  post icons  */}}
+{{ $pin := dict
+"vendor" "lucide"
+"name" "pin"
+}}
+
+{{ $author := dict
+"vendor" "mdi"
+"name" "account-edit-outline"
+}}
+
+{{ $calendar := dict
+"vendor" "mdi"
+"name" "calendar-range-outline"
+}}
+
 {{ return dict
 "externalLink" $externalLink
 "dropDown" $dropDown
@@ -54,4 +71,7 @@
 "rss" $rss
 "sun" $sun
 "moon" $moon
+"pin" $pin
+"author" $author
+"calendar" $calendar
 }}
