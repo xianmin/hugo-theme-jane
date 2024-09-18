@@ -179,7 +179,10 @@ $mobile-breakpoint: 768px;
 // @import "_partial/author_info";
 // @import "_partial/search";
 
+// Page styles
 @import "_page/home";
 @import "_page/archive";
+@import "_page/tag_cloud";
 
+// Components
 @import "_components/card";
