@@ -1,0 +1,26 @@
+.archive {
+  margin: 0 auto;
+  margin-top: 3rem;
+  max-width: $article-max-width;
+
+  .archive-group {
+    margin-bottom: 2rem;
+  }
+
+  .archive-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 2px $grey-100 solid;
+    margin-bottom: 1rem;
+  }
+
+  .archive-post {
+    display: flex;
+
+    .archive-post-time {
+      flex: none;
+      margin-right: 1rem;
+    }
+  }
+}

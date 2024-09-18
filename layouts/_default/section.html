@@ -2,37 +2,35 @@
 
 {{ define "content"}}
 {{- $paginator := .Paginate (where .Data.Pages.ByDate.Reverse "Type" "post") (index .Site.Params "archive-paginate" | default 10) }}
-<section id="archive" class="archive">
-  {{- if not $paginator.HasPrev }}
-    <div class="archive-title">
-      <span class="archive-post-counter">
-        {{- $length := len .Data.Pages }}
-          {{ i18n "counter_archives" $length }}
-      </span>
+<div id="archive" class="archive">
+  <div class="archive-title">
+    <h1>{{ i18n "archive" }}</h1>
+    <span class="archive-post-counter">
+      {{- $length := len .Data.Pages }}
+      {{ i18n "counter_archives" $length }}
+    </span>
+  </div>
+
+  {{- range $paginator.Pages.GroupByDate "2006" }}
+  <section class="archive-group">
+    <div class="archive-group-title">
+      <h2 class="archive-year">{{ .Key }}</h2>
     </div>
-  {{- end -}}
-
-  {{- range $index, $element := $paginator.Pages -}}
-    {{- $thisYear := $element.Date.Format "2006" }}
-    {{- $lastElement := $index | add -1 | index $paginator.Pages }}
-    {{ if or (eq $index 0) ( ne ($lastElement.Date.Format "2006") $thisYear ) }}
-      <div class="collection-title">
-        <h2 class="archive-year">{{ $thisYear }}</h2>
-      </div>
-    {{- end }}
-
+    {{- range .Pages }}
     <div class="archive-post">
       <time datetime="{{ .Date.Format "2006-01-02" }}" class="archive-post-time">
         {{ .Date | time.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }}
       </time>
       <span class="archive-post-title">
-        <a href="{{ $element.RelPermalink }}" class="archive-post-link">
+        <a href="{{ .RelPermalink }}" class="archive-post-link">
           {{ .Title }}
         </a>
       </span>
     </div>
-  {{- end -}}
-</section>
+    {{- end }}
+  </section>
+  {{- end }}
+</div>
 
 <!-- pagination -->
 {{ partial "pagination.html" . }}
