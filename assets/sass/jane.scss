@@ -3,6 +3,7 @@ $jane-theme-color: h.$jane-theme-color !default;
 $article-max-width: h.$article-max-width !default;
 $serif-font-family: h.$serif-font-family !default;
 
+$mobile-breakpoint: 768px;
 
 @use "pico/scss/pico" as pico with (
   // Theme color
@@ -160,7 +161,8 @@ $serif-font-family: h.$serif-font-family !default;
 // @import "_common/animation";
 
 // @import "_base";
-@import "_partial/header";
+@import "_partial/_header/desktop_header";
+@import "_partial/_header/mobile_header";
 @import "_partial/icons";
 @import "_partial/pagination";
 @import "_partial/footer";

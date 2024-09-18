@@ -10,13 +10,17 @@
   }
 }
 
-@mixin min-screen($min-width: 1080px) {
+// Mixin for styles that apply above a specified minimum screen width
+// Default breakpoint is set to $mobile-breakpoint
+@mixin min-screen($min-width: $mobile-breakpoint) {
    @media screen and (min-width: $min-width) {
      @content;
    }
 }
 
-@mixin max-screen($max-width: 1080px) {
+// Mixin for styles that apply below a specified maximum screen width
+// Default breakpoint is set to $mobile-breakpoint
+@mixin max-screen($max-width: $mobile-breakpoint) {
    @media screen and (max-width: $max-width) {
      @content;
    }

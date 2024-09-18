@@ -8,7 +8,10 @@
 <body>
   <div id="back-to-top"></div>
 
-  {{/* {{ partial "slideout.html" . }} */}}
+  <header>
+    {{ partial "desktop_header.html" . }}
+    {{ partial "mobile_header.html" . }}
+  </header>
 
   {{/* {{ if or .Site.Params.photoswipe .Site.Params.fancybox }}
   {{ partial "photoswipe.html" . }}
@@ -18,9 +21,7 @@
   {{ partial "search_google.html" . }}
   {{ end }} */}}
 
-  <header id="header" class="header">
-    {{ partial "header.html" . }}
-  </header>
+
 
   <main id="main" class="pico container">
     {{ block "content" . }}{{ end }}
@@ -30,14 +31,6 @@
     {{ partial "footer.html" . }}
   </footer>
 
-  <div class="button__back-to-top">
-    <a href="#back-to-top">
-      <i class="iconfont">
-        {{/* icon up */}}
-        {{ partial "svg/up.svg" }}
-      </i>
-    </a>
-  </div>
   {{ partial "scripts.html" . }}
 </body>
 
