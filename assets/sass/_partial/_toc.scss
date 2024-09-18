@@ -56,6 +56,9 @@ nav.toc {
   }
   li {
     list-style: none !important;
+  }
+
+  li > ul > li {
     padding-left: 1em;
     border-left: var(--pico-border-width) solid var(--pico-muted-border-color);
   }

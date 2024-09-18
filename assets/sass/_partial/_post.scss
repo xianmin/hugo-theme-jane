@@ -24,6 +24,16 @@
     margin-top: 5rem;
 
     @import "_post/header";
+    @import "_post/content";
+    @import "_post/copyright";
+    @import "_post/reward";
+    @import "_post/footer";
+  }
+
+  .comment {
+    margin: 0 auto;
+    margin-top: 2rem;
+    max-width: $article-max-width;
   }
 }
 
