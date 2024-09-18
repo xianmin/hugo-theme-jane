@@ -138,12 +138,12 @@ $mobile-breakpoint: 768px;
 
       // Components
       "components/accordion": true,
-      "components/card": true,
+      "components/card": false,
       "components/dropdown": true,
       "components/group": true,
       "components/loading": true,
       "components/modal": true,
-      "components/nav": true,
+      "components/nav": false,
       "components/progress": true,
       "components/tooltip": true,
 
@@ -152,6 +152,8 @@ $mobile-breakpoint: 768px;
       "utilities/reduce-motion": true
     )
 );
+
+@use "pico/scss/colors/index" as *;
 
 // @import "_custom/custom";
 // @import "_variables";
@@ -166,6 +168,7 @@ $mobile-breakpoint: 768px;
 @import "_partial/icons";
 @import "_partial/pagination";
 @import "_partial/footer";
+@import "_partial/post";
 // @import "_partial/archive";
 // @import "_partial/tags";
 // @import "_partial/categories";
@@ -177,3 +180,5 @@ $mobile-breakpoint: 768px;
 // @import "_partial/search";
 
 @import "_page/home";
+
+@import "_components/card";
