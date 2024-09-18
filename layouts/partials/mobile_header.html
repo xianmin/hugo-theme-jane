@@ -87,14 +87,14 @@
       </li>
       {{ end }}
 
-      <li class="menu-item">
-        <a id="theme-toggle" class="menu-item-link" href="javascript:void(0);">
+      <li class="mobile-menu-item">
+        <a class="theme-toggle menu-item-link" href="javascript:void(0);">
           <span class="theme-icon theme-icon-light">{{ partial "icons/icon" $icons.sun }}</span>
           <span class="theme-icon theme-icon-dark">{{ partial "icons/icon" $icons.moon }}</span>
         </a>
       </li>
 
-      <li class="menu-item">
+      <li class="mobile-menu-item">
         {{ with .Site.GetPage "home" -}}
         {{- with .OutputFormats.Get "RSS" -}}
         <a class="menu-item-link" href="{{ .Permalink }}" rel="noopener {{ .Rel }}" type="{{ .MediaType.Type }}"

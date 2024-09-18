@@ -101,6 +101,26 @@
   }
 }
 
+.theme-icon-dark {
+  [data-theme="dark"] & {
+    display: none;
+  }
+
+  [data-theme="light"] & {
+    display: block;
+  }
+}
+
+.theme-icon-light {
+  [data-theme="dark"] & {
+    display: block;
+  }
+
+  [data-theme="light"] & {
+    display: none;
+  }
+}
+
 @include max-screen() {
   .desktop-header {
     display: none;
