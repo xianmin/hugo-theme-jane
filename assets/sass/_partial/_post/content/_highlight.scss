@@ -7,16 +7,18 @@
 
   code {
     all: unset;
+    border-radius: 0;
   }
 
   pre {
     margin: 0; /* remove normal pre margin */
+    border-radius: 0;
   }
 
   table {
     padding: 1em 0.3em !important;
 
-    td:nth-child(2) code{
+    td:nth-child(2) code {
       &::after {
         position: absolute;
         top: 0;
