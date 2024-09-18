@@ -65,11 +65,6 @@ defaultContentLanguage = "en"  # Default language to use (if you setup multiling
   identifier = "tags"
   pageref = "/tags/"
 [[languages.en.menu.main]]
-  name = "Categories"
-  weight = 40
-  identifier = "categories"
-  pageref = "/categories/"
-[[languages.en.menu.main]]
   name = "external-link"
   weight = 50
   url = "https://gohugo.io"
@@ -89,11 +84,6 @@ defaultContentLanguage = "en"  # Default language to use (if you setup multiling
   weight = 30
   identifier = "tags"
   pageref = "zh-cn/tags/"
-[[languages.zh-cn.menu.main]]
-  name = "分类"
-  weight = 40
-  identifier = "categories"
-  pageref = "zh-cn/categories/"
 [[languages.zh-cn.menu.main]]
   name = "外部链接"
   weight = 50

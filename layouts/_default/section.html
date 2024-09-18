@@ -3,6 +3,9 @@
 {{ define "content"}}
 {{- $paginator := .Paginate (where .Data.Pages.ByDate.Reverse "Type" "post") (index .Site.Params "archive-paginate" | default 10) }}
 <div id="archive" class="archive">
+  <!-- 分类导航 -->
+  {{ partial "widget/category-nav.html" . }}
+
   <div class="archive-title">
     <h1>{{ i18n "archive" }}</h1>
     <span class="archive-post-counter">
@@ -18,7 +21,7 @@
     </div>
     {{- range .Pages }}
     <div class="archive-post">
-      <time datetime="{{ .Date.Format "2006-01-02" }}" class="archive-post-time">
+      <time datetime="{{ .Date.Format " 2006-01-02" }}" class="archive-post-time">
         {{ .Date | time.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }}
       </time>
       <span class="archive-post-title">

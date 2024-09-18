@@ -7,6 +7,13 @@
     margin-bottom: 2rem;
   }
 
+  .archive-categories {
+    margin-bottom: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+
   .archive-title {
     display: flex;
     justify-content: space-between;

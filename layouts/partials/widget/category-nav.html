@@ -1,0 +1,8 @@
+<div class="archive-categories">
+  <a role="button" href="{{ "post" | relLangURL }}" class="outline archive-categories__link {{ if eq .RelPermalink "/post/" }}archive-categories__link--current{{ end }}">All</a>
+  {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+    {{ with $.Site.GetPage (printf "/categories/%s" $name) }}
+      <a role="button" href="{{ .Permalink }}" class="outline archive-categories__link {{ if eq $.RelPermalink .RelPermalink }}archive-categories__link--current{{ end }}">{{ $name }}</a>
+    {{ end }}
+  {{ end }}
+</div>
