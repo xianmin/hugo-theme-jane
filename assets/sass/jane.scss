@@ -178,6 +178,7 @@ $mobile-breakpoint: 768px;
 // @import "_partial/404";
 // @import "_partial/author_info";
 // @import "_partial/search";
+@import "_partial/_post/content/highlight"; // global highlight style
 
 // Page styles
 @import "_page/home";
