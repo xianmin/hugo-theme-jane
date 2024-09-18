@@ -1,33 +1,30 @@
-// ==============================
-// Post
-// ==============================
-
 .content-wrapper {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 10.5rem 1fr 10.5rem;
+  grid-template-areas: "sidebar content toc";
 
-  @import "_toc";
+  .sidebar {
+    grid-area: sidebar;
+  }
+
+  .content {
+    grid-area: content;
+  }
+
+  .toc {
+    grid-area: toc;
+  }
 }
 
-.post {
-  // optimal line length for body text is 50–60 characters per line
-  // [Readability: The Optimal Line Length – Articles – Baymard Institute](https://baymard.com/blog/line-length-readability)
-  width: 38em;
-  max-width: 38em;
-  padding: 3em 5em;
-  margin: 0 auto;
-  margin-bottom: 3em;
-  background-color: #fff;
+.content {
+  .post {
+    max-width: $article-max-width;
+    margin: 0 auto;
+    margin-top: 5rem;
 
-  @import "_post/header";
-  @import "_post/toc";
-  @import "_post/content";
-  @import "_post/copyright";
-  @import "_post/reward";
-  @import "_post/footer";
-  @import "_post/utteranc";
-  @import "_post/footnote";
-  @import "_post/shortcode_notice";
+    @import "_post/header";
+  }
 }
 
 .disqus-comment {
@@ -35,14 +32,4 @@
   @import "_post/disqus";
 }
 
-@include max-screen() {
-  .content-wrapper {
-    display: block;
-  }
-
-  .post {
-    width: auto;
-    padding: 5%;
-    margin: 0 auto 5% auto;
-  }
-}
+@import "_toc";
