@@ -2,7 +2,7 @@
   display: grid;
   grid-template-rows: auto 1fr;
   grid-template-columns: 10.5rem 1fr 10.5rem;
-  grid-template-areas: "sidebar content toc";
+  grid-template-areas: "toc content sidebar";
 
   .sidebar {
     grid-area: sidebar;
