@@ -165,6 +165,16 @@
 "name" "mastodon"
 }}
 
+{{ $youtube := dict
+"vendor" "mdi"
+"name" "youtube"
+}}
+
+{{ $twitch := dict
+"vendor" "mdi"
+"name" "twitch"
+}}
+
 {{ return dict
 "externalLink" $externalLink
 "dropDown" $dropDown
@@ -196,4 +206,6 @@
 "bilibili" $bilibili
 "codeforces" $codeforces
 "mastodon" $mastodon
+"youtube" $youtube
+"twitch" $twitch
 }}
