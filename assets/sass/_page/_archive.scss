@@ -8,7 +8,7 @@
   }
 
   .archive-categories {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     display: flex;
     gap: 0.5rem;
     flex-wrap: wrap;
@@ -24,6 +24,8 @@
 
   .archive-post {
     display: flex;
+    margin: 1em 0;
+    line-height: 1.5;
 
     .archive-post-time {
       flex: none;
