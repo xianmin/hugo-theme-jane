@@ -1,9 +1,4 @@
-@use "hugo:vars" as h;
-$jane-theme-color: h.$jane-theme-color !default;
-$article-max-width: h.$article-max-width !default;
-$serif-font-family: h.$serif-font-family !default;
-
-$mobile-breakpoint: 768px;
+@use "_settings" as *;
 
 @use "pico/scss/pico" as pico with (
   // Theme color
@@ -162,7 +157,7 @@ $mobile-breakpoint: 768px;
 @import "_common/utils";
 // @import "_common/animation";
 
-// @import "_base";
+@import "_base";
 @import "_partial/_header/desktop_header";
 @import "_partial/_header/mobile_header";
 @import "_partial/icons";
@@ -178,7 +173,7 @@ $mobile-breakpoint: 768px;
 // @import "_partial/404";
 // @import "_partial/author_info";
 // @import "_partial/search";
-@import "_partial/_post/content/highlight"; // global highlight style
+@import "_partial/_post/_content/highlight"; // global highlight style
 
 // Page styles
 @import "_page/home";

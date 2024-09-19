@@ -1,7 +1,7 @@
 {{ $icons := partial "icons.html" . }}
 <div class="desktop-header">
   <div class="desktop-header-logo">
-    <a href="{{ " /" | relLangURL }}" class="logo">
+    <a href="{{ `/` | relLangURL }}" class="logo">
       {{ if .Site.Params.logoTitle }}
       {{ .Site.Params.logoTitle | safeHTML }}
       {{ else }}

@@ -105,7 +105,7 @@ defaultContentLanguage = "en"  # Default language to use (if you setup multiling
   author.url = "/about"        # optional                      # 可选
 
   # site info (optional)                                  # 站点信息（可选，不需要的可以直接注释掉）
-  logoTitle = "Jane"        # default: the title value    # 默认值: 上面设置的title值
+  logoTitle = "Hugo-Theme-Jane"        # default: the title value    # 默认值: 上面设置的title值
   keywords = ["Hugo", "theme","jane"]
   description = "Hugo theme jane example site."
 
@@ -147,14 +147,6 @@ defaultContentLanguage = "en"  # Default language to use (if you setup multiling
   customCSS = []            # if ['custom.css'], load '/static/css/custom.css' file
   customJS = []             # if ['custom.js'], load '/static/js/custom.js' file
 
-  # [Initialize Sass variables from Hugo templates - tips & tricks - HUGO](https://discourse.gohugo.io/t/initialize-sass-variables-from-hugo-templates/42053)
-  [params.style]
-    jane_theme_color = 'violet'
-    article_max_width = '40em'
-    serif_font_family = 'sans-serif'
-    font_size_base = '18px'
-
-  # enable 'fork me on github', https://blog.github.com/2008-12-19-github-ribbons/
 
   [params.publicCDN]        # load these files from public cdn                          # 启用公共CDN，需自行定义
     enable = false
