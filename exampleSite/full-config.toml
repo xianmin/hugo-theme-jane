@@ -13,6 +13,9 @@ copyright = ""            # default: params.author.name ↓ # 默认为下面配
 enableGitInfo = true      # use git commit log to generate lastmod record # 可根据 Git 中的提交生成最近更新记录。
 # uglyURLs = true         # more info: https://gohugo.io/content-management/urls/#ugly-urls
 
+[pagination]
+  pagerSize = 5           # Number of articles displayed on the homepage  # 首页每页显示的文章数
+
 # Enable author pages
 #[taxonomies]
 #  author = "author"
@@ -44,11 +47,6 @@ defaultContentLanguage = "en"           # Default language to use
   weight = 30
   identifier = "tags"
   pageref = "/tags/"
-[[menu.main]]
-  name = "Categories"
-  weight = 40
-  identifier = "categories"
-  pageref = "/categories/"
 [[menu.main]]
   name = "external-link"
   weight = 50
@@ -270,3 +268,10 @@ defaultContentLanguage = "en"           # Default language to use
     noHl = false
     style = 'friendly'
     tabWidth = 4
+
+# icons used by Jane, import module
+[module]
+  [[module.imports]]
+    path = 'github.com/hugomods/icons/vendors/mdi'
+  [[module.imports]]
+    path = 'github.com/hugomods/icons/vendors/lucide'
