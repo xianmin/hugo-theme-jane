@@ -28,7 +28,7 @@
   }
 }
 
-@include max-screen() {
+@include style-to-mobile() {
   .mobile-header {
     display: flex;
   }

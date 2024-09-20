@@ -53,7 +53,7 @@
   }
 }
 
-@include max-screen() {
+@include style-to-mobile() {
   .post-footer {
     .post-nav {
       .nav-default {

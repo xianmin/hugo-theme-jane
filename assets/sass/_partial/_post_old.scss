@@ -35,7 +35,7 @@
   @import "_post/disqus";
 }
 
-@include max-screen() {
+@include style-to-mobile() {
   .content-wrapper {
     display: block;
   }

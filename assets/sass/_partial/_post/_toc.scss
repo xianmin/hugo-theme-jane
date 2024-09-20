@@ -40,7 +40,7 @@
 
 }
 
-@include min-screen() {
+@include style-to-desktop() {
   .post-toc {
     display: none;
     border: 1px solid #CCC;
@@ -63,7 +63,7 @@
   }
 }
 
-@include max-screen() {
+@include style-to-mobile() {
   .post-toc {
     padding: 10px;
     border-bottom: 2px LightGrey solid;

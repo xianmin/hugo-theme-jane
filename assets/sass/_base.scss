@@ -16,6 +16,14 @@ body {
   // scroll-behavior: smooth;
 }
 
+.main {
+  margin-top: 3rem;
+
+  @include style-to-mobile() {
+    margin-top: 1rem;
+  }
+}
+
 img {
   max-width: 100%;
   height: auto;

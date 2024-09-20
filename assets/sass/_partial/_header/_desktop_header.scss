@@ -123,7 +123,7 @@
   }
 }
 
-@include max-screen() {
+@include style-to-mobile() {
   .desktop-header {
     display: none;
   }
