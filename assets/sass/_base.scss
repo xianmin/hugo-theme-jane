@@ -7,6 +7,10 @@ html {
   // scroll-behavior: smooth;
   scroll-padding-top: 1em;
   scrollbar-color: var(--pico-primary) $grey-50;
+
+  @include style-to-mobile() {
+    font-size: $global-mobile-font-size;
+  }
 }
 
 body {

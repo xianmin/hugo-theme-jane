@@ -8,24 +8,25 @@
  * Values: 'red', 'pink', 'fuchsia', 'purple', 'violet', 'indigo', 'blue', 'azure', 'cyan',
  * 'jade', 'green', 'lime', 'yellow', 'amber', 'pumpkin', 'orange', 'sand', 'grey', 'zinc', 'slate'
  *------------------------------------------------------------------------**/
-$jane-theme-color: 'azure' !default;
+$jane-theme-color: 'azure';
 
 /**------------------------------------------------------------------------
  *                            Article Max Width
  *------------------------------------------------------------------------**/
-$article-max-width: 40em !default;
+$article-max-width: 40em;
 
 /**------------------------------------------------------------------------
  *                            Font Settings
  *------------------------------------------------------------------------**/
 
 // example import from google fonts
-$logo-font-family: 'Comic Sans MS', -apple-system, 'Open Sans', 'Segoe UI', 'Helvetica', Arial, sans-serif !default;
+$logo-font-family: 'Comic Sans MS', -apple-system, 'Open Sans', 'Segoe UI', 'Helvetica', Arial, sans-serif;
 
-$title-font-family: -apple-system, 'Open Sans', 'Segoe UI', 'Helvetica', Arial, sans-serif !default;
+$title-font-family: -apple-system, 'Open Sans', 'Segoe UI', 'Helvetica', Arial, sans-serif;
 
-$global-font-family: -apple-system,'Open Sans', 'Segoe UI', 'Helvetica', Arial, sans-serif !default;
-$global-font-size: 18px !default;
+$global-font-family: -apple-system,'Open Sans', 'Segoe UI', 'Helvetica', Arial, sans-serif;
+$global-font-size: 18px;
+$global-mobile-font-size: 15px;
 
 /**------------------------------------------------------------------------
  *                            Other Settings

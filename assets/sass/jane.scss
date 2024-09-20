@@ -3,6 +3,15 @@
  *------------------------------------------------------------------------**/
 @use "_settings" as *;
 
+$jane-theme-color: 'azure' !default;
+$article-max-width: 40em !default;
+$logo-font-family: 'Comic Sans MS', -apple-system, 'Open Sans', 'Segoe UI', 'Helvetica', Arial, sans-serif !default;
+$title-font-family: -apple-system, 'Open Sans', 'Segoe UI', 'Helvetica', Arial, sans-serif !default;
+$global-font-family: -apple-system,'Open Sans', 'Segoe UI', 'Helvetica', Arial, sans-serif !default;
+$global-font-size: 18px !default;
+$global-mobile-font-size: 15px !default;
+$mobile-breakpoint: 768px !default;
+
 /**------------------------------------------------------------------------
  *                           import pico
  *------------------------------------------------------------------------**/

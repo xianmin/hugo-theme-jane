@@ -1,6 +1,24 @@
 .post-content {
   // @import "content/highlight";
   @import "_content/image";
+
+  @include style-to-mobile {
+    h1 {
+      font-size: 1.3rem;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+    }
+
+    h3 {
+      font-size: 1.1rem;
+    }
+
+    h4, h5, h6 {
+      font-size: 1rem;
+    }
+  }
 }
 
 .header-link {
