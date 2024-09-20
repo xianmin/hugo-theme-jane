@@ -1,11 +1,13 @@
 {
+  "plugins": ["prettier-plugin-go-template"],
   "overrides": [
     {
-      "files": ["*.html"],
+      "files": ["*.html", "*.css"],
       "options": {
-        "parser": "go-template"
+        "parser": "go-template",
+        "singleQuote": false
       }
     }
   ],
-  "goTemplateBracketSpacing": true
+  "singleQuote": true
 }

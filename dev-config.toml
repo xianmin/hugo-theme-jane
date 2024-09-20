@@ -9,7 +9,10 @@ enableEmoji = true
 mainSections = ["post"]
 
 hasCJKLanguage = true     # has chinese/japanese/korean ? # 自动检测是否包含 中文\日文\韩文
-paginate = 5                                              # 首页每页显示的文章数
+
+[pagination]
+  pagerSize = 5
+
 rssLimit = 20             # Limit Entry Count to Rss file # 限制 Rss 文章输出数量
 disqusShortname = "xianmin12"      # disqus_shortname
 googleAnalytics = "G-4SFSR6JRVT"      # G-********
@@ -65,11 +68,6 @@ defaultContentLanguage = "en"  # Default language to use (if you setup multiling
   identifier = "tags"
   pageref = "/tags/"
 [[languages.en.menu.main]]
-  name = "Categories"
-  weight = 40
-  identifier = "categories"
-  pageref = "/categories/"
-[[languages.en.menu.main]]
   name = "external-link"
   weight = 50
   url = "https://gohugo.io"
@@ -89,11 +87,6 @@ defaultContentLanguage = "en"  # Default language to use (if you setup multiling
   weight = 30
   identifier = "tags"
   pageref = "zh-cn/tags/"
-[[languages.zh-cn.menu.main]]
-  name = "分类"
-  weight = 40
-  identifier = "categories"
-  pageref = "zh-cn/categories/"
 [[languages.zh-cn.menu.main]]
   name = "外部链接"
   weight = 50
@@ -115,7 +108,7 @@ defaultContentLanguage = "en"  # Default language to use (if you setup multiling
   author.url = "/about"        # optional                      # 可选
 
   # site info (optional)                                  # 站点信息（可选，不需要的可以直接注释掉）
-  logoTitle = "Jane"        # default: the title value    # 默认值: 上面设置的title值
+  logoTitle = "Hugo-Theme-Jane"        # default: the title value    # 默认值: 上面设置的title值
   keywords = ["Hugo", "theme","jane"]
   description = "Hugo theme jane example site."
 
@@ -157,7 +150,6 @@ defaultContentLanguage = "en"  # Default language to use (if you setup multiling
   customCSS = []            # if ['custom.css'], load '/static/css/custom.css' file
   customJS = []             # if ['custom.js'], load '/static/js/custom.js' file
 
-  # enable 'fork me on github', https://blog.github.com/2008-12-19-github-ribbons/
 
   [params.publicCDN]        # load these files from public cdn                          # 启用公共CDN，需自行定义
     enable = false
@@ -203,24 +195,26 @@ defaultContentLanguage = "en"  # Default language to use (if you setup multiling
 
   [params.social]                                         # 社交链接
     a-email = "mailto:your@email.com"
-    b-stack-overflow = "http://en.xianmin.org/hugo-theme-jane/"
-    c-twitter = "http://en.xianmin.org/hugo-theme-jane/"
-    d-facebook = "http://en.xianmin.org/hugo-theme-jane/"
-    e-linkedin = "http://en.xianmin.org/hugo-theme-jane/"
-    f-google = "http://en.xianmin.org/hugo-theme-jane/"
-    g-github = "http://en.xianmin.org/hugo-theme-jane/"
-    h-weibo = "http://en.xianmin.org/hugo-theme-jane/"
-    i-zhihu = "http://en.xianmin.org/hugo-theme-jane/"
-    j-douban = "http://en.xianmin.org/hugo-theme-jane/"
-    k-pocket = "http://en.xianmin.org/hugo-theme-jane/"
-    l-tumblr = "http://en.xianmin.org/hugo-theme-jane/"
-    m-instagram = "http://en.xianmin.org/hugo-theme-jane/"
-    n-gitlab = "http://en.xianmin.org/hugo-theme-jane/"
-    o-goodreads = "http://en.xianmin.org/hugo-theme-jane/"
-    p-coding = "http://en.xianmin.org/hugo-theme-jane/"
-    q-bilibili = "http://en.xianmin.org/hugo-theme-jane/"
-    r-codeforces = "http://en.xianmin.org/hugo-theme-jane/"
-    s-mastodon = "http://en.xianmin.org/hugo-theme-jane/"
+    b-stackoverflow = "http://localhost:1313"
+    c-twitter = "http://localhost:1313"
+    d-facebook = "http://localhost:1313"
+    e-linkedin = "http://localhost:1313"
+    f-google = "http://localhost:1313"
+    g-github = "http://localhost:1313"
+    h-weibo = "http://localhost:1313"
+    i-zhihu = "http://localhost:1313"
+    j-douban = "http://localhost:1313"
+    k-pocket = "http://localhost:1313"
+    l-tumblr = "http://localhost:1313"
+    m-instagram = "http://localhost:1313"
+    n-gitlab = "http://localhost:1313"
+    o-goodreads = "http://localhost:1313"
+    p-coding = "http://localhost:1313"
+    q-bilibili = "http://localhost:1313"
+    r-codeforces = "http://localhost:1313"
+    s-mastodon = "http://localhost:1313"
+    t-youtube = "http://localhost:1313"
+    u-twitch = "http://localhost:1313"
 
 # Highlight options. See https://gohugo.io/content-management/syntax-highlighting/
 [markup]
@@ -238,3 +232,10 @@ defaultContentLanguage = "en"  # Default language to use (if you setup multiling
     noHl = false
     style = 'friendly'
     tabWidth = 4
+
+# icons used by Jane, import module
+[module]
+  [[module.imports]]
+    path = 'github.com/hugomods/icons/vendors/mdi'
+  [[module.imports]]
+    path = 'github.com/hugomods/icons/vendors/lucide'

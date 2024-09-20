@@ -3,19 +3,12 @@
 // ==============================
 
 .post-footer {
-  font-family: $global-serif-font-family;
-
   .post-tags {
     margin-top: 1em;
 
     a {
-      color: $theme-color;
       word-break: break-all;
       margin-right: 10px;
-
-      &:hover {
-        border-bottom: 1px solid $theme-color;
-      }
 
       &::before {
         content: '#';
@@ -30,8 +23,7 @@
     .prev,
     .next {
       font-weight: 600;
-      font-size: $post-nav-font-size;
-      font-family: $global-serif-font-family;
+
       transition-property: transform;
       transition-timing-function: ease-out;
       transition-duration: 0.3s;
@@ -41,8 +33,8 @@
       float: left;
 
       &:hover {
-        color: $theme-color;
-        transform: translateX(-4px); 
+        color: var(--pico-primary);
+        transform: translateX(-4px);
       }
     }
 
@@ -50,8 +42,8 @@
       float: right;
 
       &:hover {
-        color: $theme-color;
-        transform: translateX(4px); 
+        color: var(--pico-primary);
+        transform: translateX(4px);
       }
     }
 
@@ -61,7 +53,7 @@
   }
 }
 
-@include max-screen() {
+@include style-to-mobile() {
   .post-footer {
     .post-nav {
       .nav-default {

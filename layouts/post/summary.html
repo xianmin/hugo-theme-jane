@@ -1,31 +1,62 @@
-<article class="post">
+{{ $icons := partial "icons.html" . }}
+
+<section class="jane-card post">
+  {{ if .Params.weight }}
+  <div class="post-pinned">
+    {{ partial "icons/icon" $icons.pin }}
+  </div>
+  {{ end }}
+
   <header class="post-header">
     <h1 class="post-title">
-      {{ if .Params.weight }}
-        <span class="post-pinned">
-          {{ partial "svg/pinned.svg" }}
-        </span>
-      {{ end }}
-      <a class="post-link" href="{{ .RelPermalink }}">{{ .Title }}</a>
+      <a class="post-link" href="{{ .RelPermalink }}">
+        {{ .Title }}
+      </a>
     </h1>
-    {{ partial "post/i18nlist.html" . }}
-    {{ partial "post/meta.html" . }}
+    {{/* {{ partial "post/i18nlist.html" . }} */}}
+    {{/* {{ partial "post/meta.html" . }} */}}
+    <div class="post-meta">
+      <div class="post-meta-author">
+        {{ partial "icons/icon" $icons.author }}
+        {{- $author_id := .Site.Params.author.name | default .Site.Author.name -}}
+        {{- $author := (index ($.Site.Data.authors | default dict) $author_id) -}}
+        {{- $author_lang := (index ($author | default dict) .Site.Language.Lang) -}}
+        {{- $author_name := $author_lang.name.display | default $author.name.display | default $author_id -}}
+        {{- $author_url := $author_lang.url | default $author.url | default .Site.Params.author.url | default
+        .Site.Author.url -}}
+        {{ if $author_url }}
+        <a href="{{ $author_url | relLangURL | safeURL }}">
+          <span class="post-meta-author-name">
+            {{ $author_name | safeHTML }}
+          </span>
+        </a>
+        {{ else }}
+        {{ $author_name | safeHTML }}
+        {{ end }}
+      </div>
+      <div class="post-meta-time">
+        {{ partial "icons/icon" $icons.calendar }}
+        <time datetime="{{ .Date.Format " 2006-01-02" }}">
+          {{ .Date | time.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }}
+        </time>
+      </div>
+    </div>
   </header>
   <!-- Content -->
   <div class="post-content">
     {{ if .Site.Params.homeFullContent }}
-      <div class="post-summary">
-        {{ .Content }}
-      </div>
+    <div class="post-summary">
+      {{ .Content }}
+    </div>
     {{ else }}
-      <div class="post-summary">
-        {{ .Summary }}
-      </div>
-      <div class="read-more">
-        <a href="{{ .RelPermalink }}" class="read-more-link"
-          >{{ i18n "readmore" }}</a
-        >
-      </div>
+    <div class="post-summary">
+      {{ .Summary }}
+    </div>
+
+    <div class="read-more">
+      <a role="button" href="{{ .RelPermalink }}" class="read-more-link outline">{{ i18n "readmore" }}</a>
+    </div>
     {{ end }}
   </div>
-</article>
+
+</section>

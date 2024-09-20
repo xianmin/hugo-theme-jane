@@ -1,0 +1,36 @@
+.highlight {
+  position: relative;
+  margin: 1em 0;
+  overflow-x: auto;
+  border: 2px solid #dddddd;
+  line-height: 1.6;
+
+  & > div {
+    padding: 1em 0.3em;
+  }
+
+  code {
+    all: unset;
+    border-radius: 0;
+    padding: 0 !important;
+  }
+
+  pre {
+    margin: 0; /* remove normal pre margin */
+    border-radius: 0;
+  }
+
+  table {
+    padding: 1em 0.3em !important;
+
+    td:nth-child(2) code {
+      &::after {
+        position: absolute;
+        top: 0;
+        right: 0.5em;
+        font-weight: bold;
+        content: attr(data-lang);
+      }
+    }
+  }
+}

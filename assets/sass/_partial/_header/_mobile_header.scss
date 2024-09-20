@@ -1,0 +1,137 @@
+.mobile-header {
+  display: none;
+
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .mobile-navbar {
+    width: 100%;
+    background: var(--pico-primary-background);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .mobile-navbar-icon {
+      color: #fff;
+      order: 1;
+      padding: 0.5em;
+    }
+
+    .mobile-navbar-logo {
+      padding: 0.5em;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+@include style-to-mobile() {
+  .mobile-header {
+    display: flex;
+  }
+}
+
+.mobile-menu-close-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.mobile-menu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background: var(--pico-primary-background);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align: center;
+
+  .mobile-menu-list {
+    position: relative;
+    list-style: none;
+    margin-top: 50px;
+    padding: 0;
+    border-top: 1px solid var(--pico-primary-underline);
+
+    .mobile-menu-item > a {
+      padding: 10px 30px;
+      display: block;
+      border-bottom: 1px solid var(--pico-primary-underline);
+    }
+
+    a {
+      font-size: 18px;
+      // font-family: $global-serif-font-family;
+
+      &:hover {
+        color: var(--pico-primary-hover-background);
+      }
+    }
+  }
+}
+
+// mobile sub-menu style
+.mobile-menu-parent {
+  position: relative;
+  border-bottom: 1px solid var(--pico-primary-underline);
+
+  a {
+    margin-right: 40px;
+    display: block;
+    padding: 10px 0 10px 30px;
+  }
+
+  .mobile-submenu-open {
+    width: 40px;
+    height: 100%;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    border-left: 1px solid var(--pico-secondary-underline);
+
+    &:before {
+      content: "";
+      color: #fff;
+      border-right: 2px solid;
+      border-bottom: 2px solid;
+      display: inline-block;
+      width: 7px;
+      height: 7px;
+      transform: rotate(-45deg);
+      margin-bottom: -5px;
+      position: absolute;
+      bottom: 50%;
+      right: 18px;
+    }
+  }
+}
+
+.mobile-submenu-show > .mobile-submenu-open:before {
+  transform: rotate(45deg);
+}
+
+.mobile-submenu-list {
+  display: none;
+  padding-left: 0;
+  list-style: none;
+
+  li > a {
+    display: block;
+    background: var(--pico-primary-underline);
+    padding: 10px 0 10px 30px;
+  }
+}

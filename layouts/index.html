@@ -1,16 +1,17 @@
 {{ define "content" }}
-<section id="posts" class="posts">
+<div class="home-container">
   {{ $pages := .Pages }}
   {{ if .IsHome }}
-    {{ $pages = where .Site.RegularPages "Type" "in" site.Params.mainSections }}
+  {{ $pages = where .Site.RegularPages "Type" "in" site.Params.mainSections }}
   {{ end }}
   {{ $paginator := .Paginate $pages }}
   {{ range $paginator.Pages }}
-    {{ .Render "summary" }}
+  {{ .Render "summary" }}
   {{ end }}
-</section>
 
-<!-- pagination -->
-{{ partial "pagination.html" . }}
+
+  <!-- pagination -->
+  {{ partial "pagination.html" . }}
+</div>
 
 {{ end }}

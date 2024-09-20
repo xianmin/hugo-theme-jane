@@ -1,87 +1,87 @@
+{{ $icons := partial "icons.html" . }}
+
 {{- /* Deprecate Params.author in favor of Params.author.name */}}
 {{- if not (reflect.IsMap .Site.Params.author) -}}
 {{- warnf "The author key in site configuration is deprecated. Use params.author.name instead." }}
 {{- end -}}
 <div class="post-meta">
   <div class="post-meta-author">
-    by
+    {{ partial "icons/icon" $icons.author }}
     {{- $author_id := .Site.Params.author.name | default .Site.Author.name -}}
     {{- $author := (index ($.Site.Data.authors | default dict) $author_id) -}}
     {{- $author_lang := (index ($author | default dict) .Site.Language.Lang) -}}
     {{- $author_name := $author_lang.name.display | default $author.name.display | default $author_id -}}
-    {{- $author_url := $author_lang.url | default $author.url | default .Site.Params.author.url | default .Site.Author.url -}}
+    {{- $author_url := $author_lang.url | default $author.url | default .Site.Params.author.url | default
+    .Site.Author.url -}}
     {{ if $author_url }}
-      <a href="{{ $author_url | relLangURL | safeURL }}">
-        <span class="post-meta-author-name">
-          {{ $author_name | safeHTML }}
-        </span>
-      </a>
+    <a href="{{ $author_url | relLangURL | safeURL }}">
+      <span class="post-meta-author-name">
+        {{ $author_name | safeHTML }}
+      </span>
+    </a>
     {{ else }}
-      {{ $author_name | safeHTML }}
+    {{ $author_name | safeHTML }}
     {{ end }}
   </div>
 
   <div class="post-meta-time">
-    <time datetime="{{ .Date.Format "2006-01-02" }}">
+    {{ partial "icons/icon" $icons.calendar }}
+    <time datetime="{{ .Date.Format " 2006-01-02" }}">
       {{ .Date | time.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }}
     </time>
-  </div>
 
-  {{ if ne (.Lastmod.Format ("2006-01-02")) (.Date.Format ("2006-01-02")) }}
-    <div class="post-meta-lastmod">
+
+    {{ if ne (.Lastmod.Format ("2006-01-02")) (.Date.Format ("2006-01-02")) }}
+    <span class="post-meta-lastmod">
       ({{ i18n "lastMod" }}:
       {{ .Lastmod | time.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }})
-    </div>
-  {{ end }}
+    </span>
+    {{ end }}
+
+  </div>
 
 
   <div class="post-meta__right">
     {{ if .Site.Params.moreMeta -}}
-      <span class="post-meta-more">
-        {{ i18n "wordCount" .WordCount }} -
-        {{ i18n "readingTime" .ReadingTime }}
+    <span class="post-meta-more">
+      {{ i18n "wordCount" .WordCount }} -
+      {{ i18n "readingTime" .ReadingTime }}
       {{ if and .Site.Params.commentCount.disqus.enable .Site.GetPage.IsHome }}
-        - <a href="{{ .Permalink }}#disqus_thread">{{ i18n "comments" }}</a>
+      - <a href="{{ .Permalink }}#disqus_thread">{{ i18n "comments" }}</a>
       {{ end }}
       {{- if .Site.Params.commentCount.remark42.enable }}
-        - <span
-            class="remark42__counter"
-            data-url="{{ .Permalink }}"
-          ></span> {{ i18n "comments" }}
+      - <span class="remark42__counter" data-url="{{ .Permalink }}"></span> {{ i18n "comments" }}
       {{ end -}}
-      </span>
+    </span>
     {{- end }}
 
     {{ with .Params.categories -}}
-      <div class="post-meta-category">
-        {{ range . }}
-          {{- $name := . -}}
-          {{- with $.Site.GetPage "taxonomy" (printf "categories/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "categories/%s" ($name | urlize))) -}}
-            <a href="{{ .Permalink }}"> {{ $name }} </a>
-          {{ end -}}
-        {{ end }}
-      </div>
+    <div class="post-meta-category">
+      {{ range . }}
+      {{- $name := . -}}
+      {{- with $.Site.GetPage "taxonomy" (printf "categories/%s" $name) | default ($.Site.GetPage "taxonomy" (printf
+      "categories/%s" ($name | urlize))) -}}
+      <a href="{{ .Permalink }}"> {{ $name }} </a>
+      {{ end -}}
+      {{ end }}
+    </div>
     {{- end }}
 
 
     <!-- Counter busuanzi -->
     {{ if .Site.Params.counter.busuanzi.enable }}
-      <span id="busuanzi_container_page_pv">
-        | 阅读 <span id="busuanzi_value_page_pv"></span>
-      </span>
+    <span id="busuanzi_container_page_pv">
+      | 阅读 <span id="busuanzi_value_page_pv"></span>
+    </span>
     {{ end }}
 
 
     <!-- Counter leancloud -->
     {{ if .Site.Params.counter.leancloud.enable }}
-      <span
-        id="{{ .RelPermalink }}"
-        class="leancloud_visitors"
-        data-flag-title="{{ .Title }}"
-      >
-        <span class="post-meta-item-text"> | 阅读 </span>
-        <span class="leancloud-visitors-count"></span>
-      </span>
+    <span id="{{ .RelPermalink }}" class="leancloud_visitors" data-flag-title="{{ .Title }}">
+      <span class="post-meta-item-text"> | 阅读 </span>
+      <span class="leancloud-visitors-count"></span>
+    </span>
     {{ end }}
   </div>
 </div>

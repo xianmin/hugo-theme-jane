@@ -3,7 +3,6 @@ nav.toc {
   position: sticky;
   top: 1rem;
   align-self: start;
-  width: 16em;
 }
 
 .toc-title {
@@ -21,18 +20,16 @@ nav.toc {
 
 .toc {
   margin-top: 8em;
-  margin-left: 1em;
 
   .active > a {
     // color: blue;
   }
 
   .current {
-    border-left: 2px solid black;
     & > a {
-      font-weight: bold;
-      font-size: 1.2em;
-      color: black;
+      border-color: var(--pico-primary);
+      color: var(--pico-primary-hover);
+      font-weight: 600;
     }
   }
 
@@ -47,8 +44,8 @@ nav.toc {
 
   a:hover,
   a:focus {
-    color: $theme-color;
-    border-bottom: 1px solid $theme-color;
+    color: var(--pico-primary);
+    border-bottom: 1px solid var(--pico-primary);
   }
 
   ul,
@@ -58,8 +55,12 @@ nav.toc {
     padding: 0;
   }
   li {
+    list-style: none !important;
+  }
+
+  li > ul > li {
     padding-left: 1em;
-    border-left: 1px solid black;
+    border-left: var(--pico-border-width) solid var(--pico-muted-border-color);
   }
 }
 
@@ -69,7 +70,7 @@ nav.toc {
   transition: scrollbar-color 0.3s;
 
   &:hover {
-    scrollbar-color: black transparent;
+    scrollbar-color: var(--pico-primary) transparent;
   }
 
   &:not(:hover)::-webkit-scrollbar-thumb {
@@ -83,11 +84,11 @@ nav.toc {
   &::-webkit-scrollbar-thumb {
     border-radius: 5px;
     transition: background 0.3s;
-    background: rgba(0, 0, 0, 0.75);
+    background: var(--pico-primary);
   }
 }
 
-@include max-screen() {
+@include style-to-mobile() {
   nav.toc {
     display: none;
   }

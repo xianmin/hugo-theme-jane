@@ -1,0 +1,11 @@
+.tag-cloud {
+  margin: 0 auto;
+  max-width: $article-max-width;
+
+  .tag-cloud-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: baseline;
+  }
+}

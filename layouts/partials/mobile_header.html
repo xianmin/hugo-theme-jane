@@ -1,0 +1,109 @@
+{{ $icons := partial "icons.html" . }}
+
+<div class="mobile-header">
+  <div id="mobile-navbar" class="mobile-navbar">
+    <div id="mobile-navbar-icon" class="mobile-navbar-icon">
+      {{ partial "icons/icon" $icons.menu }}
+    </div>
+    <div class="mobile-navbar-logo">
+      <a href="{{ " /" | relLangURL }}" class="logo">
+        {{- if .Site.Params.logoTitle -}}
+        {{ .Site.Params.logoTitle | safeHTML }}
+        {{- else -}}
+        {{ .Site.Title }}
+        {{- end -}}
+      </a>
+    </div>
+  </div>
+
+  <div id="mobile-menu-close-modal" class="mobile-menu-close-modal"></div>
+  <nav id="mobile-menu" class="mobile-menu">
+    <ul class="mobile-menu-list">
+      {{ range .Site.Menus.main -}}
+
+      <li class="mobile-menu-item">
+        {{ if .HasChildren }}
+        <!-- drop down navigation MENU -->
+        <div class="mobile-menu-parent">
+          <span class="mobile-submenu-open"></span>
+          <a href="{{ .URL | absLangURL | safeURL }}">
+            {{ .Name }}
+          </a>
+        </div>
+        <ul class="mobile-submenu-list">
+          {{ range .Children }}
+          <li>
+            <a href="{{ .URL | absLangURL | safeURL }}">{{ .Name }}</a>
+          </li>
+          {{ end }}
+        </ul>
+        {{ else }}
+        <!-- normal MENU -->
+        {{ if hasPrefix .URL "http" }}
+        <a class="menu-item-link" href="{{ .URL | absLangURL | safeURL }}" rel="noopener" target="_blank">
+          {{ .Name }}
+          {{/* icon new window */}}
+          {{ partial "icons/icon" $icons.externalLink }}
+        </a>
+        {{ else }}
+        <a class="menu-item-link" href="{{ .URL | absLangURL | safeURL }}">{{ .Name }}</a>
+        {{ end }}
+        {{ end }}
+      </li>
+
+      {{- end }}
+      {{ if and (gt (len .Site.Home.AllTranslations) 1) (.Site.Params.showMenuLanguageChooser | default false ) }}
+      {{- $.Scratch.Set "language" .Language -}}
+      <li class="mobile-menu-item">
+        <!-- drop down navigation MENU -->
+        <div class="mobile-menu-parent mobile-menu-item-lang">
+          <span class="mobile-submenu-open"></span>
+          <a href="#">
+            {{/* icon globe */}}
+            {{ partial "icons/icon" $icons.languages }}
+            {{ .Site.Language.LanguageName }}
+            {{ i18n "language" }}
+          </a>
+        </div>
+        <ul class="mobile-submenu-list">
+          {{ range .Site.Home.AllTranslations }}
+          <li>
+            {{ if eq ($.Scratch.Get "language") .Language }}
+            <a href="{{ .Permalink }}"><strong>{{ .Language.LanguageName }}</strong></a>
+            {{ else }}
+            <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+            {{ end }}
+          </li>
+          {{ end }}
+        </ul>
+      </li>
+      {{- end }}
+
+      {{ if .Site.Params.search.google.enable }}
+      <li class="mobile-menu-item">
+        <a id="openSearchMobile" class="mobile-menu-item-link menu-item-search" href="#">
+          {{ partial "icons/icon" $icons.search }}
+        </a>
+      </li>
+      {{ end }}
+
+      <li class="mobile-menu-item">
+        <a class="theme-toggle menu-item-link" href="javascript:void(0);">
+          <span class="theme-icon theme-icon-light">{{ partial "icons/icon" $icons.sun }}</span>
+          <span class="theme-icon theme-icon-dark">{{ partial "icons/icon" $icons.moon }}</span>
+        </a>
+      </li>
+
+      <li class="mobile-menu-item">
+        {{ with .Site.GetPage "home" -}}
+        {{- with .OutputFormats.Get "RSS" -}}
+        <a class="menu-item-link" href="{{ .Permalink }}" rel="noopener {{ .Rel }}" type="{{ .MediaType.Type }}"
+          title="rss" target="_blank">
+          {{ partial "icons/icon" $icons.rss }}
+        </a>
+        {{ end -}}
+        {{ end }}
+      </li>
+    </ul>
+  </nav>
+</div>

@@ -1,0 +1,35 @@
+/**========================================================================
+ *                      JANE THEME STYLE SETTINGS
+ *========================================================================**/
+
+/**------------------------------------------------------------------------
+ *                            Theme Color
+ * use picocss theme color, see: https://picocss.com/docs/version-picker .
+ * Values: 'red', 'pink', 'fuchsia', 'purple', 'violet', 'indigo', 'blue', 'azure', 'cyan',
+ * 'jade', 'green', 'lime', 'yellow', 'amber', 'pumpkin', 'orange', 'sand', 'grey', 'zinc', 'slate'
+ *------------------------------------------------------------------------**/
+$jane-theme-color: 'azure' !default;
+
+/**------------------------------------------------------------------------
+ *                            Article Max Width
+ *------------------------------------------------------------------------**/
+$article-max-width: 40em !default;
+
+/**------------------------------------------------------------------------
+ *                            Font Settings
+ *------------------------------------------------------------------------**/
+
+// example import from google fonts
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+$logo-font-family: 'Lobster', 'Montserrat', 'Helvetica Neue', Arial,
+  sans-serif !default;
+
+$title-font-family: -apple-system, 'Open Sans', 'Segoe UI', 'Helvetica', Arial, sans-serif !default;
+
+$global-font-family: -apple-system, 'Open Sans', 'Segoe UI', 'Helvetica', Arial, sans-serif !default;
+$global-font-size: 18px !default;
+
+/**------------------------------------------------------------------------
+ *                            Other Settings
+ *------------------------------------------------------------------------**/
+$mobile-breakpoint: 768px;

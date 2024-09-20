@@ -1,0 +1,39 @@
+.home-container {
+  margin: 0 auto;
+  max-width: $article-max-width;
+
+  .post {
+    position: relative;
+
+    .post-pinned {
+      position: absolute;
+      color: var(--pico-primary);
+      top: 0;
+      right: 0;
+      transform: rotate(60deg);
+      font-size: 2rem;
+    }
+
+    header {
+      padding: 2rem 3rem 1rem 3rem;
+
+      .post-title {
+        text-align: center;
+        font-family: $title-font-family;
+      }
+
+      .post-meta {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+      }
+    }
+
+    .read-more {
+      display: flex;
+      justify-content: end;
+      margin-top: 0.5rem;
+    }
+  }
+}

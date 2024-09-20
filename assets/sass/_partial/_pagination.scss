@@ -17,23 +17,29 @@
 
     a {
       background-color: #fff;
-      margin-left: .1em;
-      margin-right: .1em;
-      border: 1px solid #222;
-      color: #222;
+      margin-left: 0.1em;
+      margin-right: 0.1em;
+      border: 1px solid var(--pico-primary);
+      color: var(--pico-primary);
       float: left;
       line-height: 1.42857143;
       padding: 6px 12px;
       position: relative;
       text-decoration: none;
       margin-bottom: 0.2em;
+
+      &:hover {
+        background-color: var(--pico-primary-hover-background);
+        border-color: var(--pico-primary-hover-background);
+        color: #fff;
+      }
     }
   }
 
   .active {
     a {
-      background-color: #222;
-      border-color: #222;
+      background-color: var(--pico-primary-background);
+      border-color: var(--pico-primary-background);
       color: #fff;
       cursor: default;
       z-index: 2;
@@ -43,8 +49,6 @@
   .prev,
   .next {
     font-weight: 600;
-    font-size: $pagination-font-size;
-    font-family: $global-serif-font-family;
     transition-property: transform;
     transition-timing-function: ease-out;
     transition-duration: 0.3s;
@@ -54,7 +58,7 @@
     float: left;
 
     &:hover {
-      color: $theme-color;
+      color: var(--pico-primary);
       transform: translateX(-4px);
     }
   }
@@ -63,13 +67,13 @@
     float: right;
 
     &:hover {
-      color: $theme-color;
+      color: var(--pico-primary);
       transform: translateX(4px);
     }
   }
 }
 
-// @include max-screen() {
+// @include style-to-mobile() {
 //   .pagination {
 //     margin: 1em 0;
 //   }

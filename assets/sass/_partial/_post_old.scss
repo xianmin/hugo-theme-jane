@@ -1,0 +1,48 @@
+// ==============================
+// Post
+// ==============================
+
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+
+  // @import "_toc";
+}
+
+.post {
+  // optimal line length for body text is 50–60 characters per line
+  // [Readability: The Optimal Line Length – Articles – Baymard Institute](https://baymard.com/blog/line-length-readability)
+  width: 38em;
+  max-width: 38em;
+  padding: 3em 5em;
+  margin: 0 auto;
+  margin-bottom: 3em;
+  background-color: #fff;
+
+  // @import "_post/header";
+  // @import "_post/toc";
+  // @import "_post/content";
+  // @import "_post/copyright";
+  // @import "_post/reward";
+  // @import "_post/footer";
+  // @import "_post/utteranc";
+  // @import "_post/footnote";
+  // @import "_post/shortcode_notice";
+}
+
+.disqus-comment {
+  margin: 0 5em 3em;
+  @import "_post/disqus";
+}
+
+@include style-to-mobile() {
+  .content-wrapper {
+    display: block;
+  }
+
+  .post {
+    width: auto;
+    padding: 5%;
+    margin: 0 auto 5% auto;
+  }
+}

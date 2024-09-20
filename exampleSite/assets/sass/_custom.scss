@@ -1,0 +1,14 @@
+/**------------------------------------------------------------------------
+ *                           CUSTOM STYLES
+ *                 You can add your custom styles here.
+ *------------------------------------------------------------------------**/
+
+/**------------------------------------------------------------------------
+ *                        Chinese Font Example
+ *------------------------------------------------------------------------**/
+body:lang(zh) {
+  line-height: 1.618;
+  letter-spacing: 0.0618em;
+  font-family: -apple-system, BlinkMacSystemFont, SF UI Text, Helvetica Neue, PingFang SC,
+    Hiragino Sans GB, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif;
+}
