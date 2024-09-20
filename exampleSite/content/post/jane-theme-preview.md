@@ -7,7 +7,7 @@ tags: ["preview", "shortcodes", "tag-6"]
 categories: ["docs", "shortcodes", "index"]
 author: "Typora"
 
-weight: 1
+weight: 2
 
 # You can also close(false) or open(true) something for this content.
 # P.S. comment can only be closed
