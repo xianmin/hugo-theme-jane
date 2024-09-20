@@ -1,5 +1,11 @@
+/**------------------------------------------------------------------------
+ *                           import settings
+ *------------------------------------------------------------------------**/
 @use "_settings" as *;
 
+/**------------------------------------------------------------------------
+ *                           import pico
+ *------------------------------------------------------------------------**/
 @use "pico/scss/pico" as pico with (
   // Theme color
   $theme-color: $jane-theme-color,
@@ -148,37 +154,48 @@
     )
 );
 
+/**------------------------------------------------------------------------
+ *                           import pico colors
+ *------------------------------------------------------------------------**/
 @use "pico/scss/colors/index" as *;
 
-// @import "_custom/custom";
-// @import "_variables";
-
-// @import "_common/normalize";
+/**------------------------------------------------------------------------
+ *                           base styles
+ *------------------------------------------------------------------------**/
 @import "_common/utils";
-// @import "_common/animation";
-
 @import "_base";
+
+
+/**------------------------------------------------------------------------
+ *                           partial styles
+ *------------------------------------------------------------------------**/
 @import "_partial/_header/desktop_header";
 @import "_partial/_header/mobile_header";
 @import "_partial/icons";
 @import "_partial/pagination";
 @import "_partial/footer";
 @import "_partial/post";
-// @import "_partial/archive";
 // @import "_partial/tags";
 // @import "_partial/categories";
-// @import "_partial/slideout";
-// @import "_partial/mobile";
 // @import "_partial/back-to-top";
 // @import "_partial/404";
 // @import "_partial/author_info";
 // @import "_partial/search";
 @import "_partial/_post/_content/highlight"; // global highlight style
 
-// Page styles
+/**------------------------------------------------------------------------
+ *                           page styles
+ *------------------------------------------------------------------------**/
 @import "_page/home";
 @import "_page/archive";
 @import "_page/tag_cloud";
 
-// Components
+/**------------------------------------------------------------------------
+ *                           components
+ *------------------------------------------------------------------------**/
 @import "_components/card";
+
+/**------------------------------------------------------------------------
+ *                           custom styles
+ *------------------------------------------------------------------------**/
+@import "_custom";
