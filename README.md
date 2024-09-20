@@ -1,26 +1,33 @@
+## V3 Upgrade Notice
+hugo-theme-jane just had a major update, please check out: [Jane Theme V3 Major Update](https://www.xianmin.org/hugo-theme-jane/post/jane-theme-v3-major-update/) & [Hugo-Theme-Jane V3 Upgrade Notice !!! · xianmin/hugo-theme-jane · Discussion #397](https://github.com/xianmin/hugo-theme-jane/discussions/397)
+
+
 ![jane-preview](https://raw.githubusercontent.com/xianmin/hugo-theme-jane/master/images/preview.png)
 
 ## hugo-theme-jane
 
-Jane is a readable theme for Hugo. It's a fork of [hugo-theme-even](https://github.com/olOwOlo/hugo-theme-even) with a lot of additional changes.
+Jane is a readable theme for Hugo. Many color schemes to choose, and easy to personalize. Working well since 2018.
 
 [Demo](https://xianmin.github.io/hugo-theme-jane/) | [中文说明](https://github.com/xianmin/hugo-theme-jane/blob/master/README-zh.md)
 
-This theme focuses on improving the reading experience.
-
-**Other Key features:**
-
+**Key features:**
+- Better reading experience
+- Use [Pico CSS](https://picocss.com/) as the color scheme, allowing theme color switching and dark/light mode toggle.
+- Style Settings, located at `/assets/sass/_settings.scss` .
+- Use [hugo-mods/icons](https://github.com/hugo-mods/icons).
 - Responsive and mobile friendly
 - Multilingual Mode support
-- Shortcodes : image, blockquote, music, etc.
-- Separate design for Tags & Categories Page
-- Social network linking
 - Better Pagination, TOC, footnote behavior
 - Use the awesome Chroma syntax highlighting
 - Custom css, Custom js, Custom head support
 - Sub menu support
 - Search Optimization
 
+## Development Philosophy of This Theme
+1. No `node_modules` - fewer dependencies make maintenance easier.
+2. Encourages users to modify the theme according to personal preferences for a more personalized website.
+3. Reading Experience is the top priority.
+4. Deploy once, focus on writing, no more hassle.
 
 ## Quick Start
 
@@ -31,11 +38,11 @@ This theme focuses on improving the reading experience.
 
 
 
-### 1. Install Hugo
+### 1. Install Hugo & Dart Sass
 
 Download the appropriate version for your platform from [Hugo Releases](https://github.com/gohugoio/hugo/releases). Once downloaded, the binary can be run from anywhere. Ideally, you should install it somewhere in your `PATH` for easy use. `/usr/local/bin` is the most probable location.
 
-
+Install Dart Sass, refer to the official documentation: https://gohugo.io/hugo-pipes/transpile-sass-to-css/#dart-sass .
 
 ### 2. Create a New Site
 

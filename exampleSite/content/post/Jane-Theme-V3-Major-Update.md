@@ -17,6 +17,8 @@ weight: 1
 
 Please note that due to the extensive modifications, some areas may still need refinement. I appreciate your understanding!
 
+<!--more-->
+
 ## Personalize Your Website
 Copy `/assets/sass/_settings.scss` and `/assets/sass/_custom.scss` to your website's root directory (Note: maintain the same path and file names).
 
@@ -26,6 +28,8 @@ Modify variables in `_settings.scss` and add custom styles in `/assets/sass/_cus
 1. The new version utilizes the latest Sass language features, requiring Dart Sass installation.
 
 For installation guidance, refer to the official documentation: https://gohugo.io/hugo-pipes/transpile-sass-to-css/#dart-sass.
+
+If you are using CI/CD automation tools, please remember to install Dart Sass as well: https://gohugo.io/hugo-pipes/transpile-sass-to-css/#installing-in-a-production-environment
 
 2. As the new version uses hugo modules, please add the following to your `config.toml`:
 
@@ -44,3 +48,4 @@ Note: You may encounter compatibility issues after upgrading. If you face diffic
 1. No `node_modules` - fewer dependencies make maintenance easier.
 2. Encourages users to modify the theme according to personal preferences for a more personalized website.
 3. Reading Experience is the top priority.
+4. Deploy once, focus on writing, no more hassle.

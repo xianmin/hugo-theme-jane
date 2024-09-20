@@ -17,6 +17,7 @@ weight: 1
 
 由于修改的地方比较多，还有很多地方不完善，请您谅解！
 
+<!--more-->
 
 ## 通过 STYLE SETTINGS 个性化你的网站
 将 `/assets/sass/_settings.scss` 和 `/assets/sass/_custom.scss` 复制到你的网站根目录下（注意：路径名、文件名要一致）。
@@ -28,6 +29,8 @@ weight: 1
 1. 由于新版本使用到了 Sass 语言的最新功能，需要安装 Dart Sass 。
 
 安装指南见官方文档： https://gohugo.io/hugo-pipes/transpile-sass-to-css/#dart-sass 。
+
+如果你使用了 CI/CD 自动化工具，请记得同样要安装 Dart Sass: https://gohugo.io/hugo-pipes/transpile-sass-to-css/#installing-in-a-production-environment
 
 2. 由于新版本使用到了 hugo module ，请在你的配置文件 `config.toml` 中加入以下内容：
 
@@ -46,3 +49,4 @@ weight: 1
 1. 没有 `node_modules` ，越少的依赖越容易维护；
 2. 鼓励使用者按照个人喜好修改主题，让网站更个性化；
 3. 阅读体验始终是最重要的；
+4. 一次部署，专心写作，不再折腾。
