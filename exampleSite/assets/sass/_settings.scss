@@ -20,11 +20,13 @@ $article-max-width: 40em !default;
  *------------------------------------------------------------------------**/
 
 // example import from google fonts
-$logo-font-family: 'Comic Sans MS', -apple-system, 'Open Sans', 'Segoe UI', 'Helvetica', Arial, sans-serif !default;
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+$logo-font-family: 'Lobster', 'Montserrat', 'Helvetica Neue', Arial,
+  sans-serif !default;
 
 $title-font-family: -apple-system, 'Open Sans', 'Segoe UI', 'Helvetica', Arial, sans-serif !default;
 
-$global-font-family: -apple-system,'Open Sans', 'Segoe UI', 'Helvetica', Arial, sans-serif !default;
+$global-font-family: -apple-system, 'Open Sans', 'Segoe UI', 'Helvetica', Arial, sans-serif !default;
 $global-font-size: 18px !default;
 
 /**------------------------------------------------------------------------
