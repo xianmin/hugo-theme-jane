@@ -1,0 +1,60 @@
+// ==============================
+// Shortcode Notice
+// ==============================
+
+.notice {
+  margin: 1em 0;
+
+  &__content {
+    padding: 0.6em 1em;
+    display: block;
+    font-size: 1em;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #666;
+  }
+
+  &__title {
+    color: #fff;
+    padding: 0.5em 1em;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+
+  // 注意类型样式
+  &--note {
+    .notice__title {
+      background-color: #6AB0DE;
+    }
+    .notice__content {
+      background: #E7F2FA;
+    }
+  }
+
+  &--tip {
+    .notice__title {
+      background-color: rgba(92, 184, 92, 0.8);
+    }
+    .notice__content {
+      background: #E6F9E6;
+    }
+  }
+
+  &--info {
+    .notice__title {
+      background-color: #F0B37E;
+    }
+    .notice__content {
+      background: #FFF2DB;
+    }
+  }
+
+  &--warning {
+    .notice__title {
+      background-color: rgba(217, 83, 79, 0.8);
+    }
+    .notice__content {
+      background: #FAE2E2;
+    }
+  }
+}

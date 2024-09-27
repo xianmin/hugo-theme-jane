@@ -218,6 +218,8 @@ defaultContentLanguage = "en"  # Default language to use (if you setup multiling
 
 # Highlight options. See https://gohugo.io/content-management/syntax-highlighting/
 [markup]
+  [markup.goldmark.renderer]
+    unsafe = true
   [markup.highlight]
     anchorLineNos = true
     codeFences = true

@@ -1,10 +1,15 @@
-<div class="shortcode-notice {{ .Get 0 }}">
-  <div class="shortcode-notice-title {{ .Get 0 }}">
+{{/*
+  You should set unsafe = true in config.toml
+  see: https://discourse.gohugo.io/t/raw-html-getting-omitted-in-0-60-0/22032/4
+*/}}
+
+<div class="notice notice--{{ .Get 0 }}">
+  <div class="notice__title">
     {{- if len .Params | eq 2 -}}
-      {{ .Get 1 }}
+    {{ .Get 1 }}
     {{ else }}
-      {{ .Get 0 }}
+    {{ .Get 0 }}
     {{- end -}}
   </div>
-  <div class="notice-content">{{ .Inner | markdownify }}</div>
+  <div class="notice__content">{{ .Inner | markdownify }}</div>
 </div>
