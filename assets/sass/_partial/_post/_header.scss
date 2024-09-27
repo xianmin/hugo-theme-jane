@@ -63,7 +63,7 @@
       display: inline;
 
       a {
-        &::before {
+        &:not(:first-child)::before {
           content: "·";
         }
       }
