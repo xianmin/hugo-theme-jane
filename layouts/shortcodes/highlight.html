@@ -1,0 +1,8 @@
+<div class="highlight-container">
+  <button class="copy-code-btn outline">Copy</button>
+  {{- if len .Params | eq 2 }}
+    {{ highlight (trim .InnerDeindent "\n\r") (.Get 0) (.Get 1) }}
+  {{- else }}
+    {{ highlight (trim .InnerDeindent "\n\r") (.Get 0) "" }}
+  {{- end }}
+  </div>

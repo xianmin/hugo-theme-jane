@@ -1,0 +1,7 @@
+<div class="highlight-container">
+
+  <button class="copy-code-btn outline">Copy</button>
+
+  {{ $result := transform.HighlightCodeBlock . }}
+  {{ $result.Wrapped }}
+</div>

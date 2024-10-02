@@ -190,7 +190,6 @@ $mobile-breakpoint: 768px !default;
 // @import "_partial/404";
 // @import "_partial/author_info";
 // @import "_partial/search";
-@import "_partial/_post/_content/highlight"; // global highlight style
 
 /**------------------------------------------------------------------------
  *                           page styles
@@ -207,6 +206,7 @@ $mobile-breakpoint: 768px !default;
 /**------------------------------------------------------------------------
  *                           shortcodes
  *------------------------------------------------------------------------**/
+@import "_shortcodes/highlight";
 @import "_shortcodes/notice";
 
 /**------------------------------------------------------------------------
