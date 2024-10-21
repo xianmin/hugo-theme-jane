@@ -1,0 +1,22 @@
+{{/* Parse and return the original attributes of SVG tag. */}}
+{{- $svg := .Content -}}
+{{/* Fetch the "<svg>" content. */}}
+{{- $tag := findRE `<svg[^>]+>` $svg 1 -}}
+{{- $attrs := newScratch -}}
+{{- $attrs.Set "fill" "currentColor" -}}
+{{- $attrs.Set "aria-hidden" "true" -}}
+{{/* Parse the attributes' name="value" pairs. */}}
+{{- range findRE `[\w-]+="[^"]+"` (index $tag 0) -}}
+  {{- $pair := split . "=" -}}
+  {{- $name := index $pair 0 -}}
+  {{- $val := replace (index $pair 1) `"` "" -}}
+  {{ $attrs.Set $name $val -}}
+{{- end -}}
+{{/* Append the default class name. */}}
+{{- $className := "hi-svg-inline" -}}
+{{- with $attrs.Get "class" -}}
+  {{- $attrs.Set "class" (printf "%s %s" . $className) -}}
+{{- else -}}
+  {{- $attrs.Set "class" $className -}}
+{{- end -}}
+{{- return $attrs -}}
