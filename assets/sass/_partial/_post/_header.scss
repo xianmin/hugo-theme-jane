@@ -28,11 +28,17 @@
     justify-content: end;
   }
 
-  .post-meta {
+  .post-meta-list {
     margin-top: 0.5rem;
     display: flex;
     align-items: center;
     flex-flow: wrap;
+
+    .post-meta-item {
+      display: flex;
+      align-items: center;
+      gap: 0.2em;
+    }
 
     .post-meta-author {
       a {

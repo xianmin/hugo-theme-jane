@@ -17,8 +17,8 @@
     </h1>
     {{/* {{ partial "post/i18nlist.html" . }} */}}
     {{/* {{ partial "post/meta.html" . }} */}}
-    <div class="post-meta">
-      <div class="post-meta-author">
+    <div class="post-meta-list">
+      <div class="post-meta-item post-meta-author">
         {{ partial "icons/icon" (dict
         "path" "icons/post/author.svg"
         ) }}
@@ -38,7 +38,7 @@
         {{ $author_name | safeHTML }}
         {{ end }}
       </div>
-      <div class="post-meta-time">
+      <div class="post-meta-item post-meta-time">
         {{ partial "icons/icon" (dict
         "path" "icons/post/calendar.svg"
         ) }}
