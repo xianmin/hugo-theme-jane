@@ -15,34 +15,36 @@
     {{- $current := now.Format "2006" }}
     &copy;
     {{ if ne .Site.Params.since $current }}
-      {{ .Site.Params.since }} -
+    {{ .Site.Params.since }} -
     {{ end }}
     {{- $current }}
     <span class="heart">
       {{/* icon heart */}}
       <i class="iconfont">
-        {{ partial "svg/heart.svg" }}
+        {{ partial "icons/icon" (dict
+        "path" "icons/post/heart.svg"
+        ) }}
       </i>
     </span>
     {{- if or .Site.Copyright (or .Site.Params.author.name .Site.Author.name) -}}
-      <span class="author">
-        {{if .Site.Copyright }}{{ .Site.Copyright | safeHTML }}
-        {{ else }}{{ or .Site.Params.author.name .Site.Author.name | safeHTML }}
-        {{ end }}
-      </span>
+    <span class="author">
+      {{if .Site.Copyright }}{{ .Site.Copyright | safeHTML }}
+      {{ else }}{{ or .Site.Params.author.name .Site.Author.name | safeHTML }}
+      {{ end }}
+    </span>
     {{- end -}}
   </span>
 
   <!-- Counter busuanzi -->
   {{ if .Site.Params.counter.busuanzi.enable }}
-    <span id="busuanzi_container">
-      访客数/访问量：<span id="busuanzi_value_site_uv"></span>/<span id="busuanzi_value_site_pv"></span>
-    </span>
+  <span id="busuanzi_container">
+    访客数/访问量：<span id="busuanzi_value_site_uv"></span>/<span id="busuanzi_value_site_pv"></span>
+  </span>
   {{ end }}
 
   {{ if .Site.Params.customFooter }}
-    <span>
-      {{ .Site.Params.customFooter | safeHTML }}
-    </span>
+  <span>
+    {{ .Site.Params.customFooter | safeHTML }}
+  </span>
   {{ end }}
 </div>

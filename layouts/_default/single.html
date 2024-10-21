@@ -44,7 +44,9 @@
           <a class="prev" href="{{ .RelPermalink }}">
             {{/* icon left */}}
             <i class="iconfont">
-              {{ partial "svg/left.svg" }}
+              {{ partial "icons/icon" (dict
+              "path" "icons/post/chevron-left.svg"
+              ) }}
             </i>
             <span class="prev-text nav-default">{{ .Title }}</span>
             <span class="prev-text nav-mobile">{{ i18n "prev_post" }}</span>
@@ -56,7 +58,9 @@
             <span class="prev-text nav-mobile">{{ i18n "next_post" }}</span>
             {{/* icon right */}}
             <i class="iconfont">
-              {{ partial "svg/right.svg" }}
+              {{ partial "icons/icon" (dict
+              "path" "icons/post/chevron-right.svg"
+              ) }}
             </i>
           </a>
           {{- end }}
