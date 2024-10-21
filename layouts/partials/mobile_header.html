@@ -3,7 +3,10 @@
 <div class="mobile-header">
   <div id="mobile-navbar" class="mobile-navbar">
     <div id="mobile-navbar-icon" class="mobile-navbar-icon">
-      {{ partial "icons/icon" $icons.menu }}
+      {{ partial "icons/icon" (dict
+      "path" "icons/header/menu.svg"
+      "className" "icon--menu"
+      ) }}
     </div>
     <div class="mobile-navbar-logo">
       <a href="{{ " /" | relLangURL }}" class="logo">
@@ -43,7 +46,10 @@
         <a class="menu-item-link" href="{{ .URL | absLangURL | safeURL }}" rel="noopener" target="_blank">
           {{ .Name }}
           {{/* icon new window */}}
-          {{ partial "icons/icon" $icons.externalLink }}
+          {{ partial "icons/icon" (dict
+          "path" "icons/header/external-link.svg"
+          "className" "icon--external-link"
+          ) }}
         </a>
         {{ else }}
         <a class="menu-item-link" href="{{ .URL | absLangURL | safeURL }}">{{ .Name }}</a>
@@ -60,7 +66,10 @@
           <span class="mobile-submenu-open"></span>
           <a href="#">
             {{/* icon globe */}}
-            {{ partial "icons/icon" $icons.languages }}
+            {{ partial "icons/icon" (dict
+            "path" "icons/header/languages.svg"
+            "className" "icon--languages"
+            ) }}
             {{ .Site.Language.LanguageName }}
             {{ i18n "language" }}
           </a>
@@ -82,15 +91,27 @@
       {{ if .Site.Params.search.google.enable }}
       <li class="mobile-menu-item">
         <a id="openSearchMobile" class="mobile-menu-item-link menu-item-search" href="#">
-          {{ partial "icons/icon" $icons.search }}
+          {{ partial "icons/icon" (dict
+          "path" "icons/header/search.svg"
+          "className" "icon--search"
+          ) }}
         </a>
       </li>
       {{ end }}
 
       <li class="mobile-menu-item">
         <a class="theme-toggle menu-item-link" href="javascript:void(0);">
-          <span class="theme-icon theme-icon-light">{{ partial "icons/icon" $icons.sun }}</span>
-          <span class="theme-icon theme-icon-dark">{{ partial "icons/icon" $icons.moon }}</span>
+
+            {{ partial "icons/icon" (dict
+            "path" "icons/header/sun.svg"
+            "className" "theme-icon-light"
+            ) }}
+
+            {{ partial "icons/icon" (dict
+            "path" "icons/header/moon.svg"
+            "className" "theme-icon-dark"
+            ) }}
+
         </a>
       </li>
 
@@ -99,7 +120,10 @@
         {{- with .OutputFormats.Get "RSS" -}}
         <a class="menu-item-link" href="{{ .Permalink }}" rel="noopener {{ .Rel }}" type="{{ .MediaType.Type }}"
           title="rss" target="_blank">
-          {{ partial "icons/icon" $icons.rss }}
+          {{ partial "icons/icon" (dict
+          "path" "icons/header/rss.svg"
+          "className" "icon--rss"
+          ) }}
         </a>
         {{ end -}}
         {{ end }}

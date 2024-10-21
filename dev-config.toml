@@ -232,10 +232,3 @@ defaultContentLanguage = "en"  # Default language to use (if you setup multiling
     noHl = false
     style = 'friendly'
     tabWidth = 4
-
-# icons used by Jane, import module
-[module]
-  [[module.imports]]
-    path = 'github.com/hugomods/icons/vendors/mdi'
-  [[module.imports]]
-    path = 'github.com/hugomods/icons/vendors/lucide'

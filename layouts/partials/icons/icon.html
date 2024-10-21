@@ -1,0 +1,52 @@
+{{/* The original file function comes from: https://github.com/hugomods/icons */}}
+{{/* This partial creates a inline SVG with the given context.
+  path: the path to the SVG file in the `assets/` folder. Required.
+  className: the class name.
+  color: the color of icon.
+  size: the size for both of width and height.
+  width: the width of icon, default to 1em.
+  height: the height of icon, default to 1em.
+*/}}
+{{- $path := .path }}
+{{- if not $path }}
+  {{- warnf "[icons] SVG path is required. %v" . }}
+  {{- return }}
+{{- end }}
+{{- $icon := resources.Get $path }}
+{{- if not $icon -}}
+  {{- warnf "[icons] SVG file not found at path: %s" $path }}
+  {{- return }}
+{{- end -}}
+{{- with $icon -}}
+  {{- $size := default "1em" $.size }}
+  {{- $width := default $size $.width }}
+  {{- $height := default $size $.height }}
+  {{- $attrs := partial "icons/functions/svg-attrs" . -}}
+  {{/* Set the class name. */}}
+  {{- with $.className -}}
+    {{- $class := . -}}
+    {{- with $attrs.Get "class" -}}
+      {{- $class = printf "%s %s" . $class -}}
+    {{- end -}}
+    {{ $attrs.Set "class" $class -}}
+  {{- end -}}
+  {{/* Set the color. */}}
+  {{- with $.color -}}
+    {{- $style := printf "color: %s;" . -}}
+    {{- with $attrs.Get "style" -}}
+      {{- $style = printf "%s; %s" . $style -}}
+    {{- end -}}
+    {{ $attrs.Set "style" $style -}}
+  {{- end -}}
+  {{/* Override the height. */}}
+  {{- with $height -}}
+    {{ $attrs.Set "height" . -}}
+  {{- end -}}
+  {{/* Override the width. */}}
+  {{- with $width -}}
+    {{ $attrs.Set "width" . -}}
+  {{- end -}}
+  {{- $attrsHTML := partialCached "icons/functions/svg-attrs-to-html" $attrs $attrs.Values -}}
+  {{- $newSvg := printf "<svg %s>" $attrsHTML -}}
+  {{- replaceRE `<svg([^>])+>` $newSvg $icon.Content 1 | safeHTML -}}
+{{- end -}}

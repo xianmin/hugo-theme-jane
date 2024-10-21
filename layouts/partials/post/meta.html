@@ -4,9 +4,11 @@
 {{- if not (reflect.IsMap .Site.Params.author) -}}
 {{- warnf "The author key in site configuration is deprecated. Use params.author.name instead." }}
 {{- end -}}
-<div class="post-meta">
-  <div class="post-meta-author">
-    {{ partial "icons/icon" $icons.author }}
+<div class="post-meta-list">
+  <div class="post-meta-item post-meta-author">
+    {{ partial "icons/icon" (dict
+    "path" "icons/post/author.svg"
+    ) }}
     {{- $author_id := .Site.Params.author.name | default .Site.Author.name -}}
     {{- $author := (index ($.Site.Data.authors | default dict) $author_id) -}}
     {{- $author_lang := (index ($author | default dict) .Site.Language.Lang) -}}
@@ -24,15 +26,17 @@
     {{ end }}
   </div>
 
-  <div class="post-meta-time">
-    {{ partial "icons/icon" $icons.calendar }}
+  <div class="post-meta-item post-meta-time">
+    {{ partial "icons/icon" (dict
+    "path" "icons/post/calendar.svg"
+    ) }}
     <time datetime="{{ .Date.Format " 2006-01-02" }}">
       {{ .Date | time.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }}
     </time>
 
 
     {{ if ne (.Lastmod.Format ("2006-01-02")) (.Date.Format ("2006-01-02")) }}
-    <span class="post-meta-lastmod">
+    <span class="post-meta-item post-meta-lastmod">
       ({{ i18n "lastMod" }}:
       {{ .Lastmod | time.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }})
     </span>
@@ -56,7 +60,7 @@
     {{- end }}
 
     {{ with .Params.categories -}}
-    <div class="post-meta-category">
+    <div class="post-meta-item post-meta-category">
       {{ range . }}
       {{- $name := . -}}
       {{- with $.Site.GetPage "taxonomy" (printf "categories/%s" $name) | default ($.Site.GetPage "taxonomy" (printf
