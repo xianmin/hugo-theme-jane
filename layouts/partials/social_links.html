@@ -1,20 +1,24 @@
 {{/* This file show footer social icons */}}
 {{ $icons := partial "icons.html" . }}
 {{/* social icons */}}
-{{- range $name, $path := .Site.Params.social}}
-{{- if $path }}
+{{- range $name, $url := .Site.Params.social}}
+{{- if $url }}
 {{- $iconName := slicestr $name 2 }}
-{{- $path := index $.Site.Params.social $iconName }}
+{{- $url := index $.Site.Params.social $iconName }}
 {{- with index $icons $iconName }}
-<a href="{{ $path | safeURL }}" rel="me noopener" class="icon-link" title="{{ $iconName }}" {{ if not (hasPrefix
-  $path "mailto:" ) }} target="_blank" {{ end }}>
-  {{ partial "icons/icon" . }}
+<a href="{{ $url | safeURL }}" rel="me noopener" class="icon-link" title="{{ $iconName }}" {{ if not (hasPrefix
+  $url "mailto:" ) }} target="_blank" {{ end }}>
+  {{ partial "icons/icon" (dict
+  "path" (printf "icons/social/%s.svg" $iconName)
+  ) }}
 </a>
 {{- else }}
 {{/* 如果图标不存在，使用一个通用的社交媒体图标或跳过 */}}
-<a href="{{ $path | safeURL }}" rel="me noopener" class="icon-link" title="{{ $iconName }}" {{ if not (hasPrefix
-  $path "mailto:" ) }} target="_blank" {{ end }}>
-  {{ partial "icons/icon" $icons.externalLink }}
+<a href="{{ $url | safeURL }}" rel="me noopener" class="icon-link" title="{{ $iconName }}" {{ if not (hasPrefix
+  $url "mailto:" ) }} target="_blank" {{ end }}>
+  {{ partial "icons/icon" (dict
+  "path" "icons/header/external-link.svg"
+  ) }}
 </a>
 {{- end }}
 {{- end }}
@@ -25,7 +29,9 @@
 {{- with .OutputFormats.Get "RSS" -}}
 <a href="{{ .Permalink }}" rel="noopener {{ .Rel }}" type="{{ .MediaType.Type }}" class="icon-link" title="rss"
   target="_blank">
-  {{ partial "icons/icon" $icons.rss }}
+  {{ partial "icons/icon" (dict
+  "path" "icons/header/rss.svg"
+  ) }}
 </a>
 {{ end -}}
 {{- end -}}

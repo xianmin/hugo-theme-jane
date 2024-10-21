@@ -3,7 +3,9 @@
 <section class="jane-card post">
   {{ if .Params.weight }}
   <div class="post-pinned">
-    {{ partial "icons/icon" $icons.pin }}
+    {{ partial "icons/icon" (dict
+    "path" "icons/post/pin.svg"
+    ) }}
   </div>
   {{ end }}
 
@@ -17,7 +19,9 @@
     {{/* {{ partial "post/meta.html" . }} */}}
     <div class="post-meta">
       <div class="post-meta-author">
-        {{ partial "icons/icon" $icons.author }}
+        {{ partial "icons/icon" (dict
+        "path" "icons/post/author.svg"
+        ) }}
         {{- $author_id := .Site.Params.author.name | default .Site.Author.name -}}
         {{- $author := (index ($.Site.Data.authors | default dict) $author_id) -}}
         {{- $author_lang := (index ($author | default dict) .Site.Language.Lang) -}}
@@ -35,7 +39,9 @@
         {{ end }}
       </div>
       <div class="post-meta-time">
-        {{ partial "icons/icon" $icons.calendar }}
+        {{ partial "icons/icon" (dict
+        "path" "icons/post/calendar.svg"
+        ) }}
         <time datetime="{{ .Date.Format " 2006-01-02" }}">
           {{ .Date | time.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }}
         </time>

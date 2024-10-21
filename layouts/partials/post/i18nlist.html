@@ -2,7 +2,10 @@
 
 {{ if .IsTranslated }}
 <div class="post-title-i18n">
-  {{ partial "icons/icon" $icons.languages }}
+  {{ partial "icons/icon" (dict
+  "path" "icons/header/languages.svg"
+  "className" "icon--languages"
+  ) }}
   {{ range .Translations }}
   <div>
     <a href="{{ .Permalink }}">{{ .Lang }}</a>
