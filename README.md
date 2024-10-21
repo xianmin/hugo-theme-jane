@@ -14,7 +14,6 @@ Jane is a readable theme for Hugo. Many color schemes to choose, and easy to per
 - Better reading experience
 - Use [Pico CSS](https://picocss.com/) as the color scheme, allowing theme color switching and dark/light mode toggle.
 - Style Settings, located at `/assets/sass/_settings.scss` .
-- Use [hugo-mods/icons](https://github.com/hugo-mods/icons).
 - Responsive and mobile friendly
 - Multilingual Mode support
 - Better Pagination, TOC, footnote behavior
@@ -85,7 +84,7 @@ cp -r themes/jane/exampleSite/content ./
 Copy the default site config:
 
 ```bash
-cp themes/jane/exampleSite/config.toml ./
+cp themes/jane/exampleSite/hugo.toml ./
 ```
 
 Take a look at the example site:
