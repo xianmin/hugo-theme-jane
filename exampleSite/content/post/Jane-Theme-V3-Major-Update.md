@@ -11,12 +11,18 @@ weight: 1
 
 ## Update Content
 - Use [Pico CSS](https://picocss.com/) as the color scheme, allowing theme color switching and dark/light mode toggle.
+- Customize Your Homepage.
 - Added STYLE SETTINGS, located at `/assets/sass/_settings.scss` .
 - Deprecated the Category page, merging it into the Archive page.
 
 Please note that due to the extensive modifications, some areas may still need refinement. I appreciate your understanding!
 
 <!--more-->
+
+## Customize Your Homepage
+Copy `/exampleSite/content/_index.md` to your website's `/content/_index.md` and modify the parameters inside.
+
+For multilingual sites, please create corresponding `_index.language.md` files, such as `_index.zh-cn.md` .
 
 ## Personalize Your Website
 Copy `/assets/sass/_settings.scss` and `/assets/sass/_custom.scss` to your website's root directory (Note: maintain the same path and file names).
