@@ -1,10 +1,12 @@
 {{ $count := default 3 .count }}
+{{ $mainSections := default (slice "post") .site.Params.mainSections }}
+{{ $pages := where .context.Site.RegularPages "Type" "in" $mainSections }}
 
 <section class="post-card-container">
 
   <h2>{{ .title }}</h2>
   <div class="posts-grid">
-    {{ range first $count .context.Site.RegularPages }}
+    {{ range first $count $pages }}
     <a href="{{ .Permalink }}" class="jane-card post-card">
       <article>
         <time>{{ .Date | time.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }}</time>
