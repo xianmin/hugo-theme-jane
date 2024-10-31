@@ -193,9 +193,9 @@ defaultContentLanguage = "en"  # Default language to use (if you setup multiling
 
   [params.social]                                         # 社交链接
     a-email = "mailto:your@email.com"
-    b-stackoverflow = "http://localhost:1313"
-    c-twitter = "http://localhost:1313"
-    d-facebook = "http://localhost:1313"
+    b-stackoverflow = "http://localhost:1313/1"
+    c-twitter = "http://localhost:1313/2"
+    d-facebook = "http://localhost:1313/3"
     e-linkedin = "http://localhost:1313"
     f-google = "http://localhost:1313"
     g-github = "http://localhost:1313"
