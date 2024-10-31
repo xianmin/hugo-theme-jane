@@ -4,7 +4,7 @@
 {{- $paginator := .Paginate (where .Data.Pages.ByDate.Reverse "Type" "post") (index .Site.Params "archive-paginate" | default 10) }}
 <div id="archive" class="archive">
   <!-- 分类导航 -->
-  {{ partial "widget/category-nav.html" . }}
+  {{ partial "widget/category_nav.html" . }}
 
   <div class="archive-title">
     <h1>{{ i18n "archive" }}</h1>
