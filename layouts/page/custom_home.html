@@ -1,4 +1,26 @@
 {{ define "content" }}
-  {{ partial "widget/introduction_card.html" . }}
-  {{ partial "widget/recent_posts.html" . }}
+  {{ if .Params.introductionWidget }}
+    {{ partial "widget/introduction_card.html" . }}
+  {{ end }}
+
+  {{ if .Params.postWidget }}
+    {{ range .Params.postWidget }}
+      {{ if eq .type "recent" }}
+        {{ partial "widget/recent_posts.html" (dict
+          "context" $
+          "count" .count
+          "title" .title
+        ) }}
+      {{ end }}
+
+      {{ if eq .type "category" }}
+        {{ partial "widget/category_posts.html" (dict
+          "context" $
+          "count" .count
+          "title" .title
+          "category" .category
+        ) }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
 {{ end }}

@@ -2,17 +2,24 @@
   <div class="container">
     <div class="introduction-card__content">
       <div class="introduction-card__text">
-        <h2>John Doe</h2>
-        <p>Full-stack developer passionate about creating elegant solutions to complex problems. Writing about web
-          development, software architecture, and tech innovations.</p>
-        <div class="introduction-card__social">
-          {{ partial "social_links.html" . }}
-        </div>
+        {{ with .Params.introductionWidget }}
+          <h2>{{ .title }}</h2>
+          <div class="introduction-card__description">
+            {{ .description | markdownify }}
+          </div>
+          {{ if .showSocial }}
+          <div class="introduction-card__social">
+            {{ partial "social_links.html" $ }}
+          </div>
+          {{ end }}
+        {{ end }}
       </div>
 
+      {{ with .Params.introductionWidget.avatar }}
       <div class="introduction-card__avatar">
-        <img src="/hugo-theme-jane/image/blank-profile.png" alt="John Doe">
+        <img src="{{ . }}" alt="{{ $.Params.introductionWidget.title }}">
       </div>
+      {{ end }}
     </div>
   </div>
 </section>
