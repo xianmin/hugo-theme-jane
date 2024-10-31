@@ -1,0 +1,58 @@
+// Projects Section
+.projects {
+  padding: 3rem 0;
+  border-bottom: 1px solid var(--pico-muted-border-color);
+
+  .projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: flex-start;
+  }
+}
+
+.project-card {
+  flex: 0 0 calc((100% - 3rem) / 3);
+  --pico-color: inherit;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  text-decoration: none;
+  background-color: var(--pico-background-color);
+  outline: 1px solid var(--pico-primary-border);
+  border-radius: var(--pico-border-radius);
+  box-shadow: var(--pico-box-shadow);
+
+  @media (max-width: $mobile-breakpoint) {
+    flex: 0 0 100%;
+  }
+
+  &:hover {
+    --pico-color: inherit !important;
+    transform: scaleX(1.05) scaleY(1.05);
+    box-shadow:
+      var(--pico-primary) 0px 1px 4px,
+      var(--pico-primary) 0px 0px 0px 3px;
+  }
+
+  &__image {
+    height: 200px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__content {
+    padding: 1em;
+  }
+
+  .project-link {
+    color: var(--pico-primary);
+    text-decoration: underline;
+    font-size: 0.875rem;
+    transition: color 0.3s ease;
+  }
+}

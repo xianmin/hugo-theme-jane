@@ -113,3 +113,7 @@
 
 - id: comments
   translation: 评论
+
+# custom home
+- id: view_all_posts
+  translation: 查看所有文章

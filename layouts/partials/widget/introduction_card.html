@@ -1,0 +1,25 @@
+<section class="introduction-card">
+  <div class="container">
+    <div class="introduction-card__content">
+      <div class="introduction-card__text">
+        {{ with .Params.introductionWidget }}
+          <h2>{{ .title }}</h2>
+          <div class="introduction-card__description">
+            {{ .description | markdownify }}
+          </div>
+          {{ if .showSocial }}
+          <div class="introduction-card__social">
+            {{ partial "social_links.html" $ }}
+          </div>
+          {{ end }}
+        {{ end }}
+      </div>
+
+      {{ with .Params.introductionWidget.avatar }}
+      <div class="introduction-card__avatar">
+        <img src="{{ . }}" alt="{{ $.Params.introductionWidget.title }}">
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

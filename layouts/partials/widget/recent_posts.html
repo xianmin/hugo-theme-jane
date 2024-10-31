@@ -1,0 +1,24 @@
+{{ $count := default 3 .count }}
+{{ $mainSections := default (slice "post") .site.Params.mainSections }}
+{{ $pages := where .context.Site.RegularPages "Type" "in" $mainSections }}
+
+<section class="post-card-container">
+
+  <h2>{{ .title }}</h2>
+  <div class="posts-grid">
+    {{ range first $count $pages }}
+    <a href="{{ .Permalink }}" class="jane-card post-card">
+      <article>
+        <time>{{ .Date | time.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }}</time>
+        <h3>{{ .Title }}</h3>
+        <p>{{ .Summary | plainify | truncate 120 }}</p>
+        <span class="read-more">{{ i18n "readmore" }}</span>
+      </article>
+    </a>
+    {{ end }}
+  </div>
+  <div class="view-all-container">
+    <a role="button" href="{{ "post" | relLangURL }}" class="btn-view-all">{{ i18n "view_all_posts"}}</a>
+  </div>
+
+</section>

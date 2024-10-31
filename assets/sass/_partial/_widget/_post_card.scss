@@ -1,0 +1,54 @@
+.post-card-container {
+  padding: 3rem 0;
+  border-bottom: 1px solid var(--pico-muted-border-color);
+
+  .posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1em;
+  }
+}
+
+.post-card {
+  --pico-color: inherit;
+  display: block;
+  text-decoration: none;
+  padding: 1em;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    --pico-color: inherit !important;
+    transform: translateY(-5px);
+    box-shadow:
+      var(--pico-primary) 0px 1px 4px,
+      var(--pico-primary) 0px 0px 0px 3px;
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    time {
+      color: gray;
+      font-size: 0.875rem;
+    }
+
+    h3 {
+      margin: 0.5em 0;
+    }
+
+    .read-more {
+      color: var(--pico-primary);
+      align-self: end;
+      margin-top: auto;
+    }
+  }
+}
+
+.view-all-container {
+  text-align: end;
+}
