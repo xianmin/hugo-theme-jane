@@ -1,4 +1,6 @@
 .introduction-card {
+  padding: 3rem 0;
+  border-bottom: 1px solid var(--pico-muted-border-color);
 
   &__content {
     display: flex;

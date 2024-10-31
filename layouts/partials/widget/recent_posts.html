@@ -1,0 +1,20 @@
+<section class="recent-posts">
+  <div class="container">
+    <h2>Recent Posts</h2>
+    <div class="posts-grid">
+      {{ range first 3 .Site.RegularPages }}
+        <a href="{{ .Permalink }}" class="jane-card post-card">
+          <article>
+            <time>{{ .Date.Format "January 2, 2006" }}</time>
+            <h3>{{ .Title }}</h3>
+            <p>{{ .Summary | plainify | truncate 120 }}</p>
+            <span class="read-more">{{ i18n "readmore" }}</span>
+          </article>
+        </a>
+      {{ end }}
+    </div>
+    <div class="view-all-container">
+      <a role="button" href="{{ .RelPermalink }}" class="btn-view-all">{{ i18n "view_all_posts"}}</a>
+    </div>
+  </div>
+</section>
