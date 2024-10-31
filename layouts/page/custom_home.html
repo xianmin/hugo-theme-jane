@@ -23,4 +23,14 @@
       {{ end }}
     {{ end }}
   {{ end }}
+
+  {{ if .Params.projectWidget }}
+    {{ range .Params.projectWidget }}
+      {{ partial "widget/project_card.html" (dict
+        "context" $
+        "title" .title
+        "items" .items
+      ) }}
+    {{ end }}
+  {{ end }}
 {{ end }}

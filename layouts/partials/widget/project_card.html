@@ -1,0 +1,25 @@
+<section class="projects">
+  <div class="container">
+    <h2>{{ .title }}</h2>
+    <div class="projects-grid">
+      {{ range .items }}
+      {{ if .link }}
+      <a href="{{ .link }}" target="_blank" class="project-card">
+
+        {{ if .imgUrl }}
+        <div class="project-card__image">
+          <img src="{{ .imgUrl }}" alt="{{ .title }}">
+        </div>
+        {{ end }}
+        <div class="project-card__content">
+          <h3>{{ .title }}</h3>
+          <p>{{ .description }}</p>
+          <span class="project-link">{{ .link }}</span>
+        </div>
+
+      </a>
+      {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</section>
