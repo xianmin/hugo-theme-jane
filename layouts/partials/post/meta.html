@@ -9,7 +9,7 @@
     {{ partial "icons/icon" (dict
     "path" "icons/post/author.svg"
     ) }}
-    {{- $author_id := .Site.Params.author.name | default .Site.Author.name -}}
+    {{- $author_id := .Params.author | default .Site.Params.author.name | default .Site.Author.name -}}
     {{- $author := (index ($.Site.Data.authors | default dict) $author_id) -}}
     {{- $author_lang := (index ($author | default dict) .Site.Language.Lang) -}}
     {{- $author_name := $author_lang.name.display | default $author.name.display | default $author_id -}}
