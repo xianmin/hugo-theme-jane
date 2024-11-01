@@ -35,8 +35,8 @@ see : https://ziyuan.baidu.com/college/courseinfo?id=156
 <meta name="mobile-web-app-capable" content="yes">
 
 <!-- author & description & keywords  -->
-{{- if or .Site.Params.author.name .Site.Author.name -}}
-{{- $author_id := .Site.Params.author.name | default .Site.Author.name -}}
+{{- if or .Params.author .Site.Params.author.name .Site.Author.name -}}
+{{- $author_id := .Params.author | default .Site.Params.author.name | default .Site.Author.name -}}
 {{- $author := (index ($.Site.Data.authors | default dict) $author_id) -}}
 {{- $author_lang := (index ($author | default dict) .Site.Language.Lang) -}}
 {{- $author_name := $author_lang.name.display | default $author.name.display | default $author_id -}}
