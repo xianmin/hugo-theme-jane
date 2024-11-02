@@ -9,7 +9,7 @@
       ) }}
     </div>
     <div class="mobile-navbar-logo">
-      <a href="{{ " /" | relLangURL }}" class="logo">
+      <a href="{{ `/` | relLangURL }}" class="logo">
         {{- if .Site.Params.logoTitle -}}
         {{ .Site.Params.logoTitle | safeHTML }}
         {{- else -}}
@@ -102,15 +102,15 @@
       <li class="mobile-menu-item">
         <a class="theme-toggle menu-item-link" href="javascript:void(0);">
 
-            {{ partial "icons/icon" (dict
-            "path" "icons/header/sun.svg"
-            "className" "theme-icon-light"
-            ) }}
+          {{ partial "icons/icon" (dict
+          "path" "icons/header/sun.svg"
+          "className" "theme-icon-light"
+          ) }}
 
-            {{ partial "icons/icon" (dict
-            "path" "icons/header/moon.svg"
-            "className" "theme-icon-dark"
-            ) }}
+          {{ partial "icons/icon" (dict
+          "path" "icons/header/moon.svg"
+          "className" "theme-icon-dark"
+          ) }}
 
         </a>
       </li>

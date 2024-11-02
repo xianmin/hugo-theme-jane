@@ -111,7 +111,7 @@ see : https://ziyuan.baidu.com/college/courseinfo?id=156
 
 <!-- custom css -->
 {{ range .Site.Params.customCSS }}
-<link rel="stylesheet" href="{{ "css/" | relURL }}{{ . }}">
+<link rel="stylesheet" href="{{ `css/` | relURL }}{{ . }}">
 {{ end }}
 
 {{/* NOTE: These Hugo Internal Templates can be found starting at
