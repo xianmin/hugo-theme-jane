@@ -16,9 +16,10 @@
     line-height: 1;
 
     .mobile-navbar-icon {
+      font-size: 1.5em;
       color: #fff;
       order: 1;
-      padding: 0.5em;
+      padding: 0.3em;
     }
 
     .mobile-navbar-logo {
@@ -33,6 +34,12 @@
 @include style-to-mobile() {
   .mobile-header {
     display: flex;
+  }
+
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
   }
 }
 
