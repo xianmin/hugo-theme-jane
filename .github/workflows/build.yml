@@ -33,7 +33,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.121.0
+      HUGO_VERSION: 0.136.5
     steps:
       - name: Install Dart Sass
         run: sudo snap install dart-sass
