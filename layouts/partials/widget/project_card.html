@@ -13,7 +13,7 @@
         {{ end }}
         <div class="project-card__content">
           <h3>{{ .title }}</h3>
-          <p>{{ .description }}</p>
+          <p>{{ .description| markdownify }}</p>
           <span class="project-link">{{ .link }}</span>
         </div>
 
