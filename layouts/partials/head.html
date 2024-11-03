@@ -10,8 +10,14 @@
   {{- end -}}
 </title>
 
-{{ range .Translations }}
-<link rel="alternate" hreflang="{{ .Site.LanguageCode }}" href="{{ .Permalink  }}" />
+{{/* Only add hreflang tags if site is multilingual */}}
+{{ if hugo.IsMultilingual }}
+  {{/* Add translations */}}
+  {{ range .Translations }}
+  <link rel="alternate" hreflang="{{ .Site.LanguageCode }}" href="{{ .Permalink }}" />
+  {{ end }}
+  {{/* Add self-referencing hreflang */}}
+  <link rel="alternate" hreflang="{{ .Site.LanguageCode }}" href="{{ .Permalink }}" />
 {{ end }}
 
 <meta name="renderer" content="webkit" />
