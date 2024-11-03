@@ -28,6 +28,9 @@ Jane is a readable theme for Hugo. Many color schemes to choose, and easy to per
 3. Reading Experience is the top priority.
 4. Deploy once, focus on writing, no more hassle.
 
+## Real-world examples
+- [crazyoptimist](https://crazyoptimist.net/)
+
 ## Quick Start
 
 **Note:**  This tutorial assumes that you are using [Hugo][] for **the first time** . [Hugo][] is one of the most popular open-source static site generators. You can check the [Hugo Official Docs][] for more help.
@@ -99,7 +102,7 @@ Open http://localhost:1313/ , you will see your site running with the example co
 
 ### 4. Start a Blog
 
-The default config file `config.toml` is located in your site root directory. You can customize it to match the details of your site.  Documentation about configuring Hugo can be found in the [Official Documentation](https://gohugo.io/getting-started/configuration/)
+The default config file `hugo.toml` is located in your site root directory. You can customize it to match the details of your site.  Documentation about configuring Hugo can be found in the [Official Documentation](https://gohugo.io/getting-started/configuration/)
 
 The default content files are located in the `./content/post` directory.
 
@@ -122,7 +125,7 @@ Take a look in the [exampleSite](https://github.com/xianmin/hugo-theme-jane/tree
 This directory contains an example config file and the content for the demo.
 It serves as an example setup for you to configure to your liking.
 
-Copy the `config.toml` to the root directory of your website. Overwrite the existing config file if necessary.
+Copy the `hugo.toml` to the root directory of your website. Overwrite the existing config file if necessary.
 
 
 
