@@ -1,0 +1,44 @@
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>
+  {{- block "title" . -}}
+  {{ if .IsPage }}
+  {{ .Title }} - {{ .Site.Title }}
+  {{ else }}
+  {{ .Site.Title }}
+  {{ end }}
+  {{- end -}}
+</title>
+
+{{/* Only add hreflang tags if site is multilingual */}}
+{{ if hugo.IsMultilingual }}
+  {{/* Add translations */}}
+  {{ range .Translations }}
+  <link rel="alternate" hreflang="{{ .Site.LanguageCode }}" href="{{ .Permalink }}" />
+  {{ end }}
+  {{/* Add self-referencing hreflang */}}
+  <link rel="alternate" hreflang="{{ .Site.LanguageCode }}" href="{{ .Permalink }}" />
+{{ end }}
+
+<meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
+
+{{/* support older feature phones
+see: https://stackoverflow.com/questions/1988499/meta-tags-for-mobile-should-they-be-used
+*/}}
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+
+{{/* fit for browsing on mobile devices and PC,
+see : https://ziyuan.baidu.com/college/courseinfo?id=156
+*/}}
+<meta name="applicable-device" content="pc,mobile">
+<meta name="color-scheme" content="light dark" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+{{/* Add to homescreen for Chrome on Android */}}
+<meta name="mobile-web-app-capable" content="yes">
+
+<!-- Site Generator -->
+<meta name="generator" content="Hugo {{ hugo.Version }}" />

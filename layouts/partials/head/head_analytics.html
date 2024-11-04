@@ -1,0 +1,9 @@
+<!-- verification  -->
+{{ with .Site.Params.baidu_verification }}
+<meta name="baidu-site-verification" content="{{.}}" />{{ end }}
+{{ with .Site.Params.google_verification }}
+<meta name="google-site-verification" content="{{.}}" />{{ end }}
+
+{{- if and (not hugo.IsServer) .Site.Config.Services.GoogleAnalytics.ID -}}
+{{ template "_internal/google_analytics.html" . }}
+{{- end -}}

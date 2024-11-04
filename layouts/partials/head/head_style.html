@@ -1,0 +1,21 @@
+<!-- Jane theme main style -->
+{{ $styleOpts := dict "transpiler" "dartsass" "targetPath" "css/style.css" "vars" site.Params.style}}
+{{ $style := resources.Get "sass/jane.scss" | toCSS $styleOpts | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}" media="screen"
+  crossorigin="anonymous">
+
+{{- if .Site.Params.wallpaper }}
+<style>
+  .wallpaper {
+    background-image: url('{{ .Site.Params.wallpaper }}');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+</style>
+{{- end }}
+
+<!-- custom css -->
+{{ range .Site.Params.customCSS }}
+<link rel="stylesheet" href="{{ `css/` | relURL }}{{ . }}">
+{{ end }}

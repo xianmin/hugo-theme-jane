@@ -1,0 +1,47 @@
+<!-- author & description & keywords  -->
+{{- if or .Params.author .Site.Params.author.name .Site.Author.name -}}
+{{- $author_id := .Params.author | default .Site.Params.author.name | default .Site.Author.name -}}
+{{- $author := (index ($.Site.Data.authors | default dict) $author_id) -}}
+{{- $author_lang := (index ($author | default dict) .Site.Language.Lang) -}}
+{{- $author_name := $author_lang.name.display | default $author.name.display | default $author_id -}}
+<meta name="author" content="{{ $author_name | safeHTML }}" />
+{{- end -}}
+
+{{- if .Description -}}
+<meta name="description" content="{{ .Description | safeHTML }}" />
+{{ else if .IsPage }}
+<meta name="description" content="{{ .Summary | plainify }}" />
+{{ else if .Site.Params.description }}
+<meta name="description" content="{{ .Site.Params.description | safeHTML }}" />
+{{- end -}}
+
+{{/* Define keywords based on priority:
+  1. .Keywords (directly set keywords)
+  2. .Params.tags (for blog posts)
+  3. Site.Params.keywords (default site keywords)
+*/}}
+{{ $keywords := slice }}
+
+{{/* 1. Check for directly set keywords */}}
+{{ if .Keywords }}
+  {{ $keywords = .Keywords }}
+
+{{/* 2. Check if it's a post page with tags */}}
+{{ else if and .IsPage .Params.tags }}
+  {{ $keywords = .Params.tags }}
+
+{{/* 3. Fallback to site keywords */}}
+{{ else if .Site.Params.keywords }}
+  {{ $keywords = .Site.Params.keywords }}
+{{ end }}
+
+{{/* Output keywords meta tag if we have any keywords */}}
+{{ with $keywords }}
+<meta name="keywords" content="{{ delimit . `, ` }}" />
+{{ end }}
+
+{{/* NOTE: These Hugo Internal Templates can be found starting at
+https://github.com/spf13/hugo/blob/master/tpl/tplimpl/template_embedded.go#L158 */}}
+{{- template "_internal/opengraph.html" . -}}
+{{- template "_internal/schema.html" . -}}
+{{- template "_internal/twitter_cards.html" . -}}

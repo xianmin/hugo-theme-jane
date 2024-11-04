@@ -1,0 +1,9 @@
+<!-- Permalink & RSSlink -->
+<link rel="canonical" href="{{ .Permalink }}" />
+{{ with .OutputFormats.Get "RSS" }}
+<link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" />{{ end }}
+
+{{ if .OutputFormats.Get "jsonfeed" }}
+<link href="{{ with .OutputFormats.Get `jsonfeed` }}{{ .Permalink }}{{ end }}" rel="alternate" type="application/json"
+  title="{{ .Site.Title }}" />
+{{ end }}
