@@ -1,7 +1,7 @@
 .content-wrapper {
   display: grid;
   grid-template-rows: auto 1fr;
-  grid-template-columns: 10.5rem 1fr 10.5rem;
+  grid-template-columns: 10.5rem minmax(0, 1fr) 10.5rem;
   grid-template-areas: "toc content sidebar";
 
   @include style-to-mobile() {

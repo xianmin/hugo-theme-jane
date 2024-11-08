@@ -36,7 +36,7 @@
   .menu {
     display: flex;
     height: 100%;
-    // font-family: $global-serif-font-family;
+    flex-wrap: wrap;
 
     .active {
       font-weight: bold;
@@ -45,8 +45,7 @@
 
     .menu-item {
       display: block;
-      height: 100%;
-      min-height: 3em;
+      height: 3em;
       position: relative;
 
       &:hover {
