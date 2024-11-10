@@ -8,7 +8,7 @@
   ) }}
   {{ range .Translations }}
   <div>
-    <a href="{{ .Permalink }}">{{ .Lang }}</a>
+    <a href="{{ .Permalink }}">{{ or .Language.LanguageName .Language.Lang }}</a>
   </div>
   {{ end }}
 </div>

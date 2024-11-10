@@ -5,7 +5,6 @@
   border-bottom: 2px $grey-150 solid;
 
   .post-title {
-    margin: unset;
     font-size: 2em;
     font-weight: 700;
     font-family: $title-font-family;
@@ -26,10 +25,13 @@
     display: flex;
     align-items: center;
     justify-content: end;
+    flex-wrap: wrap;
+    gap: 0.3em;
+    margin-top: 1rem;
   }
 
   .post-meta-list {
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     display: flex;
     align-items: center;
     flex-flow: wrap;
