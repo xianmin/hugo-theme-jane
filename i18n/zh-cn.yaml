@@ -87,27 +87,6 @@
 - id: morePost
   translation: 查看更多 >>>
 
-- id: read_en
-  translation: Read in English
-
-- id: read_es
-  translation: Leer en español
-
-- id: read_zh-tw
-  translation: 中文閱讀
-
-- id: read_ru
-  translation: Читать на русском
-
-- id: read_pt
-  translation: Leia em português
-
-- id: read_fr
-  translation: Lire en français
-
-- id: read_de
-  translation: In Deutsch lesen
-
 - id: language
   translation: 语言
 

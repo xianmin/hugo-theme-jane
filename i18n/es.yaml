@@ -87,24 +87,6 @@
 - id: morePost
   translation: "Más Entradas >>>"
 
-- id: read_en
-  translation: Read in English
-
-- id: read_ru
-  translation: Читать на русском
-
-- id: read_zh-cn
-  translation: 中文阅读
-
-- id: read_zh-tw
-  translation: 中文閱讀
-
-- id: read_pt
-  translation: Leia em português
-
-- id: read_de
-  translation: In Deutsch lesen
-
 - id: language
   translation: Lenguaje
 
