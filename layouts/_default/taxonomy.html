@@ -1,38 +1,76 @@
 {{ define "title" -}}
-{{ if eq .Data.Singular "author" -}}
-  {{- $author := (index (.Site.Data.authors | default dict) .Title) -}}
-  {{- $author_lang := (index ($author | default dict) .Site.Language.Lang) -}}
-  {{- $author_name := $author_lang.name.display | default $author.name.display | default .Title -}}
-  {{ $author_name }} · {{ .Site.Title }}
-{{- else -}}
-  {{ .Title }} · {{ .Site.Title }}
-{{- end }}
+  {{/* Get display name based on taxonomy type */}}
+  {{- $displayName := .Title -}}
+
+  {{- if eq .Data.Singular "author" -}}
+    {{/* Handle author display name */}}
+    {{- $author := (index (.Site.Data.authors | default dict) .Title) -}}
+    {{- $author_lang := (index ($author | default dict) .Site.Language.Lang) -}}
+    {{- $displayName = $author_lang.name.display | default $author.name.display | default .Title -}}
+  {{- else if eq .Data.Singular "category" -}}
+    {{/* Handle category display name */}}
+    {{- $category_key := lower .Title -}}
+    {{- if index .Site.Data "categories" -}}
+      {{- with (index .Site.Data.categories $category_key) -}}
+        {{/* Handle both single language and multilingual cases */}}
+        {{- if reflect.IsMap .name -}}
+          {{/* For multilingual: try current language first, then fallback to default */}}
+          {{- $displayName = index .name $.Site.Language.Lang | default .name.default | default $category_key -}}
+        {{- else -}}
+          {{/* For single language: use direct name value */}}
+          {{- $displayName = .name | default $category_key -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+    {{- $displayName = printf "%s%s" (i18n "category") $displayName -}}
+  {{- end -}}
+
+  {{/* Output the final title */}}
+  {{ $displayName }} · {{ .Site.Title }}
 {{- end }}
 
 {{ define "content"}}
-{{ $paginator := .Paginate (where .Data.Pages.ByDate.Reverse "Type" "post") (index .Site.Params "archive-paginate" | default 10) }}
+  {{/* Setup pagination */}}
+  {{ $paginator := .Paginate (where .Data.Pages.ByDate.Reverse "Type" "post") (index .Site.Params "archive-paginate" | default 10) }}
 
-{{ $title_block := "" }}
-{{ $show_category_nav := false }}
+  {{/* Initialize variables */}}
+  {{ $title_block := "" }}
+  {{ $show_category_nav := false }}
 
-{{ if not $paginator.HasPrev }}
-  {{ if eq .Data.Plural "tags" }}
-    {{ $title_block = printf `<div class="archive-title tag"><h2 class="archive-name">%s%s</h2></div>` (i18n "tag") .Title }}
-  {{ else if eq .Data.Plural "categories" }}
-    {{ $title_block = printf `<div class="archive-title category"><h2 class="archive-name">%s%s</h2></div>` (i18n "category") .Title }}
-    {{ $show_category_nav = true }}
-  {{ else if eq .Data.Singular "author" }}
-    {{- $author := (index (.Site.Data.authors | default dict) .Title) -}}
-    {{- $author_lang := (index ($author | default dict) .Site.Language.Lang) -}}
-    {{- $author_name := $author_lang.name.display | default $author.name.display | default .Title -}}
-    {{ $title_block = printf `<div class="archive-title author"><h2 class="archive-name">%s%s</h2></div>` (i18n "author_item") $author_name }}
+  {{/* Generate title block for first page */}}
+  {{ if not $paginator.HasPrev }}
+    {{ if eq .Data.Plural "tags" }}
+      {{ $title_block = printf `<div class="archive-title tag"><h2 class="archive-name">%s%s</h2></div>` (i18n "tag") .Title }}
+    {{ else if eq .Data.Plural "categories" }}
+      {{/* Get category display name */}}
+      {{- $category_key := lower .Title -}}
+      {{- $displayName := $category_key -}}
+      {{ if index .Site.Data "categories" }}
+        {{ with (index .Site.Data.categories $category_key) }}
+          {{/* Handle both single language and multilingual cases */}}
+          {{ if reflect.IsMap .name }}
+            {{ $displayName = index .name $.Site.Language.Lang | default .name.default | default $category_key }}
+          {{ else }}
+            {{ $displayName = .name | default $category_key }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+      {{ $title_block = printf `<div class="archive-title category"><h2 class="archive-name">%s%s</h2></div>` (i18n "category") $displayName }}
+      {{ $show_category_nav = true }}
+    {{ else if eq .Data.Singular "author" }}
+      {{/* Get author display name */}}
+      {{- $author := (index (.Site.Data.authors | default dict) .Title) -}}
+      {{- $author_lang := (index ($author | default dict) .Site.Language.Lang) -}}
+      {{- $displayName := $author_lang.name.display | default $author.name.display | default .Title -}}
+      {{ $title_block = printf `<div class="archive-title author"><h2 class="archive-name">%s%s</h2></div>` (i18n "author_item") $displayName }}
+    {{ end }}
   {{ end }}
-{{ end }}
 
-{{ partial "archive-list.html" (dict
-  "paginator" $paginator
-  "title_block" $title_block
-  "show_category_nav" $show_category_nav
-  "context" .
-) }}
+  {{/* Render the archive list */}}
+  {{ partial "archive-list.html" (dict
+    "paginator" $paginator
+    "title_block" $title_block
+    "show_category_nav" $show_category_nav
+    "context" .
+  ) }}
 {{ end }}

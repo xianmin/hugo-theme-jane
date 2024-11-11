@@ -1,0 +1,25 @@
+# # Single language format
+# index:
+#   name: "Computer Technology"  # Direct name for single language
+#   weight: 10
+
+# docs:
+#   name: "Programming"
+#   weight: 2
+
+# Multilingual format
+index:
+  name:
+    zh: "自定义归类"
+    en: "Custom Category"
+    fr: "Custom Category"
+    default: "Custom Category"  # Fallback when language not found
+  weight: 1
+
+docs:
+  name:
+    zh: "文档"
+    en: "Documents"
+    fr: "Documents"
+    default: "Documents"
+  weight: 2
