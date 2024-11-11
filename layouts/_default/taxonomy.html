@@ -11,43 +11,28 @@
 
 {{ define "content"}}
 {{ $paginator := .Paginate (where .Data.Pages.ByDate.Reverse "Type" "post") (index .Site.Params "archive-paginate" | default 10) }}
-<section id="archive" class="archive">
-  <!-- 分类导航 -->
-  {{ partial "widget/category_nav.html" . }}
 
-  {{ if not $paginator.HasPrev }}
-    {{ if eq .Data.Plural "tags" }}
-      <div class="archive-title tag">
-        <h2 class="archive-name">{{ i18n "tag" }}{{ .Title }}</h2>
-      </div>
-    {{ else if eq .Data.Plural "categories" }}
-      <div class="archive-title category">
-        <h2 class="archive-name">{{ i18n "category" }}{{ .Title }}</h2>
-      </div>
-    {{ else if eq .Data.Singular "author" }}
-      {{- $author := (index (.Site.Data.authors | default dict) .Title) -}}
-      {{- $author_lang := (index ($author | default dict) .Site.Language.Lang) -}}
-      {{- $author_name := $author_lang.name.display | default $author.name.display | default .Title -}}
-      <div class="archive-title author">
-        <h2 class="archive-name">{{ i18n "author_item" }}{{ $author_name }}</h2>
-      </div>
-    {{ end }}
+{{ $title_block := "" }}
+{{ $show_category_nav := false }}
+
+{{ if not $paginator.HasPrev }}
+  {{ if eq .Data.Plural "tags" }}
+    {{ $title_block = printf `<div class="archive-title tag"><h2 class="archive-name">%s%s</h2></div>` (i18n "tag") .Title }}
+  {{ else if eq .Data.Plural "categories" }}
+    {{ $title_block = printf `<div class="archive-title category"><h2 class="archive-name">%s%s</h2></div>` (i18n "category") .Title }}
+    {{ $show_category_nav = true }}
+  {{ else if eq .Data.Singular "author" }}
+    {{- $author := (index (.Site.Data.authors | default dict) .Title) -}}
+    {{- $author_lang := (index ($author | default dict) .Site.Language.Lang) -}}
+    {{- $author_name := $author_lang.name.display | default $author.name.display | default .Title -}}
+    {{ $title_block = printf `<div class="archive-title author"><h2 class="archive-name">%s%s</h2></div>` (i18n "author_item") $author_name }}
   {{ end }}
+{{ end }}
 
-  {{ range $paginator.Pages }}
-    <div class="archive-post">
-      <time datetime="{{ .Date.Format " 2006-01-02" }}" class="archive-post-time">
-        {{ .Date | time.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }}
-      </time>
-      <span class="archive-post-title">
-        <a href="{{ .RelPermalink }}" class="archive-post-link">
-          {{ .Title }}
-        </a>
-      </span>
-    </div>
-  {{ end }}
-</section>
-
-<!-- pagination -->
-{{ partial "pagination.html" . }}
+{{ partial "archive-list.html" (dict
+  "paginator" $paginator
+  "title_block" $title_block
+  "show_category_nav" $show_category_nav
+  "context" .
+) }}
 {{ end }}

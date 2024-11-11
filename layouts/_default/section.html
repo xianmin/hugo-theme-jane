@@ -2,40 +2,19 @@
 
 {{ define "content"}}
 {{- $paginator := .Paginate (where .Data.Pages.ByDate.Reverse "Type" "post") (index .Site.Params "archive-paginate" | default 10) }}
-<div id="archive" class="archive">
-  <!-- 分类导航 -->
-  {{ partial "widget/category_nav.html" . }}
 
-  <div class="archive-title">
-    <h1>{{ i18n "archive" }}</h1>
-    <span class="archive-post-counter">
-      {{- $length := len .Data.Pages }}
-      {{ i18n "counter_archives" $length }}
-    </span>
-  </div>
-
-  {{- range $paginator.Pages.GroupByDate "2006" }}
-  <section class="archive-group">
-    <div class="archive-group-title">
-      <h2 class="archive-year">{{ .Key }}</h2>
-    </div>
-    {{- range .Pages }}
-    <div class="archive-post">
-      <time datetime="{{ .Date.Format " 2006-01-02" }}" class="archive-post-time">
-        {{ .Date | time.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }}
-      </time>
-      <span class="archive-post-title">
-        <a href="{{ .RelPermalink }}" class="archive-post-link">
-          {{ .Title }}
-        </a>
-      </span>
-    </div>
-    {{- end }}
-  </section>
-  {{- end }}
+{{ $title_block := printf `
+<div class="archive-title">
+  <h1>%s</h1>
+  <span class="archive-post-counter">%s</span>
 </div>
+` (i18n "archive") (i18n "counter_archives" (len .Data.Pages)) }}
 
-<!-- pagination -->
-{{ partial "pagination.html" . }}
+{{ partial "archive-list.html" (dict
+  "paginator" $paginator
+  "title_block" $title_block
+  "show_category_nav" true
+  "context" .
+) }}
 
 {{ end }}
