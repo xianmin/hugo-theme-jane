@@ -23,10 +23,13 @@
       {{- end -}}
     {{- end -}}
     {{- $displayName = printf "%s%s" (i18n "category") $displayName -}}
+  {{- else if eq .Data.Plural "tags" -}}
+    {{/* Handle tag display name */}}
+    {{- $displayName = printf "%s%s" (i18n "tag") $displayName -}}
   {{- end -}}
 
   {{/* Output the final title */}}
-  {{ $displayName }} · {{ .Site.Title }}
+  {{ $displayName }} - {{ .Site.Title }}
 {{- end }}
 
 {{ define "content"}}
