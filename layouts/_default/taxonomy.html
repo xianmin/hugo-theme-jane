@@ -40,7 +40,10 @@
   {{/* Generate title block for first page */}}
   {{ if not $paginator.HasPrev }}
     {{ if eq .Data.Plural "tags" }}
-      {{ $title_block = printf `<div class="archive-title tag"><h2 class="archive-name">%s%s</h2></div>` (i18n "tag") .Title }}
+      {{ $title_block = printf `<div class="archive-title tag">
+        <h2 class="archive-name">%s%s</h2>
+        <span class="archive-post-counter">%d posts</span>
+      </div>` (i18n "tag") .Title (len .Data.Pages) }}
     {{ else if eq .Data.Plural "categories" }}
       {{/* Get category display name */}}
       {{- $category_key := lower .Title -}}
@@ -55,14 +58,20 @@
           {{ end }}
         {{ end }}
       {{ end }}
-      {{ $title_block = printf `<div class="archive-title category"><h2 class="archive-name">%s%s</h2></div>` (i18n "category") $displayName }}
+      {{ $title_block = printf `<div class="archive-title category">
+        <h2 class="archive-name">%s%s</h2>
+        <span class="archive-post-counter">%d posts</span>
+      </div>` (i18n "category") $displayName (len .Data.Pages) }}
       {{ $show_category_nav = true }}
     {{ else if eq .Data.Singular "author" }}
       {{/* Get author display name */}}
       {{- $author := (index (.Site.Data.authors | default dict) .Title) -}}
       {{- $author_lang := (index ($author | default dict) .Site.Language.Lang) -}}
       {{- $displayName := $author_lang.name.display | default $author.name.display | default .Title -}}
-      {{ $title_block = printf `<div class="archive-title author"><h2 class="archive-name">%s%s</h2></div>` (i18n "author_item") $displayName }}
+      {{ $title_block = printf `<div class="archive-title author">
+        <h2 class="archive-name">%s%s</h2>
+        <span class="archive-post-counter">%d posts</span>
+      </div>` (i18n "author_item") $displayName (len .Data.Pages) }}
     {{ end }}
   {{ end }}
 

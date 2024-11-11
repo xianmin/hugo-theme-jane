@@ -6,9 +6,9 @@
 {{ $title_block := printf `
 <div class="archive-title">
   <h1>%s</h1>
-  <span class="archive-post-counter">%s</span>
+  <span class="archive-post-counter">%d posts</span>
 </div>
-` (i18n "archive") (i18n "counter_archives" (len .Data.Pages)) }}
+` (i18n "archive") (len .Data.Pages) }}
 
 {{ partial "archive-list.html" (dict
   "paginator" $paginator
