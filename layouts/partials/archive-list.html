@@ -3,19 +3,23 @@
 {{ $context := .context }}
 {{ $show_category_nav := .show_category_nav | default false }}
 
-<!-- Show category nav only in archive and category pages -->
-{{ if $show_category_nav }}
-  {{ partial "widget/category_nav.html" $context }}
-{{ end }}
+<div class="archive-wrapper">
+  <aside class="archive-right-sidebar">
 
-<section id="archive" class="archive">
-  {{ if .title_block }}
+    <!-- Show category nav only in archive and category pages -->
+    {{ if $show_category_nav }}
+    {{ partial "widget/category_nav.html" $context }}
+    {{ end }}
+  </aside>
+
+  <section id="archive" class="archive">
+    {{ if .title_block }}
     {{ .title_block | safeHTML }}
-  {{ end }}
+    {{ end }}
 
-  {{ range $paginator.Pages }}
+    {{ range $paginator.Pages }}
     <div class="archive-post">
-      <time datetime="{{ .Date.Format "2006-01-02" }}" class="archive-post-time">
+      <time datetime="{{ .Date.Format " 2006-01-02" }}" class="archive-post-time">
         {{ .Date.Format "2006-01-02" }}
       </time>
       <span class="archive-post-title">
@@ -24,9 +28,13 @@
         </a>
       </span>
     </div>
-  {{ end }}
+    {{ end }}
 
-  {{ if .paginator }}
+    {{ if .paginator }}
     {{ partial "pagination.html" $context }}
-  {{ end }}
-</section>
+    {{ end }}
+  </section>
+
+  <aside class="archive-left-sidebar"></aside>
+
+</div>
