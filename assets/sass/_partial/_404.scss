@@ -3,7 +3,10 @@
 // =============================
 
 .not-found {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
   .error-emoji {
     color: #363636;
@@ -19,7 +22,7 @@
     margin-top: 2rem;
 
     a {
-      color: $theme-color;
+      color: var(--pico-primary);
     }
   }
 }
