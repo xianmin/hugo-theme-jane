@@ -2,6 +2,20 @@
 <html lang="{{ $.Site.LanguageCode | default `en` }}" itemscope itemtype="http://schema.org/WebPage" data-theme="light">
 
 <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>
+    {{/*  block not work in partials
+        see: https://github.com/gohugoio/hugo/issues/7936
+    */}}
+    {{- block "title" . -}}
+    {{ if .IsPage }}
+    {{ .Title }} - {{ .Site.Title }}
+    {{ else }}
+    {{ .Site.Title }}
+    {{ end }}
+    {{- end -}}
+  </title>
   {{ partial "head.html" . }}
 </head>
 

@@ -1,15 +1,3 @@
-<meta charset="utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<title>
-  {{- block "title" . -}}
-  {{ if .IsPage }}
-  {{ .Title }} - {{ .Site.Title }}
-  {{ else }}
-  {{ .Site.Title }}
-  {{ end }}
-  {{- end -}}
-</title>
-
 {{/* Only add hreflang tags if site is multilingual */}}
 {{ if hugo.IsMultilingual }}
   {{/* Add translations */}}
