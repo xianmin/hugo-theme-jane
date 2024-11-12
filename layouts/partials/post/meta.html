@@ -62,11 +62,22 @@
     {{ with .Params.categories -}}
     <div class="post-meta-item post-meta-category">
       {{ range . }}
-      {{- $name := . -}}
-      {{- with $.Site.GetPage "taxonomy" (printf "categories/%s" $name) | default ($.Site.GetPage "taxonomy" (printf
-      "categories/%s" ($name | urlize))) -}}
-      <a href="{{ .Permalink }}"> {{ $name }} </a>
-      {{ end -}}
+        {{- $category_key := lower . -}}
+        {{- $displayName := $category_key -}}
+        {{/* Get custom category name from categories.yaml */}}
+        {{ if index $.Site.Data "categories" }}
+          {{ with (index $.Site.Data.categories $category_key) }}
+            {{/* Handle both single language and multilingual cases */}}
+            {{ if reflect.IsMap .name }}
+              {{ $displayName = index .name $.Site.Language.Lang | default .name.default | default $category_key }}
+            {{ else }}
+              {{ $displayName = .name | default $category_key }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+        {{- with $.Site.GetPage "taxonomy" (printf "categories/%s" $category_key) -}}
+          <a href="{{ .Permalink }}">{{ $displayName }}</a>
+        {{- end -}}
       {{ end }}
     </div>
     {{- end }}
