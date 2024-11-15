@@ -1,6 +1,8 @@
-<div class="disqus-comment comment">
-  <div class="disqus-button" id="load_disqus" onclick="load_disqus()">
-    {{ i18n "loadDisqus" }}
+<div class="comment">
+  <div id="load_disqus_container">
+    <button class="disqus-button" onclick="load_disqus()">
+      {{ i18n "loadDisqus" }}
+    </button>
   </div>
   <div id="disqus_thread"></div>
   <script type="text/javascript">
@@ -17,11 +19,10 @@
       dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
       (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 
-      $('#load_disqus').remove();
+      document.getElementById('load_disqus_container').style.display = 'none';
     };
   </script>
-  <noscript
-    >Please enable JavaScript to view the
+  <noscript>Please enable JavaScript to view the
     <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
   </noscript>
   <!-- <a href="http://disqus.com/" class="dsq-brlink" target="_blank">comments powered by <span class="logo-disqus">Disqus</span></a> -->

@@ -2,11 +2,11 @@
   display: grid;
   grid-template-rows: auto 1fr;
   grid-template-columns: 10.5rem minmax(0, 1fr) 10.5rem;
-  grid-template-areas: "toc content sidebar";
+  grid-template-areas: 'toc content sidebar';
 
   @include style-to-mobile() {
     grid-template-columns: minmax(0, 1fr);
-    grid-template-areas: "content" "toc" "sidebar";
+    grid-template-areas: 'content' 'toc' 'sidebar';
   }
 
   .sidebar {
@@ -28,17 +28,16 @@
   @include style-to-mobile() {
     margin-top: 1rem;
   }
-
 }
 
 .post {
   max-width: $article-max-width;
   margin: 0 auto;
-  @import "_post/header";
-  @import "_post/content";
-  @import "_post/copyright";
-  @import "_post/reward";
-  @import "_post/footer";
+  @import '_post/header';
+  @import '_post/content';
+  @import '_post/copyright';
+  @import '_post/reward';
+  @import '_post/footer';
 }
 
 .comment {
@@ -47,9 +46,9 @@
   max-width: $article-max-width;
 }
 
-.disqus-comment {
-  margin: 0 5em 3em;
-  @import "_post/disqus";
+#load_disqus_container {
+  display: flex;
+  justify-content: center;
 }
 
-@import "_toc";
+@import '_toc';
