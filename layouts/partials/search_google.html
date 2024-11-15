@@ -1,32 +1,35 @@
 <!-- Google Search Modal -->
-<div class="modal-dialog">
+<div class="pico">
+  <dialog class="search-modal" id="search-modal">
     <!-- Modal content-->
-    <div class="modal-content">
-      <div id="closeSearch" title="Close" class="close">X</div>
-      <div class="modal-header">
-        <div class="modal-title">
+    <article>
+      <header>
+        <button aria-label="Close" rel="prev" data-target="search-modal" onclick="toggleModal(event)"></button>
+        <p>
           {{- if $.Site.Params.search.google.title -}}
-            {{ $.Site.Params.search.google.title }}
+          {{ $.Site.Params.search.google.title }}
           {{- else -}}
-            Search
+          Search
           {{- end -}}
-        </div>
-      </div>
+        </p>
+      </header>
+
       <div class="modal-body">
-          <script>
-            (function() {
-              var cx = '{{ .Site.Params.search.google.id }}';
-              var gcse = document.createElement('script');
-              gcse.type = 'text/javascript';
-              gcse.async = true;
-              gcse.src = (document.location.protocol == 'https:' ? 'https:' :
-                  'http:') +
-                '//cse.google.com/cse.js?cx=' + cx;
-              var s = document.getElementsByTagName('script')[0];
-              s.parentNode.insertBefore(gcse, s);
-            })();
-          </script>
-          <gcse:search></gcse:search>
+        <script>
+          (function () {
+            var cx = '{{ .Site.Params.search.google.id }}';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = (document.location.protocol == 'https:' ? 'https:' :
+              'http:') +
+              '//cse.google.com/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+          })();
+        </script>
+        <gcse:search></gcse:search>
       </div>
-    </div>
+    </article>
+  </dialog>
 </div>

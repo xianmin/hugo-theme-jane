@@ -1,0 +1,25 @@
+.search-modal {
+  article {
+    background-color: #fff;
+
+    > header {
+      margin-bottom: var(--pico-block-spacing-vertical);
+      border-bottom: 2px #d4d4d4 solid;
+      border-top-right-radius: var(--pico-border-radius);
+      border-top-left-radius: var(--pico-border-radius);
+
+      padding: calc(var(--pico-block-spacing-vertical) * 0.66)
+        var(--pico-block-spacing-horizontal);
+      background-color: mix($slate-50, $white, 25%);
+
+      [data-theme='dark'] & {
+        background-color: mix($slate-900, $slate-850, 75%);
+      }
+    }
+
+    .modal-body {
+      min-height: 50vh;
+    }
+  }
+}
+

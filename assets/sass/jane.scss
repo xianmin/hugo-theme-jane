@@ -192,7 +192,6 @@ $mobile-breakpoint: 768px !default;
 // @import "_partial/categories";
 // @import "_partial/back-to-top";
 // @import "_partial/author_info";
-// @import "_partial/search";
 
 /**------------------------------------------------------------------------
  *                           page styles
@@ -205,6 +204,7 @@ $mobile-breakpoint: 768px !default;
  *                           components
  *------------------------------------------------------------------------**/
 @import "_components/card";
+@import "_components/search";
 
 /**------------------------------------------------------------------------
  *                           shortcodes
