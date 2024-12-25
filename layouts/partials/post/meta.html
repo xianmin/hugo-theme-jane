@@ -50,11 +50,13 @@
     <span class="post-meta-more">
       {{ i18n "wordCount" .WordCount }} -
       {{ i18n "readingTime" .ReadingTime }}
+      {{ if ne .Params.comment false }}
       {{ if and .Site.Params.commentCount.disqus.enable .Site.GetPage.IsHome }}
       - <a href="{{ .Permalink }}#disqus_thread">{{ i18n "comments" }}</a>
       {{ end }}
       {{- if .Site.Params.commentCount.remark42.enable }}
       - <span class="remark42__counter" data-url="{{ .Permalink }}"></span> {{ i18n "comments" }}
+      {{ end }}
       {{ end -}}
     </span>
     {{- end }}
