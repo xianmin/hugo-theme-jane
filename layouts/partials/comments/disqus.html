@@ -20,6 +20,21 @@
       (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 
       document.getElementById('load_disqus_container').style.display = 'none';
+
+      // disqus needs to be reloaded when the theme is changed
+      const themeToggles = document.querySelectorAll('.theme-toggle');
+      themeToggles.forEach(toggle => {
+        toggle.addEventListener('click', function (e) {
+          e.preventDefault();
+          DISQUS.reset({
+            reload: true,
+            config: function () {
+              this.page.identifier = '{{ .Site.Config.Services.Disqus.Shortname }}';
+              this.page.url = {{ .Permalink }};
+            }
+          });
+        });
+      });
     };
   </script>
   <noscript>Please enable JavaScript to view the
