@@ -30,6 +30,7 @@ Jane is a readable theme for Hugo. Many color schemes to choose, and easy to per
 
 ## Real-world examples
 - [crazyoptimist](https://crazyoptimist.net/)
+- [一座島](https://island.shaform.com/zh/)
 
 ## Quick Start
 
