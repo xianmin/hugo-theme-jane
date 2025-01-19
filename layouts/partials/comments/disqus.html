@@ -7,6 +7,7 @@
   <div id="disqus_thread"></div>
   <script type="text/javascript">
     var disqus_config = function () {
+      this.page.identifier = {{ .RelPermalink }};
       this.page.url = {{ .Permalink }};
     };
     function load_disqus() {
@@ -28,10 +29,7 @@
           e.preventDefault();
           DISQUS.reset({
             reload: true,
-            config: function () {
-              this.page.identifier = '{{ .Site.Config.Services.Disqus.Shortname }}';
-              this.page.url = {{ .Permalink }};
-            }
+            config: disqus_config,
           });
         });
       });
