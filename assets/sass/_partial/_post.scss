@@ -2,23 +2,23 @@
   display: grid;
   grid-template-rows: auto 1fr;
   grid-template-columns: 10.5rem minmax(0, 1fr) 10.5rem;
-  grid-template-areas: 'toc content sidebar';
+  grid-template-areas: 'left-sidebar content right-sidebar';
 
   @include style-to-mobile() {
     grid-template-columns: minmax(0, 1fr);
-    grid-template-areas: 'content' 'toc' 'sidebar';
+    grid-template-areas: 'content' 'left-sidebar' 'right-sidebar';
   }
 
-  .sidebar {
-    grid-area: sidebar;
+  .right-sidebar {
+    grid-area: right-sidebar;
   }
 
   .content {
     grid-area: content;
   }
 
-  .toc {
-    grid-area: toc;
+  .left-sidebar {
+    grid-area: left-sidebar;
   }
 }
 

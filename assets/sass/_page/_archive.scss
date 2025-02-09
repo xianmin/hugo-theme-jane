@@ -2,24 +2,22 @@
   display: grid;
   grid-template-rows: auto 1fr;
   grid-template-columns: 10.5rem minmax(0, 1fr) 10.5rem;
-  grid-template-areas: 'archive-right-sidebar archive archive-left-sidebar';
+  grid-template-areas: 'archive-left-sidebar archive archive-right-sidebar';
   gap: 1rem;
 
   @include style-to-mobile() {
     grid-template-columns: minmax(0, 1fr);
-    grid-template-areas: 'archive-right-sidebar' 'archive' ' archive-left-sidebar';
-  }
-
-  .archive-right-sidebar {
-    grid-area: archive-right-sidebar;
-  }
-
-  .archive {
-    grid-area: archive;
+    grid-template-areas: 'archive-left-sidebar' 'archive' ' archive-right-sidebar';
   }
 
   .archive-left-sidebar {
     grid-area: archive-left-sidebar;
+  }
+  .archive {
+    grid-area: archive;
+  }
+  .archive-right-sidebar {
+    grid-area: archive-right-sidebar;
   }
 }
 

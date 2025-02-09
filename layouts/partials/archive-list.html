@@ -4,37 +4,40 @@
 {{ $show_category_nav := .show_category_nav | default false }}
 
 <div class="archive-wrapper">
-  <aside class="archive-right-sidebar">
-
+  <aside class="archive-left-sidebar">
     <!-- Show category nav only in archive and category pages -->
     {{ if $show_category_nav }}
-    {{ partial "widget/category_nav.html" $context }}
+      {{ partial "widget/category_nav.html" $context }}
     {{ end }}
   </aside>
 
   <section id="archive" class="archive">
     {{ if .title_block }}
-    {{ .title_block | safeHTML }}
+      {{ .title_block | safeHTML }}
     {{ end }}
 
     {{ range $paginator.Pages }}
-    <div class="archive-post">
-      <time datetime="{{ .Date.Format " 2006-01-02" }}" class="archive-post-time">
-        {{ .Date.Format "2006-01-02" }}
-      </time>
-      <span class="archive-post-title">
-        <a href="{{ .RelPermalink }}" class="archive-post-link">
-          {{ .Title }}
-        </a>
-      </span>
-    </div>
+      <div class="archive-post">
+        <time
+          datetime="{{ .Date.Format " 2006-01-02" }}"
+          class="archive-post-time"
+        >
+          {{ .Date.Format "2006-01-02" }}
+        </time>
+        <span class="archive-post-title">
+          <a href="{{ .RelPermalink }}" class="archive-post-link">
+            {{ .Title }}
+          </a>
+        </span>
+      </div>
     {{ end }}
 
     {{ if .paginator }}
-    {{ partial "pagination.html" $context }}
+      {{ partial "pagination.html" $context }}
     {{ end }}
   </section>
 
-  <aside class="archive-left-sidebar"></aside>
-
+  <aside class="archive-right-sidebar">
+    {{ partial "sidebar/archive_left_sidebar.html" . }}
+  </aside>
 </div>
