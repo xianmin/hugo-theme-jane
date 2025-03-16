@@ -5,20 +5,30 @@
   &__content {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 3rem;
 
     @media (max-width: $mobile-breakpoint) {
-      flex-direction: column-reverse;
-      text-align: center;
+      flex-direction: column;
     }
   }
 
   &__avatar {
+    align-self: start;
+    width: 30%;
+
+    @media (max-width: $mobile-breakpoint) {
+      align-self: unset;
+      width: 70%;
+    }
+
     img {
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      object-fit: cover;
+      // width: 200px;
+      // height: 200px;
+      border-radius: 20%;
+      object-fit: contain;
+      padding: 5px;
+      border: 2px solid #ddd;
+      box-shadow: 0 -1px 5px 1px rgba(200, 200, 200, 0.3);
     }
   }
 
