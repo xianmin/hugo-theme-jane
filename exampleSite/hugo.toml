@@ -71,6 +71,11 @@ defaultContentLanguage = "en"           # Default language to use
   photoswipe = true         # see https://github.com/dimsemenov/PhotoSwipe            # 是否启用PhotoSwipe（图片可点击）
   contentCopyright = '<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>'
 
+  # Show or hide RSS icon in footer
+  showRSSIconInFooter = true
+  # Show or hide RSS metadata in header
+  showRSSIconInHeader = true
+
   # Link custom CSS and JS assets
   #   (relative to /static/css and /static/js respectively)
   customCSS = []            # if ['custom.css'], load '/static/css/custom.css' file

@@ -21,6 +21,7 @@ Jane is a readable theme for Hugo. Many color schemes to choose, and easy to per
 - Custom css, Custom js, Custom head support
 - Sub menu support
 - Search Optimization
+- Configurable RSS options with separate controls for header metadata and footer icon
 
 ## Development Philosophy of This Theme
 1. No `node_modules` - fewer dependencies make maintenance easier.

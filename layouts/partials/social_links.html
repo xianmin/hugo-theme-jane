@@ -25,6 +25,7 @@
 {{- end }}
 
 {{/* RSS icon */}}
+{{ if not (eq .Site.Params.showRSSIconInFooter false) }}
 {{ with .Site.GetPage "home" -}}
 {{- with .OutputFormats.Get "RSS" -}}
 <a href="{{ .Permalink }}" rel="noopener {{ .Rel }}" type="{{ .MediaType.Type }}" class="social-icon-link" title="rss"
@@ -35,3 +36,4 @@
 </a>
 {{ end -}}
 {{- end -}}
+{{ end }}

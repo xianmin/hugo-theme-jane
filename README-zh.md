@@ -19,6 +19,7 @@ Jane 是一个专注于阅读体验的 Hugo 主题。最早的版本基于 [hugo
 - 自定义 css，自定义 js，自定义 head
 - 子目录支持
 - 搜索优化
+- 可独立配置页眉 RSS 元数据和页脚 RSS 图标
 
 
 ## 谁在用 Hugo-theme-Jane
