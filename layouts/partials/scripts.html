@@ -230,6 +230,7 @@
   var remark_config = {
     host: '{{ .Site.Params.remark42Url }}',
     site_id: '{{ .Site.Params.remark42SiteId | default "remark" }}',
+    theme: document.documentElement.getAttribute('data-theme') || 'light',
     components: [
 {{- if not .IsHome }}
     'embed',
