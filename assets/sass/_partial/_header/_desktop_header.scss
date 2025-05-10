@@ -122,6 +122,15 @@
   }
 }
 
+// Add sticky desktop header when the parameter is enabled
+@media screen and (min-width: $mobile-breakpoint) {
+  .site-header.sticky-desktop {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+}
+
 @include style-to-mobile() {
   .desktop-header {
     display: none;

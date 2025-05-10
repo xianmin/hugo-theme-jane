@@ -59,6 +59,7 @@ defaultContentLanguage = "en"           # Default language to use
   homeFullContent = false   # if false, show post summaries on home page. Otherwise show full content.
   rssFullContent = true     # if false, Rss feed instead of the summary
   mainSections = ["post"]
+  stickyDesktopHeader = false  # if true, make desktop header sticky just like mobile header
 
   author.name = "Jane"      # essential                     # 必需
   author.email = "me@example.com" # optional, for RSS             # 可选

@@ -15,6 +15,7 @@ Jane is a readable theme for Hugo. Many color schemes to choose, and easy to per
 - Use [Pico CSS](https://picocss.com/) as the color scheme, allowing theme color switching and dark/light mode toggle.
 - Style Settings, located at `/assets/sass/_settings.scss` .
 - Responsive and mobile friendly
+- Sticky navigation headers for both mobile and desktop
 - Multilingual Mode support
 - Better Pagination, TOC, footnote behavior
 - Use the awesome Chroma syntax highlighting

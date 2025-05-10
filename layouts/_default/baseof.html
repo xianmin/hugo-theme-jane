@@ -22,7 +22,7 @@
 <body>
   <div id="back-to-top"></div>
 
-  <header class="site-header">
+  <header class="site-header{{ if .Site.Params.stickyDesktopHeader }} sticky-desktop{{ end }}">
     {{ partial "desktop_header.html" . }}
     {{ partial "mobile_header.html" . }}
   </header>

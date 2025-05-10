@@ -103,6 +103,7 @@ defaultContentLanguage = "en"  # Default language to use (if you setup multiling
   since = "2017"            # Site creation time          # 站点建立时间
   homeFullContent = false   # if false, show post summaries on home page. Otherwise show full content.
   rssFullContent = true     # if false, Rss feed instead of the summary
+  stickyDesktopHeader = true  # if true, make desktop header sticky just like mobile header
 
   author.name = "Jane"      # essential                     # 必需
   author.url = "/about"        # optional                      # 可选
