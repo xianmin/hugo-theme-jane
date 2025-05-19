@@ -1,6 +1,7 @@
+@use "sass:meta";
 .post-content {
   // @import "content/highlight";
-  @import "_content/image";
+  @include meta.load-css("_content/image");
 
   @include style-to-mobile {
     h1 {
