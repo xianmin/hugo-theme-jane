@@ -1,4 +1,4 @@
-// Toogle Theme
+// Toggle Theme
 
 function initThemeToggle() {
   const html = document.documentElement;
@@ -7,6 +7,14 @@ function initThemeToggle() {
   function setTheme(theme) {
     html.setAttribute('data-theme', theme);
     localStorage.setItem('theme', theme);
+
+    if (window.REMARK42 && window.REMARK42.changeTheme) {
+      try {
+        window.REMARK42.changeTheme(theme);
+      } catch (e) {
+        console.error('Failed to update Remark42 theme:', e);
+      }
+    }
   }
 
   function toggleTheme() {
