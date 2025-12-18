@@ -46,7 +46,7 @@ A notice disclaimer
 ```shortcode
 {{%/* notice tip */%}}
 A tip disclaimer
-{{%/* /tip */%}}
+{{%/* /notice */%}}
 ```
 
 {{% notice tip %}}
