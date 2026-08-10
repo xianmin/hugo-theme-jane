@@ -1,3 +1,6 @@
+@use "sass:color";
+@use "pico/scss/colors/index" as *;
+
 .jane-card {
   margin-bottom: var(--pico-block-spacing-vertical);
   padding: var(--pico-block-spacing-vertical)
@@ -25,10 +28,10 @@
     margin-left: calc(var(--pico-block-spacing-horizontal) * -1);
     padding: calc(var(--pico-block-spacing-vertical) * 0.66)
       var(--pico-block-spacing-horizontal);
-    background-color: mix($slate-50, $white, 25%);
+    background-color: color.mix($slate-50, $white, 25%);
 
     [data-theme="dark"] & {
-      background-color: mix($slate-900, $slate-850, 75%);
+      background-color: color.mix($slate-900, $slate-850, 75%);
     }
   }
 }

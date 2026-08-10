@@ -1,6 +1,8 @@
 // ==============================
 // Author Info
 // ==============================
+@use "settings" as *;
+@use "pico/scss/colors/index" as *;
 
 .author-info {
   margin: var(--pico-block-spacing-vertical) auto;

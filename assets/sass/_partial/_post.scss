@@ -1,3 +1,7 @@
+@use "sass:meta";
+@use "settings" as *;
+@use "_common/utils" as *;
+
 .content-wrapper {
   display: grid;
   grid-template-rows: auto 1fr;
@@ -33,11 +37,11 @@
 .post {
   max-width: $article-max-width;
   margin: 0 auto;
-  @import '_post/header';
-  @import '_post/content';
-  @import '_post/copyright';
-  @import '_post/reward';
-  @import '_post/footer';
+  @include meta.load-css('_post/header');
+  @include meta.load-css('_post/content');
+  @include meta.load-css('_post/copyright');
+  @include meta.load-css('_post/reward');
+  @include meta.load-css('_post/footer');
 }
 
 .comment {
@@ -57,4 +61,3 @@
   color-scheme: light;
 }
 
-@import '_toc';

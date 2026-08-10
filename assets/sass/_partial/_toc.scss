@@ -1,3 +1,5 @@
+@use "_common/utils" as *;
+
 /* Make nav sticky */
 nav.toc {
   position: sticky;

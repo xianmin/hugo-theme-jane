@@ -1,6 +1,8 @@
 // ==============================
 // Header
 // ==============================
+@use "settings" as *;
+@use "_common/utils" as *;
 
 .desktop-header {
   @include clearfix;

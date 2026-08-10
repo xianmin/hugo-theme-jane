@@ -1,3 +1,7 @@
+@use "settings" as *;
+@use "pico/scss/colors/index" as *;
+@use "_common/utils" as *;
+
 .post-header {
   margin-bottom: 20px;
   text-align: center;

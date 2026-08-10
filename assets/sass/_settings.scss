@@ -8,33 +8,34 @@
  * Values: 'red', 'pink', 'fuchsia', 'purple', 'violet', 'indigo', 'blue', 'azure', 'cyan',
  * 'jade', 'green', 'lime', 'yellow', 'amber', 'pumpkin', 'orange', 'sand', 'grey', 'zinc', 'slate'
  *------------------------------------------------------------------------**/
-$jane-theme-color: 'azure';
+$jane-theme-color: 'azure' !default;
 
 /**------------------------------------------------------------------------
  *                            Article Max Width
  *------------------------------------------------------------------------**/
-$article-max-width: 40em;
+$article-max-width: 40em !default;
 
 /**------------------------------------------------------------------------
  *                            Site Header Height
  *------------------------------------------------------------------------**/
-$desktop-header-height: 4rem;
-$mobile-header-height: 3rem;
+$desktop-header-height: 4rem !default;
+$mobile-header-height: 3rem !default;
 
 /**------------------------------------------------------------------------
  *                            Font Settings
  *------------------------------------------------------------------------**/
 
 // example import from google fonts
-$logo-font-family: 'Comic Sans MS', -apple-system, 'Open Sans', 'Segoe UI', 'Helvetica', Arial, sans-serif;
+$logo-font-family: 'Comic Sans MS', -apple-system, 'Open Sans', 'Segoe UI', 'Helvetica', Arial, sans-serif !default;
 
-$title-font-family: -apple-system, 'Open Sans', 'Segoe UI', 'Helvetica', Arial, sans-serif;
+$title-font-family: -apple-system, 'Open Sans', 'Segoe UI', 'Helvetica', Arial, sans-serif !default;
 
-$global-font-family: -apple-system,'Open Sans', 'Segoe UI', 'Helvetica', Arial, sans-serif;
-$global-font-size: 18px;
-$global-mobile-font-size: 15px;
+$global-font-family: -apple-system,'Open Sans', 'Segoe UI', 'Helvetica', Arial, sans-serif !default;
+$global-font-size: 18px !default;
+$global-mobile-font-size: 15px !default;
 
 /**------------------------------------------------------------------------
  *                            Other Settings
  *------------------------------------------------------------------------**/
-$mobile-breakpoint: 768px;
+$mobile-breakpoint: 768px !default;
+$large-breakpoint: 1024px !default;

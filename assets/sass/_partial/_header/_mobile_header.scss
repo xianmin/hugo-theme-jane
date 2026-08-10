@@ -1,3 +1,6 @@
+@use "settings" as *;
+@use "_common/utils" as *;
+
 .mobile-header {
   display: none;
   height: $mobile-header-height;

@@ -1,3 +1,7 @@
+@use "settings" as *;
+@use "pico/scss/colors/index" as *;
+@use "_common/utils" as *;
+
 .archive-wrapper {
   display: grid;
   grid-template-rows: auto 1fr;

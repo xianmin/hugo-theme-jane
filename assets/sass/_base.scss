@@ -1,3 +1,7 @@
+@use "settings" as *;
+@use "pico/scss/colors/index" as *;
+@use "_common/utils" as *;
+
 html {
   font-family: $global-font-family;
   font-size: $global-font-size;

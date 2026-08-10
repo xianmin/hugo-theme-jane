@@ -1,19 +1,7 @@
 /**------------------------------------------------------------------------
  *                           import settings
  *------------------------------------------------------------------------**/
-@use "_settings" as *;
-
-$jane-theme-color: 'azure' !default;
-$article-max-width: 40em !default;
-$desktop-header-height: 80px !default;
-$mobile-header-height: 60px !default;
-$logo-font-family: 'Comic Sans MS', -apple-system, 'Open Sans', 'Segoe UI', 'Helvetica', Arial, sans-serif !default;
-$title-font-family: -apple-system, 'Open Sans', 'Segoe UI', 'Helvetica', Arial, sans-serif !default;
-$global-font-family: -apple-system,'Open Sans', 'Segoe UI', 'Helvetica', Arial, sans-serif !default;
-$global-font-size: 18px !default;
-$global-mobile-font-size: 15px !default;
-$mobile-breakpoint: 768px !default;
-$large-breakpoint: 1024px !default;
+@use "settings" as *;
 
 /**------------------------------------------------------------------------
  *                           import pico
@@ -174,46 +162,43 @@ $large-breakpoint: 1024px !default;
 /**------------------------------------------------------------------------
  *                           base styles
  *------------------------------------------------------------------------**/
-@import "_common/utils";
-@import "_base";
-
+@use "_common/utils";
+@use "_base";
 
 /**------------------------------------------------------------------------
  *                           partial styles
  *------------------------------------------------------------------------**/
-@import "_partial/_header/desktop_header";
-@import "_partial/_header/mobile_header";
-@import "_partial/icons";
-@import "_partial/pagination";
-@import "_partial/footer";
-@import "_partial/post";
-@import "_partial/_widget/index";
-@import "_partial/404";
-// @import "_partial/tags";
-// @import "_partial/categories";
-// @import "_partial/back-to-top";
-@import "_partial/author_info";
+@use "_partial/_header/desktop_header";
+@use "_partial/_header/mobile_header";
+@use "_partial/icons";
+@use "_partial/pagination";
+@use "_partial/footer";
+@use "_partial/post";
+@use "_partial/toc";
+@use "_partial/_widget/index";
+@use "_partial/notfound";
+@use "_partial/author_info";
 
 /**------------------------------------------------------------------------
  *                           page styles
  *------------------------------------------------------------------------**/
-@import "_page/home";
-@import "_page/archive";
-@import "_page/tag_cloud";
+@use "_page/home";
+@use "_page/archive";
+@use "_page/tag_cloud";
 
 /**------------------------------------------------------------------------
  *                           components
  *------------------------------------------------------------------------**/
-@import "_components/card";
-@import "_components/search";
+@use "_components/card";
+@use "_components/search";
 
 /**------------------------------------------------------------------------
  *                           shortcodes
  *------------------------------------------------------------------------**/
-@import "_shortcodes/highlight";
-@import "_shortcodes/notice";
+@use "_shortcodes/highlight";
+@use "_shortcodes/notice";
 
 /**------------------------------------------------------------------------
  *                           custom styles
  *------------------------------------------------------------------------**/
-@import "_custom";
+@use "custom";

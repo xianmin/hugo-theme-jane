@@ -1,4 +1,6 @@
 @use "sass:meta";
+@use "_common/utils" as *;
+
 .post-content {
   // @import "content/highlight";
   @include meta.load-css("_content/image");
